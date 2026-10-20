@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 
 
-def plot(directory, *, output_dir):
+def plot(directory, *, output_dir, reference_pipeline=False):
     import matplotlib
 
     matplotlib.use("Agg")
@@ -29,13 +29,28 @@ def plot(directory, *, output_dir):
         "separated_mixture": "Separated mixture (power)",
         "heavy_tailed": "Heavy-tailed t3 (stress)",
     }
+    key = "scenario"
+    title = "Frozen score-space Gaussian calibration: null, power and stress checks"
+    label = "Approximate p-value threshold"
+    filename = "score-calibration"
+    if reference_pipeline:
+        names = {
+            "matched_null": "Matched individuals (null)",
+            "matched_complementary": "Matched individuals (power)",
+            "grouped_null": "Unequal grouped samples (null)",
+            "grouped_complementary": "Unequal grouped samples (power)",
+        }
+        key = "case"
+        title = "Full-pipeline reference-population calibration: null and power checks"
+        label = "Reference-population p-value threshold"
+        filename = "pipeline-calibration"
     colors = ("#0072B2", "#56B4E9", "#009E73", "#D55E00")
     plt.rcParams.update({"font.size": 10, "pdf.fonttype": 42, "svg.fonttype": "none"})
     fig, axes = plt.subplots(1, 2, figsize=(12.4, 4.7), constrained_layout=True)
     left, right = axes
     for i, (rate, color) in enumerate(zip(summary["rates"], colors, strict=True)):
         mean, interval = rate["mean"], rate["wilson_95"]
-        name = names[rate["scenario"]]
+        name = names[rate[key]]
         left.errorbar(
             mean,
             i,
@@ -53,9 +68,7 @@ def plot(directory, *, output_dir):
             color=color,
         )
         values = sorted(
-            float(r["p_value"])
-            for r in rows
-            if r["scenario"] == rate["scenario"] and r.get("p_value")
+            float(r["p_value"]) for r in rows if r[key] == rate[key] and r.get("p_value")
         )
         right.step(
             [0, *values, 1],
@@ -80,7 +93,7 @@ def plot(directory, *, output_dir):
     right.set(
         xlim=(0, 1),
         ylim=(0, 1.03),
-        xlabel="Approximate p-value threshold",
+        xlabel=label,
         ylabel="Fraction of available datasets at or below threshold",
         title="B  Empirical p-value distributions",
     )
@@ -89,11 +102,9 @@ def plot(directory, *, output_dir):
     for ax in axes:
         ax.spines[["top", "right"]].set_visible(False)
         ax.grid(axis="x", alpha=0.15)
-    fig.suptitle(
-        "Frozen score-space Gaussian calibration: null, power and stress checks", fontsize=13
-    )
+    fig.suptitle(title, fontsize=13)
     for extension in ("pdf", "svg", "png"):
-        path = destination / f"score-calibration.{extension}"
+        path = destination / f"{filename}.{extension}"
         fig.savefig(path, dpi=200)
         if extension == "svg":
             path.write_text(
@@ -106,5 +117,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("analysis", type=Path)
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--reference-pipeline", action="store_true")
     args = parser.parse_args()
-    plot(args.analysis, output_dir=args.output_dir)
+    plot(args.analysis, output_dir=args.output_dir, reference_pipeline=args.reference_pipeline)

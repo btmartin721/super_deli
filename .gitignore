@@ -65,3 +65,4 @@ dist/
 
 !examples/calibration/results/*.csv
 !docs/figures/score-calibration/*.pdf
+!examples/pipeline-calibration/results/*.csv
