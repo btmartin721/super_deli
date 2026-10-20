@@ -1,0 +1,355 @@
+{
+  "dataset_id": "synthetic_linked_two_populations",
+  "modalities": [
+    {
+      "format": "phylip",
+      "kind": "genomic",
+      "level": "specimen",
+      "name": "snps",
+      "observations": [
+        {
+          "observation_id": "sample_00",
+          "unit_id": "specimen_00"
+        },
+        {
+          "observation_id": "sample_01",
+          "unit_id": "specimen_01"
+        },
+        {
+          "observation_id": "sample_02",
+          "unit_id": "specimen_02"
+        },
+        {
+          "observation_id": "sample_03",
+          "unit_id": "specimen_03"
+        },
+        {
+          "observation_id": "sample_04",
+          "unit_id": "specimen_04"
+        },
+        {
+          "observation_id": "sample_05",
+          "unit_id": "specimen_05"
+        },
+        {
+          "observation_id": "sample_06",
+          "unit_id": "specimen_06"
+        },
+        {
+          "observation_id": "sample_07",
+          "unit_id": "specimen_07"
+        },
+        {
+          "observation_id": "sample_08",
+          "unit_id": "specimen_08"
+        },
+        {
+          "observation_id": "sample_09",
+          "unit_id": "specimen_09"
+        },
+        {
+          "observation_id": "sample_10",
+          "unit_id": "specimen_10"
+        },
+        {
+          "observation_id": "sample_11",
+          "unit_id": "specimen_11"
+        },
+        {
+          "observation_id": "sample_12",
+          "unit_id": "specimen_12"
+        },
+        {
+          "observation_id": "sample_13",
+          "unit_id": "specimen_13"
+        },
+        {
+          "observation_id": "sample_14",
+          "unit_id": "specimen_14"
+        },
+        {
+          "observation_id": "sample_15",
+          "unit_id": "specimen_15"
+        },
+        {
+          "observation_id": "sample_16",
+          "unit_id": "specimen_16"
+        },
+        {
+          "observation_id": "sample_17",
+          "unit_id": "specimen_17"
+        },
+        {
+          "observation_id": "sample_18",
+          "unit_id": "specimen_18"
+        },
+        {
+          "observation_id": "sample_19",
+          "unit_id": "specimen_19"
+        },
+        {
+          "observation_id": "sample_20",
+          "unit_id": "specimen_20"
+        },
+        {
+          "observation_id": "sample_21",
+          "unit_id": "specimen_21"
+        },
+        {
+          "observation_id": "sample_22",
+          "unit_id": "specimen_22"
+        },
+        {
+          "observation_id": "sample_23",
+          "unit_id": "specimen_23"
+        },
+        {
+          "observation_id": "sample_24",
+          "unit_id": "specimen_24"
+        },
+        {
+          "observation_id": "sample_25",
+          "unit_id": "specimen_25"
+        },
+        {
+          "observation_id": "sample_26",
+          "unit_id": "specimen_26"
+        },
+        {
+          "observation_id": "sample_27",
+          "unit_id": "specimen_27"
+        },
+        {
+          "observation_id": "sample_28",
+          "unit_id": "specimen_28"
+        },
+        {
+          "observation_id": "sample_29",
+          "unit_id": "specimen_29"
+        },
+        {
+          "observation_id": "sample_30",
+          "unit_id": "specimen_30"
+        },
+        {
+          "observation_id": "sample_31",
+          "unit_id": "specimen_31"
+        },
+        {
+          "observation_id": "sample_32",
+          "unit_id": "specimen_32"
+        },
+        {
+          "observation_id": "sample_33",
+          "unit_id": "specimen_33"
+        },
+        {
+          "observation_id": "sample_34",
+          "unit_id": "specimen_34"
+        },
+        {
+          "observation_id": "sample_35",
+          "unit_id": "specimen_35"
+        },
+        {
+          "observation_id": "sample_36",
+          "unit_id": "specimen_36"
+        },
+        {
+          "observation_id": "sample_37",
+          "unit_id": "specimen_37"
+        },
+        {
+          "observation_id": "sample_38",
+          "unit_id": "specimen_38"
+        },
+        {
+          "observation_id": "sample_39",
+          "unit_id": "specimen_39"
+        },
+        {
+          "observation_id": "sample_40",
+          "unit_id": "specimen_40"
+        },
+        {
+          "observation_id": "sample_41",
+          "unit_id": "specimen_41"
+        },
+        {
+          "observation_id": "sample_42",
+          "unit_id": "specimen_42"
+        },
+        {
+          "observation_id": "sample_43",
+          "unit_id": "specimen_43"
+        },
+        {
+          "observation_id": "sample_44",
+          "unit_id": "specimen_44"
+        },
+        {
+          "observation_id": "sample_45",
+          "unit_id": "specimen_45"
+        },
+        {
+          "observation_id": "sample_46",
+          "unit_id": "specimen_46"
+        },
+        {
+          "observation_id": "sample_47",
+          "unit_id": "specimen_47"
+        }
+      ],
+      "path": "simulated.phy",
+      "popmapfile": null
+    }
+  ],
+  "random_seed": 1729,
+  "schema_version": 1,
+  "specimens": [
+    {
+      "specimen_id": "specimen_00"
+    },
+    {
+      "specimen_id": "specimen_01"
+    },
+    {
+      "specimen_id": "specimen_02"
+    },
+    {
+      "specimen_id": "specimen_03"
+    },
+    {
+      "specimen_id": "specimen_04"
+    },
+    {
+      "specimen_id": "specimen_05"
+    },
+    {
+      "specimen_id": "specimen_06"
+    },
+    {
+      "specimen_id": "specimen_07"
+    },
+    {
+      "specimen_id": "specimen_08"
+    },
+    {
+      "specimen_id": "specimen_09"
+    },
+    {
+      "specimen_id": "specimen_10"
+    },
+    {
+      "specimen_id": "specimen_11"
+    },
+    {
+      "specimen_id": "specimen_12"
+    },
+    {
+      "specimen_id": "specimen_13"
+    },
+    {
+      "specimen_id": "specimen_14"
+    },
+    {
+      "specimen_id": "specimen_15"
+    },
+    {
+      "specimen_id": "specimen_16"
+    },
+    {
+      "specimen_id": "specimen_17"
+    },
+    {
+      "specimen_id": "specimen_18"
+    },
+    {
+      "specimen_id": "specimen_19"
+    },
+    {
+      "specimen_id": "specimen_20"
+    },
+    {
+      "specimen_id": "specimen_21"
+    },
+    {
+      "specimen_id": "specimen_22"
+    },
+    {
+      "specimen_id": "specimen_23"
+    },
+    {
+      "specimen_id": "specimen_24"
+    },
+    {
+      "specimen_id": "specimen_25"
+    },
+    {
+      "specimen_id": "specimen_26"
+    },
+    {
+      "specimen_id": "specimen_27"
+    },
+    {
+      "specimen_id": "specimen_28"
+    },
+    {
+      "specimen_id": "specimen_29"
+    },
+    {
+      "specimen_id": "specimen_30"
+    },
+    {
+      "specimen_id": "specimen_31"
+    },
+    {
+      "specimen_id": "specimen_32"
+    },
+    {
+      "specimen_id": "specimen_33"
+    },
+    {
+      "specimen_id": "specimen_34"
+    },
+    {
+      "specimen_id": "specimen_35"
+    },
+    {
+      "specimen_id": "specimen_36"
+    },
+    {
+      "specimen_id": "specimen_37"
+    },
+    {
+      "specimen_id": "specimen_38"
+    },
+    {
+      "specimen_id": "specimen_39"
+    },
+    {
+      "specimen_id": "specimen_40"
+    },
+    {
+      "specimen_id": "specimen_41"
+    },
+    {
+      "specimen_id": "specimen_42"
+    },
+    {
+      "specimen_id": "specimen_43"
+    },
+    {
+      "specimen_id": "specimen_44"
+    },
+    {
+      "specimen_id": "specimen_45"
+    },
+    {
+      "specimen_id": "specimen_46"
+    },
+    {
+      "specimen_id": "specimen_47"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "assume_independent_specimens": true,
+  "assume_unlinked": false,
+  "max_k": 3,
+  "min_cluster_size": 4,
+  "missing_policy": "mean",
+  "n_bootstrap": 20,
+  "n_init": 5,
+  "n_pcs": 2,
+  "ploidy": 2,
+  "random_seed": 1729,
+  "scaling": "patterson",
+  "schema_version": 1
+}

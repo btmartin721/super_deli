@@ -4,10 +4,11 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: genomic ingestion.** The package validates dataset
-declarations and loads genomic inputs through SNPio. It does not fit models,
-delimit species, compute uncertainty, or decode images yet. Other modalities
-remain declarations for later ingestion checkpoints.
+**Current checkpoint: genomic PCA/GMM baseline.** The package validates dataset
+declarations, loads genomic inputs through SNPio, and estimates candidate genetic
+clusters with conditional memberships and block-bootstrap stability. These are
+exploratory genetic clusters; species-boundary tests are not implemented. Other
+modalities remain declarations for later ingestion checkpoints.
 
 ## Installation
 
@@ -92,12 +93,33 @@ population metadata, and the precise validation boundaries. The hand-authored
 fixtures specify expected genotype calls; they are not species-delimitation
 benchmarks.
 
+## Estimate candidate genetic clusters
+
+```bash
+python -m pip install -e '.[dev,genomics,baseline]'
+super-deli baseline-genomic examples/baseline/dataset.json \
+  --model-config examples/baseline/model.json \
+  --blocks examples/baseline/blocks.json \
+  --output-dir /tmp/super-deli-baseline-example
+```
+
+The baseline uses diploid biallelic dosages, explicit missingness/scaling policies,
+PCA, and BIC selection of diagonal Gaussian mixtures including K=1. Bootstrap
+replicates refit the complete pipeline using declared independent blocks or an
+explicit unlinked-locus assumption. Conditional memberships, pairwise
+co-assignment, and exact-cluster recovery remain distinct. Failed replicates are
+retained; incomplete bootstrap estimates are withheld and bounded.
+
+See [the baseline method and API](docs/genomic-baseline.md) for assumptions,
+configuration, artifacts, reproducible synthetic truth, and validation limits.
+The synthetic example is a software check, not empirical species validation.
+
 ## Development checks
 
 ```bash
 python -m pytest -q
-ruff check src tests/test_foundation*.py tests/test_genomic*.py
-ruff format --check src tests/test_foundation*.py tests/test_genomic*.py
+ruff check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py examples/baseline/*.py
+ruff format --check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py examples/baseline/*.py
 python -m build
 ```
 
@@ -105,8 +127,9 @@ The test suite includes the unchanged read-only image/TPS manifest utility.
 GitHub Actions tests the foundation on Python 3.11 and 3.12, validates the example,
 builds wheel/source distributions, and checks wheel installation outside the
 source checkout. A separate genomic matrix tests the real SNPio readers with
-and without external popmaps. Integration tests are skipped when the genomic
-extra is absent. Linting covers the new package and its tests.
+and without external popmaps, plus the numerical baseline and full analysis CLI.
+Optional numerical/reader tests are skipped when their extras are absent.
+Linting covers the new package, tests, and synthetic-example generator.
 
 Historical imputation sources remain outside the installed `src/` package.
 Their previous documentation is preserved in [the legacy README](docs/legacy-readme.md).

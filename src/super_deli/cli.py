@@ -12,11 +12,13 @@ from super_deli import __version__
 from super_deli.core.provenance import collect_provenance
 from super_deli.core.schema import ConfigError
 from super_deli.core.validation import validate_dataset
-from super_deli.io.config import load_config, write_json
+from super_deli.io.config import load_config, read_json, write_json
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Validate and ingest Super Deli datasets")
+    parser = argparse.ArgumentParser(
+        description="Validate, ingest, and analyze Super Deli datasets"
+    )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     commands = parser.add_subparsers(dest="command", required=True)
     validate = commands.add_parser("validate", help="Check declarations and local file references")
@@ -33,10 +35,46 @@ def main(argv: list[str] | None = None) -> int:
     ingest.add_argument(
         "--output-dir", type=Path, required=True, help="New directory for staged data and outputs"
     )
+    baseline = commands.add_parser(
+        "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
+    )
+    baseline.add_argument("config", type=Path, help="Versioned dataset JSON configuration")
+    baseline.add_argument(
+        "--model-config", type=Path, required=True, help="Baseline assumptions and settings JSON"
+    )
+    baseline.add_argument(
+        "--blocks", type=Path, help="One block ID per original source locus in JSON"
+    )
+    baseline.add_argument("--modality", help="Select exactly one declared genomic modality")
+    baseline.add_argument(
+        "--output-dir", type=Path, required=True, help="New analysis output directory"
+    )
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
         config = load_config(source)
+        if args.command == "baseline-genomic":
+            from super_deli.models.config import BaselineConfig
+
+            try:
+                from super_deli.workflows.genomic_baseline import parse_blocks, run_genomic_baseline
+            except ImportError as exc:
+                raise RuntimeError(
+                    "The genomic baseline requires: pip install 'super-deli[genomics,baseline]'"
+                ) from exc
+            model = BaselineConfig.from_dict(read_json(args.model_config))
+            blocks = parse_blocks(read_json(args.blocks)) if args.blocks is not None else None
+            with redirect_stdout(sys.stderr):
+                summary = run_genomic_baseline(
+                    config,
+                    model_config=model,
+                    base_dir=source.parent,
+                    output_dir=args.output_dir,
+                    block_ids=blocks,
+                    modality_name=args.modality,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "ingest-genomic":
             from super_deli.io.genomic import ingest_genomic
 

@@ -23,8 +23,8 @@ def _invalid_constant(value: str):
     raise ConfigError(f"nonfinite JSON constant: {value}")
 
 
-def load_config(path: str | Path) -> DatasetConfig:
-    """Read JSON only. Resolve input paths against this file's parent when validating."""
+def read_json(path: str | Path) -> Any:
+    """Read strict JSON, rejecting duplicate keys and nonfinite constants."""
     try:
         value = json.loads(
             Path(path).read_text(encoding="utf-8"),
@@ -33,7 +33,12 @@ def load_config(path: str | Path) -> DatasetConfig:
         )
     except (json.JSONDecodeError, UnicodeError, RecursionError) as exc:
         raise ConfigError(f"invalid JSON configuration: {exc}") from exc
-    return config_from_dict(value)
+    return value
+
+
+def load_config(path: str | Path) -> DatasetConfig:
+    """Read JSON only. Resolve input paths against this file's parent when validating."""
+    return config_from_dict(read_json(path))
 
 
 def write_json(value: Any, path: str | Path) -> None:
