@@ -5,7 +5,8 @@ scenarios, three independent datasets per scenario, three view-subset arms,
 64 generating targets and ten paired bootstrap draws per fit. All 72 point
 fits and 720 inner refits completed; no numerical failures were recorded.
 
-The larger study configuration has not been run. These results do not establish
+At this smoke checkpoint, the larger study had not been run; its subsequent
+[completed analysis is available separately](integrative-study.md). These smoke results do not establish
 empirical species accuracy or support calibration. Zero estimated MCSE from
 three identical outcomes is not evidence of zero simulation uncertainty. The
 worst-case Bernoulli rate MCSE with three datasets is about 0.289.

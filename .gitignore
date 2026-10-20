@@ -20,6 +20,8 @@ __pycache__/*
 !examples/shape/*.csv
 !examples/shape/clustering/*.csv
 !examples/integrative/*.csv
+!examples/benchmarking/study-results/*.csv
+!docs/figures/integrative-study/*.pdf
 *_output/
 *.zip
 *_logfile.txt

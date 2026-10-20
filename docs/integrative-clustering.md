@@ -1,6 +1,6 @@
 # Integrative clustering of linked biological units
 
-The next checkpoint adds a separate [simulation benchmark](integrative-benchmarking.md)
+The separate [simulation benchmark](integrative-benchmarking.md)
 around this unchanged estimator. It evaluates generating-partition recovery and
 stability error without treating simulation labels as empirical species truth.
 
