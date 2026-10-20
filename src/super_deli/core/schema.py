@@ -11,6 +11,7 @@ from super_deli.core.data import (
     DatasetConfig,
     Feature,
     GenomicReaderOptions,
+    ImageReaderOptions,
     Modality,
     MorphometricReaderOptions,
     Observation,
@@ -116,6 +117,21 @@ def _morphometric_options(value: Any, location: str) -> MorphometricReaderOption
     return result
 
 
+def _image_options(value: Any, location: str) -> ImageReaderOptions | None:
+    if value is None:
+        return None
+    obj = _Object(value, location)
+    result = ImageReaderOptions(
+        observation_id_column=obj.get("observation_id_column", _string, default="observation_id"),
+        pdf_dpi=obj.get("pdf_dpi", _integer, default=150),
+        max_pixels=obj.get("max_pixels", _integer, default=40000000),
+        max_source_bytes=obj.get("max_source_bytes", _integer, default=268435456),
+        heif_hdr_policy=obj.get("heif_hdr_policy", _string, default="reject"),
+    )
+    obj.finish()
+    return result
+
+
 def _array(value: Any, location: str, parser: Callable) -> tuple:
     if not isinstance(value, list):
         raise ConfigError(f"{location}: expected an array")
@@ -196,6 +212,7 @@ def _modality(value: Any, location: str) -> Modality:
         reader_options=obj.get("reader_options", _reader_options, default=None),
         tabular_options=obj.get("tabular_options", _tabular_options, default=None),
         morphometric_options=obj.get("morphometric_options", _morphometric_options, default=None),
+        image_options=obj.get("image_options", _image_options, default=None),
     )
     obj.finish()
     return result

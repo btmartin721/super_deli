@@ -60,6 +60,19 @@ def main(argv: list[str] | None = None) -> int:
         required=True,
         help="New directory for staged sources and landmarks",
     )
+    images = commands.add_parser(
+        "ingest-images", help="Decode PDF, PNG, JPEG and HEIC/HEIF image manifests"
+    )
+    images.add_argument("config", type=Path, help="Versioned dataset JSON configuration")
+    images.add_argument(
+        "--modality", action="append", help="Select an image manifest by name; repeat for multiple"
+    )
+    images.add_argument(
+        "--output-dir",
+        type=Path,
+        required=True,
+        help="New directory for staged sources and PNG derivatives",
+    )
     baseline = commands.add_parser(
         "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
     )
@@ -78,6 +91,17 @@ def main(argv: list[str] | None = None) -> int:
     try:
         source = args.config.absolute()
         config = load_config(source)
+        if args.command == "ingest-images":
+            from super_deli.io.images import ingest_images
+
+            loaded_images = ingest_images(
+                config,
+                base_dir=source.parent,
+                output_dir=args.output_dir,
+                modality_names=args.modality,
+            )
+            print(json.dumps(loaded_images.summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "ingest-morphometric":
             from super_deli.io.morphometric import ingest_morphometric
 

@@ -21,9 +21,9 @@ jobs:
       - name: Install foundation and development tools
         run: python -m pip install -e '.[dev]'
       - name: Lint new package and tests
-        run: ruff check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py examples/baseline/*.py
+        run: ruff check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py tests/test_image_ingestion*.py examples/baseline/*.py examples/images/*.py
       - name: Check formatting
-        run: ruff format --check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py examples/baseline/*.py
+        run: ruff format --check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py tests/test_image_ingestion*.py examples/baseline/*.py examples/images/*.py
       - name: Test foundation and existing image/TPS manifest
         run: python -m pytest -q
       - name: Validate illustrative configuration
@@ -56,9 +56,9 @@ jobs:
         run: |
           echo "MPLCONFIGDIR=$RUNNER_TEMP/super-deli-matplotlib" >> "$GITHUB_ENV"
           echo "NUMBA_CACHE_DIR=$RUNNER_TEMP/super-deli-numba" >> "$GITHUB_ENV"
-      - name: Install packaged genomic extra and test tools
-        run: python -m pip install '.[dev,genomics,baseline]'
-      - name: Test SNPio readers, PCA/GMM stability, and foundation
+      - name: Install packaged scientific and image extras
+        run: python -m pip install '.[dev,genomics,baseline,images]'
+      - name: Test SNPio readers, PCA/GMM stability, images, and foundation
         run: python -m pytest -q
       - name: Check installed ingestion CLI outside checkout
         shell: bash
@@ -66,3 +66,4 @@ jobs:
           cd "$RUNNER_TEMP"
           super-deli ingest-genomic "$GITHUB_WORKSPACE/examples/genomic/dataset.json" --output-dir "$RUNNER_TEMP/genomic-ingestion"
           super-deli baseline-genomic "$GITHUB_WORKSPACE/examples/baseline/dataset.json" --model-config "$GITHUB_WORKSPACE/examples/baseline/model.json" --blocks "$GITHUB_WORKSPACE/examples/baseline/blocks.json" --output-dir "$RUNNER_TEMP/genomic-baseline"
+          super-deli ingest-images "$GITHUB_WORKSPACE/examples/images/dataset.json" --output-dir "$RUNNER_TEMP/image-ingestion"

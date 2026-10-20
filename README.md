@@ -4,10 +4,10 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: TPS and landmark-coordinate ingestion.** The package loads
-2D/3D fixed landmarks, typed morphology/ecology measurements, and SNPio genomic
-inputs with explicit biological links and missingness. The genomic PCA/GMM
-baseline reports candidate clusters and block stability. Image decoding,
+**Current checkpoint: image ingestion.** The package loads PDF, PNG, JPEG and
+HEIC/HEIF images, 2D/3D fixed landmarks, typed morphology/ecology measurements,
+and SNPio genomic inputs with explicit biological links. The genomic PCA/GMM
+baseline reports candidate clusters and block stability. Landmark detection,
 morphometric models and formal species-boundary tests remain later work.
 
 ## Installation
@@ -142,30 +142,47 @@ The base installation accepts fixed-landmark TPS (`LM=`/`LM3=`) and long-form
 coordinate CSV. Declare dimensions, landmark order, biological observation links
 and missing-value rules. Readers preserve coordinates, partial missingness,
 repeat observations and scale/image metadata. Scale factors are recorded without
-rescaling. Images are metadata references in this checkpoint.
+rescaling. This coordinate adapter retains images as metadata references.
 
 See [morphometric ingestion](docs/morphometric-ingestion.md) for the Python API,
 supported format subset, coordinate correspondence, artifacts and limitations.
+
+## Load images
+
+```bash
+python -m pip install -e '.[dev,images]'
+super-deli ingest-images examples/images/dataset.json \
+  --output-dir /tmp/super-deli-image-example
+```
+
+Image manifests link each selected page/frame to a declared observation and
+biological unit. The reader keeps verified source copies, writes RGB/RGBA PNG
+display derivatives, and records orientation, resolution, bit depth and hashes.
+Multipage/multiframe inputs require explicit selection. Pixel/file-size budgets
+and explicit HEIF bit-depth policies prevent silent resizing or quantization.
+
+See [image ingestion](docs/image-ingestion.md) for the manifest/options contract,
+Python API, source preservation, color/coordinate limits and synthetic codec truth.
 
 ## Development checks
 
 ```bash
 python -m pytest -q
-ruff check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py examples/baseline/*.py
-ruff format --check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py examples/baseline/*.py
+ruff check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py tests/test_image_ingestion*.py examples/baseline/*.py examples/images/*.py
+ruff format --check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py tests/test_image_ingestion*.py examples/baseline/*.py examples/images/*.py
 python -m build
 ```
 
-The test suite includes the unchanged read-only image/TPS manifest utility.
+The test suite includes the read-only image/TPS manifest utility.
 GitHub Actions tests the foundation on Python 3.11 and 3.12, validates the example,
 builds wheel/source distributions, and checks wheel installation outside the
 source checkout, including tabular and coordinate ingestion without scientific dependencies.
 A separate genomic matrix tests the real SNPio readers with
-and without external popmaps, plus the numerical baseline and full analysis CLI.
-Optional numerical/reader tests are skipped when their extras are absent.
+and without external popmaps, the numerical baseline, real image codecs and
+installed ingestion CLIs. Optional tests are skipped when their extras are absent.
 Linting covers the new package, tests, and synthetic-example generator.
 
 Historical imputation sources remain outside the installed `src/` package.
 Their previous documentation is preserved in [the legacy README](docs/legacy-readme.md).
-The existing `image_tps_manifest.py` source utility and manifest schema remain
-unchanged. Image decoding and image-manifest ingestion remain later work.
+The standalone `image_tps_manifest.py` keeps its existing manifest schema and
+metadata checks, with PDF/HEIC/HEIF extensions added to discovery.

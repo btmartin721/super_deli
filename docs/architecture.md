@@ -8,6 +8,8 @@ and block-bootstrap stability; see [genomic baseline](genomic-baseline.md).
 The fourth adds typed morphology/ecology tables; see [tabular ingestion](tabular-ingestion.md).
 The fifth adds fixed-landmark TPS and coordinate CSV readers;
 see [morphometric ingestion](morphometric-ingestion.md).
+The sixth adds image manifests and PDF/PNG/JPEG/HEIC/HEIF display decoding;
+see [image ingestion](image-ingestion.md).
 
 ## Boundaries
 
@@ -20,6 +22,7 @@ see [morphometric ingestion](morphometric-ingestion.md).
 | `core.results` | Assignment and uncertainty reporting contracts for future estimators |
 | `core.tabular` | Typed table records retaining feature schemas, biological levels and missingness |
 | `core.morphometrics` | Fixed-landmark records, correspondence, missing masks and calibration metadata |
+| `core.images` | Linked image records and derivative/source references |
 | `io.config` | Strict JSON reading and non-overwriting artifact writing |
 | `io.genomic` | Optional SNPio readers, staged inputs, sample linkage, and ingestion artifacts |
 | `io.genomic_encoding` | Conservative diploid SNPio encoding and source-locus indexing |
@@ -28,6 +31,7 @@ see [morphometric ingestion](morphometric-ingestion.md).
 | `io.delimited`, `io.numeric` | Shared CSV/TSV structure and finite-decimal parsing |
 | `io.tps`, `io.landmark_csv` | Fixed-landmark syntax and named coordinate rows |
 | `io.morphometric_base`, `io.morphometric` | Shared coordinate/link rules and ingestion artifacts |
+| `io.image_manifest`, `io.image_decode`, `io.images` | Image identity/selectors, optional codecs, staged sources and PNG artifacts |
 | `models.config` | Strict, dependency-free baseline settings and assumptions |
 | `models.pca_gmm` | Numerical preprocessing, PCA/GMM search, and block stability |
 | `workflows.genomic_baseline` | Connect adapters/models to reproducible result artifacts |
@@ -37,7 +41,8 @@ The core does not import scientific libraries or perform modality I/O. Readers
 belong in `io`, numerical estimators in `models`, and artifact orchestration in
 `workflows`. Root imports and dataset validation do not load optional numerical
 libraries. The `baseline` extra supplies numerical dependencies; the `genomics`
-extra supplies SNPio. Empty plugin registries remain unnecessary.
+extra supplies SNPio; `images` supplies Pillow, pillow-heif and PDFium. Empty
+plugin registries remain unnecessary.
 
 The distribution discovers only packages under `src/`. Historical imputation
 code remains in the repository but is excluded from the installed package. The
@@ -84,7 +89,8 @@ The `validate` command checks declarations and references only. The separate
 `ingest-genomic` command loads genomic contents through SNPio into `GenotypeData`,
 with `popmapfile=None` when absent. `ingest-tabular` checks and loads morphology
 and ecological CSV/TSV contents. `ingest-morphometric` reads fixed landmarks from
-TPS/coordinate CSV; image-manifest contents remain unchecked.
+TPS/coordinate CSV. `ingest-images` checks image-manifest rows and decodes
+selected pages/frames through the optional image libraries.
 The optional `genomics` extra enables this dependency boundary on Python 3.11/3.12.
 Genomic modalities may declare `reader_options` for STRUCTURE layout and
 STRUCTURE/GENEPOP allele encodings; see [genomic ingestion](genomic-ingestion.md).
@@ -104,6 +110,9 @@ The separate optional `morphometric_options` declares 2D/3D dimensions, ordered
 landmark IDs, coordinate/scale units, TPS identity and missingness. These options
 are required when ingesting coordinates. They do not change existing hashes when
 omitted, and apply only to `tps`/`landmarks_csv` sources.
+Optional `image_options` declares image IDs, nominal PDF DPI, pixel/source-byte
+limits and HEIF bit-depth policy, only for `image_manifest`. Its omission likewise
+preserves existing configuration hashes.
 
 ## Linking partial and unpaired data
 
@@ -125,19 +134,20 @@ future model can analyze it.
 
 ## Images and existing TPS utility
 
-`image_tps_manifest.py` and its existing tests remain unchanged. The source
-distribution retains the script; the installed foundation package does not expose
-it as a new reader. Its approved CSV columns remain:
+`image_tps_manifest.py` retains its existing metadata checks and tests, with
+PDF/HEIC/HEIF extensions added to discovery. The source distribution retains the
+script; the installed package uses separate ingestion modules. Its CSV columns remain:
 
 `image_path`, `specimen_id`, `group`, `split`, `tps_path`, `landmark_count`,
 `scale_value`, `scale_unit`, `check_status`, `check_details`.
 
-An `image_manifest` source refers to that artifact. The new validator checks the
-manifest file reference, not its rows or referenced images. Later ingestion must
-make group/population associations explicit and honor the existing utility's
-identifier checks. PDF page selection, PNG/JPEG and HEIC/HEIF decoding, orientation,
-landmark localization, and coordinate transforms require later implementation and
-validation. An image of a marker is not assumed to contain a TPS coordinate record.
+The validator checks only manifest file references. The separate image adapter
+checks row identity, explicit biological links and selected PDF pages/raster
+frames, preserves original bytes and writes display-oriented PNG derivatives.
+The existing schema is accepted with explicit `observation_id_column="specimen_id"`;
+separate observation IDs support repeated views. Group/split/TPS/scale fields stay
+metadata. Landmark localization and coordinate transforms require later
+implementation. An image of a marker does not contain a TPS coordinate record.
 
 ## Provenance and output safety
 
@@ -189,9 +199,10 @@ reference labels need independent evidence and documented uncertainty.
 2. **Completed:** SNPio ingestion and supported-format fixtures with optional popmaps.
 3. **Completed:** Genomic PCA/GMM baseline, block stability, and bounded synthetic checks.
 4. **Completed:** Typed tabular morphology/ecology ingestion with value/link fixtures.
-5. **Current:** TPS/coordinate CSV ingestion with coordinate/identity truth fixtures.
-6. Image decoding and landmark localization in separate batches.
-7. Additional models and integrative inference after baseline benchmarks.
+5. **Completed:** TPS/coordinate CSV ingestion with coordinate/identity truth fixtures.
+6. **Current:** Image decoding with source preservation and synthetic display truth.
+7. Landmark localization and shape models in separate batches.
+8. Additional models and integrative inference after baseline benchmarks.
 
 The genomic baseline reports genetic clustering and locus-block sensitivity.
 It does not supply taxonomic validation, formal species-boundary significance,

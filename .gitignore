@@ -12,6 +12,8 @@ __pycache__/*
 *.csv
 !examples/tabular/*.csv
 !examples/morphometric/*.csv
+!examples/images/*.csv
+!examples/images/*.pdf
 *_output/
 *.zip
 *_logfile.txt

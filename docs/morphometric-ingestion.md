@@ -2,8 +2,9 @@
 
 This checkpoint reads fixed landmarks from TPS or long-form coordinate CSV into
 typed, linked observations. It uses the Python standard library on Python
-3.11/3.12. Image decoding, landmark detection, semilandmark sliding, geometric
-transformations and new delimitation models are later work.
+3.11/3.12. The separate [image adapter](image-ingestion.md) decodes image manifests.
+Landmark detection, semilandmark sliding, geometric transformations and new
+delimitation models are later work.
 
 ```bash
 python -m pip install -e '.[dev]'
@@ -184,9 +185,9 @@ Inputs and existing outputs are preserved. Failures after creation leave
 `failure.json` and staged/partial diagnostics without a completion summary.
 CLI success returns 0; errors return 2. Source rows are parsed sequentially,
 but records and JSON output are held in memory; out-of-core ingestion is not
-implemented. The existing standalone `image_tps_manifest.py` and its agreed
-manifest columns remain unchanged; its single-block metadata parser is separate
-from these coordinate readers.
+implemented. The standalone `image_tps_manifest.py` retains its agreed manifest
+columns and single-block metadata parser, separate from these coordinate readers.
+Its image extension discovery now also includes PDF/HEIC/HEIF.
 
 Stored fixtures provide hand-authored coordinate/identity truth for both formats,
 including 2D/3D records, repeats and missingness. They do not provide empirical
