@@ -236,9 +236,10 @@ reference labels need independent evidence and documented uncertainty.
 9. **Completed:** Shape PCA/GMM candidate groups and whole-unit bootstrap stability.
 10. **Completed:** Numeric morphology/ecology PCA/GMM with preprocessing and unit stability.
 11. **Completed:** Common-unit weighted score integration, joint PCA/GMM and paired unit stability.
-12. **Current:** Truth-separated simulation benchmarks with dataset-level Monte Carlo uncertainty.
-13. Anatomical landmark learning and additional models in separate batches.
-14. Further integration models and empirical calibration after baseline benchmarks.
+12. **Completed:** Truth-separated simulation benchmarks with dataset-level Monte Carlo uncertainty.
+13. **Current:** Larger prespecified benchmark, raw-artifact audit and results analysis.
+14. Anatomical landmark learning and additional models in separate batches.
+15. Further integration models and empirical calibration after baseline benchmarks.
 
 The genomic baseline reports genetic clustering and locus-block sensitivity.
 It does not supply taxonomic validation, formal species-boundary significance,

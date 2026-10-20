@@ -1,0 +1,107 @@
+{
+  "analysis_module_sha256": "8d0d35198dfc79cc69e1a14da0d8568a9763dbc4e337c515f448e61851186e22",
+  "artifacts": {
+    "docs/figures/integrative-study/integrative-study.pdf": "a8a20b4356a57841673d47d4f0af7433dd89b9781583026114d7d8608cbcfc7e",
+    "docs/figures/integrative-study/integrative-study.png": "4e971b63af1d734a4a61e4f7063e996790533d2f1bd9f7b70a33f7deff9977c8",
+    "docs/figures/integrative-study/integrative-study.svg": "066bf35d1886f65d4ada5949ef7ca5738dca0e2652b5244834bbf178395b1cfb",
+    "examples/benchmarking/study-results/datasets.csv": "c235a2fc7ece2706f1724e56c0ec01b209a1d4044a3a279ec958e56b474ceb23",
+    "examples/benchmarking/study-results/metrics.csv": "7a2ebdc1b2596ac8066739a8f478f31399b0fa32803a9d319de8cc41c6be4ba0",
+    "examples/benchmarking/study-results/paired.csv": "a0920b7e5263db6c0baf04607f377188c62578174be8e124ca35ad2272fbdef1",
+    "examples/benchmarking/study-results/rates.csv": "85822f5b90b1b7a853d0e3ddd1d0a28a2154e04c0b6fb1bdda77ff449cb6639d",
+    "examples/benchmarking/study-results/study.json": "aa3e982b0f1c4ef744543b3a53b1e3f9e2e1efd8f597cdbb818cf2c38a7a9718",
+    "examples/benchmarking/study-results/support-bins.csv": "e76de19ba7eeb8f105dc3203d3c142d3da7a507568b5095eb7cf0eae7901db2f"
+  },
+  "bootstrap": {
+    "bootstrap": {
+      "failed": 0,
+      "requested": 239800,
+      "successful": 239800
+    },
+    "draws_not_logged_after_failed_points": 200,
+    "expected_bootstrap_draws": 240000,
+    "expected_point_fits": 2400,
+    "source_ledgers": [
+      {
+        "scenario": "null_matched",
+        "sha256": "f446b86626da4055586ffec44ec27e4c765a01959004d8cbdeff6c6cb4f137c1"
+      },
+      {
+        "scenario": "strong_matched",
+        "sha256": "b310f5812fe479566a7a94089154e552248ef483de8c3be1194cbfef9483f1b3"
+      },
+      {
+        "scenario": "weak_matched",
+        "sha256": "cfab42ec8eae4978d591c1d746b8c637c12eb2a4b8f2adfed638f0ffd8e24f89"
+      },
+      {
+        "scenario": "complementary_matched",
+        "sha256": "af4d88f8c8488e5b19a90a580c1883ddfbb4d615bf83d2363f794763f05b6909"
+      },
+      {
+        "scenario": "conflicting_matched",
+        "sha256": "778321cb9d21b998d9af1e0c2697d382111c03436998d2f36c8f6628ffd97f44"
+      },
+      {
+        "scenario": "missing_cells",
+        "sha256": "ae9bc0f9ac90150540251a7a53356d7ed2e00d8b93bf5231edebb6dbd5736d9a"
+      },
+      {
+        "scenario": "missing_views",
+        "sha256": "6381f3ca3ea3d0906795c978e39907ce86a1d35412124b886b98899400750db4"
+      },
+      {
+        "scenario": "unequal_grouped",
+        "sha256": "461d00f908ed0100c7c08c9ed0d08cf1d33a7d9fd312632c991cc33d37bfaada"
+      }
+    ],
+    "unscored_logged_draws_after_failed_points": 0
+  },
+  "configuration_sha256": "e90cc4d9118e93f77f3d27ce68daea35a1e0341c4ce7eab06d44391249891d01",
+  "execution_script_sha256": "eebd96d90cf864a6b1d4eb5f81a25c1279fbef3ccbacd760aff01bcfdaa50304",
+  "frozen_wheel_sha256": "e3ac430ebaa579722a7a398b3aa65ebedb24be905b919cf22a8bf1c04ad5a9d2",
+  "independent_simulated_datasets": 800,
+  "numerical_threads_per_fit": 1,
+  "plot_script_sha256": "53bb728586064a9d9477a22e8b5da9a002b5b25dcf32b7789772e03a14a6b89f",
+  "point_fit_attempts": 2400,
+  "point_fit_failures": [
+    {
+      "arm": "full",
+      "error": "A unit has no observed values at retained features",
+      "error_type": "ValueError",
+      "repetition": 48,
+      "scenario": "missing_cells"
+    },
+    {
+      "arm": "genome_environment",
+      "error": "A unit has no observed values at retained features",
+      "error_type": "ValueError",
+      "repetition": 48,
+      "scenario": "missing_cells"
+    }
+  ],
+  "point_fits_completed": 2398,
+  "python": "3.12.10",
+  "raw_artifacts": "Preserved locally outside Git; not a deposited public raw-data release",
+  "raw_audit": {
+    "datasets_sha256": "c235a2fc7ece2706f1724e56c0ec01b209a1d4044a3a279ec958e56b474ceb23",
+    "files_manifest_sha256": "adeb69a5523ad91137f9830748d2cea037939735a89559c9061ec587f02277a3",
+    "status": "complete",
+    "summary_sha256": "b2cdf312f8ab2d385ff1a39c23996dbea848de00182ded1939bf99f35ce880fc"
+  },
+  "raw_bytes_hashed": 4215427290,
+  "raw_files_hashed": 103226,
+  "reporting_checkpoint_version": "0.13.0.dev0",
+  "scenario_workers": 4,
+  "schema_version": 1,
+  "scope": "Constructed generating partitions; no species-support calibration",
+  "source_commit": "6483dfdbd4bb8a1443789045cb94ab2a2aad81bf",
+  "source_tree": "2fb287b34a1b82c1f33227e3cd27cdc90e524966",
+  "status": "complete",
+  "study_software": {
+    "numpy": "2.2.6",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.3",
+    "snpio": "1.7.7",
+    "super-deli": "0.12.0.dev0"
+  }
+}

@@ -10,3 +10,6 @@ recursive-include examples/detection *.json *.csv *.png *.jpg *.pdf *.heic *.hei
 recursive-include examples/shape *.json *.csv *.py *.md
 recursive-include examples/integrative *.json *.csv *.phy *.py
 recursive-include examples/benchmarking *.json
+recursive-include examples/benchmarking/study-results *.csv
+recursive-include scripts *.py
+recursive-include docs/figures/integrative-study *.pdf *.svg *.png
