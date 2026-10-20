@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "assume_iid_gaussian_scores": true,
+  "n_simulations": 199,
+  "alpha": 0.05,
+  "random_seed": 20261021
+}

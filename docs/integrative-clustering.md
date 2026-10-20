@@ -176,7 +176,10 @@ allometry adjustment is supplied.
 
 Integrated components remain candidate structure. Conditional membership,
 bootstrap frequency and species significance are separate evidence types.
-There is no species-boundary null test, calibrated species probability or
+The optional [Gaussian score test](gaussian-score-calibration.md) is a separate,
+approximate global density diagnostic on frozen scores. It does not refit this
+pipeline or alter these stability outputs. There is no species-boundary null test,
+calibrated species probability or
 confidence interval in this checkpoint. Finite bootstrap counts also have
 Monte Carlo error; the ten-draw examples are bounded software checks.
 
