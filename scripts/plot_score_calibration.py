@@ -48,7 +48,7 @@ def plot(directory, *, output_dir):
         left.text(
             min(mean + 0.06, 0.84),
             i + 0.2,
-            f"{rate['events']}/{rate['n_available']} available",
+            f"{rate['events']}/{rate['n_available']} rejected",
             fontsize=9,
             color=color,
         )

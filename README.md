@@ -27,6 +27,9 @@ configured GMM search in frozen joint scores, using an approximate parametric
 bootstrap. It preserves the original clustering run and makes no species-boundary
 or cluster-specific significance claim. See the [method and validation protocol](docs/gaussian-score-calibration.md).
 
+The [completed calibration study](docs/gaussian-score-calibration-results.md)
+reports 400 independent score datasets with explicit null, power and stress interpretations.
+
 ## Installation
 
 Use Python 3.11 or 3.12. From this repository:

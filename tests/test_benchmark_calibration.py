@@ -86,3 +86,33 @@ def test_auditor_catches_draw_tampering_even_with_updated_hashes(completed_study
     (shard / "ledger_0000.json").write_text(json.dumps(summary["datasets"]))
     with pytest.raises(ValueError, match="draw or seed"):
         audit_score_study(completed_study, output_dir=tmp_path / "invalid")
+
+
+def test_auditor_preserves_failed_point_denominators(tmp_path, monkeypatch):
+    from super_deli.benchmarking.calibration_analysis import audit_score_study
+    from super_deli.models import gaussian_calibration
+
+    original = gaussian_calibration.calibrate_gaussian_scores
+    calls = []
+
+    def fail_first(*args, **kwargs):
+        calls.append(None)
+        if len(calls) == 1:
+            raise ValueError("injected point failure")
+        return original(*args, **kwargs)
+
+    monkeypatch.setattr(gaussian_calibration, "calibrate_gaussian_scores", fail_first)
+    options = read_json(STUDY)
+    options["n_repetitions"] = 1
+    options["calibration"]["n_simulations"] = 2
+    options["search"]["n_init"] = 1
+    root = tmp_path / "shards"
+    root.mkdir()
+    for scenario in SCENARIOS:
+        run_score_study(options, output_dir=root / scenario, scenario=scenario)
+    result = audit_score_study(root, output_dir=tmp_path / "audit")
+    assert result["point_failures"] == 1 and result["datasets"] == 4
+    assert result["planned_null_draws"] == 8
+    assert result["attempted_null_draws"] == 6 and result["unattempted_null_draws"] == 2
+    assert result["rates"][0]["n_missing"] == 1
+    assert result["rates"][0]["wilson_95"] is None
