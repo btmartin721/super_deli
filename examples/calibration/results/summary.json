@@ -1,0 +1,110 @@
+{
+  "attempted_null_draws": 79600,
+  "audit_scope": "Reconstructed generators, parameters, seeds, draws, selection and p-values; no refits",
+  "datasets": 400,
+  "failed_null_draws": 0,
+  "planned_null_draws": 79600,
+  "point_failures": 0,
+  "rates": [
+    {
+      "events": 1,
+      "interpretation": "Type-I error under the specified Gaussian generator",
+      "max": 1.0,
+      "mcse": 0.009999999999999998,
+      "mean": 0.01,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 100,
+      "n_missing": 0,
+      "scenario": "spherical_gaussian",
+      "sd": 0.09999999999999999,
+      "wilson_95": [
+        0.001767432064140647,
+        0.05448619617870529
+      ]
+    },
+    {
+      "events": 2,
+      "interpretation": "Type-I error under the specified Gaussian generator",
+      "max": 1.0,
+      "mcse": 0.014070529413628966,
+      "mean": 0.02,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 100,
+      "n_missing": 0,
+      "scenario": "correlated_gaussian",
+      "sd": 0.14070529413628965,
+      "wilson_95": [
+        0.00550196755016235,
+        0.07001179072854385
+      ]
+    },
+    {
+      "events": 100,
+      "interpretation": "Power for the specified mixture",
+      "max": 1.0,
+      "mcse": 0.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0,
+      "n_available": 100,
+      "n_missing": 0,
+      "scenario": "separated_mixture",
+      "sd": 0.0,
+      "wilson_95": [
+        0.9630065017930143,
+        1.0
+      ]
+    },
+    {
+      "events": 27,
+      "interpretation": "Gaussian misspecification sensitivity; NOT type-I error for species/clustering",
+      "max": 1.0,
+      "mcse": 0.04461960433384737,
+      "mean": 0.27,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 100,
+      "n_missing": 0,
+      "scenario": "heavy_tailed",
+      "sd": 0.4461960433384737,
+      "wilson_95": [
+        0.1926958414957634,
+        0.36432116767944994
+      ]
+    }
+  ],
+  "raw_files": 1612,
+  "schema_version": 1,
+  "status": "complete",
+  "study": {
+    "calibration": {
+      "alpha": 0.05,
+      "assume_iid_gaussian_scores": true,
+      "n_simulations": 199,
+      "random_seed": 0,
+      "schema_version": 1
+    },
+    "n_repetitions": 100,
+    "n_units": 64,
+    "random_seed": 20261021,
+    "schema_version": 1,
+    "search": {
+      "assume_independent_units": true,
+      "max_iter": 500,
+      "max_k": 4,
+      "min_cluster_size": 5,
+      "n_bootstrap": 0,
+      "n_init": 10,
+      "n_pcs": 2,
+      "n_threads": 1,
+      "reg_covar": 1e-06,
+      "scaling": "center",
+      "schema_version": 1,
+      "tol": 0.001
+    }
+  },
+  "successful_null_draws": 79600,
+  "unattempted_null_draws": 0
+}

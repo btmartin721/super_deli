@@ -141,7 +141,8 @@ The [study declaration](../examples/calibration/study.json) uses 100 independent
 datasets for each of four scenarios, N=64, d=2, B=199, K=1..4, minimum component
 size 5, 10 EM starts, regularization 1e-6, and alpha=0.05. Data and calibration
 streams derive separately from master seed 20261021 and stable scenario/replicate
-keys. These seeds are independent of the earlier integrative campaign.
+keys. The nested calibration seed is replaced by each derived per-dataset seed.
+These seeds are independent of the earlier integrative campaign.
 
 | Scenario | Generator | Interpretation of rejection rate |
 | --- | --- | --- |
@@ -179,3 +180,10 @@ independent datasets equally. Pointwise, unadjusted Wilson 95% intervals quantif
 Monte Carlo uncertainty of rejection rates, not simultaneous validation claims.
 Incomplete p-values have explicit availability denominators. Empirical rates
 with 100 datasets are imprecise and cannot certify universal error control.
+
+The auditor checks selection bookkeeping and statistics from saved candidate BICs;
+it does not re-estimate candidate likelihoods. Incomplete tests make event rates
+conditional on availability, which can bias error-rate comparisons.
+
+See the [completed validation results](gaussian-score-calibration-results.md) for
+audited rates, figures, provenance and interpretation limits.
