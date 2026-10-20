@@ -1,0 +1,128 @@
+{
+  "scope": "provisional fixed-order checks; anatomical homology and sliding protocol unverified",
+  "runs": [
+    {
+      "modality": "train_landmark_configuration_expert",
+      "mode": "fit",
+      "n_observations": 1084,
+      "dimensions": 2,
+      "landmarks": 18,
+      "rank": 32,
+      "max_angle_degrees": 10.733769073971022,
+      "max_radial_shrinkage": 0.005839099092366573,
+      "reference_unit_overlap": 0,
+      "training_variance_ratios": [
+        0.23106397158180042,
+        0.14365491312636652,
+        0.10118891576118112
+      ]
+    },
+    {
+      "modality": "val_landmark_configuration_expert",
+      "mode": "project",
+      "n_observations": 248,
+      "dimensions": 2,
+      "landmarks": 18,
+      "rank": 32,
+      "max_angle_degrees": 3.5499346839447328,
+      "max_radial_shrinkage": 0.0006396771696368653,
+      "reference_unit_overlap": 0,
+      "training_variance_ratios": [
+        0.23106397158180042,
+        0.14365491312636652,
+        0.10118891576118112
+      ]
+    },
+    {
+      "modality": "test_landmark_configuration_expert",
+      "mode": "project",
+      "n_observations": 720,
+      "dimensions": 2,
+      "landmarks": 18,
+      "rank": 32,
+      "max_angle_degrees": 4.0278606787887306,
+      "max_radial_shrinkage": 0.0008234648201981276,
+      "reference_unit_overlap": 0,
+      "training_variance_ratios": [
+        0.23106397158180042,
+        0.14365491312636652,
+        0.10118891576118112
+      ]
+    },
+    {
+      "modality": "test_landmark_configuration_novice",
+      "mode": "project",
+      "n_observations": 720,
+      "dimensions": 2,
+      "landmarks": 18,
+      "rank": 32,
+      "max_angle_degrees": 4.058217604392664,
+      "max_radial_shrinkage": 0.0008359209448237648,
+      "reference_unit_overlap": 0,
+      "training_variance_ratios": [
+        0.23106397158180042,
+        0.14365491312636652,
+        0.10118891576118112
+      ]
+    },
+    {
+      "modality": "test_landmark_configuration_machine",
+      "mode": "project",
+      "n_observations": 720,
+      "dimensions": 2,
+      "landmarks": 18,
+      "rank": 32,
+      "max_angle_degrees": 3.9623483471691796,
+      "max_radial_shrinkage": 0.0007969020416827011,
+      "reference_unit_overlap": 0,
+      "training_variance_ratios": [
+        0.23106397158180042,
+        0.14365491312636652,
+        0.10118891576118112
+      ]
+    }
+  ],
+  "source_directory_hint": "res_5184x3456",
+  "inputs": [
+    {
+      "file": "test_landmark_configuration_expert.TPS",
+      "landmark_count": 18,
+      "record_count": 720,
+      "sha256": "7d98698854b5b49ba9dbc4feb2fb19067036825946b0b039e45ea7320a6f92ec",
+      "size_bytes": 219547
+    },
+    {
+      "file": "test_landmark_configuration_machine.TPS",
+      "landmark_count": 18,
+      "record_count": 720,
+      "sha256": "fb5688f44048193e047ec47fb41f940df4b4dd492b89da016342fea8f07c9898",
+      "size_bytes": 221903
+    },
+    {
+      "file": "test_landmark_configuration_novice.TPS",
+      "landmark_count": 18,
+      "record_count": 720,
+      "sha256": "62380edc7c1e8cff145f0932ac498d9b0c411693c3511e25d0d4f7ab3f13178c",
+      "size_bytes": 219582
+    },
+    {
+      "file": "train_landmark_configuration_expert.TPS",
+      "landmark_count": 18,
+      "record_count": 1084,
+      "sha256": "f137d54a8982864f2c83f3c6d64ec44bb68bdee2c11aae0d39cc8e30892e7b48",
+      "size_bytes": 323331
+    },
+    {
+      "file": "val_landmark_configuration_expert.TPS",
+      "landmark_count": 18,
+      "record_count": 248,
+      "sha256": "b2729d77f322c3f97beeec90461d48d25dc163899ab20807092b3e64d1fa80bb",
+      "size_bytes": 74202
+    }
+  ],
+  "annotation_protocol": "unknown; positional landmark labels used provisionally",
+  "scale_policy": "source SCALE metadata preserved, not applied; physical units unknown",
+  "reference": "expert training data only; all other sets projected without refitting",
+  "source_preservation": "TPS bytes and modification times unchanged",
+  "redistribution": "aggregate validation only; raw TPS/images excluded"
+}

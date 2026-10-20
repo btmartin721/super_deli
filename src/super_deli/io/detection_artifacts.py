@@ -2,14 +2,12 @@
 
 from __future__ import annotations
 
-import csv
-from dataclasses import replace
 from pathlib import Path
 
-from super_deli.core.data import DatasetConfig, Modality, MorphometricReaderOptions
+from super_deli.core.data import DatasetConfig, Modality
 from super_deli.core.detection import LandmarkDetection
 from super_deli.core.morphometrics import LandmarkCollection
-from super_deli.io.config import write_config, write_json
+from super_deli.io.landmark_export import write_landmark_coordinates
 
 
 def write_detection_overlay(image, detections: tuple[LandmarkDetection, ...], path: Path) -> None:
@@ -40,22 +38,4 @@ def write_detected_coordinates(
     collection: LandmarkCollection, *, dataset: DatasetConfig, source: Modality, directory: Path
 ) -> None:
     """Export all named rows, including null pairs, with an ingestible declaration."""
-    write_json(collection.to_dict(), directory / "landmarks.json")
-    with (directory / "landmarks.csv").open("x", encoding="utf-8", newline="") as handle:
-        writer = csv.writer(handle, lineterminator="\n")
-        writer.writerow(("observation_id", "landmark_id", "x", "y", "unit_id", "image"))
-        for record in collection.records:
-            for name, point in zip(collection.landmark_ids, record.coordinates, strict=True):
-                writer.writerow((record.observation_id, name, *point, record.unit_id, record.image))
-    modality = Modality(
-        name=source.name,
-        kind="morphometric",
-        level=source.level,
-        format="landmarks_csv",
-        path="landmarks.csv",
-        observations=source.observations,
-        morphometric_options=MorphometricReaderOptions(
-            dimensions=2, landmark_ids=collection.landmark_ids, coordinate_unit="pixel"
-        ),
-    )
-    write_config(replace(dataset, modalities=(modality,)), directory / "landmark_dataset.json")
+    write_landmark_coordinates(collection, dataset=dataset, source=source, directory=directory)

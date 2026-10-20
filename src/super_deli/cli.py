@@ -86,6 +86,20 @@ def main(argv: list[str] | None = None) -> int:
     detection.add_argument(
         "--output-dir", type=Path, required=True, help="New detection output directory"
     )
+    shape = commands.add_parser(
+        "shape-pca", help="Align fixed landmarks with GPA and fit/project shape PCA"
+    )
+    shape.add_argument("config", type=Path, help="Dataset JSON with TPS/coordinate CSV")
+    shape.add_argument(
+        "--model-config", type=Path, required=True, help="Shape analysis policies JSON"
+    )
+    shape.add_argument("--modality", help="Select exactly one coordinate modality")
+    shape.add_argument(
+        "--reference-run", type=Path, help="Project using a saved training run without refitting"
+    )
+    shape.add_argument(
+        "--output-dir", type=Path, required=True, help="New alignment/PCA output directory"
+    )
     baseline = commands.add_parser(
         "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
     )
@@ -104,6 +118,20 @@ def main(argv: list[str] | None = None) -> int:
     try:
         source = args.config.absolute()
         config = load_config(source)
+        if args.command == "shape-pca":
+            from super_deli.models.shape_config import ShapeConfig
+            from super_deli.workflows.shape_pca import run_shape_pca
+
+            shape_data = run_shape_pca(
+                config,
+                model_config=ShapeConfig.from_dict(read_json(args.model_config)),
+                base_dir=source.parent,
+                output_dir=args.output_dir,
+                modality_name=args.modality,
+                reference_dir=args.reference_run,
+            )
+            print(json.dumps(shape_data.summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "detect-landmarks":
             from super_deli.models.marker_config import MarkerDetectorConfig
             from super_deli.workflows.landmark_detection import run_landmark_detection

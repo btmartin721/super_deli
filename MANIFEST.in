@@ -7,3 +7,4 @@ recursive-include examples/tabular *.json *.csv *.tsv
 recursive-include examples/morphometric *.json *.csv *.tps
 recursive-include examples/images *.json *.csv *.png *.jpg *.pdf *.heic *.heif *.py
 recursive-include examples/detection *.json *.csv *.png *.jpg *.pdf *.heic *.heif *.py
+recursive-include examples/shape *.json *.csv *.py *.md
