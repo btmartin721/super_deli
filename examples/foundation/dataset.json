@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "dataset_id": "illustrative_foundation",
+  "random_seed": 1729,
+  "populations": ["population1", "population2"],
+  "localities": ["site1", "site2"],
+  "specimens": [
+    {"specimen_id": "specimen1", "population_id": "population1", "locality_id": "site1"},
+    {"specimen_id": "specimen2", "population_id": "population1", "locality_id": "site1"},
+    {"specimen_id": "specimen3", "population_id": "population2", "locality_id": "site2"}
+  ],
+  "modalities": [
+    {
+      "name": "external_traits",
+      "kind": "morphological",
+      "level": "specimen",
+      "format": "tsv",
+      "path": "traits.tsv",
+      "observations": [
+        {"observation_id": "measure1", "unit_id": "specimen1"},
+        {"observation_id": "measure1_repeat", "unit_id": "specimen1"},
+        {"observation_id": "measure3", "unit_id": "specimen3"}
+      ],
+      "features": [
+        {"name": "length_mm", "dtype": "continuous", "unit": "mm"},
+        {"name": "scale_count", "dtype": "count"},
+        {"name": "pigmentation", "dtype": "categorical", "categories": ["striped", "plain"]},
+        {"name": "sex", "dtype": "categorical", "categories": ["female", "male"], "role": "covariate"}
+      ]
+    },
+    {
+      "name": "site_environment",
+      "kind": "ecological",
+      "level": "locality",
+      "format": "tsv",
+      "path": "environment.tsv",
+      "observations": [
+        {"observation_id": "reading_site1", "unit_id": "site1"},
+        {"observation_id": "reading_site2", "unit_id": "site2"}
+      ],
+      "features": [
+        {"name": "temperature_degC", "dtype": "continuous", "unit": "degC"},
+        {"name": "habitat", "dtype": "categorical", "categories": ["forest", "grassland"]}
+      ]
+    }
+  ]
+}

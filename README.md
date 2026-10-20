@@ -1,128 +1,78 @@
-# PG-SUI
+# Super Deli
 
-Population Genomic Supervised and Unsupervised Imputation
+Super Deli is being redesigned as a modular Python package for integrative
+species-delimitation research using genomic, morphological, ecological, and
+geometric morphometric data.
 
-## Requirements
+**Current checkpoint: infrastructure only.** The package validates dataset
+declarations and local file references. It does not load modality contents,
+fit models, delimit species, compute uncertainty, or decode images yet.
 
-+ python == 3.7
-+ pandas == 1.2.5
-+ numpy == 1.20
-+ matplotlib
-+ seaborn
-+ tqdm
-+ jupyterlab
-+ scikit-learn == 0.24
-+ sklearn-genetic-opt >= 0.6.0
-+ toytree
-+ scipy >= 1.6.2 and < 1.7.0
+## Installation
 
-Python versions other than 3.7 are not currently supported.  
+Use Python 3.11 or 3.12. From this repository:
 
-### Installation
-
-The requirements can mostly be installed with conda. The only module that isn't available on conda is sklearn-genetic-opt, which can be installed via pip.
-
-```
-conda create -n pg-sui python=3.7
-conda activate pg-sui
-
-conda install matplotlib seaborn jupyterlab scikit-learn tqdm pandas=1.2.5 numpy=1.20.2 scipy=1.6.2 xgboost lightgbm tensorflow keras
-
-# Only works if using Intel CPUs; speeds up processing
-conda install scikit-learn-intelex
-
-conda install -c conda-forge toytree
-
-# For genetic algorithm plotting functions
-pip install sklearn-genetic-opt[all]
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -e '.[dev]'
 ```
 
-#### Installation troubleshooting
+The foundation has no runtime dependencies. A `genomics` extra declares SNPio
+for the future ingestion checkpoint; a SNPio adapter is not implemented yet.
 
-##### "use_2to3 is invalid" error
+## Validate the illustrative dataset
 
-Users running setuptools v58 may encounter this error during the last step of installation, using pip to install sklearn-genetic-opt:
-
-```
-ERROR: Command errored out with exit status 1:
-   command: /Users/tyler/miniforge3/envs/pg-sui/bin/python3.8 -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/var/folders/6x/t6g4kn711z5cxmc2_tvq0mlw0000gn/T/pip-install-6y5g_mhs/deap_1d32f65d60a44056bd7031f3aad44571/setup.py'"'"'; __file__='"'"'/private/var/folders/6x/t6g4kn711z5cxmc2_tvq0mlw0000gn/T/pip-install-6y5g_mhs/deap_1d32f65d60a44056bd7031f3aad44571/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /private/var/folders/6x/t6g4kn711z5cxmc2_tvq0mlw0000gn/T/pip-pip-egg-info-7hg3hcq2
-       cwd: /private/var/folders/6x/t6g4kn711z5cxmc2_tvq0mlw0000gn/T/pip-install-6y5g_mhs/deap_1d32f65d60a44056bd7031f3aad44571/
-  Complete output (1 lines):
-  error in deap setup command: use_2to3 is invalid.
+```bash
+super-deli validate examples/foundation/dataset.json --hash-inputs
 ```
 
-This occurs during the installation of DEAP, one of the dependencies for sklearn-genetic-opt. As a workaround, first downgrade setuptools, and then proceed with the installation as normal:
-```
-pip install setuptools==57
-pip install sklearn-genetic-opt[all]
+The example includes specimen measurements, repeated observations, partial
+specimen coverage, and locality-level environmental observations. Values are
+illustrative and are not an empirical species-delimitation benchmark.
 
-```
+The command prints a JSON validation report, coverage counts, and provenance.
+Add `--report /path/to/new-report.json` to also save it. Existing files are never
+overwritten. Relative source references resolve against the configuration's
+directory, independently of the working directory. `python -m super_deli`
+provides the same CLI.
 
-##### Mac ARM architecture
+Exit codes: `0` for valid declarations/references, `1` for consistency/reference
+errors, and `2` for malformed configuration, I/O, or usage errors. A successful
+report still warns that modality contents and model suitability are unchecked.
 
-PG-SUI has been tested on the new Mac M1 chips and is working fine, but some changes to the installation process were necessary as of 9-December-21. Installation was successful using the following:
+## Python API
 
-```
-### Install Miniforge3 instead of Miniconda3
-### Download: https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
-bash ~/Downloads/Miniforge3-MacOSX-arm64.sh
+```python
+from pathlib import Path
 
-#close and re-open terminal
+from super_deli import load_config, validate_dataset
 
-#create and activate conda environment
-conda create -n pg-sui python
-
-#activate environment
-conda activate pg-sui
-
-#install packages
-conda install -c conda-forge matplotlib seaborn jupyterlab scikit-learn tqdm pandas=1.2.5 numpy=1.20.2 scipy=1.6.2 xgboost lightgbm tensorflow keras sklearn-genetic toytree
-
-#downgrade setuptools (may or may not be necessary)
-pip install setuptools==57
-
-#install sklearn-genetic-opt and mlflow
-pip install sklearn-genetic-opt mlflow
-
+source = Path("examples/foundation/dataset.json").absolute()
+config = load_config(source)
+report = validate_dataset(config, base_dir=source.parent)
+print(report.to_dict())
 ```
 
-Any other problems we run into testing on the Mac ARM architecture will be adjusted here. Note that the step installing scikit-learn-intelex was skipped here. PG-SUI will automatically detect the CPU architecture you are running, and forgo importing this package (which will only work on Intel processors)
+See [the architecture and configuration contract](docs/architecture.md) for
+biological levels, feature types, optional popmaps, uncertainty reporting rules,
+validation boundaries, and the next checkpoints.
 
-## Input files
+## Development checks
 
-Takes a structure or phylip file and a popmap file as input.  
-There are a number of options for the structure file format. See the help menu:
-
-```python pg_sui.py -h```  
-
-## API Imputation Options
-
+```bash
+python -m pytest -q
+ruff check src tests/test_foundation*.py
+ruff format --check src tests/test_foundation*.py
+python -m build
 ```
-# Read in PHYLIP or STRUCTURE-formatted file
-data = GenotypeData(...)
 
-# Various imputation options are supported
+The test suite includes the unchanged read-only image/TPS manifest utility.
+GitHub Actions tests the foundation on Python 3.11 and 3.12, validates the example,
+builds wheel/source distributions, and checks wheel installation outside the
+source checkout. Linting covers the new package and its tests.
 
-# Supervised IterativeImputer classifiers
-knn = ImputeKNN(...)
-rf = ImputeRandomForest(...)
-gb = ImputeGradientBoosting(...)
-xgb = ImputeXGBoost(...)
-lgbm = ImputeLightGBM(...)
-
-# Use phylogeny to inform imputation
-phylo = ImputePhylo(...)
-
-# Use by-population or global allele frequency to inform imputation
-af = ImputeAlleleFreq(...)
-
-# Unsupervised neural network models
-vae = ImputeVAE(...)
-ubp = ImputeUBP(...)
-
-
-## To-Dos
-
-- read_vcf
-- matrix factorization
-- simulations
+Historical imputation sources remain outside the installed `src/` package.
+Their previous documentation is preserved in [the legacy README](docs/legacy-readme.md).
+The existing `image_tps_manifest.py` source utility remains available; its manifest
+format will be reused in a later morphometrics-ingestion checkpoint.

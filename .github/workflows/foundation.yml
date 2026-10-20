@@ -1,0 +1,40 @@
+name: Foundation
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install foundation and development tools
+        run: python -m pip install -e '.[dev]'
+      - name: Lint new package and tests
+        run: ruff check src tests/test_foundation*.py
+      - name: Check formatting
+        run: ruff format --check src tests/test_foundation*.py
+      - name: Test foundation and existing image/TPS manifest
+        run: python -m pytest -q
+      - name: Validate illustrative configuration
+        run: super-deli validate examples/foundation/dataset.json --hash-inputs
+      - name: Build wheel and source distribution
+        run: python -m build
+      - name: Check installed wheel outside checkout
+        shell: bash
+        run: |
+          python -m venv "$RUNNER_TEMP/super-deli-wheel"
+          "$RUNNER_TEMP/super-deli-wheel/bin/python" -m pip install --no-deps dist/*.whl
+          cd "$RUNNER_TEMP"
+          "$RUNNER_TEMP/super-deli-wheel/bin/python" -c "from importlib.metadata import version; import super_deli; assert super_deli.__version__ == version('super-deli')"
+          "$RUNNER_TEMP/super-deli-wheel/bin/super-deli" --version

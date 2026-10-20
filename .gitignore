@@ -42,3 +42,11 @@ optimal_nlpca_model/
 optimal_nlpca_model/*
 optimal_ubp_model/
 optimal_ubp_model/*
+
+# Modular foundation development artifacts
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
