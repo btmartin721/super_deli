@@ -23,7 +23,7 @@ def case_config(study, case, repetition):
     )
 
 
-def summarize_records(records, study, case):
+def summarize_records(records, study, case, *, interpretation=None):
     available = [r for r in records if r["p_value"] is not None]
     return {
         "schema_version": 1,
@@ -42,9 +42,12 @@ def summarize_records(records, study, case):
             [int(r["reject"]) if r["reject"] is not None else None for r in records],
             study.n_datasets,
         ),
-        "interpretation": "Reference-law type-I error"
-        if case.endswith("_null")
-        else "Power for complementary four-group alternative",
+        "interpretation": interpretation
+        or (
+            "Reference-law type-I error"
+            if case.endswith("_null")
+            else "Power for complementary four-group alternative"
+        ),
     }
 
 

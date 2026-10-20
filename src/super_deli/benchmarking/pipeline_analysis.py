@@ -43,7 +43,7 @@ def _generated(reference, seed, pattern):
         }
 
 
-def _point(archive, record, policy):
+def audit_pipeline_point(archive, record, policy):
     import numpy as np
     from scipy.special import logsumexp
 
@@ -224,7 +224,7 @@ def audit_pipeline_study(root, *, output_dir):
                         if hashlib.sha256(raw).hexdigest() != digest:
                             raise ValueError("Null raw generator mismatch")
                 for fit in (point, *draws):
-                    _point(archive, fit, policy)
+                    audit_pipeline_point(archive, fit, policy)
                     successful_points += fit["status"] == "complete"
             inference = (
                 summarize_upper_tail(point["statistic"], draws, alpha=policy.alpha, **TAIL_OPTIONS)
