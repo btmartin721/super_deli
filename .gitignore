@@ -62,3 +62,6 @@ optimal_ubp_model/*
 *.egg-info/
 build/
 dist/
+
+!examples/calibration/results/*.csv
+!docs/figures/score-calibration/*.pdf

@@ -128,6 +128,29 @@ def main(argv: list[str] | None = None) -> int:
     )
     study_analysis.add_argument("config", type=Path, help="Completed study directory")
     study_analysis.add_argument("--output-dir", type=Path, required=True)
+    calibration = commands.add_parser(
+        "calibrate-integrative", help="Approximate global Gaussian test of frozen joint scores"
+    )
+    calibration.add_argument("config", type=Path, help="Completed integrative run directory")
+    calibration.add_argument("--calibration-config", type=Path, required=True)
+    calibration.add_argument("--output-dir", type=Path, required=True)
+    score_study = commands.add_parser(
+        "benchmark-score-calibration", help="Validate the conditional Gaussian score test"
+    )
+    score_study.add_argument("config", type=Path)
+    score_study.add_argument(
+        "--scenario",
+        required=True,
+        choices=("spherical_gaussian", "correlated_gaussian", "separated_mixture", "heavy_tailed"),
+    )
+    score_study.add_argument("--output-dir", type=Path, required=True)
+    calibration_analysis = commands.add_parser(
+        "analyze-score-calibration", help="Audit a completed four-scenario score study"
+    )
+    calibration_analysis.add_argument(
+        "config", type=Path, help="Directory containing scenario shards"
+    )
+    calibration_analysis.add_argument("--output-dir", type=Path, required=True)
     baseline = commands.add_parser(
         "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
     )
@@ -145,6 +168,31 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command == "calibrate-integrative":
+            from super_deli.models.calibration_config import GaussianCalibrationConfig
+            from super_deli.workflows.score_calibration import run_integrative_calibration
+
+            summary = run_integrative_calibration(
+                source,
+                config=GaussianCalibrationConfig.from_dict(read_json(args.calibration_config)),
+                output_dir=args.output_dir,
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0 if summary["inference"]["status"] == "available" else 1
+        if args.command == "benchmark-score-calibration":
+            from super_deli.benchmarking.score_calibration import run_score_study
+
+            summary = run_score_study(
+                read_json(source), output_dir=args.output_dir, scenario=args.scenario
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "analyze-score-calibration":
+            from super_deli.benchmarking.calibration_analysis import audit_score_study
+
+            summary = audit_score_study(source, output_dir=args.output_dir)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "analyze-integrative-study":
             from super_deli.benchmarking.study_analysis import write_analysis
 

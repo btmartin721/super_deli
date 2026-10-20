@@ -4,7 +4,7 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: larger integrative benchmark execution and analysis.**
+**Current checkpoint: conditional Gaussian calibration of integrative scores.**
 Genomic, numeric morphology/ecology and shape scores can be fused by exact unit
 IDs or explicit population/locality aggregation, with prespecified view weights.
 The package also supports individual-modality PCA/GMM, frozen-fit shape
@@ -21,6 +21,11 @@ The [larger study results](docs/integrative-study.md) now report 800 simulated
 datasets, 2,400 point-fit attempts, explicit failures and audited bootstrap logs.
 `analyze-integrative-study` audits completed scenario shards and exports compact
 dataset, paired-comparison, event-rate and support-bin tables without refitting.
+
+The separate `calibrate-integrative` command tests a single Gaussian against the
+configured GMM search in frozen joint scores, using an approximate parametric
+bootstrap. It preserves the original clustering run and makes no species-boundary
+or cluster-specific significance claim. See the [method and validation protocol](docs/gaussian-score-calibration.md).
 
 ## Installation
 
