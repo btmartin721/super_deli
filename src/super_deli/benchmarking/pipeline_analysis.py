@@ -6,6 +6,7 @@ import csv
 import hashlib
 import io
 import json
+from importlib import import_module
 from pathlib import Path, PurePosixPath
 from tempfile import TemporaryDirectory
 from zipfile import ZipFile
@@ -61,6 +62,7 @@ def _point(archive, record, policy):
         or record["selected_k"] != k
         or record["candidates"] != candidates
         or run["selected_k"] != k
+        or record["n_retained"] != n
         or record["point_seed"] != seed
         or run["point_seed"] != seed
         or run["bootstrap"]["requested"] != 0
@@ -118,9 +120,14 @@ def _point(archive, record, policy):
 
 
 def audit_pipeline_study(root, *, output_dir):
-    from super_deli.benchmarking import simulation
-    from super_deli.models.monte_carlo import summarize_upper_tail
-    from super_deli.workflows.pipeline_calibration import TAIL_OPTIONS
+    try:
+        from super_deli.benchmarking import simulation
+        from super_deli.models.monte_carlo import summarize_upper_tail
+        from super_deli.workflows.pipeline_calibration import TAIL_OPTIONS
+
+        import_module("sklearn")
+    except (ImportError, OSError) as exc:
+        raise RuntimeError("Install 'super-deli[clustering]' for pipeline-study analysis") from exc
 
     root, destination = Path(root).resolve(), Path(output_dir).resolve()
     if destination == root or destination.is_relative_to(root):
@@ -224,8 +231,19 @@ def audit_pipeline_study(root, *, output_dir):
                 if point["status"] == "complete"
                 else result["inference"]
             )
+            if point["status"] == "failed" and inference != {
+                "status": "point_failed",
+                "requested": policy.n_simulations,
+                "successful": 0,
+                "failed": 0,
+                "p_value": None,
+                "reject_reference_population": None,
+            }:
+                raise ValueError("Invalid inference after a failed observed pipeline")
             if (
-                inference != result["inference"]
+                row["statistic"] != point.get("statistic")
+                or row["selected_k"] != point.get("selected_k")
+                or inference != result["inference"]
                 or inference["p_value"] != row["p_value"]
                 or inference["reject_reference_population"] != row["reject"]
                 or inference["status"] != row["status"]

@@ -1,4 +1,4 @@
-"""Plot audited Gaussian score-test results without running numerical fits."""
+"""Plot audited score-space or raw-reference tests without running numerical fits."""
 
 from __future__ import annotations
 
@@ -98,7 +98,12 @@ def plot(directory, *, output_dir, reference_pipeline=False):
         title="B  Empirical p-value distributions",
     )
     right.yaxis.set_major_formatter(PercentFormatter(1))
-    right.legend(loc="lower right", fontsize=8, frameon=False)
+    legend_options = (
+        {"loc": "center right", "bbox_to_anchor": (0.99, 0.35)}
+        if reference_pipeline
+        else {"loc": "lower right"}
+    )
+    right.legend(**legend_options, fontsize=8, frameon=False)
     for ax in axes:
         ax.spines[["top", "right"]].set_visible(False)
         ax.grid(axis="x", alpha=0.15)

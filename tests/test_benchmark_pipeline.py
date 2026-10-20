@@ -153,3 +153,27 @@ def test_missing_cells_are_imputed_and_missing_view_alignment_is_refitted(tmp_pa
     )
     assert result["point"]["n_retained"] < 32
     assert result["attempted_fits"] == 3
+
+
+@pytest.mark.parametrize("reason", ["schema", "archive_budget"])
+def test_invalid_reference_or_archive_budget_retains_failure(tmp_path, reason):
+    config = policy()
+    data_policy = (
+        replace(config, reference=replace(config.reference, n_loci=32))
+        if reason == "schema"
+        else config
+    )
+    source = tmp_path / "raw"
+    dataset = observed(data_policy, source)
+    if reason == "archive_budget":
+        config = replace(config, max_archive_bytes=1)
+    output = tmp_path / "calibration"
+    message = "locus count" if reason == "schema" else "max_archive_bytes"
+    with pytest.raises(ValueError, match=message):
+        run_reference_calibration(
+            dataset, config=config, base_dir=source / "observed", output_dir=output
+        )
+    assert message in read_json(output / "failure.json")["error"]
+    assert (output / "pipeline_artifacts.zip").is_file()
+    assert not (output / "evidence.json").exists()
+    assert not (output / "summary.json").exists()
