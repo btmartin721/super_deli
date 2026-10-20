@@ -1,0 +1,52 @@
+{
+  "calibration": {
+    "alpha": 0.05,
+    "assume_declared_reference": true,
+    "model": {
+      "assume_independent_units": true,
+      "max_k": 4,
+      "min_cluster_size": 5,
+      "n_bootstrap": 0,
+      "n_init": 10,
+      "n_pcs": 2,
+      "random_seed": 71323,
+      "schema_version": 1,
+      "target_level": "specimen",
+      "views": [
+        {
+          "kind": "genomic",
+          "missing_policy": "mean",
+          "modality": "genomic",
+          "ploidy": 2
+        },
+        {
+          "kind": "morphological",
+          "missing_policy": "mean",
+          "modality": "morphological"
+        },
+        {
+          "kind": "ecological",
+          "missing_policy": "mean",
+          "modality": "ecological"
+        },
+        {
+          "kind": "morphometric",
+          "modality": "morphometric",
+          "shape": {
+            "schema_version": 1
+          }
+        }
+      ]
+    },
+    "n_simulations": 99,
+    "random_seed": 20261022,
+    "reference": {
+      "law": "four_view_continuous_population_v1",
+      "schema_version": 1
+    },
+    "schema_version": 1
+  },
+  "n_datasets": 25,
+  "random_seed": 20261022,
+  "schema_version": 1
+}

@@ -85,3 +85,23 @@ def test_reject_mismatched_aggregation_bootstrap_and_unsafe_extra_options():
             replace(config, model=model)
     with pytest.raises(ValueError):
         PipelineCalibrationConfig.from_dict({**config.to_dict(), "fit_null_from_labels": True})
+
+
+def test_audit_cli_reports_missing_optional_dependencies(tmp_path):
+    code = """
+import importlib.abc
+import sys
+class Block(importlib.abc.MetaPathFinder):
+    def find_spec(self, fullname, path=None, target=None):
+        if fullname.split('.')[0] in {'numpy', 'sklearn', 'snpio', 'scipy'}:
+            raise ImportError('optional dependency intentionally unavailable')
+sys.meta_path.insert(0, Block())
+from super_deli.cli import main
+raise SystemExit(main(['analyze-pipeline-calibration', '.', '--output-dir', 'unused']))
+"""
+    result = subprocess.run(
+        [sys.executable, "-c", code], cwd=tmp_path, capture_output=True, text=True
+    )
+    assert result.returncode == 2
+    assert "super-deli[clustering]" in result.stderr
+    assert "Traceback" not in result.stderr
