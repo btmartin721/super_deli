@@ -39,6 +39,16 @@ class Feature:
 
 
 @dataclass(frozen=True)
+class GenomicReaderOptions:
+    """Explicit format options; arbitrary SNPio keyword arguments are not accepted."""
+
+    has_popids: bool = False
+    has_marker_names: bool = False
+    allele_start_col: int | None = None
+    allele_encoding: tuple[tuple[str, str], ...] = ()
+
+
+@dataclass(frozen=True)
 class Modality:
     name: str
     kind: Kind
@@ -48,6 +58,7 @@ class Modality:
     observations: tuple[Observation, ...]
     features: tuple[Feature, ...] = ()
     popmapfile: str | None = None
+    reader_options: GenomicReaderOptions | None = None
 
 
 @dataclass(frozen=True)
@@ -64,4 +75,11 @@ class DatasetConfig:
         """Return independent JSON-compatible values, including arrays as lists."""
         import json
 
-        return json.loads(json.dumps(asdict(self), allow_nan=False))
+        result = json.loads(json.dumps(asdict(self), allow_nan=False))
+        for modality in result["modalities"]:
+            options = modality["reader_options"]
+            if options is None:
+                del modality["reader_options"]
+            else:
+                options["allele_encoding"] = dict(options["allele_encoding"])
+        return result
