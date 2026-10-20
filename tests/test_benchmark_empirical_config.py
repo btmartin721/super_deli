@@ -72,3 +72,44 @@ def test_unsupported_analyses_and_unknown_fields():
             replace(config, model=model)
     with pytest.raises(ValueError):
         EmpiricalCalibrationConfig.from_dict({**config.to_dict(), "infer_species": True})
+
+
+@pytest.mark.parametrize(
+    "command",
+    [
+        "calibrate-empirical-integrative",
+        "benchmark-empirical-calibration",
+        "analyze-empirical-calibration",
+    ],
+)
+def test_missing_optional_dependencies_are_actionable(tmp_path, command):
+    code = """
+import importlib.abc
+import sys
+class Block(importlib.abc.MetaPathFinder):
+    def find_spec(self, fullname, path=None, target=None):
+        if fullname.split('.')[0] in {'numpy','sklearn','scipy','snpio'}:
+            raise ImportError('intentionally unavailable')
+sys.meta_path.insert(0,Block())
+from super_deli.cli import main
+raise SystemExit(main(sys.argv[1:]))
+"""
+    if command == "calibrate-empirical-integrative":
+        args = [
+            command,
+            str(EXAMPLES.parent / "foundation/dataset.json"),
+            "--calibration-config",
+            str(EXAMPLES / "calibration.json"),
+        ]
+    elif command == "benchmark-empirical-calibration":
+        args = [command, str(EXAMPLES / "smoke.json"), "--case", "spherical_gaussian"]
+    else:
+        args = [command, str(tmp_path)]
+    result = subprocess.run(
+        [sys.executable, "-c", code, *args, "--output-dir", str(tmp_path / "unused")],
+        cwd=tmp_path,
+        capture_output=True,
+        text=True,
+    )
+    assert result.returncode == 2 and "super-deli[clustering]" in result.stderr
+    assert "Traceback" not in result.stderr and not (tmp_path / "unused").exists()

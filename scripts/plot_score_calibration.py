@@ -116,6 +116,8 @@ def plot(directory, *, output_dir, reference_pipeline=False, empirical_pipeline=
         if reference_pipeline or empirical_pipeline
         else {"loc": "lower right"}
     )
+    if empirical_pipeline:
+        legend_options = {"loc": "upper left", "bbox_to_anchor": (0.02, 0.92)}
     right.legend(**legend_options, fontsize=8, frameon=False)
     for ax in axes:
         ax.spines[["top", "right"]].set_visible(False)

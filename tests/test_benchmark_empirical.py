@@ -173,3 +173,19 @@ def test_null_is_not_an_ordinary_row_bootstrap_and_respects_units(tmp_path):
     np.testing.assert_allclose(
         simulate_null(transformed, 2026), draw * scales, rtol=1e-12, atol=1e-12
     )
+
+
+def test_archive_budget_failure_records_the_completed_point(tmp_path):
+    dataset, directory, *_ = source(tmp_path)
+    output = tmp_path / "limited"
+    with pytest.raises(ValueError, match="max_archive_bytes"):
+        run_empirical_calibration(
+            dataset,
+            config=replace(policy(), max_archive_bytes=1),
+            base_dir=directory,
+            output_dir=output,
+        )
+    failure = read_json(output / "failure.json")
+    assert failure["attempted_fits"] == failure["successful_fits"] == 1
+    assert failure["unattempted_fits"] == 2 and failure["failed_fits"] == 0
+    assert not (output / "evidence.json").exists()

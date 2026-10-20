@@ -1,0 +1,25 @@
+{
+  "libraries": {
+    "numpy": {
+      "module_path": "/Users/btm002/miniconda3/envs/snpio-dev-2/lib/python3.12/site-packages/numpy/__init__.py",
+      "version": "2.2.6"
+    },
+    "scikit-learn": {
+      "module_path": "/Users/btm002/miniconda3/envs/snpio-dev-2/lib/python3.12/site-packages/sklearn/__init__.py",
+      "version": "1.6.1"
+    },
+    "scipy": {
+      "module_path": "/Users/btm002/miniconda3/envs/snpio-dev-2/lib/python3.12/site-packages/scipy/__init__.py",
+      "version": "1.15.3"
+    },
+    "super-deli": {
+      "module_path": "/Users/btm002/.codex/outputs/super-deli/empirical-null-20261020/runtime/lib/python3.12/site-packages/super_deli/__init__.py",
+      "version": "0.16.0.dev0"
+    },
+    "threadpoolctl": {
+      "module_path": "/Users/btm002/miniconda3/envs/snpio-dev-2/lib/python3.12/site-packages/threadpoolctl.py",
+      "version": "3.6.0"
+    }
+  },
+  "python": "3.12.10 | packaged by conda-forge | (main, Apr 10 2025, 22:19:24) [Clang 18.1.8 ]"
+}
