@@ -239,9 +239,10 @@ reference labels need independent evidence and documented uncertainty.
 12. **Completed:** Truth-separated simulation benchmarks with dataset-level Monte Carlo uncertainty.
 13. **Completed:** Larger prespecified benchmark, raw-artifact audit and results analysis.
 14. **Completed:** Approximate single-Gaussian calibration in frozen integrative scores.
-15. **Current:** Full-pipeline Monte Carlo calibration under a declared raw-data reference law.
-16. Anatomical landmark learning and additional models in separate batches.
-17. Further integration models and empirical calibration after baseline benchmarks.
+15. **Completed:** Full-pipeline Monte Carlo calibration under a declared raw-data reference law.
+16. **Current:** Fitted joint raw-Gaussian calibration for matched continuous morphology/ecology.
+17. Anatomical landmark learning and additional models in separate batches.
+18. Further integration models and empirical calibration after baseline benchmarks.
 
 The genomic baseline reports genetic clustering and locus-block sensitivity.
 It does not supply taxonomic validation, formal species-boundary significance,
@@ -279,3 +280,11 @@ it does not maintain a second preprocessing or clustering implementation.
 `benchmarking.pipeline_analysis` audits archived bytes and reconstructs numerical
 results without refits. Stability remains separate and empirical fitted-null
 or species-boundary calibration is not supplied by this reference-law checkpoint.
+
+The [empirical raw-Gaussian checkpoint](empirical-null-calibration.md) estimates
+joint raw-feature nuisance parameters in `models.empirical_null`, before PCA.
+The empirical workflow and known-reference workflow share point-fitting and
+archival helpers in `workflows.calibration_artifacts`; neither duplicates the
+integrative estimator. The study/auditor reuse dataset accounting and selected
+pipeline numerical checks. Fitted nulls and known reference laws retain separate
+policies, evidence targets, assumptions and interpretation.

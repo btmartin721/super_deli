@@ -83,3 +83,9 @@ jobs:
           done
           super-deli analyze-pipeline-calibration "$RUNNER_TEMP/pipeline-study" --output-dir "$RUNNER_TEMP/pipeline-audit"
           super-deli calibrate-reference-pipeline "$RUNNER_TEMP/pipeline-study/matched_null/dataset_0000/observed_simulation/observed/dataset.json" --calibration-config "$RUNNER_TEMP/pipeline-study/matched_null/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/pipeline-direct-calibration"
+          mkdir "$RUNNER_TEMP/empirical-study"
+          for case in spherical_gaussian correlated_gaussian complementary heavy_tailed; do
+            super-deli benchmark-empirical-calibration "$GITHUB_WORKSPACE/examples/empirical-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/empirical-study/$case"
+          done
+          super-deli analyze-empirical-calibration "$RUNNER_TEMP/empirical-study" --output-dir "$RUNNER_TEMP/empirical-audit"
+          super-deli calibrate-empirical-integrative "$RUNNER_TEMP/empirical-study/spherical_gaussian/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/empirical-study/spherical_gaussian/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/empirical-direct-calibration"

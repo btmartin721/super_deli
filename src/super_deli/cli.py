@@ -172,6 +172,28 @@ def main(argv: list[str] | None = None) -> int:
     )
     pipeline_analysis.add_argument("config", type=Path)
     pipeline_analysis.add_argument("--output-dir", type=Path, required=True)
+    empirical = commands.add_parser(
+        "calibrate-empirical-integrative",
+        help="Approximate fitted Gaussian test of continuous raw views",
+    )
+    empirical.add_argument("config", type=Path)
+    empirical.add_argument("--calibration-config", type=Path, required=True)
+    empirical.add_argument("--output-dir", type=Path, required=True)
+    empirical_study = commands.add_parser(
+        "benchmark-empirical-calibration", help="Validate fitted raw-Gaussian tests"
+    )
+    empirical_study.add_argument("config", type=Path)
+    empirical_study.add_argument(
+        "--case",
+        required=True,
+        choices=("spherical_gaussian", "correlated_gaussian", "complementary", "heavy_tailed"),
+    )
+    empirical_study.add_argument("--output-dir", type=Path, required=True)
+    empirical_audit = commands.add_parser(
+        "analyze-empirical-calibration", help="Audit completed empirical calibration cases"
+    )
+    empirical_audit.add_argument("config", type=Path)
+    empirical_audit.add_argument("--output-dir", type=Path, required=True)
     baseline = commands.add_parser(
         "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
     )
@@ -189,6 +211,35 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command == "calibrate-empirical-integrative":
+            from super_deli.models.empirical_config import EmpiricalCalibrationConfig
+            from super_deli.workflows.empirical_calibration import run_empirical_calibration
+
+            summary = run_empirical_calibration(
+                load_config(source),
+                config=EmpiricalCalibrationConfig.from_dict(read_json(args.calibration_config)),
+                base_dir=source.parent,
+                output_dir=args.output_dir,
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0 if summary["inference"]["status"] == "available" else 1
+        if args.command == "benchmark-empirical-calibration":
+            from super_deli.benchmarking.empirical_study import run_empirical_study
+            from super_deli.models.empirical_config import EmpiricalStudyConfig
+
+            summary = run_empirical_study(
+                EmpiricalStudyConfig.from_dict(read_json(source)),
+                case=args.case,
+                output_dir=args.output_dir,
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "analyze-empirical-calibration":
+            from super_deli.benchmarking.empirical_analysis import audit_empirical_study
+
+            summary = audit_empirical_study(source, output_dir=args.output_dir)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "analyze-pipeline-calibration":
             from super_deli.benchmarking.pipeline_analysis import audit_pipeline_study
 
