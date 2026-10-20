@@ -4,6 +4,8 @@ Python 3.11/3.12 supports fixed-landmark generalized Procrustes alignment (GPA),
 orthogonal tangent-space projection and covariance PCA. This checkpoint provides
 descriptive shape coordinates and scores. It adds no species-delimitation model,
 group significance test, semilandmark sliding or calibrated uncertainty.
+The separate [shape clustering workflow](shape-clustering.md) reuses these
+coordinates and scores for candidate groups and whole-unit bootstrap stability.
 
 ```bash
 python -m pip install -e '.[dev,shape]'

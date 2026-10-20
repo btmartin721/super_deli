@@ -17,6 +17,7 @@ baseline = ["numpy>=1.26,<3", "scikit-learn>=1.6,<2", "threadpoolctl>=3,<4"]
 images = ["Pillow>=12,<14", "pillow-heif>=1,<2", "pypdfium2>=5,<6"]
 landmarks = ["numpy>=1.26,<3", "scipy>=1.13,<2"]
 shape = ["numpy>=1.26,<3"]
+clustering = ["numpy>=1.26,<3", "scikit-learn>=1.6,<2", "threadpoolctl>=3,<4"]
 dev = ["pytest>=8,<9", "ruff>=0.9,<1", "build>=1,<2"]
 
 [project.scripts]

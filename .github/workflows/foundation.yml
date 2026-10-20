@@ -57,7 +57,7 @@ jobs:
           echo "MPLCONFIGDIR=$RUNNER_TEMP/super-deli-matplotlib" >> "$GITHUB_ENV"
           echo "NUMBA_CACHE_DIR=$RUNNER_TEMP/super-deli-numba" >> "$GITHUB_ENV"
       - name: Install packaged scientific and image extras
-        run: python -m pip install '.[dev,genomics,baseline,images,landmarks,shape]'
+        run: python -m pip install '.[dev,genomics,baseline,images,landmarks,shape,clustering]'
       - name: Test scientific workflows and foundation
         run: python -m pytest -q
       - name: Check installed ingestion CLI outside checkout
@@ -70,3 +70,4 @@ jobs:
           super-deli detect-landmarks "$GITHUB_WORKSPACE/examples/detection/dataset.json" --detector-config "$GITHUB_WORKSPACE/examples/detection/detector.json" --output-dir "$RUNNER_TEMP/landmark-detection"
           super-deli shape-pca "$GITHUB_WORKSPACE/examples/shape/train_dataset.json" --model-config "$GITHUB_WORKSPACE/examples/shape/model.json" --output-dir "$RUNNER_TEMP/shape-fit"
           super-deli shape-pca "$GITHUB_WORKSPACE/examples/shape/projection_dataset.json" --model-config "$GITHUB_WORKSPACE/examples/shape/model.json" --reference-run "$RUNNER_TEMP/shape-fit" --output-dir "$RUNNER_TEMP/shape-projection"
+          super-deli cluster-shape "$GITHUB_WORKSPACE/examples/shape/clustering/dataset.json" --model-config "$GITHUB_WORKSPACE/examples/shape/clustering/model.json" --output-dir "$RUNNER_TEMP/shape-clusters"

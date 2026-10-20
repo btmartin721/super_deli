@@ -31,6 +31,7 @@ class ShapeAnalysisData:
     projection: ShapeProjection
     output_dir: Path
     summary: dict
+    retained: LandmarkCollection
 
 
 def run_shape_pca(
@@ -269,7 +270,14 @@ def run_shape_pca(
             },
         }
         write_json(summary, destination / "summary.json")
-        return ShapeAnalysisData(aligned, model, projection, destination, summary)
+        return ShapeAnalysisData(
+            aligned,
+            model,
+            projection,
+            destination,
+            summary,
+            replace(collection, records=tuple(records)),
+        )
     except Exception as exc:
         if hasattr(exc, "history"):
             write_json(exc.history, destination / "gpa_history.json")

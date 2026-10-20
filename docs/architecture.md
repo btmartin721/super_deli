@@ -14,6 +14,8 @@ The seventh adds explicit visible-marker localization and coordinate exports;
 see [landmark detection](landmark-detection.md).
 The eighth adds fixed-landmark GPA and tangent-space PCA with frozen-reference
 projection; see [shape analysis](shape-pca.md).
+The ninth adds full covariance GMMs on shape scores with whole-unit bootstrap;
+see [shape clustering](shape-clustering.md).
 
 ## Boundaries
 
@@ -41,11 +43,14 @@ projection; see [shape analysis](shape-pca.md).
 | `io.landmark_export`, `io.shape_model` | Shared coordinate exports and validated numerical shape-model artifacts |
 | `models.config` | Strict, dependency-free baseline settings and assumptions |
 | `models.pca_gmm` | Numerical preprocessing, PCA/GMM search, and block stability |
+| `models.mixture` | Shared fixed-space BIC/GMM selection and numerical-fit lock |
+| `models.shape_cluster_config`, `models.shape_gmm` | Shape-clustering assumptions and complete-pipeline biological-unit bootstrap |
 | `models.marker_config`, `models.marker_detection` | Dependency-free named rules and optional component-based localization |
 | `models.shape_config`, `models.procrustes`, `models.shape_pca` | Explicit shape policies, GPA geometry and tangent-space ordination |
 | `workflows.genomic_baseline` | Connect adapters/models to reproducible result artifacts |
 | `workflows.landmark_detection` | Image ingestion, provisional marker coordinates, diagnostics and provenance |
 | `workflows.shape_pca` | Fixed-landmark ingestion, fit/projection, exclusions and auditable shape artifacts |
+| `workflows.shape_gmm` | Reuse shape ingestion/point fit and export candidate clusters and stability evidence |
 | `cli` | Argument handling and presentation of API results |
 
 The core does not import scientific libraries or perform modality I/O. Readers
@@ -55,7 +60,8 @@ libraries. The `baseline` extra supplies numerical dependencies; the `genomics`
 extra supplies SNPio; `images` supplies Pillow, pillow-heif and PDFium. The
 `landmarks` extra supplies NumPy/SciPy for visible-marker detection and is used
 together with `images`. The `shape` extra supplies NumPy for GPA/PCA without
-image, SNPio or scikit-learn dependencies. Empty plugin registries remain unnecessary.
+image, SNPio or scikit-learn dependencies. The `clustering` extra adds shape
+mixtures without SNPio or image codecs. Empty plugin registries remain unnecessary.
 
 The distribution discovers only packages under `src/`. Historical imputation
 code remains in the repository but is excluded from the installed package. The
@@ -216,9 +222,10 @@ reference labels need independent evidence and documented uncertainty.
 5. **Completed:** TPS/coordinate CSV ingestion with coordinate/identity truth fixtures.
 6. **Completed:** Image decoding with source preservation and synthetic display truth.
 7. **Completed:** Visible-marker localization with explicit identity rules and unresolved points.
-8. **Current:** Fixed-landmark GPA, tangent PCA and frozen-reference projection.
-9. Anatomical landmark learning and additional shape models in separate batches.
-10. Additional models and integrative inference after baseline benchmarks.
+8. **Completed:** Fixed-landmark GPA, tangent PCA and frozen-reference projection.
+9. **Current:** Shape PCA/GMM candidate groups and whole-unit bootstrap stability.
+10. Anatomical landmark learning and additional shape models in separate batches.
+11. Additional models and integrative inference after baseline benchmarks.
 
 The genomic baseline reports genetic clustering and locus-block sensitivity.
 It does not supply taxonomic validation, formal species-boundary significance,
@@ -226,5 +233,7 @@ image decoders, empirical-data downloads, or expensive benchmark campaigns.
 Tabular ingestion adds no estimators, preprocessing, fusion or significance tests.
 Coordinate ingestion preserves source geometry/calibration and adds no image
 decoding, alignment, distances, shape estimators or species significance tests.
-The separate shape workflow produces descriptive coordinates/ordination and
-explicitly unavailable uncertainty; it adds no species test or group inference.
+The `shape-pca` workflow produces descriptive coordinates/ordination and explicitly
+uncomputed uncertainty. The separate `cluster-shape` workflow adds candidate
+shape groups and resampling stability, conditional on declared independence,
+landmark and mixture assumptions; it adds no species test or calibrated species probability.

@@ -2,21 +2,18 @@
 
 from __future__ import annotations
 
-import warnings
 from collections import Counter
 from collections.abc import Sequence
 from dataclasses import dataclass
-from threading import RLock
 
 import numpy as np
 from sklearn.decomposition import PCA
-from sklearn.exceptions import ConvergenceWarning
 from sklearn.mixture import GaussianMixture
 from threadpoolctl import threadpool_limits
 
 from super_deli.models.config import BaselineConfig
-
-_FIT_LOCK = RLock()
+from super_deli.models.mixture import FIT_LOCK as _FIT_LOCK
+from super_deli.models.mixture import select_gaussian_mixture
 
 
 class BaselineError(ValueError):
@@ -121,66 +118,20 @@ def _fit_once(x: np.ndarray, config: BaselineConfig, seed: int) -> PointFit:
     rank_tolerance = np.finfo(float).eps * max(transformed.shape) * pca.singular_values_[0]
     if pca.singular_values_[-1] <= rank_tolerance:
         raise BaselineError("The requested PCA space is rank deficient")
-    candidates: list[dict] = []
-    accepted: list[tuple[float, int, GaussianMixture, np.ndarray]] = []
-    for k in range(1, config.max_k + 1):
-        if x.shape[0] < k * config.min_cluster_size:
-            candidates.append({"k": k, "status": "insufficient_samples", "bic": None})
-            continue
-        estimator = GaussianMixture(
-            n_components=k,
-            covariance_type="diag",
-            n_init=config.n_init,
-            max_iter=config.max_iter,
-            tol=config.tol,
-            reg_covar=config.reg_covar,
-            random_state=int(np.random.SeedSequence([seed, k]).generate_state(1)[0]),
-        )
-        try:
-            with warnings.catch_warnings():
-                warnings.simplefilter("error", ConvergenceWarning)
-                estimator.fit(scores)
-            if not estimator.converged_:
-                raise BaselineError(f"GMM K={k} did not converge")
-            probabilities = estimator.predict_proba(scores)
-            bic = float(estimator.bic(scores))
-            if not np.isfinite(bic) or not np.isfinite(probabilities).all():
-                raise BaselineError(f"GMM K={k} produced nonfinite estimates")
-        except (ValueError, ConvergenceWarning, np.linalg.LinAlgError) as exc:
-            # Do not select K from an accidentally reduced numerical search.
-            raise BaselineError(f"Candidate K={k} failed: {exc}") from exc
-        sizes = np.bincount(probabilities.argmax(axis=1), minlength=k)
-        status = "eligible" if sizes.min() >= config.min_cluster_size else "small_component"
-        candidates.append(
-            {
-                "k": k,
-                "status": status,
-                "bic": bic,
-                "converged": True,
-                "iterations": int(estimator.n_iter_),
-                "hard_cluster_sizes": sizes.tolist(),
-            }
-        )
-        if status == "eligible":
-            accepted.append((bic, k, estimator, probabilities))
-    if not accepted:
-        raise BaselineError("No admissible mixture; increase sample size or reduce constraints")
-    _, _, mixture, membership = min(accepted, key=lambda item: (item[0], item[1]))
-    labels = membership.argmax(axis=1)
-    # Canonical labels depend on first specimen occurrence, not EM label numbering.
-    order = sorted(range(mixture.n_components), key=lambda k: int(np.flatnonzero(labels == k)[0]))
-    membership = membership[:, order]
-    labels = membership.argmax(axis=1)
+    try:
+        fit = select_gaussian_mixture(scores, config, seed, covariance_type="diag")
+    except ValueError as exc:
+        raise BaselineError(str(exc)) from exc
     return PointFit(
-        labels,
-        membership,
+        fit.labels,
+        fit.membership,
         scores,
         pca.explained_variance_ratio_.copy(),
-        tuple(candidates),
+        fit.candidates,
         preprocessing,
         pca,
-        mixture,
-        tuple(order),
+        fit.mixture,
+        fit.component_order,
     )
 
 

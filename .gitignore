@@ -17,6 +17,7 @@ __pycache__/*
 !examples/detection/*.csv
 !examples/detection/*.pdf
 !examples/shape/*.csv
+!examples/shape/clustering/*.csv
 *_output/
 *.zip
 *_logfile.txt
