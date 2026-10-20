@@ -7,8 +7,16 @@ import json
 import math
 import re
 from dataclasses import asdict, dataclass, fields
+from typing import Protocol
 
 from super_deli.models.integrative_config import IntegrativeConfig
+
+
+class SimulationDimensions(Protocol):
+    n_units: int
+    n_loci: int
+    max_group_members: int
+
 
 KINDS = ("genomic", "morphological", "ecological", "morphometric")
 

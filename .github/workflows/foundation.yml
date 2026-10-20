@@ -77,3 +77,9 @@ jobs:
           super-deli cluster-integrative "$GITHUB_WORKSPACE/examples/integrative/matched_dataset.json" --model-config "$GITHUB_WORKSPACE/examples/integrative/matched_model.json" --output-dir "$RUNNER_TEMP/integrative-matched"
           super-deli calibrate-integrative "$RUNNER_TEMP/integrative-matched" --calibration-config "$GITHUB_WORKSPACE/examples/calibration/calibration.json" --output-dir "$RUNNER_TEMP/integrative-calibration"
           super-deli benchmark-integrative "$GITHUB_WORKSPACE/examples/benchmarking/smoke.json" --output-dir "$RUNNER_TEMP/integrative-benchmark"
+          mkdir "$RUNNER_TEMP/pipeline-study"
+          for case in matched_null matched_complementary grouped_null grouped_complementary; do
+            super-deli benchmark-pipeline-calibration "$GITHUB_WORKSPACE/examples/pipeline-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/pipeline-study/$case"
+          done
+          super-deli analyze-pipeline-calibration "$RUNNER_TEMP/pipeline-study" --output-dir "$RUNNER_TEMP/pipeline-audit"
+          super-deli calibrate-reference-pipeline "$RUNNER_TEMP/pipeline-study/matched_null/dataset_0000/observed_simulation/observed/dataset.json" --calibration-config "$RUNNER_TEMP/pipeline-study/matched_null/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/pipeline-direct-calibration"

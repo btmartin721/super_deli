@@ -16,3 +16,5 @@ recursive-include docs/figures/integrative-study *.pdf *.svg *.png
 
 recursive-include examples/calibration *.json *.csv
 recursive-include docs/figures/score-calibration *.pdf *.svg *.png
+recursive-include examples/pipeline-calibration *.json *.csv
+recursive-include docs/figures/pipeline-calibration *.pdf *.svg *.png

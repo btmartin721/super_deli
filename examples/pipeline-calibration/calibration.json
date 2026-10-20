@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "assume_declared_reference": true,
+  "reference": {
+    "schema_version": 1,
+    "law": "four_view_continuous_population_v1"
+  },
+  "model": {
+    "schema_version": 1,
+    "assume_independent_units": true,
+    "target_level": "specimen",
+    "random_seed": 71323,
+    "n_pcs": 2,
+    "max_k": 4,
+    "min_cluster_size": 5,
+    "n_bootstrap": 0,
+    "n_init": 10,
+    "views": [
+      {
+        "modality": "genomic",
+        "kind": "genomic",
+        "ploidy": 2,
+        "missing_policy": "mean"
+      },
+      {
+        "modality": "morphological",
+        "kind": "morphological",
+        "missing_policy": "mean"
+      },
+      {
+        "modality": "ecological",
+        "kind": "ecological",
+        "missing_policy": "mean"
+      },
+      {
+        "modality": "morphometric",
+        "kind": "morphometric",
+        "shape": {
+          "schema_version": 1
+        }
+      }
+    ]
+  },
+  "n_simulations": 99,
+  "alpha": 0.05,
+  "random_seed": 20261022
+}

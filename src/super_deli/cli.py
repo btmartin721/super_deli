@@ -151,6 +151,27 @@ def main(argv: list[str] | None = None) -> int:
         "config", type=Path, help="Directory containing scenario shards"
     )
     calibration_analysis.add_argument("--output-dir", type=Path, required=True)
+    raw_calibration = commands.add_parser(
+        "calibrate-reference-pipeline", help="Test raw data against a declared simulated population"
+    )
+    raw_calibration.add_argument("config", type=Path, help="Observed dataset JSON")
+    raw_calibration.add_argument("--calibration-config", type=Path, required=True)
+    raw_calibration.add_argument("--output-dir", type=Path, required=True)
+    pipeline_study = commands.add_parser(
+        "benchmark-pipeline-calibration", help="Validate full-pipeline reference-law tests"
+    )
+    pipeline_study.add_argument("config", type=Path)
+    pipeline_study.add_argument(
+        "--case",
+        required=True,
+        choices=("matched_null", "matched_complementary", "grouped_null", "grouped_complementary"),
+    )
+    pipeline_study.add_argument("--output-dir", type=Path, required=True)
+    pipeline_analysis = commands.add_parser(
+        "analyze-pipeline-calibration", help="Audit a completed raw-reference calibration study"
+    )
+    pipeline_analysis.add_argument("config", type=Path)
+    pipeline_analysis.add_argument("--output-dir", type=Path, required=True)
     baseline = commands.add_parser(
         "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
     )
@@ -168,6 +189,37 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command == "analyze-pipeline-calibration":
+            from super_deli.benchmarking.pipeline_analysis import audit_pipeline_study
+
+            summary = audit_pipeline_study(source, output_dir=args.output_dir)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "calibrate-reference-pipeline":
+            from super_deli.models.pipeline_config import PipelineCalibrationConfig
+            from super_deli.workflows.pipeline_calibration import run_reference_calibration
+
+            with redirect_stdout(sys.stderr):
+                summary = run_reference_calibration(
+                    load_config(source),
+                    config=PipelineCalibrationConfig.from_dict(read_json(args.calibration_config)),
+                    base_dir=source.parent,
+                    output_dir=args.output_dir,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0 if summary["inference"]["status"] == "available" else 1
+        if args.command == "benchmark-pipeline-calibration":
+            from super_deli.benchmarking.pipeline_study import run_pipeline_study
+            from super_deli.models.pipeline_config import PipelineStudyConfig
+
+            with redirect_stdout(sys.stderr):
+                summary = run_pipeline_study(
+                    PipelineStudyConfig.from_dict(read_json(source)),
+                    case=args.case,
+                    output_dir=args.output_dir,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "calibrate-integrative":
             from super_deli.models.calibration_config import GaussianCalibrationConfig
             from super_deli.workflows.score_calibration import run_integrative_calibration
