@@ -105,6 +105,13 @@ def main(argv: list[str] | None = None) -> int:
     clustering.add_argument("--model-config", type=Path, required=True)
     clustering.add_argument("--modality", help="Select exactly one coordinate modality")
     clustering.add_argument("--output-dir", type=Path, required=True)
+    tabular_cluster = commands.add_parser(
+        "cluster-tabular", help="Cluster numeric traits/environment"
+    )
+    tabular_cluster.add_argument("config", type=Path)
+    tabular_cluster.add_argument("--model-config", type=Path, required=True)
+    tabular_cluster.add_argument("--modality", help="Select exactly one morphology/ecology table")
+    tabular_cluster.add_argument("--output-dir", type=Path, required=True)
     baseline = commands.add_parser(
         "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
     )
@@ -123,6 +130,19 @@ def main(argv: list[str] | None = None) -> int:
     try:
         source = args.config.absolute()
         config = load_config(source)
+        if args.command == "cluster-tabular":
+            from super_deli.models.tabular_cluster_config import TabularClusterConfig
+            from super_deli.workflows.tabular_gmm import run_tabular_gmm
+
+            summary = run_tabular_gmm(
+                config,
+                model_config=TabularClusterConfig.from_dict(read_json(args.model_config)),
+                base_dir=source.parent,
+                output_dir=args.output_dir,
+                modality_name=args.modality,
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "cluster-shape":
             from super_deli.models.shape_cluster_config import ShapeClusterConfig
             from super_deli.workflows.shape_gmm import run_shape_gmm

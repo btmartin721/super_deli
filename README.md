@@ -4,11 +4,11 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: Gaussian mixtures of shape PCs with bootstrap stability.**
-Fixed landmarks yield GPA coordinates and shape scores, with full covariance
-mixtures, whole-unit pipeline refits and out-of-bag coassignment diagnostics.
-The package also supports frozen-fit shape projection, visible marker detection,
-multimodal ingestion, and genomic PCA/GMM clustering.
+**Current checkpoint: tabular morphology/ecology PCA/GMM with bootstrap stability.**
+Numeric traits and environmental measurements yield candidate groups with
+explicit preprocessing, whole-unit pipeline refits and out-of-bag diagnostics.
+The package also supports shape PCA/GMM, frozen-fit shape projection, visible
+marker detection, multimodal ingestion, and genomic PCA/GMM clustering.
 Anatomical landmark learning, integrative inference and formal species-boundary
 tests remain later work.
 
@@ -221,6 +221,26 @@ species-boundary p-values remain uncomputed. See
 [shape clustering](docs/shape-clustering.md) for assumptions, OOB denominators,
 configuration, artifacts, API and bounded synthetic validation.
 
+## Cluster numeric morphology or ecology
+
+```bash
+python -m pip install -e '.[dev,clustering]'
+super-deli cluster-tabular examples/tabular/clustering/dataset.json \
+  --model-config examples/tabular/clustering/morphology_model.json \
+  --modality traits --output-dir /tmp/super-deli-morphology-clusters
+super-deli cluster-tabular examples/tabular/clustering/dataset.json \
+  --model-config examples/tabular/clustering/ecology_model.json \
+  --modality environment --output-dir /tmp/super-deli-ecology-clusters
+```
+
+This baseline analyzes one table of continuous/count features per run, with
+explicit selection, scaling, count transformation and missingness policies.
+Whole-unit bootstrap draws refit preprocessing, PCA and BIC/GMM selection.
+Outputs preserve specimen, population or locality levels. Categories require
+a numeric subset; repeated units require aggregation before fitting. See
+[tabular clustering](docs/tabular-clustering.md) for assumptions, API, artifacts
+and limits on interpreting environmental groups as biological species.
+
 ## Development checks
 
 ```bash
@@ -236,7 +256,8 @@ builds wheel/source distributions, and checks wheel installation outside the
 source checkout, including tabular and coordinate ingestion without scientific dependencies.
 A separate genomic matrix tests the real SNPio readers with
 and without external popmaps, the numerical baseline, real image codecs, visible
-marker detection, GPA/shape PCA, shape clustering and installed CLIs. Optional tests are skipped
+marker detection, GPA/shape PCA, shape and tabular clustering, and installed CLIs.
+Optional tests are skipped
 when extras are absent. Ruff coverage is declared centrally in `pyproject.toml`.
 Linting covers the new package, tests, and synthetic-example generator.
 

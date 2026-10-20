@@ -3,7 +3,7 @@ recursive-include docs *.md
 recursive-include examples/foundation *.json *.tsv
 recursive-include examples/genomic *.json *.phy *.str *.gen *.vcf *.popmap
 recursive-include examples/baseline *.json *.phy *.py
-recursive-include examples/tabular *.json *.csv *.tsv
+recursive-include examples/tabular *.json *.csv *.tsv *.py
 recursive-include examples/morphometric *.json *.csv *.tps
 recursive-include examples/images *.json *.csv *.png *.jpg *.pdf *.heic *.heif *.py
 recursive-include examples/detection *.json *.csv *.png *.jpg *.pdf *.heic *.heif *.py

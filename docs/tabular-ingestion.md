@@ -1,5 +1,9 @@
 # Morphology and ecology tables
 
+For the separate numeric PCA/GMM baseline with bootstrap stability, see
+[tabular clustering](tabular-clustering.md). Ingestion itself retains typed data
+without fitting or inferring feature encodings.
+
 `ingest-tabular` loads morphology and ecological measurements from CSV or TSV,
 using the existing version-one feature schema and biological links. It uses only
 the Python standard library on Python 3.11/3.12. No new models are added in this

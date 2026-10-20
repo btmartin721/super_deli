@@ -11,6 +11,7 @@ __pycache__/*
 *.pdf
 *.csv
 !examples/tabular/*.csv
+!examples/tabular/clustering/*.csv
 !examples/morphometric/*.csv
 !examples/images/*.csv
 !examples/images/*.pdf

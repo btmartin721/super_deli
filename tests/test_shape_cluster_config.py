@@ -6,12 +6,20 @@ import sys
 import pytest
 
 from super_deli.models.shape_cluster_config import ShapeClusterConfig
+from super_deli.models.shape_config import ShapeConfig
 
 
 def test_roundtrip_and_explicit_shape_dimension():
     config = ShapeClusterConfig(True)
     assert ShapeClusterConfig.from_dict(config.to_dict()) == config
     assert config.shape_config.n_components == config.n_pcs
+
+
+def test_existing_positional_shape_config_signature():
+    config = ShapeClusterConfig(
+        True, 2, 4, 5, 100, 10, 500, 0.001, 1e-6, 0, 0, 1, 268435456, ShapeConfig(), 1
+    )
+    assert config == ShapeClusterConfig(True)
 
 
 @pytest.mark.parametrize(
