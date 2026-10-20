@@ -73,3 +73,5 @@ jobs:
           super-deli cluster-shape "$GITHUB_WORKSPACE/examples/shape/clustering/dataset.json" --model-config "$GITHUB_WORKSPACE/examples/shape/clustering/model.json" --output-dir "$RUNNER_TEMP/shape-clusters"
           super-deli cluster-tabular "$GITHUB_WORKSPACE/examples/tabular/clustering/dataset.json" --model-config "$GITHUB_WORKSPACE/examples/tabular/clustering/morphology_model.json" --modality traits --output-dir "$RUNNER_TEMP/morphology-clusters"
           super-deli cluster-tabular "$GITHUB_WORKSPACE/examples/tabular/clustering/dataset.json" --model-config "$GITHUB_WORKSPACE/examples/tabular/clustering/ecology_model.json" --modality environment --output-dir "$RUNNER_TEMP/ecology-clusters"
+          super-deli cluster-integrative "$GITHUB_WORKSPACE/examples/integrative/grouped_dataset.json" --model-config "$GITHUB_WORKSPACE/examples/integrative/grouped_model.json" --output-dir "$RUNNER_TEMP/integrative-grouped"
+          super-deli cluster-integrative "$GITHUB_WORKSPACE/examples/integrative/matched_dataset.json" --model-config "$GITHUB_WORKSPACE/examples/integrative/matched_model.json" --output-dir "$RUNNER_TEMP/integrative-matched"
