@@ -141,7 +141,8 @@ def project_tabular_pca(values, *, model: TabularPCAModel) -> np.ndarray:
     return scores
 
 
-def _fit_once(x, names, types, config, seed, indices=None):
+def fit_tabular_pca(x, names, types, config):
+    """Fit preprocessing/PCA on a prepared analytical matrix, without a mixture."""
     with np.errstate(over="raise", invalid="raise", divide="raise"):
         transformed = _transform_counts(x, types, config)
         observed = np.sum(~np.isnan(transformed), axis=0)
@@ -173,9 +174,6 @@ def _fit_once(x, names, types, config, seed, indices=None):
         if pca.singular_values_[-1] <= config.rank_tol * max(pca.singular_values_[0], 1.0):
             raise ValueError("Requested fixed PCA dimension is rank deficient")
         scores = pca.transform(matrix)
-        mixture = select_gaussian_mixture(
-            scores, config, seed, covariance_type="full", unit_indices=indices
-        )
     model = TabularPCAModel(
         config,
         names,
@@ -187,6 +185,14 @@ def _fit_once(x, names, types, config, seed, indices=None):
         int(missing.sum()),
         missing.mean(axis=1),
         pca,
+    )
+    return model, scores
+
+
+def _fit_once(x, names, types, config, seed, indices=None):
+    model, scores = fit_tabular_pca(x, names, types, config)
+    mixture = select_gaussian_mixture(
+        scores, config, seed, covariance_type="full", unit_indices=indices
     )
     return TabularPipelineFit(model, scores, mixture)
 

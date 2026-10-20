@@ -108,7 +108,8 @@ def _preprocess(x: np.ndarray, config: BaselineConfig) -> tuple[np.ndarray, Prep
     )
 
 
-def _fit_once(x: np.ndarray, config: BaselineConfig, seed: int) -> PointFit:
+def fit_genomic_pca(x: np.ndarray, config: BaselineConfig):
+    """Fit preprocessing/PCA on validated diploid dosages, without a mixture."""
     transformed, preprocessing = _preprocess(x, config)
     pca = PCA(n_components=config.n_pcs, svd_solver="full")
     try:
@@ -118,6 +119,24 @@ def _fit_once(x: np.ndarray, config: BaselineConfig, seed: int) -> PointFit:
     rank_tolerance = np.finfo(float).eps * max(transformed.shape) * pca.singular_values_[0]
     if pca.singular_values_[-1] <= rank_tolerance:
         raise BaselineError("The requested PCA space is rank deficient")
+    return scores, preprocessing, pca
+
+
+def project_genomic_pca(x, preprocessing, pca, *, missing_policy):
+    retained = np.asarray(x, dtype=float)[:, preprocessing.kept_indices]
+    if np.isnan(retained).all(axis=1).any():
+        raise BaselineError("A projected specimen has no observed calls at retained loci")
+    if missing_policy == "error" and np.isnan(retained).any():
+        raise BaselineError("Missing calls require an explicit mean-imputation policy")
+    centered = np.where(np.isnan(retained), 0, retained - preprocessing.means)
+    scores = pca.transform(centered / preprocessing.scales)
+    if not np.isfinite(scores).all():
+        raise BaselineError("Nonfinite genomic projection")
+    return scores
+
+
+def _fit_once(x: np.ndarray, config: BaselineConfig, seed: int) -> PointFit:
+    scores, preprocessing, pca = fit_genomic_pca(x, config)
     try:
         fit = select_gaussian_mixture(scores, config, seed, covariance_type="diag")
     except ValueError as exc:

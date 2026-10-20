@@ -112,6 +112,12 @@ def main(argv: list[str] | None = None) -> int:
     tabular_cluster.add_argument("--model-config", type=Path, required=True)
     tabular_cluster.add_argument("--modality", help="Select exactly one morphology/ecology table")
     tabular_cluster.add_argument("--output-dir", type=Path, required=True)
+    integrate = commands.add_parser(
+        "cluster-integrative", help="Integrate linked modality PC profiles"
+    )
+    integrate.add_argument("config", type=Path)
+    integrate.add_argument("--model-config", type=Path, required=True)
+    integrate.add_argument("--output-dir", type=Path, required=True)
     baseline = commands.add_parser(
         "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
     )
@@ -130,6 +136,19 @@ def main(argv: list[str] | None = None) -> int:
     try:
         source = args.config.absolute()
         config = load_config(source)
+        if args.command == "cluster-integrative":
+            from super_deli.models.integrative_config import IntegrativeConfig
+            from super_deli.workflows.integrative import run_integrative
+
+            with redirect_stdout(sys.stderr):
+                summary = run_integrative(
+                    config,
+                    model_config=IntegrativeConfig.from_dict(read_json(args.model_config)),
+                    base_dir=source.parent,
+                    output_dir=args.output_dir,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "cluster-tabular":
             from super_deli.models.tabular_cluster_config import TabularClusterConfig
             from super_deli.workflows.tabular_gmm import run_tabular_gmm
