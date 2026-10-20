@@ -1,5 +1,9 @@
 # Integrative clustering of linked biological units
 
+The next checkpoint adds a separate [simulation benchmark](integrative-benchmarking.md)
+around this unchanged estimator. It evaluates generating-partition recovery and
+stability error without treating simulation labels as empirical species truth.
+
 ```bash
 python -m pip install -e '.[dev,clustering,genomics]'
 super-deli cluster-integrative examples/integrative/grouped_dataset.json \
