@@ -49,6 +49,16 @@ class GenomicReaderOptions:
 
 
 @dataclass(frozen=True)
+class TabularReaderOptions:
+    """Explicit source-column roles and exact, case-sensitive missing tokens."""
+
+    observation_id_column: str = "observation_id"
+    unit_id_column: str | None = None
+    missing_values: tuple[str, ...] = ("",)
+    ignored_columns: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
 class Modality:
     name: str
     kind: Kind
@@ -59,6 +69,7 @@ class Modality:
     features: tuple[Feature, ...] = ()
     popmapfile: str | None = None
     reader_options: GenomicReaderOptions | None = None
+    tabular_options: TabularReaderOptions | None = None
 
 
 @dataclass(frozen=True)
@@ -77,6 +88,8 @@ class DatasetConfig:
 
         result = json.loads(json.dumps(asdict(self), allow_nan=False))
         for modality in result["modalities"]:
+            if modality["tabular_options"] is None:
+                del modality["tabular_options"]
             options = modality["reader_options"]
             if options is None:
                 del modality["reader_options"]

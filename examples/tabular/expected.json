@@ -1,0 +1,25 @@
+{
+  "description": "Hand-authored typed-value truth for ingestion; no species labels or empirical claims",
+  "external_traits": {
+    "observation_ids": ["measure3", "measure1_repeat", "measure1"],
+    "unit_ids": ["specimen3", "specimen1", "specimen1"],
+    "feature_order": ["length_mm", "scale_count", "spurs", "wear_score", "pigmentation", "sex"],
+    "values": [
+      [15.2, 21, "present", "high", "plain", "male"],
+      [null, 18, null, "intermediate", "striped", null],
+      [12.4, 0, "absent", "low", "striped", "female"]
+    ],
+    "missing_mask": [
+      [false, false, false, false, false, false],
+      [true, false, true, false, false, true],
+      [false, false, false, false, false, false]
+    ]
+  },
+  "site_environment": {
+    "observation_ids": ["reading_site2", "reading_site1"],
+    "unit_ids": ["site2", "site1"],
+    "feature_order": ["temperature_degC", "rainfall_mm", "habitat"],
+    "values": [[-12.5, 0.0, "grassland"], [21.3, null, "forest, edge"]],
+    "missing_mask": [[false, false, false], [false, true, false]]
+  }
+}

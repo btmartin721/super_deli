@@ -10,6 +10,7 @@ __pycache__/*
 .vscode/
 *.pdf
 *.csv
+!examples/tabular/*.csv
 *_output/
 *.zip
 *_logfile.txt

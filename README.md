@@ -4,11 +4,11 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: genomic PCA/GMM baseline.** The package validates dataset
-declarations, loads genomic inputs through SNPio, and estimates candidate genetic
-clusters with conditional memberships and block-bootstrap stability. These are
-exploratory genetic clusters; species-boundary tests are not implemented. Other
-modalities remain declarations for later ingestion checkpoints.
+**Current checkpoint: tabular morphology/ecology ingestion.** The package loads
+typed CSV/TSV measurements, preserves biological links and missingness, and
+supports genomic ingestion and the PCA/GMM baseline from earlier checkpoints.
+The baseline reports candidate genetic clusters and block stability. Formal
+species-boundary tests and landmark/image ingestion remain later work.
 
 ## Installation
 
@@ -114,19 +114,37 @@ See [the baseline method and API](docs/genomic-baseline.md) for assumptions,
 configuration, artifacts, reproducible synthetic truth, and validation limits.
 The synthetic example is a software check, not empirical species validation.
 
+## Load morphology and ecology
+
+```bash
+super-deli ingest-tabular examples/tabular/dataset.json \
+  --output-dir /tmp/super-deli-tabular-example
+```
+
+The base installation supports continuous measurements, counts, binary states,
+ordered scores and categorical traits, including units and covariates. Source
+observation IDs must match declarations; repeated measurements and specimen,
+population or locality levels remain explicit. The reader preserves missingness
+and category labels. Select tables with repeated `--modality NAME` options.
+
+See [tabular ingestion](docs/tabular-ingestion.md) for column/missing-token
+options, the Python API, typed JSON artifacts, validation and processing limits.
+The hand-authored example provides value/link truth for ingestion checks.
+
 ## Development checks
 
 ```bash
 python -m pytest -q
-ruff check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py examples/baseline/*.py
-ruff format --check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py examples/baseline/*.py
+ruff check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py examples/baseline/*.py
+ruff format --check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py examples/baseline/*.py
 python -m build
 ```
 
 The test suite includes the unchanged read-only image/TPS manifest utility.
 GitHub Actions tests the foundation on Python 3.11 and 3.12, validates the example,
 builds wheel/source distributions, and checks wheel installation outside the
-source checkout. A separate genomic matrix tests the real SNPio readers with
+source checkout, including tabular ingestion without scientific dependencies.
+A separate genomic matrix tests the real SNPio readers with
 and without external popmaps, plus the numerical baseline and full analysis CLI.
 Optional numerical/reader tests are skipped when their extras are absent.
 Linting covers the new package, tests, and synthetic-example generator.

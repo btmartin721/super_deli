@@ -21,9 +21,9 @@ jobs:
       - name: Install foundation and development tools
         run: python -m pip install -e '.[dev]'
       - name: Lint new package and tests
-        run: ruff check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py examples/baseline/*.py
+        run: ruff check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py examples/baseline/*.py
       - name: Check formatting
-        run: ruff format --check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py examples/baseline/*.py
+        run: ruff format --check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py examples/baseline/*.py
       - name: Test foundation and existing image/TPS manifest
         run: python -m pytest -q
       - name: Validate illustrative configuration
@@ -38,6 +38,7 @@ jobs:
           cd "$RUNNER_TEMP"
           "$RUNNER_TEMP/super-deli-wheel/bin/python" -c "from importlib.metadata import version; import super_deli; assert super_deli.__version__ == version('super-deli')"
           "$RUNNER_TEMP/super-deli-wheel/bin/super-deli" --version
+          "$RUNNER_TEMP/super-deli-wheel/bin/super-deli" ingest-tabular "$GITHUB_WORKSPACE/examples/tabular/dataset.json" --output-dir "$RUNNER_TEMP/tabular-ingestion"
 
   genomics:
     runs-on: ubuntu-latest

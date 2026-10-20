@@ -7,7 +7,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Literal
 
-from super_deli.core.data import DatasetConfig
+from super_deli.core.data import DatasetConfig, TabularReaderOptions
 from super_deli.core.schema import config_from_dict
 
 FORMATS = {
@@ -121,6 +121,31 @@ def validate_dataset(
             error("invalid_level", location, "GenotypeData records must link to specimens")
         if modality.popmapfile is not None and modality.kind != "genomic":
             error("invalid_popmap", location, "popmapfile is only defined for genomic inputs")
+        if modality.tabular_options is not None and modality.kind not in {
+            "morphological",
+            "ecological",
+        }:
+            error(
+                "invalid_tabular_options", location, "Tabular options require morphology or ecology"
+            )
+        if modality.kind in {"morphological", "ecological"}:
+            tabular = modality.tabular_options or TabularReaderOptions()
+            columns = [
+                tabular.observation_id_column,
+                *tabular.ignored_columns,
+                *(f.name for f in modality.features),
+            ]
+            if tabular.unit_id_column is not None:
+                columns.append(tabular.unit_id_column)
+            unique(columns, f"{location}.tabular_columns")
+            unique(tabular.missing_values, f"{location}.missing_values")
+            for feature in modality.features:
+                if set(feature.categories) & set(tabular.missing_values):
+                    error(
+                        "ambiguous_missing_value",
+                        location,
+                        f"Missing tokens overlap categories of {feature.name!r}",
+                    )
         if (options := modality.reader_options) is not None:
             if modality.kind != "genomic":
                 error("invalid_reader_options", location, "Reader options require genomic input")
