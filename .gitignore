@@ -14,6 +14,8 @@ __pycache__/*
 !examples/morphometric/*.csv
 !examples/images/*.csv
 !examples/images/*.pdf
+!examples/detection/*.csv
+!examples/detection/*.pdf
 *_output/
 *.zip
 *_logfile.txt

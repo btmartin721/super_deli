@@ -3,8 +3,8 @@
 This checkpoint adds local PDF, PNG, JPEG (`.jpg`/`.jpeg`) and HEIC/HEIF ingestion
 on Python 3.11/3.12. It preserves original files and creates 8-bit RGB/RGBA PNG
 display derivatives with explicit biological links and decoding provenance.
-It supplies no landmark detector, TPS/image alignment, shape model or species
-inference. Images containing visible markers still need coordinate digitization.
+The separate [landmark workflow](landmark-detection.md) detects visible markers.
+This adapter performs no TPS/image alignment, shape modeling or species inference.
 
 ```bash
 python -m pip install -e '.[dev,images]'

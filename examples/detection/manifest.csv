@@ -1,0 +1,8 @@
+observation_id,specimen_id,image_path,page
+png,specimen1,marked.png,
+jpeg,specimen1,marked.jpg,
+heic,specimen2,marked.heic,
+heif,specimen2,marked.heif,
+pdf1,specimen1,marked.pdf,1
+pdf2,specimen2,marked.pdf,2
+problem,specimen2,problem.png,

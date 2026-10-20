@@ -3,7 +3,8 @@
 This checkpoint reads fixed landmarks from TPS or long-form coordinate CSV into
 typed, linked observations. It uses the Python standard library on Python
 3.11/3.12. The separate [image adapter](image-ingestion.md) decodes image manifests.
-Landmark detection, semilandmark sliding, geometric transformations and new
+The separate [marker workflow](landmark-detection.md) detects visible marks.
+Anatomical learning, semilandmark sliding, geometric transformations and new
 delimitation models are later work.
 
 ```bash

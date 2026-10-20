@@ -1,0 +1,51 @@
+{
+  "landmarks": [
+    {
+      "landmark_id": "red_mark",
+      "max_area": 150,
+      "min_area": 9,
+      "rgb_lower": [
+        180,
+        0,
+        0
+      ],
+      "rgb_upper": [
+        255,
+        90,
+        90
+      ]
+    },
+    {
+      "landmark_id": "green_mark",
+      "max_area": 150,
+      "min_area": 9,
+      "rgb_lower": [
+        0,
+        180,
+        0
+      ],
+      "rgb_upper": [
+        90,
+        255,
+        90
+      ]
+    },
+    {
+      "landmark_id": "blue_mark",
+      "max_area": 150,
+      "min_area": 9,
+      "rgb_lower": [
+        0,
+        0,
+        180
+      ],
+      "rgb_upper": [
+        90,
+        90,
+        255
+      ]
+    }
+  ],
+  "method": "rgb_components",
+  "schema_version": 1
+}

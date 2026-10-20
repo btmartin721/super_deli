@@ -1,0 +1,135 @@
+{
+  "coordinate_tolerance_pixels": 0.75,
+  "description": "Synthetic marker centers in displayed pixels; no biological accuracy claim",
+  "generating_software": {
+    "Pillow": "13.0.0",
+    "pillow-heif": "1.8.1"
+  },
+  "observations": {
+    "heic": {
+      "coordinates": {
+        "blue_mark": [
+          24,
+          50
+        ],
+        "green_mark": [
+          59,
+          80
+        ],
+        "red_mark": [
+          59,
+          20
+        ]
+      },
+      "size": [
+        80,
+        120
+      ]
+    },
+    "heif": {
+      "coordinates": {
+        "blue_mark": [
+          50,
+          55
+        ],
+        "green_mark": [
+          80,
+          20
+        ],
+        "red_mark": [
+          20,
+          20
+        ]
+      },
+      "size": [
+        120,
+        80
+      ]
+    },
+    "jpeg": {
+      "coordinates": {
+        "blue_mark": [
+          24,
+          50
+        ],
+        "green_mark": [
+          59,
+          80
+        ],
+        "red_mark": [
+          59,
+          20
+        ]
+      },
+      "size": [
+        80,
+        120
+      ]
+    },
+    "pdf1": {
+      "coordinates": {
+        "blue_mark": [
+          50,
+          55
+        ],
+        "green_mark": [
+          80,
+          20
+        ],
+        "red_mark": [
+          20,
+          20
+        ]
+      },
+      "size": [
+        120,
+        80
+      ]
+    },
+    "pdf2": {
+      "coordinates": {
+        "blue_mark": [
+          24,
+          50
+        ],
+        "green_mark": [
+          59,
+          80
+        ],
+        "red_mark": [
+          59,
+          20
+        ]
+      },
+      "size": [
+        80,
+        120
+      ]
+    },
+    "png": {
+      "coordinates": {
+        "blue_mark": [
+          50,
+          55
+        ],
+        "green_mark": [
+          80,
+          20
+        ],
+        "red_mark": [
+          20,
+          20
+        ]
+      },
+      "size": [
+        120,
+        80
+      ]
+    }
+  },
+  "problem_status": {
+    "blue_mark": "boundary",
+    "green_mark": "missing",
+    "red_mark": "ambiguous"
+  }
+}
