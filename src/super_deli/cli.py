@@ -118,6 +118,11 @@ def main(argv: list[str] | None = None) -> int:
     integrate.add_argument("config", type=Path)
     integrate.add_argument("--model-config", type=Path, required=True)
     integrate.add_argument("--output-dir", type=Path, required=True)
+    benchmark = commands.add_parser(
+        "benchmark-integrative", help="Run a declared truth-separated integrative simulation study"
+    )
+    benchmark.add_argument("config", type=Path, help="Versioned benchmark JSON configuration")
+    benchmark.add_argument("--output-dir", type=Path, required=True)
     baseline = commands.add_parser(
         "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
     )
@@ -135,6 +140,16 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command == "benchmark-integrative":
+            from super_deli.benchmarking.config import BenchmarkConfig
+            from super_deli.benchmarking.runner import run_benchmark
+
+            with redirect_stdout(sys.stderr):
+                summary = run_benchmark(
+                    BenchmarkConfig.from_dict(read_json(source)), output_dir=args.output_dir
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         config = load_config(source)
         if args.command == "cluster-integrative":
             from super_deli.models.integrative_config import IntegrativeConfig
