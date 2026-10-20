@@ -2,10 +2,7 @@
 
 from __future__ import annotations
 
-import csv
-import math
 import re
-from collections import Counter
 from collections.abc import Sequence
 from dataclasses import asdict, dataclass
 from pathlib import Path
@@ -16,9 +13,10 @@ from super_deli.core.schema import config_from_dict
 from super_deli.core.tabular import TabularTable, TabularValue
 from super_deli.core.validation import resolve_input, validate_dataset
 from super_deli.io.config import write_json
+from super_deli.io.delimited import delimited_rows, identifier
+from super_deli.io.numeric import finite_float
 from super_deli.io.staging import stage_input
 
-_NUMERIC = re.compile(r"[+-]?(?:[0-9]+(?:\.[0-9]*)?|\.[0-9]+)(?:[eE][+-]?[0-9]+)?\Z")
 _COUNT = re.compile(r"[0-9]+\Z")
 _KINDS = {"morphological", "ecological"}
 
@@ -56,12 +54,6 @@ def _select_modalities(config: DatasetConfig, names: Sequence[str] | None) -> tu
     return selected
 
 
-def _identifier(value: str, location: str) -> str:
-    if not value or value != value.strip() or "\x00" in value:
-        raise TabularIngestionError(f"{location}: identifiers must be nonempty and unpadded")
-    return value
-
-
 def _value(
     text: str, feature: Feature, options: TabularReaderOptions, location: str
 ) -> TabularValue:
@@ -82,15 +74,10 @@ def _value(
             raise TabularIngestionError(
                 f"{location}: count exceeds the integer parser limit"
             ) from exc
-    if not _NUMERIC.fullmatch(text):
-        raise TabularIngestionError(f"{location}: continuous value must be a finite decimal number")
-    value = float(text)
-    if not math.isfinite(value):
-        raise TabularIngestionError(f"{location}: continuous value is outside finite float range")
-    mantissa = re.split("[eE]", text)[0]
-    if value == 0 and any(c in "123456789" for c in mantissa):
-        raise TabularIngestionError(f"{location}: nonzero continuous value underflows float range")
-    return value
+    try:
+        return finite_float(text, location)
+    except ValueError as exc:
+        raise TabularIngestionError(str(exc)) from exc
 
 
 def _read_table(path: Path, modality: Modality) -> TabularTable:
@@ -105,59 +92,42 @@ def _read_table(path: Path, modality: Modality) -> TabularTable:
         expected.add(options.unit_id_column)
     observations, units, values = [], [], []
     seen = set()
-    with path.open(encoding="utf-8-sig", newline="") as handle:
-        reader = csv.reader(
-            handle, delimiter="," if modality.format == "csv" else "\t", strict=True
+    try:
+        rows = delimited_rows(
+            path,
+            delimiter="," if modality.format == "csv" else "\t",
+            required=expected,
+            context=modality.name,
         )
-        try:
-            header = next(reader, [])
-            if not header:
-                raise TabularIngestionError(f"{modality.name}: missing table header")
-            for column in header:
-                _identifier(column, f"{modality.name} header")
-            if duplicate := [name for name, n in Counter(header).items() if n > 1]:
-                raise TabularIngestionError(f"{modality.name}: duplicate columns {duplicate}")
-            if set(header) != expected:
+        for line, row in rows:
+            location = f"{modality.name} line {line}"
+            observation = identifier(row[options.observation_id_column], location)
+            if observation in seen:
+                raise TabularIngestionError(f"{location}: duplicate observation ID {observation!r}")
+            if observation not in links:
                 raise TabularIngestionError(
-                    f"{modality.name}: header mismatch: missing={sorted(expected - set(header))}; "
-                    f"undeclared={sorted(set(header) - expected)}"
+                    f"{location}: undeclared observation ID {observation!r}"
                 )
-            columns = {name: i for i, name in enumerate(header)}
-            for row in reader:
-                location = f"{modality.name} line {reader.line_num}"
-                if len(row) != len(header):
+            unit = links[observation]
+            if options.unit_id_column is not None:
+                declared_unit = identifier(row[options.unit_id_column], location)
+                if declared_unit != unit:
                     raise TabularIngestionError(
-                        f"{location}: row has {len(row)} fields, expected {len(header)}"
+                        f"{location}: unit ID conflicts with observation declaration"
                     )
-                observation = _identifier(row[columns[options.observation_id_column]], location)
-                if observation in seen:
-                    raise TabularIngestionError(
-                        f"{location}: duplicate observation ID {observation!r}"
-                    )
-                if observation not in links:
-                    raise TabularIngestionError(
-                        f"{location}: undeclared observation ID {observation!r}"
-                    )
-                unit = links[observation]
-                if options.unit_id_column is not None:
-                    declared_unit = _identifier(row[columns[options.unit_id_column]], location)
-                    if declared_unit != unit:
-                        raise TabularIngestionError(
-                            f"{location}: unit ID conflicts with observation declaration"
-                        )
-                values.append(
-                    tuple(
-                        _value(row[columns[f.name]], f, options, f"{location} feature {f.name!r}")
-                        for f in modality.features
-                    )
+            values.append(
+                tuple(
+                    _value(row[f.name], f, options, f"{location} feature {f.name!r}")
+                    for f in modality.features
                 )
-                observations.append(observation)
-                units.append(unit)
-                seen.add(observation)
-        except (csv.Error, UnicodeError) as exc:
-            raise TabularIngestionError(
-                f"{modality.name} line {reader.line_num}: invalid UTF-8 CSV/TSV: {exc}"
-            ) from exc
+            )
+            observations.append(observation)
+            units.append(unit)
+            seen.add(observation)
+    except ValueError as exc:
+        if isinstance(exc, TabularIngestionError):
+            raise
+        raise TabularIngestionError(str(exc)) from exc
     if missing := set(links) - seen:
         raise TabularIngestionError(
             f"{modality.name}: missing declared observations {sorted(missing)}"

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "dataset_id": "illustrative_fixed_landmarks",
+  "specimens": [
+    {"specimen_id": "specimen1"}, {"specimen_id": "specimen2"},
+    {"specimen_id": "specimen3"}, {"specimen_id": "specimen4"}
+  ],
+  "modalities": [
+    {
+      "name": "outline", "kind": "morphometric", "level": "specimen",
+      "format": "tps", "path": "outline.tps",
+      "morphometric_options": {
+        "dimensions": 2, "landmark_ids": ["nose", "left", "right"],
+        "coordinate_unit": "pixel", "scale_unit": "mm",
+        "missing_values": ["", "NA"], "missing_landmark": [-1, -1]
+      },
+      "observations": [
+        {"observation_id": "outline1", "unit_id": "specimen1"},
+        {"observation_id": "outline1_repeat", "unit_id": "specimen1"},
+        {"observation_id": "outline3", "unit_id": "specimen3"}
+      ]
+    },
+    {
+      "name": "surface", "kind": "morphometric", "level": "specimen",
+      "format": "landmarks_csv", "path": "surface.csv",
+      "morphometric_options": {
+        "dimensions": 3, "landmark_ids": ["tip", "base", "dorsal", "ventral"],
+        "coordinate_unit": "mm", "missing_values": ["", "NA"]
+      },
+      "observations": [
+        {"observation_id": "scan1", "unit_id": "specimen1"},
+        {"observation_id": "scan2", "unit_id": "specimen2"}
+      ]
+    }
+  ]
+}

@@ -4,3 +4,4 @@ recursive-include examples/foundation *.json *.tsv
 recursive-include examples/genomic *.json *.phy *.str *.gen *.vcf *.popmap
 recursive-include examples/baseline *.json *.phy *.py
 recursive-include examples/tabular *.json *.csv *.tsv
+recursive-include examples/morphometric *.json *.csv *.tps

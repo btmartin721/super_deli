@@ -47,6 +47,19 @@ def main(argv: list[str] | None = None) -> int:
     tabular.add_argument(
         "--output-dir", type=Path, required=True, help="New directory for staged tables and outputs"
     )
+    morphometric = commands.add_parser(
+        "ingest-morphometric", help="Load fixed landmarks from TPS/coordinate CSV"
+    )
+    morphometric.add_argument("config", type=Path, help="Versioned dataset JSON configuration")
+    morphometric.add_argument(
+        "--modality", action="append", help="Select TPS/landmark CSV by name; repeat for multiple"
+    )
+    morphometric.add_argument(
+        "--output-dir",
+        type=Path,
+        required=True,
+        help="New directory for staged sources and landmarks",
+    )
     baseline = commands.add_parser(
         "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
     )
@@ -65,6 +78,17 @@ def main(argv: list[str] | None = None) -> int:
     try:
         source = args.config.absolute()
         config = load_config(source)
+        if args.command == "ingest-morphometric":
+            from super_deli.io.morphometric import ingest_morphometric
+
+            loaded_shapes = ingest_morphometric(
+                config,
+                base_dir=source.parent,
+                output_dir=args.output_dir,
+                modality_names=args.modality,
+            )
+            print(json.dumps(loaded_shapes.summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "ingest-tabular":
             from super_deli.io.tabular import ingest_tabular
 

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import math
 from collections.abc import Callable
 from typing import Any
 
@@ -11,6 +12,7 @@ from super_deli.core.data import (
     Feature,
     GenomicReaderOptions,
     Modality,
+    MorphometricReaderOptions,
     Observation,
     Specimen,
     TabularReaderOptions,
@@ -78,6 +80,37 @@ def _tabular_options(value: Any, location: str) -> TabularReaderOptions | None:
             "missing_values", lambda v, p: _array(v, p, _missing_token), default=("",)
         ),
         ignored_columns=obj.array("ignored_columns", _string),
+    )
+    obj.finish()
+    return result
+
+
+def _finite_number(value: Any, location: str) -> float:
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        raise ConfigError(f"{location}: expected a finite number")
+    try:
+        number = float(value)
+    except OverflowError as exc:
+        raise ConfigError(f"{location}: number exceeds finite float range") from exc
+    if not math.isfinite(number):
+        raise ConfigError(f"{location}: expected a finite number")
+    return number
+
+
+def _morphometric_options(value: Any, location: str) -> MorphometricReaderOptions | None:
+    if value is None:
+        return None
+    obj = _Object(value, location)
+    result = MorphometricReaderOptions(
+        dimensions=obj.get("dimensions", _integer),
+        landmark_ids=obj.array("landmark_ids", _string, required=True),
+        coordinate_unit=obj.optional_string("coordinate_unit"),
+        scale_unit=obj.optional_string("scale_unit"),
+        tps_id_field=obj.get("tps_id_field", _string, default="ID"),
+        missing_values=obj.get(
+            "missing_values", lambda v, p: _array(v, p, _missing_token), default=("",)
+        ),
+        missing_landmark=obj.array("missing_landmark", _finite_number),
     )
     obj.finish()
     return result
@@ -162,6 +195,7 @@ def _modality(value: Any, location: str) -> Modality:
         popmapfile=obj.optional_string("popmapfile"),
         reader_options=obj.get("reader_options", _reader_options, default=None),
         tabular_options=obj.get("tabular_options", _tabular_options, default=None),
+        morphometric_options=obj.get("morphometric_options", _morphometric_options, default=None),
     )
     obj.finish()
     return result

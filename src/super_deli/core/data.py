@@ -59,6 +59,19 @@ class TabularReaderOptions:
 
 
 @dataclass(frozen=True)
+class MorphometricReaderOptions:
+    """Declared geometry, correspondence and missingness for fixed landmarks."""
+
+    dimensions: int
+    landmark_ids: tuple[str, ...]
+    coordinate_unit: str | None = None
+    scale_unit: str | None = None
+    tps_id_field: str = "ID"
+    missing_values: tuple[str, ...] = ("",)
+    missing_landmark: tuple[float, ...] = ()
+
+
+@dataclass(frozen=True)
 class Modality:
     name: str
     kind: Kind
@@ -70,6 +83,7 @@ class Modality:
     popmapfile: str | None = None
     reader_options: GenomicReaderOptions | None = None
     tabular_options: TabularReaderOptions | None = None
+    morphometric_options: MorphometricReaderOptions | None = None
 
 
 @dataclass(frozen=True)
@@ -88,6 +102,8 @@ class DatasetConfig:
 
         result = json.loads(json.dumps(asdict(self), allow_nan=False))
         for modality in result["modalities"]:
+            if modality["morphometric_options"] is None:
+                del modality["morphometric_options"]
             if modality["tabular_options"] is None:
                 del modality["tabular_options"]
             options = modality["reader_options"]
