@@ -82,21 +82,53 @@ def run_empirical_study(study, *, case, output_dir):
     study = EmpiricalStudyConfig.from_dict(study.to_dict())
     if case not in CASES:
         raise ValueError("Unknown empirical validation case")
-    np, _, _, write_raw_views, _, _ = _dependencies()
+    _, _, _, write_raw_views, _, _ = _dependencies()
+    return run_fitted_study(
+        study,
+        case=case,
+        output_dir=output_dir,
+        simulator=simulate_continuous,
+        writer=write_raw_views,
+        runner=run_empirical_calibration,
+        policy_for=case_policy,
+        summarizer=summarize_empirical,
+        decision_key="reject_joint_raw_gaussian",
+    )
+
+
+def run_fitted_study(
+    study,
+    *,
+    case,
+    output_dir,
+    simulator,
+    writer,
+    runner,
+    policy_for,
+    summarizer,
+    decision_key,
+):
+    """Shared independent-dataset ledger and failure accounting for fitted raw nulls."""
+    import numpy as np
+
     root = Path(output_dir).resolve()
     root.mkdir(exist_ok=False)
     write_json(study.to_dict(), root / "study.json")
     records = []
     with (root / "datasets.jsonl").open("x", encoding="utf-8") as ledger:
         for i in range(study.n_datasets):
-            policy = case_policy(study, case, i)
+            policy = policy_for(study, case, i)
             seed = derived_seed(study.random_seed, case, i, "observed_data")
             directory = root / f"dataset_{i:04d}"
             directory.mkdir()
-            values, layout, labels = simulate_continuous(case, study.n_units, seed)
-            dataset = write_raw_views(values, layout, directory / "observed")
-            with (directory / "values.npy").open("xb") as handle:
-                np.save(handle, values, allow_pickle=False)
+            values, layout, labels = simulator(case, study.n_units, seed)
+            dataset = writer(values, layout, directory / "observed")
+            values_path = directory / ("values.npz" if isinstance(values, dict) else "values.npy")
+            with values_path.open("xb") as handle:
+                if isinstance(values, dict):
+                    np.savez(handle, **values)
+                else:
+                    np.save(handle, values, allow_pickle=False)
             write_json(
                 {
                     "scope": "Constructed generating partition, not species identities",
@@ -110,10 +142,10 @@ def run_empirical_study(study, *, case, output_dir):
                 "data_seed": seed,
                 "null_stream_seed": policy.random_seed,
                 "directory": directory.name,
-                "values_sha256": fingerprint_file(directory / "values.npy").sha256,
+                "values_sha256": fingerprint_file(values_path).sha256,
             }
             try:
-                result = run_empirical_calibration(
+                result = runner(
                     dataset,
                     config=policy,
                     base_dir=directory / "observed",
@@ -144,7 +176,7 @@ def run_empirical_study(study, *, case, output_dir):
                 row.update(
                     status=result["inference"]["status"],
                     p_value=result["inference"]["p_value"],
-                    reject=result["inference"]["reject_joint_raw_gaussian"],
+                    reject=result["inference"][decision_key],
                     statistic=result["point"].get("statistic"),
                     selected_k=result["point"].get("selected_k"),
                     **{
@@ -165,6 +197,6 @@ def run_empirical_study(study, *, case, output_dir):
             records.append(row)
             ledger.write(json.dumps(row, sort_keys=True, allow_nan=False) + "\n")
             ledger.flush()
-    summary = summarize_empirical(records, study, case)
+    summary = summarizer(records, study, case)
     write_json(summary, root / "summary.json")
     return summary

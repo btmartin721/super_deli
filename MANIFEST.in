@@ -20,3 +20,6 @@ recursive-include examples/pipeline-calibration *.json *.csv
 recursive-include docs/figures/pipeline-calibration *.pdf *.svg *.png
 recursive-include examples/empirical-calibration *.json *.csv
 recursive-include docs/figures/empirical-calibration *.pdf *.svg *.png
+
+recursive-include examples/grouped-calibration *.json *.csv
+recursive-include docs/figures/grouped-calibration *.pdf *.svg *.png
