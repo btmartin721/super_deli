@@ -25,6 +25,15 @@ TAIL_OPTIONS = {
 }
 
 
+BOUNDARY_TAIL_OPTIONS = {
+    **TAIL_OPTIONS,
+    "p_value_kind": (
+        "Approximate fitted conditional-PSD Gaussian bootstrap; boundary fits are nonregular"
+    ),
+    "interval_scope": TAIL_OPTIONS["interval_scope"] + "; no uniform boundary size guarantee",
+}
+
+
 def _dependencies():
     try:
         import numpy as np
@@ -48,8 +57,10 @@ def run_grouped_calibration(dataset, *, config, base_dir, output_dir):
         output_dir=output_dir,
         dependencies=_dependencies(),
         scope=SCOPE,
-        tail_options=TAIL_OPTIONS,
-        seed_namespace="grouped_raw_gaussian_v1",
+        tail_options=BOUNDARY_TAIL_OPTIONS if config.schema_version == 2 else TAIL_OPTIONS,
+        seed_namespace="grouped_raw_gaussian_v2"
+        if config.schema_version == 2
+        else "grouped_raw_gaussian_v1",
         target="grouped_gaussian_raw_continuous_views",
         null_hypothesis=(
             "Independent joint Gaussian group effects and iid Gaussian morphology residuals; "

@@ -7,12 +7,16 @@ from dataclasses import replace
 from super_deli.benchmarking.config import derived_seed
 from super_deli.benchmarking.empirical_study import run_fitted_study
 from super_deli.benchmarking.pipeline_study import summarize_records
-from super_deli.models.grouped_config import CASES, GroupedStudyConfig
+from super_deli.models.grouped_config import BOUNDARY_CASES, CASES, GroupedStudyConfig, study_cases
 
 
 def simulate_grouped(case, n, seed, *, target_level="locality"):
     import numpy as np
 
+    if case in BOUNDARY_CASES:
+        from super_deli.benchmarking.boundary_simulation import simulate_boundary
+
+        return simulate_boundary(case, n, seed, target_level=target_level)
     if (
         case not in CASES
         or type(n) is not int
@@ -48,6 +52,19 @@ def simulate_grouped(case, n, seed, *, target_level="locality"):
             [centers[:, j, None] * np.array([1, 0.7, 0.5, 0.3]) for j in range(2)], axis=1
         )
         latent += 3 * effects
+    layout = grouped_layout(counts, target_level)
+    return (
+        {"morphological": latent[targets, :4] + residuals, "ecological": latent[:, 4:]},
+        layout,
+        labels,
+    )
+
+
+def grouped_layout(counts, target_level):
+    import numpy as np
+
+    n = len(counts)
+    targets = np.repeat(np.arange(n), counts)
     units = tuple(f"group_{i:04d}" for i in range(n))
     specimens = tuple(f"specimen_{i:05d}" for i in range(len(targets)))
     layout = {
@@ -75,15 +92,11 @@ def simulate_grouped(case, n, seed, *, target_level="locality"):
                 "target_ids": [units[g] for g in targets] if kind == "morphological" else units,
             }
         )
-    return (
-        {"morphological": latent[targets, :4] + residuals, "ecological": latent[:, 4:]},
-        layout,
-        labels,
-    )
+    return layout
 
 
 def case_policy(study, case, repetition):
-    if case not in CASES or not 0 <= repetition < study.n_datasets:
+    if case not in study_cases(study) or not 0 <= repetition < study.n_datasets:
         raise ValueError("Unknown grouped validation case/repetition")
     return replace(
         study.calibration,
@@ -115,7 +128,7 @@ def run_grouped_study(study, *, case, output_dir):
     from super_deli.workflows.grouped_calibration import _dependencies, run_grouped_calibration
 
     study = GroupedStudyConfig.from_dict(study.to_dict())
-    if case not in CASES:
+    if case not in study_cases(study):
         raise ValueError("Unknown grouped validation case")
     _, _, _, writer, _, _ = _dependencies()
 

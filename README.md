@@ -4,7 +4,7 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: fitted-null calibration for unequal grouped morphology/ecology.**
+**Current checkpoint: covariance-boundary handling in grouped fitted-null calibration.**
 Genomic, numeric morphology/ecology and shape scores can be fused by exact unit
 IDs or explicit population/locality aggregation, with prespecified view weights.
 The package also supports individual-modality PCA/GMM, frozen-fit shape
@@ -49,6 +49,9 @@ row per population/locality. It preserves the observed sampling design through
 full-pipeline bootstrap refits, rejects unsupported covariance fits and keeps
 missing-test denominators explicit. See the [grouped method](docs/grouped-null-calibration.md) and
 [100-dataset results with explicit withheld tests](docs/grouped-null-calibration-results.md).
+Schema-2 grouped calibration adds positive-semidefinite between-group covariance,
+bounded convergence checks and a versioned sampler while retaining legacy audits.
+See the [boundary method](docs/grouped-covariance-boundaries.md).
 Additional fitted nulls for genomic/count/shape data remain separate checkpoints.
 
 ## Installation
