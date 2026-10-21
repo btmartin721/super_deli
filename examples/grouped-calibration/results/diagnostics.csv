@@ -1,0 +1,5 @@
+case,available_tests,null_fit_failures,morphology_n_min,morphology_n_max,morphology_n_mean,groups_with_n1,groups_with_n2,groups_with_n3,groups_with_n4,p_min,p_mean,p_median,p_max,statistic_min,statistic_max,k1_count,k2_count,k3_count,k4_count,all_starts_boundary_failures,mixed_boundary_iteration_failures,all_starts_iteration_limit_failures
+independent_gaussian,25,0,143,175,159.52,400,411,390,399,1.0,1.0,1.0,1.0,0.0,0.0,25,0,0,0,0,0,0
+correlated_gaussian,12,13,141,179,160.08,428,375,364,433,1.0,1.0,1.0,1.0,0.0,0.0,12,0,0,0,12,0,1
+complementary,20,5,144,179,160.64,382,411,416,391,0.01,0.4555,0.01,1.0,0.0,24.745026855610035,9,11,0,0,3,1,1
+heavy_tailed,12,13,133,175,158.36,417,393,404,386,0.01,0.835,1.0,1.0,0.0,57.39436079800572,10,2,0,0,10,2,1
