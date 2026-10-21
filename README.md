@@ -333,3 +333,5 @@ metadata checks, with PDF/HEIC/HEIF extensions added to discovery.
 The [genomic fitted-null checkpoint](docs/genomic-null-calibration.md) adds an
 approximate full-pipeline pooled-HWE test for explicitly unlinked diploid SNPs,
 with optional popmaps and preserved failed-draw accounting.
+See the [completed genomic validation report](docs/genomic-null-calibration-results.md)
+for the frozen 125-dataset study and its inferential limits.

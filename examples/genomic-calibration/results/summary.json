@@ -1,0 +1,140 @@
+{
+  "archive_members": 252250,
+  "attempted_fits": 12500,
+  "audit_scope": "Regenerated all raw genotype inputs/draws with fixed masks and identities; independently checked pooled frequency MLEs/binomial likelihood, all archive hashes, Patterson filtering/scaling/imputation, PCA eigensystem/projection, selected diagonal-mixture likelihood/BIC/membership, candidate selection, seeds, tails and failure denominators. No SNPio or clustering refits in audit; nonselected mixture parameters are not exported and their likelihoods are not independently re-evaluated. Outer failures retain counts without complete numerical re-audit.",
+  "datasets": 125,
+  "failed_fits": 0,
+  "planned_fits": 12500,
+  "rates": [
+    {
+      "case": "common_hwe",
+      "events": 1,
+      "interpretation": "Type-I error under the specified unlinked pooled HWE law",
+      "max": 1.0,
+      "mcse": 0.04,
+      "mean": 0.04,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "sd": 0.2,
+      "wilson_95": [
+        0.007096233501987265,
+        0.19544063736193729
+      ]
+    },
+    {
+      "case": "rare_missing_hwe",
+      "events": 0,
+      "interpretation": "Type-I error under the specified unlinked pooled HWE law",
+      "max": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "sd": 0.0,
+      "wilson_95": [
+        0.0,
+        0.1331922509390484
+      ]
+    },
+    {
+      "case": "four_groups",
+      "events": 25,
+      "interpretation": "Power for the constructed four-group alternative",
+      "max": 1.0,
+      "mcse": 0.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "sd": 0.0,
+      "wilson_95": [
+        0.8668077490609516,
+        1.0
+      ]
+    },
+    {
+      "case": "linked_stress",
+      "events": 0,
+      "interpretation": "Misspecification sensitivity; NOT species-boundary or discrete-cluster type-I error",
+      "max": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "sd": 0.0,
+      "wilson_95": [
+        0.0,
+        0.1331922509390484
+      ]
+    },
+    {
+      "case": "cline_stress",
+      "events": 25,
+      "interpretation": "Misspecification sensitivity; NOT species-boundary or discrete-cluster type-I error",
+      "max": 1.0,
+      "mcse": 0.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "sd": 0.0,
+      "wilson_95": [
+        0.8668077490609516,
+        1.0
+      ]
+    }
+  ],
+  "raw_files": 15055,
+  "schema_version": 1,
+  "status": "complete",
+  "study": {
+    "calibration": {
+      "alpha": 0.05,
+      "assume_fixed_panel": true,
+      "assume_hardy_weinberg": true,
+      "assume_noninformative_missingness": true,
+      "assume_unrelated_specimens": true,
+      "max_archive_bytes": 2147483648,
+      "max_working_bytes": 268435456,
+      "modality": "genomic",
+      "model": {
+        "assignment_threshold": 0.0,
+        "assume_independent_specimens": true,
+        "assume_unlinked": true,
+        "max_iter": 500,
+        "max_k": 4,
+        "max_pairwise_bytes": 268435456,
+        "min_cluster_size": 5,
+        "missing_policy": "mean",
+        "n_bootstrap": 0,
+        "n_init": 10,
+        "n_pcs": 2,
+        "n_threads": 1,
+        "ploidy": 2,
+        "random_seed": 71323,
+        "reg_covar": 1e-06,
+        "scaling": "patterson",
+        "schema_version": 1,
+        "tol": 0.001
+      },
+      "n_simulations": 99,
+      "random_seed": 20261026,
+      "schema_version": 1
+    },
+    "n_datasets": 25,
+    "n_units": 64,
+    "random_seed": 20261026,
+    "schema_version": 1
+  },
+  "successful_fits": 12500,
+  "unattempted_fits": 0,
+  "verified_successful_pipelines": 12500
+}

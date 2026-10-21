@@ -1,0 +1,6 @@
+case,available_tests,withheld_tests,rejections,point_k1,point_k2,point_k3,point_k4,point_t_zero,total_boundary_loci,total_missing_calls,p_min,p_max
+common_hwe,25,0,1,24,1,0,0,24,0,0,0.01,1.0
+rare_missing_hwe,25,0,0,14,11,0,0,14,92,20408,0.1,1.0
+four_groups,25,0,25,0,0,0,25,0,0,0,0.01,0.01
+linked_stress,25,0,0,25,0,0,0,25,0,0,1.0,1.0
+cline_stress,25,0,25,0,0,11,14,0,0,0,0.01,0.01
