@@ -194,6 +194,32 @@ def main(argv: list[str] | None = None) -> int:
     )
     empirical_audit.add_argument("config", type=Path)
     empirical_audit.add_argument("--output-dir", type=Path, required=True)
+    linked = commands.add_parser(
+        "calibrate-linked-genomic", help="Fit an empirical whole-block genotype null"
+    )
+    linked.add_argument("config", type=Path)
+    linked.add_argument("--calibration-config", type=Path, required=True)
+    linked.add_argument("--output-dir", type=Path, required=True)
+    linked_study = commands.add_parser(
+        "benchmark-linked-calibration", help="Validate linkage-aware empirical genomic nulls"
+    )
+    linked_study.add_argument("config", type=Path)
+    from super_deli.models.linked_config import CASES as LINKED_CASES
+
+    linked_study.add_argument("--case", required=True, choices=LINKED_CASES)
+    linked_study.add_argument("--output-dir", type=Path, required=True)
+    linked_audit = commands.add_parser(
+        "analyze-linked-calibration", help="Audit completed linkage-aware empirical genomic cases"
+    )
+    linked_audit.add_argument("config", type=Path)
+    linked_audit.add_argument("--output-dir", type=Path, required=True)
+    compare_genomic = commands.add_parser(
+        "compare-genomic-calibration",
+        help="Compare byte-paired pooled-HWE and block-profile outcomes",
+    )
+    compare_genomic.add_argument("config", type=Path, help="Legacy pooled-HWE study directory")
+    compare_genomic.add_argument("--current-study", type=Path, required=True)
+    compare_genomic.add_argument("--output-dir", type=Path, required=True)
     genomic = commands.add_parser(
         "calibrate-genomic", help="Fit a pooled unlinked diploid HWE null"
     )
@@ -269,6 +295,45 @@ def main(argv: list[str] | None = None) -> int:
             from super_deli.benchmarking.grouped_comparison import compare_grouped_studies
 
             summary = compare_grouped_studies(
+                source, args.current_study, output_dir=args.output_dir
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "calibrate-linked-genomic":
+            from super_deli.models.linked_config import LinkedCalibrationConfig
+            from super_deli.workflows.linked_calibration import run_linked_calibration
+
+            with redirect_stdout(sys.stderr):
+                summary = run_linked_calibration(
+                    load_config(source),
+                    config=LinkedCalibrationConfig.from_dict(read_json(args.calibration_config)),
+                    base_dir=source.parent,
+                    output_dir=args.output_dir,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0 if summary["inference"]["status"] == "available" else 1
+        if args.command == "benchmark-linked-calibration":
+            from super_deli.benchmarking.linked_study import run_linked_study
+            from super_deli.models.linked_config import LinkedStudyConfig
+
+            with redirect_stdout(sys.stderr):
+                summary = run_linked_study(
+                    LinkedStudyConfig.from_dict(read_json(source)),
+                    case=args.case,
+                    output_dir=args.output_dir,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "analyze-linked-calibration":
+            from super_deli.benchmarking.linked_analysis import audit_linked_study
+
+            summary = audit_linked_study(source, output_dir=args.output_dir)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "compare-genomic-calibration":
+            from super_deli.benchmarking.genomic_comparison import compare_genomic_studies
+
+            summary = compare_genomic_studies(
                 source, args.current_study, output_dir=args.output_dir
             )
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))

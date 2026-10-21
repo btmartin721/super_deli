@@ -28,12 +28,8 @@ class GenomicNull:
         }
 
 
-def fit_null(dataset, loaded, dosages, encoding, config):
-    """Fit one allele frequency per original locus, before filtering or imputation.
-
-    Entirely missing or unsupported loci are rejected. Observed monomorphic
-    frequencies remain at their exact MLE boundaries; no pseudo-count is used.
-    """
+def validate_raw_genotypes(dataset, loaded, dosages, encoding, config):
+    """Validate and copy raw genomic calls without selecting/filtering any loci."""
     if len(dataset.modalities) != 1 or dataset.modalities[0].name != config.modality:
         raise ValueError("Select a genomic-only dataset with the configured modality name")
     m = dataset.modalities[0]
@@ -58,6 +54,13 @@ def fit_null(dataset, loaded, dosages, encoding, config):
         raise ValueError("An entirely missing locus has no identifiable allele frequency")
     if config.model.missing_policy == "error" and np.isnan(values).any():
         raise ValueError("Missing calls require the declared mean-imputation policy")
+    return values, counts
+
+
+def fit_null(dataset, loaded, dosages, encoding, config):
+    """Fit pooled HWE frequencies before filtering, retaining exact boundaries."""
+    values, counts = validate_raw_genotypes(dataset, loaded, dosages, encoding, config)
+    p = values.shape[1]
     frequencies = np.nansum(values, axis=0) / (2 * counts)
     called = ~np.isnan(values)
     g = np.nan_to_num(values)
@@ -66,7 +69,7 @@ def fit_null(dataset, loaded, dosages, encoding, config):
     ).sum()
     layout = {
         "schema_version": 1,
-        "modality": m.name,
+        "modality": dataset.modalities[0].name,
         "sample_ids": list(loaded.sample_ids),
         "unit_ids": list(loaded.specimen_ids),
         "locus_indices": list(range(p)),

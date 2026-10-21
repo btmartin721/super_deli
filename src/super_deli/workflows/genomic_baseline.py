@@ -13,24 +13,9 @@ from super_deli.core.results import Assignment, DelimitationResult, Evidence
 from super_deli.io.config import write_json
 from super_deli.io.genomic import _select_modality, ingest_genomic
 from super_deli.io.genomic_encoding import encode_diploid
+from super_deli.models.block_map import parse_blocks as parse_blocks
 from super_deli.models.config import BaselineConfig
 from super_deli.models.pca_gmm import BaselineFit, fit_pca_gmm
-
-
-def parse_blocks(value: object) -> tuple[str, ...]:
-    """Parse a versioned map containing one block ID per original source locus."""
-    if not isinstance(value, dict) or set(value) != {"schema_version", "block_ids"}:
-        raise ValueError("Block map requires exactly schema_version and block_ids")
-    if type(value["schema_version"]) is not int or value["schema_version"] != 1:
-        raise ValueError("Unsupported block-map schema version")
-    ids = value["block_ids"]
-    if (
-        not isinstance(ids, list)
-        or not ids
-        or any(not isinstance(i, str) or not i or i != i.strip() for i in ids)
-    ):
-        raise ValueError("block_ids must be a nonempty array of unpadded strings")
-    return tuple(ids)
 
 
 def _result(dataset_id: str, fit: BaselineFit, digest: str) -> DelimitationResult:

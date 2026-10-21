@@ -29,3 +29,6 @@ recursive-include docs/figures/boundary-calibration *.pdf *.svg *.png
 
 recursive-include examples/genomic-calibration *.json *.csv
 recursive-include docs/figures/genomic-calibration *.pdf *.svg *.png
+
+recursive-include examples/linked-calibration *.json *.csv
+recursive-include docs/figures/linked-calibration *.pdf *.svg *.png
