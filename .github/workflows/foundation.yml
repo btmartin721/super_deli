@@ -115,3 +115,9 @@ jobs:
           super-deli analyze-linked-calibration "$RUNNER_TEMP/linked-study" --output-dir "$RUNNER_TEMP/linked-audit"
           super-deli compare-genomic-calibration "$RUNNER_TEMP/genomic-study" --current-study "$RUNNER_TEMP/linked-study" --output-dir "$RUNNER_TEMP/genomic-paired"
           super-deli calibrate-linked-genomic "$RUNNER_TEMP/linked-study/common_hwe/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/linked-study/common_hwe/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/linked-direct-calibration"
+          mkdir "$RUNNER_TEMP/joint-study"
+          for case in zero_association linear_association complementary heavy_tailed cline; do
+            super-deli benchmark-joint-calibration "$GITHUB_WORKSPACE/examples/joint-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/joint-study/$case"
+          done
+          super-deli analyze-joint-calibration "$RUNNER_TEMP/joint-study" --output-dir "$RUNNER_TEMP/joint-audit"
+          super-deli calibrate-joint-integrative "$RUNNER_TEMP/joint-study/linear_association/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/joint-study/linear_association/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/joint-direct-calibration"

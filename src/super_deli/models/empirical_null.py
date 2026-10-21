@@ -23,13 +23,13 @@ class RawGaussian:
         return {"values": self.values, "mean": self.mean, "covariance": self.covariance}
 
 
-def fit_null(dataset, tables, config):
+def collect_raw_views(dataset, tables, config, *, views=None):
     from super_deli.models.tabular_gmm import _matrix
 
     by_name = {t.modality_name: t for t in tables}
     blocks, layout, units = [], [], None
     expected = {s.specimen_id for s in dataset.specimens}
-    for view in config.model.views:
+    for view in config.model.views if views is None else views:
         table = by_name[view.modality]
         if table.level != "specimen" or table.kind != view.kind:
             raise ValueError("Fitted null requires directly matched specimen-level tables")
@@ -57,12 +57,20 @@ def fit_null(dataset, tables, config):
                 "unit_ids": table.unit_ids,
             }
         )
-    n, p = len(units), sum(b.shape[1] for b in blocks)
+    return np.concatenate(blocks, axis=1), {
+        "schema_version": 1,
+        "unit_ids": units,
+        "views": layout,
+    }
+
+
+def fit_null(dataset, tables, config):
+    values, layout = collect_raw_views(dataset, tables, config)
+    n, p = values.shape
     if n <= p or n < 2 * config.model.min_cluster_size:
         raise ValueError("Fitted raw covariance requires N>P and at least two feasible components")
     if 8 * (24 * n * p + 8 * p * p) > config.model.max_working_bytes:
         raise ValueError("Raw Gaussian fit exceeds max_working_bytes")
-    values = np.concatenate(blocks, axis=1)
     mean = values.mean(axis=0)
     centered = values - mean
     covariance = centered.T @ centered / n
@@ -81,9 +89,7 @@ def fit_null(dataset, tables, config):
         mean,
         covariance,
         {
-            "schema_version": 1,
-            "unit_ids": units,
-            "views": layout,
+            **layout,
             "fit": "Joint raw mean and full maximum-likelihood covariance (divisor N), before PCA",
             "sampling": "Independent specimen rows; fitted cross-view covariance retained",
         },

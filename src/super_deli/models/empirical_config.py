@@ -93,19 +93,7 @@ class EmpiricalStudyConfig:
     def __post_init__(self):
         if not isinstance(self.calibration, EmpiricalCalibrationConfig):
             raise ValueError("An empirical calibration policy is required")
-        for name in ("n_datasets", "n_units", "schema_version"):
-            if type(getattr(self, name)) is not int or getattr(self, name) < 1:
-                raise ValueError(f"{name} must be a positive integer")
-        if (
-            self.schema_version != 1
-            or self.n_units < 20
-            or self.n_units % 4
-            or type(self.random_seed) is not int
-            or not 0 <= self.random_seed < 2**64
-        ):
-            raise ValueError("Use schema 1, >=20 units divisible by four and a uint64 seed")
-        if 128 * self.n_units * 64 > self.calibration.model.max_working_bytes:
-            raise ValueError("Study dimensions exceed workspace budget")
+        validate_study_dimensions(self)
 
     @classmethod
     def from_dict(cls, value):
@@ -115,3 +103,20 @@ class EmpiricalStudyConfig:
 
     def to_dict(self):
         return asdict(self)
+
+
+def validate_study_dimensions(study):
+    """Shared independent-dataset, seed and workspace contract."""
+    for name in ("n_datasets", "n_units", "schema_version"):
+        if type(getattr(study, name)) is not int or getattr(study, name) < 1:
+            raise ValueError(f"{name} must be a positive integer")
+    if (
+        study.schema_version != 1
+        or study.n_units < 20
+        or study.n_units % 4
+        or type(study.random_seed) is not int
+        or not 0 <= study.random_seed < 2**64
+    ):
+        raise ValueError("Use schema 1, >=20 units divisible by four and a uint64 seed")
+    if 128 * study.n_units * 64 > study.calibration.model.max_working_bytes:
+        raise ValueError("Study dimensions exceed workspace budget")

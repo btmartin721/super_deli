@@ -194,6 +194,20 @@ def main(argv: list[str] | None = None) -> int:
     )
     empirical_audit.add_argument("config", type=Path)
     empirical_audit.add_argument("--output-dir", type=Path, required=True)
+    from super_deli.models.joint_config import CASES as JOINT_CASES
+
+    for command, help_text in (
+        ("calibrate-joint-integrative", "Fit a joint genomic-phenotypic raw null"),
+        ("benchmark-joint-calibration", "Validate joint empirical nulls"),
+        ("analyze-joint-calibration", "Audit joint calibration studies"),
+    ):
+        joint_parser = commands.add_parser(command, help=help_text)
+        joint_parser.add_argument("config", type=Path)
+        joint_parser.add_argument("--output-dir", type=Path, required=True)
+        if command == "calibrate-joint-integrative":
+            joint_parser.add_argument("--calibration-config", type=Path, required=True)
+        elif command == "benchmark-joint-calibration":
+            joint_parser.add_argument("--case", required=True, choices=JOINT_CASES)
     linked = commands.add_parser(
         "calibrate-linked-genomic", help="Fit an empirical whole-block genotype null"
     )
@@ -299,6 +313,41 @@ def main(argv: list[str] | None = None) -> int:
             )
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
             return 0
+        if args.command in {
+            "calibrate-joint-integrative",
+            "benchmark-joint-calibration",
+            "analyze-joint-calibration",
+        }:
+            with redirect_stdout(sys.stderr):
+                if args.command == "calibrate-joint-integrative":
+                    from super_deli.models.joint_config import JointCalibrationConfig
+                    from super_deli.workflows.joint_calibration import run_joint_calibration
+
+                    summary = run_joint_calibration(
+                        load_config(source),
+                        config=JointCalibrationConfig.from_dict(read_json(args.calibration_config)),
+                        base_dir=source.parent,
+                        output_dir=args.output_dir,
+                    )
+                elif args.command == "benchmark-joint-calibration":
+                    from super_deli.benchmarking.joint_study import run_joint_study
+                    from super_deli.models.joint_config import JointStudyConfig
+
+                    summary = run_joint_study(
+                        JointStudyConfig.from_dict(read_json(source)),
+                        case=args.case,
+                        output_dir=args.output_dir,
+                    )
+                else:
+                    from super_deli.benchmarking.joint_analysis import audit_joint_study
+
+                    summary = audit_joint_study(source, output_dir=args.output_dir)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return (
+                0
+                if "inference" not in summary or summary["inference"]["status"] == "available"
+                else 1
+            )
         if args.command == "calibrate-linked-genomic":
             from super_deli.models.linked_config import LinkedCalibrationConfig
             from super_deli.workflows.linked_calibration import run_linked_calibration
