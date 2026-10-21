@@ -329,3 +329,7 @@ Historical imputation sources remain outside the installed `src/` package.
 Their previous documentation is preserved in [the legacy README](docs/legacy-readme.md).
 The standalone `image_tps_manifest.py` keeps its existing manifest schema and
 metadata checks, with PDF/HEIC/HEIF extensions added to discovery.
+
+The [genomic fitted-null checkpoint](docs/genomic-null-calibration.md) adds an
+approximate full-pipeline pooled-HWE test for explicitly unlinked diploid SNPs,
+with optional popmaps and preserved failed-draw accounting.
