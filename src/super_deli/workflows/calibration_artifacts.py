@@ -17,7 +17,18 @@ def archive_tree(archive, directory, prefix, inventory, limit):
             archive.write(path, arcname=member)
 
 
-def fit_pipeline(staging, declaration, directory, prefix, *, model, runner, validate=None):
+def fit_pipeline(
+    staging,
+    declaration,
+    directory,
+    prefix,
+    *,
+    model,
+    runner,
+    validate=None,
+    record_for=None,
+    error_stage="integrative_point_pipeline",
+):
     from super_deli.models.gaussian_calibration import bic_improvement
 
     record = {"archive_prefix": prefix}
@@ -27,20 +38,28 @@ def fit_pipeline(staging, declaration, directory, prefix, *, model, runner, vali
             declaration, model_config=model, base_dir=directory, output_dir=staging / "run"
         )
     except (ValueError, RuntimeError, FloatingPointError) as exc:
-        record.update(status="failed", error=str(exc), error_stage="integrative_point_pipeline")
+        record.update(status="failed", error=str(exc), error_stage=error_stage)
     else:
         if validate is not None:
             validate(run, staging / "run")
-        candidates = read_json(staging / "run/candidates.json")
+        candidates = run.get("candidates")
+        if candidates is None:
+            candidates = read_json(staging / "run/candidates.json")
         record.update(
             status="complete",
             statistic=bic_improvement(candidates),
             selected_k=run["selected_k"],
-            point_seed=run["point_seed"],
-            n_retained=len(run["unit_ids"]),
             candidates=candidates,
-            mixture_sha256=run["provenance"]["mixture_sha256"],
-            fusion_sha256=run["provenance"]["fusion_sha256"],
+        )
+        record.update(
+            record_for(run, staging / "run", model)
+            if record_for
+            else {
+                "point_seed": run["point_seed"],
+                "n_retained": len(run["unit_ids"]),
+                "mixture_sha256": run["provenance"]["mixture_sha256"],
+                "fusion_sha256": run["provenance"]["fusion_sha256"],
+            }
         )
     return record
 

@@ -80,6 +80,10 @@ def run_fitted_calibration(
     seed_namespace,
     target,
     null_hypothesis,
+    load_null=None,
+    point_fitter=fit_pipeline,
+    evidence_method="Approximate full-pipeline fitted-Gaussian BIC-improvement bootstrap",
+    software_names=("super-deli", "numpy", "scipy", "scikit-learn", "threadpoolctl"),
 ):
     """Shared execution and failure accounting; each caller supplies its raw null."""
     dataset = config_from_dict(dataset.to_dict())
@@ -96,13 +100,16 @@ def run_fitted_calibration(
     write_json(config.to_dict(), destination / "configuration.json")
     point, records, inventory = None, [], {}
     try:
-        loaded = ingest_tabular(
-            dataset,
-            base_dir=source,
-            output_dir=destination / "null_ingestion",
-            modality_names=[v.modality for v in config.model.views],
-        )
-        null = fit_null(dataset, loaded.tables, config)
+        if load_null is None:
+            loaded = ingest_tabular(
+                dataset,
+                base_dir=source,
+                output_dir=destination / "null_ingestion",
+                modality_names=[v.modality for v in config.model.views],
+            )
+            null = fit_null(dataset, loaded.tables, config)
+        else:
+            null = load_null(dataset, config, source, destination, fit_null)
         with (destination / "null_model.npz").open("xb") as handle:
             np.savez(handle, **null.model_arrays())
         write_json(null.layout, destination / "layout.json")
@@ -111,7 +118,7 @@ def run_fitted_calibration(
         ) as archive:
             with TemporaryDirectory(prefix="observed-", dir=destination) as temporary:
                 staging = Path(temporary)
-                point = fit_pipeline(
+                point = point_fitter(
                     staging, dataset, source, "observed", model=config.model, runner=runner
                 )
                 write_json(point, destination / "observed.json")
@@ -123,7 +130,7 @@ def run_fitted_calibration(
                         staging = Path(temporary)
                         values = simulate_null(null, seed)
                         declaration = write_raw_views(values, null.layout, staging / "raw")
-                        record = fit_pipeline(
+                        record = point_fitter(
                             staging,
                             declaration,
                             staging / "raw",
@@ -161,7 +168,7 @@ def run_fitted_calibration(
             "p_value",
             target,
             "available" if inference["p_value"] is not None else "unavailable",
-            method="Approximate full-pipeline fitted-Gaussian BIC-improvement bootstrap",
+            method=evidence_method,
             value=inference["p_value"],
             replicates=config.n_simulations,
             null_hypothesis=null_hypothesis,
@@ -200,10 +207,7 @@ def run_fitted_calibration(
                     "evidence.json",
                 )
             },
-            "software": {
-                name: version(name)
-                for name in ("super-deli", "numpy", "scipy", "scikit-learn", "threadpoolctl")
-            },
+            "software": {name: version(name) for name in software_names},
         }
         write_json(result, destination / "summary.json")
         return result

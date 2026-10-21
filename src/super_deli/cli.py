@@ -194,6 +194,25 @@ def main(argv: list[str] | None = None) -> int:
     )
     empirical_audit.add_argument("config", type=Path)
     empirical_audit.add_argument("--output-dir", type=Path, required=True)
+    genomic = commands.add_parser(
+        "calibrate-genomic", help="Fit a pooled unlinked diploid HWE null"
+    )
+    genomic.add_argument("config", type=Path)
+    genomic.add_argument("--calibration-config", type=Path, required=True)
+    genomic.add_argument("--output-dir", type=Path, required=True)
+    genomic_study = commands.add_parser(
+        "benchmark-genomic-calibration", help="Validate fitted genomic null tests"
+    )
+    genomic_study.add_argument("config", type=Path)
+    from super_deli.models.genomic_config import CASES as GENOMIC_CASES
+
+    genomic_study.add_argument("--case", required=True, choices=GENOMIC_CASES)
+    genomic_study.add_argument("--output-dir", type=Path, required=True)
+    genomic_audit = commands.add_parser(
+        "analyze-genomic-calibration", help="Audit completed genomic fitted-null cases"
+    )
+    genomic_audit.add_argument("config", type=Path)
+    genomic_audit.add_argument("--output-dir", type=Path, required=True)
     grouped = commands.add_parser(
         "calibrate-grouped-integrative", help="Fit a hierarchical continuous-data null"
     )
@@ -252,6 +271,37 @@ def main(argv: list[str] | None = None) -> int:
             summary = compare_grouped_studies(
                 source, args.current_study, output_dir=args.output_dir
             )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "calibrate-genomic":
+            from super_deli.models.genomic_config import GenomicCalibrationConfig
+            from super_deli.workflows.genomic_calibration import run_genomic_calibration
+
+            with redirect_stdout(sys.stderr):
+                summary = run_genomic_calibration(
+                    load_config(source),
+                    config=GenomicCalibrationConfig.from_dict(read_json(args.calibration_config)),
+                    base_dir=source.parent,
+                    output_dir=args.output_dir,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0 if summary["inference"]["status"] == "available" else 1
+        if args.command == "benchmark-genomic-calibration":
+            from super_deli.benchmarking.genomic_study import run_genomic_study
+            from super_deli.models.genomic_config import GenomicStudyConfig
+
+            with redirect_stdout(sys.stderr):
+                summary = run_genomic_study(
+                    GenomicStudyConfig.from_dict(read_json(source)),
+                    case=args.case,
+                    output_dir=args.output_dir,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "analyze-genomic-calibration":
+            from super_deli.benchmarking.genomic_analysis import audit_genomic_study
+
+            summary = audit_genomic_study(source, output_dir=args.output_dir)
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
             return 0
         if args.command == "calibrate-grouped-integrative":
