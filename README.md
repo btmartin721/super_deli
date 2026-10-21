@@ -348,3 +348,10 @@ of matched continuous morphology/ecology on prespecified raw genomic summaries.
 It reruns the complete integrative pipeline and reports approximate joint-law
 departure p-values, with stability and species-boundary interpretation separate.
 See the [completed 125-dataset validation](docs/joint-genomic-phenotypic-calibration-results.md) for outcomes and limitations.
+
+The [four-group recovery diagnostics](docs/integrative-recovery-diagnostics.md)
+audit the generating signal, PCA retention, mixture constraints, optimization
+and BIC penalties in the constructed joint-study alternative. They preserve
+all models and significance results; the frozen grid is diagnostic only.
+See the [completed recovery report](docs/integrative-recovery-diagnostics-results.md)
+for all 525 point fits, the separate optimization diagnostic and its limitations.
