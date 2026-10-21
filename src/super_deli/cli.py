@@ -207,7 +207,15 @@ def main(argv: list[str] | None = None) -> int:
     grouped_study.add_argument(
         "--case",
         required=True,
-        choices=("independent_gaussian", "correlated_gaussian", "complementary", "heavy_tailed"),
+        choices=(
+            "independent_gaussian",
+            "correlated_gaussian",
+            "complementary",
+            "heavy_tailed",
+            "zero_conditional_gaussian",
+            "rank_two_gaussian",
+            "weak_conditional_gaussian",
+        ),
     )
     grouped_study.add_argument("--output-dir", type=Path, required=True)
     grouped_audit = commands.add_parser(
@@ -215,6 +223,12 @@ def main(argv: list[str] | None = None) -> int:
     )
     grouped_audit.add_argument("config", type=Path)
     grouped_audit.add_argument("--output-dir", type=Path, required=True)
+    comparison = commands.add_parser(
+        "compare-grouped-calibration", help="Compare byte-identical grouped observed cohorts"
+    )
+    comparison.add_argument("config", type=Path, help="Legacy schema-1 study directory")
+    comparison.add_argument("--current-study", type=Path, required=True)
+    comparison.add_argument("--output-dir", type=Path, required=True)
     baseline = commands.add_parser(
         "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
     )
@@ -232,6 +246,14 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command == "compare-grouped-calibration":
+            from super_deli.benchmarking.grouped_comparison import compare_grouped_studies
+
+            summary = compare_grouped_studies(
+                source, args.current_study, output_dir=args.output_dir
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "calibrate-grouped-integrative":
             from super_deli.models.grouped_config import GroupedCalibrationConfig
             from super_deli.workflows.grouped_calibration import run_grouped_calibration

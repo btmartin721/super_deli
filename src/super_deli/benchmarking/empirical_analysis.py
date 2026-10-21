@@ -92,8 +92,8 @@ def audit_fitted_study(root, *, output_dir, grouped=False):
         from super_deli.benchmarking.grouped_study import case_policy as policy_for
         from super_deli.benchmarking.grouped_study import simulate_grouped
         from super_deli.benchmarking.grouped_study import summarize_grouped as summarize
-        from super_deli.models.grouped_config import CASES as cases
         from super_deli.models.grouped_config import GroupedStudyConfig as study_type
+        from super_deli.models.grouped_config import study_cases
         from super_deli.models.grouped_null import write_raw_views as writer
         from super_deli.workflows.grouped_calibration import TAIL_OPTIONS as tail_options
         from super_deli.workflows.grouped_calibration import _dependencies as grouped_dependencies
@@ -108,10 +108,18 @@ def audit_fitted_study(root, *, output_dir, grouped=False):
     if destination.exists():
         raise FileExistsError(f"Output already exists: {destination}")
     original, rows, rates, members, successes = None, [], [], 0, 0
+    if grouped:
+        first = read_json(root / "independent_gaussian/study.json")
+        cases = study_cases(study_type.from_dict(first))
     for case in cases:
         directory = root / case
         declaration = read_json(directory / "study.json")
         study = study_type.from_dict(declaration)
+        if grouped and study.calibration.schema_version == 2:
+            from super_deli.workflows.grouped_calibration import BOUNDARY_TAIL_OPTIONS
+
+            tail_options = BOUNDARY_TAIL_OPTIONS
+            namespace = "grouped_raw_gaussian_v2"
         if original is not None and original != declaration:
             raise ValueError("Study shard declarations disagree")
         original = declaration

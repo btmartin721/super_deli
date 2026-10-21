@@ -36,6 +36,16 @@ def verify_model(base, output, values, layout, policy):
         z = np.column_stack(([morphology[targets == i].mean(axis=0) for i in range(g)], ecology))
         np.testing.assert_array_equal(arrays["values"], z)
         mean, between, within = (arrays[k].copy() for k in ("mean", "covariance", "within"))
+        factor = (
+            arrays["sampling_factor"].copy()
+            if policy.schema_version == 2
+            else np.linalg.cholesky(between)
+        )
+        residual_factor = (
+            arrays["within_sampling_factor"].copy()
+            if policy.schema_version == 2
+            else np.linalg.cholesky(within)
+        )
     diagnostics = fitted["diagnostics"]
     scales = np.asarray(diagnostics["standardization_scale"])
     gb, gr, gm = np.zeros_like(between), np.zeros_like(within), np.zeros_like(mean)
@@ -62,33 +72,55 @@ def verify_model(base, output, values, layout, policy):
     np.testing.assert_allclose(
         likelihood, diagnostics["negative_log_likelihood"], rtol=1e-11, atol=1e-8
     )
-    gradients = []
-    for covariance, score, scale in ((between, gb, scales), (within, gr, scales[:p])):
-        standardized = covariance / scale[:, None] / scale[None, :]
-        eigenvalues = np.linalg.eigvalsh(standardized)
-        if eigenvalues[0] <= policy.rank_tol * max(eigenvalues[-1], 1):
-            raise ValueError("Null covariance violates its prespecified interior rank constraint")
-        factor = np.linalg.cholesky(standardized)
-        transformed = 2 * (score * scale[:, None] * scale[None, :]) @ factor
-        transformed[np.diag_indices(len(factor))] *= np.diag(factor)
-        gradients.extend(transformed[np.tril_indices(len(factor))] / g)
-    gradient_max = max(np.max(np.abs(gradients)), np.max(np.abs(gm * scales / g)))
-    if gradient_max > policy.gradient_tol:
-        raise ValueError("Dense raw-data ML score fails the convergence tolerance")
-    accepted = [a for a in diagnostics["attempts"] if a["accepted"]]
-    selected = next(a for a in accepted if a["start"] == diagnostics["selected_start"])
-    if selected != min(accepted, key=lambda a: (a["objective_per_group"], a["start"])):
-        raise ValueError("Selected null initialization does not maximize the accepted likelihoods")
-    np.testing.assert_allclose(
-        selected["gradient_max"], np.max(np.abs(gradients)), atol=2e-8, rtol=1e-3
-    )
+    if policy.schema_version == 2:
+        from super_deli.benchmarking.boundary_audit import verify_boundary
+
+        verify_boundary(
+            diagnostics,
+            between,
+            within,
+            mean,
+            factor,
+            residual_factor,
+            gb,
+            gr,
+            gm,
+            ecology,
+            g,
+            p,
+            policy,
+        )
+    else:
+        gradients = []
+        for covariance, score, scale in ((between, gb, scales), (within, gr, scales[:p])):
+            standardized = covariance / scale[:, None] / scale[None, :]
+            eigenvalues = np.linalg.eigvalsh(standardized)
+            if eigenvalues[0] <= policy.rank_tol * max(eigenvalues[-1], 1):
+                raise ValueError(
+                    "Null covariance violates its prespecified interior rank constraint"
+                )
+            score_factor = np.linalg.cholesky(standardized)
+            transformed = 2 * (score * scale[:, None] * scale[None, :]) @ score_factor
+            transformed[np.diag_indices(len(score_factor))] *= np.diag(score_factor)
+            gradients.extend(transformed[np.tril_indices(len(score_factor))] / g)
+        gradient_max = max(np.max(np.abs(gradients)), np.max(np.abs(gm * scales / g)))
+        if gradient_max > policy.gradient_tol:
+            raise ValueError("Dense raw-data ML score fails the convergence tolerance")
+        accepted = [a for a in diagnostics["attempts"] if a["accepted"]]
+        selected = next(a for a in accepted if a["start"] == diagnostics["selected_start"])
+        if selected != min(accepted, key=lambda a: (a["objective_per_group"], a["start"])):
+            raise ValueError(
+                "Selected null initialization does not maximize the accepted likelihoods"
+            )
+        np.testing.assert_allclose(
+            selected["gradient_max"], np.max(np.abs(gradients)), atol=2e-8, rtol=1e-3
+        )
 
     def simulate(seed):
         rng = np.random.default_rng(seed)
-        latent = mean + rng.standard_normal((g, p + q)) @ np.linalg.cholesky(between).T
+        latent = mean + rng.standard_normal((g, p + q)) @ factor.T
         draw_morphology = (
-            latent[targets, :p]
-            + rng.standard_normal(morphology.shape) @ np.linalg.cholesky(within).T
+            latent[targets, :p] + rng.standard_normal(morphology.shape) @ residual_factor.T
         )
         return {
             "morphological": draw_morphology,
