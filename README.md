@@ -47,7 +47,8 @@ See the [method](docs/empirical-null-calibration.md) and
 within-morphology Gaussian covariance with unequal specimen counts and one ecology
 row per population/locality. It preserves the observed sampling design through
 full-pipeline bootstrap refits, rejects unsupported covariance fits and keeps
-missing-test denominators explicit. See the [grouped method](docs/grouped-null-calibration.md).
+missing-test denominators explicit. See the [grouped method](docs/grouped-null-calibration.md) and
+[100-dataset results with explicit withheld tests](docs/grouped-null-calibration-results.md).
 Additional fitted nulls for genomic/count/shape data remain separate checkpoints.
 
 ## Installation
