@@ -157,6 +157,8 @@ super-deli benchmark-grouped-calibration examples/boundary-calibration/study.jso
 super-deli analyze-grouped-calibration /path/to/study --output-dir /path/to/new-audit
 super-deli compare-grouped-calibration /path/to/legacy-study \
   --current-study /path/to/study --output-dir /path/to/new-comparison
+python scripts/plot_grouped_boundaries.py /path/to/new-audit \
+  --comparison /path/to/new-comparison --output-dir /path/to/new-figures
 ```
 
 The auditor regenerates all raw inputs, checks archived bytes and identities,

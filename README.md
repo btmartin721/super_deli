@@ -51,7 +51,8 @@ missing-test denominators explicit. See the [grouped method](docs/grouped-null-c
 [100-dataset results with explicit withheld tests](docs/grouped-null-calibration-results.md).
 Schema-2 grouped calibration adds positive-semidefinite between-group covariance,
 bounded convergence checks and a versioned sampler while retaining legacy audits.
-See the [boundary method](docs/grouped-covariance-boundaries.md).
+See the [boundary method](docs/grouped-covariance-boundaries.md) and
+[175-dataset results](docs/grouped-covariance-boundaries-results.md).
 Additional fitted nulls for genomic/count/shape data remain separate checkpoints.
 
 ## Installation
