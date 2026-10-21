@@ -1,0 +1,41 @@
+{
+  "started_at": "2026-10-21T18:51:41.965726+00:00",
+  "mode": "study",
+  "configuration": "study.json",
+  "max_concurrent_cases": 4,
+  "threads_per_process": 1,
+  "frozen_runtime": "runtime/",
+  "cases": [
+    {
+      "case": "complementary",
+      "exit_code": 0,
+      "seconds": 384.2586583751254,
+      "completed_at": "2026-10-21T18:58:06.223765+00:00"
+    },
+    {
+      "case": "linear_association",
+      "exit_code": 0,
+      "seconds": 385.66725641698577,
+      "completed_at": "2026-10-21T18:58:07.631649+00:00"
+    },
+    {
+      "case": "heavy_tailed",
+      "exit_code": 0,
+      "seconds": 387.1617074999958,
+      "completed_at": "2026-10-21T18:58:09.127475+00:00"
+    },
+    {
+      "case": "zero_association",
+      "exit_code": 0,
+      "seconds": 387.38840266596526,
+      "completed_at": "2026-10-21T18:58:09.352715+00:00"
+    },
+    {
+      "case": "cline",
+      "exit_code": 0,
+      "seconds": 363.52635024976917,
+      "completed_at": "2026-10-21T19:04:09.792786+00:00"
+    }
+  ],
+  "completed_at": "2026-10-21T19:04:09.793163+00:00"
+}

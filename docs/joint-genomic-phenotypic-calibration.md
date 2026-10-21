@@ -184,3 +184,5 @@ intervals and conditional Monte Carlo uncertainty. Twenty-five datasets per case
 cannot establish precise or general 5% error control. Simulated generating
 partitions are not empirical species ground truth. Local artifacts preserve full
 provenance; public metadata should contain versions, relative paths and hashes.
+
+See the [completed validation results](joint-genomic-phenotypic-calibration-results.md).

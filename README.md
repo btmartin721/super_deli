@@ -347,3 +347,4 @@ combines empirical genotype-block profiles with conditional Gaussian regression
 of matched continuous morphology/ecology on prespecified raw genomic summaries.
 It reruns the complete integrative pipeline and reports approximate joint-law
 departure p-values, with stability and species-boundary interpretation separate.
+See the [completed 125-dataset validation](docs/joint-genomic-phenotypic-calibration-results.md) for outcomes and limitations.
