@@ -225,3 +225,18 @@ def test_independent_categorical_audit_rejects_changed_profile_counts(tmp_path):
         np.savez(handle, **arrays)
     with pytest.raises(AssertionError):
         verify_model(tmp_path, out, x, layout, c)
+
+
+def test_constant_heterozygous_block_is_preserved_without_hwe_randomization(tmp_path):
+    data, x, layout, _ = source(tmp_path)
+    x[:, :8] = 1
+    loaded = SimpleNamespace(
+        sample_ids=tuple(layout["sample_ids"]), specimen_ids=tuple(layout["unit_ids"])
+    )
+    null = fit_null(data, loaded, x, {"exclusions": []}, policy())
+    assert null.layout["blocks"][0]["n_profiles"] == 1
+    assert null.layout["blocks"][0]["maximum_profile_probability"] == 1
+    for seed in range(10):
+        np.testing.assert_array_equal(
+            simulate_null(null, seed)["genotypes"][:, :8], np.ones((24, 8))
+        )

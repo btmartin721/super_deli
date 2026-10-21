@@ -1,0 +1,7 @@
+case,events,interpretation,max,mcse,mean,median,min,n_available,n_missing,sd,wilson_95
+common_hwe,1,Model-law rejection rate for independent declared genomic blocks,1.0,0.04,0.04,0.0,0.0,25,0,0.2,"[0.007096233501987265, 0.19544063736193729]"
+four_groups,25,Power for the constructed four-group alternative,1.0,0.0,1.0,1.0,1.0,25,0,0.0,"[0.8668077490609516, 1.0]"
+linked_stress,0,Model-law rejection rate for independent declared genomic blocks,0.0,0.0,0.0,0.0,0.0,25,0,0.0,"[0.0, 0.1331922509390484]"
+cline_stress,25,Misspecification sensitivity; NOT species-boundary or discrete-cluster type-I error,1.0,0.0,1.0,1.0,1.0,25,0,0.0,"[0.8668077490609516, 1.0]"
+moderate_ld,0,Model-law rejection rate for independent declared genomic blocks,0.0,0.0,0.0,0.0,0.0,25,0,0.0,"[0.0, 0.1331922509390484]"
+split_block_stress,1,Misspecification sensitivity; NOT species-boundary or discrete-cluster type-I error,1.0,0.04,0.04,0.0,0.0,25,0,0.2,"[0.007096233501987265, 0.19544063736193729]"

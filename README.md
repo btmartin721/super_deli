@@ -339,3 +339,5 @@ for the frozen 125-dataset study and its inferential limits.
 The [linkage-aware genomic checkpoint](docs/linked-genomic-calibration.md) adds
 a separate fitted empirical block-profile null for complete genotypes and
 prespecified independent blocks.
+See the [completed linkage-aware validation](docs/linked-genomic-calibration-results.md)
+for the frozen study, paired outcomes and sparse-support limitations.
