@@ -1,5 +1,8 @@
 # Shape PCA Gaussian mixtures and bootstrap stability
 
+The separate [integrative workflow](integrative-clustering.md) combines shape
+profiles with other explicitly linked modalities.
+
 ```bash
 python -m pip install -e '.[dev,clustering]'
 super-deli cluster-shape examples/shape/clustering/dataset.json \

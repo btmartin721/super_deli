@@ -1,0 +1,48 @@
+{
+  "assume_independent_units": true,
+  "max_k": 4,
+  "min_cluster_size": 5,
+  "missing_views": "error",
+  "n_bootstrap": 10,
+  "n_init": 5,
+  "n_pcs": 2,
+  "random_seed": 71,
+  "schema_version": 1,
+  "target_level": "locality",
+  "views": [
+    {
+      "aggregation": "mean",
+      "kind": "genomic",
+      "missing_policy": "error",
+      "modality": "markers",
+      "n_pcs": 2,
+      "ploidy": 2,
+      "scaling": "patterson",
+      "weight": 1.0
+    },
+    {
+      "aggregation": "mean",
+      "kind": "morphological",
+      "modality": "traits",
+      "n_pcs": 2,
+      "weight": 1.0
+    },
+    {
+      "aggregation": "none",
+      "kind": "ecological",
+      "modality": "environment",
+      "n_pcs": 2,
+      "weight": 1.0
+    },
+    {
+      "aggregation": "mean",
+      "kind": "morphometric",
+      "modality": "outline",
+      "n_pcs": 2,
+      "shape": {
+        "schema_version": 1
+      },
+      "weight": 1.0
+    }
+  ]
+}

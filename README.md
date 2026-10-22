@@ -4,13 +4,12 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: tabular morphology/ecology PCA/GMM with bootstrap stability.**
-Numeric traits and environmental measurements yield candidate groups with
-explicit preprocessing, whole-unit pipeline refits and out-of-bag diagnostics.
-The package also supports shape PCA/GMM, frozen-fit shape projection, visible
-marker detection, multimodal ingestion, and genomic PCA/GMM clustering.
-Anatomical landmark learning, integrative inference and formal species-boundary
-tests remain later work.
+**Current checkpoint: integrative clustering with paired bootstrap stability.**
+Genomic, numeric morphology/ecology and shape scores can be fused by exact unit
+IDs or explicit population/locality aggregation, with prespecified view weights.
+The package also supports individual-modality PCA/GMM, frozen-fit shape
+projection, visible marker detection and multimodal ingestion.
+Anatomical landmark learning and formal species-boundary tests remain later work.
 
 ## Installation
 
@@ -241,6 +240,27 @@ a numeric subset; repeated units require aggregation before fitting. See
 [tabular clustering](docs/tabular-clustering.md) for assumptions, API, artifacts
 and limits on interpreting environmental groups as biological species.
 
+## Integrate linked modalities
+
+```bash
+python -m pip install -e '.[dev,clustering,genomics]'
+super-deli cluster-integrative examples/integrative/grouped_dataset.json \
+  --model-config examples/integrative/grouped_model.json \
+  --output-dir /tmp/super-deli-integrative-groups
+super-deli cluster-integrative examples/integrative/matched_dataset.json \
+  --model-config examples/integrative/matched_model.json \
+  --output-dir /tmp/super-deli-integrative-individuals
+```
+
+Select two to four view kinds and an explicit target biological level. The
+baseline normalizes modality score profiles, fits joint PCA/GMM, and resamples
+target units jointly across all views. Unmatched individuals require explicit
+group links; entire missing views require an explicit complete-case policy.
+Source memberships, exclusions, weights and numerical parameters are exported.
+See [integrative clustering](docs/integrative-clustering.md) for the method,
+configuration, reconstruction and conditional uncertainty scope. Components
+remain candidate structure; formal species significance is uncomputed.
+
 ## Development checks
 
 ```bash
@@ -256,7 +276,7 @@ builds wheel/source distributions, and checks wheel installation outside the
 source checkout, including tabular and coordinate ingestion without scientific dependencies.
 A separate genomic matrix tests the real SNPio readers with
 and without external popmaps, the numerical baseline, real image codecs, visible
-marker detection, GPA/shape PCA, shape and tabular clustering, and installed CLIs.
+marker detection, GPA/shape PCA, unimodal/integrative clustering, and installed CLIs.
 Optional tests are skipped
 when extras are absent. Ruff coverage is declared centrally in `pyproject.toml`.
 Linting covers the new package, tests, and synthetic-example generator.

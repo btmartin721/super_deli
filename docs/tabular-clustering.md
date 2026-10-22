@@ -1,5 +1,8 @@
 # Numeric morphology and ecology PCA/GMM baseline
 
+To combine this data with genomic or shape evidence, use the separate
+[integrative workflow](integrative-clustering.md).
+
 ```bash
 python -m pip install -e '.[dev,clustering]'
 super-deli cluster-tabular examples/tabular/clustering/dataset.json \
