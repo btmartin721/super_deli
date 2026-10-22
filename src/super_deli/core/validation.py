@@ -121,6 +121,29 @@ def validate_dataset(
             error("invalid_level", location, "GenotypeData records must link to specimens")
         if modality.popmapfile is not None and modality.kind != "genomic":
             error("invalid_popmap", location, "popmapfile is only defined for genomic inputs")
+        if (image_options := modality.image_options) is not None:
+            if modality.kind != "morphometric" or modality.format != "image_manifest":
+                error(
+                    "invalid_image_options",
+                    location,
+                    "Image options require an image_manifest modality",
+                )
+            if not 1 <= image_options.pdf_dpi <= 1200:
+                error("invalid_image_resolution", location, "pdf_dpi must be between 1 and 1200")
+            if image_options.max_pixels < 1 or image_options.max_source_bytes < 1:
+                error(
+                    "invalid_image_limit",
+                    location,
+                    "Image pixel and source-byte limits must be positive",
+                )
+            if image_options.heif_hdr_policy not in {"reject", "to_8bit"}:
+                error("invalid_hdr_policy", location, "Use reject or to_8bit for HEIF HDR")
+            if image_options.observation_id_column in {"image_path", "page", "frame"}:
+                error(
+                    "invalid_image_id_column",
+                    location,
+                    "Observation ID cannot be an image path/page/frame column",
+                )
         if modality.tabular_options is not None and modality.kind not in {
             "morphological",
             "ecological",

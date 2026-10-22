@@ -4,6 +4,7 @@ from super_deli.core.data import (
     DatasetConfig,
     Feature,
     GenomicReaderOptions,
+    ImageReaderOptions,
     Modality,
     MorphometricReaderOptions,
     Observation,
@@ -13,13 +14,14 @@ from super_deli.core.data import (
 from super_deli.core.validation import validate_dataset
 from super_deli.io.config import ConfigError, load_config, write_config
 
-__version__ = "0.5.0.dev0"
+__version__ = "0.6.0.dev0"
 
 __all__ = [
     "ConfigError",
     "DatasetConfig",
     "Feature",
     "GenomicReaderOptions",
+    "ImageReaderOptions",
     "Modality",
     "MorphometricReaderOptions",
     "Observation",

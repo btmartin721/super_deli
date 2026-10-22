@@ -72,6 +72,17 @@ class MorphometricReaderOptions:
 
 
 @dataclass(frozen=True)
+class ImageReaderOptions:
+    """Explicit display-decoding policy and per-file/per-raster resource limits."""
+
+    observation_id_column: str = "observation_id"
+    pdf_dpi: int = 150
+    max_pixels: int = 40000000
+    max_source_bytes: int = 268435456
+    heif_hdr_policy: str = "reject"
+
+
+@dataclass(frozen=True)
 class Modality:
     name: str
     kind: Kind
@@ -84,6 +95,7 @@ class Modality:
     reader_options: GenomicReaderOptions | None = None
     tabular_options: TabularReaderOptions | None = None
     morphometric_options: MorphometricReaderOptions | None = None
+    image_options: ImageReaderOptions | None = None
 
 
 @dataclass(frozen=True)
@@ -102,6 +114,8 @@ class DatasetConfig:
 
         result = json.loads(json.dumps(asdict(self), allow_nan=False))
         for modality in result["modalities"]:
+            if modality["image_options"] is None:
+                del modality["image_options"]
             if modality["morphometric_options"] is None:
                 del modality["morphometric_options"]
             if modality["tabular_options"] is None:

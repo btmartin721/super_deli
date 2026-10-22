@@ -14,6 +14,7 @@ dependencies = []
 [project.optional-dependencies]
 genomics = ["snpio>=1.7.7,<2", "packaging>=24"]
 baseline = ["numpy>=1.26,<3", "scikit-learn>=1.6,<2", "threadpoolctl>=3,<4"]
+images = ["Pillow>=12,<14", "pillow-heif>=1,<2", "pypdfium2>=5,<6"]
 dev = ["pytest>=8,<9", "ruff>=0.9,<1", "build>=1,<2"]
 
 [project.scripts]
@@ -32,12 +33,13 @@ addopts = "--import-mode=importlib"
 markers = [
     "genomic: integration checks requiring the optional SNPio dependency",
     "baseline: numerical checks requiring the optional baseline dependencies",
+    "images: image/PDF checks requiring the optional image codecs",
 ]
 
 [tool.ruff]
 target-version = "py311"
 line-length = 100
-include = ["src/**/*.py", "tests/test_foundation*.py", "tests/test_genomic*.py", "tests/test_baseline*.py", "tests/test_tabular*.py", "tests/test_morphometric*.py", "examples/baseline/*.py"]
+include = ["src/**/*.py", "tests/test_foundation*.py", "tests/test_genomic*.py", "tests/test_baseline*.py", "tests/test_tabular*.py", "tests/test_morphometric*.py", "tests/test_image_ingestion*.py", "examples/baseline/*.py", "examples/images/*.py"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]

@@ -38,7 +38,9 @@ MANIFEST_COLUMNS: Tuple[str, ...] = (
     "check_details",
 )
 REQUIRED_CSV_COLUMNS = frozenset(("specimen_id", "group", "split", "image_file"))
-IMAGE_SUFFIXES = frozenset((".bmp", ".jpeg", ".jpg", ".png", ".tif", ".tiff", ".webp"))
+IMAGE_SUFFIXES = frozenset(
+    (".bmp", ".jpeg", ".jpg", ".png", ".tif", ".tiff", ".webp", ".pdf", ".heic", ".heif")
+)
 
 
 @dataclass(frozen=True)
