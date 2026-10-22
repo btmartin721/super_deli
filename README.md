@@ -4,11 +4,11 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: tabular morphology/ecology ingestion.** The package loads
-typed CSV/TSV measurements, preserves biological links and missingness, and
-supports genomic ingestion and the PCA/GMM baseline from earlier checkpoints.
-The baseline reports candidate genetic clusters and block stability. Formal
-species-boundary tests and landmark/image ingestion remain later work.
+**Current checkpoint: TPS and landmark-coordinate ingestion.** The package loads
+2D/3D fixed landmarks, typed morphology/ecology measurements, and SNPio genomic
+inputs with explicit biological links and missingness. The genomic PCA/GMM
+baseline reports candidate clusters and block stability. Image decoding,
+morphometric models and formal species-boundary tests remain later work.
 
 ## Installation
 
@@ -131,19 +131,35 @@ See [tabular ingestion](docs/tabular-ingestion.md) for column/missing-token
 options, the Python API, typed JSON artifacts, validation and processing limits.
 The hand-authored example provides value/link truth for ingestion checks.
 
+## Load geometric morphometric coordinates
+
+```bash
+super-deli ingest-morphometric examples/morphometric/dataset.json \
+  --output-dir /tmp/super-deli-landmark-example
+```
+
+The base installation accepts fixed-landmark TPS (`LM=`/`LM3=`) and long-form
+coordinate CSV. Declare dimensions, landmark order, biological observation links
+and missing-value rules. Readers preserve coordinates, partial missingness,
+repeat observations and scale/image metadata. Scale factors are recorded without
+rescaling. Images are metadata references in this checkpoint.
+
+See [morphometric ingestion](docs/morphometric-ingestion.md) for the Python API,
+supported format subset, coordinate correspondence, artifacts and limitations.
+
 ## Development checks
 
 ```bash
 python -m pytest -q
-ruff check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py examples/baseline/*.py
-ruff format --check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py examples/baseline/*.py
+ruff check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py examples/baseline/*.py
+ruff format --check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py examples/baseline/*.py
 python -m build
 ```
 
 The test suite includes the unchanged read-only image/TPS manifest utility.
 GitHub Actions tests the foundation on Python 3.11 and 3.12, validates the example,
 builds wheel/source distributions, and checks wheel installation outside the
-source checkout, including tabular ingestion without scientific dependencies.
+source checkout, including tabular and coordinate ingestion without scientific dependencies.
 A separate genomic matrix tests the real SNPio readers with
 and without external popmaps, plus the numerical baseline and full analysis CLI.
 Optional numerical/reader tests are skipped when their extras are absent.
@@ -151,5 +167,5 @@ Linting covers the new package, tests, and synthetic-example generator.
 
 Historical imputation sources remain outside the installed `src/` package.
 Their previous documentation is preserved in [the legacy README](docs/legacy-readme.md).
-The existing `image_tps_manifest.py` source utility remains available; its manifest
-format will be reused in a later morphometrics-ingestion checkpoint.
+The existing `image_tps_manifest.py` source utility and manifest schema remain
+unchanged. Image decoding and image-manifest ingestion remain later work.

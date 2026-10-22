@@ -128,6 +128,35 @@ def validate_dataset(
             error(
                 "invalid_tabular_options", location, "Tabular options require morphology or ecology"
             )
+        if (geometry := modality.morphometric_options) is not None:
+            if modality.kind != "morphometric" or modality.format not in {"tps", "landmarks_csv"}:
+                error(
+                    "invalid_morphometric_options",
+                    location,
+                    "Geometry options require TPS or landmark CSV input",
+                )
+            if geometry.dimensions not in {2, 3}:
+                error(
+                    "invalid_dimensions",
+                    location,
+                    "Landmarks require two or three coordinate dimensions",
+                )
+            if not geometry.landmark_ids:
+                error("no_landmarks", location, "Declare an ordered, nonempty landmark ID list")
+            unique(geometry.landmark_ids, f"{location}.landmark_ids")
+            unique(geometry.missing_values, f"{location}.missing_values")
+            if geometry.tps_id_field not in {"ID", "IMAGE"}:
+                error(
+                    "invalid_tps_id_field", location, "Select ID or IMAGE for TPS observation IDs"
+                )
+            if modality.format != "tps" and geometry.tps_id_field != "ID":
+                error("invalid_tps_id_field", location, "IMAGE selection applies only to TPS")
+            if geometry.missing_landmark and len(geometry.missing_landmark) != geometry.dimensions:
+                error(
+                    "invalid_missing_landmark",
+                    location,
+                    "Missing-landmark sentinel must match coordinate dimensions",
+                )
         if modality.kind in {"morphological", "ecological"}:
             tabular = modality.tabular_options or TabularReaderOptions()
             columns = [

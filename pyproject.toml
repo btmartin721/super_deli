@@ -37,7 +37,7 @@ markers = [
 [tool.ruff]
 target-version = "py311"
 line-length = 100
-include = ["src/**/*.py", "tests/test_foundation*.py", "tests/test_genomic*.py", "tests/test_baseline*.py", "tests/test_tabular*.py", "examples/baseline/*.py"]
+include = ["src/**/*.py", "tests/test_foundation*.py", "tests/test_genomic*.py", "tests/test_baseline*.py", "tests/test_tabular*.py", "tests/test_morphometric*.py", "examples/baseline/*.py"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]

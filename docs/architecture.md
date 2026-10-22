@@ -6,6 +6,8 @@ provenance, and result conventions. The second checkpoint adds SNPio genomic
 ingestion. The third adds a genomic PCA/GMM baseline with explicit assumptions
 and block-bootstrap stability; see [genomic baseline](genomic-baseline.md).
 The fourth adds typed morphology/ecology tables; see [tabular ingestion](tabular-ingestion.md).
+The fifth adds fixed-landmark TPS and coordinate CSV readers;
+see [morphometric ingestion](morphometric-ingestion.md).
 
 ## Boundaries
 
@@ -17,11 +19,15 @@ The fourth adds typed morphology/ecology tables; see [tabular ingestion](tabular
 | `core.provenance` | Configuration snapshots, software versions, and optional input hashes |
 | `core.results` | Assignment and uncertainty reporting contracts for future estimators |
 | `core.tabular` | Typed table records retaining feature schemas, biological levels and missingness |
+| `core.morphometrics` | Fixed-landmark records, correspondence, missing masks and calibration metadata |
 | `io.config` | Strict JSON reading and non-overwriting artifact writing |
 | `io.genomic` | Optional SNPio readers, staged inputs, sample linkage, and ingestion artifacts |
 | `io.genomic_encoding` | Conservative diploid SNPio encoding and source-locus indexing |
 | `io.staging` | Shared isolated input copying and fingerprint verification |
 | `io.tabular` | Strict CSV/TSV parsing, source-ID linkage, typed artifacts and coverage |
+| `io.delimited`, `io.numeric` | Shared CSV/TSV structure and finite-decimal parsing |
+| `io.tps`, `io.landmark_csv` | Fixed-landmark syntax and named coordinate rows |
+| `io.morphometric_base`, `io.morphometric` | Shared coordinate/link rules and ingestion artifacts |
 | `models.config` | Strict, dependency-free baseline settings and assumptions |
 | `models.pca_gmm` | Numerical preprocessing, PCA/GMM search, and block stability |
 | `workflows.genomic_baseline` | Connect adapters/models to reproducible result artifacts |
@@ -77,7 +83,8 @@ modality. Multiple observations can refer to the same biological unit.
 The `validate` command checks declarations and references only. The separate
 `ingest-genomic` command loads genomic contents through SNPio into `GenotypeData`,
 with `popmapfile=None` when absent. `ingest-tabular` checks and loads morphology
-and ecological CSV/TSV contents. Morphometric contents remain unchecked.
+and ecological CSV/TSV contents. `ingest-morphometric` reads fixed landmarks from
+TPS/coordinate CSV; image-manifest contents remain unchecked.
 The optional `genomics` extra enables this dependency boundary on Python 3.11/3.12.
 Genomic modalities may declare `reader_options` for STRUCTURE layout and
 STRUCTURE/GENEPOP allele encodings; see [genomic ingestion](genomic-ingestion.md).
@@ -93,6 +100,10 @@ The optional modality field `tabular_options` configures observation/unit ID
 columns, exact missing tokens and explicitly ignored columns for morphology and
 ecology. Column roles must be disjoint, and missing tokens cannot overlap category
 states. Omitting this field preserves existing version-one configuration hashes.
+The separate optional `morphometric_options` declares 2D/3D dimensions, ordered
+landmark IDs, coordinate/scale units, TPS identity and missingness. These options
+are required when ingesting coordinates. They do not change existing hashes when
+omitted, and apply only to `tps`/`landmarks_csv` sources.
 
 ## Linking partial and unpaired data
 
@@ -177,11 +188,14 @@ reference labels need independent evidence and documented uncertainty.
 1. **Completed foundation:** Package, contracts, validation, provenance, tests, CI, and a draft PR.
 2. **Completed:** SNPio ingestion and supported-format fixtures with optional popmaps.
 3. **Completed:** Genomic PCA/GMM baseline, block stability, and bounded synthetic checks.
-4. **Current:** Typed tabular morphology/ecology ingestion with value/link fixtures.
-5. Landmark/image ingestion in separate batches.
-6. Additional models and integrative inference after baseline benchmarks.
+4. **Completed:** Typed tabular morphology/ecology ingestion with value/link fixtures.
+5. **Current:** TPS/coordinate CSV ingestion with coordinate/identity truth fixtures.
+6. Image decoding and landmark localization in separate batches.
+7. Additional models and integrative inference after baseline benchmarks.
 
 The genomic baseline reports genetic clustering and locus-block sensitivity.
 It does not supply taxonomic validation, formal species-boundary significance,
 image decoders, empirical-data downloads, or expensive benchmark campaigns.
 Tabular ingestion adds no estimators, preprocessing, fusion or significance tests.
+Coordinate ingestion preserves source geometry/calibration and adds no image
+decoding, alignment, distances, shape estimators or species significance tests.

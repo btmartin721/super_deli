@@ -5,8 +5,8 @@ It provides a transparent baseline for later species-delimitation research.
 Clusters, conditional memberships, and locus-bootstrap stability are different
 quantities. None is a species posterior or a calibrated test of a species boundary.
 Morphology/ecology readers are documented in [tabular ingestion](tabular-ingestion.md).
-Landmark/image processing, empirical benchmarks, and integrative models remain
-later checkpoints.
+Fixed-landmark readers are documented in [morphometric ingestion](morphometric-ingestion.md).
+Image processing, empirical benchmarks, and integrative models remain later work.
 
 ## Run the bounded synthetic example
 

@@ -1,0 +1,19 @@
+{
+  "description": "Hand-authored coordinate/identity truth; no image or taxonomic inference",
+  "outline": {
+    "observation_ids": ["outline3", "outline1_repeat", "outline1"],
+    "unit_ids": ["specimen3", "specimen1", "specimen1"],
+    "landmark_ids": ["nose", "left", "right"],
+    "coordinates": [[[0, 0], [4, 0], [0, 3]], [[null, 2], [null, null], [2, 3]], [[-1, 2], [0, 4], [2, 0]]],
+    "scale_factors": [0.5, null, 1.0],
+    "missing_mask": [[[false, false], [false, false], [false, false]], [[true, false], [true, true], [false, false]], [[false, false], [false, false], [false, false]]]
+  },
+  "surface": {
+    "observation_ids": ["scan2", "scan1"],
+    "unit_ids": ["specimen2", "specimen1"],
+    "landmark_ids": ["tip", "base", "dorsal", "ventral"],
+    "coordinates": [[[1, 2, 3], [0, 0, 0], [1, 1, 1], [0, -1, 1]], [[0, 1, 2], [0, 0, 0], [1, 1, 1], [0, -1, null]]],
+    "scale_factors": [1, 1],
+    "missing_mask": [[[false, false, false], [false, false, false], [false, false, false], [false, false, false]], [[false, false, false], [false, false, false], [false, false, false], [false, false, true]]]
+  }
+}
