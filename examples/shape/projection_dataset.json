@@ -1,0 +1,41 @@
+{
+  "dataset_id": "synthetic_shape_projection",
+  "modalities": [
+    {
+      "format": "landmarks_csv",
+      "kind": "morphometric",
+      "level": "specimen",
+      "morphometric_options": {
+        "coordinate_unit": "arbitrary",
+        "dimensions": 2,
+        "landmark_ids": [
+          "lower_left",
+          "lower_right",
+          "upper_right",
+          "upper_left"
+        ]
+      },
+      "name": "outline",
+      "observations": [
+        {
+          "observation_id": "shape_7",
+          "unit_id": "shape_7"
+        },
+        {
+          "observation_id": "shape_8",
+          "unit_id": "shape_8"
+        }
+      ],
+      "path": "projection.csv"
+    }
+  ],
+  "schema_version": 1,
+  "specimens": [
+    {
+      "specimen_id": "shape_7"
+    },
+    {
+      "specimen_id": "shape_8"
+    }
+  ]
+}

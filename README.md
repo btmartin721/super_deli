@@ -4,12 +4,12 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: visible-marker landmark detection.** Named color/region
-rules locate provisional marker centroids in PDF, PNG, JPEG and HEIC/HEIF images.
-The package also loads fixed landmarks, morphology/ecology tables and SNPio data.
-The genomic PCA/GMM baseline reports candidate clusters and block stability.
-Anatomical landmark learning, shape models and formal species-boundary tests
-remain later work.
+**Current checkpoint: generalized Procrustes alignment and shape PCA.** Fixed
+landmarks yield normalized shape coordinates and tangent-space PC scores, with
+frozen-fit projection for new observations. The package also supports visible
+marker detection, multimodal ingestion, and genomic PCA/GMM clustering.
+Anatomical landmark learning, integrative inference and formal species-boundary
+tests remain later work.
 
 ## Installation
 
@@ -183,12 +183,32 @@ localization uncertainty is explicitly unavailable pending calibration.
 See [landmark detection](docs/landmark-detection.md) for configuration, the API,
 coordinate conventions, synthetic accuracy checks and method boundaries.
 
+## Align landmarks and estimate shape axes
+
+```bash
+python -m pip install -e '.[dev,shape]'
+super-deli shape-pca examples/shape/train_dataset.json \
+  --model-config examples/shape/model.json --output-dir /tmp/super-deli-shape-fit
+super-deli shape-pca examples/shape/projection_dataset.json \
+  --model-config examples/shape/model.json --reference-run /tmp/super-deli-shape-fit \
+  --output-dir /tmp/super-deli-shape-projection
+```
+
+GPA removes translation, uniform size and rotation from homologous 2D/3D fixed
+landmarks. Reflections are forbidden by default. Missing landmarks and repeated
+units require explicit policies. Tangent-space covariance PCA records numerical
+rank, explained variance and geometric distortion; saved parameters project new
+observations without updating the training fit. This is descriptive ordination.
+
+See [shape analysis](docs/shape-pca.md) for equations, policies, artifacts, API,
+analytic truth tests and the provisional check of the supplied TPS download.
+
 ## Development checks
 
 ```bash
 python -m pytest -q
-ruff check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py tests/test_image_ingestion*.py tests/test_landmark_detection*.py examples/baseline/*.py examples/images/*.py examples/detection/*.py
-ruff format --check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py tests/test_image_ingestion*.py tests/test_landmark_detection*.py examples/baseline/*.py examples/images/*.py examples/detection/*.py
+ruff check
+ruff format --check
 python -m build
 ```
 
@@ -198,7 +218,8 @@ builds wheel/source distributions, and checks wheel installation outside the
 source checkout, including tabular and coordinate ingestion without scientific dependencies.
 A separate genomic matrix tests the real SNPio readers with
 and without external popmaps, the numerical baseline, real image codecs, visible
-marker detection and installed CLIs. Optional tests are skipped when extras are absent.
+marker detection, GPA/shape PCA and installed CLIs. Optional tests are skipped
+when extras are absent. Ruff coverage is declared centrally in `pyproject.toml`.
 Linting covers the new package, tests, and synthetic-example generator.
 
 Historical imputation sources remain outside the installed `src/` package.

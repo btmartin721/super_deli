@@ -21,9 +21,9 @@ jobs:
       - name: Install foundation and development tools
         run: python -m pip install -e '.[dev]'
       - name: Lint new package and tests
-        run: ruff check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py tests/test_image_ingestion*.py tests/test_landmark_detection*.py examples/baseline/*.py examples/images/*.py examples/detection/*.py
+        run: ruff check
       - name: Check formatting
-        run: ruff format --check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py tests/test_image_ingestion*.py tests/test_landmark_detection*.py examples/baseline/*.py examples/images/*.py examples/detection/*.py
+        run: ruff format --check
       - name: Test foundation and existing image/TPS manifest
         run: python -m pytest -q
       - name: Validate illustrative configuration
@@ -57,8 +57,8 @@ jobs:
           echo "MPLCONFIGDIR=$RUNNER_TEMP/super-deli-matplotlib" >> "$GITHUB_ENV"
           echo "NUMBA_CACHE_DIR=$RUNNER_TEMP/super-deli-numba" >> "$GITHUB_ENV"
       - name: Install packaged scientific and image extras
-        run: python -m pip install '.[dev,genomics,baseline,images,landmarks]'
-      - name: Test SNPio, baseline, images, marker detection, and foundation
+        run: python -m pip install '.[dev,genomics,baseline,images,landmarks,shape]'
+      - name: Test scientific workflows and foundation
         run: python -m pytest -q
       - name: Check installed ingestion CLI outside checkout
         shell: bash
@@ -68,3 +68,5 @@ jobs:
           super-deli baseline-genomic "$GITHUB_WORKSPACE/examples/baseline/dataset.json" --model-config "$GITHUB_WORKSPACE/examples/baseline/model.json" --blocks "$GITHUB_WORKSPACE/examples/baseline/blocks.json" --output-dir "$RUNNER_TEMP/genomic-baseline"
           super-deli ingest-images "$GITHUB_WORKSPACE/examples/images/dataset.json" --output-dir "$RUNNER_TEMP/image-ingestion"
           super-deli detect-landmarks "$GITHUB_WORKSPACE/examples/detection/dataset.json" --detector-config "$GITHUB_WORKSPACE/examples/detection/detector.json" --output-dir "$RUNNER_TEMP/landmark-detection"
+          super-deli shape-pca "$GITHUB_WORKSPACE/examples/shape/train_dataset.json" --model-config "$GITHUB_WORKSPACE/examples/shape/model.json" --output-dir "$RUNNER_TEMP/shape-fit"
+          super-deli shape-pca "$GITHUB_WORKSPACE/examples/shape/projection_dataset.json" --model-config "$GITHUB_WORKSPACE/examples/shape/model.json" --reference-run "$RUNNER_TEMP/shape-fit" --output-dir "$RUNNER_TEMP/shape-projection"

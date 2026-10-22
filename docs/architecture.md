@@ -12,6 +12,8 @@ The sixth adds image manifests and PDF/PNG/JPEG/HEIC/HEIF display decoding;
 see [image ingestion](image-ingestion.md).
 The seventh adds explicit visible-marker localization and coordinate exports;
 see [landmark detection](landmark-detection.md).
+The eighth adds fixed-landmark GPA and tangent-space PCA with frozen-reference
+projection; see [shape analysis](shape-pca.md).
 
 ## Boundaries
 
@@ -36,11 +38,14 @@ see [landmark detection](landmark-detection.md).
 | `io.morphometric_base`, `io.morphometric` | Shared coordinate/link rules and ingestion artifacts |
 | `io.image_manifest`, `io.image_decode`, `io.images` | Image identity/selectors, optional codecs, staged sources and PNG artifacts |
 | `io.detection_artifacts` | Separate visual overlays and ingestible coordinate exports |
+| `io.landmark_export`, `io.shape_model` | Shared coordinate exports and validated numerical shape-model artifacts |
 | `models.config` | Strict, dependency-free baseline settings and assumptions |
 | `models.pca_gmm` | Numerical preprocessing, PCA/GMM search, and block stability |
 | `models.marker_config`, `models.marker_detection` | Dependency-free named rules and optional component-based localization |
+| `models.shape_config`, `models.procrustes`, `models.shape_pca` | Explicit shape policies, GPA geometry and tangent-space ordination |
 | `workflows.genomic_baseline` | Connect adapters/models to reproducible result artifacts |
 | `workflows.landmark_detection` | Image ingestion, provisional marker coordinates, diagnostics and provenance |
+| `workflows.shape_pca` | Fixed-landmark ingestion, fit/projection, exclusions and auditable shape artifacts |
 | `cli` | Argument handling and presentation of API results |
 
 The core does not import scientific libraries or perform modality I/O. Readers
@@ -49,7 +54,8 @@ belong in `io`, numerical estimators in `models`, and artifact orchestration in
 libraries. The `baseline` extra supplies numerical dependencies; the `genomics`
 extra supplies SNPio; `images` supplies Pillow, pillow-heif and PDFium. The
 `landmarks` extra supplies NumPy/SciPy for visible-marker detection and is used
-together with `images`. Empty plugin registries remain unnecessary.
+together with `images`. The `shape` extra supplies NumPy for GPA/PCA without
+image, SNPio or scikit-learn dependencies. Empty plugin registries remain unnecessary.
 
 The distribution discovers only packages under `src/`. Historical imputation
 code remains in the repository but is excluded from the installed package. The
@@ -209,9 +215,10 @@ reference labels need independent evidence and documented uncertainty.
 4. **Completed:** Typed tabular morphology/ecology ingestion with value/link fixtures.
 5. **Completed:** TPS/coordinate CSV ingestion with coordinate/identity truth fixtures.
 6. **Completed:** Image decoding with source preservation and synthetic display truth.
-7. **Current:** Visible-marker localization with explicit identity rules and unresolved points.
-8. Anatomical landmark learning and shape models in separate batches.
-9. Additional models and integrative inference after baseline benchmarks.
+7. **Completed:** Visible-marker localization with explicit identity rules and unresolved points.
+8. **Current:** Fixed-landmark GPA, tangent PCA and frozen-reference projection.
+9. Anatomical landmark learning and additional shape models in separate batches.
+10. Additional models and integrative inference after baseline benchmarks.
 
 The genomic baseline reports genetic clustering and locus-block sensitivity.
 It does not supply taxonomic validation, formal species-boundary significance,
@@ -219,3 +226,5 @@ image decoders, empirical-data downloads, or expensive benchmark campaigns.
 Tabular ingestion adds no estimators, preprocessing, fusion or significance tests.
 Coordinate ingestion preserves source geometry/calibration and adds no image
 decoding, alignment, distances, shape estimators or species significance tests.
+The separate shape workflow produces descriptive coordinates/ordination and
+explicitly unavailable uncertainty; it adds no species test or group inference.

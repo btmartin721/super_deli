@@ -113,7 +113,8 @@ Pixel areas depend on image resolution and PDF DPI. Detection does not rescale
 images to meet a rule or budget. RGB ranges operate on display pixels; image
 ingestion supplies no colorimetric calibration. Existing TPS coordinates may
 use different axes, origins or frames and are not automatically reconciled.
-No physical scale, Procrustes alignment or species-delimitation model is applied.
+This detector applies no physical scale, alignment or species model. The separate
+[shape workflow](shape-pca.md) can align reviewed fixed-landmark coordinates.
 
 Statistical localization confidence, confidence intervals and significance are
 **not computed**: there is no independent annotated-image calibration in this
