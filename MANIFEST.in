@@ -35,3 +35,6 @@ recursive-include docs/figures/linked-calibration *.pdf *.svg *.png
 
 recursive-include examples/joint-calibration *.json *.csv
 recursive-include docs/figures/joint-calibration *.pdf *.svg *.png
+
+recursive-include examples/recovery-diagnostics *.json *.csv *.py
+recursive-include docs/figures/recovery-diagnostics *.pdf *.svg *.png

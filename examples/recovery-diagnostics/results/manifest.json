@@ -1,0 +1,40 @@
+{
+  "base_commit": "8b5910cc315c4a258fef3277b3f26abc7f0ab606",
+  "base_pr": 49,
+  "compatible_historical_scientific_modules": 104,
+  "frozen_source_modules": 111,
+  "frozen_wheel_sha256": "b5f3dbbddeaaf8e2aaec1785d3a2a6e679257ab3d11fda5cf1a8106b012f54d8",
+  "local_artifact_id": "integrative-recovery-20261021",
+  "publication_files": {
+    "docs/figures/recovery-diagnostics/integrative-recovery.pdf": "49afdce11ccd8de7e812f089e9af9252f222f50acdd971d3b84bc74e04251143",
+    "docs/figures/recovery-diagnostics/integrative-recovery.png": "861643427ea5e8af71bc8dd7276f0551a28eac50cbc1a2c6d1403090b257561a",
+    "docs/figures/recovery-diagnostics/integrative-recovery.svg": "4aa0671b7fdb4c7ddc6d18867cdcdd423d452dd9f294096f6c034e398a239e97",
+    "docs/integrative-recovery-diagnostics-results.md": "9caf3ae4512a2776fe879b59810cc9782f3d8857d3b04adfef8823944db4dcf5",
+    "docs/integrative-recovery-diagnostics.md": "d2c7234147326a21ec90d954183a7056a3104e4fc0f07a082df8c7c8ac894b12",
+    "scripts/plot_recovery_diagnostics.py": "d02ebcde8ed0bf661939f9ee8a915cc67841f874b7842e0a0f4d15fb5ae7db22",
+    "scripts/summarize_recovery_diagnostics.py": "6697d7abefc679a4c42748c519d43f119ef73da3c305873857287662f07a23d1"
+  },
+  "published_artifacts": {
+    "candidates.csv": "7d094783cbdfb72eae0bb2aae7fe7250d20a4a0836cce1bd0149f76a9c393b03",
+    "datasets.json": "6ccec89c0092f1a56607a51cf86f5b80a78709b35be23b8dc4b1743fa05e10c7",
+    "execution.json": "4be3679910c9876625317c189dff7d4a02e98eb196e4c25f26ee27568169a530",
+    "grid.json": "2fa00a7a34a85cd1826856a8d334079720874231885ad95b78b3b098cd00809b",
+    "loadings.csv": "e04ac105b60048baa6358d466c4320289f79119c86ac1c51f70c1a09772f0f49",
+    "paired.csv": "307beb469da0bb50a55c06252f3db601370bf5a34100a54bd00505d2b885e272",
+    "points.csv": "0cc9aad6fdb2d684fafbaaf044948dc1b3ee0eabeadd3bae63ead9ae1bcd667c",
+    "retention.csv": "de52e991bdb7cf3e20e7ade9a083badac836293e3901ee9c87fc35309fbcf57e",
+    "runtime_sources.json": "603d9dd4c8f15a084eaab917916cd6f522994bf71fde7dd2beb363be4277ea83",
+    "runtime_versions.json": "1b4c3f7fc6ecd5b4be0f432a836faeb6e21a72877705eb90faa3d12d01cfd858",
+    "study.json": "7b2e9073229f6503653275a140e005e0ff75c33efc65acca23a9d6ed528e1306",
+    "summary.json": "ccf565c986b11a94d1dda7b2506ca328fb8b773179a2531730bcb4ca807f3bc6",
+    "truth_initialized.csv": "c414a62882986e5e3b224d3e8d0833ac91ae500ac7e77ab84991b3e47ae2f363"
+  },
+  "published_csv_line_endings": "LF",
+  "raw_file_inventory_sha256": "272aecfd5c3c8daf19d54051eda198c001d86ae628e16fad6f3781aa5200b7fb",
+  "schema_version": 1,
+  "source_pins": {
+    "runtime_sources.json": "ebb4c47527488dda9097f1f762a7005d5c779d13d09c861fed0bf218bb0635d6",
+    "study-analysis/files.json": "1d50d146c575f6dee751c7452da655002a5c1e191dfb20fade63823270fc7820",
+    "study.json": "001cf8c9d6c7e48a5b568e1e380ed355e9bd46b8d39c92335b406fde1ea5bdbe"
+  }
+}

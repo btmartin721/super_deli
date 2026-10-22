@@ -302,9 +302,40 @@ def main(argv: list[str] | None = None) -> int:
     baseline.add_argument(
         "--output-dir", type=Path, required=True, help="New analysis output directory"
     )
+    recovery = commands.add_parser(
+        "diagnose-integrative-recovery", help="Run the frozen four-group point-diagnostic grid"
+    )
+    recovery.add_argument("config", type=Path)
+    recovery.add_argument("--source-artifacts", type=Path, required=True)
+    recovery.add_argument("--output-dir", type=Path, required=True)
+    recovery.add_argument("--workers", type=int, default=1)
+    recovery_audit = commands.add_parser(
+        "analyze-integrative-recovery", help="Audit recovery diagnostics without refitting models"
+    )
+    recovery_audit.add_argument("config", type=Path)
+    recovery_audit.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command == "diagnose-integrative-recovery":
+            from super_deli.benchmarking.recovery import run_recovery
+            from super_deli.models.recovery_config import RecoveryConfig
+
+            with redirect_stdout(sys.stderr):
+                summary = run_recovery(
+                    RecoveryConfig.from_dict(read_json(source)),
+                    source_artifacts=args.source_artifacts,
+                    output_dir=args.output_dir,
+                    workers=args.workers,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "analyze-integrative-recovery":
+            from super_deli.benchmarking.recovery_analysis import audit_recovery
+
+            summary = audit_recovery(source, output_dir=args.output_dir)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "compare-grouped-calibration":
             from super_deli.benchmarking.grouped_comparison import compare_grouped_studies
 
