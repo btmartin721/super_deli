@@ -102,6 +102,18 @@ def run_joint_calibration(dataset, *, config, base_dir, output_dir):
 
     _dependencies()
     config = JointCalibrationConfig.from_dict(config.to_dict())
+    # The null law is independent of the prespecified clustering statistic.
+    # Preserve historical full-family evidence while making tied-family scope explicit.
+    shared = config.model.covariance_type == "tied"
+    scope = SCOPE + (
+        " Shared covariance is fixed before analysis for every observed/null K search; "
+        "no selection across covariance families is calibrated."
+        if shared
+        else ""
+    )
+    method = "Approximate full integrative pipeline fitted joint-null BIC bootstrap"
+    if shared:
+        method += " (prespecified shared covariance)"
     return run_fitted_calibration(
         dataset,
         config=config,
@@ -115,7 +127,7 @@ def run_joint_calibration(dataset, *, config, base_dir, output_dir):
             summarize_upper_tail,
             run_integrative,
         ),
-        scope=SCOPE,
+        scope=scope,
         tail_options=TAIL_OPTIONS,
         seed_namespace=NAMESPACE,
         target=TARGET,
@@ -124,6 +136,6 @@ def run_joint_calibration(dataset, *, config, base_dir, output_dir):
             "declared block means"
         ),
         load_null=_load_null,
-        evidence_method="Approximate full integrative pipeline fitted joint-null BIC bootstrap",
+        evidence_method=method,
         software_names=("super-deli", "numpy", "scipy", "scikit-learn", "threadpoolctl", "snpio"),
     )

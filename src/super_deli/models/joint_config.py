@@ -32,8 +32,6 @@ class JointCalibrationConfig:
 
         if not isinstance(self.model, IntegrativeConfig):
             raise ValueError("An integrative model is required")
-        if self.model.covariance_type != "full":
-            raise ValueError("Shared-covariance significance calibration is not yet supported")
         m = self.model
         genomic = [v for v in m.views if v.kind == "genomic"]
         if (

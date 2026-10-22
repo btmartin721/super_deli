@@ -2,7 +2,9 @@
 
 # ruff: noqa: E402
 import importlib.util
+from dataclasses import replace
 from pathlib import Path
+from zipfile import ZipFile
 
 import pytest
 
@@ -21,8 +23,15 @@ pytestmark = [
 ]
 
 
-def test_all_cases_direct_cli_and_independent_audit(tmp_path, monkeypatch):
+@pytest.mark.parametrize("family", ["full", "tied"])
+def test_all_cases_direct_cli_and_independent_audit(tmp_path, monkeypatch, family):
     study = JointStudyConfig.from_dict(read_json(ROOT / "examples/joint-calibration/smoke.json"))
+    study = replace(
+        study,
+        calibration=replace(
+            study.calibration, model=replace(study.calibration.model, covariance_type=family)
+        ),
+    )
     root = tmp_path / "study"
     root.mkdir()
     for case in CASES:
@@ -42,7 +51,26 @@ def test_all_cases_direct_cli_and_independent_audit(tmp_path, monkeypatch):
         )
         == 0
     )
+    direct = read_json(tmp_path / "direct/summary.json")
+    evidence = read_json(tmp_path / "direct/evidence.json")
+    assert direct["planned_fits"] == direct["successful_fits"] == 3
+    assert ("prespecified shared covariance" in evidence["method"]) == (family == "tied")
+    assert ("fixed before analysis" in direct["scope"]) == (family == "tied")
+    for case in CASES:
+        configuration = read_json(root / case / "dataset_0000/calibration/configuration.json")
+        assert configuration["model"].get("covariance_type", "full") == family
+    from super_deli.benchmarking.pipeline_analysis import audit_pipeline_point
     from super_deli.models import mixture
+    from super_deli.models.joint_config import JointCalibrationConfig
+
+    calibration = base / "calibration"
+    policy = JointCalibrationConfig.from_dict(read_json(calibration / "configuration.json"))
+    other = replace(
+        policy, model=replace(policy.model, covariance_type="full" if family == "tied" else "tied")
+    )
+    with ZipFile(calibration / "pipeline_artifacts.zip") as archive:
+        with pytest.raises(ValueError, match="configuration mismatch"):
+            audit_pipeline_point(archive, read_json(calibration / "observed.json"), other)
 
     monkeypatch.setattr(
         mixture, "select_gaussian_mixture", lambda *a, **kw: pytest.fail("Audit must not refit")
@@ -55,10 +83,11 @@ def test_all_cases_direct_cli_and_independent_audit(tmp_path, monkeypatch):
         audit_joint_study(root, output_dir=tmp_path / "corrupt")
 
 
+@pytest.mark.parametrize("family", ["full", "tied"])
 @pytest.mark.parametrize("failure_call", [1, 2])
-def test_failed_joint_fit_withholds_p_without_replacement(tmp_path, monkeypatch, failure_call):
-    from dataclasses import replace
-
+def test_failed_joint_fit_withholds_p_without_replacement(
+    tmp_path, monkeypatch, failure_call, family
+):
     from super_deli.benchmarking.joint_study import simulate_joint
     from super_deli.models.joint_null import write_raw_joint
     from super_deli.workflows import integrative
@@ -67,6 +96,7 @@ def test_failed_joint_fit_withholds_p_without_replacement(tmp_path, monkeypatch,
     c = JointStudyConfig.from_dict(
         read_json(ROOT / "examples/joint-calibration/smoke.json")
     ).calibration
+    c = replace(c, model=replace(c.model, covariance_type=family))
     values, layout, _ = simulate_joint("linear_association", 24, 27)
     dataset = write_raw_joint(values, layout, tmp_path / "raw")
     original = integrative.run_integrative
@@ -90,10 +120,9 @@ def test_failed_joint_fit_withholds_p_without_replacement(tmp_path, monkeypatch,
     assert result["unattempted_fits"] == (2 if failure_call == 1 else 0)
 
 
+@pytest.mark.parametrize("family", ["full", "tied"])
 @pytest.mark.parametrize("kind", ["morphological", "ecological"])
-def test_single_phenotype_and_id_matching(tmp_path, kind):
-    from dataclasses import replace
-
+def test_single_phenotype_and_id_matching(tmp_path, kind, family):
     from super_deli.benchmarking.joint_study import simulate_joint
     from super_deli.models.joint_null import write_raw_joint
     from super_deli.workflows.joint_calibration import run_joint_calibration
@@ -105,7 +134,9 @@ def test_single_phenotype_and_id_matching(tmp_path, kind):
         c,
         n_simulations=1,
         model=replace(
-            c.model, views=tuple(v for v in c.model.views if v.kind in {"genomic", kind})
+            c.model,
+            covariance_type=family,
+            views=tuple(v for v in c.model.views if v.kind in {"genomic", kind}),
         ),
     )
     values, layout, _ = simulate_joint("linear_association", 24, 29)

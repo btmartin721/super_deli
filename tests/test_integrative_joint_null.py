@@ -1,6 +1,7 @@
 """Joint likelihood, conditional simulation and unsupported-data boundaries."""
 
 # ruff: noqa: E402
+from dataclasses import replace
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -19,11 +20,12 @@ from super_deli.models.joint_null import fit_null, simulate_null, write_raw_join
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def fixture(tmp_path, case="linear_association", transform=None):
+def fixture(tmp_path, case="linear_association", transform=None, family="full"):
     tmp_path.mkdir(parents=True, exist_ok=True)
     c = JointCalibrationConfig.from_dict(
         read_json(ROOT / "examples/joint-calibration/calibration.json")
     )
+    c = replace(c, model=replace(c.model, covariance_type=family))
     values, layout, _ = simulate_joint(case, 64, 191)
     if transform:
         transform(values, layout)
@@ -106,3 +108,14 @@ def test_predictor_polarity_does_not_follow_snpio_major_allele(tmp_path):
     got, metadata = canonical_dosages(loaded, 2 - canonical, {"exclusions": []})
     np.testing.assert_array_equal(got, canonical)
     assert metadata["joint_predictor_coding"]["snpio_reversed_loci"] == [0, 1]
+
+
+def test_raw_null_and_draws_do_not_depend_on_clustering_covariance(tmp_path):
+    full, _, _ = fixture(tmp_path / "full")
+    tied, _, _ = fixture(tmp_path / "tied", family="tied")
+    assert full.layout == tied.layout
+    for key, value in full.model_arrays().items():
+        np.testing.assert_array_equal(value, tied.model_arrays()[key])
+    full_draw, tied_draw = simulate_null(full, 119), simulate_null(tied, 119)
+    for key in full_draw:
+        np.testing.assert_array_equal(full_draw[key], tied_draw[key])

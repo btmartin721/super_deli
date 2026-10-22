@@ -120,6 +120,12 @@ jobs:
             super-deli benchmark-joint-calibration "$GITHUB_WORKSPACE/examples/joint-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/joint-study/$case"
           done
           super-deli analyze-joint-calibration "$RUNNER_TEMP/joint-study" --output-dir "$RUNNER_TEMP/joint-audit"
+          mkdir "$RUNNER_TEMP/shared-calibration"
+          for case in zero_association linear_association complementary heavy_tailed cline; do
+            super-deli benchmark-joint-calibration "$GITHUB_WORKSPACE/examples/shared-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/shared-calibration/$case"
+          done
+          super-deli analyze-joint-calibration "$RUNNER_TEMP/shared-calibration" --output-dir "$RUNNER_TEMP/shared-calibration-audit"
+          super-deli calibrate-joint-integrative "$RUNNER_TEMP/shared-calibration/linear_association/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/shared-calibration/linear_association/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/shared-direct-calibration"
           super-deli calibrate-joint-integrative "$RUNNER_TEMP/joint-study/linear_association/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/joint-study/linear_association/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/joint-direct-calibration"
           python "$GITHUB_WORKSPACE/examples/recovery-diagnostics/smoke.py" --joint-study "$GITHUB_WORKSPACE/examples/joint-calibration/smoke.json" --output-dir "$RUNNER_TEMP/recovery-diagnostics"
           python "$GITHUB_WORKSPACE/examples/shared-covariance/smoke.py" --source-artifacts "$RUNNER_TEMP/recovery-diagnostics" --output-dir "$RUNNER_TEMP/shared-covariance"

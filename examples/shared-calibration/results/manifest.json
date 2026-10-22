@@ -1,0 +1,23 @@
+{
+  "audit_summary_sha256": "53c2569923848c6691cb610c73025c040e9e94ad9a7915a432fefef6f2a0e0ee",
+  "audited_inventory_sha256": "8a510f46269f2b4cab0c286b3fc47dfba7ab4398d256e3e4248a9a01b4311b29",
+  "frozen_wheel_sha256": "c3db37d5f36c080443f32e376edaca3fcc205fd40599b1a93d57d85a7e0a39f3",
+  "local_artifact_id": "shared-null-20261022",
+  "publication_files": {
+    "docs/figures/shared-calibration/shared-calibration.pdf": "5ddeeaf86b983b4702d4ae10915fc3ffb93a270dc3c35c10bac6a9abec962544",
+    "docs/figures/shared-calibration/shared-calibration.png": "6f7c2001fa40c65ac396f090b3ec55a8654e379c555675448558d4b06cb0107d",
+    "docs/figures/shared-calibration/shared-calibration.svg": "45df45a6f2c7c3845b429830d96df4760e324339c0d1e351441a54e8be8eb3f3",
+    "docs/shared-covariance-calibration-results.md": "a13410d525d70aa9152c69161f97b9e13e560da4dfad60257d47dc9d4ad40e45",
+    "docs/shared-covariance-calibration.md": "7bd395cea41f48695698a38f93215b197d24aa8071069664ebc2d3a752b91d46",
+    "scripts/report_shared_calibration.py": "21adf8798f56a573bc9cde3ec878d89dc5d85fe7efbd800cc17dddc6f20be901"
+  },
+  "published_artifacts": {
+    "datasets.csv": "6c8e07fa2512c8069eb204d7ca992ddd4b9f56513363619be8e3e2dee859901d",
+    "diagnostics.csv": "26c1b5101cfbd812fb77f54bd6677022961fdeed21e2ce77e3434718c5bbedf9",
+    "execution.json": "0e7ef258bc9db53936182e8a239e4ff3d96a0e7ff5ff56bde5ada9e16ea30d64",
+    "runtime_sources.json": "296ad25b4d0d1a5c27fdeeb1a91cb13c83caf60097e3c2161a7bda60f1a19076",
+    "runtime_versions.json": "d16f9fc85b7dfe267cc1a73e4ef814d0b78610306bbdc625f42067fde11ca3ff",
+    "study.json": "edbe9a074281dba4bc275f216d34c34e601cd644b21fcc767bd11f8af11468a5",
+    "summary.json": "ebde0ad0f2955072768edd5818135848fb398d5495f11b0586d2c4b951826565"
+  }
+}

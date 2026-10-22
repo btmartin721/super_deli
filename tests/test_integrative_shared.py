@@ -46,7 +46,6 @@ def test_unsupported_covariance_rejected(value):
         ("pipeline", "pipeline"),
         ("empirical", "empirical"),
         ("grouped", "grouped"),
-        ("joint", "joint"),
     ],
 )
 def test_raw_significance_rejects_unvalidated_covariance(name, kind):
@@ -77,3 +76,17 @@ def test_direct_score_significance_rejects_unvalidated_covariance():
             search=replace(baseline().calibration.model, covariance_type="tied"),
             config=GaussianCalibrationConfig(True, n_simulations=1),
         )
+
+
+def test_joint_significance_accepts_prespecified_family_and_preserves_full_default():
+    original = baseline()
+    tied = replace(
+        original,
+        calibration=replace(
+            original.calibration,
+            model=replace(original.calibration.model, covariance_type="tied"),
+        ),
+    )
+    assert JointStudyConfig.from_dict(tied.to_dict()) == tied
+    assert tied.calibration.to_dict()["model"]["covariance_type"] == "tied"
+    assert "covariance_type" not in original.to_dict()["calibration"]["model"]
