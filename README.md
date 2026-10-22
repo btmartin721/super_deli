@@ -4,7 +4,7 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: opt-in shared-covariance integrative clustering.**
+**Current checkpoint: full-pipeline shared-covariance significance calibration.**
 Genomic, numeric morphology/ecology and shape scores can be fused by exact unit
 IDs or explicit population/locality aggregation, with prespecified view weights.
 The package also supports individual-modality PCA/GMM, frozen-fit shape
@@ -364,3 +364,11 @@ See [repository layout and local data](docs/repository-layout.md) for the cleane
 source tree and external-data policy.
 See the [completed paired validation](docs/shared-covariance-clustering-results.md)
 for recovery gains, unequal-variance/cline limitations and audited bootstrap support.
+
+Shared-covariance full-pipeline significance calibration is available for the
+matched genomic–phenotypic empirical null. See the
+[scope and frozen validation](docs/shared-covariance-calibration.md). The covariance
+family must be fixed before analysis; the default remains full covariance.
+
+The [completed shared-family calibration](docs/shared-covariance-calibration-results.md)
+reports all 125 fresh tests, conditional Monte Carlo intervals and stress limitations.

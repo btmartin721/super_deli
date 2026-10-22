@@ -168,7 +168,7 @@ def audit_joint_study(root, *, output_dir):
                 "Regenerated raw observations, every joint draw and block donors; "
                 "independent categorical counts/likelihood and QR Gaussian-regression "
                 "MLE/dense likelihood checks; archive hashes, raw identities, "
-                "fusion/projection, selected full-GMM likelihood and K "
+                "fusion/projection, selected configured-family GMM likelihood and K "
                 "search/tails/denominators. No pipeline refits. View PCA and nonselected "
                 "likelihoods preserved/checksummed. Outer failures retain counts without "
                 "complete numerical audit."

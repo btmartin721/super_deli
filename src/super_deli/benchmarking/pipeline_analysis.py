@@ -92,7 +92,7 @@ def audit_pipeline_point(archive, record, policy, *, allow_stability=False):
     np.testing.assert_allclose(np.concatenate(blocks, axis=1), fusion["fused"], atol=1e-12)
     scores = (fusion["fused"] - fusion["mean"]) @ fusion["components"].T
     np.testing.assert_allclose(scores, mixture["scores"], rtol=1e-10, atol=1e-12)
-    # Reconstruct the selected full-covariance likelihood; other K values are
+    # Reconstruct the selected dense Gaussian likelihood; other K values are
     # checked through their preserved complete candidate logs, without refits.
     log_components = []
     for weight, mean, covariance in zip(
