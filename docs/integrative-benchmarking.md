@@ -169,9 +169,10 @@ divisible by four; loci are even and at least eight. Model numerical and pairwis
 budgets also guard conservative simulation allocation. Disk use, run records and
 elapsed time grow with study size and are not bounded by the per-fit memory limit.
 
-`examples/benchmarking/study.json` prepares 100 datasets per scenario and 100 inner
-draws (2,400 point fits and 240,000 inner refits). It is **not run** at this
-checkpoint. Its worst-case rate MCSE is 0.05; study size should follow a chosen
+`examples/benchmarking/study.json` specifies 100 datasets per scenario and 100 inner
+draws (2,400 planned point fits and 240,000 planned inner refits). The subsequent
+[larger-study checkpoint](integrative-study.md) executed this unchanged declaration
+and retained all failures. Its worst-case rate MCSE is 0.05; study size should follow a chosen
 precision target. More inner draws reduce OOB sparsity but cannot replace more
 independent outer datasets. Edit the configuration before running a larger study:
 
@@ -192,8 +193,9 @@ super-deli benchmark-integrative examples/benchmarking/study.json \
 | `summary.json` | Completion/failure counts, versions, hashes, metric summaries and paired differences |
 
 Elapsed seconds include workflow ingestion, fitting and scoring on one host;
-they are not isolated algorithm timings. Output paths are exclusive. Seeds and
-draw logs allow auditing, but there is no resume/parallel execution in this batch.
+they are not isolated algorithm timings. Output paths are exclusive. The core
+runner is sequential; the subsequent study checkpoint adds an external scenario
+orchestrator that preserves repetition indices/seed keys. There is no resume.
 
 ```python
 from super_deli.benchmarking.config import BenchmarkConfig

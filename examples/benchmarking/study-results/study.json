@@ -1,0 +1,192 @@
+{
+  "arms": [
+    {
+      "kinds": [
+        "genomic",
+        "morphological",
+        "ecological",
+        "morphometric"
+      ],
+      "name": "full"
+    },
+    {
+      "kinds": [
+        "genomic",
+        "ecological"
+      ],
+      "name": "genome_environment"
+    },
+    {
+      "kinds": [
+        "morphological",
+        "morphometric"
+      ],
+      "name": "traits_shape"
+    }
+  ],
+  "max_group_members": 4,
+  "model": {
+    "assignment_threshold": 0.0,
+    "assume_independent_units": true,
+    "max_iter": 500,
+    "max_k": 4,
+    "max_pairwise_bytes": 268435456,
+    "max_working_bytes": 268435456,
+    "min_cluster_size": 5,
+    "missing_views": "error",
+    "n_bootstrap": 100,
+    "n_init": 3,
+    "n_pcs": 2,
+    "n_threads": 1,
+    "random_seed": 0,
+    "rank_tol": 1e-12,
+    "reg_covar": 1e-06,
+    "schema_version": 1,
+    "target_level": "specimen",
+    "tol": 0.001,
+    "views": [
+      {
+        "aggregation": "none",
+        "count_transform": "identity",
+        "feature_names": [],
+        "kind": "genomic",
+        "missing_policy": "mean",
+        "modality": "genomic",
+        "n_pcs": 2,
+        "ploidy": 2,
+        "scaling": null,
+        "shape": null,
+        "weight": 1.0
+      },
+      {
+        "aggregation": "none",
+        "count_transform": "identity",
+        "feature_names": [],
+        "kind": "morphological",
+        "missing_policy": "mean",
+        "modality": "morphological",
+        "n_pcs": 2,
+        "ploidy": null,
+        "scaling": null,
+        "shape": null,
+        "weight": 1.0
+      },
+      {
+        "aggregation": "none",
+        "count_transform": "identity",
+        "feature_names": [],
+        "kind": "ecological",
+        "missing_policy": "mean",
+        "modality": "ecological",
+        "n_pcs": 2,
+        "ploidy": null,
+        "scaling": null,
+        "shape": null,
+        "weight": 1.0
+      },
+      {
+        "aggregation": "none",
+        "count_transform": "identity",
+        "feature_names": [],
+        "kind": "morphometric",
+        "missing_policy": "error",
+        "modality": "morphometric",
+        "n_pcs": 2,
+        "ploidy": null,
+        "scaling": null,
+        "shape": {
+          "landmark_type": "fixed",
+          "max_iter": 500,
+          "max_working_bytes": 268435456,
+          "missing_policy": "error",
+          "n_components": null,
+          "rank_tol": 1e-12,
+          "reflection": "forbid",
+          "repeated_policy": "error",
+          "schema_version": 1,
+          "tol": 1e-10
+        },
+        "weight": 1.0
+      }
+    ]
+  },
+  "n_datasets": 100,
+  "n_loci": 64,
+  "n_units": 64,
+  "random_seed": 20261020,
+  "scenarios": [
+    {
+      "cell_missing_rate": 0.0,
+      "linkage": "matched",
+      "name": "null_matched",
+      "pattern": "null",
+      "strength": 0,
+      "unequal_groups": false,
+      "view_missing_rate": 0.0
+    },
+    {
+      "cell_missing_rate": 0.0,
+      "linkage": "matched",
+      "name": "strong_matched",
+      "pattern": "concordant",
+      "strength": 3.0,
+      "unequal_groups": false,
+      "view_missing_rate": 0.0
+    },
+    {
+      "cell_missing_rate": 0.0,
+      "linkage": "matched",
+      "name": "weak_matched",
+      "pattern": "concordant",
+      "strength": 0.6,
+      "unequal_groups": false,
+      "view_missing_rate": 0.0
+    },
+    {
+      "cell_missing_rate": 0.0,
+      "linkage": "matched",
+      "name": "complementary_matched",
+      "pattern": "complementary",
+      "strength": 3.0,
+      "unequal_groups": false,
+      "view_missing_rate": 0.0
+    },
+    {
+      "cell_missing_rate": 0.0,
+      "linkage": "matched",
+      "name": "conflicting_matched",
+      "pattern": "conflicting",
+      "strength": 3.0,
+      "unequal_groups": false,
+      "view_missing_rate": 0.0
+    },
+    {
+      "cell_missing_rate": 0.15,
+      "linkage": "matched",
+      "name": "missing_cells",
+      "pattern": "concordant",
+      "strength": 3.0,
+      "unequal_groups": false,
+      "view_missing_rate": 0.0
+    },
+    {
+      "cell_missing_rate": 0.0,
+      "linkage": "matched",
+      "name": "missing_views",
+      "pattern": "concordant",
+      "strength": 3.0,
+      "unequal_groups": false,
+      "view_missing_rate": 0.25
+    },
+    {
+      "cell_missing_rate": 0.0,
+      "linkage": "grouped",
+      "name": "unequal_grouped",
+      "pattern": "complementary",
+      "strength": 3.0,
+      "unequal_groups": true,
+      "view_missing_rate": 0.0
+    }
+  ],
+  "schema_version": 1
+}

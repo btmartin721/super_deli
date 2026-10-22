@@ -123,6 +123,11 @@ def main(argv: list[str] | None = None) -> int:
     )
     benchmark.add_argument("config", type=Path, help="Versioned benchmark JSON configuration")
     benchmark.add_argument("--output-dir", type=Path, required=True)
+    study_analysis = commands.add_parser(
+        "analyze-integrative-study", help="Audit and summarize completed scenario-sharded runs"
+    )
+    study_analysis.add_argument("config", type=Path, help="Completed study directory")
+    study_analysis.add_argument("--output-dir", type=Path, required=True)
     baseline = commands.add_parser(
         "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
     )
@@ -140,6 +145,12 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command == "analyze-integrative-study":
+            from super_deli.benchmarking.study_analysis import write_analysis
+
+            summary = write_analysis(source, output_dir=args.output_dir)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "benchmark-integrative":
             from super_deli.benchmarking.config import BenchmarkConfig
             from super_deli.benchmarking.runner import run_benchmark
