@@ -1,0 +1,11 @@
+{
+  "current_available": 100,
+  "legacy_available": 100,
+  "lost": 0,
+  "paired_datasets": 100,
+  "raw_byte_identity_verified": true,
+  "recovered": 0,
+  "schema_version": 1,
+  "scope": "Complete shared observations and point settings; pooled-HWE and empirical-block nulls impose different hypotheses and use different null seed namespaces. P-value differences are not a common-random-bank comparison.",
+  "status": "complete"
+}

@@ -78,3 +78,6 @@ dist/
 
 !examples/genomic-calibration/results/*.csv
 !docs/figures/genomic-calibration/*.pdf
+
+!examples/linked-calibration/results/*.csv
+!docs/figures/linked-calibration/*.pdf

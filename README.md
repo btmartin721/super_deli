@@ -335,3 +335,9 @@ approximate full-pipeline pooled-HWE test for explicitly unlinked diploid SNPs,
 with optional popmaps and preserved failed-draw accounting.
 See the [completed genomic validation report](docs/genomic-null-calibration-results.md)
 for the frozen 125-dataset study and its inferential limits.
+
+The [linkage-aware genomic checkpoint](docs/linked-genomic-calibration.md) adds
+a separate fitted empirical block-profile null for complete genotypes and
+prespecified independent blocks.
+See the [completed linkage-aware validation](docs/linked-genomic-calibration-results.md)
+for the frozen study, paired outcomes and sparse-support limitations.

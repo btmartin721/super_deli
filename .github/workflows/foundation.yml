@@ -108,3 +108,10 @@ jobs:
           done
           super-deli analyze-genomic-calibration "$RUNNER_TEMP/genomic-study" --output-dir "$RUNNER_TEMP/genomic-audit"
           super-deli calibrate-genomic "$RUNNER_TEMP/genomic-study/common_hwe/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/genomic-study/common_hwe/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/genomic-direct-calibration"
+          mkdir "$RUNNER_TEMP/linked-study"
+          for case in common_hwe four_groups linked_stress cline_stress moderate_ld split_block_stress; do
+            super-deli benchmark-linked-calibration "$GITHUB_WORKSPACE/examples/linked-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/linked-study/$case"
+          done
+          super-deli analyze-linked-calibration "$RUNNER_TEMP/linked-study" --output-dir "$RUNNER_TEMP/linked-audit"
+          super-deli compare-genomic-calibration "$RUNNER_TEMP/genomic-study" --current-study "$RUNNER_TEMP/linked-study" --output-dir "$RUNNER_TEMP/genomic-paired"
+          super-deli calibrate-linked-genomic "$RUNNER_TEMP/linked-study/common_hwe/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/linked-study/common_hwe/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/linked-direct-calibration"
