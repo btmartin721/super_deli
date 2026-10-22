@@ -4,20 +4,20 @@ from __future__ import annotations
 
 import csv
 import logging
-import shutil
 from collections import Counter
 from contextlib import contextmanager
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass
 from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
 from threading import RLock
 from typing import TYPE_CHECKING
 
 from super_deli.core.data import DatasetConfig, GenomicReaderOptions, Modality
-from super_deli.core.provenance import collect_provenance, fingerprint_file
+from super_deli.core.provenance import collect_provenance
 from super_deli.core.schema import config_from_dict
 from super_deli.core.validation import resolve_input, validate_dataset
 from super_deli.io.config import write_json
+from super_deli.io.staging import stage_input
 
 if TYPE_CHECKING:
     import numpy as np
@@ -137,17 +137,6 @@ def _select_modality(config: DatasetConfig, name: str | None) -> Modality:
     return candidates[0]
 
 
-def _stage(source: Path, directory: Path) -> tuple[Path, dict]:
-    directory.mkdir()
-    staged = directory / source.name
-    shutil.copyfile(source, staged)
-    original = fingerprint_file(source)
-    snapshot = fingerprint_file(staged)
-    if original.sha256 != snapshot.sha256:
-        raise GenomicIngestionError(f"Input changed while staging: {source}")
-    return staged, asdict(original)
-
-
 def _validate_popmap(path: Path, expected_samples: set[str]) -> None:
     """Reject duplicate or incomplete metadata before SNPio's dictionary conversion."""
     lines = [line for line in path.read_text(encoding="utf-8-sig").splitlines() if line.strip()]
@@ -246,11 +235,13 @@ def ingest_genomic(
 
         destination.mkdir(exist_ok=False)
         try:
-            staged, source_fingerprint = _stage(original, destination / "input")
+            staged, source_fingerprint = stage_input(original, destination / "input")
             staged_popmap = None
             fingerprints = [source_fingerprint]
             if original_popmap is not None:
-                staged_popmap, popmap_fingerprint = _stage(original_popmap, destination / "popmap")
+                staged_popmap, popmap_fingerprint = stage_input(
+                    original_popmap, destination / "popmap"
+                )
                 _validate_popmap(staged_popmap, {o.observation_id for o in modality.observations})
                 fingerprints.append(popmap_fingerprint)
             data = readers[modality.format](

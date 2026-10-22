@@ -1,0 +1,4 @@
+measurement_id,specimen_id,notes,sex,pigmentation,wear_score,spurs,scale_count,length_mm
+measure3,specimen3,"checked, retained as raw metadata",male,plain,high,present,21,15.2
+measure1_repeat,specimen1,repeat reading,NA,striped,intermediate,,18,NA
+measure1,specimen1,initial reading,female,striped,low,absent,0,12.4

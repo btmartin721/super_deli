@@ -13,6 +13,7 @@ from super_deli.core.data import (
     Modality,
     Observation,
     Specimen,
+    TabularReaderOptions,
 )
 
 
@@ -57,6 +58,26 @@ def _reader_options(value: Any, location: str) -> GenomicReaderOptions | None:
             "allele_start_col", lambda v, p: None if v is None else _integer(v, p), default=None
         ),
         allele_encoding=obj.get("allele_encoding", _allele_encoding, default=()),
+    )
+    obj.finish()
+    return result
+
+
+def _missing_token(value: Any, location: str) -> str:
+    return "" if value == "" else _string(value, location)
+
+
+def _tabular_options(value: Any, location: str) -> TabularReaderOptions | None:
+    if value is None:
+        return None
+    obj = _Object(value, location)
+    result = TabularReaderOptions(
+        observation_id_column=obj.get("observation_id_column", _string, default="observation_id"),
+        unit_id_column=obj.optional_string("unit_id_column"),
+        missing_values=obj.get(
+            "missing_values", lambda v, p: _array(v, p, _missing_token), default=("",)
+        ),
+        ignored_columns=obj.array("ignored_columns", _string),
     )
     obj.finish()
     return result
@@ -140,6 +161,7 @@ def _modality(value: Any, location: str) -> Modality:
         features=obj.array("features", _feature),
         popmapfile=obj.optional_string("popmapfile"),
         reader_options=obj.get("reader_options", _reader_options, default=None),
+        tabular_options=obj.get("tabular_options", _tabular_options, default=None),
     )
     obj.finish()
     return result

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dataset_id": "illustrative_typed_tables",
+  "specimens": [
+    {"specimen_id": "specimen1", "population_id": "population1", "locality_id": "site1"},
+    {"specimen_id": "specimen2", "population_id": "population1", "locality_id": "site1"},
+    {"specimen_id": "specimen3", "population_id": "population2", "locality_id": "site2"}
+  ],
+  "populations": ["population1", "population2"],
+  "localities": ["site1", "site2", "site3"],
+  "modalities": [
+    {
+      "name": "external_traits", "kind": "morphological", "level": "specimen",
+      "format": "csv", "path": "traits.csv",
+      "tabular_options": {
+        "observation_id_column": "measurement_id",
+        "unit_id_column": "specimen_id",
+        "missing_values": ["", "NA"],
+        "ignored_columns": ["notes"]
+      },
+      "observations": [
+        {"observation_id": "measure1", "unit_id": "specimen1"},
+        {"observation_id": "measure1_repeat", "unit_id": "specimen1"},
+        {"observation_id": "measure3", "unit_id": "specimen3"}
+      ],
+      "features": [
+        {"name": "length_mm", "dtype": "continuous", "unit": "mm"},
+        {"name": "scale_count", "dtype": "count"},
+        {"name": "spurs", "dtype": "binary", "categories": ["absent", "present"]},
+        {"name": "wear_score", "dtype": "ordinal", "categories": ["low", "intermediate", "high"]},
+        {"name": "pigmentation", "dtype": "categorical", "categories": ["striped", "plain"]},
+        {"name": "sex", "dtype": "categorical", "categories": ["female", "male"], "role": "covariate"}
+      ]
+    },
+    {
+      "name": "site_environment", "kind": "ecological", "level": "locality",
+      "format": "tsv", "path": "environment.tsv",
+      "observations": [
+        {"observation_id": "reading_site1", "unit_id": "site1"},
+        {"observation_id": "reading_site2", "unit_id": "site2"}
+      ],
+      "features": [
+        {"name": "temperature_degC", "dtype": "continuous", "unit": "degC"},
+        {"name": "rainfall_mm", "dtype": "continuous", "unit": "mm"},
+        {"name": "habitat", "dtype": "categorical", "categories": ["forest, edge", "grassland"]}
+      ]
+    }
+  ]
+}

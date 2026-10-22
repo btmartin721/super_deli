@@ -35,6 +35,18 @@ def main(argv: list[str] | None = None) -> int:
     ingest.add_argument(
         "--output-dir", type=Path, required=True, help="New directory for staged data and outputs"
     )
+    tabular = commands.add_parser(
+        "ingest-tabular", help="Load typed morphology/ecology CSV/TSV tables"
+    )
+    tabular.add_argument("config", type=Path, help="Versioned dataset JSON configuration")
+    tabular.add_argument(
+        "--modality",
+        action="append",
+        help="Select a table by name; repeat to select multiple (default: all tables)",
+    )
+    tabular.add_argument(
+        "--output-dir", type=Path, required=True, help="New directory for staged tables and outputs"
+    )
     baseline = commands.add_parser(
         "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
     )
@@ -53,6 +65,17 @@ def main(argv: list[str] | None = None) -> int:
     try:
         source = args.config.absolute()
         config = load_config(source)
+        if args.command == "ingest-tabular":
+            from super_deli.io.tabular import ingest_tabular
+
+            loaded_tables = ingest_tabular(
+                config,
+                base_dir=source.parent,
+                output_dir=args.output_dir,
+                modality_names=args.modality,
+            )
+            print(json.dumps(loaded_tables.summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "baseline-genomic":
             from super_deli.models.config import BaselineConfig
 

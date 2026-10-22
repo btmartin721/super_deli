@@ -4,8 +4,9 @@ This checkpoint estimates **candidate genetic clusters** from one genomic modali
 It provides a transparent baseline for later species-delimitation research.
 Clusters, conditional memberships, and locus-bootstrap stability are different
 quantities. None is a species posterior or a calibrated test of a species boundary.
-Morphology, ecology, landmark/image processing, empirical benchmarks, and
-integrative models remain later checkpoints.
+Morphology/ecology readers are documented in [tabular ingestion](tabular-ingestion.md).
+Landmark/image processing, empirical benchmarks, and integrative models remain
+later checkpoints.
 
 ## Run the bounded synthetic example
 
