@@ -1,9 +1,10 @@
-# Foundation checkpoint
+# Modular architecture
 
 Super Deli is being redesigned for integrative species-delimitation research.
 The foundation provides an installable package, data declarations, validation,
 provenance, and result conventions. The second checkpoint adds SNPio genomic
-ingestion. Neither checkpoint contains delimitation estimators.
+ingestion. The third adds a genomic PCA/GMM baseline with explicit assumptions
+and block-bootstrap stability; see [genomic baseline](genomic-baseline.md).
 
 ## Boundaries
 
@@ -16,12 +17,17 @@ ingestion. Neither checkpoint contains delimitation estimators.
 | `core.results` | Assignment and uncertainty reporting contracts for future estimators |
 | `io.config` | Strict JSON reading and non-overwriting artifact writing |
 | `io.genomic` | Optional SNPio readers, staged inputs, sample linkage, and ingestion artifacts |
+| `io.genomic_encoding` | Conservative diploid SNPio encoding and source-locus indexing |
+| `models.config` | Strict, dependency-free baseline settings and assumptions |
+| `models.pca_gmm` | Numerical preprocessing, PCA/GMM search, and block stability |
+| `workflows.genomic_baseline` | Connect adapters/models to reproducible result artifacts |
 | `cli` | Argument handling and presentation of API results |
 
-The core does not import scientific libraries or perform modality I/O. Future
-readers belong in `io`; estimators, statistical evaluation, and presentation will
-be added when those features have tested implementations. Empty plugin systems
-and unused model classes are intentionally absent from this checkpoint.
+The core does not import scientific libraries or perform modality I/O. Readers
+belong in `io`, numerical estimators in `models`, and artifact orchestration in
+`workflows`. Root imports and dataset validation do not load optional numerical
+libraries. The `baseline` extra supplies numerical dependencies; the `genomics`
+extra supplies SNPio. Empty plugin registries remain unnecessary.
 
 The distribution discovers only packages under `src/`. Historical imputation
 code remains in the repository but is excluded from the installed package. The
@@ -137,7 +143,7 @@ the report records whether file checking was requested.
 
 ## Statistical reporting contract
 
-`DelimitationResult` represents future candidate assignments at one declared
+`DelimitationResult` represents candidate assignments at one declared
 biological level. It requires unique unit assignments and explicit evidence.
 The configuration SHA-256 links a result to its configuration/provenance record.
 An unresolved assignment uses `label=None` and a reason. Each evidence record
@@ -160,10 +166,11 @@ reference labels need independent evidence and documented uncertainty.
 ## Checkpoint sequence
 
 1. **Completed foundation:** Package, contracts, validation, provenance, tests, CI, and a draft PR.
-2. **Current:** SNPio ingestion and supported-format fixtures with optional popmaps.
-3. A transparent baseline estimator and independently validated uncertainty.
+2. **Completed:** SNPio ingestion and supported-format fixtures with optional popmaps.
+3. **Current:** Genomic PCA/GMM baseline, block stability, and bounded synthetic checks.
 4. Tabular morphology/ecology and landmark/image ingestion in separate batches.
 5. Additional models and integrative inference after baseline benchmarks.
 
-No models, image decoders, empirical-data downloads, or expensive analyses are
-part of the genomic ingestion checkpoint.
+The current baseline reports genetic clustering and locus-block sensitivity.
+It does not supply taxonomic validation, formal species-boundary significance,
+image decoders, empirical-data downloads, or expensive benchmark campaigns.

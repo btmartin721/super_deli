@@ -13,6 +13,7 @@ dependencies = []
 
 [project.optional-dependencies]
 genomics = ["snpio>=1.7.7,<2", "packaging>=24"]
+baseline = ["numpy>=1.26,<3", "scikit-learn>=1.6,<2", "threadpoolctl>=3,<4"]
 dev = ["pytest>=8,<9", "ruff>=0.9,<1", "build>=1,<2"]
 
 [project.scripts]
@@ -28,12 +29,15 @@ version = {attr = "super_deli.__version__"}
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "--import-mode=importlib"
-markers = ["genomic: integration checks requiring the optional SNPio dependency"]
+markers = [
+    "genomic: integration checks requiring the optional SNPio dependency",
+    "baseline: numerical checks requiring the optional baseline dependencies",
+]
 
 [tool.ruff]
 target-version = "py311"
 line-length = 100
-include = ["src/**/*.py", "tests/test_foundation*.py", "tests/test_genomic*.py"]
+include = ["src/**/*.py", "tests/test_foundation*.py", "tests/test_genomic*.py", "tests/test_baseline*.py", "examples/baseline/*.py"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
