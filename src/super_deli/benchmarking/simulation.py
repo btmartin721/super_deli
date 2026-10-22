@@ -8,7 +8,7 @@ from pathlib import Path
 
 import numpy as np
 
-from super_deli.benchmarking.config import KINDS, BenchmarkConfig, Scenario, derived_seed
+from super_deli.benchmarking.config import KINDS, Scenario, SimulationDimensions, derived_seed
 from super_deli.core.provenance import fingerprint_file
 from super_deli.io.config import write_json
 
@@ -29,7 +29,7 @@ class SimulatedData:
         return tuple(t for t in self.target_ids if t in shared)
 
 
-def simulate(scenario: Scenario, config: BenchmarkConfig, seed: int) -> SimulatedData:
+def simulate(scenario: Scenario, config: SimulationDimensions, seed: int) -> SimulatedData:
     """Sample targets first; source individuals are conditionally independent members."""
     rng = np.random.default_rng(derived_seed(seed, scenario.name, 0, "targets"))
     n = config.n_units

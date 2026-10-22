@@ -1,0 +1,5 @@
+case,events,interpretation,max,mcse,mean,median,min,n_available,n_missing,sd,wilson_95
+matched_null,0,Reference-law type-I error,0.0,0.0,0.0,0.0,0.0,25,0,0.0,"[0.0, 0.1331922509390484]"
+matched_complementary,25,Power for complementary four-group alternative,1.0,0.0,1.0,1.0,1.0,25,0,0.0,"[0.8668077490609516, 1.0]"
+grouped_null,1,Reference-law type-I error,1.0,0.04,0.04,0.0,0.0,25,0,0.2,"[0.007096233501987265, 0.19544063736193729]"
+grouped_complementary,25,Power for complementary four-group alternative,1.0,0.0,1.0,1.0,1.0,25,0,0.0,"[0.8668077490609516, 1.0]"

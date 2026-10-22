@@ -238,9 +238,10 @@ reference labels need independent evidence and documented uncertainty.
 11. **Completed:** Common-unit weighted score integration, joint PCA/GMM and paired unit stability.
 12. **Completed:** Truth-separated simulation benchmarks with dataset-level Monte Carlo uncertainty.
 13. **Completed:** Larger prespecified benchmark, raw-artifact audit and results analysis.
-14. **Current:** Approximate single-Gaussian calibration in frozen integrative scores.
-15. Anatomical landmark learning and additional models in separate batches.
-16. Further integration models and empirical calibration after baseline benchmarks.
+14. **Completed:** Approximate single-Gaussian calibration in frozen integrative scores.
+15. **Current:** Full-pipeline Monte Carlo calibration under a declared raw-data reference law.
+16. Anatomical landmark learning and additional models in separate batches.
+17. Further integration models and empirical calibration after baseline benchmarks.
 
 The genomic baseline reports genetic clustering and locus-block sensitivity.
 It does not supply taxonomic validation, formal species-boundary significance,
@@ -268,3 +269,13 @@ The separate [Gaussian score calibration](gaussian-score-calibration.md) checkpo
 adds a global fitted-null diagnostic and independent score-level validation. It
 preserves original results and does not calibrate preprocessing/PCA selection,
 cluster-specific support, or biological species boundaries.
+
+The [full-pipeline reference test](full-pipeline-calibration.md) declares a known
+four-view continuous-population law in `models.pipeline_config`. The workflow
+streams fresh raw simulations through the existing integrative point pipeline;
+it does not maintain a second preprocessing or clustering implementation.
+`models.monte_carlo` shares upper-tail accounting with the Gaussian score test.
+`benchmarking.pipeline_study` separates observed data and null seed streams;
+`benchmarking.pipeline_analysis` audits archived bytes and reconstructs numerical
+results without refits. Stability remains separate and empirical fitted-null
+or species-boundary calibration is not supplied by this reference-law checkpoint.
