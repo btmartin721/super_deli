@@ -9,6 +9,7 @@ from super_deli.core.data import (
     SCHEMA_VERSION,
     DatasetConfig,
     Feature,
+    GenomicReaderOptions,
     Modality,
     Observation,
     Specimen,
@@ -29,6 +30,36 @@ def _integer(value: Any, location: str) -> int:
     if type(value) is not int or value < 0:
         raise ConfigError(f"{location}: expected a nonnegative integer")
     return value
+
+
+def _boolean(value: Any, location: str) -> bool:
+    if type(value) is not bool:
+        raise ConfigError(f"{location}: expected a boolean")
+    return value
+
+
+def _allele_encoding(value: Any, location: str) -> tuple[tuple[str, str], ...]:
+    if not isinstance(value, dict):
+        raise ConfigError(f"{location}: expected an object mapping allele codes to bases")
+    return tuple(
+        sorted((_string(k, location), _string(v, f"{location}.{k}")) for k, v in value.items())
+    )
+
+
+def _reader_options(value: Any, location: str) -> GenomicReaderOptions | None:
+    if value is None:
+        return None
+    obj = _Object(value, location)
+    result = GenomicReaderOptions(
+        has_popids=obj.get("has_popids", _boolean, default=False),
+        has_marker_names=obj.get("has_marker_names", _boolean, default=False),
+        allele_start_col=obj.get(
+            "allele_start_col", lambda v, p: None if v is None else _integer(v, p), default=None
+        ),
+        allele_encoding=obj.get("allele_encoding", _allele_encoding, default=()),
+    )
+    obj.finish()
+    return result
 
 
 def _array(value: Any, location: str, parser: Callable) -> tuple:
@@ -108,6 +139,7 @@ def _modality(value: Any, location: str) -> Modality:
         observations=obj.array("observations", _observation, required=True),
         features=obj.array("features", _feature),
         popmapfile=obj.optional_string("popmapfile"),
+        reader_options=obj.get("reader_options", _reader_options, default=None),
     )
     obj.finish()
     return result

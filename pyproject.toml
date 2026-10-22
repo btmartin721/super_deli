@@ -12,7 +12,7 @@ authors = [{name = "Bradley T. Martin"}]
 dependencies = []
 
 [project.optional-dependencies]
-genomics = ["snpio>=1.7.6,<2"]
+genomics = ["snpio>=1.7.7,<2", "packaging>=24"]
 dev = ["pytest>=8,<9", "ruff>=0.9,<1", "build>=1,<2"]
 
 [project.scripts]
@@ -28,11 +28,12 @@ version = {attr = "super_deli.__version__"}
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "--import-mode=importlib"
+markers = ["genomic: integration checks requiring the optional SNPio dependency"]
 
 [tool.ruff]
 target-version = "py311"
 line-length = 100
-include = ["src/**/*.py", "tests/test_foundation*.py"]
+include = ["src/**/*.py", "tests/test_foundation*.py", "tests/test_genomic*.py"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]

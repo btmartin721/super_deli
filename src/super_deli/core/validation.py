@@ -121,6 +121,31 @@ def validate_dataset(
             error("invalid_level", location, "GenotypeData records must link to specimens")
         if modality.popmapfile is not None and modality.kind != "genomic":
             error("invalid_popmap", location, "popmapfile is only defined for genomic inputs")
+        if (options := modality.reader_options) is not None:
+            if modality.kind != "genomic":
+                error("invalid_reader_options", location, "Reader options require genomic input")
+            if modality.format != "structure" and (
+                options.has_popids
+                or options.has_marker_names
+                or options.allele_start_col is not None
+            ):
+                error(
+                    "invalid_reader_options", location, "STRUCTURE options require STRUCTURE input"
+                )
+            if options.allele_encoding and modality.format not in {"structure", "genepop"}:
+                error(
+                    "invalid_reader_options", location, "Allele maps require STRUCTURE or GENEPOP"
+                )
+            if (
+                options.allele_start_col is not None
+                and options.allele_start_col < 1 + options.has_popids
+            ):
+                error(
+                    "invalid_reader_options", location, "Alleles must follow the sample ID column"
+                )
+            unique((code for code, _ in options.allele_encoding), f"{location}.allele_encoding")
+            if any(base not in {"A", "C", "G", "T", "N"} for _, base in options.allele_encoding):
+                error("invalid_reader_options", location, "Allele maps must use A, C, G, T, or N")
         if not modality.observations:
             error("no_observations", location, "Declare at least one source observation")
         unique((o.observation_id for o in modality.observations), f"{location}.observations")

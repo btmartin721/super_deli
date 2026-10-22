@@ -1,8 +1,9 @@
 # Foundation checkpoint
 
 Super Deli is being redesigned for integrative species-delimitation research.
-This checkpoint provides an installable package, data declarations, validation,
-provenance, and result conventions. It contains no delimitation estimators.
+The foundation provides an installable package, data declarations, validation,
+provenance, and result conventions. The second checkpoint adds SNPio genomic
+ingestion. Neither checkpoint contains delimitation estimators.
 
 ## Boundaries
 
@@ -14,6 +15,7 @@ provenance, and result conventions. It contains no delimitation estimators.
 | `core.provenance` | Configuration snapshots, software versions, and optional input hashes |
 | `core.results` | Assignment and uncertainty reporting contracts for future estimators |
 | `io.config` | Strict JSON reading and non-overwriting artifact writing |
+| `io.genomic` | Optional SNPio readers, staged inputs, sample linkage, and ingestion artifacts |
 | `cli` | Argument handling and presentation of API results |
 
 The core does not import scientific libraries or perform modality I/O. Future
@@ -62,11 +64,12 @@ modality. Multiple observations can refer to the same biological unit.
 | `ecological` | `csv`, `tsv` | Nonempty analytical feature schema |
 | `morphometric` | `tps`, `landmarks_csv`, `image_manifest` | Coordinate or manifest reference |
 
-These formats identify future reader contracts. **No modality contents are read
-or verified by the new package yet.** Genomic data will be loaded through SNPio
-into `GenotypeData` in the next ingestion checkpoint, with `popmapfile=None`
-when absent. The optional `genomics` extra reserves that dependency boundary;
-installing it does not add a reader at this checkpoint.
+The `validate` command checks declarations and references only. The separate
+`ingest-genomic` command loads genomic contents through SNPio into `GenotypeData`,
+with `popmapfile=None` when absent. Other modality contents remain unchecked.
+The optional `genomics` extra enables this dependency boundary on Python 3.11/3.12.
+Genomic modalities may declare `reader_options` for STRUCTURE layout and
+STRUCTURE/GENEPOP allele encodings; see [genomic ingestion](genomic-ingestion.md).
 
 Tabular features declare `name`, `dtype`, optional `unit`, optional `categories`,
 and `role` (`feature` or `covariate`, default `feature`). Types are `continuous`,
@@ -156,11 +159,11 @@ reference labels need independent evidence and documented uncertainty.
 
 ## Checkpoint sequence
 
-1. **Current:** Package, contracts, validation, provenance, tests, CI, and a draft PR.
-2. SNPio ingestion and supported-format fixtures with optional popmaps.
+1. **Completed foundation:** Package, contracts, validation, provenance, tests, CI, and a draft PR.
+2. **Current:** SNPio ingestion and supported-format fixtures with optional popmaps.
 3. A transparent baseline estimator and independently validated uncertainty.
 4. Tabular morphology/ecology and landmark/image ingestion in separate batches.
 5. Additional models and integrative inference after baseline benchmarks.
 
 No models, image decoders, empirical-data downloads, or expensive analyses are
-part of this checkpoint.
+part of the genomic ingestion checkpoint.

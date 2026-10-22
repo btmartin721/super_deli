@@ -1,0 +1,8 @@
+Illustrative genotype ingestion fixture
+locus1
+locus2
+locus3
+locus4
+Pop
+sample_b, 0101 0102 0000 0404
+sample_a, 0102 0202 0303 0404

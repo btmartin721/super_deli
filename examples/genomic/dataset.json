@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "dataset_id": "illustrative_genomic_ingestion",
+  "random_seed": 1729,
+  "specimens": [{"specimen_id": "specimen_a"}, {"specimen_id": "specimen_b"}],
+  "modalities": [
+    {
+      "name": "genotypes",
+      "kind": "genomic",
+      "level": "specimen",
+      "format": "phylip",
+      "path": "tiny.phy",
+      "popmapfile": null,
+      "observations": [
+        {"observation_id": "sample_a", "unit_id": "specimen_a"},
+        {"observation_id": "sample_b", "unit_id": "specimen_b"}
+      ]
+    }
+  ]
+}
