@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "super-deli"
+dynamic = ["version"]
+description = "Infrastructure for reproducible integrative species delimitation"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+authors = [{name = "Bradley T. Martin"}]
+dependencies = []
+
+[project.optional-dependencies]
+genomics = ["snpio>=1.7.6,<2"]
+dev = ["pytest>=8,<9", "ruff>=0.9,<1", "build>=1,<2"]
+
+[project.scripts]
+super-deli = "super_deli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["super_deli*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "super_deli.__version__"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--import-mode=importlib"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+include = ["src/**/*.py", "tests/test_foundation*.py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

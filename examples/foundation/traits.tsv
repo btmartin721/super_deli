@@ -1,0 +1,4 @@
+observation_id	length_mm	scale_count	pigmentation	sex
+measure1	12.4	18	striped	female
+measure1_repeat	12.5	18	striped	female
+measure3	15.2	21	plain	male
