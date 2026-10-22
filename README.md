@@ -4,11 +4,12 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: image ingestion.** The package loads PDF, PNG, JPEG and
-HEIC/HEIF images, 2D/3D fixed landmarks, typed morphology/ecology measurements,
-and SNPio genomic inputs with explicit biological links. The genomic PCA/GMM
-baseline reports candidate clusters and block stability. Landmark detection,
-morphometric models and formal species-boundary tests remain later work.
+**Current checkpoint: visible-marker landmark detection.** Named color/region
+rules locate provisional marker centroids in PDF, PNG, JPEG and HEIC/HEIF images.
+The package also loads fixed landmarks, morphology/ecology tables and SNPio data.
+The genomic PCA/GMM baseline reports candidate clusters and block stability.
+Anatomical landmark learning, shape models and formal species-boundary tests
+remain later work.
 
 ## Installation
 
@@ -164,12 +165,30 @@ and explicit HEIF bit-depth policies prevent silent resizing or quantization.
 See [image ingestion](docs/image-ingestion.md) for the manifest/options contract,
 Python API, source preservation, color/coordinate limits and synthetic codec truth.
 
+## Detect visible landmark markers
+
+```bash
+python -m pip install -e '.[dev,images,landmarks]'
+super-deli detect-landmarks examples/detection/dataset.json \
+  --detector-config examples/detection/detector.json \
+  --output-dir /tmp/super-deli-detected-landmarks
+```
+
+Declare named RGB/search-region rules and component-size limits. Detection leaves
+missing, ambiguous and potentially clipped markers null. Separate overlays and
+diagnostics support review; coordinate JSON/CSV and an ingestible configuration
+preserve biological links. Every centroid remains unreviewed, and statistical
+localization uncertainty is explicitly unavailable pending calibration.
+
+See [landmark detection](docs/landmark-detection.md) for configuration, the API,
+coordinate conventions, synthetic accuracy checks and method boundaries.
+
 ## Development checks
 
 ```bash
 python -m pytest -q
-ruff check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py tests/test_image_ingestion*.py examples/baseline/*.py examples/images/*.py
-ruff format --check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py tests/test_image_ingestion*.py examples/baseline/*.py examples/images/*.py
+ruff check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py tests/test_image_ingestion*.py tests/test_landmark_detection*.py examples/baseline/*.py examples/images/*.py examples/detection/*.py
+ruff format --check src tests/test_foundation*.py tests/test_genomic*.py tests/test_baseline*.py tests/test_tabular*.py tests/test_morphometric*.py tests/test_image_ingestion*.py tests/test_landmark_detection*.py examples/baseline/*.py examples/images/*.py examples/detection/*.py
 python -m build
 ```
 
@@ -178,8 +197,8 @@ GitHub Actions tests the foundation on Python 3.11 and 3.12, validates the examp
 builds wheel/source distributions, and checks wheel installation outside the
 source checkout, including tabular and coordinate ingestion without scientific dependencies.
 A separate genomic matrix tests the real SNPio readers with
-and without external popmaps, the numerical baseline, real image codecs and
-installed ingestion CLIs. Optional tests are skipped when their extras are absent.
+and without external popmaps, the numerical baseline, real image codecs, visible
+marker detection and installed CLIs. Optional tests are skipped when extras are absent.
 Linting covers the new package, tests, and synthetic-example generator.
 
 Historical imputation sources remain outside the installed `src/` package.

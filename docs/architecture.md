@@ -10,6 +10,8 @@ The fifth adds fixed-landmark TPS and coordinate CSV readers;
 see [morphometric ingestion](morphometric-ingestion.md).
 The sixth adds image manifests and PDF/PNG/JPEG/HEIC/HEIF display decoding;
 see [image ingestion](image-ingestion.md).
+The seventh adds explicit visible-marker localization and coordinate exports;
+see [landmark detection](landmark-detection.md).
 
 ## Boundaries
 
@@ -23,6 +25,7 @@ see [image ingestion](image-ingestion.md).
 | `core.tabular` | Typed table records retaining feature schemas, biological levels and missingness |
 | `core.morphometrics` | Fixed-landmark records, correspondence, missing masks and calibration metadata |
 | `core.images` | Linked image records and derivative/source references |
+| `core.detection` | Candidate marker geometry, point status and unresolved coordinates |
 | `io.config` | Strict JSON reading and non-overwriting artifact writing |
 | `io.genomic` | Optional SNPio readers, staged inputs, sample linkage, and ingestion artifacts |
 | `io.genomic_encoding` | Conservative diploid SNPio encoding and source-locus indexing |
@@ -32,17 +35,21 @@ see [image ingestion](image-ingestion.md).
 | `io.tps`, `io.landmark_csv` | Fixed-landmark syntax and named coordinate rows |
 | `io.morphometric_base`, `io.morphometric` | Shared coordinate/link rules and ingestion artifacts |
 | `io.image_manifest`, `io.image_decode`, `io.images` | Image identity/selectors, optional codecs, staged sources and PNG artifacts |
+| `io.detection_artifacts` | Separate visual overlays and ingestible coordinate exports |
 | `models.config` | Strict, dependency-free baseline settings and assumptions |
 | `models.pca_gmm` | Numerical preprocessing, PCA/GMM search, and block stability |
+| `models.marker_config`, `models.marker_detection` | Dependency-free named rules and optional component-based localization |
 | `workflows.genomic_baseline` | Connect adapters/models to reproducible result artifacts |
+| `workflows.landmark_detection` | Image ingestion, provisional marker coordinates, diagnostics and provenance |
 | `cli` | Argument handling and presentation of API results |
 
 The core does not import scientific libraries or perform modality I/O. Readers
 belong in `io`, numerical estimators in `models`, and artifact orchestration in
 `workflows`. Root imports and dataset validation do not load optional numerical
 libraries. The `baseline` extra supplies numerical dependencies; the `genomics`
-extra supplies SNPio; `images` supplies Pillow, pillow-heif and PDFium. Empty
-plugin registries remain unnecessary.
+extra supplies SNPio; `images` supplies Pillow, pillow-heif and PDFium. The
+`landmarks` extra supplies NumPy/SciPy for visible-marker detection and is used
+together with `images`. Empty plugin registries remain unnecessary.
 
 The distribution discovers only packages under `src/`. Historical imputation
 code remains in the repository but is excluded from the installed package. The
@@ -146,8 +153,9 @@ checks row identity, explicit biological links and selected PDF pages/raster
 frames, preserves original bytes and writes display-oriented PNG derivatives.
 The existing schema is accepted with explicit `observation_id_column="specimen_id"`;
 separate observation IDs support repeated views. Group/split/TPS/scale fields stay
-metadata. Landmark localization and coordinate transforms require later
-implementation. An image of a marker does not contain a TPS coordinate record.
+metadata. The separate marker workflow localizes explicitly named visible marks
+and exports provisional coordinates; anatomical learning and coordinate-frame
+transforms remain later work. An image of a marker is not a TPS coordinate record.
 
 ## Provenance and output safety
 
@@ -200,9 +208,10 @@ reference labels need independent evidence and documented uncertainty.
 3. **Completed:** Genomic PCA/GMM baseline, block stability, and bounded synthetic checks.
 4. **Completed:** Typed tabular morphology/ecology ingestion with value/link fixtures.
 5. **Completed:** TPS/coordinate CSV ingestion with coordinate/identity truth fixtures.
-6. **Current:** Image decoding with source preservation and synthetic display truth.
-7. Landmark localization and shape models in separate batches.
-8. Additional models and integrative inference after baseline benchmarks.
+6. **Completed:** Image decoding with source preservation and synthetic display truth.
+7. **Current:** Visible-marker localization with explicit identity rules and unresolved points.
+8. Anatomical landmark learning and shape models in separate batches.
+9. Additional models and integrative inference after baseline benchmarks.
 
 The genomic baseline reports genetic clustering and locus-block sensitivity.
 It does not supply taxonomic validation, formal species-boundary significance,

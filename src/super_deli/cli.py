@@ -73,6 +73,19 @@ def main(argv: list[str] | None = None) -> int:
         required=True,
         help="New directory for staged sources and PNG derivatives",
     )
+    detection = commands.add_parser(
+        "detect-landmarks", help="Locate explicitly named visible markers"
+    )
+    detection.add_argument("config", type=Path, help="Dataset JSON with an image_manifest modality")
+    detection.add_argument(
+        "--detector-config", type=Path, required=True, help="Named marker rules JSON"
+    )
+    detection.add_argument(
+        "--modality", help="Select one image manifest; required if several exist"
+    )
+    detection.add_argument(
+        "--output-dir", type=Path, required=True, help="New detection output directory"
+    )
     baseline = commands.add_parser(
         "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
     )
@@ -91,6 +104,19 @@ def main(argv: list[str] | None = None) -> int:
     try:
         source = args.config.absolute()
         config = load_config(source)
+        if args.command == "detect-landmarks":
+            from super_deli.models.marker_config import MarkerDetectorConfig
+            from super_deli.workflows.landmark_detection import run_landmark_detection
+
+            loaded = run_landmark_detection(
+                config,
+                detector_config=MarkerDetectorConfig.from_dict(read_json(args.detector_config)),
+                base_dir=source.parent,
+                output_dir=args.output_dir,
+                modality_name=args.modality,
+            )
+            print(json.dumps(loaded.summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "ingest-images":
             from super_deli.io.images import ingest_images
 
