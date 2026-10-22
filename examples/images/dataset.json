@@ -1,0 +1,56 @@
+{
+  "dataset_id": "illustrative_image_codecs",
+  "modalities": [
+    {
+      "format": "image_manifest",
+      "image_options": {
+        "pdf_dpi": 72
+      },
+      "kind": "morphometric",
+      "level": "specimen",
+      "name": "photographs",
+      "observations": [
+        {
+          "observation_id": "pdf2",
+          "unit_id": "specimen3"
+        },
+        {
+          "observation_id": "pdf1",
+          "unit_id": "specimen2"
+        },
+        {
+          "observation_id": "heif",
+          "unit_id": "specimen3"
+        },
+        {
+          "observation_id": "heic",
+          "unit_id": "specimen2"
+        },
+        {
+          "observation_id": "jpeg",
+          "unit_id": "specimen1"
+        },
+        {
+          "observation_id": "png",
+          "unit_id": "specimen1"
+        }
+      ],
+      "path": "manifest.csv"
+    }
+  ],
+  "schema_version": 1,
+  "specimens": [
+    {
+      "specimen_id": "specimen1"
+    },
+    {
+      "specimen_id": "specimen2"
+    },
+    {
+      "specimen_id": "specimen3"
+    },
+    {
+      "specimen_id": "specimen4"
+    }
+  ]
+}

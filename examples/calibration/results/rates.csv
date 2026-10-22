@@ -1,0 +1,5 @@
+events,interpretation,max,mcse,mean,median,min,n_available,n_missing,scenario,sd,wilson_95
+1,Type-I error under the specified Gaussian generator,1.0,0.009999999999999998,0.01,0.0,0.0,100,0,spherical_gaussian,0.09999999999999999,"[0.001767432064140647, 0.05448619617870529]"
+2,Type-I error under the specified Gaussian generator,1.0,0.014070529413628966,0.02,0.0,0.0,100,0,correlated_gaussian,0.14070529413628965,"[0.00550196755016235, 0.07001179072854385]"
+100,Power for the specified mixture,1.0,0.0,1.0,1.0,1.0,100,0,separated_mixture,0.0,"[0.9630065017930143, 1.0]"
+27,Gaussian misspecification sensitivity; NOT type-I error for species/clustering,1.0,0.04461960433384737,0.27,0.0,0.0,100,0,heavy_tailed,0.4461960433384737,"[0.1926958414957634, 0.36432116767944994]"

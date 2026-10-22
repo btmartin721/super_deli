@@ -1,0 +1,7 @@
+observation_id,specimen_id,image_path,page,frame
+png,specimen1,pattern.png,,
+jpeg,specimen1,photo.jpg,,
+heic,specimen2,phone.heic,,
+heif,specimen3,phone.heif,,
+pdf1,specimen2,pages.pdf,1,
+pdf2,specimen3,pages.pdf,2,

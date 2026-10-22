@@ -1,0 +1,6 @@
+case,point_k1,point_k2,point_k3,point_k4,median_profiles_per_block,mean_singleton_specimen_fraction,mean_trait_r_squared
+zero_association,25,0,0,0,42.32,0.5181640625,0.06698162599745536
+linear_association,24,1,0,0,42.26,0.5160546875,0.2998945209079173
+complementary,0,22,3,0,27.3,0.2614453125,0.06477044930650973
+heavy_tailed,24,1,0,0,41.86,0.514296875,0.19448631050533996
+cline,9,16,0,0,55.5,0.7827734375,0.15947217454591742

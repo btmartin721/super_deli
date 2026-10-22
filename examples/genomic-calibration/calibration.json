@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "model": {
+    "schema_version": 1,
+    "ploidy": 2,
+    "missing_policy": "mean",
+    "assume_independent_specimens": true,
+    "assume_unlinked": true,
+    "scaling": "patterson",
+    "n_pcs": 2,
+    "max_k": 4,
+    "min_cluster_size": 5,
+    "n_bootstrap": 0,
+    "n_init": 10,
+    "random_seed": 71323
+  },
+  "assume_unrelated_specimens": true,
+  "assume_hardy_weinberg": true,
+  "assume_fixed_panel": true,
+  "assume_noninformative_missingness": true,
+  "n_simulations": 99,
+  "alpha": 0.05,
+  "random_seed": 20261026
+}

@@ -339,5 +339,12 @@ def test_hashing_rejects_input_that_changes_during_read(tmp_path, monkeypatch):
 
 
 def test_no_modality_dependency_is_imported():
-    assert "snpio" not in sys.modules
-    assert "torch" not in sys.modules
+    subprocess.run(
+        [
+            sys.executable,
+            "-c",
+            "import super_deli, sys; assert 'snpio' not in sys.modules; "
+            "assert 'numpy' not in sys.modules",
+        ],
+        check=True,
+    )

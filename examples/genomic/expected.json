@@ -1,0 +1,7 @@
+{
+  "description": "Hand-authored illustrative call truth, not simulated species-delimitation truth",
+  "sample_ids": ["sample_b", "sample_a"],
+  "specimen_ids": ["specimen_b", "specimen_a"],
+  "iupac_calls": [["A", "M", "N", "T"], ["M", "C", "G", "T"]],
+  "missing_mask": [[false, false, true, false], [false, false, false, false]]
+}

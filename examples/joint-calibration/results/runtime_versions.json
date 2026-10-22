@@ -1,0 +1,23 @@
+{
+  "python": "3.12.10",
+  "libraries": {
+    "numpy": {
+      "version": "2.2.6"
+    },
+    "scipy": {
+      "version": "1.15.3"
+    },
+    "scikit-learn": {
+      "version": "1.6.1"
+    },
+    "snpio": {
+      "version": "1.7.7"
+    },
+    "threadpoolctl": {
+      "version": "3.6.0"
+    },
+    "super-deli": {
+      "version": "0.21.0.dev0"
+    }
+  }
+}

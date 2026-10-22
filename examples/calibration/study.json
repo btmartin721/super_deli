@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "n_repetitions": 100,
+  "n_units": 64,
+  "random_seed": 20261021,
+  "calibration": {
+    "schema_version": 1,
+    "assume_iid_gaussian_scores": true,
+    "n_simulations": 199,
+    "alpha": 0.05,
+    "random_seed": 0
+  },
+  "search": {
+    "schema_version": 1,
+    "assume_independent_units": true,
+    "n_pcs": 2,
+    "max_k": 4,
+    "min_cluster_size": 5,
+    "n_bootstrap": 0,
+    "n_init": 10,
+    "max_iter": 500,
+    "tol": 0.001,
+    "reg_covar": 0.000001,
+    "n_threads": 1,
+    "scaling": "center"
+  }
+}

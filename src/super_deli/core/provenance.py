@@ -46,6 +46,14 @@ def fingerprint_file(path: str | Path) -> InputFingerprint:
     return InputFingerprint(str(source), digest.hexdigest(), after.st_size)
 
 
+def configuration_hash(configuration: dict) -> str:
+    """Identify a parsed configuration using canonical UTF-8 JSON."""
+    canonical = json.dumps(
+        configuration, sort_keys=True, separators=(",", ":"), ensure_ascii=False, allow_nan=False
+    ).encode("utf-8")
+    return hashlib.sha256(canonical).hexdigest()
+
+
 def collect_provenance(
     config: DatasetConfig, *, base_dir: str | Path, hash_inputs: bool = False
 ) -> dict:
@@ -55,14 +63,11 @@ def collect_provenance(
     Referenced image-manifest contents are not traversed at this checkpoint.
     """
     configuration = config.to_dict()
-    canonical = json.dumps(
-        configuration, sort_keys=True, separators=(",", ":"), ensure_ascii=False, allow_nan=False
-    ).encode("utf-8")
     return {
         "schema_version": 1,
         "created_at": datetime.now(UTC).isoformat(),
         "configuration": configuration,
-        "configuration_sha256": hashlib.sha256(canonical).hexdigest(),
+        "configuration_sha256": configuration_hash(configuration),
         "base_dir": str(Path(base_dir).resolve()),
         "random_seed": config.random_seed,
         "software": {"super_deli": __version__, "python": platform.python_version()},

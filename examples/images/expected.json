@@ -1,0 +1,189 @@
+{
+  "description": "Synthetic codec/orientation truth; corner probes are inset; no biological landmark truth",
+  "generating_software": {
+    "Pillow": "13.0.0",
+    "pillow-heif": "1.8.1"
+  },
+  "observations": {
+    "heic": {
+      "corners": [
+        [
+          0,
+          0,
+          255
+        ],
+        [
+          255,
+          0,
+          0
+        ],
+        [
+          255,
+          255,
+          0
+        ],
+        [
+          0,
+          255,
+          0
+        ]
+      ],
+      "mode": "RGB",
+      "size": [
+        40,
+        64
+      ],
+      "tolerance": 6
+    },
+    "heif": {
+      "corners": [
+        [
+          255,
+          0,
+          0
+        ],
+        [
+          0,
+          255,
+          0
+        ],
+        [
+          0,
+          0,
+          255
+        ],
+        [
+          255,
+          255,
+          0
+        ]
+      ],
+      "mode": "RGB",
+      "size": [
+        64,
+        40
+      ],
+      "tolerance": 6
+    },
+    "jpeg": {
+      "corners": [
+        [
+          0,
+          0,
+          255
+        ],
+        [
+          255,
+          0,
+          0
+        ],
+        [
+          255,
+          255,
+          0
+        ],
+        [
+          0,
+          255,
+          0
+        ]
+      ],
+      "mode": "RGB",
+      "size": [
+        40,
+        64
+      ],
+      "tolerance": 6
+    },
+    "pdf1": {
+      "corners": [
+        [
+          255,
+          0,
+          0
+        ],
+        [
+          0,
+          255,
+          0
+        ],
+        [
+          0,
+          0,
+          255
+        ],
+        [
+          255,
+          255,
+          0
+        ]
+      ],
+      "mode": "RGB",
+      "size": [
+        72,
+        36
+      ],
+      "tolerance": 0
+    },
+    "pdf2": {
+      "corners": [
+        [
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          255
+        ],
+        [
+          0,
+          0,
+          255
+        ]
+      ],
+      "mode": "RGB",
+      "size": [
+        24,
+        48
+      ],
+      "tolerance": 0
+    },
+    "png": {
+      "corners": [
+        [
+          255,
+          0,
+          0
+        ],
+        [
+          0,
+          255,
+          0
+        ],
+        [
+          0,
+          0,
+          255
+        ],
+        [
+          255,
+          255,
+          0
+        ]
+      ],
+      "mode": "RGBA",
+      "size": [
+        64,
+        40
+      ],
+      "tolerance": 0
+    }
+  }
+}

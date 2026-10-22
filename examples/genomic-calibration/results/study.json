@@ -1,0 +1,30 @@
+{
+  "calibration": {
+    "alpha": 0.05,
+    "assume_fixed_panel": true,
+    "assume_hardy_weinberg": true,
+    "assume_noninformative_missingness": true,
+    "assume_unrelated_specimens": true,
+    "model": {
+      "assume_independent_specimens": true,
+      "assume_unlinked": true,
+      "max_k": 4,
+      "min_cluster_size": 5,
+      "missing_policy": "mean",
+      "n_bootstrap": 0,
+      "n_init": 10,
+      "n_pcs": 2,
+      "ploidy": 2,
+      "random_seed": 71323,
+      "scaling": "patterson",
+      "schema_version": 1
+    },
+    "n_simulations": 99,
+    "random_seed": 20261026,
+    "schema_version": 1
+  },
+  "n_datasets": 25,
+  "n_units": 64,
+  "random_seed": 20261026,
+  "schema_version": 1
+}

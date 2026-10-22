@@ -12,7 +12,12 @@ authors = [{name = "Bradley T. Martin"}]
 dependencies = []
 
 [project.optional-dependencies]
-genomics = ["snpio>=1.7.6,<2"]
+genomics = ["snpio>=1.7.7,<2", "packaging>=24"]
+baseline = ["numpy>=1.26,<3", "scikit-learn>=1.6,<2", "threadpoolctl>=3,<4"]
+images = ["Pillow>=12,<14", "pillow-heif>=1,<2", "pypdfium2>=5,<6"]
+landmarks = ["numpy>=1.26,<3", "scipy>=1.13,<2"]
+shape = ["numpy>=1.26,<3"]
+clustering = ["numpy>=1.26,<3", "scipy>=1.13,<2", "scikit-learn>=1.6,<2", "threadpoolctl>=3,<4"]
 dev = ["pytest>=8,<9", "ruff>=0.9,<1", "build>=1,<2"]
 
 [project.scripts]
@@ -28,11 +33,18 @@ version = {attr = "super_deli.__version__"}
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "--import-mode=importlib"
+markers = [
+    "genomic: integration checks requiring the optional SNPio dependency",
+    "baseline: numerical checks requiring the optional baseline dependencies",
+    "images: image/PDF checks requiring the optional image codecs",
+    "landmarks: visible-marker detection requiring optional image and numerical libraries",
+    "shape: GPA and tangent-space PCA requiring the optional NumPy dependency",
+]
 
 [tool.ruff]
 target-version = "py311"
 line-length = 100
-include = ["src/**/*.py", "tests/test_foundation*.py"]
+include = ["src/**/*.py", "tests/test_foundation*.py", "tests/test_genomic*.py", "tests/test_baseline*.py", "tests/test_tabular*.py", "tests/test_morphometric*.py", "tests/test_image_ingestion*.py", "tests/test_landmark_detection*.py", "tests/test_shape*.py", "tests/test_integrative*.py", "tests/test_benchmark*.py", "examples/baseline/*.py", "examples/images/*.py", "examples/detection/*.py", "examples/shape/*.py", "examples/tabular/*.py", "examples/integrative/*.py", "scripts/run_integrative_study.py", "scripts/plot_integrative_study.py", "scripts/plot_score_calibration.py", "scripts/plot_grouped_boundaries.py", "scripts/plot_genomic_calibration.py", "scripts/plot_linked_calibration.py", "scripts/plot_joint_calibration.py", "examples/recovery-diagnostics/*.py", "scripts/plot_recovery_diagnostics.py", "scripts/summarize_recovery_diagnostics.py", "examples/shared-covariance/*.py", "scripts/plot_shared_covariance.py"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]

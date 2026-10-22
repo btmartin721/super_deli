@@ -1,0 +1,57 @@
+{
+  "dataset_id": "synthetic_visible_markers",
+  "modalities": [
+    {
+      "format": "image_manifest",
+      "image_options": {
+        "pdf_dpi": 72
+      },
+      "kind": "morphometric",
+      "level": "specimen",
+      "name": "marked_views",
+      "observations": [
+        {
+          "observation_id": "problem",
+          "unit_id": "specimen2"
+        },
+        {
+          "observation_id": "pdf2",
+          "unit_id": "specimen2"
+        },
+        {
+          "observation_id": "pdf1",
+          "unit_id": "specimen1"
+        },
+        {
+          "observation_id": "heif",
+          "unit_id": "specimen2"
+        },
+        {
+          "observation_id": "heic",
+          "unit_id": "specimen2"
+        },
+        {
+          "observation_id": "jpeg",
+          "unit_id": "specimen1"
+        },
+        {
+          "observation_id": "png",
+          "unit_id": "specimen1"
+        }
+      ],
+      "path": "manifest.csv"
+    }
+  ],
+  "schema_version": 1,
+  "specimens": [
+    {
+      "specimen_id": "specimen1"
+    },
+    {
+      "specimen_id": "specimen2"
+    },
+    {
+      "specimen_id": "specimen3"
+    }
+  ]
+}

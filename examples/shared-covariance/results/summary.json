@@ -1,0 +1,364 @@
+{
+  "attempted_bootstrap": 500,
+  "audit_scope": "Regenerated inputs/identities/truth; complete inventories, configurations, paired scores, archived baseline replay, fusion/projection, selected dense mixture likelihood/BIC/membership and tied covariance equality; independent ARI/axis checks; bootstrap seeds/multiplicities, distinct-unit constraints, K-selection, label partitions, exact-set counts, pair-specific OOB denominators and failure bounds. No numerical model refits. View PCA and nonselected/bootstrapped component likelihoods preserved as diagnostics, not independently refitted.",
+  "datasets": 150,
+  "failed_bootstrap": 0,
+  "failed_points": 0,
+  "interpretation": "Prespecified covariance-family comparison under constructed laws; opt-in shared covariance assumes equal component covariance. Pointwise Wilson intervals are descriptive, not species significance or a calibration guarantee. Bootstrap support remains separate from p-values.",
+  "paired": [
+    {
+      "ari_improved": 13,
+      "ari_unchanged": 11,
+      "ari_worsened": 1,
+      "available_pairs": 25,
+      "cohort": "archived",
+      "gained_four": 13,
+      "lost_four": 0,
+      "mean_ari_change": 0.18556293068707178,
+      "median_ari_change": 0.25342216594080136
+    },
+    {
+      "ari_improved": 8,
+      "ari_unchanged": 16,
+      "ari_worsened": 1,
+      "available_pairs": 25,
+      "cohort": "fresh_64",
+      "gained_four": 8,
+      "lost_four": 0,
+      "mean_ari_change": 0.11895861569090035,
+      "median_ari_change": 0.0
+    },
+    {
+      "ari_improved": 18,
+      "ari_unchanged": 0,
+      "ari_worsened": 7,
+      "available_pairs": 25,
+      "cohort": "fresh_256",
+      "gained_four": 9,
+      "lost_four": 0,
+      "mean_ari_change": 0.08525570370870632,
+      "median_ari_change": 0.020100925659662816
+    },
+    {
+      "ari_improved": 0,
+      "ari_unchanged": 0,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "zero_association",
+      "gained_four": 0,
+      "lost_four": 0,
+      "mean_ari_change": null,
+      "median_ari_change": null
+    },
+    {
+      "ari_improved": 12,
+      "ari_unchanged": 1,
+      "ari_worsened": 12,
+      "available_pairs": 25,
+      "cohort": "unequal_variance",
+      "gained_four": 12,
+      "lost_four": 0,
+      "mean_ari_change": -0.05868767531560486,
+      "median_ari_change": 0.0
+    },
+    {
+      "ari_improved": 0,
+      "ari_unchanged": 0,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "cline",
+      "gained_four": 3,
+      "lost_four": 0,
+      "mean_ari_change": null,
+      "median_ari_change": null
+    }
+  ],
+  "planned_bootstrap": 500,
+  "planned_points": 300,
+  "reproduced_archived": 25,
+  "schema_version": 1,
+  "significance_fits": 0,
+  "status": "complete",
+  "successful_bootstrap": 500,
+  "successful_points": 300,
+  "summaries": [
+    {
+      "available": 25,
+      "cohort": "archived",
+      "failed": 0,
+      "family": "full",
+      "mean_ari": 0.5087623801370325,
+      "median_ari": 0.4878048780487805,
+      "requested": 25,
+      "selected_four_wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "selected_k_counts": {
+        "1": 0,
+        "2": 22,
+        "3": 3,
+        "4": 0
+      },
+      "selected_one_wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ]
+    },
+    {
+      "available": 25,
+      "cohort": "archived",
+      "failed": 0,
+      "family": "tied",
+      "mean_ari": 0.6943253108241042,
+      "median_ari": 0.7997405124878365,
+      "requested": 25,
+      "selected_four_wilson_95": [
+        0.3349851695035678,
+        0.6996871404588704
+      ],
+      "selected_k_counts": {
+        "1": 0,
+        "2": 12,
+        "3": 0,
+        "4": 13
+      },
+      "selected_one_wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ]
+    },
+    {
+      "available": 25,
+      "cohort": "fresh_64",
+      "failed": 0,
+      "family": "full",
+      "mean_ari": 0.5051185159738921,
+      "median_ari": 0.4878048780487805,
+      "requested": 25,
+      "selected_four_wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "selected_k_counts": {
+        "1": 0,
+        "2": 23,
+        "3": 2,
+        "4": 0
+      },
+      "selected_one_wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ]
+    },
+    {
+      "available": 25,
+      "cohort": "fresh_64",
+      "failed": 0,
+      "family": "tied",
+      "mean_ari": 0.6240771316647925,
+      "median_ari": 0.4878048780487805,
+      "requested": 25,
+      "selected_four_wilson_95": [
+        0.17205190306907978,
+        0.5158973072689775
+      ],
+      "selected_k_counts": {
+        "1": 0,
+        "2": 17,
+        "3": 0,
+        "4": 8
+      },
+      "selected_one_wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ]
+    },
+    {
+      "available": 25,
+      "cohort": "fresh_256",
+      "failed": 0,
+      "family": "full",
+      "mean_ari": 0.827886349426857,
+      "median_ari": 0.891274186671359,
+      "requested": 25,
+      "selected_four_wilson_95": [
+        0.44518497748164865,
+        0.7975211922554178
+      ],
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 9,
+        "4": 16
+      },
+      "selected_one_wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ]
+    },
+    {
+      "available": 25,
+      "cohort": "fresh_256",
+      "failed": 0,
+      "family": "tied",
+      "mean_ari": 0.9131420531355633,
+      "median_ari": 0.9189820644656342,
+      "requested": 25,
+      "selected_four_wilson_95": [
+        0.8668077490609515,
+        0.9999999999999999
+      ],
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 25
+      },
+      "selected_one_wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ]
+    },
+    {
+      "available": 25,
+      "cohort": "zero_association",
+      "failed": 0,
+      "family": "full",
+      "mean_ari": null,
+      "median_ari": null,
+      "requested": 25,
+      "selected_four_wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "selected_k_counts": {
+        "1": 25,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "selected_one_wilson_95": [
+        0.8668077490609515,
+        0.9999999999999999
+      ]
+    },
+    {
+      "available": 25,
+      "cohort": "zero_association",
+      "failed": 0,
+      "family": "tied",
+      "mean_ari": null,
+      "median_ari": null,
+      "requested": 25,
+      "selected_four_wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "selected_k_counts": {
+        "1": 25,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "selected_one_wilson_95": [
+        0.8668077490609515,
+        0.9999999999999999
+      ]
+    },
+    {
+      "available": 25,
+      "cohort": "unequal_variance",
+      "failed": 0,
+      "family": "full",
+      "mean_ari": 0.6869117141875644,
+      "median_ari": 0.704225352112676,
+      "requested": 25,
+      "selected_four_wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "selected_k_counts": {
+        "1": 0,
+        "2": 2,
+        "3": 23,
+        "4": 0
+      },
+      "selected_one_wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ]
+    },
+    {
+      "available": 25,
+      "cohort": "unequal_variance",
+      "failed": 0,
+      "family": "tied",
+      "mean_ari": 0.6282240388719594,
+      "median_ari": 0.5285527462946817,
+      "requested": 25,
+      "selected_four_wilson_95": [
+        0.30031285954112974,
+        0.6650148304964322
+      ],
+      "selected_k_counts": {
+        "1": 0,
+        "2": 6,
+        "3": 7,
+        "4": 12
+      },
+      "selected_one_wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ]
+    },
+    {
+      "available": 25,
+      "cohort": "cline",
+      "failed": 0,
+      "family": "full",
+      "mean_ari": null,
+      "median_ari": null,
+      "requested": 25,
+      "selected_four_wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "selected_k_counts": {
+        "1": 6,
+        "2": 19,
+        "3": 0,
+        "4": 0
+      },
+      "selected_one_wilson_95": [
+        0.11496313693401444,
+        0.4342968335542908
+      ]
+    },
+    {
+      "available": 25,
+      "cohort": "cline",
+      "failed": 0,
+      "family": "tied",
+      "mean_ari": null,
+      "median_ari": null,
+      "requested": 25,
+      "selected_four_wilson_95": [
+        0.04166817150440358,
+        0.2995579392092732
+      ],
+      "selected_k_counts": {
+        "1": 1,
+        "2": 16,
+        "3": 5,
+        "4": 3
+      },
+      "selected_one_wilson_95": [
+        0.007096233501987265,
+        0.19544063736193734
+      ]
+    }
+  ],
+  "unattempted_bootstrap": 0,
+  "verified_files": 15352
+}

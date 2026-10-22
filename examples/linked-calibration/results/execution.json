@@ -1,0 +1,11 @@
+{
+  "analysis_seed_policy": "Same fixed seed for every fit",
+  "created_at": "2026-10-21T15:55:04.827810+00:00",
+  "no_retries_or_data_dependent_tuning": true,
+  "parallel_case_jobs": 4,
+  "planned_fits": 15000,
+  "platform": "macOS-26.7.1-arm64-arm-64bit",
+  "python": "3.12.10 | packaged by conda-forge | (main, Apr 10 2025, 22:19:24) [Clang 18.1.8 ]",
+  "study_sha256": "5ab6741c86c01aebd6a0536bef4b626744ef3702271822cd129c7e23cf51a4dc",
+  "wheel_sha256": "23f979553e70b544bf018f2183d7e7ad4bba359e8a3539103ec24760e9d24182"
+}

@@ -1,0 +1,477 @@
+{
+  "dataset_id": "synthetic_shape_groups",
+  "modalities": [
+    {
+      "format": "landmarks_csv",
+      "kind": "morphometric",
+      "level": "specimen",
+      "morphometric_options": {
+        "coordinate_unit": "arbitrary",
+        "dimensions": 2,
+        "landmark_ids": [
+          "L1",
+          "L2",
+          "L3",
+          "L4",
+          "L5",
+          "L6"
+        ]
+      },
+      "name": "outline",
+      "observations": [
+        {
+          "observation_id": "unit_001",
+          "unit_id": "unit_001"
+        },
+        {
+          "observation_id": "unit_002",
+          "unit_id": "unit_002"
+        },
+        {
+          "observation_id": "unit_003",
+          "unit_id": "unit_003"
+        },
+        {
+          "observation_id": "unit_004",
+          "unit_id": "unit_004"
+        },
+        {
+          "observation_id": "unit_005",
+          "unit_id": "unit_005"
+        },
+        {
+          "observation_id": "unit_006",
+          "unit_id": "unit_006"
+        },
+        {
+          "observation_id": "unit_007",
+          "unit_id": "unit_007"
+        },
+        {
+          "observation_id": "unit_008",
+          "unit_id": "unit_008"
+        },
+        {
+          "observation_id": "unit_009",
+          "unit_id": "unit_009"
+        },
+        {
+          "observation_id": "unit_010",
+          "unit_id": "unit_010"
+        },
+        {
+          "observation_id": "unit_011",
+          "unit_id": "unit_011"
+        },
+        {
+          "observation_id": "unit_012",
+          "unit_id": "unit_012"
+        },
+        {
+          "observation_id": "unit_013",
+          "unit_id": "unit_013"
+        },
+        {
+          "observation_id": "unit_014",
+          "unit_id": "unit_014"
+        },
+        {
+          "observation_id": "unit_015",
+          "unit_id": "unit_015"
+        },
+        {
+          "observation_id": "unit_016",
+          "unit_id": "unit_016"
+        },
+        {
+          "observation_id": "unit_017",
+          "unit_id": "unit_017"
+        },
+        {
+          "observation_id": "unit_018",
+          "unit_id": "unit_018"
+        },
+        {
+          "observation_id": "unit_019",
+          "unit_id": "unit_019"
+        },
+        {
+          "observation_id": "unit_020",
+          "unit_id": "unit_020"
+        },
+        {
+          "observation_id": "unit_021",
+          "unit_id": "unit_021"
+        },
+        {
+          "observation_id": "unit_022",
+          "unit_id": "unit_022"
+        },
+        {
+          "observation_id": "unit_023",
+          "unit_id": "unit_023"
+        },
+        {
+          "observation_id": "unit_024",
+          "unit_id": "unit_024"
+        },
+        {
+          "observation_id": "unit_025",
+          "unit_id": "unit_025"
+        },
+        {
+          "observation_id": "unit_026",
+          "unit_id": "unit_026"
+        },
+        {
+          "observation_id": "unit_027",
+          "unit_id": "unit_027"
+        },
+        {
+          "observation_id": "unit_028",
+          "unit_id": "unit_028"
+        },
+        {
+          "observation_id": "unit_029",
+          "unit_id": "unit_029"
+        },
+        {
+          "observation_id": "unit_030",
+          "unit_id": "unit_030"
+        },
+        {
+          "observation_id": "unit_031",
+          "unit_id": "unit_031"
+        },
+        {
+          "observation_id": "unit_032",
+          "unit_id": "unit_032"
+        },
+        {
+          "observation_id": "unit_033",
+          "unit_id": "unit_033"
+        },
+        {
+          "observation_id": "unit_034",
+          "unit_id": "unit_034"
+        },
+        {
+          "observation_id": "unit_035",
+          "unit_id": "unit_035"
+        },
+        {
+          "observation_id": "unit_036",
+          "unit_id": "unit_036"
+        },
+        {
+          "observation_id": "unit_037",
+          "unit_id": "unit_037"
+        },
+        {
+          "observation_id": "unit_038",
+          "unit_id": "unit_038"
+        },
+        {
+          "observation_id": "unit_039",
+          "unit_id": "unit_039"
+        },
+        {
+          "observation_id": "unit_040",
+          "unit_id": "unit_040"
+        },
+        {
+          "observation_id": "unit_041",
+          "unit_id": "unit_041"
+        },
+        {
+          "observation_id": "unit_042",
+          "unit_id": "unit_042"
+        },
+        {
+          "observation_id": "unit_043",
+          "unit_id": "unit_043"
+        },
+        {
+          "observation_id": "unit_044",
+          "unit_id": "unit_044"
+        },
+        {
+          "observation_id": "unit_045",
+          "unit_id": "unit_045"
+        },
+        {
+          "observation_id": "unit_046",
+          "unit_id": "unit_046"
+        },
+        {
+          "observation_id": "unit_047",
+          "unit_id": "unit_047"
+        },
+        {
+          "observation_id": "unit_048",
+          "unit_id": "unit_048"
+        },
+        {
+          "observation_id": "unit_049",
+          "unit_id": "unit_049"
+        },
+        {
+          "observation_id": "unit_050",
+          "unit_id": "unit_050"
+        },
+        {
+          "observation_id": "unit_051",
+          "unit_id": "unit_051"
+        },
+        {
+          "observation_id": "unit_052",
+          "unit_id": "unit_052"
+        },
+        {
+          "observation_id": "unit_053",
+          "unit_id": "unit_053"
+        },
+        {
+          "observation_id": "unit_054",
+          "unit_id": "unit_054"
+        },
+        {
+          "observation_id": "unit_055",
+          "unit_id": "unit_055"
+        },
+        {
+          "observation_id": "unit_056",
+          "unit_id": "unit_056"
+        },
+        {
+          "observation_id": "unit_057",
+          "unit_id": "unit_057"
+        },
+        {
+          "observation_id": "unit_058",
+          "unit_id": "unit_058"
+        },
+        {
+          "observation_id": "unit_059",
+          "unit_id": "unit_059"
+        },
+        {
+          "observation_id": "unit_060",
+          "unit_id": "unit_060"
+        },
+        {
+          "observation_id": "unit_061",
+          "unit_id": "unit_061"
+        },
+        {
+          "observation_id": "unit_062",
+          "unit_id": "unit_062"
+        },
+        {
+          "observation_id": "unit_063",
+          "unit_id": "unit_063"
+        },
+        {
+          "observation_id": "unit_064",
+          "unit_id": "unit_064"
+        }
+      ],
+      "path": "coordinates.csv"
+    }
+  ],
+  "schema_version": 1,
+  "specimens": [
+    {
+      "specimen_id": "unit_001"
+    },
+    {
+      "specimen_id": "unit_002"
+    },
+    {
+      "specimen_id": "unit_003"
+    },
+    {
+      "specimen_id": "unit_004"
+    },
+    {
+      "specimen_id": "unit_005"
+    },
+    {
+      "specimen_id": "unit_006"
+    },
+    {
+      "specimen_id": "unit_007"
+    },
+    {
+      "specimen_id": "unit_008"
+    },
+    {
+      "specimen_id": "unit_009"
+    },
+    {
+      "specimen_id": "unit_010"
+    },
+    {
+      "specimen_id": "unit_011"
+    },
+    {
+      "specimen_id": "unit_012"
+    },
+    {
+      "specimen_id": "unit_013"
+    },
+    {
+      "specimen_id": "unit_014"
+    },
+    {
+      "specimen_id": "unit_015"
+    },
+    {
+      "specimen_id": "unit_016"
+    },
+    {
+      "specimen_id": "unit_017"
+    },
+    {
+      "specimen_id": "unit_018"
+    },
+    {
+      "specimen_id": "unit_019"
+    },
+    {
+      "specimen_id": "unit_020"
+    },
+    {
+      "specimen_id": "unit_021"
+    },
+    {
+      "specimen_id": "unit_022"
+    },
+    {
+      "specimen_id": "unit_023"
+    },
+    {
+      "specimen_id": "unit_024"
+    },
+    {
+      "specimen_id": "unit_025"
+    },
+    {
+      "specimen_id": "unit_026"
+    },
+    {
+      "specimen_id": "unit_027"
+    },
+    {
+      "specimen_id": "unit_028"
+    },
+    {
+      "specimen_id": "unit_029"
+    },
+    {
+      "specimen_id": "unit_030"
+    },
+    {
+      "specimen_id": "unit_031"
+    },
+    {
+      "specimen_id": "unit_032"
+    },
+    {
+      "specimen_id": "unit_033"
+    },
+    {
+      "specimen_id": "unit_034"
+    },
+    {
+      "specimen_id": "unit_035"
+    },
+    {
+      "specimen_id": "unit_036"
+    },
+    {
+      "specimen_id": "unit_037"
+    },
+    {
+      "specimen_id": "unit_038"
+    },
+    {
+      "specimen_id": "unit_039"
+    },
+    {
+      "specimen_id": "unit_040"
+    },
+    {
+      "specimen_id": "unit_041"
+    },
+    {
+      "specimen_id": "unit_042"
+    },
+    {
+      "specimen_id": "unit_043"
+    },
+    {
+      "specimen_id": "unit_044"
+    },
+    {
+      "specimen_id": "unit_045"
+    },
+    {
+      "specimen_id": "unit_046"
+    },
+    {
+      "specimen_id": "unit_047"
+    },
+    {
+      "specimen_id": "unit_048"
+    },
+    {
+      "specimen_id": "unit_049"
+    },
+    {
+      "specimen_id": "unit_050"
+    },
+    {
+      "specimen_id": "unit_051"
+    },
+    {
+      "specimen_id": "unit_052"
+    },
+    {
+      "specimen_id": "unit_053"
+    },
+    {
+      "specimen_id": "unit_054"
+    },
+    {
+      "specimen_id": "unit_055"
+    },
+    {
+      "specimen_id": "unit_056"
+    },
+    {
+      "specimen_id": "unit_057"
+    },
+    {
+      "specimen_id": "unit_058"
+    },
+    {
+      "specimen_id": "unit_059"
+    },
+    {
+      "specimen_id": "unit_060"
+    },
+    {
+      "specimen_id": "unit_061"
+    },
+    {
+      "specimen_id": "unit_062"
+    },
+    {
+      "specimen_id": "unit_063"
+    },
+    {
+      "specimen_id": "unit_064"
+    }
+  ]
+}

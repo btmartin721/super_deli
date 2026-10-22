@@ -1,0 +1,69 @@
+{
+  "dataset_id": "synthetic_shape_train",
+  "modalities": [
+    {
+      "format": "landmarks_csv",
+      "kind": "morphometric",
+      "level": "specimen",
+      "morphometric_options": {
+        "coordinate_unit": "arbitrary",
+        "dimensions": 2,
+        "landmark_ids": [
+          "lower_left",
+          "lower_right",
+          "upper_right",
+          "upper_left"
+        ]
+      },
+      "name": "outline",
+      "observations": [
+        {
+          "observation_id": "shape_1",
+          "unit_id": "shape_1"
+        },
+        {
+          "observation_id": "shape_2",
+          "unit_id": "shape_2"
+        },
+        {
+          "observation_id": "shape_3",
+          "unit_id": "shape_3"
+        },
+        {
+          "observation_id": "shape_4",
+          "unit_id": "shape_4"
+        },
+        {
+          "observation_id": "shape_5",
+          "unit_id": "shape_5"
+        },
+        {
+          "observation_id": "shape_6",
+          "unit_id": "shape_6"
+        }
+      ],
+      "path": "train.csv"
+    }
+  ],
+  "schema_version": 1,
+  "specimens": [
+    {
+      "specimen_id": "shape_1"
+    },
+    {
+      "specimen_id": "shape_2"
+    },
+    {
+      "specimen_id": "shape_3"
+    },
+    {
+      "specimen_id": "shape_4"
+    },
+    {
+      "specimen_id": "shape_5"
+    },
+    {
+      "specimen_id": "shape_6"
+    }
+  ]
+}

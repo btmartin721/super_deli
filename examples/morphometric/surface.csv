@@ -1,0 +1,9 @@
+z,landmark_id,observation_id,unit_id,y,x,image,scale_factor
+3,tip,scan2,specimen2,2,1,images/scan2.png,1
+0,base,scan1,specimen1,0,0,images/scan1.png,1
+0,base,scan2,specimen2,0,0,images/scan2.png,1
+2,tip,scan1,specimen1,1,0,images/scan1.png,1
+1,ventral,scan2,specimen2,-1,0,images/scan2.png,1
+1,dorsal,scan1,specimen1,1,1,images/scan1.png,1
+1,dorsal,scan2,specimen2,1,1,images/scan2.png,1
+,ventral,scan1,specimen1,-1,0,images/scan1.png,1

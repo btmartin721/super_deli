@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import math
 from collections.abc import Callable
 from typing import Any
 
@@ -9,9 +10,13 @@ from super_deli.core.data import (
     SCHEMA_VERSION,
     DatasetConfig,
     Feature,
+    GenomicReaderOptions,
+    ImageReaderOptions,
     Modality,
+    MorphometricReaderOptions,
     Observation,
     Specimen,
+    TabularReaderOptions,
 )
 
 
@@ -29,6 +34,102 @@ def _integer(value: Any, location: str) -> int:
     if type(value) is not int or value < 0:
         raise ConfigError(f"{location}: expected a nonnegative integer")
     return value
+
+
+def _boolean(value: Any, location: str) -> bool:
+    if type(value) is not bool:
+        raise ConfigError(f"{location}: expected a boolean")
+    return value
+
+
+def _allele_encoding(value: Any, location: str) -> tuple[tuple[str, str], ...]:
+    if not isinstance(value, dict):
+        raise ConfigError(f"{location}: expected an object mapping allele codes to bases")
+    return tuple(
+        sorted((_string(k, location), _string(v, f"{location}.{k}")) for k, v in value.items())
+    )
+
+
+def _reader_options(value: Any, location: str) -> GenomicReaderOptions | None:
+    if value is None:
+        return None
+    obj = _Object(value, location)
+    result = GenomicReaderOptions(
+        has_popids=obj.get("has_popids", _boolean, default=False),
+        has_marker_names=obj.get("has_marker_names", _boolean, default=False),
+        allele_start_col=obj.get(
+            "allele_start_col", lambda v, p: None if v is None else _integer(v, p), default=None
+        ),
+        allele_encoding=obj.get("allele_encoding", _allele_encoding, default=()),
+    )
+    obj.finish()
+    return result
+
+
+def _missing_token(value: Any, location: str) -> str:
+    return "" if value == "" else _string(value, location)
+
+
+def _tabular_options(value: Any, location: str) -> TabularReaderOptions | None:
+    if value is None:
+        return None
+    obj = _Object(value, location)
+    result = TabularReaderOptions(
+        observation_id_column=obj.get("observation_id_column", _string, default="observation_id"),
+        unit_id_column=obj.optional_string("unit_id_column"),
+        missing_values=obj.get(
+            "missing_values", lambda v, p: _array(v, p, _missing_token), default=("",)
+        ),
+        ignored_columns=obj.array("ignored_columns", _string),
+    )
+    obj.finish()
+    return result
+
+
+def _finite_number(value: Any, location: str) -> float:
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        raise ConfigError(f"{location}: expected a finite number")
+    try:
+        number = float(value)
+    except OverflowError as exc:
+        raise ConfigError(f"{location}: number exceeds finite float range") from exc
+    if not math.isfinite(number):
+        raise ConfigError(f"{location}: expected a finite number")
+    return number
+
+
+def _morphometric_options(value: Any, location: str) -> MorphometricReaderOptions | None:
+    if value is None:
+        return None
+    obj = _Object(value, location)
+    result = MorphometricReaderOptions(
+        dimensions=obj.get("dimensions", _integer),
+        landmark_ids=obj.array("landmark_ids", _string, required=True),
+        coordinate_unit=obj.optional_string("coordinate_unit"),
+        scale_unit=obj.optional_string("scale_unit"),
+        tps_id_field=obj.get("tps_id_field", _string, default="ID"),
+        missing_values=obj.get(
+            "missing_values", lambda v, p: _array(v, p, _missing_token), default=("",)
+        ),
+        missing_landmark=obj.array("missing_landmark", _finite_number),
+    )
+    obj.finish()
+    return result
+
+
+def _image_options(value: Any, location: str) -> ImageReaderOptions | None:
+    if value is None:
+        return None
+    obj = _Object(value, location)
+    result = ImageReaderOptions(
+        observation_id_column=obj.get("observation_id_column", _string, default="observation_id"),
+        pdf_dpi=obj.get("pdf_dpi", _integer, default=150),
+        max_pixels=obj.get("max_pixels", _integer, default=40000000),
+        max_source_bytes=obj.get("max_source_bytes", _integer, default=268435456),
+        heif_hdr_policy=obj.get("heif_hdr_policy", _string, default="reject"),
+    )
+    obj.finish()
+    return result
 
 
 def _array(value: Any, location: str, parser: Callable) -> tuple:
@@ -108,6 +209,10 @@ def _modality(value: Any, location: str) -> Modality:
         observations=obj.array("observations", _observation, required=True),
         features=obj.array("features", _feature),
         popmapfile=obj.optional_string("popmapfile"),
+        reader_options=obj.get("reader_options", _reader_options, default=None),
+        tabular_options=obj.get("tabular_options", _tabular_options, default=None),
+        morphometric_options=obj.get("morphometric_options", _morphometric_options, default=None),
+        image_options=obj.get("image_options", _image_options, default=None),
     )
     obj.finish()
     return result

@@ -39,6 +39,50 @@ class Feature:
 
 
 @dataclass(frozen=True)
+class GenomicReaderOptions:
+    """Explicit format options; arbitrary SNPio keyword arguments are not accepted."""
+
+    has_popids: bool = False
+    has_marker_names: bool = False
+    allele_start_col: int | None = None
+    allele_encoding: tuple[tuple[str, str], ...] = ()
+
+
+@dataclass(frozen=True)
+class TabularReaderOptions:
+    """Explicit source-column roles and exact, case-sensitive missing tokens."""
+
+    observation_id_column: str = "observation_id"
+    unit_id_column: str | None = None
+    missing_values: tuple[str, ...] = ("",)
+    ignored_columns: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
+class MorphometricReaderOptions:
+    """Declared geometry, correspondence and missingness for fixed landmarks."""
+
+    dimensions: int
+    landmark_ids: tuple[str, ...]
+    coordinate_unit: str | None = None
+    scale_unit: str | None = None
+    tps_id_field: str = "ID"
+    missing_values: tuple[str, ...] = ("",)
+    missing_landmark: tuple[float, ...] = ()
+
+
+@dataclass(frozen=True)
+class ImageReaderOptions:
+    """Explicit display-decoding policy and per-file/per-raster resource limits."""
+
+    observation_id_column: str = "observation_id"
+    pdf_dpi: int = 150
+    max_pixels: int = 40000000
+    max_source_bytes: int = 268435456
+    heif_hdr_policy: str = "reject"
+
+
+@dataclass(frozen=True)
 class Modality:
     name: str
     kind: Kind
@@ -48,6 +92,10 @@ class Modality:
     observations: tuple[Observation, ...]
     features: tuple[Feature, ...] = ()
     popmapfile: str | None = None
+    reader_options: GenomicReaderOptions | None = None
+    tabular_options: TabularReaderOptions | None = None
+    morphometric_options: MorphometricReaderOptions | None = None
+    image_options: ImageReaderOptions | None = None
 
 
 @dataclass(frozen=True)
@@ -64,4 +112,17 @@ class DatasetConfig:
         """Return independent JSON-compatible values, including arrays as lists."""
         import json
 
-        return json.loads(json.dumps(asdict(self), allow_nan=False))
+        result = json.loads(json.dumps(asdict(self), allow_nan=False))
+        for modality in result["modalities"]:
+            if modality["image_options"] is None:
+                del modality["image_options"]
+            if modality["morphometric_options"] is None:
+                del modality["morphometric_options"]
+            if modality["tabular_options"] is None:
+                del modality["tabular_options"]
+            options = modality["reader_options"]
+            if options is None:
+                del modality["reader_options"]
+            else:
+                options["allele_encoding"] = dict(options["allele_encoding"])
+        return result

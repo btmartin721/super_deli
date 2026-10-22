@@ -7,7 +7,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Literal
 
-from super_deli.core.data import DatasetConfig
+from super_deli.core.data import DatasetConfig, TabularReaderOptions
 from super_deli.core.schema import config_from_dict
 
 FORMATS = {
@@ -121,6 +121,108 @@ def validate_dataset(
             error("invalid_level", location, "GenotypeData records must link to specimens")
         if modality.popmapfile is not None and modality.kind != "genomic":
             error("invalid_popmap", location, "popmapfile is only defined for genomic inputs")
+        if (image_options := modality.image_options) is not None:
+            if modality.kind != "morphometric" or modality.format != "image_manifest":
+                error(
+                    "invalid_image_options",
+                    location,
+                    "Image options require an image_manifest modality",
+                )
+            if not 1 <= image_options.pdf_dpi <= 1200:
+                error("invalid_image_resolution", location, "pdf_dpi must be between 1 and 1200")
+            if image_options.max_pixels < 1 or image_options.max_source_bytes < 1:
+                error(
+                    "invalid_image_limit",
+                    location,
+                    "Image pixel and source-byte limits must be positive",
+                )
+            if image_options.heif_hdr_policy not in {"reject", "to_8bit"}:
+                error("invalid_hdr_policy", location, "Use reject or to_8bit for HEIF HDR")
+            if image_options.observation_id_column in {"image_path", "page", "frame"}:
+                error(
+                    "invalid_image_id_column",
+                    location,
+                    "Observation ID cannot be an image path/page/frame column",
+                )
+        if modality.tabular_options is not None and modality.kind not in {
+            "morphological",
+            "ecological",
+        }:
+            error(
+                "invalid_tabular_options", location, "Tabular options require morphology or ecology"
+            )
+        if (geometry := modality.morphometric_options) is not None:
+            if modality.kind != "morphometric" or modality.format not in {"tps", "landmarks_csv"}:
+                error(
+                    "invalid_morphometric_options",
+                    location,
+                    "Geometry options require TPS or landmark CSV input",
+                )
+            if geometry.dimensions not in {2, 3}:
+                error(
+                    "invalid_dimensions",
+                    location,
+                    "Landmarks require two or three coordinate dimensions",
+                )
+            if not geometry.landmark_ids:
+                error("no_landmarks", location, "Declare an ordered, nonempty landmark ID list")
+            unique(geometry.landmark_ids, f"{location}.landmark_ids")
+            unique(geometry.missing_values, f"{location}.missing_values")
+            if geometry.tps_id_field not in {"ID", "IMAGE"}:
+                error(
+                    "invalid_tps_id_field", location, "Select ID or IMAGE for TPS observation IDs"
+                )
+            if modality.format != "tps" and geometry.tps_id_field != "ID":
+                error("invalid_tps_id_field", location, "IMAGE selection applies only to TPS")
+            if geometry.missing_landmark and len(geometry.missing_landmark) != geometry.dimensions:
+                error(
+                    "invalid_missing_landmark",
+                    location,
+                    "Missing-landmark sentinel must match coordinate dimensions",
+                )
+        if modality.kind in {"morphological", "ecological"}:
+            tabular = modality.tabular_options or TabularReaderOptions()
+            columns = [
+                tabular.observation_id_column,
+                *tabular.ignored_columns,
+                *(f.name for f in modality.features),
+            ]
+            if tabular.unit_id_column is not None:
+                columns.append(tabular.unit_id_column)
+            unique(columns, f"{location}.tabular_columns")
+            unique(tabular.missing_values, f"{location}.missing_values")
+            for feature in modality.features:
+                if set(feature.categories) & set(tabular.missing_values):
+                    error(
+                        "ambiguous_missing_value",
+                        location,
+                        f"Missing tokens overlap categories of {feature.name!r}",
+                    )
+        if (options := modality.reader_options) is not None:
+            if modality.kind != "genomic":
+                error("invalid_reader_options", location, "Reader options require genomic input")
+            if modality.format != "structure" and (
+                options.has_popids
+                or options.has_marker_names
+                or options.allele_start_col is not None
+            ):
+                error(
+                    "invalid_reader_options", location, "STRUCTURE options require STRUCTURE input"
+                )
+            if options.allele_encoding and modality.format not in {"structure", "genepop"}:
+                error(
+                    "invalid_reader_options", location, "Allele maps require STRUCTURE or GENEPOP"
+                )
+            if (
+                options.allele_start_col is not None
+                and options.allele_start_col < 1 + options.has_popids
+            ):
+                error(
+                    "invalid_reader_options", location, "Alleles must follow the sample ID column"
+                )
+            unique((code for code, _ in options.allele_encoding), f"{location}.allele_encoding")
+            if any(base not in {"A", "C", "G", "T", "N"} for _, base in options.allele_encoding):
+                error("invalid_reader_options", location, "Allele maps must use A, C, G, T, or N")
         if not modality.observations:
             error("no_observations", location, "Declare at least one source observation")
         unique((o.observation_id for o in modality.observations), f"{location}.observations")

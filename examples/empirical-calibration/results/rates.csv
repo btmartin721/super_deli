@@ -1,0 +1,5 @@
+case,events,interpretation,max,mcse,mean,median,min,n_available,n_missing,sd,wilson_95
+spherical_gaussian,0,Type-I error under the specified joint raw Gaussian,0.0,0.0,0.0,0.0,0.0,25,0,0.0,"[0.0, 0.1331922509390484]"
+correlated_gaussian,0,Type-I error under the specified joint raw Gaussian,0.0,0.0,0.0,0.0,0.0,25,0,0.0,"[0.0, 0.1331922509390484]"
+complementary,25,Power for the complementary four-group alternative,1.0,0.0,1.0,1.0,1.0,25,0,0.0,"[0.8668077490609516, 1.0]"
+heavy_tailed,9,Gaussian misspecification sensitivity; NOT species/clustering type-I error,1.0,0.09797958971132713,0.36,0.0,0.0,25,0,0.48989794855663565,"[0.20247880774458224, 0.5548150225183512]"

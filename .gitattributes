@@ -1,1 +1,3 @@
 *.ipynb linguist-generated
+# PDF fixtures contain required fixed-width cross-reference whitespace.
+*.pdf binary

@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "scope": "Four complementary generating groups; no empirical species truth",
+  "seed": 20261020,
+  "units": [
+    {
+      "latent_group": 0,
+      "locality_id": "site_000",
+      "matched_unit_id": "u000"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_001",
+      "matched_unit_id": "u002"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_002",
+      "matched_unit_id": "u004"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_003",
+      "matched_unit_id": "u006"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_004",
+      "matched_unit_id": "u008"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_005",
+      "matched_unit_id": "u010"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_006",
+      "matched_unit_id": "u012"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_007",
+      "matched_unit_id": "u014"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_008",
+      "matched_unit_id": "u016"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_009",
+      "matched_unit_id": "u018"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_010",
+      "matched_unit_id": "u020"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_011",
+      "matched_unit_id": "u022"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_012",
+      "matched_unit_id": "u024"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_013",
+      "matched_unit_id": "u026"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_014",
+      "matched_unit_id": "u028"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_015",
+      "matched_unit_id": "u030"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_016",
+      "matched_unit_id": "u032"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_017",
+      "matched_unit_id": "u034"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_018",
+      "matched_unit_id": "u036"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_019",
+      "matched_unit_id": "u038"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_020",
+      "matched_unit_id": "u040"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_021",
+      "matched_unit_id": "u042"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_022",
+      "matched_unit_id": "u044"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_023",
+      "matched_unit_id": "u046"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_024",
+      "matched_unit_id": "u048"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_025",
+      "matched_unit_id": "u050"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_026",
+      "matched_unit_id": "u052"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_027",
+      "matched_unit_id": "u054"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_028",
+      "matched_unit_id": "u056"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_029",
+      "matched_unit_id": "u058"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_030",
+      "matched_unit_id": "u060"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_031",
+      "matched_unit_id": "u062"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_032",
+      "matched_unit_id": "u064"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_033",
+      "matched_unit_id": "u066"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_034",
+      "matched_unit_id": "u068"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_035",
+      "matched_unit_id": "u070"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_036",
+      "matched_unit_id": "u072"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_037",
+      "matched_unit_id": "u074"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_038",
+      "matched_unit_id": "u076"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_039",
+      "matched_unit_id": "u078"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_040",
+      "matched_unit_id": "u080"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_041",
+      "matched_unit_id": "u082"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_042",
+      "matched_unit_id": "u084"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_043",
+      "matched_unit_id": "u086"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_044",
+      "matched_unit_id": "u088"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_045",
+      "matched_unit_id": "u090"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_046",
+      "matched_unit_id": "u092"
+    },
+    {
+      "latent_group": 2,
+      "locality_id": "site_047",
+      "matched_unit_id": "u094"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_048",
+      "matched_unit_id": "u096"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_049",
+      "matched_unit_id": "u098"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_050",
+      "matched_unit_id": "u100"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_051",
+      "matched_unit_id": "u102"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_052",
+      "matched_unit_id": "u104"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_053",
+      "matched_unit_id": "u106"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_054",
+      "matched_unit_id": "u108"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_055",
+      "matched_unit_id": "u110"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_056",
+      "matched_unit_id": "u112"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_057",
+      "matched_unit_id": "u114"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_058",
+      "matched_unit_id": "u116"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_059",
+      "matched_unit_id": "u118"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_060",
+      "matched_unit_id": "u120"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_061",
+      "matched_unit_id": "u122"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_062",
+      "matched_unit_id": "u124"
+    },
+    {
+      "latent_group": 3,
+      "locality_id": "site_063",
+      "matched_unit_id": "u126"
+    }
+  ]
+}

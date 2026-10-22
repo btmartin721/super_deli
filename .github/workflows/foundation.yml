@@ -21,9 +21,9 @@ jobs:
       - name: Install foundation and development tools
         run: python -m pip install -e '.[dev]'
       - name: Lint new package and tests
-        run: ruff check src tests/test_foundation*.py
+        run: ruff check
       - name: Check formatting
-        run: ruff format --check src tests/test_foundation*.py
+        run: ruff format --check
       - name: Test foundation and existing image/TPS manifest
         run: python -m pytest -q
       - name: Validate illustrative configuration
@@ -38,3 +38,88 @@ jobs:
           cd "$RUNNER_TEMP"
           "$RUNNER_TEMP/super-deli-wheel/bin/python" -c "from importlib.metadata import version; import super_deli; assert super_deli.__version__ == version('super-deli')"
           "$RUNNER_TEMP/super-deli-wheel/bin/super-deli" --version
+          "$RUNNER_TEMP/super-deli-wheel/bin/super-deli" ingest-tabular "$GITHUB_WORKSPACE/examples/tabular/dataset.json" --output-dir "$RUNNER_TEMP/tabular-ingestion"
+          "$RUNNER_TEMP/super-deli-wheel/bin/super-deli" ingest-morphometric "$GITHUB_WORKSPACE/examples/morphometric/dataset.json" --output-dir "$RUNNER_TEMP/morphometric-ingestion"
+
+  genomics:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Configure writable scientific-library caches
+        shell: bash
+        run: |
+          echo "MPLCONFIGDIR=$RUNNER_TEMP/super-deli-matplotlib" >> "$GITHUB_ENV"
+          echo "NUMBA_CACHE_DIR=$RUNNER_TEMP/super-deli-numba" >> "$GITHUB_ENV"
+      - name: Install packaged scientific and image extras
+        run: python -m pip install '.[dev,genomics,baseline,images,landmarks,shape,clustering]'
+      - name: Test scientific workflows and foundation
+        run: python -m pytest -q
+      - name: Check installed ingestion CLI outside checkout
+        shell: bash
+        run: |
+          cd "$RUNNER_TEMP"
+          super-deli ingest-genomic "$GITHUB_WORKSPACE/examples/genomic/dataset.json" --output-dir "$RUNNER_TEMP/genomic-ingestion"
+          super-deli baseline-genomic "$GITHUB_WORKSPACE/examples/baseline/dataset.json" --model-config "$GITHUB_WORKSPACE/examples/baseline/model.json" --blocks "$GITHUB_WORKSPACE/examples/baseline/blocks.json" --output-dir "$RUNNER_TEMP/genomic-baseline"
+          super-deli ingest-images "$GITHUB_WORKSPACE/examples/images/dataset.json" --output-dir "$RUNNER_TEMP/image-ingestion"
+          super-deli detect-landmarks "$GITHUB_WORKSPACE/examples/detection/dataset.json" --detector-config "$GITHUB_WORKSPACE/examples/detection/detector.json" --output-dir "$RUNNER_TEMP/landmark-detection"
+          super-deli shape-pca "$GITHUB_WORKSPACE/examples/shape/train_dataset.json" --model-config "$GITHUB_WORKSPACE/examples/shape/model.json" --output-dir "$RUNNER_TEMP/shape-fit"
+          super-deli shape-pca "$GITHUB_WORKSPACE/examples/shape/projection_dataset.json" --model-config "$GITHUB_WORKSPACE/examples/shape/model.json" --reference-run "$RUNNER_TEMP/shape-fit" --output-dir "$RUNNER_TEMP/shape-projection"
+          super-deli cluster-shape "$GITHUB_WORKSPACE/examples/shape/clustering/dataset.json" --model-config "$GITHUB_WORKSPACE/examples/shape/clustering/model.json" --output-dir "$RUNNER_TEMP/shape-clusters"
+          super-deli cluster-tabular "$GITHUB_WORKSPACE/examples/tabular/clustering/dataset.json" --model-config "$GITHUB_WORKSPACE/examples/tabular/clustering/morphology_model.json" --modality traits --output-dir "$RUNNER_TEMP/morphology-clusters"
+          super-deli cluster-tabular "$GITHUB_WORKSPACE/examples/tabular/clustering/dataset.json" --model-config "$GITHUB_WORKSPACE/examples/tabular/clustering/ecology_model.json" --modality environment --output-dir "$RUNNER_TEMP/ecology-clusters"
+          super-deli cluster-integrative "$GITHUB_WORKSPACE/examples/integrative/grouped_dataset.json" --model-config "$GITHUB_WORKSPACE/examples/integrative/grouped_model.json" --output-dir "$RUNNER_TEMP/integrative-grouped"
+          super-deli cluster-integrative "$GITHUB_WORKSPACE/examples/integrative/matched_dataset.json" --model-config "$GITHUB_WORKSPACE/examples/integrative/matched_model.json" --output-dir "$RUNNER_TEMP/integrative-matched"
+          super-deli calibrate-integrative "$RUNNER_TEMP/integrative-matched" --calibration-config "$GITHUB_WORKSPACE/examples/calibration/calibration.json" --output-dir "$RUNNER_TEMP/integrative-calibration"
+          super-deli benchmark-integrative "$GITHUB_WORKSPACE/examples/benchmarking/smoke.json" --output-dir "$RUNNER_TEMP/integrative-benchmark"
+          mkdir "$RUNNER_TEMP/pipeline-study"
+          for case in matched_null matched_complementary grouped_null grouped_complementary; do
+            super-deli benchmark-pipeline-calibration "$GITHUB_WORKSPACE/examples/pipeline-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/pipeline-study/$case"
+          done
+          super-deli analyze-pipeline-calibration "$RUNNER_TEMP/pipeline-study" --output-dir "$RUNNER_TEMP/pipeline-audit"
+          super-deli calibrate-reference-pipeline "$RUNNER_TEMP/pipeline-study/matched_null/dataset_0000/observed_simulation/observed/dataset.json" --calibration-config "$RUNNER_TEMP/pipeline-study/matched_null/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/pipeline-direct-calibration"
+          mkdir "$RUNNER_TEMP/empirical-study"
+          for case in spherical_gaussian correlated_gaussian complementary heavy_tailed; do
+            super-deli benchmark-empirical-calibration "$GITHUB_WORKSPACE/examples/empirical-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/empirical-study/$case"
+          done
+          super-deli analyze-empirical-calibration "$RUNNER_TEMP/empirical-study" --output-dir "$RUNNER_TEMP/empirical-audit"
+          super-deli calibrate-empirical-integrative "$RUNNER_TEMP/empirical-study/spherical_gaussian/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/empirical-study/spherical_gaussian/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/empirical-direct-calibration"
+          mkdir "$RUNNER_TEMP/grouped-study"
+          for case in independent_gaussian correlated_gaussian complementary heavy_tailed; do
+            super-deli benchmark-grouped-calibration "$GITHUB_WORKSPACE/examples/grouped-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/grouped-study/$case"
+          done
+          super-deli analyze-grouped-calibration "$RUNNER_TEMP/grouped-study" --output-dir "$RUNNER_TEMP/grouped-audit"
+          super-deli calibrate-grouped-integrative "$RUNNER_TEMP/grouped-study/independent_gaussian/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/grouped-study/independent_gaussian/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/grouped-direct-calibration"
+          mkdir "$RUNNER_TEMP/boundary-study"
+          for case in independent_gaussian correlated_gaussian complementary heavy_tailed zero_conditional_gaussian rank_two_gaussian weak_conditional_gaussian; do
+            super-deli benchmark-grouped-calibration "$GITHUB_WORKSPACE/examples/boundary-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/boundary-study/$case"
+          done
+          super-deli analyze-grouped-calibration "$RUNNER_TEMP/boundary-study" --output-dir "$RUNNER_TEMP/boundary-audit"
+          super-deli compare-grouped-calibration "$RUNNER_TEMP/grouped-study" --current-study "$RUNNER_TEMP/boundary-study" --output-dir "$RUNNER_TEMP/boundary-paired"
+          super-deli calibrate-grouped-integrative "$RUNNER_TEMP/boundary-study/correlated_gaussian/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/boundary-study/correlated_gaussian/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/boundary-direct-calibration"
+          mkdir "$RUNNER_TEMP/genomic-study"
+          for case in common_hwe rare_missing_hwe four_groups linked_stress cline_stress; do
+            super-deli benchmark-genomic-calibration "$GITHUB_WORKSPACE/examples/genomic-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/genomic-study/$case"
+          done
+          super-deli analyze-genomic-calibration "$RUNNER_TEMP/genomic-study" --output-dir "$RUNNER_TEMP/genomic-audit"
+          super-deli calibrate-genomic "$RUNNER_TEMP/genomic-study/common_hwe/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/genomic-study/common_hwe/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/genomic-direct-calibration"
+          mkdir "$RUNNER_TEMP/linked-study"
+          for case in common_hwe four_groups linked_stress cline_stress moderate_ld split_block_stress; do
+            super-deli benchmark-linked-calibration "$GITHUB_WORKSPACE/examples/linked-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/linked-study/$case"
+          done
+          super-deli analyze-linked-calibration "$RUNNER_TEMP/linked-study" --output-dir "$RUNNER_TEMP/linked-audit"
+          super-deli compare-genomic-calibration "$RUNNER_TEMP/genomic-study" --current-study "$RUNNER_TEMP/linked-study" --output-dir "$RUNNER_TEMP/genomic-paired"
+          super-deli calibrate-linked-genomic "$RUNNER_TEMP/linked-study/common_hwe/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/linked-study/common_hwe/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/linked-direct-calibration"
+          mkdir "$RUNNER_TEMP/joint-study"
+          for case in zero_association linear_association complementary heavy_tailed cline; do
+            super-deli benchmark-joint-calibration "$GITHUB_WORKSPACE/examples/joint-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/joint-study/$case"
+          done
+          super-deli analyze-joint-calibration "$RUNNER_TEMP/joint-study" --output-dir "$RUNNER_TEMP/joint-audit"
+          super-deli calibrate-joint-integrative "$RUNNER_TEMP/joint-study/linear_association/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/joint-study/linear_association/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/joint-direct-calibration"
+          python "$GITHUB_WORKSPACE/examples/recovery-diagnostics/smoke.py" --joint-study "$GITHUB_WORKSPACE/examples/joint-calibration/smoke.json" --output-dir "$RUNNER_TEMP/recovery-diagnostics"
+          python "$GITHUB_WORKSPACE/examples/shared-covariance/smoke.py" --source-artifacts "$RUNNER_TEMP/recovery-diagnostics" --output-dir "$RUNNER_TEMP/shared-covariance"

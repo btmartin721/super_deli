@@ -1,3 +1,43 @@
 include image_tps_manifest.py
 recursive-include docs *.md
 recursive-include examples/foundation *.json *.tsv
+recursive-include examples/genomic *.json *.phy *.str *.gen *.vcf *.popmap
+recursive-include examples/baseline *.json *.phy *.py
+recursive-include examples/tabular *.json *.csv *.tsv *.py
+recursive-include examples/morphometric *.json *.csv *.tps
+recursive-include examples/images *.json *.csv *.png *.jpg *.pdf *.heic *.heif *.py
+recursive-include examples/detection *.json *.csv *.png *.jpg *.pdf *.heic *.heif *.py
+recursive-include examples/shape *.json *.csv *.py *.md
+recursive-include examples/integrative *.json *.csv *.phy *.py
+recursive-include examples/benchmarking *.json
+recursive-include examples/benchmarking/study-results *.csv
+recursive-include scripts *.py
+recursive-include docs/figures/integrative-study *.pdf *.svg *.png
+
+recursive-include examples/calibration *.json *.csv
+recursive-include docs/figures/score-calibration *.pdf *.svg *.png
+recursive-include examples/pipeline-calibration *.json *.csv
+recursive-include docs/figures/pipeline-calibration *.pdf *.svg *.png
+recursive-include examples/empirical-calibration *.json *.csv
+recursive-include docs/figures/empirical-calibration *.pdf *.svg *.png
+
+recursive-include examples/grouped-calibration *.json *.csv
+recursive-include docs/figures/grouped-calibration *.pdf *.svg *.png
+
+recursive-include examples/boundary-calibration *.json *.csv
+recursive-include docs/figures/boundary-calibration *.pdf *.svg *.png
+
+recursive-include examples/genomic-calibration *.json *.csv
+recursive-include docs/figures/genomic-calibration *.pdf *.svg *.png
+
+recursive-include examples/linked-calibration *.json *.csv
+recursive-include docs/figures/linked-calibration *.pdf *.svg *.png
+
+recursive-include examples/joint-calibration *.json *.csv
+recursive-include docs/figures/joint-calibration *.pdf *.svg *.png
+
+recursive-include examples/recovery-diagnostics *.json *.csv *.py
+recursive-include docs/figures/recovery-diagnostics *.pdf *.svg *.png
+
+recursive-include examples/shared-covariance *.json *.csv *.py
+recursive-include docs/figures/shared-covariance *.pdf *.svg *.png
