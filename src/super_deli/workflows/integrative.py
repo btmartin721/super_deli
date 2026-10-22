@@ -212,7 +212,7 @@ def run_integrative(
             fit,
             digest,
             model_config.target_level,
-            model_name="integrative_weighted_pca_full_gmm",
+            model_name=f"integrative_weighted_pca_{model_config.covariance_type}_gmm",
             space="weighted integrative PCA",
             pipeline="view preprocessing/profile fusion/PCA/GMM",
         )
@@ -263,7 +263,7 @@ def run_integrative(
             "excluded_units": fit.exclusions,
             "excluded_observations": observation_exclusions,
             "selected_k": fit.point.selected_k,
-            "covariance_type": "full",
+            "covariance_type": model_config.covariance_type,
             "n_pcs": model_config.n_pcs,
             "views": views,
             "point_seed": fit.point_seed,

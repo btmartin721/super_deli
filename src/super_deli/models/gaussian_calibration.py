@@ -60,6 +60,8 @@ def calibrate_gaussian_scores(
     The plus-one calculation does not provide exact size when nuisance parameters
     are estimated. Upstream pipelines are intentionally not refitted here.
     """
+    if getattr(search, "covariance_type", "full") != "full":
+        raise ValueError("Shared-covariance significance calibration is not yet supported")
     search = type(search).from_dict(search.to_dict())
     config = GaussianCalibrationConfig.from_dict(config.to_dict())
     scores = np.asarray(scores)

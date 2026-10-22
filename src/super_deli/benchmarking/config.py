@@ -6,10 +6,10 @@ import hashlib
 import json
 import math
 import re
-from dataclasses import asdict, dataclass, fields
+from dataclasses import dataclass, fields
 from typing import Protocol
 
-from super_deli.models.integrative_config import IntegrativeConfig
+from super_deli.models.integrative_config import IntegrativeConfig, configuration_dict
 
 
 class SimulationDimensions(Protocol):
@@ -170,7 +170,7 @@ class BenchmarkConfig:
         return cls(**options)
 
     def to_dict(self):
-        return asdict(self)
+        return configuration_dict(self)
 
 
 def derived_seed(master: int, scenario: str, repetition: int, purpose: str) -> int:

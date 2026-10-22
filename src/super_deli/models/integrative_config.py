@@ -11,6 +11,16 @@ from super_deli.models.shape_config import ShapeConfig
 from super_deli.models.tabular_cluster_config import TabularClusterConfig
 
 
+def configuration_dict(value):
+    """Preserve v1 full-covariance configuration bytes at every nesting level."""
+    return asdict(
+        value,
+        dict_factory=lambda pairs: {
+            key: item for key, item in pairs if not (key == "covariance_type" and item == "full")
+        },
+    )
+
+
 @dataclass(frozen=True)
 class ViewConfig:
     modality: str
@@ -130,9 +140,15 @@ class IntegrativeConfig(ClusterConfig):
     rank_tol: float = 1e-12
     max_working_bytes: int = 268435456
     schema_version: int = 1
+    covariance_type: str = "full"
 
     def __post_init__(self):
         super().__post_init__()
+        if not isinstance(self.covariance_type, str) or self.covariance_type not in {
+            "full",
+            "tied",
+        }:
+            raise ValueError("Integrative covariance_type must be full or tied")
         if (
             not isinstance(self.views, tuple)
             or not 2 <= len(self.views) <= 4
@@ -175,4 +191,4 @@ class IntegrativeConfig(ClusterConfig):
         return super().from_dict(value)
 
     def to_dict(self):
-        return asdict(self)
+        return configuration_dict(self)

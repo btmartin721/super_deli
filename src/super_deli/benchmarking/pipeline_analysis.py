@@ -43,7 +43,7 @@ def _generated(reference, seed, pattern):
         }
 
 
-def audit_pipeline_point(archive, record, policy):
+def audit_pipeline_point(archive, record, policy, *, allow_stability=False):
     import numpy as np
     from scipy.special import logsumexp
 
@@ -65,7 +65,7 @@ def audit_pipeline_point(archive, record, policy):
         or record["n_retained"] != n
         or record["point_seed"] != seed
         or run["point_seed"] != seed
-        or run["bootstrap"]["requested"] != 0
+        or run["bootstrap"]["requested"] != (policy.model.n_bootstrap if allow_stability else 0)
         or run["provenance"]["configuration"]["model"]
         != json.loads(json.dumps(policy.model.to_dict()))
     ):
@@ -112,7 +112,17 @@ def audit_pipeline_point(archive, record, policy):
     np.testing.assert_allclose(membership, mixture["membership"], rtol=1e-8, atol=1e-10)
     np.testing.assert_array_equal(np.argmax(membership, axis=1), mixture["labels"])
     d = scores.shape[1]
-    parameters = k * (d + d * (d + 1) // 2) + k - 1
+    from super_deli.models.mixture_parameters import mixture_parameter_count
+
+    covariance_type = getattr(policy.model, "covariance_type", "full")
+    if run.get("covariance_type") != covariance_type:
+        raise ValueError("Covariance family differs from the declared model")
+    if covariance_type == "tied":
+        np.testing.assert_array_equal(
+            mixture["covariances"],
+            np.repeat(mixture["covariances"][:1], k, axis=0),
+        )
+    parameters = mixture_parameter_count(k, d, covariance_type)
     selected = next(c for c in candidates if c["k"] == k)
     np.testing.assert_allclose(
         -2 * likelihood.sum() + parameters * np.log(n), selected["bic"], rtol=1e-8, atol=1e-7

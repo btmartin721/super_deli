@@ -38,3 +38,6 @@ recursive-include docs/figures/joint-calibration *.pdf *.svg *.png
 
 recursive-include examples/recovery-diagnostics *.json *.csv *.py
 recursive-include docs/figures/recovery-diagnostics *.pdf *.svg *.png
+
+recursive-include examples/shared-covariance *.json *.csv *.py
+recursive-include docs/figures/shared-covariance *.pdf *.svg *.png

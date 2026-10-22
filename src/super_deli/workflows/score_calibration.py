@@ -59,6 +59,8 @@ def _source_scores(source, config):
     import numpy as np
 
     summary = read_json(source / "summary.json")
+    if summary.get("covariance_type") == "tied":
+        raise ValueError("Shared-covariance significance calibration is not yet supported")
     if (
         summary.get("schema_version") != 1
         or summary.get("status") != "complete"

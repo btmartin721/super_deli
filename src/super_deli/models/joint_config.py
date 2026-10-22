@@ -1,9 +1,9 @@
 """Declared block-genotype and conditional continuous-phenotype null settings."""
 
-from dataclasses import asdict, dataclass, replace
+from dataclasses import dataclass, replace
 
 from super_deli.models.empirical_config import _options, validate_study_dimensions
-from super_deli.models.integrative_config import IntegrativeConfig
+from super_deli.models.integrative_config import IntegrativeConfig, configuration_dict
 from super_deli.models.linked_config import LinkedCalibrationConfig
 
 CASES = ("zero_association", "linear_association", "complementary", "heavy_tailed", "cline")
@@ -32,6 +32,8 @@ class JointCalibrationConfig:
 
         if not isinstance(self.model, IntegrativeConfig):
             raise ValueError("An integrative model is required")
+        if self.model.covariance_type != "full":
+            raise ValueError("Shared-covariance significance calibration is not yet supported")
         m = self.model
         genomic = [v for v in m.views if v.kind == "genomic"]
         if (
@@ -114,7 +116,7 @@ class JointCalibrationConfig:
 
     def to_dict(self):
         return {
-            **asdict(self),
+            **configuration_dict(self),
             "block_ids": list(self.block_ids),
             "predictor_blocks": list(self.predictor_blocks),
         }
@@ -171,4 +173,4 @@ class JointStudyConfig:
         return cls(**o)
 
     def to_dict(self):
-        return {**asdict(self), "calibration": self.calibration.to_dict()}
+        return {**configuration_dict(self), "calibration": self.calibration.to_dict()}

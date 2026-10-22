@@ -3,10 +3,10 @@
 from __future__ import annotations
 
 import math
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass
 
 from super_deli.models.empirical_config import _options
-from super_deli.models.integrative_config import IntegrativeConfig
+from super_deli.models.integrative_config import IntegrativeConfig, configuration_dict
 
 CASES = ("independent_gaussian", "correlated_gaussian", "complementary", "heavy_tailed")
 BOUNDARY_CASES = ("zero_conditional_gaussian", "rank_two_gaussian", "weak_conditional_gaussian")
@@ -58,6 +58,8 @@ class GroupedCalibrationConfig:
             raise ValueError(
                 "Explicitly assume independent Gaussian groups and noninformative counts"
             )
+        if self.model.covariance_type != "full":
+            raise ValueError("Shared-covariance significance calibration is not yet supported")
         for name in ("n_simulations", "max_iterations", "max_archive_bytes", "schema_version"):
             if type(getattr(self, name)) is not int or getattr(self, name) < 1:
                 raise ValueError(f"{name} must be a positive integer")
@@ -121,7 +123,7 @@ class GroupedCalibrationConfig:
         return cls(**options)
 
     def to_dict(self):
-        result = asdict(self)
+        result = configuration_dict(self)
         if self.schema_version == 1:
             result.pop("solver")
         return result
@@ -159,4 +161,4 @@ class GroupedStudyConfig:
         return cls(**options)
 
     def to_dict(self):
-        return {**asdict(self), "calibration": self.calibration.to_dict()}
+        return {**configuration_dict(self), "calibration": self.calibration.to_dict()}

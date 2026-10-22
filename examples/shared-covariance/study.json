@@ -1,0 +1,73 @@
+{
+  "large_n": 256,
+  "model": {
+    "assignment_threshold": 0.0,
+    "assume_independent_units": true,
+    "max_iter": 500,
+    "max_k": 4,
+    "max_pairwise_bytes": 268435456,
+    "max_working_bytes": 268435456,
+    "min_cluster_size": 5,
+    "missing_views": "error",
+    "n_bootstrap": 0,
+    "n_init": 10,
+    "n_pcs": 2,
+    "n_threads": 1,
+    "random_seed": 71323,
+    "rank_tol": 1e-12,
+    "reg_covar": 1e-06,
+    "schema_version": 1,
+    "target_level": "specimen",
+    "tol": 0.001,
+    "views": [
+      {
+        "aggregation": "none",
+        "count_transform": "identity",
+        "feature_names": [],
+        "kind": "genomic",
+        "missing_policy": "error",
+        "modality": "genomic",
+        "n_pcs": 2,
+        "ploidy": 2,
+        "scaling": null,
+        "shape": null,
+        "weight": 1.0
+      },
+      {
+        "aggregation": "none",
+        "count_transform": "identity",
+        "feature_names": [],
+        "kind": "morphological",
+        "missing_policy": "error",
+        "modality": "morphological",
+        "n_pcs": 2,
+        "ploidy": null,
+        "scaling": null,
+        "shape": null,
+        "weight": 1.0
+      },
+      {
+        "aggregation": "none",
+        "count_transform": "identity",
+        "feature_names": [],
+        "kind": "ecological",
+        "missing_policy": "error",
+        "modality": "ecological",
+        "n_pcs": 2,
+        "ploidy": null,
+        "scaling": null,
+        "shape": null,
+        "weight": 1.0
+      }
+    ]
+  },
+  "n_datasets": 25,
+  "random_seed": 20261030,
+  "schema_version": 1,
+  "small_n": 64,
+  "source_inventory_sha256": "272aecfd5c3c8daf19d54051eda198c001d86ae628e16fad6f3781aa5200b7fb",
+  "source_study_sha256": "a2e8268ee6d5dc28e157bf7eccbd62bcc8c48c1a5f526aab4dbdbdf93847c52a",
+  "source_summary_sha256": "bd60eb997b16a5b882211d6bfdf818449a62040274c375de8d8c8824ffcd4d43",
+  "stability_datasets": 5,
+  "stability_draws": 25
+}

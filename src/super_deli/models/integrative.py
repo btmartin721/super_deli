@@ -270,7 +270,7 @@ def _fit_once(inputs, units, config, seed, draw):
         raise ValueError("Requested fixed joint PCA dimension is rank deficient")
     scores = pca.transform(fused)
     mixture = select_gaussian_mixture(
-        scores, config, seed, covariance_type="full", unit_indices=draw
+        scores, config, seed, covariance_type=config.covariance_type, unit_indices=draw
     )
     return IntegrationPoint(mixture, views, fused, scores, pca)
 

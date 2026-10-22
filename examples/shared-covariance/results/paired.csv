@@ -1,0 +1,7 @@
+cohort,available_pairs,mean_ari_change,median_ari_change,ari_improved,ari_worsened,ari_unchanged,gained_four,lost_four
+archived,25,0.18556293068707178,0.25342216594080136,13,1,11,13,0
+fresh_64,25,0.11895861569090035,0.0,8,1,16,8,0
+fresh_256,25,0.08525570370870632,0.020100925659662816,18,7,0,9,0
+zero_association,25,,,0,0,0,0,0
+unequal_variance,25,-0.05868767531560486,0.0,12,12,1,12,0
+cline,25,,,0,0,0,3,0

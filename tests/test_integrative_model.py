@@ -83,8 +83,10 @@ def simulate(all_views=False, grouped=False, null=False):
 
 
 @pytest.mark.parametrize("all_views,grouped", [(False, False), (True, False), (True, True)])
-def test_complementary_structure_requires_integrated_evidence(all_views, grouped):
+@pytest.mark.parametrize("covariance_type", ["full", "tied"])
+def test_complementary_structure_requires_integrated_evidence(all_views, grouped, covariance_type):
     inputs, config, truth = simulate(all_views, grouped)
+    config = replace(config, covariance_type=covariance_type)
     result = fit_integrative(inputs, config=config)
     assert result.point.selected_k == 4
     assert adjusted_rand_score(truth, result.point.labels) == 1

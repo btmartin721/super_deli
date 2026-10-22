@@ -4,7 +4,7 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: covariance-boundary handling in grouped fitted-null calibration.**
+**Current checkpoint: opt-in shared-covariance integrative clustering.**
 Genomic, numeric morphology/ecology and shape scores can be fused by exact unit
 IDs or explicit population/locality aggregation, with prespecified view weights.
 The package also supports individual-modality PCA/GMM, frozen-fit shape
@@ -36,7 +36,8 @@ and the complete GMM search for each Monte Carlo draw. Its global test uses a
 known continuous-population simulator with explicit assumptions. See the
 [reference-law method](docs/full-pipeline-calibration.md) and
 [100-dataset validation results](docs/full-pipeline-calibration-results.md).
-Broader empirical nulls and species-boundary significance remain future work.
+The empirical extensions below cover specific declared nulls; general empirical
+nulls and species-boundary significance remain future work.
 
 The new `calibrate-empirical-integrative` command estimates a joint Gaussian
 null from matched, complete continuous morphology/ecology before PCA and refits
@@ -355,3 +356,11 @@ and BIC penalties in the constructed joint-study alternative. They preserve
 all models and significance results; the frozen grid is diagnostic only.
 See the [completed recovery report](docs/integrative-recovery-diagnostics-results.md)
 for all 525 point fits, the separate optimization diagnostic and its limitations.
+
+An opt-in [shared-covariance integrative model](docs/shared-covariance-clustering.md)
+reduces mixture complexity while retaining correlated joint scores. The
+full-covariance default and existing significance results are preserved.
+See [repository layout and local data](docs/repository-layout.md) for the cleaned
+source tree and external-data policy.
+See the [completed paired validation](docs/shared-covariance-clustering-results.md)
+for recovery gains, unequal-variance/cline limitations and audited bootstrap support.

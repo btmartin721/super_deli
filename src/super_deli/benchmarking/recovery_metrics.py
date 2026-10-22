@@ -14,12 +14,14 @@ def axis_r2(scores, labels):
     return result
 
 
-def bic_terms(candidates, selected_k, n, d):
+def bic_terms(candidates, selected_k, n, d, covariance_type="full"):
     import numpy as np
+
+    from super_deli.models.mixture_parameters import mixture_parameter_count
 
     rows = []
     for c in candidates:
-        p = c["k"] * (d + d * (d + 1) // 2) + c["k"] - 1
+        p = mixture_parameter_count(c["k"], d, covariance_type)
         penalty = float(p * np.log(n))
         rows.append(
             {

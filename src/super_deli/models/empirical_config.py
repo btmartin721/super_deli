@@ -3,9 +3,9 @@
 from __future__ import annotations
 
 import math
-from dataclasses import asdict, dataclass, fields
+from dataclasses import dataclass, fields
 
-from super_deli.models.integrative_config import IntegrativeConfig
+from super_deli.models.integrative_config import IntegrativeConfig, configuration_dict
 
 CASES = ("spherical_gaussian", "correlated_gaussian", "complementary", "heavy_tailed")
 
@@ -36,6 +36,8 @@ class EmpiricalCalibrationConfig:
             self.model, IntegrativeConfig
         ):
             raise ValueError("Explicitly assume iid joint Gaussian raw continuous views")
+        if self.model.covariance_type != "full":
+            raise ValueError("Shared-covariance significance calibration is not yet supported")
         for name in ("n_simulations", "max_archive_bytes", "schema_version"):
             if type(getattr(self, name)) is not int or getattr(self, name) < 1:
                 raise ValueError(f"{name} must be a positive integer")
@@ -79,7 +81,7 @@ class EmpiricalCalibrationConfig:
         return cls(**options)
 
     def to_dict(self):
-        return asdict(self)
+        return configuration_dict(self)
 
 
 @dataclass(frozen=True)
@@ -102,7 +104,7 @@ class EmpiricalStudyConfig:
         return cls(**options)
 
     def to_dict(self):
-        return asdict(self)
+        return configuration_dict(self)
 
 
 def validate_study_dimensions(study):

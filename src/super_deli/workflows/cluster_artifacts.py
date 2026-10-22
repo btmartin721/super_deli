@@ -29,7 +29,10 @@ def candidate_result(
                 "membership_probability",
                 f"{unit}:{label}",
                 "available",
-                method=f"Selected full covariance GMM conditional membership in {space} space",
+                method=(
+                    f"Selected {point.mixture.covariance_type} covariance GMM "
+                    f"conditional membership in {space} space"
+                ),
                 value=probability,
             )
         )
@@ -78,6 +81,14 @@ def write_cluster_artifacts(fit, result, *, scores, observation_ids, directory):
     destination = directory
     point, stability = fit.point, fit.stability
     order = list(point.component_order)
+
+    # Store one dense covariance per component for a uniform reconstruction contract.
+    # Tied matrices are repeated explicitly; parameter counts still use one matrix.
+    def component_matrices(values):
+        if point.mixture.covariance_type == "tied":
+            return np.repeat(values[None, :, :], point.selected_k, axis=0)
+        return values[order]
+
     with (destination / "mixture.npz").open("xb") as handle:
         np.savez(
             handle,
@@ -86,8 +97,8 @@ def write_cluster_artifacts(fit, result, *, scores, observation_ids, directory):
             scores=scores,
             weights=point.mixture.weights_[order],
             means=point.mixture.means_[order],
-            covariances=point.mixture.covariances_[order],
-            precisions_cholesky=point.mixture.precisions_cholesky_[order],
+            covariances=component_matrices(point.mixture.covariances_),
+            precisions_cholesky=component_matrices(point.mixture.precisions_cholesky_),
         )
     if stability.requested:
         with (destination / "stability.npz").open("xb") as handle:

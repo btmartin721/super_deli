@@ -314,9 +314,40 @@ def main(argv: list[str] | None = None) -> int:
     )
     recovery_audit.add_argument("config", type=Path)
     recovery_audit.add_argument("--output-dir", type=Path, required=True)
+    shared = commands.add_parser(
+        "benchmark-shared-covariance", help="Run a frozen paired integrative covariance study"
+    )
+    shared.add_argument("config", type=Path)
+    shared.add_argument("--source-artifacts", type=Path, required=True)
+    shared.add_argument("--output-dir", type=Path, required=True)
+    shared.add_argument("--workers", type=int, default=1)
+    shared_audit = commands.add_parser(
+        "analyze-shared-covariance", help="Audit the paired study and bootstrap support"
+    )
+    shared_audit.add_argument("config", type=Path)
+    shared_audit.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command == "benchmark-shared-covariance":
+            from super_deli.benchmarking.shared_study import run_shared_study
+            from super_deli.models.shared_config import SharedStudyConfig
+
+            with redirect_stdout(sys.stderr):
+                summary = run_shared_study(
+                    SharedStudyConfig.from_dict(read_json(source)),
+                    source_artifacts=args.source_artifacts,
+                    output_dir=args.output_dir,
+                    workers=args.workers,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "analyze-shared-covariance":
+            from super_deli.benchmarking.shared_analysis import audit_shared_study
+
+            summary = audit_shared_study(source, output_dir=args.output_dir)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "diagnose-integrative-recovery":
             from super_deli.benchmarking.recovery import run_recovery
             from super_deli.models.recovery_config import RecoveryConfig

@@ -249,3 +249,10 @@ as a feature. Tests cover four-group recovery, null structure, block normalizati
 ID/order alignment, paired source draws, excluded-row isolation, parameter
 reconstruction and real SNPio ingestion without a popmap. These checks are not
 empirical species truth or biological uncertainty calibration.
+
+## Optional shared covariance
+
+Set `covariance_type` to `"tied"` to use one full covariance matrix shared by
+all mixture components. The omitted/default value is `"full"`. See
+[shared-covariance clustering](shared-covariance-clustering.md) for assumptions,
+parameter counts, stability, calibration restrictions and the frozen validation.

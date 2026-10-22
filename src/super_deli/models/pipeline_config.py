@@ -3,10 +3,10 @@
 from __future__ import annotations
 
 import math
-from dataclasses import asdict, dataclass, fields, replace
+from dataclasses import dataclass, fields, replace
 
 from super_deli.benchmarking.config import KINDS, Scenario
-from super_deli.models.integrative_config import IntegrativeConfig
+from super_deli.models.integrative_config import IntegrativeConfig, configuration_dict
 
 REFERENCE_LAW = "four_view_continuous_population_v1"
 CASES = ("matched_null", "matched_complementary", "grouped_null", "grouped_complementary")
@@ -68,7 +68,7 @@ class ReferencePopulation:
         return cls(**_object(cls, value, {"schema_version", "law"}))
 
     def to_dict(self):
-        return asdict(self)
+        return configuration_dict(self)
 
 
 @dataclass(frozen=True)
@@ -89,6 +89,8 @@ class PipelineCalibrationConfig:
             self.model, IntegrativeConfig
         ):
             raise ValueError("A reference population and integrative model are required")
+        if self.model.covariance_type != "full":
+            raise ValueError("Shared-covariance significance calibration is not yet supported")
         for name in ("n_simulations", "max_archive_bytes", "schema_version"):
             if type(getattr(self, name)) is not int or getattr(self, name) < 1:
                 raise ValueError(f"{name} must be a positive integer")
@@ -144,7 +146,7 @@ class PipelineCalibrationConfig:
         return cls(**options)
 
     def to_dict(self):
-        return asdict(self)
+        return configuration_dict(self)
 
     def for_linkage(self, grouped):
         reference = replace(
@@ -192,4 +194,4 @@ class PipelineStudyConfig:
         return cls(**options)
 
     def to_dict(self):
-        return asdict(self)
+        return configuration_dict(self)

@@ -103,10 +103,10 @@ def verify_model(base, output, values, layout, policy):
     return fitted, draw, *raw.shape
 
 
-def point(archive, record, policy, values, layout):
+def point(archive, record, policy, values, layout, *, allow_stability=False):
     import numpy as np
 
-    audit_pipeline_point(archive, record, policy)
+    audit_pipeline_point(archive, record, policy, allow_stability=allow_stability)
     prefix = record["archive_prefix"]
     if "donor_indices" in values:
         with io.BytesIO(archive.read(prefix + "/raw/genomic/donor_indices.npy")) as handle:
