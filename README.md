@@ -341,3 +341,10 @@ a separate fitted empirical block-profile null for complete genotypes and
 prespecified independent blocks.
 See the [completed linkage-aware validation](docs/linked-genomic-calibration-results.md)
 for the frozen study, paired outcomes and sparse-support limitations.
+
+The [joint genomic–phenotypic fitted-null workflow](docs/joint-genomic-phenotypic-calibration.md)
+combines empirical genotype-block profiles with conditional Gaussian regression
+of matched continuous morphology/ecology on prespecified raw genomic summaries.
+It reruns the complete integrative pipeline and reports approximate joint-law
+departure p-values, with stability and species-boundary interpretation separate.
+See the [completed 125-dataset validation](docs/joint-genomic-phenotypic-calibration-results.md) for outcomes and limitations.

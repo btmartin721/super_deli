@@ -32,7 +32,11 @@ def _raw_hashes(values, layout, writer=None):
     with TemporaryDirectory(prefix="super-deli-empirical-audit-") as temporary:
         directory = Path(temporary) / "raw"
         writer(values, layout, directory)
-        return {p.name: fingerprint_file(p).sha256 for p in directory.iterdir()}
+        return {
+            p.relative_to(directory).as_posix(): fingerprint_file(p).sha256
+            for p in directory.rglob("*")
+            if p.is_file()
+        }
 
 
 def _point(archive, record, policy, values, layout):
@@ -166,13 +170,16 @@ def audit_fitted_study(root, *, output_dir, grouped=False, backend=None):
                 values, layout, labels = simulate_grouped(
                     case, study.n_units, seed, target_level=policy.model.target_level
                 )
-                values_path = base / "values.npz"
+            else:
+                values, layout, labels = simulator(case, study.n_units, seed)
+            values_path = base / ("values.npz" if isinstance(values, dict) else "values.npy")
+            if isinstance(values, dict):
                 with np.load(values_path, allow_pickle=False) as arrays:
+                    if set(arrays.files) != set(values):
+                        raise ValueError("Observed raw array keys mismatch")
                     for kind, expected in values.items():
                         np.testing.assert_array_equal(expected, arrays[kind])
             else:
-                values, layout, labels = simulator(case, study.n_units, seed)
-                values_path = base / "values.npy"
                 with values_path.open("rb") as handle:
                     np.testing.assert_array_equal(values, np.load(handle, allow_pickle=False))
             if (

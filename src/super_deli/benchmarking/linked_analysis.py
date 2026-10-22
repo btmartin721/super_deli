@@ -14,6 +14,53 @@ from super_deli.models.linked_config import CASES, LinkedStudyConfig
 from super_deli.workflows.linked_calibration import NAMESPACE, TAIL_OPTIONS, TARGET
 
 
+def verify_profiles(x, arrays, fitted, block_ids):
+    """Independently count profiles and evaluate the ordered categorical likelihood."""
+    import numpy as np
+
+    mapping = {}
+    for j, name in enumerate(block_ids):
+        mapping.setdefault(name, []).append(j)
+    if len(fitted["blocks"]) != len(mapping):
+        raise ValueError("Fitted block count mismatch")
+    nll = 0.0
+    for b, ((name, indices), block) in enumerate(
+        zip(mapping.items(), fitted["blocks"], strict=True)
+    ):
+        observed = [tuple(map(int, row)) for row in x[:, indices]]
+        counts = Counter(observed)
+        patterns = sorted(counts)
+        expected_counts = np.array([counts[p] for p in patterns])
+        probabilities = expected_counts / len(x)
+        prefix = f"block_{b:04d}"
+        np.testing.assert_array_equal(arrays[prefix + "_profiles"], patterns)
+        np.testing.assert_array_equal(arrays[prefix + "_counts"], expected_counts)
+        np.testing.assert_array_equal(arrays[prefix + "_probabilities"], probabilities)
+        lookup = {p: i for i, p in enumerate(patterns)}
+        np.testing.assert_array_equal(
+            arrays[prefix + "_profile_ids"], [lookup[p] for p in observed]
+        )
+        expected = {
+            "block_id": name,
+            "locus_indices": indices,
+            "n_profiles": len(patterns),
+            "singleton_profiles": sum(c == 1 for c in counts.values()),
+            "singleton_specimen_fraction": sum(c == 1 for c in counts.values()) / len(x),
+            "maximum_profile_probability": max(counts.values()) / len(x),
+        }
+        if block != expected:
+            raise ValueError("Empirical block support diagnostics disagree")
+        # Ordered specimen likelihood, independently evaluated one row at a time.
+        nll -= sum(np.log(counts[p] / len(x)) for p in observed)
+    if not np.isclose(nll, fitted["fit"]["negative_log_likelihood"], atol=1e-9, rtol=1e-12):
+        raise ValueError("Independent categorical likelihood mismatch")
+    if fitted["fit"]["n_blocks"] != len(mapping) or fitted["fit"]["n_observed_profiles"] != sum(
+        b["n_profiles"] for b in fitted["blocks"]
+    ):
+        raise ValueError("Fitted profile totals disagree")
+    return mapping
+
+
 def verify_model(base, output, values, layout, policy):
     import numpy as np
 
@@ -23,49 +70,10 @@ def verify_model(base, output, values, layout, policy):
             raise ValueError("Linked source identity layout mismatch")
     if fitted["block_ids"] != list(policy.block_ids):
         raise ValueError("Fitted block map differs from declaration")
-    mapping = {}
-    for j, name in enumerate(policy.block_ids):
-        mapping.setdefault(name, []).append(j)
-    if len(fitted["blocks"]) != len(mapping):
-        raise ValueError("Fitted block count mismatch")
-    nll = 0.0
     with np.load(output / "null_model.npz", allow_pickle=False) as arrays:
         x = arrays["values"].copy()
         _equivalent(values, x)
-        for b, ((name, indices), block) in enumerate(
-            zip(mapping.items(), fitted["blocks"], strict=True)
-        ):
-            observed = [tuple(map(int, row)) for row in x[:, indices]]
-            counts = Counter(observed)
-            patterns = sorted(counts)
-            expected_counts = np.array([counts[p] for p in patterns])
-            probabilities = expected_counts / len(x)
-            prefix = f"block_{b:04d}"
-            np.testing.assert_array_equal(arrays[prefix + "_profiles"], patterns)
-            np.testing.assert_array_equal(arrays[prefix + "_counts"], expected_counts)
-            np.testing.assert_array_equal(arrays[prefix + "_probabilities"], probabilities)
-            lookup = {p: i for i, p in enumerate(patterns)}
-            np.testing.assert_array_equal(
-                arrays[prefix + "_profile_ids"], [lookup[p] for p in observed]
-            )
-            expected = {
-                "block_id": name,
-                "locus_indices": indices,
-                "n_profiles": len(patterns),
-                "singleton_profiles": sum(c == 1 for c in counts.values()),
-                "singleton_specimen_fraction": sum(c == 1 for c in counts.values()) / len(x),
-                "maximum_profile_probability": max(counts.values()) / len(x),
-            }
-            if block != expected:
-                raise ValueError("Empirical block support diagnostics disagree")
-            # Ordered specimen likelihood, independently evaluated one row at a time.
-            nll -= sum(np.log(counts[p] / len(x)) for p in observed)
-    if not np.isclose(nll, fitted["fit"]["negative_log_likelihood"], atol=1e-9, rtol=1e-12):
-        raise ValueError("Independent categorical likelihood mismatch")
-    if fitted["fit"]["n_blocks"] != len(mapping) or fitted["fit"]["n_observed_profiles"] != sum(
-        b["n_profiles"] for b in fitted["blocks"]
-    ):
-        raise ValueError("Fitted profile totals disagree")
+        mapping = verify_profiles(x, arrays, fitted, policy.block_ids)
 
     def draw(seed):
         donors = np.random.default_rng(seed).integers(len(x), size=(len(x), len(mapping)))

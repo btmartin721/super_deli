@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "local_artifact_id": "joint-null-20261021",
+  "raw_file_inventory_sha256": "1d50d146c575f6dee751c7452da655002a5c1e191dfb20fade63823270fc7820",
+  "frozen_wheel_sha256": "d5295008c6132ecd2493991efbc7da1db5fbd83cb91ad3869cee37bfbf362d75",
+  "preflight_verified_successful_pipelines": 15,
+  "full_raw_evidence": "Preserved locally; compact public evidence is not public raw deposition",
+  "published_artifacts": {
+    "case-diagnostics.csv": "fc9af597883b79f7bd2ce1ab2d751f2290ddbbe24788ab48f5f0c434e9bccc22",
+    "datasets.csv": "eef4c9e1a11a54c9b81d79f80fb34ebb701ab5ecbf8db2114eac594fef5dffe0",
+    "diagnostics.csv": "1914c4716ab4cee5f10b496f2ab4ede1a8deeb6cfe8980a49a6f22c2366bc13f",
+    "execution.json": "5e4808c2844a0722164c922bb384b3be3a27afaa7ddf1f8c7caf9647b7317cbf",
+    "rates.csv": "d0566453aa5802a8b88e2f4d8f6adb560a19d10858a568779aede66d9ff0849f",
+    "runtime_sources.json": "ebb4c47527488dda9097f1f762a7005d5c779d13d09c861fed0bf218bb0635d6",
+    "runtime_versions.json": "787ff7a75fe32a75df1545d02b7be09dcb890e8753cc619de42f20bcb8417b90",
+    "study.json": "001cf8c9d6c7e48a5b568e1e380ed355e9bd46b8d39c92335b406fde1ea5bdbe",
+    "summary.json": "5a756a76a880c376b58921b8f276e9a9cde75e1b13b164475f6c64c96d37a7a3"
+  },
+  "publication_files": {
+    "docs/figures/joint-calibration/joint-calibration.pdf": "55ce6aa2147dff6b02391bed60c5b3f52d322d290735a2c00730ff1971d2a519",
+    "docs/figures/joint-calibration/joint-calibration.png": "82d5306008351f0c31dbc87e3c691558755e06e8e68c5e8f0f5ca16c6ce4d50a",
+    "docs/figures/joint-calibration/joint-calibration.svg": "83cc7a87d177f637e17185b09290aaca6085a757a3d9f135495388b7e1d4133b",
+    "scripts/plot_joint_calibration.py": "1943e1dacf2ab357ae934b74871740687e2c85c797bfa59160781f36892b34e9",
+    "docs/joint-genomic-phenotypic-calibration-results.md": "48e524210c40442df13d047fbeb83a2c1ca317545680cb6985e3d5e18a176e39",
+    "docs/joint-genomic-phenotypic-calibration.md": "a9503a023ab9f928e5a0431964287a72a31b25acc5aafbededd2f1c659a6c036"
+  }
+}

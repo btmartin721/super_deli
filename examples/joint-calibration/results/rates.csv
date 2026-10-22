@@ -1,0 +1,6 @@
+case,events,interpretation,max,mcse,mean,median,min,n_available,n_missing,sd,wilson_95
+zero_association,0,Model-law rejection rate under the specified joint null,0.0,0.0,0.0,0.0,0.0,25,0,0.0,"[0.0, 0.1331922509390484]"
+linear_association,1,Model-law rejection rate under the specified joint null,1.0,0.04,0.04,0.0,0.0,25,0,0.2,"[0.007096233501987265, 0.19544063736193729]"
+complementary,25,Power for the constructed complementary four-group alternative,1.0,0.0,1.0,1.0,1.0,25,0,0.0,"[0.8668077490609516, 1.0]"
+heavy_tailed,1,Misspecification sensitivity; NOT species or discrete-cluster type-I error,1.0,0.04,0.04,0.0,0.0,25,0,0.2,"[0.007096233501987265, 0.19544063736193729]"
+cline,16,Misspecification sensitivity; NOT species or discrete-cluster type-I error,1.0,0.09797958971132713,0.64,1.0,0.0,25,0,0.48989794855663565,"[0.44518497748164876, 0.7975211922554177]"
