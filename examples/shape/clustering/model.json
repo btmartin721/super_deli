@@ -1,0 +1,10 @@
+{
+  "assume_independent_units": true,
+  "max_k": 3,
+  "min_cluster_size": 5,
+  "n_bootstrap": 20,
+  "n_init": 5,
+  "n_pcs": 2,
+  "random_seed": 71,
+  "schema_version": 1
+}

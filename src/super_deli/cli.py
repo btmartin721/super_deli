@@ -100,6 +100,11 @@ def main(argv: list[str] | None = None) -> int:
     shape.add_argument(
         "--output-dir", type=Path, required=True, help="New alignment/PCA output directory"
     )
+    clustering = commands.add_parser("cluster-shape", help="Cluster shape PCs with unit bootstrap")
+    clustering.add_argument("config", type=Path, help="Dataset JSON with TPS/coordinate CSV")
+    clustering.add_argument("--model-config", type=Path, required=True)
+    clustering.add_argument("--modality", help="Select exactly one coordinate modality")
+    clustering.add_argument("--output-dir", type=Path, required=True)
     baseline = commands.add_parser(
         "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
     )
@@ -118,6 +123,19 @@ def main(argv: list[str] | None = None) -> int:
     try:
         source = args.config.absolute()
         config = load_config(source)
+        if args.command == "cluster-shape":
+            from super_deli.models.shape_cluster_config import ShapeClusterConfig
+            from super_deli.workflows.shape_gmm import run_shape_gmm
+
+            summary = run_shape_gmm(
+                config,
+                model_config=ShapeClusterConfig.from_dict(read_json(args.model_config)),
+                base_dir=source.parent,
+                output_dir=args.output_dir,
+                modality_name=args.modality,
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "shape-pca":
             from super_deli.models.shape_config import ShapeConfig
             from super_deli.workflows.shape_pca import run_shape_pca

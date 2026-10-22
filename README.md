@@ -4,10 +4,11 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: generalized Procrustes alignment and shape PCA.** Fixed
-landmarks yield normalized shape coordinates and tangent-space PC scores, with
-frozen-fit projection for new observations. The package also supports visible
-marker detection, multimodal ingestion, and genomic PCA/GMM clustering.
+**Current checkpoint: Gaussian mixtures of shape PCs with bootstrap stability.**
+Fixed landmarks yield GPA coordinates and shape scores, with full covariance
+mixtures, whole-unit pipeline refits and out-of-bag coassignment diagnostics.
+The package also supports frozen-fit shape projection, visible marker detection,
+multimodal ingestion, and genomic PCA/GMM clustering.
 Anatomical landmark learning, integrative inference and formal species-boundary
 tests remain later work.
 
@@ -203,6 +204,23 @@ observations without updating the training fit. This is descriptive ordination.
 See [shape analysis](docs/shape-pca.md) for equations, policies, artifacts, API,
 analytic truth tests and the provisional check of the supplied TPS download.
 
+## Cluster shape scores and assess stability
+
+```bash
+python -m pip install -e '.[dev,clustering]'
+super-deli cluster-shape examples/shape/clustering/dataset.json \
+  --model-config examples/shape/clustering/model.json \
+  --output-dir /tmp/super-deli-shape-clusters
+```
+
+This fits candidate shape groups using BIC (including K=1) in a fixed PC
+dimension. Bootstrap draws resample biological units and refit GPA, PCA and
+mixture selection. Repeated digitizations require aggregation first. Conditional
+membership, bootstrap frequency and failed-replicate bounds are separate;
+species-boundary p-values remain uncomputed. See
+[shape clustering](docs/shape-clustering.md) for assumptions, OOB denominators,
+configuration, artifacts, API and bounded synthetic validation.
+
 ## Development checks
 
 ```bash
@@ -218,7 +236,7 @@ builds wheel/source distributions, and checks wheel installation outside the
 source checkout, including tabular and coordinate ingestion without scientific dependencies.
 A separate genomic matrix tests the real SNPio readers with
 and without external popmaps, the numerical baseline, real image codecs, visible
-marker detection, GPA/shape PCA and installed CLIs. Optional tests are skipped
+marker detection, GPA/shape PCA, shape clustering and installed CLIs. Optional tests are skipped
 when extras are absent. Ruff coverage is declared centrally in `pyproject.toml`.
 Linting covers the new package, tests, and synthetic-example generator.
 
