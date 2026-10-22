@@ -14,6 +14,8 @@ from super_deli.core.results import Evidence
 from super_deli.core.schema import config_from_dict
 from super_deli.io.config import read_json, write_json
 from super_deli.models.pipeline_config import PipelineCalibrationConfig
+from super_deli.workflows.calibration_artifacts import archive_tree as _archive_tree
+from super_deli.workflows.calibration_artifacts import fit_pipeline
 
 SCOPE = (
     "Global Monte Carlo reference-population test under a fully declared raw-data simulation law. "
@@ -90,23 +92,10 @@ def _compatible(run, config, directory):
             raise ValueError("Observed source counts differ from the reference design")
 
 
-def _archive_tree(archive, directory, prefix, inventory, limit):
-    size = sum(item["size_bytes"] for item in inventory.values())
-    for path in sorted(directory.rglob("*")):
-        if path.is_file():
-            fingerprint = fingerprint_file(path)
-            size += fingerprint.size_bytes
-            if size > limit:
-                raise ValueError("Archived uncompressed artifacts exceed max_archive_bytes")
-            member = f"{prefix}/{path.relative_to(directory).as_posix()}"
-            inventory[member] = {"sha256": fingerprint.sha256, "size_bytes": fingerprint.size_bytes}
-            archive.write(path, arcname=member)
-
-
 def run_reference_calibration(dataset, *, config, base_dir, output_dir):
     config = PipelineCalibrationConfig.from_dict(config.to_dict())
     dataset = config_from_dict(dataset.to_dict())
-    simulate, write_simulation, statistic, summarize, run_integrative = _dependencies()
+    simulate, write_simulation, _, summarize, run_integrative = _dependencies()
     source = Path(base_dir).resolve()
     destination = Path(output_dir).resolve()
     # Outputs can be siblings of input files, but never rewrite a declared input.
@@ -125,30 +114,15 @@ def run_reference_calibration(dataset, *, config, base_dir, output_dir):
     zip_path = destination / "pipeline_artifacts.zip"
 
     def fit_dataset(staging, declaration, directory, prefix):
-        record = {"archive_prefix": prefix}
-        write_json(declaration.to_dict(), staging / "dataset.json")
-        try:
-            run = run_integrative(
-                declaration,
-                model_config=config.model,
-                base_dir=directory,
-                output_dir=staging / "run",
-            )
-        except (ValueError, RuntimeError, FloatingPointError) as exc:
-            record.update(status="failed", error=str(exc), error_stage="integrative_point_pipeline")
-        else:
-            _compatible(run, config, staging / "run")
-            candidates = read_json(staging / "run/candidates.json")
-            record.update(
-                status="complete",
-                statistic=statistic(candidates),
-                selected_k=run["selected_k"],
-                point_seed=run["point_seed"],
-                n_retained=len(run["unit_ids"]),
-                candidates=candidates,
-                mixture_sha256=run["provenance"]["mixture_sha256"],
-                fusion_sha256=run["provenance"]["fusion_sha256"],
-            )
+        record = fit_pipeline(
+            staging,
+            declaration,
+            directory,
+            prefix,
+            model=config.model,
+            runner=run_integrative,
+            validate=lambda run, path: _compatible(run, config, path),
+        )
         _archive_tree(archive, staging, prefix, inventory, config.max_archive_bytes)
         return record
 

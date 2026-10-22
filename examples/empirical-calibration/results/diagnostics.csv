@@ -1,0 +1,5 @@
+case,p_min,p_mean,p_median,p_max,statistic_min,statistic_mean,statistic_median,statistic_max,k1_count,k2_count,k3_count,k4_count
+spherical_gaussian,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,25,0,0,0
+correlated_gaussian,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,25,0,0,0
+complementary,0.01,0.01,0.01,0.01,61.81552989674799,82.13802691337276,81.98695670385456,105.68461899574606,0,0,0,25
+heavy_tailed,0.01,0.6444,1.0,1.0,0.0,7.937809279798544,0.0,66.44583879872766,16,9,0,0

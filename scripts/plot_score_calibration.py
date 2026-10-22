@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 
 
-def plot(directory, *, output_dir, reference_pipeline=False):
+def plot(directory, *, output_dir, reference_pipeline=False, empirical_pipeline=False):
     import matplotlib
 
     matplotlib.use("Agg")
@@ -44,6 +44,19 @@ def plot(directory, *, output_dir, reference_pipeline=False):
         title = "Full-pipeline reference-population calibration: null and power checks"
         label = "Reference-population p-value threshold"
         filename = "pipeline-calibration"
+    if empirical_pipeline:
+        if reference_pipeline:
+            raise ValueError("Select one plot profile")
+        names = {
+            "spherical_gaussian": "Spherical raw Gaussian (null)",
+            "correlated_gaussian": "Correlated raw Gaussian (null)",
+            "complementary": "Complementary raw views (power)",
+            "heavy_tailed": "Heavy-tailed raw t3 (stress)",
+        }
+        key = "case"
+        title = "Fitted Gaussian null in raw continuous views: null, power and stress checks"
+        label = "Approximate fitted raw-Gaussian p-value threshold"
+        filename = "empirical-calibration"
     colors = ("#0072B2", "#56B4E9", "#009E73", "#D55E00")
     plt.rcParams.update({"font.size": 10, "pdf.fonttype": 42, "svg.fonttype": "none"})
     fig, axes = plt.subplots(1, 2, figsize=(12.4, 4.7), constrained_layout=True)
@@ -100,9 +113,11 @@ def plot(directory, *, output_dir, reference_pipeline=False):
     right.yaxis.set_major_formatter(PercentFormatter(1))
     legend_options = (
         {"loc": "center right", "bbox_to_anchor": (0.99, 0.35)}
-        if reference_pipeline
+        if reference_pipeline or empirical_pipeline
         else {"loc": "lower right"}
     )
+    if empirical_pipeline:
+        legend_options = {"loc": "upper left", "bbox_to_anchor": (0.02, 0.92)}
     right.legend(**legend_options, fontsize=8, frameon=False)
     for ax in axes:
         ax.spines[["top", "right"]].set_visible(False)
@@ -122,6 +137,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("analysis", type=Path)
     parser.add_argument("--output-dir", type=Path, required=True)
-    parser.add_argument("--reference-pipeline", action="store_true")
+    profile = parser.add_mutually_exclusive_group()
+    profile.add_argument("--reference-pipeline", action="store_true")
+    profile.add_argument("--empirical-pipeline", action="store_true")
     args = parser.parse_args()
-    plot(args.analysis, output_dir=args.output_dir, reference_pipeline=args.reference_pipeline)
+    plot(
+        args.analysis,
+        output_dir=args.output_dir,
+        reference_pipeline=args.reference_pipeline,
+        empirical_pipeline=args.empirical_pipeline,
+    )

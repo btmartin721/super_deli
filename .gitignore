@@ -67,3 +67,5 @@ dist/
 !docs/figures/score-calibration/*.pdf
 !examples/pipeline-calibration/results/*.csv
 !docs/figures/pipeline-calibration/*.pdf
+!examples/empirical-calibration/results/*.csv
+!docs/figures/empirical-calibration/*.pdf
