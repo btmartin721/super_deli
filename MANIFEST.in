@@ -13,3 +13,6 @@ recursive-include examples/benchmarking *.json
 recursive-include examples/benchmarking/study-results *.csv
 recursive-include scripts *.py
 recursive-include docs/figures/integrative-study *.pdf *.svg *.png
+
+recursive-include examples/calibration *.json *.csv
+recursive-include docs/figures/score-calibration *.pdf *.svg *.png

@@ -75,4 +75,5 @@ jobs:
           super-deli cluster-tabular "$GITHUB_WORKSPACE/examples/tabular/clustering/dataset.json" --model-config "$GITHUB_WORKSPACE/examples/tabular/clustering/ecology_model.json" --modality environment --output-dir "$RUNNER_TEMP/ecology-clusters"
           super-deli cluster-integrative "$GITHUB_WORKSPACE/examples/integrative/grouped_dataset.json" --model-config "$GITHUB_WORKSPACE/examples/integrative/grouped_model.json" --output-dir "$RUNNER_TEMP/integrative-grouped"
           super-deli cluster-integrative "$GITHUB_WORKSPACE/examples/integrative/matched_dataset.json" --model-config "$GITHUB_WORKSPACE/examples/integrative/matched_model.json" --output-dir "$RUNNER_TEMP/integrative-matched"
+          super-deli calibrate-integrative "$RUNNER_TEMP/integrative-matched" --calibration-config "$GITHUB_WORKSPACE/examples/calibration/calibration.json" --output-dir "$RUNNER_TEMP/integrative-calibration"
           super-deli benchmark-integrative "$GITHUB_WORKSPACE/examples/benchmarking/smoke.json" --output-dir "$RUNNER_TEMP/integrative-benchmark"

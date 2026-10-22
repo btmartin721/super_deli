@@ -237,9 +237,10 @@ reference labels need independent evidence and documented uncertainty.
 10. **Completed:** Numeric morphology/ecology PCA/GMM with preprocessing and unit stability.
 11. **Completed:** Common-unit weighted score integration, joint PCA/GMM and paired unit stability.
 12. **Completed:** Truth-separated simulation benchmarks with dataset-level Monte Carlo uncertainty.
-13. **Current:** Larger prespecified benchmark, raw-artifact audit and results analysis.
-14. Anatomical landmark learning and additional models in separate batches.
-15. Further integration models and empirical calibration after baseline benchmarks.
+13. **Completed:** Larger prespecified benchmark, raw-artifact audit and results analysis.
+14. **Current:** Approximate single-Gaussian calibration in frozen integrative scores.
+15. Anatomical landmark learning and additional models in separate batches.
+16. Further integration models and empirical calibration after baseline benchmarks.
 
 The genomic baseline reports genetic clustering and locus-block sensitivity.
 It does not supply taxonomic validation, formal species-boundary significance,
@@ -262,3 +263,8 @@ The `shape-pca` workflow produces descriptive coordinates/ordination and explici
 uncomputed uncertainty. The separate `cluster-shape` workflow adds candidate
 shape groups and resampling stability, conditional on declared independence,
 landmark and mixture assumptions; it adds no species test or calibrated species probability.
+
+The separate [Gaussian score calibration](gaussian-score-calibration.md) checkpoint
+adds a global fitted-null diagnostic and independent score-level validation. It
+preserves original results and does not calibrate preprocessing/PCA selection,
+cluster-specific support, or biological species boundaries.
