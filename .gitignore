@@ -75,3 +75,6 @@ dist/
 
 !examples/boundary-calibration/results/*.csv
 !docs/figures/boundary-calibration/*.pdf
+
+!examples/genomic-calibration/results/*.csv
+!docs/figures/genomic-calibration/*.pdf

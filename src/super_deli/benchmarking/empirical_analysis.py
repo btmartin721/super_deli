@@ -67,7 +67,7 @@ def audit_empirical_study(root, *, output_dir):
     return audit_fitted_study(root, output_dir=output_dir)
 
 
-def audit_fitted_study(root, *, output_dir, grouped=False):
+def audit_fitted_study(root, *, output_dir, grouped=False, backend=None):
     try:
         import numpy as np
 
@@ -102,6 +102,16 @@ def audit_fitted_study(root, *, output_dir, grouped=False):
         point_auditor = point
         namespace, decision_key = "grouped_raw_gaussian_v1", "reject_grouped_raw_gaussian"
         target = "grouped_gaussian_raw_continuous_views"
+    if backend is not None:
+        cases, study_type = backend["cases"], backend["study_type"]
+        policy_for, summarize, simulator = (
+            backend["policy_for"],
+            backend["summarize"],
+            backend["simulator"],
+        )
+        point_auditor, tail_options = backend["point_auditor"], backend["tail_options"]
+        namespace, decision_key = backend["namespace"], backend["decision_key"]
+        target, writer, verify_model = backend["target"], backend["writer"], backend["verify_model"]
     root, destination = Path(root).resolve(), Path(output_dir).resolve()
     if destination == root or destination.is_relative_to(root):
         raise ValueError("Analysis must be outside immutable study shards")
@@ -200,7 +210,7 @@ def audit_fitted_study(root, *, output_dir, grouped=False):
             for path, digest in result["observed_input_sha256"].items():
                 if fingerprint_file(path).sha256 != digest:
                     raise ValueError("Observed source checksum mismatch")
-            if grouped:
+            if grouped or backend is not None:
                 fitted_layout, draw_values, n_units, n_features = verify_model(
                     base, output, values, layout, policy
                 )
@@ -332,7 +342,9 @@ def audit_fitted_study(root, *, output_dir, grouped=False):
                 "unattempted_fits",
             )
         },
-        "audit_scope": (
+        "audit_scope": backend["audit_scope"]
+        if backend
+        else (
             "Regenerated raw observations/draws; checked raw ML parameters "
             "(dense likelihood/score for grouped fits), "
             "selected likelihoods, fusion/projection, selection and p-values; no pipeline fits. "

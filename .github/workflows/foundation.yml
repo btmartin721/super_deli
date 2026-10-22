@@ -102,3 +102,9 @@ jobs:
           super-deli analyze-grouped-calibration "$RUNNER_TEMP/boundary-study" --output-dir "$RUNNER_TEMP/boundary-audit"
           super-deli compare-grouped-calibration "$RUNNER_TEMP/grouped-study" --current-study "$RUNNER_TEMP/boundary-study" --output-dir "$RUNNER_TEMP/boundary-paired"
           super-deli calibrate-grouped-integrative "$RUNNER_TEMP/boundary-study/correlated_gaussian/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/boundary-study/correlated_gaussian/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/boundary-direct-calibration"
+          mkdir "$RUNNER_TEMP/genomic-study"
+          for case in common_hwe rare_missing_hwe four_groups linked_stress cline_stress; do
+            super-deli benchmark-genomic-calibration "$GITHUB_WORKSPACE/examples/genomic-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/genomic-study/$case"
+          done
+          super-deli analyze-genomic-calibration "$RUNNER_TEMP/genomic-study" --output-dir "$RUNNER_TEMP/genomic-audit"
+          super-deli calibrate-genomic "$RUNNER_TEMP/genomic-study/common_hwe/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/genomic-study/common_hwe/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/genomic-direct-calibration"
