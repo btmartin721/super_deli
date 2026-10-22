@@ -325,8 +325,8 @@ Optional tests are skipped
 when extras are absent. Ruff coverage is declared centrally in `pyproject.toml`.
 Linting covers the new package, tests, and synthetic-example generator.
 
-Historical imputation sources remain outside the installed `src/` package.
-Their previous documentation is preserved in [the legacy README](docs/legacy-readme.md).
+The active implementation lives under `src/super_deli/`. Obsolete imputation
+code and personal datasets are archived outside the repository.
 The standalone `image_tps_manifest.py` keeps its existing manifest schema and
 metadata checks, with PDF/HEIC/HEIF extensions added to discovery.
 

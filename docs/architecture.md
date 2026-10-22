@@ -73,9 +73,9 @@ together with `images`. The `shape` extra supplies NumPy for GPA/PCA without
 image, SNPio or scikit-learn dependencies. The `clustering` extra adds shape
 and tabular mixtures without SNPio or image codecs. Empty plugin registries remain unnecessary.
 
-The distribution discovers only packages under `src/`. Historical imputation
-code remains in the repository but is excluded from the installed package. The
-previous README is retained in [legacy-readme.md](legacy-readme.md).
+The distribution discovers only packages under `src/`. Obsolete imputation
+code, generated outputs and personal datasets are archived outside the
+repository; synthetic examples and immutable published benchmark evidence remain.
 
 ## Configuration version 1
 
