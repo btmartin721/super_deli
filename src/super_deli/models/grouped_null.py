@@ -24,9 +24,11 @@ class GroupedGaussian:
     ecology: np.ndarray
     targets: np.ndarray
     counts: np.ndarray
+    sampling_factor: np.ndarray | None = None
+    within_sampling_factor: np.ndarray | None = None
 
     def model_arrays(self):
-        return {
+        arrays = {
             name: getattr(self, name)
             for name in (
                 "values",
@@ -39,6 +41,12 @@ class GroupedGaussian:
                 "counts",
             )
         }
+
+        if self.sampling_factor is not None:
+            arrays["sampling_factor"] = self.sampling_factor
+        if self.within_sampling_factor is not None:
+            arrays["within_sampling_factor"] = self.within_sampling_factor
+        return arrays
 
 
 def fit_null(dataset, tables, config):
@@ -100,10 +108,15 @@ def fit_null(dataset, tables, config):
     p, q, n, g = morphology.shape[1], ecology.shape[1], len(morphology), len(ecology)
     if 8 * (32 * n * p + 32 * g * (p + q) + 48 * (p + q) ** 2) > config.model.max_working_bytes:
         raise ValueError("Grouped Gaussian fit exceeds max_working_bytes")
-    mean, between, within, diagnostics = fit_gaussian(morphology, ecology, targets, config)
+    fitter = fit_gaussian
+    if config.schema_version == 2:
+        from super_deli.models.grouped_conditional import fit_gaussian as fitter
+    mean, between, within, diagnostics = fitter(morphology, ecology, targets, config)
+    sampling_factor = diagnostics.pop("sampling_factor", None)
+    within_sampling_factor = diagnostics.pop("within_sampling_factor", None)
     values, counts, _ = sufficient_statistics(morphology, ecology, targets)
     layout = {
-        "schema_version": 1,
+        "schema_version": config.schema_version,
         "unit_ids": units,
         "target_level": config.model.target_level,
         "views": views,
@@ -127,19 +140,36 @@ def fit_null(dataset, tables, config):
         "diagnostics": diagnostics,
     }
     return GroupedGaussian(
-        values, mean, between, layout, within, morphology, ecology, targets, counts
+        values,
+        mean,
+        between,
+        layout,
+        within,
+        morphology,
+        ecology,
+        targets,
+        counts,
+        None if sampling_factor is None else np.asarray(sampling_factor),
+        None if within_sampling_factor is None else np.asarray(within_sampling_factor),
     )
 
 
 def simulate_null(null, seed):
     rng = np.random.default_rng(seed)
-    latent = (
-        null.mean + rng.standard_normal(null.values.shape) @ np.linalg.cholesky(null.covariance).T
+    factor = (
+        np.linalg.cholesky(null.covariance)
+        if null.sampling_factor is None
+        else null.sampling_factor
     )
+    latent = null.mean + rng.standard_normal(null.values.shape) @ factor.T
     p = null.morphology.shape[1]
+    within_factor = (
+        np.linalg.cholesky(null.within)
+        if null.within_sampling_factor is None
+        else null.within_sampling_factor
+    )
     morphology = (
-        latent[null.targets, :p]
-        + rng.standard_normal(null.morphology.shape) @ np.linalg.cholesky(null.within).T
+        latent[null.targets, :p] + rng.standard_normal(null.morphology.shape) @ within_factor.T
     )
     ecology = latent[:, p:]
     order = {u: i for i, u in enumerate(null.layout["unit_ids"])}
