@@ -19,6 +19,9 @@ class RawGaussian:
     covariance: np.ndarray
     layout: dict
 
+    def model_arrays(self):
+        return {"values": self.values, "mean": self.mean, "covariance": self.covariance}
+
 
 def fit_null(dataset, tables, config):
     from super_deli.models.tabular_gmm import _matrix

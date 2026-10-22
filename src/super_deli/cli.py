@@ -194,6 +194,27 @@ def main(argv: list[str] | None = None) -> int:
     )
     empirical_audit.add_argument("config", type=Path)
     empirical_audit.add_argument("--output-dir", type=Path, required=True)
+    grouped = commands.add_parser(
+        "calibrate-grouped-integrative", help="Fit a hierarchical continuous-data null"
+    )
+    grouped.add_argument("config", type=Path)
+    grouped.add_argument("--calibration-config", type=Path, required=True)
+    grouped.add_argument("--output-dir", type=Path, required=True)
+    grouped_study = commands.add_parser(
+        "benchmark-grouped-calibration", help="Validate unequal-sampling fitted nulls"
+    )
+    grouped_study.add_argument("config", type=Path)
+    grouped_study.add_argument(
+        "--case",
+        required=True,
+        choices=("independent_gaussian", "correlated_gaussian", "complementary", "heavy_tailed"),
+    )
+    grouped_study.add_argument("--output-dir", type=Path, required=True)
+    grouped_audit = commands.add_parser(
+        "analyze-grouped-calibration", help="Audit a grouped fitted-null study"
+    )
+    grouped_audit.add_argument("config", type=Path)
+    grouped_audit.add_argument("--output-dir", type=Path, required=True)
     baseline = commands.add_parser(
         "baseline-genomic", help="Fit candidate PCA/GMM genetic clusters"
     )
@@ -211,6 +232,35 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command == "calibrate-grouped-integrative":
+            from super_deli.models.grouped_config import GroupedCalibrationConfig
+            from super_deli.workflows.grouped_calibration import run_grouped_calibration
+
+            summary = run_grouped_calibration(
+                load_config(source),
+                config=GroupedCalibrationConfig.from_dict(read_json(args.calibration_config)),
+                base_dir=source.parent,
+                output_dir=args.output_dir,
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0 if summary["inference"]["status"] == "available" else 1
+        if args.command == "benchmark-grouped-calibration":
+            from super_deli.benchmarking.grouped_study import run_grouped_study
+            from super_deli.models.grouped_config import GroupedStudyConfig
+
+            summary = run_grouped_study(
+                GroupedStudyConfig.from_dict(read_json(source)),
+                case=args.case,
+                output_dir=args.output_dir,
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "analyze-grouped-calibration":
+            from super_deli.benchmarking.grouped_analysis import audit_grouped_study
+
+            summary = audit_grouped_study(source, output_dir=args.output_dir)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "calibrate-empirical-integrative":
             from super_deli.models.empirical_config import EmpiricalCalibrationConfig
             from super_deli.workflows.empirical_calibration import run_empirical_calibration

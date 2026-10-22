@@ -4,7 +4,7 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: empirical fitted-null calibration for continuous integrative data.**
+**Current checkpoint: fitted-null calibration for unequal grouped morphology/ecology.**
 Genomic, numeric morphology/ecology and shape scores can be fused by exact unit
 IDs or explicit population/locality aggregation, with prespecified view weights.
 The package also supports individual-modality PCA/GMM, frozen-fit shape
@@ -43,8 +43,13 @@ null from matched, complete continuous morphology/ecology before PCA and refits
 the integrative pipeline for every bootstrap draw. Its p-values are approximate.
 See the [method](docs/empirical-null-calibration.md) and
 [validation results](docs/empirical-null-calibration-results.md).
-Additional fitted nulls for genomic/count/shape data and grouped sampling remain
-separate checkpoints.
+`calibrate-grouped-integrative` additionally fits joint between-group and
+within-morphology Gaussian covariance with unequal specimen counts and one ecology
+row per population/locality. It preserves the observed sampling design through
+full-pipeline bootstrap refits, rejects unsupported covariance fits and keeps
+missing-test denominators explicit. See the [grouped method](docs/grouped-null-calibration.md) and
+[100-dataset results with explicit withheld tests](docs/grouped-null-calibration-results.md).
+Additional fitted nulls for genomic/count/shape data remain separate checkpoints.
 
 ## Installation
 

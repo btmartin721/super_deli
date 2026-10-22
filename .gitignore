@@ -69,3 +69,6 @@ dist/
 !docs/figures/pipeline-calibration/*.pdf
 !examples/empirical-calibration/results/*.csv
 !docs/figures/empirical-calibration/*.pdf
+
+!examples/grouped-calibration/results/*.csv
+!docs/figures/grouped-calibration/*.pdf

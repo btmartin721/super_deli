@@ -52,8 +52,39 @@ def _dependencies():
 
 def run_empirical_calibration(dataset, *, config, base_dir, output_dir):
     config = EmpiricalCalibrationConfig.from_dict(config.to_dict())
+    return run_fitted_calibration(
+        dataset,
+        config=config,
+        base_dir=base_dir,
+        output_dir=output_dir,
+        dependencies=_dependencies(),
+        scope=SCOPE,
+        tail_options=TAIL_OPTIONS,
+        seed_namespace="empirical_raw_gaussian_v1",
+        target="joint_gaussian_raw_continuous_views",
+        null_hypothesis=(
+            "Matched continuous rows follow one joint Gaussian with unknown mean/covariance"
+        ),
+    )
+
+
+def run_fitted_calibration(
+    dataset,
+    *,
+    config,
+    base_dir,
+    output_dir,
+    dependencies,
+    scope,
+    tail_options,
+    seed_namespace,
+    target,
+    null_hypothesis,
+):
+    """Shared execution and failure accounting; each caller supplies its raw null."""
     dataset = config_from_dict(dataset.to_dict())
-    np, fit_null, simulate_null, write_raw_views, summarize, runner = _dependencies()
+    np, fit_null, simulate_null, write_raw_views, summarize, runner = dependencies
+    decision_key = tail_options["decision_key"]
     from super_deli.io.tabular import ingest_tabular
 
     source, destination = Path(base_dir).resolve(), Path(output_dir).resolve()
@@ -73,7 +104,7 @@ def run_empirical_calibration(dataset, *, config, base_dir, output_dir):
         )
         null = fit_null(dataset, loaded.tables, config)
         with (destination / "null_model.npz").open("xb") as handle:
-            np.savez(handle, values=null.values, mean=null.mean, covariance=null.covariance)
+            np.savez(handle, **null.model_arrays())
         write_json(null.layout, destination / "layout.json")
         with ZipFile(
             destination / "pipeline_artifacts.zip", "x", compression=ZIP_DEFLATED, compresslevel=4
@@ -87,9 +118,7 @@ def run_empirical_calibration(dataset, *, config, base_dir, output_dir):
                 archive_tree(archive, staging, "observed", inventory, config.max_archive_bytes)
             if point["status"] == "complete":
                 for i in range(config.n_simulations):
-                    seed = derived_seed(
-                        config.random_seed, "empirical_raw_gaussian_v1", i, "null_data"
-                    )
+                    seed = derived_seed(config.random_seed, seed_namespace, i, "null_data")
                     with TemporaryDirectory(prefix="null-", dir=destination) as temporary:
                         staging = Path(temporary)
                         values = simulate_null(null, seed)
@@ -117,7 +146,7 @@ def run_empirical_calibration(dataset, *, config, base_dir, output_dir):
         write_json(inventory, destination / "archive_inventory.json")
         write_json(records, destination / "null_replicates.json")
         inference = (
-            summarize(point["statistic"], records, alpha=config.alpha, **TAIL_OPTIONS)
+            summarize(point["statistic"], records, alpha=config.alpha, **tail_options)
             if point["status"] == "complete"
             else {
                 "status": "point_failed",
@@ -125,19 +154,17 @@ def run_empirical_calibration(dataset, *, config, base_dir, output_dir):
                 "successful": 0,
                 "failed": 0,
                 "p_value": None,
-                "reject_joint_raw_gaussian": None,
+                decision_key: None,
             }
         )
         evidence = Evidence(
             "p_value",
-            "joint_gaussian_raw_continuous_views",
+            target,
             "available" if inference["p_value"] is not None else "unavailable",
             method="Approximate full-pipeline fitted-Gaussian BIC-improvement bootstrap",
             value=inference["p_value"],
             replicates=config.n_simulations,
-            null_hypothesis=(
-                "Matched continuous rows follow one joint Gaussian with unknown mean/covariance"
-            ),
+            null_hypothesis=null_hypothesis,
             multiplicity=(
                 "none across analyses; one prespecified global statistic includes the full K search"
             ),
@@ -149,7 +176,7 @@ def run_empirical_calibration(dataset, *, config, base_dir, output_dir):
         result = {
             "schema_version": 1,
             "status": "complete",
-            "scope": SCOPE,
+            "scope": scope,
             "configuration_sha256": configuration_hash(config.to_dict()),
             "observed_configuration": dataset.to_dict(),
             "observed_input_sha256": hashes,

@@ -8,7 +8,14 @@ import json
 from pathlib import Path
 
 
-def plot(directory, *, output_dir, reference_pipeline=False, empirical_pipeline=False):
+def plot(
+    directory,
+    *,
+    output_dir,
+    reference_pipeline=False,
+    empirical_pipeline=False,
+    grouped_pipeline=False,
+):
     import matplotlib
 
     matplotlib.use("Agg")
@@ -20,7 +27,9 @@ def plot(directory, *, output_dir, reference_pipeline=False, empirical_pipeline=
     summary = json.loads((directory / "summary.json").read_text())
     with (directory / "datasets.csv").open(newline="", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle))
-    if any(rate["n_available"] == 0 for rate in summary["rates"]):
+    if sum((reference_pipeline, empirical_pipeline, grouped_pipeline)) > 1:
+        raise ValueError("Select one plot profile")
+    if not grouped_pipeline and any(rate["n_available"] == 0 for rate in summary["rates"]):
         raise ValueError("Plot requires at least one available p-value in every scenario")
     destination.mkdir(exist_ok=False)
     names = {
@@ -57,6 +66,17 @@ def plot(directory, *, output_dir, reference_pipeline=False, empirical_pipeline=
         title = "Fitted Gaussian null in raw continuous views: null, power and stress checks"
         label = "Approximate fitted raw-Gaussian p-value threshold"
         filename = "empirical-calibration"
+    if grouped_pipeline:
+        names = {
+            "independent_gaussian": "Independent group Gaussian (null)",
+            "correlated_gaussian": "Correlated group Gaussian (null)",
+            "complementary": "Complementary grouped views (power)",
+            "heavy_tailed": "Heavy-tailed grouped t3 (stress)",
+        }
+        key = "case"
+        title = "Unequal grouped sampling: fitted hierarchical Gaussian calibration"
+        label = "Approximate grouped fitted-null p-value threshold"
+        filename = "grouped-calibration"
     colors = ("#0072B2", "#56B4E9", "#009E73", "#D55E00")
     plt.rcParams.update({"font.size": 10, "pdf.fonttype": 42, "svg.fonttype": "none"})
     fig, axes = plt.subplots(1, 2, figsize=(12.4, 4.7), constrained_layout=True)
@@ -64,6 +84,9 @@ def plot(directory, *, output_dir, reference_pipeline=False, empirical_pipeline=
     for i, (rate, color) in enumerate(zip(summary["rates"], colors, strict=True)):
         mean, interval = rate["mean"], rate["wilson_95"]
         name = names[rate[key]]
+        if rate["n_available"] == 0:
+            left.text(0.04, i, "No available tests", color=color, fontsize=9)
+            continue
         left.errorbar(
             mean,
             i,
@@ -73,10 +96,13 @@ def plot(directory, *, output_dir, reference_pipeline=False, empirical_pipeline=
             color=color,
             markersize=7,
         )
+        annotation = f"{rate['events']}/{rate['n_available']} rejected"
+        if grouped_pipeline:
+            annotation += f"; {rate['n_available']}/{summary['study']['n_datasets']} available"
         left.text(
-            min(mean + 0.06, 0.84),
+            min(mean + 0.06, 0.5 if grouped_pipeline else 0.84),
             i + 0.2,
-            f"{rate['events']}/{rate['n_available']} rejected",
+            annotation,
             fontsize=9,
             color=color,
         )
@@ -99,7 +125,11 @@ def plot(directory, *, output_dir, reference_pipeline=False, empirical_pipeline=
         xlim=(-0.02, 1.02),
         ylim=(3.65, -0.5),
         xlabel=f"Rejection rate at alpha={alpha:g}",
-        title="A  Independent-dataset rates and Wilson 95% intervals",
+        title=(
+            "A  Available-test rates and Wilson 95% intervals"
+            if grouped_pipeline
+            else "A  Independent-dataset rates and Wilson 95% intervals"
+        ),
     )
     left.xaxis.set_major_formatter(PercentFormatter(1))
     right.plot([0, 1], [0, 1], linestyle="--", color="0.65", linewidth=1, label="Uniform reference")
@@ -116,7 +146,7 @@ def plot(directory, *, output_dir, reference_pipeline=False, empirical_pipeline=
         if reference_pipeline or empirical_pipeline
         else {"loc": "lower right"}
     )
-    if empirical_pipeline:
+    if empirical_pipeline or grouped_pipeline:
         legend_options = {"loc": "upper left", "bbox_to_anchor": (0.02, 0.92)}
     right.legend(**legend_options, fontsize=8, frameon=False)
     for ax in axes:
@@ -140,10 +170,12 @@ if __name__ == "__main__":
     profile = parser.add_mutually_exclusive_group()
     profile.add_argument("--reference-pipeline", action="store_true")
     profile.add_argument("--empirical-pipeline", action="store_true")
+    profile.add_argument("--grouped-pipeline", action="store_true")
     args = parser.parse_args()
     plot(
         args.analysis,
         output_dir=args.output_dir,
         reference_pipeline=args.reference_pipeline,
         empirical_pipeline=args.empirical_pipeline,
+        grouped_pipeline=args.grouped_pipeline,
     )

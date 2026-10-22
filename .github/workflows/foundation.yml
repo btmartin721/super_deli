@@ -89,3 +89,9 @@ jobs:
           done
           super-deli analyze-empirical-calibration "$RUNNER_TEMP/empirical-study" --output-dir "$RUNNER_TEMP/empirical-audit"
           super-deli calibrate-empirical-integrative "$RUNNER_TEMP/empirical-study/spherical_gaussian/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/empirical-study/spherical_gaussian/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/empirical-direct-calibration"
+          mkdir "$RUNNER_TEMP/grouped-study"
+          for case in independent_gaussian correlated_gaussian complementary heavy_tailed; do
+            super-deli benchmark-grouped-calibration "$GITHUB_WORKSPACE/examples/grouped-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/grouped-study/$case"
+          done
+          super-deli analyze-grouped-calibration "$RUNNER_TEMP/grouped-study" --output-dir "$RUNNER_TEMP/grouped-audit"
+          super-deli calibrate-grouped-integrative "$RUNNER_TEMP/grouped-study/independent_gaussian/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/grouped-study/independent_gaussian/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/grouped-direct-calibration"
