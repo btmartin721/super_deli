@@ -4,12 +4,19 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: integrative clustering with paired bootstrap stability.**
+**Current checkpoint: simulation-based integrative benchmarking.**
 Genomic, numeric morphology/ecology and shape scores can be fused by exact unit
 IDs or explicit population/locality aggregation, with prespecified view weights.
 The package also supports individual-modality PCA/GMM, frozen-fit shape
 projection, visible marker detection and multimodal ingestion.
 Anatomical landmark learning and formal species-boundary tests remain later work.
+
+The new `benchmark-integrative` command evaluates the existing integrative model
+and declared view subsets against separate generating partitions. It includes
+eight stress scenarios, matched/grouped sampling, explicit failure denominators,
+and independent-dataset Monte Carlo standard errors. See the
+[benchmark protocol](docs/integrative-benchmarking.md) and
+[bounded smoke results](docs/integrative-benchmark-smoke.md).
 
 ## Installation
 

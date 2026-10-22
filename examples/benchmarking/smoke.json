@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "random_seed": 20261020,
+  "n_datasets": 3,
+  "n_units": 64,
+  "n_loci": 64,
+  "max_group_members": 4,
+  "scenarios": [
+    {"name": "null_matched", "pattern": "null", "strength": 0},
+    {"name": "strong_matched"},
+    {"name": "weak_matched", "strength": 0.6},
+    {"name": "complementary_matched", "pattern": "complementary"},
+    {"name": "conflicting_matched", "pattern": "conflicting"},
+    {"name": "missing_cells", "cell_missing_rate": 0.15},
+    {"name": "missing_views", "view_missing_rate": 0.25},
+    {"name": "unequal_grouped", "pattern": "complementary", "linkage": "grouped", "unequal_groups": true}
+  ],
+  "arms": [
+    {"name": "full", "kinds": ["genomic", "morphological", "ecological", "morphometric"]},
+    {"name": "genome_environment", "kinds": ["genomic", "ecological"]},
+    {"name": "traits_shape", "kinds": ["morphological", "morphometric"]}
+  ],
+  "model": {
+    "schema_version": 1,
+    "assume_independent_units": true,
+    "target_level": "specimen",
+    "random_seed": 0,
+    "n_pcs": 2,
+    "max_k": 4,
+    "min_cluster_size": 5,
+    "n_bootstrap": 10,
+    "n_init": 3,
+    "views": [
+      {"modality": "genomic", "kind": "genomic", "ploidy": 2, "missing_policy": "mean"},
+      {"modality": "morphological", "kind": "morphological", "missing_policy": "mean"},
+      {"modality": "ecological", "kind": "ecological", "missing_policy": "mean"},
+      {"modality": "morphometric", "kind": "morphometric", "shape": {"schema_version": 1}}
+    ]
+  }
+}
