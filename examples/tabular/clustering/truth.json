@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "scope": "Two generating groups in each table; not empirical species truth",
+  "seed": 20261020,
+  "units": [
+    {
+      "latent_group": 0,
+      "locality_id": "site_001",
+      "specimen_id": "unit_001"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_002",
+      "specimen_id": "unit_002"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_003",
+      "specimen_id": "unit_003"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_004",
+      "specimen_id": "unit_004"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_005",
+      "specimen_id": "unit_005"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_006",
+      "specimen_id": "unit_006"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_007",
+      "specimen_id": "unit_007"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_008",
+      "specimen_id": "unit_008"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_009",
+      "specimen_id": "unit_009"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_010",
+      "specimen_id": "unit_010"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_011",
+      "specimen_id": "unit_011"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_012",
+      "specimen_id": "unit_012"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_013",
+      "specimen_id": "unit_013"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_014",
+      "specimen_id": "unit_014"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_015",
+      "specimen_id": "unit_015"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_016",
+      "specimen_id": "unit_016"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_017",
+      "specimen_id": "unit_017"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_018",
+      "specimen_id": "unit_018"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_019",
+      "specimen_id": "unit_019"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_020",
+      "specimen_id": "unit_020"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_021",
+      "specimen_id": "unit_021"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_022",
+      "specimen_id": "unit_022"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_023",
+      "specimen_id": "unit_023"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_024",
+      "specimen_id": "unit_024"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_025",
+      "specimen_id": "unit_025"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_026",
+      "specimen_id": "unit_026"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_027",
+      "specimen_id": "unit_027"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_028",
+      "specimen_id": "unit_028"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_029",
+      "specimen_id": "unit_029"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_030",
+      "specimen_id": "unit_030"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_031",
+      "specimen_id": "unit_031"
+    },
+    {
+      "latent_group": 0,
+      "locality_id": "site_032",
+      "specimen_id": "unit_032"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_033",
+      "specimen_id": "unit_033"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_034",
+      "specimen_id": "unit_034"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_035",
+      "specimen_id": "unit_035"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_036",
+      "specimen_id": "unit_036"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_037",
+      "specimen_id": "unit_037"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_038",
+      "specimen_id": "unit_038"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_039",
+      "specimen_id": "unit_039"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_040",
+      "specimen_id": "unit_040"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_041",
+      "specimen_id": "unit_041"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_042",
+      "specimen_id": "unit_042"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_043",
+      "specimen_id": "unit_043"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_044",
+      "specimen_id": "unit_044"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_045",
+      "specimen_id": "unit_045"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_046",
+      "specimen_id": "unit_046"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_047",
+      "specimen_id": "unit_047"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_048",
+      "specimen_id": "unit_048"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_049",
+      "specimen_id": "unit_049"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_050",
+      "specimen_id": "unit_050"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_051",
+      "specimen_id": "unit_051"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_052",
+      "specimen_id": "unit_052"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_053",
+      "specimen_id": "unit_053"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_054",
+      "specimen_id": "unit_054"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_055",
+      "specimen_id": "unit_055"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_056",
+      "specimen_id": "unit_056"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_057",
+      "specimen_id": "unit_057"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_058",
+      "specimen_id": "unit_058"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_059",
+      "specimen_id": "unit_059"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_060",
+      "specimen_id": "unit_060"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_061",
+      "specimen_id": "unit_061"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_062",
+      "specimen_id": "unit_062"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_063",
+      "specimen_id": "unit_063"
+    },
+    {
+      "latent_group": 1,
+      "locality_id": "site_064",
+      "specimen_id": "unit_064"
+    }
+  ]
+}

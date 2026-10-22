@@ -1,0 +1,12 @@
+{
+  "assume_independent_units": true,
+  "count_transform": "log1p",
+  "max_k": 3,
+  "missing_policy": "error",
+  "n_bootstrap": 20,
+  "n_init": 5,
+  "n_pcs": 2,
+  "random_seed": 71,
+  "scaling": "standard",
+  "schema_version": 1
+}
