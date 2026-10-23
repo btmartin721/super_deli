@@ -50,3 +50,6 @@ recursive-include docs/figures/shared-grouped-calibration *.pdf *.svg *.png
 
 recursive-include examples/grouped-recovery *.json *.csv *.py
 recursive-include docs/figures/grouped-recovery *.pdf *.svg *.png
+
+recursive-include examples/grouped-pca *.json *.csv *.py
+recursive-include docs/figures/grouped-pca *.pdf *.svg *.png

@@ -6,7 +6,11 @@ import math
 from dataclasses import dataclass
 
 from super_deli.models.empirical_config import _options
-from super_deli.models.integrative_config import IntegrativeConfig, configuration_dict
+from super_deli.models.integrative_config import (
+    IntegrativeConfig,
+    configuration_dict,
+    require_calibrated_pca,
+)
 
 CASES = ("independent_gaussian", "correlated_gaussian", "complementary", "heavy_tailed")
 BOUNDARY_CASES = ("zero_conditional_gaussian", "rank_two_gaussian", "weak_conditional_gaussian")
@@ -58,6 +62,7 @@ class GroupedCalibrationConfig:
             raise ValueError(
                 "Explicitly assume independent Gaussian groups and noninformative counts"
             )
+        require_calibrated_pca(self.model)
         if self.model.covariance_type == "tied" and self.schema_version == 1:
             raise ValueError(
                 "Shared-covariance significance calibration is not yet supported by legacy "

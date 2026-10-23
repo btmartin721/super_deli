@@ -1,0 +1,62 @@
+{
+  "large_n": 256,
+  "model": {
+    "assignment_threshold": 0.0,
+    "assume_independent_units": true,
+    "covariance_type": "tied",
+    "max_iter": 500,
+    "max_k": 4,
+    "max_pairwise_bytes": 268435456,
+    "max_working_bytes": 268435456,
+    "min_cluster_size": 5,
+    "missing_views": "error",
+    "n_bootstrap": 0,
+    "n_init": 10,
+    "n_pcs": 2,
+    "n_threads": 1,
+    "random_seed": 71323,
+    "rank_tol": 1e-12,
+    "reg_covar": 1e-06,
+    "schema_version": 1,
+    "target_level": "locality",
+    "tol": 0.001,
+    "views": [
+      {
+        "aggregation": "mean",
+        "count_transform": "identity",
+        "feature_names": [],
+        "kind": "morphological",
+        "missing_policy": "error",
+        "modality": "morphological",
+        "n_pcs": 2,
+        "ploidy": null,
+        "scaling": null,
+        "shape": null,
+        "weight": 1.0
+      },
+      {
+        "aggregation": "none",
+        "count_transform": "identity",
+        "feature_names": [],
+        "kind": "ecological",
+        "missing_policy": "error",
+        "modality": "ecological",
+        "n_pcs": 2,
+        "ploidy": null,
+        "scaling": null,
+        "shape": null,
+        "weight": 1.0
+      }
+    ]
+  },
+  "n_bootstrap": 25,
+  "n_datasets": 25,
+  "n_stability": 5,
+  "random_seed": 20261106,
+  "schema_version": 1,
+  "small_n": 64,
+  "source_inventory_sha256": "c7352b82d907883953454b1b309d55dfe8320de3450b7be1f628d00bbbb25060",
+  "source_modules_sha256": "0da958c924f889a96c3b16d41fa711b87b4351f9ec18c8652fd274f0de6b6949",
+  "source_study_sha256": "3e7939143347837ab219c3a1bc96f833ddea3b17f976faa62c6af38076bfdb41",
+  "source_summary_sha256": "2742dd5843f5a303fe2d69c128cfec9ea78cec393fb382564c762e611744483a"
+}

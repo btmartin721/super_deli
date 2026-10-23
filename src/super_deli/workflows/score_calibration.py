@@ -11,7 +11,7 @@ from super_deli.core.provenance import configuration_hash, fingerprint_file
 from super_deli.core.results import Evidence
 from super_deli.io.config import read_json, write_json
 from super_deli.models.calibration_config import GaussianCalibrationConfig
-from super_deli.models.integrative_config import IntegrativeConfig
+from super_deli.models.integrative_config import IntegrativeConfig, require_calibrated_pca
 
 
 def write_score_calibration(fit, directory, *, provenance):
@@ -72,6 +72,7 @@ def _source_scores(source, config):
     if configuration_hash(provenance["configuration"]) != provenance["configuration_sha256"]:
         raise ValueError("Source configuration checksum mismatch")
     search = IntegrativeConfig.from_dict(provenance["configuration"]["model"])
+    require_calibrated_pca(search)
     for name in ("mixture", "fusion"):
         if fingerprint_file(source / f"{name}.npz").sha256 != provenance[f"{name}_sha256"]:
             raise ValueError(f"Source {name} checksum mismatch")

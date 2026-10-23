@@ -286,7 +286,17 @@ def run_integrative(
             "interpretation": [
                 "Candidate integrated structure, not species probabilities or formal species tests",
                 "Paired target resampling; unmatched individuals require explicit group links",
-                "More source observations give a group more influence on its view's raw PCA fit",
+                (
+                    (
+                        "Target-mean PCA weights one raw group mean per draw, "
+                        "retaining draw multiplicities"
+                    )
+                    if any(v.pca_fit == "target_means" for v in model_config.views)
+                    else (
+                        "More source observations give a group more influence "
+                        "on its view's raw PCA fit"
+                    )
+                ),
                 "Equal source weights within group profiles; equal target-profile GMM weights",
                 "No ecological down-broadcast, categorical encoding or missing-modality imputation",
                 "Correlated views can emphasize shared signals; weights are not probabilities",

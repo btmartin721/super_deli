@@ -1,0 +1,2322 @@
+{
+  "attempted_bootstrap": 1000,
+  "audit_scope": "Regenerated raw values/identities/counts/truth; full inventories, fixed settings, seeds and archived replay; independent PCA raw moments/eigen-equations for source rows and group means, projections/profiles/fusion, selected dense GMM density/BIC/membership; independent ARI/axis checks; bootstrap seeds/source members/draw multiplicities and target-mean PCA parameters, distinct-unit constraints, partitions, exact-set counts, OOB denominators and failure bounds. No model refits. Nonselected GMM and source-row bootstrap PCA parameters are not independently refitted.",
+  "datasets": 175,
+  "failed_bootstrap": 0,
+  "failed_points": 0,
+  "interpretation": "Prespecified four-arm comparison under constructed laws; unchanged defaults/p-values. K selection without generating discrete groups is descriptive, not a type-I error test or species significance. Wilson intervals are pointwise. Stability is separate from significance and conditions on fixed observed group members.",
+  "paired": [
+    {
+      "ari_improved": 16,
+      "ari_worsened": 2,
+      "available_pairs": 25,
+      "cohort": "archived",
+      "gained_four": 5,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": 0.11076356041364414,
+      "median_ari_change": 0.05331212162248644,
+      "right": "source_4"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 3,
+      "available_pairs": 25,
+      "cohort": "archived",
+      "gained_four": 0,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": -0.003630007342156694,
+      "median_ari_change": 0.0,
+      "right": "target_2"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "archived",
+      "gained_four": 0,
+      "left": "source_4",
+      "lost_four": 0,
+      "mean_ari_change": 0.0,
+      "median_ari_change": 0.0,
+      "right": "target_4"
+    },
+    {
+      "ari_improved": 16,
+      "ari_worsened": 2,
+      "available_pairs": 25,
+      "cohort": "archived",
+      "gained_four": 5,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": 0.11076356041364414,
+      "median_ari_change": 0.05331212162248644,
+      "right": "target_4"
+    },
+    {
+      "ari_improved": 19,
+      "ari_worsened": 2,
+      "available_pairs": 25,
+      "cohort": "fresh_64",
+      "gained_four": 3,
+      "left": "source_2",
+      "lost_four": 1,
+      "mean_ari_change": 0.09968707324007005,
+      "median_ari_change": 0.05882598472305317,
+      "right": "source_4"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 6,
+      "available_pairs": 25,
+      "cohort": "fresh_64",
+      "gained_four": 0,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": -0.02387573694646436,
+      "median_ari_change": 0.0,
+      "right": "target_2"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 3,
+      "available_pairs": 25,
+      "cohort": "fresh_64",
+      "gained_four": 0,
+      "left": "source_4",
+      "lost_four": 0,
+      "mean_ari_change": -0.003575584807453149,
+      "median_ari_change": 0.0,
+      "right": "target_4"
+    },
+    {
+      "ari_improved": 18,
+      "ari_worsened": 2,
+      "available_pairs": 25,
+      "cohort": "fresh_64",
+      "gained_four": 3,
+      "left": "source_2",
+      "lost_four": 1,
+      "mean_ari_change": 0.0961114884326169,
+      "median_ari_change": 0.03216302779419267,
+      "right": "target_4"
+    },
+    {
+      "ari_improved": 25,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "fresh_256",
+      "gained_four": 18,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": 0.3596015216499742,
+      "median_ari_change": 0.43719216643324615,
+      "right": "source_4"
+    },
+    {
+      "ari_improved": 2,
+      "ari_worsened": 15,
+      "available_pairs": 25,
+      "cohort": "fresh_256",
+      "gained_four": 0,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": -0.00762244284785637,
+      "median_ari_change": -0.007464430643350284,
+      "right": "target_2"
+    },
+    {
+      "ari_improved": 3,
+      "ari_worsened": 3,
+      "available_pairs": 25,
+      "cohort": "fresh_256",
+      "gained_four": 0,
+      "left": "source_4",
+      "lost_four": 0,
+      "mean_ari_change": 5.291832666524332e-05,
+      "median_ari_change": 0.0,
+      "right": "target_4"
+    },
+    {
+      "ari_improved": 25,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "fresh_256",
+      "gained_four": 18,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": 0.3596544399766394,
+      "median_ari_change": 0.4343451657614313,
+      "right": "target_4"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "independent_gaussian",
+      "gained_four": 0,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": null,
+      "median_ari_change": null,
+      "right": "source_4"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "independent_gaussian",
+      "gained_four": 0,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": null,
+      "median_ari_change": null,
+      "right": "target_2"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "independent_gaussian",
+      "gained_four": 0,
+      "left": "source_4",
+      "lost_four": 0,
+      "mean_ari_change": null,
+      "median_ari_change": null,
+      "right": "target_4"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "independent_gaussian",
+      "gained_four": 0,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": null,
+      "median_ari_change": null,
+      "right": "target_4"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "correlated_gaussian",
+      "gained_four": 0,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": null,
+      "median_ari_change": null,
+      "right": "source_4"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "correlated_gaussian",
+      "gained_four": 0,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": null,
+      "median_ari_change": null,
+      "right": "target_2"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "correlated_gaussian",
+      "gained_four": 0,
+      "left": "source_4",
+      "lost_four": 0,
+      "mean_ari_change": null,
+      "median_ari_change": null,
+      "right": "target_4"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "correlated_gaussian",
+      "gained_four": 0,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": null,
+      "median_ari_change": null,
+      "right": "target_4"
+    },
+    {
+      "ari_improved": 16,
+      "ari_worsened": 9,
+      "available_pairs": 25,
+      "cohort": "unequal_variance",
+      "gained_four": 2,
+      "left": "source_2",
+      "lost_four": 3,
+      "mean_ari_change": 0.019498808673966764,
+      "median_ari_change": 0.009282279788412784,
+      "right": "source_4"
+    },
+    {
+      "ari_improved": 3,
+      "ari_worsened": 9,
+      "available_pairs": 25,
+      "cohort": "unequal_variance",
+      "gained_four": 2,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": 0.013285235682384933,
+      "median_ari_change": 0.0,
+      "right": "target_2"
+    },
+    {
+      "ari_improved": 1,
+      "ari_worsened": 7,
+      "available_pairs": 25,
+      "cohort": "unequal_variance",
+      "gained_four": 0,
+      "left": "source_4",
+      "lost_four": 0,
+      "mean_ari_change": -0.009333447544719138,
+      "median_ari_change": 0.0,
+      "right": "target_4"
+    },
+    {
+      "ari_improved": 14,
+      "ari_worsened": 10,
+      "available_pairs": 25,
+      "cohort": "unequal_variance",
+      "gained_four": 2,
+      "left": "source_2",
+      "lost_four": 3,
+      "mean_ari_change": 0.010165361129247626,
+      "median_ari_change": 0.009282279788412784,
+      "right": "target_4"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "cline",
+      "gained_four": 0,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": null,
+      "median_ari_change": null,
+      "right": "source_4"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "cline",
+      "gained_four": 0,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": null,
+      "median_ari_change": null,
+      "right": "target_2"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "cline",
+      "gained_four": 0,
+      "left": "source_4",
+      "lost_four": 0,
+      "mean_ari_change": null,
+      "median_ari_change": null,
+      "right": "target_4"
+    },
+    {
+      "ari_improved": 0,
+      "ari_worsened": 0,
+      "available_pairs": 25,
+      "cohort": "cline",
+      "gained_four": 0,
+      "left": "source_2",
+      "lost_four": 0,
+      "mean_ari_change": null,
+      "median_ari_change": null,
+      "right": "target_4"
+    }
+  ],
+  "planned_bootstrap": 1000,
+  "planned_points": 700,
+  "reproduced_archived": 25,
+  "schema_version": 1,
+  "significance_fits": 0,
+  "status": "complete",
+  "successful_bootstrap": 1000,
+  "successful_points": 700,
+  "summaries": [
+    {
+      "ari": {
+        "max": 0.668244323632875,
+        "mean": 0.4590695027267383,
+        "mean_mcse": 0.010833597984729833,
+        "median": 0.45707756034852165,
+        "min": 0.3690815744438106
+      },
+      "arm": "source_2",
+      "available": 25,
+      "cohort": "archived",
+      "ecology_b_r2": {
+        "max": 0.8336963314107306,
+        "mean": 0.7723461571591744,
+        "mean_mcse": 0.006712688109994404,
+        "median": 0.7690978812050834,
+        "min": 0.69866485597027
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.8638512331157487,
+        "mean": 0.8247620459428155,
+        "mean_mcse": 0.005805722050396847,
+        "median": 0.8255073653850029,
+        "min": 0.7602102298156875
+      },
+      "joint_b_r2": {
+        "max": 0.7837423821437052,
+        "mean": 0.6474353797739046,
+        "mean_mcse": 0.012560419419729551,
+        "median": 0.6373838596339858,
+        "min": 0.5699540473670511
+      },
+      "k4_minus_k2_bic": {
+        "max": 21.688766113514816,
+        "mean": 11.657666267599886,
+        "mean_mcse": 1.4329035407486987,
+        "median": 11.926033934391,
+        "min": -11.578952064565954
+      },
+      "morphology_a_r2": {
+        "max": 0.9198604873107297,
+        "mean": 0.8805434718445855,
+        "mean_mcse": 0.005252381651188492,
+        "median": 0.8851115655986859,
+        "min": 0.7921125114581314
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 1,
+          "failed_outcome_bounds": [
+            0.04,
+            0.04
+          ],
+          "rate": 0.04,
+          "wilson_95": [
+            0.007096233501987265,
+            0.19544063736193734
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 0,
+        "2": 24,
+        "3": 0,
+        "4": 1
+      }
+    },
+    {
+      "ari": {
+        "max": 1.0,
+        "mean": 0.5698330631403824,
+        "mean_mcse": 0.03707645954522805,
+        "median": 0.4878048780487805,
+        "min": 0.4249857387335995
+      },
+      "arm": "source_4",
+      "available": 25,
+      "cohort": "archived",
+      "ecology_b_r2": {
+        "max": 0.8336963314107306,
+        "mean": 0.7723461571591744,
+        "mean_mcse": 0.006712688109994404,
+        "median": 0.7690978812050834,
+        "min": 0.69866485597027
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.9249178856185091,
+        "mean": 0.8849052420081399,
+        "mean_mcse": 0.005029652859978204,
+        "median": 0.8894580558606632,
+        "min": 0.8001526432234654
+      },
+      "joint_b_r2": {
+        "max": 0.8748679767114309,
+        "mean": 0.8118775958104132,
+        "mean_mcse": 0.005341267777616983,
+        "median": 0.8064810156750163,
+        "min": 0.7688125896598015
+      },
+      "k4_minus_k2_bic": {
+        "max": 21.26239459131841,
+        "mean": 7.53503633167553,
+        "mean_mcse": 1.7460514394671516,
+        "median": 8.592686999725743,
+        "min": -11.402711399657619
+      },
+      "morphology_a_r2": {
+        "max": 0.9198604873107297,
+        "mean": 0.8805434718445855,
+        "mean_mcse": 0.005252381651188492,
+        "median": 0.8851115655986859,
+        "min": 0.7921125114581314
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 6,
+          "failed_outcome_bounds": [
+            0.24,
+            0.24
+          ],
+          "rate": 0.24,
+          "wilson_95": [
+            0.11496313693401444,
+            0.4342968335542908
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 0,
+        "2": 18,
+        "3": 1,
+        "4": 6
+      }
+    },
+    {
+      "ari": {
+        "max": 0.668244323632875,
+        "mean": 0.45543949538458156,
+        "mean_mcse": 0.010756557275498626,
+        "median": 0.45707756034852165,
+        "min": 0.3690815744438106
+      },
+      "arm": "target_2",
+      "available": 25,
+      "cohort": "archived",
+      "ecology_b_r2": {
+        "max": 0.8336963314107306,
+        "mean": 0.7723461571591744,
+        "mean_mcse": 0.006712688109994404,
+        "median": 0.7690978812050834,
+        "min": 0.69866485597027
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.8596940965982147,
+        "mean": 0.8135055235765286,
+        "mean_mcse": 0.0052955732562049536,
+        "median": 0.8093103602901432,
+        "min": 0.7524581025670909
+      },
+      "joint_b_r2": {
+        "max": 0.7833838460726112,
+        "mean": 0.646724764708417,
+        "mean_mcse": 0.012532752484803192,
+        "median": 0.6377904982771413,
+        "min": 0.5690534457433272
+      },
+      "k4_minus_k2_bic": {
+        "max": 21.784705248926457,
+        "mean": 11.701480420561374,
+        "mean_mcse": 1.4170532622901406,
+        "median": 12.522261658857133,
+        "min": -11.377836450536734
+      },
+      "morphology_a_r2": {
+        "max": 0.9210226787487079,
+        "mean": 0.8765119026283169,
+        "mean_mcse": 0.005441593795757115,
+        "median": 0.877013797741398,
+        "min": 0.7884068245313108
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 1,
+          "failed_outcome_bounds": [
+            0.04,
+            0.04
+          ],
+          "rate": 0.04,
+          "wilson_95": [
+            0.007096233501987265,
+            0.19544063736193734
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 0,
+        "2": 24,
+        "3": 0,
+        "4": 1
+      }
+    },
+    {
+      "ari": {
+        "max": 1.0,
+        "mean": 0.5698330631403824,
+        "mean_mcse": 0.03707645954522805,
+        "median": 0.4878048780487805,
+        "min": 0.4249857387335995
+      },
+      "arm": "target_4",
+      "available": 25,
+      "cohort": "archived",
+      "ecology_b_r2": {
+        "max": 0.8336963314107306,
+        "mean": 0.7723461571591744,
+        "mean_mcse": 0.006712688109994404,
+        "median": 0.7690978812050834,
+        "min": 0.69866485597027
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.9261395858479889,
+        "mean": 0.8812207595791139,
+        "mean_mcse": 0.005189411764591432,
+        "median": 0.8816901768561308,
+        "min": 0.7969251691257926
+      },
+      "joint_b_r2": {
+        "max": 0.8752099350115355,
+        "mean": 0.8119958410141779,
+        "mean_mcse": 0.0055083295852950635,
+        "median": 0.8061497950235712,
+        "min": 0.7653091791385604
+      },
+      "k4_minus_k2_bic": {
+        "max": 21.14883447912183,
+        "mean": 7.473580002534322,
+        "mean_mcse": 1.7621201371044841,
+        "median": 8.256207193029866,
+        "min": -11.407745287581122
+      },
+      "morphology_a_r2": {
+        "max": 0.9210226787487079,
+        "mean": 0.8765119026283169,
+        "mean_mcse": 0.005441593795757115,
+        "median": 0.877013797741398,
+        "min": 0.7884068245313108
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 6,
+          "failed_outcome_bounds": [
+            0.24,
+            0.24
+          ],
+          "rate": 0.24,
+          "wilson_95": [
+            0.11496313693401444,
+            0.4342968335542908
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 0,
+        "2": 18,
+        "3": 1,
+        "4": 6
+      }
+    },
+    {
+      "ari": {
+        "max": 1.0,
+        "mean": 0.4637925713255131,
+        "mean_mcse": 0.03402929722640267,
+        "median": 0.45707756034852165,
+        "min": 0.0
+      },
+      "arm": "source_2",
+      "available": 25,
+      "cohort": "fresh_64",
+      "ecology_b_r2": {
+        "max": 0.8637083014720157,
+        "mean": 0.7770357201907919,
+        "mean_mcse": 0.009415022902535285,
+        "median": 0.7762660532199248,
+        "min": 0.6574147727490312
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.8740179678381215,
+        "mean": 0.8095183485796995,
+        "mean_mcse": 0.008575878986980055,
+        "median": 0.8049210824552876,
+        "min": 0.6648106041180692
+      },
+      "joint_b_r2": {
+        "max": 0.8206916776770592,
+        "mean": 0.6558602959225884,
+        "mean_mcse": 0.014761872751013764,
+        "median": 0.6434385469392769,
+        "min": 0.5252010659178243
+      },
+      "k4_minus_k2_bic": {
+        "max": 19.35105198168759,
+        "mean": 11.108459162244174,
+        "mean_mcse": 1.311171320925499,
+        "median": 13.481485844257378,
+        "min": -3.3794462826194263
+      },
+      "morphology_a_r2": {
+        "max": 0.9049457241510135,
+        "mean": 0.8658659303153583,
+        "mean_mcse": 0.006402931067369127,
+        "median": 0.8724593271031673,
+        "min": 0.754266804137425
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 3,
+          "failed_outcome_bounds": [
+            0.12,
+            0.12
+          ],
+          "rate": 0.12,
+          "wilson_95": [
+            0.04166817150440358,
+            0.2995579392092732
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 24,
+          "failed_outcome_bounds": [
+            0.96,
+            0.96
+          ],
+          "rate": 0.96,
+          "wilson_95": [
+            0.8045593626380625,
+            0.9929037664980127
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 1,
+        "2": 21,
+        "3": 0,
+        "4": 3
+      }
+    },
+    {
+      "ari": {
+        "max": 1.0,
+        "mean": 0.5634796445655832,
+        "mean_mcse": 0.04023789427488979,
+        "median": 0.4878048780487805,
+        "min": 0.3690815744438106
+      },
+      "arm": "source_4",
+      "available": 25,
+      "cohort": "fresh_64",
+      "ecology_b_r2": {
+        "max": 0.8637083014720157,
+        "mean": 0.7770357201907919,
+        "mean_mcse": 0.009415022902535285,
+        "median": 0.7762660532199248,
+        "min": 0.6574147727490312
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.9085349983821386,
+        "mean": 0.8713723482948865,
+        "mean_mcse": 0.0061945814142835235,
+        "median": 0.874696968825611,
+        "min": 0.7603784108626672
+      },
+      "joint_b_r2": {
+        "max": 0.8952093561232258,
+        "mean": 0.8066073333574891,
+        "mean_mcse": 0.008652609012619876,
+        "median": 0.8100145207910515,
+        "min": 0.6977970433101143
+      },
+      "k4_minus_k2_bic": {
+        "max": 26.022985464890155,
+        "mean": 6.51797536470651,
+        "mean_mcse": 3.0879257536893125,
+        "median": 9.68440320799067,
+        "min": -49.54230675418012
+      },
+      "morphology_a_r2": {
+        "max": 0.9049457241510135,
+        "mean": 0.8658659303153583,
+        "mean_mcse": 0.006402931067369127,
+        "median": 0.8724593271031673,
+        "min": 0.754266804137425
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 5,
+          "failed_outcome_bounds": [
+            0.2,
+            0.2
+          ],
+          "rate": 0.2,
+          "wilson_95": [
+            0.08860584686802572,
+            0.3913095036954033
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 0,
+        "2": 20,
+        "3": 0,
+        "4": 5
+      }
+    },
+    {
+      "ari": {
+        "max": 1.0,
+        "mean": 0.43991683437904866,
+        "mean_mcse": 0.03900872402015239,
+        "median": 0.4289788933257273,
+        "min": 0.0
+      },
+      "arm": "target_2",
+      "available": 25,
+      "cohort": "fresh_64",
+      "ecology_b_r2": {
+        "max": 0.8637083014720157,
+        "mean": 0.7770357201907919,
+        "mean_mcse": 0.009415022902535285,
+        "median": 0.7762660532199248,
+        "min": 0.6574147727490312
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.8658549088586958,
+        "mean": 0.7976061525239436,
+        "mean_mcse": 0.00840225888369275,
+        "median": 0.799550981810462,
+        "min": 0.6624926079875884
+      },
+      "joint_b_r2": {
+        "max": 0.8198144987458033,
+        "mean": 0.6557262591326988,
+        "mean_mcse": 0.014741508324625476,
+        "median": 0.6453796204503793,
+        "min": 0.5237043795067557
+      },
+      "k4_minus_k2_bic": {
+        "max": 19.021234506382882,
+        "mean": 10.816749588731533,
+        "mean_mcse": 1.3234125754715824,
+        "median": 13.501005671650262,
+        "min": -3.4153829242176243
+      },
+      "morphology_a_r2": {
+        "max": 0.8980648208355029,
+        "mean": 0.8629285438764787,
+        "mean_mcse": 0.006311752373758549,
+        "median": 0.8692113409796369,
+        "min": 0.7583448684318947
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 3,
+          "failed_outcome_bounds": [
+            0.12,
+            0.12
+          ],
+          "rate": 0.12,
+          "wilson_95": [
+            0.04166817150440358,
+            0.2995579392092732
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 23,
+          "failed_outcome_bounds": [
+            0.92,
+            0.92
+          ],
+          "rate": 0.92,
+          "wilson_95": [
+            0.7503389104960468,
+            0.9777795987151524
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 2,
+        "2": 20,
+        "3": 0,
+        "4": 3
+      }
+    },
+    {
+      "ari": {
+        "max": 1.0,
+        "mean": 0.55990405975813,
+        "mean_mcse": 0.040677944016799694,
+        "median": 0.4878048780487805,
+        "min": 0.3690815744438106
+      },
+      "arm": "target_4",
+      "available": 25,
+      "cohort": "fresh_64",
+      "ecology_b_r2": {
+        "max": 0.8637083014720157,
+        "mean": 0.7770357201907919,
+        "mean_mcse": 0.009415022902535285,
+        "median": 0.7762660532199248,
+        "min": 0.6574147727490312
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.9027389479077618,
+        "mean": 0.8684790977007544,
+        "mean_mcse": 0.00612164351464536,
+        "median": 0.8767297750326839,
+        "min": 0.7645595864981773
+      },
+      "joint_b_r2": {
+        "max": 0.8934645881870951,
+        "mean": 0.806426603852826,
+        "mean_mcse": 0.008626207324893888,
+        "median": 0.8109117981331894,
+        "min": 0.6977320337752342
+      },
+      "k4_minus_k2_bic": {
+        "max": 25.996947062269612,
+        "mean": 6.95409334004524,
+        "mean_mcse": 2.884865742869144,
+        "median": 9.557775191924406,
+        "min": -42.18228772565038
+      },
+      "morphology_a_r2": {
+        "max": 0.8980648208355029,
+        "mean": 0.8629285438764787,
+        "mean_mcse": 0.006311752373758549,
+        "median": 0.8692113409796369,
+        "min": 0.7583448684318947
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 5,
+          "failed_outcome_bounds": [
+            0.2,
+            0.2
+          ],
+          "rate": 0.2,
+          "wilson_95": [
+            0.08860584686802572,
+            0.3913095036954033
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 0,
+        "2": 20,
+        "3": 0,
+        "4": 5
+      }
+    },
+    {
+      "ari": {
+        "max": 0.8503019535435222,
+        "mean": 0.5448777858720986,
+        "mean_mcse": 0.029708058375409786,
+        "median": 0.46685379630592233,
+        "min": 0.42909343578253667
+      },
+      "arm": "source_2",
+      "available": 25,
+      "cohort": "fresh_256",
+      "ecology_b_r2": {
+        "max": 0.8032747978539646,
+        "mean": 0.772511126719466,
+        "mean_mcse": 0.003477353869872942,
+        "median": 0.7738876195754596,
+        "min": 0.7388415092730674
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.829572848188852,
+        "mean": 0.806484094310244,
+        "mean_mcse": 0.003042685588007683,
+        "median": 0.8054621852880735,
+        "min": 0.7748244676963538
+      },
+      "joint_b_r2": {
+        "max": 0.6957919264293435,
+        "mean": 0.645433793446947,
+        "mean_mcse": 0.006469866525989912,
+        "median": 0.6522482725056281,
+        "min": 0.5837915131985572
+      },
+      "k4_minus_k2_bic": {
+        "max": 20.961057695952945,
+        "mean": 7.62550115430834,
+        "mean_mcse": 1.8577893721937913,
+        "median": 10.195466827945552,
+        "min": -10.042019829841706
+      },
+      "morphology_a_r2": {
+        "max": 0.8923396171429623,
+        "mean": 0.8698709859411828,
+        "mean_mcse": 0.0023119658883984815,
+        "median": 0.8711420236794687,
+        "min": 0.8460595047867625
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 7,
+          "failed_outcome_bounds": [
+            0.28,
+            0.28
+          ],
+          "rate": 0.28,
+          "wilson_95": [
+            0.14283853850956563,
+            0.47576605190361576
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 0,
+        "2": 18,
+        "3": 0,
+        "4": 7
+      }
+    },
+    {
+      "ari": {
+        "max": 0.9483693151268848,
+        "mean": 0.9044793075220728,
+        "mean_mcse": 0.005172068604136911,
+        "median": 0.9080429600975503,
+        "min": 0.8399844751306886
+      },
+      "arm": "source_4",
+      "available": 25,
+      "cohort": "fresh_256",
+      "ecology_b_r2": {
+        "max": 0.8032747978539646,
+        "mean": 0.772511126719466,
+        "mean_mcse": 0.003477353869872942,
+        "median": 0.7738876195754596,
+        "min": 0.7388415092730674
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.893112772318899,
+        "mean": 0.8706350652604523,
+        "mean_mcse": 0.002274179314342014,
+        "median": 0.871778533509817,
+        "min": 0.8461472167421467
+      },
+      "joint_b_r2": {
+        "max": 0.8292696578508583,
+        "mean": 0.7982607342623812,
+        "mean_mcse": 0.0033491703794783978,
+        "median": 0.7990262506344014,
+        "min": 0.7650153293199908
+      },
+      "k4_minus_k2_bic": {
+        "max": -3.5591123713077195,
+        "mean": -40.237440951137714,
+        "mean_mcse": 3.2193109154220374,
+        "median": -40.78140281539902,
+        "min": -71.45388917433809
+      },
+      "morphology_a_r2": {
+        "max": 0.8923396171429623,
+        "mean": 0.8698709859411828,
+        "mean_mcse": 0.0023119658883984815,
+        "median": 0.8711420236794687,
+        "min": 0.8460595047867625
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 25
+      }
+    },
+    {
+      "ari": {
+        "max": 0.831438577455715,
+        "mean": 0.5372553430242422,
+        "mean_mcse": 0.029004061771790816,
+        "median": 0.45856274977591044,
+        "min": 0.42909343578253667
+      },
+      "arm": "target_2",
+      "available": 25,
+      "cohort": "fresh_256",
+      "ecology_b_r2": {
+        "max": 0.8032747978539646,
+        "mean": 0.772511126719466,
+        "mean_mcse": 0.003477353869872942,
+        "median": 0.7738876195754596,
+        "min": 0.7388415092730674
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.8199451762529104,
+        "mean": 0.7946137720585885,
+        "mean_mcse": 0.003131289937566336,
+        "median": 0.7936841739273052,
+        "min": 0.7532439720476141
+      },
+      "joint_b_r2": {
+        "max": 0.6958444101483714,
+        "mean": 0.6452850112671067,
+        "mean_mcse": 0.006459000508956786,
+        "median": 0.6520030382214672,
+        "min": 0.5837170972528605
+      },
+      "k4_minus_k2_bic": {
+        "max": 20.81062775380201,
+        "mean": 7.515029047665894,
+        "mean_mcse": 1.8715016824398476,
+        "median": 10.403652041893451,
+        "min": -9.836634934571975
+      },
+      "morphology_a_r2": {
+        "max": 0.8896909137594737,
+        "mean": 0.8673147791414582,
+        "mean_mcse": 0.002366629307637111,
+        "median": 0.8691410924312948,
+        "min": 0.8408514618019969
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 7,
+          "failed_outcome_bounds": [
+            0.28,
+            0.28
+          ],
+          "rate": 0.28,
+          "wilson_95": [
+            0.14283853850956563,
+            0.47576605190361576
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 0,
+        "2": 18,
+        "3": 0,
+        "4": 7
+      }
+    },
+    {
+      "ari": {
+        "max": 0.9483693151268848,
+        "mean": 0.904532225848738,
+        "mean_mcse": 0.005667629163224245,
+        "median": 0.9080429600975503,
+        "min": 0.8394198782529796
+      },
+      "arm": "target_4",
+      "available": 25,
+      "cohort": "fresh_256",
+      "ecology_b_r2": {
+        "max": 0.8032747978539646,
+        "mean": 0.772511126719466,
+        "mean_mcse": 0.003477353869872942,
+        "median": 0.7738876195754596,
+        "min": 0.7388415092730674
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.8904922061729531,
+        "mean": 0.8681174902808158,
+        "mean_mcse": 0.0023136205302179387,
+        "median": 0.8692959306311085,
+        "min": 0.8431517300997073
+      },
+      "joint_b_r2": {
+        "max": 0.8292410905656652,
+        "mean": 0.7983699812345653,
+        "mean_mcse": 0.0033256068806253604,
+        "median": 0.7988333654598068,
+        "min": 0.7656241305529075
+      },
+      "k4_minus_k2_bic": {
+        "max": -4.149117954306803,
+        "mean": -40.334025951543836,
+        "mean_mcse": 3.194844350958537,
+        "median": -40.72664987085773,
+        "min": -71.61962657487129
+      },
+      "morphology_a_r2": {
+        "max": 0.8896909137594737,
+        "mean": 0.8673147791414582,
+        "mean_mcse": 0.002366629307637111,
+        "median": 0.8691410924312948,
+        "min": 0.8408514618019969
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 25
+      }
+    },
+    {
+      "ari": null,
+      "arm": "source_2",
+      "available": 25,
+      "cohort": "independent_gaussian",
+      "ecology_b_r2": null,
+      "failed": 0,
+      "joint_a_r2": null,
+      "joint_b_r2": null,
+      "k4_minus_k2_bic": {
+        "max": 20.369208541456175,
+        "mean": 15.234307304996596,
+        "mean_mcse": 0.9137641331278722,
+        "median": 16.400380933465243,
+        "min": -2.2839659702909785
+      },
+      "morphology_a_r2": null,
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 1,
+          "failed_outcome_bounds": [
+            0.04,
+            0.04
+          ],
+          "rate": 0.04,
+          "wilson_95": [
+            0.007096233501987265,
+            0.19544063736193734
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 24,
+        "2": 1,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "ari": null,
+      "arm": "source_4",
+      "available": 25,
+      "cohort": "independent_gaussian",
+      "ecology_b_r2": null,
+      "failed": 0,
+      "joint_a_r2": null,
+      "joint_b_r2": null,
+      "k4_minus_k2_bic": {
+        "max": 31.258497801025158,
+        "mean": 21.098673709730146,
+        "mean_mcse": 1.3108334982519272,
+        "median": 22.734115151201877,
+        "min": 5.384107636660474
+      },
+      "morphology_a_r2": null,
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 25,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "ari": null,
+      "arm": "target_2",
+      "available": 25,
+      "cohort": "independent_gaussian",
+      "ecology_b_r2": null,
+      "failed": 0,
+      "joint_a_r2": null,
+      "joint_b_r2": null,
+      "k4_minus_k2_bic": {
+        "max": 21.894009055260966,
+        "mean": 16.666332467324818,
+        "mean_mcse": 0.6770823242386634,
+        "median": 17.209285597978294,
+        "min": 10.001048602676121
+      },
+      "morphology_a_r2": null,
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 25,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "ari": null,
+      "arm": "target_4",
+      "available": 25,
+      "cohort": "independent_gaussian",
+      "ecology_b_r2": null,
+      "failed": 0,
+      "joint_a_r2": null,
+      "joint_b_r2": null,
+      "k4_minus_k2_bic": {
+        "max": 31.481703235978614,
+        "mean": 22.47492153081328,
+        "mean_mcse": 0.9826213380438735,
+        "median": 21.47443665626895,
+        "min": 14.865558138919766
+      },
+      "morphology_a_r2": null,
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 1,
+          "failed_outcome_bounds": [
+            0.04,
+            0.04
+          ],
+          "rate": 0.04,
+          "wilson_95": [
+            0.007096233501987265,
+            0.19544063736193734
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 24,
+        "2": 1,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "ari": null,
+      "arm": "source_2",
+      "available": 25,
+      "cohort": "correlated_gaussian",
+      "ecology_b_r2": null,
+      "failed": 0,
+      "joint_a_r2": null,
+      "joint_b_r2": null,
+      "k4_minus_k2_bic": {
+        "max": 21.933048317195784,
+        "mean": 15.311443497463474,
+        "mean_mcse": 0.875103178836356,
+        "median": 16.99886595119341,
+        "min": 6.688385871016067
+      },
+      "morphology_a_r2": null,
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 25,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "ari": null,
+      "arm": "source_4",
+      "available": 25,
+      "cohort": "correlated_gaussian",
+      "ecology_b_r2": null,
+      "failed": 0,
+      "joint_a_r2": null,
+      "joint_b_r2": null,
+      "k4_minus_k2_bic": {
+        "max": 27.338801259465242,
+        "mean": 17.247663302045076,
+        "mean_mcse": 1.4316275597058212,
+        "median": 18.59785452579041,
+        "min": -3.1049349299086657
+      },
+      "morphology_a_r2": null,
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 25,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "ari": null,
+      "arm": "target_2",
+      "available": 25,
+      "cohort": "correlated_gaussian",
+      "ecology_b_r2": null,
+      "failed": 0,
+      "joint_a_r2": null,
+      "joint_b_r2": null,
+      "k4_minus_k2_bic": {
+        "max": 22.032785033599026,
+        "mean": 15.112740203020449,
+        "mean_mcse": 0.9051528881688331,
+        "median": 15.68459180066884,
+        "min": 5.665861360546899
+      },
+      "morphology_a_r2": null,
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 25,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "ari": null,
+      "arm": "target_4",
+      "available": 25,
+      "cohort": "correlated_gaussian",
+      "ecology_b_r2": null,
+      "failed": 0,
+      "joint_a_r2": null,
+      "joint_b_r2": null,
+      "k4_minus_k2_bic": {
+        "max": 28.963521289939308,
+        "mean": 17.89156501797131,
+        "mean_mcse": 1.6679762107067564,
+        "median": 20.13047864567136,
+        "min": -7.674877755593457
+      },
+      "morphology_a_r2": null,
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 25,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "ari": {
+        "max": 0.8442236986389731,
+        "mean": 0.40815292072184767,
+        "mean_mcse": 0.024277793272116568,
+        "median": 0.3956189844009293,
+        "min": 0.13465717816508288
+      },
+      "arm": "source_2",
+      "available": 25,
+      "cohort": "unequal_variance",
+      "ecology_b_r2": {
+        "max": 0.8034212516139585,
+        "mean": 0.7139984950496437,
+        "mean_mcse": 0.0110290349391137,
+        "median": 0.7352604740876204,
+        "min": 0.6083034924414706
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.8581322641002354,
+        "mean": 0.7697454126451491,
+        "mean_mcse": 0.010151978910455672,
+        "median": 0.7741941916348143,
+        "min": 0.6818129762744791
+      },
+      "joint_b_r2": {
+        "max": 0.7439778794189194,
+        "mean": 0.5743273861722634,
+        "mean_mcse": 0.01480384949851784,
+        "median": 0.5937047768536894,
+        "min": 0.4484048002789316
+      },
+      "k4_minus_k2_bic": {
+        "max": 15.538152537949685,
+        "mean": 2.828456471559407,
+        "mean_mcse": 1.1227563036242174,
+        "median": 2.906322777325613,
+        "min": -5.379266264490525
+      },
+      "morphology_a_r2": {
+        "max": 0.9164668529552056,
+        "mean": 0.845072538307004,
+        "mean_mcse": 0.007919182435483252,
+        "median": 0.8513702314078541,
+        "min": 0.7801150304063798
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 3,
+          "failed_outcome_bounds": [
+            0.12,
+            0.12
+          ],
+          "rate": 0.12,
+          "wilson_95": [
+            0.04166817150440358,
+            0.2995579392092732
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 0,
+        "2": 15,
+        "3": 7,
+        "4": 3
+      }
+    },
+    {
+      "ari": {
+        "max": 0.7151730257320319,
+        "mean": 0.4276517293958143,
+        "mean_mcse": 0.017539066012345398,
+        "median": 0.398635846911709,
+        "min": 0.33959499764533513
+      },
+      "arm": "source_4",
+      "available": 25,
+      "cohort": "unequal_variance",
+      "ecology_b_r2": {
+        "max": 0.8034212516139585,
+        "mean": 0.7139984950496437,
+        "mean_mcse": 0.0110290349391137,
+        "median": 0.7352604740876204,
+        "min": 0.6083034924414706
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.9205279014131931,
+        "mean": 0.8520536589816604,
+        "mean_mcse": 0.007387012557536658,
+        "median": 0.8532958910549078,
+        "min": 0.783106565110993
+      },
+      "joint_b_r2": {
+        "max": 0.8650412499166038,
+        "mean": 0.7591356937128166,
+        "mean_mcse": 0.010953567427217602,
+        "median": 0.760523087945367,
+        "min": 0.6337509992016288
+      },
+      "k4_minus_k2_bic": {
+        "max": 13.519928835673795,
+        "mean": 1.6460775273958916,
+        "mean_mcse": 1.8182713030303923,
+        "median": 5.503709229944775,
+        "min": -17.97075405790764
+      },
+      "morphology_a_r2": {
+        "max": 0.9164668529552056,
+        "mean": 0.845072538307004,
+        "mean_mcse": 0.007919182435483252,
+        "median": 0.8513702314078541,
+        "min": 0.7801150304063798
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 2,
+          "failed_outcome_bounds": [
+            0.08,
+            0.08
+          ],
+          "rate": 0.08,
+          "wilson_95": [
+            0.022220401284847563,
+            0.24966108950395313
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 0,
+        "2": 4,
+        "3": 19,
+        "4": 2
+      }
+    },
+    {
+      "ari": {
+        "max": 0.8442236986389731,
+        "mean": 0.4214381564042325,
+        "mean_mcse": 0.02673904513382593,
+        "median": 0.3956189844009293,
+        "min": 0.11088709677419355
+      },
+      "arm": "target_2",
+      "available": 25,
+      "cohort": "unequal_variance",
+      "ecology_b_r2": {
+        "max": 0.8034212516139585,
+        "mean": 0.7139984950496437,
+        "mean_mcse": 0.0110290349391137,
+        "median": 0.7352604740876204,
+        "min": 0.6083034924414706
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.8559751811294836,
+        "mean": 0.7570721590608522,
+        "mean_mcse": 0.010913035610452483,
+        "median": 0.7588147146670537,
+        "min": 0.6565357902926281
+      },
+      "joint_b_r2": {
+        "max": 0.7456031267002867,
+        "mean": 0.5744562150984958,
+        "mean_mcse": 0.014810034927500378,
+        "median": 0.5931421519922716,
+        "min": 0.44964082411754114
+      },
+      "k4_minus_k2_bic": {
+        "max": 14.75688512546759,
+        "mean": 2.3316354342860075,
+        "mean_mcse": 1.2471075602649309,
+        "median": 2.5355959105326633,
+        "min": -11.395939567968355
+      },
+      "morphology_a_r2": {
+        "max": 0.9154184803542194,
+        "mean": 0.8420516995004723,
+        "mean_mcse": 0.008060606363886355,
+        "median": 0.8458476690369718,
+        "min": 0.7774396407650764
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 5,
+          "failed_outcome_bounds": [
+            0.2,
+            0.2
+          ],
+          "rate": 0.2,
+          "wilson_95": [
+            0.08860584686802572,
+            0.3913095036954033
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 0,
+        "2": 14,
+        "3": 6,
+        "4": 5
+      }
+    },
+    {
+      "ari": {
+        "max": 0.7151730257320319,
+        "mean": 0.4183182818510952,
+        "mean_mcse": 0.017847215922385338,
+        "median": 0.398635846911709,
+        "min": 0.3244810173929306
+      },
+      "arm": "target_4",
+      "available": 25,
+      "cohort": "unequal_variance",
+      "ecology_b_r2": {
+        "max": 0.8034212516139585,
+        "mean": 0.7139984950496437,
+        "mean_mcse": 0.0110290349391137,
+        "median": 0.7352604740876204,
+        "min": 0.6083034924414706
+      },
+      "failed": 0,
+      "joint_a_r2": {
+        "max": 0.9197203793021318,
+        "mean": 0.8491737913604608,
+        "mean_mcse": 0.0075091833751608685,
+        "median": 0.8479122538507953,
+        "min": 0.781492659921729
+      },
+      "joint_b_r2": {
+        "max": 0.8651853737103927,
+        "mean": 0.759162077565985,
+        "mean_mcse": 0.010968086066129399,
+        "median": 0.7612966664902693,
+        "min": 0.6332728984996041
+      },
+      "k4_minus_k2_bic": {
+        "max": 19.59411870845679,
+        "mean": 1.7899820299129032,
+        "mean_mcse": 1.8793041168355085,
+        "median": 4.042081772063852,
+        "min": -20.550987873607028
+      },
+      "morphology_a_r2": {
+        "max": 0.9154184803542194,
+        "mean": 0.8420516995004723,
+        "mean_mcse": 0.008060606363886355,
+        "median": 0.8458476690369718,
+        "min": 0.7774396407650764
+      },
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 2,
+          "failed_outcome_bounds": [
+            0.08,
+            0.08
+          ],
+          "rate": 0.08,
+          "wilson_95": [
+            0.022220401284847563,
+            0.24966108950395313
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 25,
+          "failed_outcome_bounds": [
+            1.0,
+            1.0
+          ],
+          "rate": 1.0,
+          "wilson_95": [
+            0.8668077490609515,
+            0.9999999999999999
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 0,
+        "2": 6,
+        "3": 17,
+        "4": 2
+      }
+    },
+    {
+      "ari": null,
+      "arm": "source_2",
+      "available": 25,
+      "cohort": "cline",
+      "ecology_b_r2": null,
+      "failed": 0,
+      "joint_a_r2": null,
+      "joint_b_r2": null,
+      "k4_minus_k2_bic": {
+        "max": 21.777128383216223,
+        "mean": 14.018159451001353,
+        "mean_mcse": 1.101007835695166,
+        "median": 14.880396507475126,
+        "min": -1.3549634955037106
+      },
+      "morphology_a_r2": null,
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 25,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "ari": null,
+      "arm": "source_4",
+      "available": 25,
+      "cohort": "cline",
+      "ecology_b_r2": null,
+      "failed": 0,
+      "joint_a_r2": null,
+      "joint_b_r2": null,
+      "k4_minus_k2_bic": {
+        "max": 29.986617950879122,
+        "mean": 20.90018614815789,
+        "mean_mcse": 1.2224553452101352,
+        "median": 21.464341642460795,
+        "min": 1.3751947697923015
+      },
+      "morphology_a_r2": null,
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 25,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "ari": null,
+      "arm": "target_2",
+      "available": 25,
+      "cohort": "cline",
+      "ecology_b_r2": null,
+      "failed": 0,
+      "joint_a_r2": null,
+      "joint_b_r2": null,
+      "k4_minus_k2_bic": {
+        "max": 22.02128809198115,
+        "mean": 14.004741915787884,
+        "mean_mcse": 1.1292930276967177,
+        "median": 15.35690610392868,
+        "min": -1.4694299423266557
+      },
+      "morphology_a_r2": null,
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 25,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    {
+      "ari": null,
+      "arm": "target_4",
+      "available": 25,
+      "cohort": "cline",
+      "ecology_b_r2": null,
+      "failed": 0,
+      "joint_a_r2": null,
+      "joint_b_r2": null,
+      "k4_minus_k2_bic": {
+        "max": 29.924307013085127,
+        "mean": 20.68272566282453,
+        "mean_mcse": 1.077310493649472,
+        "median": 20.249038032520446,
+        "min": 5.713851036155745
+      },
+      "morphology_a_r2": null,
+      "rates": {
+        "four": {
+          "available": 25,
+          "events": 0,
+          "failed_outcome_bounds": [
+            0.0,
+            0.0
+          ],
+          "rate": 0.0,
+          "wilson_95": [
+            1.3877787807814457e-17,
+            0.13319225093904846
+          ]
+        },
+        "non_single": {
+          "available": 25,
+          "events": 1,
+          "failed_outcome_bounds": [
+            0.04,
+            0.04
+          ],
+          "rate": 0.04,
+          "wilson_95": [
+            0.007096233501987265,
+            0.19544063736193734
+          ]
+        }
+      },
+      "requested": 25,
+      "selected_k_counts": {
+        "1": 24,
+        "2": 1,
+        "3": 0,
+        "4": 0
+      }
+    }
+  ],
+  "unattempted_bootstrap": 0,
+  "verified_files": 22123
+}
