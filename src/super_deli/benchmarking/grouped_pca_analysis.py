@@ -14,6 +14,10 @@ from super_deli.benchmarking.recovery_analysis import _ari, _axis_check, _wilson
 from super_deli.benchmarking.recovery_inputs import DirectoryArchive, inventory
 from super_deli.benchmarking.shared_analysis import audit_stability
 from super_deli.benchmarking.shared_study import accounting, point_metrics
+from super_deli.benchmarking.tabular_pca_audit import (
+    _target_parameters,
+    audit_tabular_views,
+)
 from super_deli.io.config import read_json, write_json
 from super_deli.models.grouped_config import GroupedStudyConfig
 from super_deli.models.grouped_pca_study_config import (
@@ -24,96 +28,16 @@ from super_deli.models.grouped_pca_study_config import (
 )
 
 
-def _pca_moments(matrix, parameters, scaling):
-    import numpy as np
-
-    keep = np.flatnonzero(matrix.var(0) > 0)
-    np.testing.assert_array_equal(parameters["kept_indices"], keep)
-    expected_mean = matrix[:, keep].mean(0)
-    scale = matrix[:, keep].std(0) if scaling in {None, "standard"} else np.ones(len(keep))
-    np.testing.assert_allclose(parameters["feature_means"], expected_mean, atol=1e-11)
-    np.testing.assert_allclose(parameters["feature_scales"], scale, atol=1e-11)
-    standardized = (matrix[:, keep] - expected_mean) / scale
-    np.testing.assert_allclose(parameters["mean"], standardized.mean(0), atol=1e-12)
-    centered = standardized - standardized.mean(0)
-    covariance = centered.T @ centered / (len(matrix) - 1)
-    components = np.asarray(parameters["components"])
-    values = np.linalg.eigvalsh(covariance)[::-1][: len(components)]
-    np.testing.assert_allclose(components @ components.T, np.eye(len(components)), atol=1e-11)
-    np.testing.assert_allclose(covariance @ components.T, components.T * values, atol=1e-10)
-    np.testing.assert_allclose(parameters["explained_variance"], values, atol=1e-10)
-
-
-def _target_parameters(diagnostic, means, counts, units, draw, view):
-
-    if (
-        diagnostic["pca_fit"] != "target_means"
-        or diagnostic["pca_training_target_ids"] != [units[i] for i in draw]
-        or diagnostic["pca_training_counts"] != counts[draw].tolist()
-    ):
-        raise ValueError("Target-mean PCA training identities/counts/multiplicities disagree")
-    parameters = {
-        key: diagnostic[value]
-        for key, value in {
-            "kept_indices": "pca_kept_indices",
-            "feature_means": "pca_feature_means",
-            "feature_scales": "pca_feature_scales",
-            "components": "pca_components",
-            "mean": "pca_center",
-            "explained_variance": "pca_explained_variance",
-        }.items()
-    }
-    _pca_moments(means[draw], parameters, view.scaling)
-    return parameters
-
-
 def _point(run, record, model, values, layout, *, allow_stability=True):
-    import numpy as np
-
+    archive = DirectoryArchive(run.parent.parent)
     audit_pipeline_point(
-        DirectoryArchive(run.parent.parent),
-        record,
-        SimpleNamespace(model=model),
-        allow_stability=allow_stability,
+        archive, record, SimpleNamespace(model=model), allow_stability=allow_stability
     )
     summary = read_json(run / "summary.json")
     units = list(layout["unit_ids"])
     if summary["unit_ids"] != units or record["n_retained"] != len(units):
         raise ValueError("Retained group identities disagree")
-    order = {u: i for i, u in enumerate(units)}
-    projections = {}
-    for j, (view, design) in enumerate(zip(model.views, layout["views"], strict=True)):
-        path = run / f"view_{j:03d}"
-        source = read_json(path / "source_rows.json")
-        for key in ("unit_ids", "observation_ids", "target_ids", "feature_names"):
-            if source[key] != list(design[key]):
-                raise ValueError("Source identities/features disagree")
-        raw = np.load(path / "source_values.npy", allow_pickle=False)
-        np.testing.assert_array_equal(raw, values[view.kind])
-        target = np.array([order[u] for u in design["target_ids"]])
-        counts = np.bincount(target, minlength=len(units))
-        means = np.stack([raw[target == i].mean(0) for i in range(len(units))])
-        matrix = means if view.pca_fit == "target_means" else raw
-        with np.load(path / "parameters/pca.npz", allow_pickle=False) as pca:
-            parameters = {k: pca[k] for k in pca.files}
-        _pca_moments(matrix, parameters, view.scaling)
-        diagnostic = read_json(path / "parameters/summary.json")["diagnostics"]
-        if view.pca_fit == "target_means":
-            other = _target_parameters(
-                diagnostic, means, counts, units, np.arange(len(units)), view
-            )
-            for key, value in other.items():
-                np.testing.assert_allclose(value, parameters[key], atol=1e-12)
-        scores = (
-            (raw[:, parameters["kept_indices"]] - parameters["feature_means"])
-            / parameters["feature_scales"]
-            - parameters["mean"]
-        ) @ parameters["components"].T
-        profiles = np.stack([scores[target == i].mean(0) for i in range(len(units))])
-        with np.load(path / "parameters/profiles.npz", allow_pickle=False) as saved:
-            np.testing.assert_allclose(saved["profiles"], profiles, atol=1e-11)
-        projections[view.kind] = (raw, target, counts, means, scores, profiles)
-    return projections
+    return audit_tabular_views(archive, record["archive_prefix"] + "/run/", model, values, layout)
 
 
 def _bootstrap_pca(run, model, layout, projections):

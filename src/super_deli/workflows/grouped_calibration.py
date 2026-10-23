@@ -58,11 +58,19 @@ def run_grouped_calibration(dataset, *, config, base_dir, output_dir):
         if shared
         else ""
     )
+    target_means = any(v.pca_fit == "target_means" for v in config.model.views)
+    if target_means:
+        scope += (
+            " Morphology standardization/PCA is refitted on equally weighted raw group "
+            "means for every observed/null pipeline; source members/counts are preserved. "
+            "PCA fit level, dimensions, weights and covariance family are fixed before analysis."
+        )
     evidence_options = (
         {
             "evidence_method": (
                 "Approximate full-pipeline conditional-PSD grouped Gaussian BIC bootstrap "
-                "(prespecified shared covariance)"
+                "(prespecified shared covariance"
+                + ("; group-mean morphology PCA)" if target_means else ")")
             )
         }
         if shared

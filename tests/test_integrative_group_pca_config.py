@@ -63,11 +63,30 @@ def test_new_policy_is_scoped_and_rejected_by_calibration():
         config.model,
         views=(replace(config.model.views[0], pca_fit="target_means"), config.model.views[1]),
     )
-    with pytest.raises(ValueError, match="not yet supported"):
-        replace(config, model=new)
+    assert replace(config, model=new).model == new
+    with pytest.raises(ValueError, match="schema 2"):
+        replace(config, model=replace(new, covariance_type="full"))
     with pytest.raises(ValueError, match="not yet supported"):
         require_calibrated_pca(new)
     with pytest.raises(ValueError, match="population/locality"):
         replace(new, target_level="specimen")
     with pytest.raises(ValueError, match="morphology"):
         ViewConfig("ecology", "ecological", aggregation="mean", pca_fit="target_means")
+
+
+@pytest.mark.parametrize("legacy", [False, True])
+def test_groupmean_calibration_requires_schema_two_shared_family(legacy):
+    c = GroupedCalibrationConfig.from_dict(
+        read_json(ROOT / "examples/groupmean-calibration/calibration.json")
+    )
+    assert GroupedCalibrationConfig.from_dict(c.to_dict()) == c
+    if legacy:
+        options = dict(schema_version=1, solver=None)
+        m = replace(c.model, covariance_type="full")
+    else:
+        options = {}
+        m = replace(c.model, covariance_type="full")
+    with pytest.raises(ValueError, match="schema 2"):
+        replace(c, model=m, **options)
+    with pytest.raises(ValueError, match="no missingness or stability"):
+        replace(c, model=replace(c.model, n_bootstrap=1))

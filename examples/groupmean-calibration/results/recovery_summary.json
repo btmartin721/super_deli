@@ -1,0 +1,8 @@
+{
+  "available": 25,
+  "mean_ari": 0.524496659690563,
+  "mean_mcse": 0.03198503031370261,
+  "median_ari": 0.4878048780487805,
+  "requested": 25,
+  "scope": "Post-fit generating-partition agreement; not species truth or selected-K significance"
+}

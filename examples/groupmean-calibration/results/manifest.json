@@ -1,0 +1,25 @@
+{
+  "audit_summary_sha256": "e3e427ebfb040c6e15a4305b450b75b343dc11cee2239199772b346aa09e98ae",
+  "audited_inventory_sha256": "047449add2534b95847204c374ed41b052226c3a9d8f307023963f2bfb0c1ce4",
+  "frozen_wheel_sha256": "779fbc3bc50dcbb5e624304890c0b5e45bd5393feafb390736faab5228e68cf0",
+  "local_artifact_id": "groupmean-null-20261023",
+  "publication_files": {
+    "docs/figures/groupmean-calibration/groupmean-calibration.pdf": "569f9e367eff94b0bc5bcf03b6cd98ac0135384f348a710b474226b7c6398521",
+    "docs/figures/groupmean-calibration/groupmean-calibration.png": "3515687b8e3a671aeb4ba3a77389550c7eeff90fdb5233822c2e6bbb4feb8d19",
+    "docs/figures/groupmean-calibration/groupmean-calibration.svg": "7802bb1b5faeb3e1ecb30c7b6819f2cdbd48924cb0cb45ed1feb5f9c23acfa8f",
+    "scripts/report_groupmean_calibration.py": "b37eba80a1bf26b93df633a9a51cbc717528b48ff1c76e5ec766976610b48d44",
+    "scripts/report_shared_calibration.py": "21adf8798f56a573bc9cde3ec878d89dc5d85fe7efbd800cc17dddc6f20be901",
+    "scripts/report_shared_grouped_calibration.py": "b93ed6df3c1d6d5841007e5622533f37fe17aa16a324792840764c90dd4f2027"
+  },
+  "published_artifacts": {
+    "datasets.csv": "078684fd1cbb42f32e7110b80d13a9969693f66132c54d50179c2f747dd3bcae",
+    "diagnostics.csv": "0289df5799c38a588ac8af6367c3337c3d0fb4ccb7cbe73104c902f6ba2abe55",
+    "execution.json": "cb9d107a127f885aea15f2182328ecd390ed0f63fb9dd54df466e6fd747e2e96",
+    "recovery.csv": "483ea8a8042a147a71d5f2bc3f2205f84790502d0c1f8d5270c79a1a23c0aed2",
+    "recovery_summary.json": "0547854ab902e06329afa40416b00f8e6d96eebc24eef11ef84831b36cbca8a2",
+    "runtime_sources.json": "e5d242dd51b9bf99c142ee8c02e4fa5c7cab722235392d0e2226464cf4857abf",
+    "runtime_versions.json": "9fc214e22067c0a2dd3af4798c6ba3690af5666ff1282e1a91b68669608c6677",
+    "study.json": "07393f8527d1a272089d99fe3af9771d705442299e4399e22a1d683ddb424879",
+    "summary.json": "cf58a3032d48320272961d8927704ba0e4136d9c7b3b80271cf537fc97719afa"
+  }
+}

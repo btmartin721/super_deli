@@ -37,9 +37,10 @@ members/counts and measures algorithmic reproducibility under target resampling.
 It is neither species probability nor a significance test. Failed replicates retain
 requested denominators and identification bounds; OOB pairs have separate counts.
 
-All significance adapters reject the new policy until it receives separate
-calibration: grouped, matched continuous, raw reference, joint genomic–phenotypic,
-and frozen-score workflows. Historical p-values and archived evidence remain
+The later [schema-2 grouped calibration](groupmean-calibration.md) supports this
+policy with a prespecified shared-covariance GMM. Legacy grouped schema 1, full-
+covariance target-mean calibration, matched continuous, raw reference, joint
+genomic–phenotypic and frozen-score adapters continue to reject it. Historical p-values and archived evidence remain
 unchanged. Full covariance and two joint PCs remain available and remain defaults.
 
 ## Example

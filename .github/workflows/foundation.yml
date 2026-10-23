@@ -106,6 +106,12 @@ jobs:
           done
           super-deli analyze-grouped-calibration "$RUNNER_TEMP/shared-grouped-study" --output-dir "$RUNNER_TEMP/shared-grouped-audit"
           super-deli calibrate-grouped-integrative "$RUNNER_TEMP/shared-grouped-study/correlated_gaussian/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/shared-grouped-study/correlated_gaussian/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/shared-grouped-direct"
+          mkdir "$RUNNER_TEMP/groupmean-study"
+          for case in independent_gaussian correlated_gaussian complementary heavy_tailed zero_conditional_gaussian rank_two_gaussian weak_conditional_gaussian; do
+            super-deli benchmark-grouped-calibration "$GITHUB_WORKSPACE/examples/groupmean-calibration/smoke.json" --case "$case" --output-dir "$RUNNER_TEMP/groupmean-study/$case"
+          done
+          super-deli analyze-grouped-calibration "$RUNNER_TEMP/groupmean-study" --output-dir "$RUNNER_TEMP/groupmean-audit"
+          super-deli calibrate-grouped-integrative "$RUNNER_TEMP/groupmean-study/correlated_gaussian/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/groupmean-study/correlated_gaussian/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/groupmean-direct"
           python "$GITHUB_WORKSPACE/examples/grouped-recovery/smoke.py" --grouped-study "$GITHUB_WORKSPACE/examples/shared-grouped-calibration/smoke.json" --output-dir "$RUNNER_TEMP/grouped-recovery"
           python "$GITHUB_WORKSPACE/examples/grouped-pca/smoke.py" --source-artifacts "$RUNNER_TEMP/grouped-recovery" --output-dir "$RUNNER_TEMP/grouped-pca"
           super-deli compare-grouped-calibration "$RUNNER_TEMP/grouped-study" --current-study "$RUNNER_TEMP/boundary-study" --output-dir "$RUNNER_TEMP/boundary-paired"

@@ -151,6 +151,10 @@ def point(archive, record, policy, values, layout):
             if rows[key] != list(view[key]):
                 raise ValueError("Grouped source identities/features/counts disagree")
         np.testing.assert_array_equal(array, values[view["kind"]])
+    if any(v.pca_fit == "target_means" for v in policy.model.views):
+        from super_deli.benchmarking.tabular_pca_audit import audit_tabular_views
+
+        audit_tabular_views(archive, prefix, policy.model, values, layout)
 
 
 def audit_grouped_study(root, *, output_dir):

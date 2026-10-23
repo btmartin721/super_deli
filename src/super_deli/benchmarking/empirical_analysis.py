@@ -359,6 +359,12 @@ def audit_fitted_study(root, *, output_dir, grouped=False, backend=None):
             "Outer failures retain attempt-ledger counts without complete numerical re-audit."
         ),
     }
+    if grouped and any(v.pca_fit == "target_means" for v in study.calibration.model.views):
+        summary["audit_scope"] += (
+            " Independently reconstructed both views' PCA feature selection, training "
+            "means/scales, eigen-equations, target identities/counts, raw projections "
+            "and aggregated profiles for every successful observed/null pipeline."
+        )
     destination.mkdir(exist_ok=False)
     for name, values in (("datasets.csv", rows), ("rates.csv", rates)):
         with (destination / name).open("x", encoding="utf-8", newline="") as handle:

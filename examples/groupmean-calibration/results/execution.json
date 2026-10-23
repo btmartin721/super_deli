@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "case": "independent_gaussian",
+      "returncode": 0
+    },
+    {
+      "case": "correlated_gaussian",
+      "returncode": 0
+    },
+    {
+      "case": "complementary",
+      "returncode": 0
+    },
+    {
+      "case": "heavy_tailed",
+      "returncode": 0
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "returncode": 0
+    },
+    {
+      "case": "rank_two_gaussian",
+      "returncode": 0
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "returncode": 0
+    }
+  ],
+  "finished_utc": "2026-10-23T15:42:52.176579+00:00",
+  "mode": "study",
+  "replacement_datasets": 0,
+  "replacement_draws": 0,
+  "started_utc": "2026-10-23T15:34:54.469733+00:00",
+  "status": "complete",
+  "threads_per_job": 1,
+  "workers": 4
+}
