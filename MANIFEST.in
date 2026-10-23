@@ -44,3 +44,6 @@ recursive-include docs/figures/shared-covariance *.pdf *.svg *.png
 
 recursive-include examples/shared-calibration *.json *.csv
 recursive-include docs/figures/shared-calibration *.pdf *.svg *.png
+
+recursive-include examples/shared-grouped-calibration *.json *.csv
+recursive-include docs/figures/shared-grouped-calibration *.pdf *.svg *.png

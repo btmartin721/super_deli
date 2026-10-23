@@ -70,3 +70,14 @@ def test_solver_policy_is_bounded_and_strict(change):
         BoundarySolverConfig(**change)
     with pytest.raises(ValueError):
         BoundarySolverConfig.from_dict({"estimator": "conditional_psd_v1", "variance_floor": 1e-6})
+
+
+def test_schema_two_prespecified_family_and_legacy_bytes():
+    raw = json.loads((ROOT / "examples/boundary-calibration/calibration.json").read_text())
+    full = GroupedCalibrationConfig.from_dict(raw)
+    tied = replace(full, model=replace(full.model, covariance_type="tied"))
+    assert GroupedCalibrationConfig.from_dict(tied.to_dict()) == tied
+    assert "covariance_type" not in full.to_dict()["model"]
+    assert tied.to_dict()["model"]["covariance_type"] == "tied"
+    with pytest.raises(ValueError, match="legacy"):
+        replace(tied, schema_version=1, solver=None)
