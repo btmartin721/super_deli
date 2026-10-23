@@ -1,0 +1,22 @@
+{
+  "finished_at": "2026-10-23T04:41:07.388230+00:00",
+  "replacement_fits": 0,
+  "started_at": "2026-10-23T04:40:38.920016+00:00",
+  "status": "complete",
+  "summary": {
+    "bootstrap_or_calibration_fits": 0,
+    "datasets": 75,
+    "failed_points": 50,
+    "failed_truth_initialized": 0,
+    "inventory_sha256": "c7352b82d907883953454b1b309d55dfe8320de3450b7be1f628d00bbbb25060",
+    "planned_points": 750,
+    "planned_truth_initialized": 75,
+    "replayed_archived": 25,
+    "schema_version": 1,
+    "successful_points": 700,
+    "successful_truth_initialized": 75,
+    "unattempted_truth_initialized": 0
+  },
+  "threads_per_job": 1,
+  "workers": 4
+}

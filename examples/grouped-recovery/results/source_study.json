@@ -1,0 +1,72 @@
+{
+  "calibration": {
+    "alpha": 0.05,
+    "assume_gaussian_independent_groups": true,
+    "assume_noninformative_counts": true,
+    "gradient_tol": 1e-05,
+    "max_archive_bytes": 2147483648,
+    "max_iterations": 1000,
+    "model": {
+      "assignment_threshold": 0.0,
+      "assume_independent_units": true,
+      "covariance_type": "tied",
+      "max_iter": 500,
+      "max_k": 4,
+      "max_pairwise_bytes": 268435456,
+      "max_working_bytes": 268435456,
+      "min_cluster_size": 5,
+      "missing_views": "error",
+      "n_bootstrap": 0,
+      "n_init": 10,
+      "n_pcs": 2,
+      "n_threads": 1,
+      "random_seed": 71323,
+      "rank_tol": 1e-12,
+      "reg_covar": 1e-06,
+      "schema_version": 1,
+      "target_level": "locality",
+      "tol": 0.001,
+      "views": [
+        {
+          "aggregation": "mean",
+          "count_transform": "identity",
+          "feature_names": [],
+          "kind": "morphological",
+          "missing_policy": "error",
+          "modality": "morphological",
+          "n_pcs": 2,
+          "ploidy": null,
+          "scaling": null,
+          "shape": null,
+          "weight": 1.0
+        },
+        {
+          "aggregation": "none",
+          "count_transform": "identity",
+          "feature_names": [],
+          "kind": "ecological",
+          "missing_policy": "error",
+          "modality": "ecological",
+          "n_pcs": 2,
+          "ploidy": null,
+          "scaling": null,
+          "shape": null,
+          "weight": 1.0
+        }
+      ]
+    },
+    "n_simulations": 99,
+    "random_seed": 20261102,
+    "rank_tol": 1e-08,
+    "schema_version": 2,
+    "solver": {
+      "estimator": "conditional_psd_v1",
+      "max_line_search": 40,
+      "max_polish_iterations": 2000
+    }
+  },
+  "n_datasets": 25,
+  "n_units": 64,
+  "random_seed": 20261102,
+  "schema_version": 1
+}

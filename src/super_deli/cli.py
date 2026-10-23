@@ -314,6 +314,18 @@ def main(argv: list[str] | None = None) -> int:
     )
     recovery_audit.add_argument("config", type=Path)
     recovery_audit.add_argument("--output-dir", type=Path, required=True)
+    grouped_recovery = commands.add_parser(
+        "diagnose-grouped-recovery", help="Run the frozen grouped four-group diagnostic grid"
+    )
+    grouped_recovery.add_argument("config", type=Path)
+    grouped_recovery.add_argument("--source-artifacts", type=Path, required=True)
+    grouped_recovery.add_argument("--output-dir", type=Path, required=True)
+    grouped_recovery.add_argument("--workers", type=int, default=1)
+    grouped_recovery_audit = commands.add_parser(
+        "analyze-grouped-recovery", help="Audit grouped recovery without model refits"
+    )
+    grouped_recovery_audit.add_argument("config", type=Path)
+    grouped_recovery_audit.add_argument("--output-dir", type=Path, required=True)
     shared = commands.add_parser(
         "benchmark-shared-covariance", help="Run a frozen paired integrative covariance study"
     )
@@ -329,6 +341,25 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command == "diagnose-grouped-recovery":
+            from super_deli.benchmarking.grouped_recovery import run_grouped_recovery
+            from super_deli.models.grouped_recovery_config import GroupedRecoveryConfig
+
+            with redirect_stdout(sys.stderr):
+                summary = run_grouped_recovery(
+                    GroupedRecoveryConfig.from_dict(read_json(source)),
+                    source_artifacts=args.source_artifacts,
+                    output_dir=args.output_dir,
+                    workers=args.workers,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "analyze-grouped-recovery":
+            from super_deli.benchmarking.grouped_recovery_analysis import audit_grouped_recovery
+
+            summary = audit_grouped_recovery(source, output_dir=args.output_dir)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "benchmark-shared-covariance":
             from super_deli.benchmarking.shared_study import run_shared_study
             from super_deli.models.shared_config import SharedStudyConfig
