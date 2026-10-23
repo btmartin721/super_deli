@@ -1,0 +1,10 @@
+{
+  "large_n": 256,
+  "n_datasets": 25,
+  "random_seed": 20261104,
+  "schema_version": 1,
+  "small_n": 64,
+  "source_inventory_sha256": "927267de09e9cab01bbeef1285a4b6af28cb5132cfb6b197b7b44cc433d2d4a9",
+  "source_modules_sha256": "4165d858eff1dda990bfa4aa8a463d02bbce3eddcf5e7e10525a5a0526fd57b0",
+  "source_study_sha256": "911a0a6fc89e206611c616fb5253ff761a9c9b12bef9774df71dad6fdbd2a1f0"
+}

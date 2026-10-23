@@ -1,0 +1,781 @@
+{
+  "records": [
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 43.37196284142536,
+      "minimum_singular_value": 9.031840121747482,
+      "rank": 4,
+      "repetition": 0,
+      "source_shape": [
+        625,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 27.816601654404245,
+      "minimum_singular_value": 5.2889304536800745,
+      "rank": 4,
+      "repetition": 0,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 44.051016896672685,
+      "minimum_singular_value": 9.777208739034956,
+      "rank": 4,
+      "repetition": 1,
+      "source_shape": [
+        662,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 8.881784197001252e-16,
+      "maximum_singular_value": 27.619431428830108,
+      "minimum_singular_value": 5.040320984076878,
+      "rank": 4,
+      "repetition": 1,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 42.76588892461916,
+      "minimum_singular_value": 9.091646187458092,
+      "rank": 4,
+      "repetition": 2,
+      "source_shape": [
+        606,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 27.73803763608377,
+      "minimum_singular_value": 4.9825189158627,
+      "rank": 4,
+      "repetition": 2,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 43.750024832046066,
+      "minimum_singular_value": 9.835974432261251,
+      "rank": 4,
+      "repetition": 3,
+      "source_shape": [
+        664,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 28.59382128281003,
+      "minimum_singular_value": 4.903427686675174,
+      "rank": 4,
+      "repetition": 3,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 42.93517346483483,
+      "minimum_singular_value": 9.859667910263182,
+      "rank": 4,
+      "repetition": 4,
+      "source_shape": [
+        621,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 28.080632354805225,
+      "minimum_singular_value": 5.148281444096523,
+      "rank": 4,
+      "repetition": 4,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 43.19226039072303,
+      "minimum_singular_value": 9.567638562043138,
+      "rank": 4,
+      "repetition": 5,
+      "source_shape": [
+        633,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 27.845704117045454,
+      "minimum_singular_value": 5.285304072520954,
+      "rank": 4,
+      "repetition": 5,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 43.36167690287365,
+      "minimum_singular_value": 9.35759480288598,
+      "rank": 4,
+      "repetition": 6,
+      "source_shape": [
+        649,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 28.43999551593333,
+      "minimum_singular_value": 4.7491531782616985,
+      "rank": 4,
+      "repetition": 6,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 43.91917258397747,
+      "minimum_singular_value": 9.68135409576662,
+      "rank": 4,
+      "repetition": 7,
+      "source_shape": [
+        634,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 8.881784197001252e-16,
+      "maximum_singular_value": 28.393580083075307,
+      "minimum_singular_value": 4.923058875550382,
+      "rank": 4,
+      "repetition": 7,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 43.00408762478383,
+      "minimum_singular_value": 9.93491800682695,
+      "rank": 4,
+      "repetition": 8,
+      "source_shape": [
+        629,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 27.177493175070705,
+      "minimum_singular_value": 5.207531291592892,
+      "rank": 4,
+      "repetition": 8,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 43.337842887726666,
+      "minimum_singular_value": 9.140468262973833,
+      "rank": 4,
+      "repetition": 9,
+      "source_shape": [
+        649,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 27.631284982851444,
+      "minimum_singular_value": 5.1282015115070365,
+      "rank": 4,
+      "repetition": 9,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 43.065661679313,
+      "minimum_singular_value": 9.11843152894683,
+      "rank": 4,
+      "repetition": 10,
+      "source_shape": [
+        627,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 27.343503126898757,
+      "minimum_singular_value": 5.116746981348171,
+      "rank": 4,
+      "repetition": 10,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 43.76949619467912,
+      "minimum_singular_value": 9.70055763443733,
+      "rank": 4,
+      "repetition": 11,
+      "source_shape": [
+        654,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 27.899624991350233,
+      "minimum_singular_value": 5.189689062019261,
+      "rank": 4,
+      "repetition": 11,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 43.27967374718601,
+      "minimum_singular_value": 9.627139137047445,
+      "rank": 4,
+      "repetition": 12,
+      "source_shape": [
+        628,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 8.881784197001252e-16,
+      "maximum_singular_value": 28.191005027168416,
+      "minimum_singular_value": 5.105390204839679,
+      "rank": 4,
+      "repetition": 12,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 44.461954281330435,
+      "minimum_singular_value": 9.504952138863926,
+      "rank": 4,
+      "repetition": 13,
+      "source_shape": [
+        670,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 8.881784197001252e-16,
+      "maximum_singular_value": 27.321889640730408,
+      "minimum_singular_value": 5.57383544437464,
+      "rank": 4,
+      "repetition": 13,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 44.39773236046474,
+      "minimum_singular_value": 10.05140380533622,
+      "rank": 4,
+      "repetition": 14,
+      "source_shape": [
+        671,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 27.383096876661256,
+      "minimum_singular_value": 5.368391678805632,
+      "rank": 4,
+      "repetition": 14,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 42.380146792853644,
+      "minimum_singular_value": 10.019581094378298,
+      "rank": 4,
+      "repetition": 15,
+      "source_shape": [
+        620,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 27.361390247998372,
+      "minimum_singular_value": 5.036835329165414,
+      "rank": 4,
+      "repetition": 15,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 42.532940734867,
+      "minimum_singular_value": 10.120951549694722,
+      "rank": 4,
+      "repetition": 16,
+      "source_shape": [
+        618,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 28.32828422958933,
+      "minimum_singular_value": 5.251834103755789,
+      "rank": 4,
+      "repetition": 16,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 43.95137291899013,
+      "minimum_singular_value": 8.832194962231393,
+      "rank": 4,
+      "repetition": 17,
+      "source_shape": [
+        627,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 8.881784197001252e-16,
+      "maximum_singular_value": 28.06365623954394,
+      "minimum_singular_value": 4.97937695662465,
+      "rank": 4,
+      "repetition": 17,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 43.56335923051806,
+      "minimum_singular_value": 10.214942093467256,
+      "rank": 4,
+      "repetition": 18,
+      "source_shape": [
+        655,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 27.881177506444892,
+      "minimum_singular_value": 5.450524716674672,
+      "rank": 4,
+      "repetition": 18,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 43.99609372449723,
+      "minimum_singular_value": 9.641809828408165,
+      "rank": 4,
+      "repetition": 19,
+      "source_shape": [
+        649,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 8.881784197001252e-16,
+      "maximum_singular_value": 27.62533513687601,
+      "minimum_singular_value": 5.257544851530759,
+      "rank": 4,
+      "repetition": 19,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 43.3588867595975,
+      "minimum_singular_value": 10.012089900312654,
+      "rank": 4,
+      "repetition": 20,
+      "source_shape": [
+        656,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 28.159271820436516,
+      "minimum_singular_value": 5.098820178022914,
+      "rank": 4,
+      "repetition": 20,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 42.87984508874266,
+      "minimum_singular_value": 9.288072918146053,
+      "rank": 4,
+      "repetition": 21,
+      "source_shape": [
+        628,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 8.881784197001252e-16,
+      "maximum_singular_value": 27.638953521289814,
+      "minimum_singular_value": 5.169290683423495,
+      "rank": 4,
+      "repetition": 21,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 44.749244927104584,
+      "minimum_singular_value": 9.898242398398914,
+      "rank": 4,
+      "repetition": 22,
+      "source_shape": [
+        668,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 27.446468777208587,
+      "minimum_singular_value": 5.180151700689971,
+      "rank": 4,
+      "repetition": 22,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 44.533129905351984,
+      "minimum_singular_value": 10.104943517220162,
+      "rank": 4,
+      "repetition": 23,
+      "source_shape": [
+        671,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 28.31341554059345,
+      "minimum_singular_value": 4.618190034697079,
+      "rank": 4,
+      "repetition": 23,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    },
+    {
+      "error": "divide by zero encountered in matmul",
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 0.0,
+      "maximum_singular_value": 42.03976810409476,
+      "minimum_singular_value": 9.78136083467549,
+      "rank": 4,
+      "repetition": 24,
+      "source_shape": [
+        612,
+        4
+      ],
+      "strict_matmul": "failed",
+      "view": "morphological"
+    },
+    {
+      "finite": true,
+      "matmul_output_finite": true,
+      "maximum_difference_from_explicit_sum": 4.440892098500626e-16,
+      "maximum_singular_value": 27.919809601115976,
+      "minimum_singular_value": 5.604956145835055,
+      "rank": 4,
+      "repetition": 24,
+      "source_shape": [
+        256,
+        4
+      ],
+      "strict_matmul": "complete",
+      "view": "ecological"
+    }
+  ],
+  "scope": "Post-study raw-array arithmetic checks; no model/pipeline fits, replacement results or p-values",
+  "threadpools": []
+}
