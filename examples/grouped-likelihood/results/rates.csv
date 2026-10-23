@@ -1,0 +1,11 @@
+case,events,interpretation,max,mcse,mean,median,min,n_available,n_missing,sd,wilson_95,withheld_outcome_bounds
+independent_gaussian,0,Declared hierarchical Gaussian null,0.0,0.0,0.0,0.0,0.0,25,0,0.0,"[0.0, 0.1331922509390484]","[0.0, 0.0]"
+correlated_gaussian,1,Declared hierarchical Gaussian null,1.0,0.04,0.04,0.0,0.0,25,0,0.2,"[0.007096233501987265, 0.19544063736193729]","[0.04, 0.04]"
+complementary,18,Constructed four-group alternative,1.0,0.09165151389911681,0.72,1.0,0.0,25,0,0.45825756949558405,"[0.5242339480963842, 0.8571614614904344]","[0.72, 0.72]"
+heavy_tailed,0,Misspecification stress; not species/type-I error,0.0,0.0,0.0,0.0,0.0,25,0,0.0,"[0.0, 0.1331922509390484]","[0.0, 0.0]"
+zero_conditional_gaussian,3,Declared hierarchical Gaussian null,1.0,0.066332495807108,0.12,0.0,0.0,25,0,0.33166247903553997,"[0.041668171504403606, 0.2995579392092732]","[0.12, 0.12]"
+rank_two_gaussian,4,Declared hierarchical Gaussian null,1.0,0.07483314773547882,0.16,0.0,0.0,25,0,0.3741657386773941,"[0.0640345145667644, 0.3465362160717885]","[0.16, 0.16]"
+weak_conditional_gaussian,3,Declared hierarchical Gaussian null,1.0,0.066332495807108,0.12,0.0,0.0,25,0,0.33166247903553997,"[0.041668171504403606, 0.2995579392092732]","[0.12, 0.12]"
+unequal_variance,25,Constructed four-group alternative,1.0,0.0,1.0,1.0,1.0,25,0,0.0,"[0.8668077490609516, 1.0]","[1.0, 1.0]"
+cline,1,Misspecification stress; not species/type-I error,1.0,0.04,0.04,0.0,0.0,25,0,0.2,"[0.007096233501987265, 0.19544063736193729]","[0.04, 0.04]"
+complementary_256,25,Constructed four-group alternative,1.0,0.0,1.0,1.0,1.0,25,0,0.0,"[0.8668077490609516, 1.0]","[1.0, 1.0]"

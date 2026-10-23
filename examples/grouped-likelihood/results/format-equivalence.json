@@ -1,0 +1,17 @@
+{
+  "format_only_changes": [
+    {
+      "module": "workflows/integrative.py",
+      "frozen_sha256": "5849289675f05275b700326bb519e02b27c6f98bad3119e0bae776abc8fc495b",
+      "final_sha256": "6402a22ef88113dd946486e5a59889fcf2cd0d2664df9978c0858515c23ba809",
+      "ast_equivalent": true
+    },
+    {
+      "module": "models/integrative_config.py",
+      "frozen_sha256": "9832370f5cd0bc4f741b0a8c502fbdf81ed721aae033f6e28c7bbd71d5c058ef",
+      "final_sha256": "c53f96215e5b56c3ad11ae1f31c4c1c957e238027675634388b0a4fa4324259c",
+      "ast_equivalent": true
+    }
+  ],
+  "frozen_runtime_unchanged": true
+}

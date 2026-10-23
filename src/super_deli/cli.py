@@ -351,6 +351,23 @@ def main(argv: list[str] | None = None) -> int:
     )
     full_audit.add_argument("config", type=Path)
     full_audit.add_argument("--output-dir", type=Path, required=True)
+    likelihood = commands.add_parser(
+        "calibrate-grouped-likelihood", help="Calibrate full-pipeline grouped likelihood gain"
+    )
+    likelihood.add_argument("config", type=Path)
+    likelihood.add_argument("--calibration-config", type=Path, required=True)
+    likelihood.add_argument("--output-dir", type=Path, required=True)
+    likelihood_study = commands.add_parser(
+        "benchmark-grouped-likelihood", help="Validate grouped AIC and likelihood calibration"
+    )
+    likelihood_study.add_argument("config", type=Path)
+    likelihood_study.add_argument("--case", required=True)
+    likelihood_study.add_argument("--output-dir", type=Path, required=True)
+    likelihood_audit = commands.add_parser(
+        "analyze-grouped-likelihood", help="Audit all candidate densities without refitting"
+    )
+    likelihood_audit.add_argument("config", type=Path)
+    likelihood_audit.add_argument("--output-dir", type=Path, required=True)
     shared = commands.add_parser(
         "benchmark-shared-covariance", help="Run a frozen paired integrative covariance study"
     )
@@ -387,6 +404,37 @@ def main(argv: list[str] | None = None) -> int:
             )
 
             summary = audit_full_grouped_diagnostics(source, output_dir=args.output_dir)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "calibrate-grouped-likelihood":
+            from super_deli.models.grouped_likelihood_config import GroupedLikelihoodConfig
+            from super_deli.workflows.grouped_likelihood import run_grouped_likelihood
+
+            with redirect_stdout(sys.stderr):
+                summary = run_grouped_likelihood(
+                    load_config(source),
+                    config=GroupedLikelihoodConfig.from_dict(read_json(args.calibration_config)),
+                    base_dir=source.parent,
+                    output_dir=args.output_dir,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "benchmark-grouped-likelihood":
+            from super_deli.benchmarking.grouped_likelihood import run_grouped_likelihood_study
+            from super_deli.models.grouped_likelihood_config import GroupedLikelihoodStudyConfig
+
+            with redirect_stdout(sys.stderr):
+                summary = run_grouped_likelihood_study(
+                    GroupedLikelihoodStudyConfig.from_dict(read_json(source)),
+                    case=args.case,
+                    output_dir=args.output_dir,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "analyze-grouped-likelihood":
+            from super_deli.benchmarking.grouped_likelihood_analysis import audit_grouped_likelihood
+
+            summary = audit_grouped_likelihood(source, output_dir=args.output_dir)
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
             return 0
         if args.command == "benchmark-grouped-pca":

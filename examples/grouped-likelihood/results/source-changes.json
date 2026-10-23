@@ -1,0 +1,20 @@
+{
+  "prior_modules": 129,
+  "unchanged": 122,
+  "changed": [
+    "__init__.py",
+    "benchmarking/pipeline_analysis.py",
+    "cli.py",
+    "models/grouped_config.py",
+    "models/integrative_config.py",
+    "models/mixture.py",
+    "workflows/integrative.py"
+  ],
+  "new_modules": [
+    "benchmarking/grouped_likelihood.py",
+    "benchmarking/grouped_likelihood_analysis.py",
+    "models/grouped_likelihood_config.py",
+    "models/likelihood_selection.py",
+    "workflows/grouped_likelihood.py"
+  ]
+}

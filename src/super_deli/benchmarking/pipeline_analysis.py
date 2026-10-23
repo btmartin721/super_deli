@@ -56,6 +56,13 @@ def audit_pipeline_point(archive, record, policy, *, allow_stability=False):
     candidates = _json(archive, prefix + "candidates.json")
     n = len(run["unit_ids"])
     t, k = _selection(candidates, policy.model, n)
+    if getattr(policy.model, "selection_criterion", "bic") == "aic":
+        from super_deli.models.likelihood_selection import candidate_statistics
+
+        details = candidate_statistics(candidates)
+        if record["bic_statistic"] != t or record["bic_selected_k"] != k:
+            raise ValueError("Paired BIC comparator differs from candidate log")
+        t, k = details["statistic"], details["selected_k"]
     seed = int(np.random.SeedSequence(policy.model.random_seed).spawn(1)[0].generate_state(1)[0])
     if (
         record["statistic"] != t

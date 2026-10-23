@@ -21,6 +21,7 @@ def configuration_dict(value):
             if not (
                 (key == "covariance_type" and item == "full")
                 or (key == "pca_fit" and item == "source_rows")
+                or (key == "selection_criterion" and item == "bic")
             )
         },
     )
@@ -158,6 +159,7 @@ class IntegrativeConfig(ClusterConfig):
     max_working_bytes: int = 268435456
     schema_version: int = 1
     covariance_type: str = "full"
+    selection_criterion: str = "bic"
 
     def __post_init__(self):
         super().__post_init__()
@@ -200,6 +202,27 @@ class IntegrativeConfig(ClusterConfig):
             "locality",
         }:
             raise ValueError("Target-mean PCA requires explicit population/locality integration")
+        if not isinstance(self.selection_criterion, str) or self.selection_criterion not in {
+            "bic",
+            "aic",
+        }:
+            raise ValueError("selection_criterion must be bic or aic")
+        if self.selection_criterion == "aic" and (
+            self.covariance_type != "full"
+            or self.target_level not in {"population", "locality"}
+            or {v.kind for v in self.views} != {"morphological", "ecological"}
+            or any(
+                v.pca_fit != ("target_means" if v.kind == "morphological" else "source_rows")
+                or v.aggregation != ("mean" if v.kind == "morphological" else "none")
+                or v.missing_policy != "error"
+                or v.count_transform != "identity"
+                for v in self.views
+            )
+        ):
+            raise ValueError(
+                "AIC requires full-covariance grouped continuous views "
+                "with group-mean morphology PCA"
+            )
         if self.n_pcs > sum(v.n_pcs for v in self.views):
             raise ValueError("Joint n_pcs exceeds the declared score dimensions")
 
@@ -218,5 +241,7 @@ class IntegrativeConfig(ClusterConfig):
 
 def require_calibrated_pca(model):
     """Keep new grouped preprocessing outside unvalidated significance workflows."""
+    if model.selection_criterion != "bic":
+        raise ValueError("AIC requires the separate grouped likelihood calibration workflow")
     if any(v.pca_fit != "source_rows" for v in model.views):
         raise ValueError("Target-mean PCA significance calibration is not yet supported")

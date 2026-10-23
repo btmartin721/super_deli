@@ -223,6 +223,11 @@ def run_integrative(
             observation_ids=fit.unit_ids,
             directory=destination,
         )
+        if fit.point.candidate_arrays is not None:
+            import numpy as np
+
+            with (destination / "gmm_candidates.npz").open("xb") as handle:
+                np.savez(handle, scores=fit.pipeline.scores, **fit.point.candidate_arrays)
         views = write_integration_parameters(fit, destination)
         with (destination / "scores.csv").open("x", encoding="utf-8", newline="") as handle:
             writer = csv.writer(handle, lineterminator="\n")
@@ -316,6 +321,15 @@ def run_integrative(
                 },
             },
         }
+        if model_config.selection_criterion == "aic":
+            summary["selection_criterion"] = "aic"
+            summary["interpretation"].append(
+                "AIC component selection is a heuristic; "
+                "it is not a significance test or species count"
+            )
+            summary["provenance"]["candidate_sha256"] = fingerprint_file(
+                destination / "gmm_candidates.npz"
+            ).sha256
         write_json(summary, destination / "summary.json")
         return summary
     except Exception as exc:

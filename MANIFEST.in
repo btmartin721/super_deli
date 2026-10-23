@@ -62,3 +62,6 @@ recursive-include docs/figures/full-groupmean-calibration *.pdf *.svg *.png
 
 recursive-include examples/full-grouped-diagnostics *.json *.csv *.py
 recursive-include docs/figures/full-grouped-diagnostics *.pdf *.svg *.png
+
+recursive-include examples/grouped-likelihood *.json *.csv *.py
+recursive-include docs/figures/grouped-likelihood *.pdf *.svg *.png

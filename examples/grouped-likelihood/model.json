@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "assume_independent_units": true,
+  "target_level": "locality",
+  "random_seed": 71323,
+  "n_pcs": 4,
+  "max_k": 4,
+  "min_cluster_size": 5,
+  "n_bootstrap": 0,
+  "n_init": 10,
+  "views": [
+    {
+      "modality": "morphological",
+      "kind": "morphological",
+      "n_pcs": 2,
+      "weight": 1.0,
+      "aggregation": "mean",
+      "pca_fit": "target_means"
+    },
+    {
+      "modality": "ecological",
+      "kind": "ecological",
+      "n_pcs": 2,
+      "weight": 1.0
+    }
+  ],
+  "covariance_type": "full",
+  "selection_criterion": "aic"
+}

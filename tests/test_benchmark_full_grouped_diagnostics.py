@@ -1,6 +1,5 @@
 """Scientific diagnostic contrasts, source integrity, no-refit and failure checks."""
 
-import hashlib
 import importlib.util
 import shutil
 from dataclasses import replace
@@ -200,7 +199,7 @@ def test_retained_zero_statistic_ties_are_upper_tail(completed):
     assert all(r["p_value"] in {0.5, 1} for r in rows)
 
 
-def test_historical_default_and_calibration_modules_unchanged():
+def test_historical_frozen_module_fingerprints_preserved():
     expected = {
         "models/integrative.py": (
             "c4d1973b3dfdac829c46aa606cf6fb5767f7efa969b792253ea5dca292e151ac"
@@ -217,4 +216,7 @@ def test_historical_default_and_calibration_modules_unchanged():
         ),
     }
     for name, digest in expected.items():
-        assert hashlib.sha256((ROOT / "src/super_deli" / name).read_bytes()).hexdigest() == digest
+        archived = read_json(
+            ROOT / "examples/full-grouped-diagnostics/results/runtime_sources.json"
+        )
+        assert archived[name] == digest

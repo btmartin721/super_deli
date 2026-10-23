@@ -31,6 +31,7 @@ class MixtureFit:
     candidates: tuple[dict, ...]
     mixture: GaussianMixture
     component_order: tuple[int, ...]
+    candidate_arrays: dict[str, np.ndarray] | None = None
 
     @property
     def selected_k(self) -> int:
@@ -50,6 +51,15 @@ def select_gaussian_mixture(
     Bootstrap multiplicities enter the likelihood, but minimum component size
     counts distinct source units when ``unit_indices`` is supplied.
     """
+    criterion = getattr(config, "selection_criterion", "bic")
+    if criterion not in {"bic", "aic"} or (criterion == "aic" and covariance_type != "full"):
+        raise ValueError("Unsupported mixture selection criterion/covariance")
+    pool = {} if criterion == "aic" else None
+    if pool is not None:
+        n, d = scores.shape
+        budget = getattr(config, "max_working_bytes", 268435456)
+        if 8 * (n + d * d + d + 1) * config.max_k * (config.max_k + 1) > budget:
+            raise ValueError("Candidate retention exceeds max_working_bytes")
     candidates, accepted = [], []
     unique_count = len(scores) if unit_indices is None else len(np.unique(unit_indices))
     for k in range(1, config.max_k + 1):
@@ -93,11 +103,28 @@ def select_gaussian_mixture(
             "iterations": int(estimator.n_iter_),
             "hard_cluster_sizes": sizes.tolist(),
         }
+        if pool is not None:
+            candidate.update(
+                log_likelihood=float(estimator.score(scores) * len(scores)),
+                aic=float(estimator.aic(scores)),
+            )
+            pool.update(
+                {
+                    f"k{k}_{key}": value
+                    for key, value in {
+                        "weights": estimator.weights_,
+                        "means": estimator.means_,
+                        "covariances": estimator.covariances_,
+                        "membership": probabilities,
+                        "labels": labels,
+                    }.items()
+                }
+            )
         if unit_indices is not None:
             candidate["distinct_unit_sizes"] = distinct.tolist()
         candidates.append(candidate)
         if status == "eligible":
-            accepted.append((bic, k, estimator, probabilities))
+            accepted.append((candidate[criterion], k, estimator, probabilities))
     if not accepted:
         raise ValueError("No admissible mixture; increase sample size or reduce constraints")
     _, _, mixture, membership = min(accepted, key=lambda item: (item[0], item[1]))
@@ -106,4 +133,6 @@ def select_gaussian_mixture(
         sorted(range(mixture.n_components), key=lambda k: int(np.flatnonzero(labels == k)[0]))
     )
     membership = membership[:, order]
-    return MixtureFit(membership.argmax(axis=1), membership, tuple(candidates), mixture, order)
+    return MixtureFit(
+        membership.argmax(axis=1), membership, tuple(candidates), mixture, order, pool
+    )

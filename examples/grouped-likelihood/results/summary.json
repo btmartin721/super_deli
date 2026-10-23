@@ -1,0 +1,301 @@
+{
+  "archive_members": 799250,
+  "attempted_fits": 25000,
+  "audit_scope": "No model refits. Regenerated raw observations/draws; dense raw likelihood, constrained optimality, counts/identities, PCA moments/eigen-equations/projections, fusion and every candidate's independent Gaussian density, membership, likelihood, AIC/BIC, selection/statistics, seeds and complete upper-tail accounting. No global-optimization certification or species-boundary claim.",
+  "datasets": 250,
+  "failed_fits": 0,
+  "planned_fits": 25000,
+  "rates": [
+    {
+      "case": "independent_gaussian",
+      "events": 0,
+      "interpretation": "Declared hierarchical Gaussian null",
+      "max": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "sd": 0.0,
+      "wilson_95": [
+        0.0,
+        0.1331922509390484
+      ],
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "correlated_gaussian",
+      "events": 1,
+      "interpretation": "Declared hierarchical Gaussian null",
+      "max": 1.0,
+      "mcse": 0.04,
+      "mean": 0.04,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "sd": 0.2,
+      "wilson_95": [
+        0.007096233501987265,
+        0.19544063736193729
+      ],
+      "withheld_outcome_bounds": [
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "case": "complementary",
+      "events": 18,
+      "interpretation": "Constructed four-group alternative",
+      "max": 1.0,
+      "mcse": 0.09165151389911681,
+      "mean": 0.72,
+      "median": 1.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "sd": 0.45825756949558405,
+      "wilson_95": [
+        0.5242339480963842,
+        0.8571614614904344
+      ],
+      "withheld_outcome_bounds": [
+        0.72,
+        0.72
+      ]
+    },
+    {
+      "case": "heavy_tailed",
+      "events": 0,
+      "interpretation": "Misspecification stress; not species/type-I error",
+      "max": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "sd": 0.0,
+      "wilson_95": [
+        0.0,
+        0.1331922509390484
+      ],
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "events": 3,
+      "interpretation": "Declared hierarchical Gaussian null",
+      "max": 1.0,
+      "mcse": 0.066332495807108,
+      "mean": 0.12,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "sd": 0.33166247903553997,
+      "wilson_95": [
+        0.041668171504403606,
+        0.2995579392092732
+      ],
+      "withheld_outcome_bounds": [
+        0.12,
+        0.12
+      ]
+    },
+    {
+      "case": "rank_two_gaussian",
+      "events": 4,
+      "interpretation": "Declared hierarchical Gaussian null",
+      "max": 1.0,
+      "mcse": 0.07483314773547882,
+      "mean": 0.16,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "sd": 0.3741657386773941,
+      "wilson_95": [
+        0.0640345145667644,
+        0.3465362160717885
+      ],
+      "withheld_outcome_bounds": [
+        0.16,
+        0.16
+      ]
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "events": 3,
+      "interpretation": "Declared hierarchical Gaussian null",
+      "max": 1.0,
+      "mcse": 0.066332495807108,
+      "mean": 0.12,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "sd": 0.33166247903553997,
+      "wilson_95": [
+        0.041668171504403606,
+        0.2995579392092732
+      ],
+      "withheld_outcome_bounds": [
+        0.12,
+        0.12
+      ]
+    },
+    {
+      "case": "unequal_variance",
+      "events": 25,
+      "interpretation": "Constructed four-group alternative",
+      "max": 1.0,
+      "mcse": 0.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "sd": 0.0,
+      "wilson_95": [
+        0.8668077490609516,
+        1.0
+      ],
+      "withheld_outcome_bounds": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "case": "cline",
+      "events": 1,
+      "interpretation": "Misspecification stress; not species/type-I error",
+      "max": 1.0,
+      "mcse": 0.04,
+      "mean": 0.04,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "sd": 0.2,
+      "wilson_95": [
+        0.007096233501987265,
+        0.19544063736193729
+      ],
+      "withheld_outcome_bounds": [
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "case": "complementary_256",
+      "events": 25,
+      "interpretation": "Constructed four-group alternative",
+      "max": 1.0,
+      "mcse": 0.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "sd": 0.0,
+      "wilson_95": [
+        0.8668077490609516,
+        1.0
+      ],
+      "withheld_outcome_bounds": [
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "raw_files": 29530,
+  "schema_version": 1,
+  "status": "complete",
+  "study": {
+    "calibration": {
+      "alpha": 0.05,
+      "assume_gaussian_independent_groups": true,
+      "assume_noninformative_counts": true,
+      "gradient_tol": 1e-05,
+      "max_archive_bytes": 2147483648,
+      "max_iterations": 1000,
+      "model": {
+        "assignment_threshold": 0.0,
+        "assume_independent_units": true,
+        "max_iter": 500,
+        "max_k": 4,
+        "max_pairwise_bytes": 268435456,
+        "max_working_bytes": 268435456,
+        "min_cluster_size": 5,
+        "missing_views": "error",
+        "n_bootstrap": 0,
+        "n_init": 10,
+        "n_pcs": 4,
+        "n_threads": 1,
+        "random_seed": 71323,
+        "rank_tol": 1e-12,
+        "reg_covar": 1e-06,
+        "schema_version": 1,
+        "selection_criterion": "aic",
+        "target_level": "locality",
+        "tol": 0.001,
+        "views": [
+          {
+            "aggregation": "mean",
+            "count_transform": "identity",
+            "feature_names": [],
+            "kind": "morphological",
+            "missing_policy": "error",
+            "modality": "morphological",
+            "n_pcs": 2,
+            "pca_fit": "target_means",
+            "ploidy": null,
+            "scaling": null,
+            "shape": null,
+            "weight": 1.0
+          },
+          {
+            "aggregation": "none",
+            "count_transform": "identity",
+            "feature_names": [],
+            "kind": "ecological",
+            "missing_policy": "error",
+            "modality": "ecological",
+            "n_pcs": 2,
+            "ploidy": null,
+            "scaling": null,
+            "shape": null,
+            "weight": 1.0
+          }
+        ]
+      },
+      "n_simulations": 99,
+      "random_seed": 20261114,
+      "rank_tol": 1e-08,
+      "schema_version": 2,
+      "solver": {
+        "estimator": "conditional_psd_v1",
+        "max_line_search": 40,
+        "max_polish_iterations": 2000
+      },
+      "statistic": "max_eligible_likelihood_gain_v1"
+    },
+    "large_n": 256,
+    "n_datasets": 25,
+    "n_units": 64,
+    "random_seed": 20261114,
+    "schema_version": 1
+  },
+  "successful_fits": 25000,
+  "unattempted_fits": 0,
+  "verified_successful_pipelines": 25000
+}

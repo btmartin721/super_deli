@@ -1,0 +1,7 @@
+{
+  "observations": 250,
+  "verified_successful_pipeline_statistics": 25000,
+  "paired_tests": 500,
+  "withheld_tests": 0,
+  "scope": "Independent candidate arithmetic, all point/null statistics and upper-tail counts; no fits"
+}

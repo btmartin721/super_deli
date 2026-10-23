@@ -96,6 +96,8 @@ class GroupedCalibrationConfig:
             if not valid:
                 raise ValueError(f"{name} must be finite and strictly between zero and one")
         m = self.model
+        if m.selection_criterion != "bic":
+            raise ValueError("AIC requires the separate grouped likelihood calibration workflow")
         if (
             len(m.views) != 2
             or {v.kind for v in m.views} != {"morphological", "ecological"}

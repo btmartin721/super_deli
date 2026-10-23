@@ -1,0 +1,35 @@
+{
+  "figure_files": {
+    "grouped-likelihood.pdf": "d7bc6aeb4a177b48cf0a762fb7b6e9bacb0db0e3b392623b524fa2bea5132cb2",
+    "grouped-likelihood.png": "6ec3c4264cb038ad19757e1e48d9148f3d3b01725e91abc530ee1c6b886c8480",
+    "grouped-likelihood.svg": "5e33e19034f75fb0a76d9fc60733615fadd1a076843009c1bd7292d07fd95e15"
+  },
+  "interpretation": "Prespecified primary likelihood-gain test and secondary BIC comparison share fits/draws. No statistic/family selection or species inference is calibrated; AIC is a component selection heuristic. All p-values are approximate fitted-model departure tests.",
+  "legacy_replay_inventory_sha256": "34daff57facc5fdc1af38b6efd4ec0d3fc44021c10014a7488b69715d6ca3eed",
+  "local_artifact_id": "aic-grouped-20261023",
+  "published_artifacts": {
+    "datasets.csv": "5502fabab88a9b8f718b5bd96cd4459b982977ea469260212c0fdc28ee83b978",
+    "format-equivalence.json": "6f7a46d9bbc19bf0aeb7cf55c744a3fcae7d30dfa9ada50390b4afe926207a79",
+    "independent-tails.json": "ecadc7a60c15725ecd2318d5943df2c3c0f108c51eed7972ea18b2f18168aa7c",
+    "legacy-replay.json": "beeeb710d5a23bf76d9ff3083d5ee801ae9feba703bec933c5f2dd6a01379c72",
+    "observed_candidates.csv": "624b456354b669aecfa45813dcd4e7be7293986e63b9b56f4396586b735141a2",
+    "paired.csv": "803f3fba1c522bff1179fc88c333c863e853c9b939ecd0e2938271748aa409ce",
+    "paired.json": "5bab4254d53dc5493cd9ade82f6d06f9111f63952cc6e440d96df37c770346a1",
+    "rates.csv": "12a8b8909c60e2703fd2854540732ea0bafa8fd5f32520ce4869cab0e2531f10",
+    "reference-pins.json": "a065c312ba54558283ef12f7cbdc844c0e7c4c74f8007ae56951640a1081d73f",
+    "runtime_sources.json": "c5117c804adf6e9d098021ad5e6645fb75697698834f4b4bc6beb0ed2f353338",
+    "runtime_versions.json": "b6f08e66af5169999d79612bdcbf62fe9a0439a20099d542e07f0b965d67c7f8",
+    "source-changes.json": "39ee24b293f2861f9fd729c79ba8f06608006d6a901a368dee2d9b7a941a63c2",
+    "study-execution.json": "c9b19fd779395c0d05e4955acf36855d0adcbbd39f307ba0b84095931ab6208a",
+    "study.json": "432d3102b3c296bb06b8e7e79a53edf247ee5a0a61f674f8a2ab2ae3855325f8",
+    "summary.json": "b5d10c6a448928d67598239120ae71fa5b445fb3a8c727cf2b611a6d5a325bf5"
+  },
+  "report_script_sha256": "c89e2aac1c5f7bd42f50f31ad56f6d20c3ccb5e152df952bb7a9605ddd01b939",
+  "runtime_wheel": {
+    "sha256": "1228faf34285ec95ada74aaf9bdc96bea6be9f3ca07a302677341314b557226e",
+    "sources": 134,
+    "study_sha256": "432d3102b3c296bb06b8e7e79a53edf247ee5a0a61f674f8a2ab2ae3855325f8",
+    "wheel": "super_deli-0.31.0.dev0-py3-none-any.whl"
+  },
+  "study_inventory_sha256": "f40234a7aabce3ea14a5be612e1443eb0d529bdb793618aca374fd5dc890a504"
+}

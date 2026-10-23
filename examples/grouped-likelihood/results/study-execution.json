@@ -1,0 +1,53 @@
+{
+  "started_utc": "2026-10-23T20:32:40.476133+00:00",
+  "status": "complete",
+  "workers": 4,
+  "threads_per_job": 1,
+  "replacement_observations": 0,
+  "replacement_draws": 0,
+  "planned_unique_pipeline_fits": 25000,
+  "additional_archived_point_replays": 25,
+  "finished_utc": "2026-10-23T20:50:40.922244+00:00",
+  "cases": [
+    {
+      "case": "independent_gaussian",
+      "returncode": 0
+    },
+    {
+      "case": "correlated_gaussian",
+      "returncode": 0
+    },
+    {
+      "case": "complementary",
+      "returncode": 0
+    },
+    {
+      "case": "heavy_tailed",
+      "returncode": 0
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "returncode": 0
+    },
+    {
+      "case": "rank_two_gaussian",
+      "returncode": 0
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "returncode": 0
+    },
+    {
+      "case": "unequal_variance",
+      "returncode": 0
+    },
+    {
+      "case": "cline",
+      "returncode": 0
+    },
+    {
+      "case": "complementary_256",
+      "returncode": 0
+    }
+  ]
+}
