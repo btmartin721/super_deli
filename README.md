@@ -4,7 +4,10 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: full-covariance group-mean PCA significance calibration.**
+**Current checkpoint: full-covariance grouped power and recovery diagnosis.**
+See the [frozen diagnostic protocol](docs/full-grouped-diagnostics.md) and
+[paired results](docs/full-grouped-diagnostics-results.md).
+Defaults and historical p-values are unchanged.
 Genomic, numeric morphology/ecology and shape scores can be fused by exact unit
 IDs or explicit population/locality aggregation, with prespecified view weights.
 The package also supports individual-modality PCA/GMM, frozen-fit shape

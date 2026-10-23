@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-10-23T17:57:16.655302+00:00",
+  "workers": 4,
+  "threads_per_job": 1,
+  "replacement_fits": 0,
+  "new_significance_draws": 0,
+  "new_stability_draws": 0,
+  "status": "complete",
+  "finished_utc": "2026-10-23T17:58:05.056308+00:00"
+}

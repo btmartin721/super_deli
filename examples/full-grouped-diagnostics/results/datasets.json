@@ -1,0 +1,452 @@
+[
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 0,
+    "seed": 9909716241419506997
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 1,
+    "seed": 13478594122881483630
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 2,
+    "seed": 7034753260829465149
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 3,
+    "seed": 869687413016953253
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 4,
+    "seed": 4283902426894889288
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 5,
+    "seed": 2783721390459411597
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 6,
+    "seed": 3419375093680609849
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 7,
+    "seed": 6540196945711867858
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 8,
+    "seed": 14018228599503919961
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 9,
+    "seed": 10271857178235305991
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 10,
+    "seed": 3400815301370663166
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 11,
+    "seed": 3871553994960279480
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 12,
+    "seed": 9870197665474717039
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 13,
+    "seed": 15913218067292939501
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 14,
+    "seed": 10117360814575117859
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 15,
+    "seed": 18354094557193912476
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 16,
+    "seed": 3786766703972220100
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 17,
+    "seed": 15164461170504210611
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 18,
+    "seed": 4773919112787186398
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 19,
+    "seed": 14102214004020974075
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 20,
+    "seed": 4646426188737890844
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 21,
+    "seed": 9335900602273865724
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 22,
+    "seed": 17506835880571719625
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 23,
+    "seed": 18035360344286143959
+  },
+  {
+    "cohort": "archived",
+    "n": 64,
+    "repetition": 24,
+    "seed": 5469447401859742753
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 0,
+    "seed": 15246914143470772252
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 1,
+    "seed": 1567841239240950586
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 2,
+    "seed": 3138081265937496764
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 3,
+    "seed": 6258899703249821670
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 4,
+    "seed": 11096647718306898399
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 5,
+    "seed": 405044232098297082
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 6,
+    "seed": 1742223766301098540
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 7,
+    "seed": 11532167747522316528
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 8,
+    "seed": 329017797393284350
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 9,
+    "seed": 6621143197467452153
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 10,
+    "seed": 751234494981821001
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 11,
+    "seed": 7648994708921919331
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 12,
+    "seed": 17165887764771685854
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 13,
+    "seed": 8706970363483479352
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 14,
+    "seed": 1046800239429900476
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 15,
+    "seed": 3545489067543675731
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 16,
+    "seed": 9147389997516412802
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 17,
+    "seed": 12441300110199311442
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 18,
+    "seed": 16592903456341342818
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 19,
+    "seed": 195441735812283764
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 20,
+    "seed": 972074197407719932
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 21,
+    "seed": 1892015150044066306
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 22,
+    "seed": 18134883445292765735
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 23,
+    "seed": 12084750738945088964
+  },
+  {
+    "cohort": "fresh_64",
+    "n": 64,
+    "repetition": 24,
+    "seed": 547452632899147489
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 0,
+    "seed": 10418422626859120848
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 1,
+    "seed": 10303629392947072930
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 2,
+    "seed": 15051635591700136114
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 3,
+    "seed": 8015451338199514922
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 4,
+    "seed": 9994385018424726402
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 5,
+    "seed": 12757856340643754477
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 6,
+    "seed": 16230875180100288754
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 7,
+    "seed": 6498493680977780174
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 8,
+    "seed": 7748940410209846753
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 9,
+    "seed": 17225823439671624879
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 10,
+    "seed": 2595497358358585193
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 11,
+    "seed": 1472867883091688056
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 12,
+    "seed": 7878021878530922093
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 13,
+    "seed": 11242775819516428988
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 14,
+    "seed": 16760824900902300457
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 15,
+    "seed": 3897708467002650938
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 16,
+    "seed": 9119298178750616802
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 17,
+    "seed": 8492035324685461172
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 18,
+    "seed": 10997450314197082772
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 19,
+    "seed": 7837901774435288494
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 20,
+    "seed": 6829756417605078408
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 21,
+    "seed": 14638038972068168633
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 22,
+    "seed": 15401280980231722666
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 23,
+    "seed": 18294395144444198373
+  },
+  {
+    "cohort": "fresh_256",
+    "n": 256,
+    "repetition": 24,
+    "seed": 17542076997296877713
+  }
+]

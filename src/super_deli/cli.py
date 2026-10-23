@@ -338,6 +338,19 @@ def main(argv: list[str] | None = None) -> int:
     )
     grouped_recovery_audit.add_argument("config", type=Path)
     grouped_recovery_audit.add_argument("--output-dir", type=Path, required=True)
+    full_diagnostic = commands.add_parser(
+        "diagnose-full-grouped",
+        help="Diagnose full-covariance grouped recovery without calibration",
+    )
+    full_diagnostic.add_argument("config", type=Path)
+    full_diagnostic.add_argument("--source-artifacts", type=Path, required=True)
+    full_diagnostic.add_argument("--output-dir", type=Path, required=True)
+    full_diagnostic.add_argument("--workers", type=int, default=1)
+    full_audit = commands.add_parser(
+        "analyze-full-grouped", help="Audit full grouped diagnostics without refitting"
+    )
+    full_audit.add_argument("config", type=Path)
+    full_audit.add_argument("--output-dir", type=Path, required=True)
     shared = commands.add_parser(
         "benchmark-shared-covariance", help="Run a frozen paired integrative covariance study"
     )
@@ -353,6 +366,29 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command == "diagnose-full-grouped":
+            from super_deli.benchmarking.full_grouped_diagnostics import (
+                run_full_grouped_diagnostics,
+            )
+            from super_deli.models.full_grouped_diagnostic_config import FullGroupedDiagnosticConfig
+
+            with redirect_stdout(sys.stderr):
+                summary = run_full_grouped_diagnostics(
+                    FullGroupedDiagnosticConfig.from_dict(read_json(source)),
+                    source_artifacts=args.source_artifacts,
+                    output_dir=args.output_dir,
+                    workers=args.workers,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "analyze-full-grouped":
+            from super_deli.benchmarking.full_grouped_diagnostic_analysis import (
+                audit_full_grouped_diagnostics,
+            )
+
+            summary = audit_full_grouped_diagnostics(source, output_dir=args.output_dir)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "benchmark-grouped-pca":
             from super_deli.benchmarking.grouped_pca_study import run_grouped_pca_study
             from super_deli.models.grouped_pca_study_config import GroupedPCAStudyConfig

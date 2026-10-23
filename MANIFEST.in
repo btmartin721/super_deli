@@ -59,3 +59,6 @@ recursive-include docs/figures/groupmean-calibration *.pdf *.svg *.png
 
 recursive-include examples/full-groupmean-calibration *.json *.csv
 recursive-include docs/figures/full-groupmean-calibration *.pdf *.svg *.png
+
+recursive-include examples/full-grouped-diagnostics *.json *.csv *.py
+recursive-include docs/figures/full-grouped-diagnostics *.pdf *.svg *.png

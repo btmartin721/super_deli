@@ -1,0 +1,31 @@
+{
+  "figure_files": {
+    "full-grouped-diagnostics.pdf": "268b7e5e879ce65a11382d2ee59a373672449b5f4f4acb1bc0644949f63697c9",
+    "full-grouped-diagnostics.png": "e572e653ceb344613d2ddde0f0cdd0e3a9ba1c2f01d061f868f4f234c0cfbad3",
+    "full-grouped-diagnostics.svg": "d68ed0ad2ba82d5bb7f93e786b2a3795149e13683e8e0f4a05a98c750121e1ed"
+  },
+  "inference_scope": "Exploratory paired point diagnostics. Historical baseline p-values only; no new calibration or stability draws, no species-boundary claim.",
+  "local_artifact_id": "full-grouped-diagnostics-20261023",
+  "published_artifacts": {
+    "candidates.csv": "f3dc57b49b87cfb58c130b525cb4f506f06a677f20160f2e60ba1b93590e9278",
+    "datasets.json": "7eb87bd034895a5faedfe00ca4bec449c94b14fb5d02210a9b8d9896a5a9bd10",
+    "execution.json": "aa0997370487441633004e484437c6b4957e1fc47c0e3d8612ad8479f89d7698",
+    "mechanisms.json": "d7ad256d6f81c764045af7bbf1cb42c41332f349749a1109813a88b390e84a90",
+    "points.csv": "0cc3ce77601fd0a9262673e5c4d650ad09aefe55d1136b401a3dc2c161a2babe",
+    "retained_tails.csv": "8a5be6b172d2a83d77766158ca1847c303d9e53a0ae817b71109e3fcc4937498",
+    "runtime_sources.json": "a07d5ecd7af14e3d6a35e4e3b2a667b000a3bf7cdedede7df6b7d9b0746f9c21",
+    "runtime_versions.json": "d8cd0af75b829047f12dd7df9739146760d4d452f295c1ba1f8786b2731a8815",
+    "source_study.json": "044e7799346631677be345cf8c10edf50d1a7f1fef388091d876592746c20c63",
+    "study.json": "2293145308e16c34125e0a80946a375efccaa10fc80e4b2741c56ed2fb08216b",
+    "summary.json": "a32b72a49a9cde67d34f0115008c2fdca326f610a2bffafec8ea1c3e50df1263",
+    "truth_initialized.csv": "de00c2e28495da5d6cde89db0776af05066518f335d7f0fb9c1d8fb960e301bd"
+  },
+  "report_script_sha256": "2c2ca90f4e90718ddad8e6d0834e3e2116d972fe4c3e98c175ad2c0c096a5147",
+  "runtime_wheel": {
+    "sha256": "5bbf0df095e4991a3af08dfdc4be0190974876a8eecc11fb5caa2fe2875e63f6",
+    "sources": 129,
+    "study_sha256": "2293145308e16c34125e0a80946a375efccaa10fc80e4b2741c56ed2fb08216b",
+    "wheel": "super_deli-0.30.0.dev0-py3-none-any.whl"
+  },
+  "study_inventory_sha256": "bce5ee11d22b774c156ddc771460b12f8107571f624ac5245ef0984ee5a73fd1"
+}

@@ -1,0 +1,1807 @@
+{
+  "candidate_contrasts": [
+    {
+      "arm": "baseline",
+      "bic_gap": {
+        "max": 86.56015659101695,
+        "mean": 51.52750334293927,
+        "median": 52.3855951219204,
+        "min": 16.515611766599022,
+        "n": 25
+      },
+      "cohort": "archived",
+      "extra_penalty": {
+        "max": 187.14973875118523,
+        "mean": 187.14973875118525,
+        "median": 187.14973875118523,
+        "min": 187.14973875118523,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 170.6341269845862,
+        "mean": 135.62223540824596,
+        "median": 134.76414362926482,
+        "min": 100.58958216016828,
+        "n": 25
+      }
+    },
+    {
+      "arm": "baseline",
+      "bic_gap": {
+        "max": 78.34409067670742,
+        "mean": 45.04943925121353,
+        "median": 45.50100730256759,
+        "min": 10.250555970699224,
+        "n": 25
+      },
+      "cohort": "archived",
+      "extra_penalty": {
+        "max": 124.76649250079015,
+        "mean": 124.76649250079015,
+        "median": 124.76649250079015,
+        "min": 124.76649250079015,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 114.51593653009093,
+        "mean": 79.71705324957662,
+        "median": 79.26548519822256,
+        "min": 46.422401824082726,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_2",
+      "bic_gap": {
+        "max": 42.31147658459287,
+        "mean": 23.090404244239963,
+        "median": 21.20755666268468,
+        "min": -0.1762370552657444,
+        "n": 25
+      },
+      "cohort": "archived",
+      "extra_penalty": {
+        "max": 74.85989550047408,
+        "mean": 74.85989550047408,
+        "median": 74.85989550047408,
+        "min": 74.85989550047408,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 75.03613255573981,
+        "mean": 51.769491256234105,
+        "median": 53.65233883778939,
+        "min": 32.5484189158812,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_2",
+      "bic_gap": {
+        "max": 37.984798576999594,
+        "mean": 25.35081220307747,
+        "median": 26.36064948917641,
+        "min": 11.347321671018562,
+        "n": 25
+      },
+      "cohort": "archived",
+      "extra_penalty": {
+        "max": 49.906597000316054,
+        "mean": 49.906597000316054,
+        "median": 49.906597000316054,
+        "min": 49.906597000316054,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 38.55927532929746,
+        "mean": 24.55578479723856,
+        "median": 23.545947511139616,
+        "min": 11.921798423316432,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_3",
+      "bic_gap": {
+        "max": 66.55490167537141,
+        "mean": 36.25674596714314,
+        "median": 36.94505301876069,
+        "min": 11.140758652758223,
+        "n": 25
+      },
+      "cohort": "archived",
+      "extra_penalty": {
+        "max": 124.76649250079015,
+        "mean": 124.76649250079015,
+        "median": 124.76649250079015,
+        "min": 124.76649250079015,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 113.62573384803193,
+        "mean": 88.50974653364702,
+        "median": 87.82143948202946,
+        "min": 58.21159082541874,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_3",
+      "bic_gap": {
+        "max": 59.498140587763544,
+        "mean": 34.46351769163009,
+        "median": 36.29744350779333,
+        "min": 8.06427416431103,
+        "n": 25
+      },
+      "cohort": "archived",
+      "extra_penalty": {
+        "max": 83.17766166719342,
+        "mean": 83.1776616671934,
+        "median": 83.17766166719342,
+        "min": 83.17766166719342,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 75.1133875028824,
+        "mean": 48.714143975563346,
+        "median": 46.8802181594001,
+        "min": 23.67952107942989,
+        "n": 25
+      }
+    },
+    {
+      "arm": "starts_100",
+      "bic_gap": {
+        "max": 66.78167064441806,
+        "mean": 32.243103646720876,
+        "median": 32.94087866283553,
+        "min": -10.473777444274049,
+        "n": 25
+      },
+      "cohort": "archived",
+      "extra_penalty": {
+        "max": 187.14973875118523,
+        "mean": 187.14973875118525,
+        "median": 187.14973875118523,
+        "min": 187.14973875118523,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 197.62351619545927,
+        "mean": 154.90663510446436,
+        "median": 154.2088600883497,
+        "min": 120.36806810676717,
+        "n": 25
+      }
+    },
+    {
+      "arm": "starts_100",
+      "bic_gap": {
+        "max": 60.85620589718559,
+        "mean": 25.946057226881965,
+        "median": 26.25958093555903,
+        "min": -8.926899223936857,
+        "n": 25
+      },
+      "cohort": "archived",
+      "extra_penalty": {
+        "max": 124.76649250079015,
+        "mean": 124.76649250079015,
+        "median": 124.76649250079015,
+        "min": 124.76649250079015,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 133.693391724727,
+        "mean": 98.82043527390817,
+        "median": 98.50691156523112,
+        "min": 63.91028660360456,
+        "n": 25
+      }
+    },
+    {
+      "arm": "shared_4",
+      "bic_gap": {
+        "max": 11.441955751771332,
+        "mean": -19.000009126000784,
+        "median": -19.17018327425228,
+        "min": -49.399545889810156,
+        "n": 25
+      },
+      "cohort": "archived",
+      "extra_penalty": {
+        "max": 62.38324625039507,
+        "mean": 62.38324625039507,
+        "median": 62.38324625039507,
+        "min": 62.38324625039507,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 111.78279214020523,
+        "mean": 81.38325537639587,
+        "median": 81.55342952464736,
+        "min": 50.941290498623744,
+        "n": 25
+      }
+    },
+    {
+      "arm": "shared_4",
+      "bic_gap": {
+        "max": 23.230680358993084,
+        "mean": 6.4475700055265,
+        "median": 7.065113915972233,
+        "min": -11.25031015837476,
+        "n": 25
+      },
+      "cohort": "archived",
+      "extra_penalty": {
+        "max": 41.5888308335967,
+        "mean": 41.5888308335967,
+        "median": 41.5888308335967,
+        "min": 41.5888308335967,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 52.839140991971476,
+        "mean": 35.141260828070216,
+        "median": 34.52371691762448,
+        "min": 18.358150474603633,
+        "n": 25
+      }
+    },
+    {
+      "arm": "source_4",
+      "bic_gap": {
+        "max": 85.57075301350005,
+        "mean": 51.68959285264162,
+        "median": 52.84466667732357,
+        "min": 16.457992281515317,
+        "n": 25
+      },
+      "cohort": "archived",
+      "extra_penalty": {
+        "max": 187.14973875118523,
+        "mean": 187.14973875118525,
+        "median": 187.14973875118523,
+        "min": 187.14973875118523,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 170.6917464696699,
+        "mean": 135.4601458985436,
+        "median": 134.30507207386165,
+        "min": 101.57898573768517,
+        "n": 25
+      }
+    },
+    {
+      "arm": "source_4",
+      "bic_gap": {
+        "max": 78.78788350062888,
+        "mean": 45.83373876687406,
+        "median": 46.237892765692436,
+        "min": 7.977313265043961,
+        "n": 25
+      },
+      "cohort": "archived",
+      "extra_penalty": {
+        "max": 124.76649250079015,
+        "mean": 124.76649250079015,
+        "median": 124.76649250079015,
+        "min": 124.76649250079015,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 116.78917923574619,
+        "mean": 78.9327537339161,
+        "median": 78.52859973509771,
+        "min": 45.97860900016127,
+        "n": 25
+      }
+    },
+    {
+      "arm": "baseline",
+      "bic_gap": {
+        "max": 96.01036796913974,
+        "mean": 54.75365751117646,
+        "median": 57.604305024247424,
+        "min": 4.664289319292777,
+        "n": 25
+      },
+      "cohort": "fresh_64",
+      "extra_penalty": {
+        "max": 187.14973875118523,
+        "mean": 187.14973875118525,
+        "median": 187.14973875118523,
+        "min": 187.14973875118523,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 182.48544943189245,
+        "mean": 132.39608124000875,
+        "median": 129.5454337269378,
+        "min": 91.13937078204549,
+        "n": 25
+      }
+    },
+    {
+      "arm": "baseline",
+      "bic_gap": {
+        "max": 73.12326945030156,
+        "mean": 53.03074473984472,
+        "median": 58.66095432418342,
+        "min": 24.996618949467575,
+        "n": 25
+      },
+      "cohort": "fresh_64",
+      "extra_penalty": {
+        "max": 124.76649250079015,
+        "mean": 124.76649250079015,
+        "median": 124.76649250079015,
+        "min": 124.76649250079015,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 99.76987355132258,
+        "mean": 71.73574776094543,
+        "median": 66.10553817660673,
+        "min": 51.64322305048859,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_2",
+      "bic_gap": {
+        "max": 37.76609344315108,
+        "mean": 20.38549401089226,
+        "median": 19.071204030747822,
+        "min": 1.1996157713699063,
+        "n": 25
+      },
+      "cohort": "fresh_64",
+      "extra_penalty": {
+        "max": 74.85989550047408,
+        "mean": 74.85989550047408,
+        "median": 74.85989550047408,
+        "min": 74.85989550047408,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 73.66027972910416,
+        "mean": 54.474401489581815,
+        "median": 55.788691469726245,
+        "min": 37.09380205732299,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_2",
+      "bic_gap": {
+        "max": 37.95634419939802,
+        "mean": 26.564553794760574,
+        "median": 27.382286826555003,
+        "min": 13.848608009763211,
+        "n": 25
+      },
+      "cohort": "fresh_64",
+      "extra_penalty": {
+        "max": 49.906597000316054,
+        "mean": 49.906597000316054,
+        "median": 49.906597000316054,
+        "min": 49.906597000316054,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 36.057988990552815,
+        "mean": 23.342043205555456,
+        "median": 22.524310173761023,
+        "min": 11.950252800918008,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_3",
+      "bic_gap": {
+        "max": 63.89325649856204,
+        "mean": 33.02380401291176,
+        "median": 35.11537627078985,
+        "min": -1.6288171229751924,
+        "n": 25
+      },
+      "cohort": "fresh_64",
+      "extra_penalty": {
+        "max": 124.76649250079015,
+        "mean": 124.76649250079015,
+        "median": 124.76649250079015,
+        "min": 124.76649250079015,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 126.39530962376534,
+        "mean": 91.74268848787837,
+        "median": 89.6511162300003,
+        "min": 60.87323600222811,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_3",
+      "bic_gap": {
+        "max": 56.795293765775966,
+        "mean": 35.13453950511883,
+        "median": 39.36816772668698,
+        "min": 14.5275361166523,
+        "n": 25
+      },
+      "cohort": "fresh_64",
+      "extra_penalty": {
+        "max": 83.17766166719342,
+        "mean": 83.1776616671934,
+        "median": 83.17766166719342,
+        "min": 83.17766166719342,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 68.65012555054113,
+        "mean": 48.043122162074596,
+        "median": 43.80949394050646,
+        "min": 26.382367901417467,
+        "n": 25
+      }
+    },
+    {
+      "arm": "starts_100",
+      "bic_gap": {
+        "max": 85.51940707747326,
+        "mean": 38.67345060416148,
+        "median": 34.19973239876498,
+        "min": 4.664289319292777,
+        "n": 25
+      },
+      "cohort": "fresh_64",
+      "extra_penalty": {
+        "max": 187.14973875118523,
+        "mean": 187.14973875118525,
+        "median": 187.14973875118523,
+        "min": 187.14973875118523,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 182.48544943189245,
+        "mean": 148.47628814702375,
+        "median": 152.95000635242025,
+        "min": 101.63033167371196,
+        "n": 25
+      }
+    },
+    {
+      "arm": "starts_100",
+      "bic_gap": {
+        "max": 67.17054773227841,
+        "mean": 36.96212794673374,
+        "median": 30.79911446930231,
+        "min": 10.324192345015888,
+        "n": 25
+      },
+      "cohort": "fresh_64",
+      "extra_penalty": {
+        "max": 124.76649250079015,
+        "mean": 124.76649250079015,
+        "median": 124.76649250079015,
+        "min": 124.76649250079015,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 114.44230015577426,
+        "mean": 87.8043645540564,
+        "median": 93.96737803148784,
+        "min": 57.59594476851174,
+        "n": 25
+      }
+    },
+    {
+      "arm": "shared_4",
+      "bic_gap": {
+        "max": 4.091432484967527,
+        "mean": -19.56053290743721,
+        "median": -16.348148452242015,
+        "min": -51.48083521640643,
+        "n": 25
+      },
+      "cohort": "fresh_64",
+      "extra_penalty": {
+        "max": 62.38324625039507,
+        "mean": 62.38324625039507,
+        "median": 62.38324625039507,
+        "min": 62.38324625039507,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 113.86408146680151,
+        "mean": 81.94377915783228,
+        "median": 78.73139470263709,
+        "min": 58.29181376542755,
+        "n": 25
+      }
+    },
+    {
+      "arm": "shared_4",
+      "bic_gap": {
+        "max": 23.43061681490434,
+        "mean": 8.659329062612779,
+        "median": 11.472284582029658,
+        "min": -31.539801626591498,
+        "n": 25
+      },
+      "cohort": "fresh_64",
+      "extra_penalty": {
+        "max": 41.5888308335967,
+        "mean": 41.5888308335967,
+        "median": 41.5888308335967,
+        "min": 41.5888308335967,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 73.12863246018821,
+        "mean": 32.92950177098393,
+        "median": 30.11654625156706,
+        "min": 18.158214018692377,
+        "n": 25
+      }
+    },
+    {
+      "arm": "source_4",
+      "bic_gap": {
+        "max": 94.29930343187112,
+        "mean": 55.3702086985043,
+        "median": 58.281430591564174,
+        "min": 4.387699560611509,
+        "n": 25
+      },
+      "cohort": "fresh_64",
+      "extra_penalty": {
+        "max": 187.14973875118523,
+        "mean": 187.14973875118525,
+        "median": 187.14973875118523,
+        "min": 187.14973875118523,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 182.76203919057372,
+        "mean": 131.7795300526809,
+        "median": 128.86830815962105,
+        "min": 92.8504353193141,
+        "n": 25
+      }
+    },
+    {
+      "arm": "source_4",
+      "bic_gap": {
+        "max": 77.71888279167757,
+        "mean": 54.47799233811216,
+        "median": 58.82983796265353,
+        "min": 24.197405606099778,
+        "n": 25
+      },
+      "cohort": "fresh_64",
+      "extra_penalty": {
+        "max": 124.76649250079015,
+        "mean": 124.76649250079015,
+        "median": 124.76649250079015,
+        "min": 124.76649250079015,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 100.56908689469037,
+        "mean": 70.28850016267799,
+        "median": 65.93665453813662,
+        "min": 47.04760970911258,
+        "n": 25
+      }
+    },
+    {
+      "arm": "baseline",
+      "bic_gap": {
+        "max": 1.5206736805532728,
+        "mean": -47.482496260660554,
+        "median": -42.944410315060395,
+        "min": -110.64969434677755,
+        "n": 25
+      },
+      "cohort": "fresh_256",
+      "extra_penalty": {
+        "max": 249.5329850015803,
+        "mean": 249.5329850015803,
+        "median": 249.5329850015803,
+        "min": 249.5329850015803,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 360.18267934835785,
+        "mean": 297.0154812622409,
+        "median": 292.4773953166407,
+        "min": 248.01231132102703,
+        "n": 25
+      }
+    },
+    {
+      "arm": "baseline",
+      "bic_gap": {
+        "max": 79.31117694863133,
+        "mean": 46.4541951470841,
+        "median": 53.17724013454654,
+        "min": 8.687961186833263,
+        "n": 25
+      },
+      "cohort": "fresh_256",
+      "extra_penalty": {
+        "max": 166.35532333438684,
+        "mean": 166.3553233343868,
+        "median": 166.35532333438684,
+        "min": 166.35532333438684,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 157.6673621475536,
+        "mean": 119.90112818730276,
+        "median": 113.17808319984033,
+        "min": 87.04414638575554,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_2",
+      "bic_gap": {
+        "max": 6.113022055933925,
+        "mean": -24.250827609707606,
+        "median": -19.86338859289617,
+        "min": -77.27240022343744,
+        "n": 25
+      },
+      "cohort": "fresh_256",
+      "extra_penalty": {
+        "max": 99.81319400063212,
+        "mean": 99.81319400063212,
+        "median": 99.81319400063212,
+        "min": 99.81319400063212,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 177.0855942240696,
+        "mean": 124.06402161033976,
+        "median": 119.67658259352834,
+        "min": 93.70017194469824,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_2",
+      "bic_gap": {
+        "max": 54.76381877964968,
+        "mean": 33.87491231716728,
+        "median": 36.13493109113847,
+        "min": 14.622207896426062,
+        "n": 25
+      },
+      "cohort": "fresh_256",
+      "extra_penalty": {
+        "max": 66.54212933375476,
+        "mean": 66.54212933375476,
+        "median": 66.54212933375476,
+        "min": 66.54212933375476,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 51.91992143732864,
+        "mean": 32.66721701658742,
+        "median": 30.407198242616232,
+        "min": 11.778310554105019,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_3",
+      "bic_gap": {
+        "max": 5.92154884009733,
+        "mean": -25.80805684734848,
+        "median": -17.615834028176096,
+        "min": -80.63307107446985,
+        "n": 25
+      },
+      "cohort": "fresh_256",
+      "extra_penalty": {
+        "max": 166.35532333438687,
+        "mean": 166.35532333438684,
+        "median": 166.35532333438687,
+        "min": 166.35532333438687,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 246.98839440885683,
+        "mean": 192.16338018173545,
+        "median": 183.97115736256308,
+        "min": 160.43377449428965,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_3",
+      "bic_gap": {
+        "max": 63.15752098328085,
+        "mean": 28.433962655196055,
+        "median": 29.09716130387187,
+        "min": -9.24379324637971,
+        "n": 25
+      },
+      "cohort": "fresh_256",
+      "extra_penalty": {
+        "max": 110.90354888959124,
+        "mean": 110.90354888959124,
+        "median": 110.90354888959124,
+        "min": 110.90354888959124,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 120.14734213597092,
+        "mean": 82.46958623439515,
+        "median": 81.80638758571934,
+        "min": 47.74602790631036,
+        "n": 25
+      }
+    },
+    {
+      "arm": "starts_100",
+      "bic_gap": {
+        "max": 1.5206736805532728,
+        "mean": -47.50186486803763,
+        "median": -42.944410315060395,
+        "min": -110.64969434677732,
+        "n": 25
+      },
+      "cohort": "fresh_256",
+      "extra_penalty": {
+        "max": 249.5329850015803,
+        "mean": 249.5329850015803,
+        "median": 249.5329850015803,
+        "min": 249.5329850015803,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 360.1826793483576,
+        "mean": 297.0348498696179,
+        "median": 292.4773953166407,
+        "min": 248.01231132102703,
+        "n": 25
+      }
+    },
+    {
+      "arm": "starts_100",
+      "bic_gap": {
+        "max": 79.31117694863133,
+        "mean": 46.43543318381181,
+        "median": 53.181252071937706,
+        "min": 8.687961186833263,
+        "n": 25
+      },
+      "cohort": "fresh_256",
+      "extra_penalty": {
+        "max": 166.35532333438684,
+        "mean": 166.3553233343868,
+        "median": 166.35532333438684,
+        "min": 166.35532333438684,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 157.6673621475536,
+        "mean": 119.91989015057504,
+        "median": 113.17407126244916,
+        "min": 87.04414638575554,
+        "n": 25
+      }
+    },
+    {
+      "arm": "shared_4",
+      "bic_gap": {
+        "max": -123.59737977132909,
+        "mean": -181.1563045477328,
+        "median": -167.9506253228392,
+        "min": -253.5393364037625,
+        "n": 25
+      },
+      "cohort": "fresh_256",
+      "extra_penalty": {
+        "max": 83.17766166719345,
+        "mean": 83.17766166719346,
+        "median": 83.17766166719345,
+        "min": 83.17766166719345,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 336.7169980709559,
+        "mean": 264.33396621492625,
+        "median": 251.12828699003262,
+        "min": 206.77504143852252,
+        "n": 25
+      }
+    },
+    {
+      "arm": "shared_4",
+      "bic_gap": {
+        "max": -7.493269964460524,
+        "mean": -41.04141303403615,
+        "median": -32.81332129887528,
+        "min": -79.5671445259726,
+        "n": 25
+      },
+      "cohort": "fresh_256",
+      "extra_penalty": {
+        "max": 55.45177444479563,
+        "mean": 55.45177444479563,
+        "median": 55.45177444479563,
+        "min": 55.45177444479563,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 135.01891897076814,
+        "mean": 96.49318747883167,
+        "median": 88.26509574367083,
+        "min": 62.94504440925607,
+        "n": 25
+      }
+    },
+    {
+      "arm": "source_4",
+      "bic_gap": {
+        "max": -2.025813941898832,
+        "mean": -51.62480157262493,
+        "median": -46.19917508274398,
+        "min": -112.21871151654705,
+        "n": 25
+      },
+      "cohort": "fresh_256",
+      "extra_penalty": {
+        "max": 249.5329850015803,
+        "mean": 249.5329850015803,
+        "median": 249.5329850015803,
+        "min": 249.5329850015803,
+        "n": 25
+      },
+      "lower_k": 1,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 361.75169651812735,
+        "mean": 301.15778657420526,
+        "median": 295.7321600843243,
+        "min": 251.55879894347913,
+        "n": 25
+      }
+    },
+    {
+      "arm": "source_4",
+      "bic_gap": {
+        "max": 79.44803929895124,
+        "mean": 46.63345684060066,
+        "median": 51.3921851990151,
+        "min": 8.904322666550115,
+        "n": 25
+      },
+      "cohort": "fresh_256",
+      "extra_penalty": {
+        "max": 166.35532333438684,
+        "mean": 166.3553233343868,
+        "median": 166.35532333438684,
+        "min": 166.35532333438684,
+        "n": 25
+      },
+      "lower_k": 2,
+      "scope": "All converged logged candidates, including small components; within one score space",
+      "twice_ll_gain": {
+        "max": 157.45100066783675,
+        "mean": 119.72186649378622,
+        "median": 114.96313813537176,
+        "min": 86.90728403543562,
+        "n": 25
+      }
+    }
+  ],
+  "oracles": [
+    {
+      "available": 25,
+      "bic_minus_same_k": {
+        "max": 55.43557192013316,
+        "mean": 15.22531935377351,
+        "median": 7.296151197301015,
+        "min": -15.889061996906435,
+        "n": 25
+      },
+      "bic_minus_selected": {
+        "max": 98.24155073276472,
+        "mean": 68.50084755444638,
+        "median": 69.76634383622223,
+        "min": 34.223892716866544,
+        "n": 25
+      },
+      "cohort": "archived",
+      "eligible": 25,
+      "partition": "four",
+      "scope": "Separate truth-based initialization; negative tiny gaps may reflect numerical convergence tolerances"
+    },
+    {
+      "available": 25,
+      "bic_minus_same_k": {
+        "max": 14.335747561401718,
+        "mean": 0.5774112719398249,
+        "median": 5.384598011914932e-07,
+        "min": -6.667893048640792,
+        "n": 25
+      },
+      "bic_minus_selected": {
+        "max": 25.91649664023629,
+        "mean": 8.803500221399169,
+        "median": 8.219866664411882,
+        "min": -1.0166274932998931e-08,
+        "n": 25
+      },
+      "cohort": "archived",
+      "eligible": 25,
+      "partition": "axis_a",
+      "scope": "Separate truth-based initialization; negative tiny gaps may reflect numerical convergence tolerances"
+    },
+    {
+      "available": 25,
+      "bic_minus_same_k": {
+        "max": 45.55128752008841,
+        "mean": 14.13453698630443,
+        "median": 12.36050248440256,
+        "min": -0.00019730293968223123,
+        "n": 25
+      },
+      "bic_minus_selected": {
+        "max": 46.25265197884238,
+        "mean": 22.360625935763775,
+        "median": 22.019954601806262,
+        "min": 1.083453760509201,
+        "n": 25
+      },
+      "cohort": "archived",
+      "eligible": 25,
+      "partition": "axis_b",
+      "scope": "Separate truth-based initialization; negative tiny gaps may reflect numerical convergence tolerances"
+    },
+    {
+      "available": 25,
+      "bic_minus_same_k": {
+        "max": 49.167732907984316,
+        "mean": 10.402076250880203,
+        "median": 5.6715717216158055,
+        "min": -9.29091081906887,
+        "n": 25
+      },
+      "bic_minus_selected": {
+        "max": 100.56916079978379,
+        "mean": 69.26139544518306,
+        "median": 69.79848502758648,
+        "min": 33.34520227214574,
+        "n": 25
+      },
+      "cohort": "fresh_64",
+      "eligible": 25,
+      "partition": "four",
+      "scope": "Separate truth-based initialization; negative tiny gaps may reflect numerical convergence tolerances"
+    },
+    {
+      "available": 25,
+      "bic_minus_same_k": {
+        "max": 10.179906052268393,
+        "mean": 0.4625819840153986,
+        "median": 1.1909548902622191e-08,
+        "min": -1.129025532036394,
+        "n": 25
+      },
+      "bic_minus_selected": {
+        "max": 22.8937780495865,
+        "mean": 6.291156438473531,
+        "median": 0.4886940413114189,
+        "min": -0.0008086727924023762,
+        "n": 25
+      },
+      "cohort": "fresh_64",
+      "eligible": 25,
+      "partition": "axis_a",
+      "scope": "Separate truth-based initialization; negative tiny gaps may reflect numerical convergence tolerances"
+    },
+    {
+      "available": 25,
+      "bic_minus_same_k": {
+        "max": 52.38874442179247,
+        "mean": 23.908538005929167,
+        "median": 22.826557644524257,
+        "min": -0.0005491622741828905,
+        "n": 25
+      },
+      "bic_minus_selected": {
+        "max": 52.38874442179247,
+        "mean": 29.737112460387298,
+        "median": 29.83696992520578,
+        "min": 12.601457743467392,
+        "n": 25
+      },
+      "cohort": "fresh_64",
+      "eligible": 25,
+      "partition": "axis_b",
+      "scope": "Separate truth-based initialization; negative tiny gaps may reflect numerical convergence tolerances"
+    },
+    {
+      "available": 25,
+      "bic_minus_same_k": {
+        "max": 5.618697909703769,
+        "mean": -0.05647128313603389,
+        "median": 0.03379681712999627,
+        "min": -5.182667726078307,
+        "n": 25
+      },
+      "bic_minus_selected": {
+        "max": 79.70203844156663,
+        "mean": 47.22241690123971,
+        "median": 51.97534281571279,
+        "min": 11.218302400431412,
+        "n": 25
+      },
+      "cohort": "fresh_256",
+      "eligible": 25,
+      "partition": "four",
+      "scope": "Separate truth-based initialization; negative tiny gaps may reflect numerical convergence tolerances"
+    },
+    {
+      "available": 25,
+      "bic_minus_same_k": {
+        "max": 0.14616580645883914,
+        "mean": -0.01735206214065329,
+        "median": -0.0003354362509071507,
+        "min": -0.24704406063733586,
+        "n": 25
+      },
+      "bic_minus_selected": {
+        "max": 12.681776323404847,
+        "mean": 0.8073409751509917,
+        "median": 0.00010691097941162298,
+        "min": -0.24704406063733586,
+        "n": 25
+      },
+      "cohort": "fresh_256",
+      "eligible": 25,
+      "partition": "axis_a",
+      "scope": "Separate truth-based initialization; negative tiny gaps may reflect numerical convergence tolerances"
+    },
+    {
+      "available": 25,
+      "bic_minus_same_k": {
+        "max": 141.76876102869255,
+        "mean": 77.47081095141391,
+        "median": 78.78810644306327,
+        "min": 12.498649094337452,
+        "n": 25
+      },
+      "bic_minus_selected": {
+        "max": 141.76876102869255,
+        "mean": 78.29550398870555,
+        "median": 78.78810644306327,
+        "min": 15.959833089411177,
+        "n": 25
+      },
+      "cohort": "fresh_256",
+      "eligible": 25,
+      "partition": "axis_b",
+      "scope": "Separate truth-based initialization; negative tiny gaps may reflect numerical convergence tolerances"
+    }
+  ],
+  "paired_scores": [
+    {
+      "arm": "shared_4",
+      "cohort": "archived",
+      "exactly_identical": 25,
+      "tested": 25
+    },
+    {
+      "arm": "starts_100",
+      "cohort": "archived",
+      "exactly_identical": 25,
+      "tested": 25
+    },
+    {
+      "arm": "shared_4",
+      "cohort": "fresh_64",
+      "exactly_identical": 25,
+      "tested": 25
+    },
+    {
+      "arm": "starts_100",
+      "cohort": "fresh_64",
+      "exactly_identical": 25,
+      "tested": 25
+    },
+    {
+      "arm": "shared_4",
+      "cohort": "fresh_256",
+      "exactly_identical": 25,
+      "tested": 25
+    },
+    {
+      "arm": "starts_100",
+      "cohort": "fresh_256",
+      "exactly_identical": 25,
+      "tested": 25
+    }
+  ],
+  "signal": [
+    {
+      "arm": "baseline",
+      "cohort": "archived",
+      "ecology_raw_b": {
+        "max": 0.8900299494707016,
+        "mean": 0.8437503588257239,
+        "median": 0.8443191105686912,
+        "min": 0.7912832859504986,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 1.0,
+          "mean": 0.7879199412985924,
+          "median": 0.9494921411028989,
+          "min": 0.0,
+          "n": 6
+        },
+        "b": {
+          "max": 0.8285353655857574,
+          "mean": 0.13820676841679663,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 6
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9312376982540764,
+        "mean": 0.9028821776776403,
+        "median": 0.9014041864743993,
+        "min": 0.8644671670574213,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_2",
+      "cohort": "archived",
+      "ecology_raw_b": {
+        "max": 0.8900299494707016,
+        "mean": 0.8437503588257239,
+        "median": 0.8443191105686912,
+        "min": 0.7912832859504986,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 1.0,
+          "mean": 0.7906261011156038,
+          "median": 0.7988769164576416,
+          "min": 0.336526295394981,
+          "n": 12
+        },
+        "b": {
+          "max": 0.23480533268575576,
+          "mean": 0.02140059647608528,
+          "median": 0.0007108080996590662,
+          "min": 0.0,
+          "n": 12
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9312376982540764,
+        "mean": 0.9028821776776403,
+        "median": 0.9014041864743993,
+        "min": 0.8644671670574213,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_3",
+      "cohort": "archived",
+      "ecology_raw_b": {
+        "max": 0.8900299494707016,
+        "mean": 0.8437503588257239,
+        "median": 0.8443191105686912,
+        "min": 0.7912832859504986,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 1.0,
+          "mean": 0.845266780555678,
+          "median": 0.8989842822057978,
+          "min": 0.3112781244591322,
+          "n": 10
+        },
+        "b": {
+          "max": 0.3112781244591322,
+          "mean": 0.03169636112615603,
+          "median": 0.0007052449150224206,
+          "min": 0.0,
+          "n": 10
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9312376982540764,
+        "mean": 0.9028821776776403,
+        "median": 0.9014041864743993,
+        "min": 0.8644671670574213,
+        "n": 25
+      }
+    },
+    {
+      "arm": "starts_100",
+      "cohort": "archived",
+      "ecology_raw_b": {
+        "max": 0.8900299494707016,
+        "mean": 0.8437503588257239,
+        "median": 0.8443191105686912,
+        "min": 0.7912832859504986,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 1.0,
+          "mean": 0.7879199412985924,
+          "median": 0.9494921411028989,
+          "min": 0.0,
+          "n": 6
+        },
+        "b": {
+          "max": 0.8285353655857574,
+          "mean": 0.13820676841679663,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 6
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9312376982540764,
+        "mean": 0.9028821776776403,
+        "median": 0.9014041864743993,
+        "min": 0.8644671670574213,
+        "n": 25
+      }
+    },
+    {
+      "arm": "shared_4",
+      "cohort": "archived",
+      "ecology_raw_b": {
+        "max": 0.8900299494707016,
+        "mean": 0.8437503588257239,
+        "median": 0.8443191105686912,
+        "min": 0.7912832859504986,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 1.0,
+          "mean": 0.8710221738369311,
+          "median": 0.8989842822057978,
+          "min": 0.0007052449150224206,
+          "n": 19
+        },
+        "b": {
+          "max": 0.8989842822057978,
+          "mean": 0.04787275716373602,
+          "median": 0.0007052449150224206,
+          "min": 0.0,
+          "n": 19
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9312376982540764,
+        "mean": 0.9028821776776403,
+        "median": 0.9014041864743993,
+        "min": 0.8644671670574213,
+        "n": 25
+      }
+    },
+    {
+      "arm": "source_4",
+      "cohort": "archived",
+      "ecology_raw_b": {
+        "max": 0.8900299494707016,
+        "mean": 0.8437503588257239,
+        "median": 0.8443191105686912,
+        "min": 0.7912832859504986,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 1.0,
+          "mean": 0.7657070731171515,
+          "median": 1.0,
+          "min": 0.0,
+          "n": 5
+        },
+        "b": {
+          "max": 0.8285353655857574,
+          "mean": 0.16570707311715147,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 5
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9312376982540764,
+        "mean": 0.9028821776776403,
+        "median": 0.9014041864743993,
+        "min": 0.8644671670574213,
+        "n": 25
+      }
+    },
+    {
+      "arm": "baseline",
+      "cohort": "fresh_64",
+      "ecology_raw_b": {
+        "max": 0.8764836869564409,
+        "mean": 0.8427063956191075,
+        "median": 0.8444866509600262,
+        "min": 0.7883688327757692,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 1.0,
+          "mean": 0.909439476025319,
+          "median": 1.0,
+          "min": 0.5487949406953984,
+          "n": 11
+        },
+        "b": {
+          "max": 0.04879494069539799,
+          "mean": 0.004821465934132511,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 11
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9363968145241163,
+        "mean": 0.9033718061411024,
+        "median": 0.9055835259639182,
+        "min": 0.8698753537737478,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_2",
+      "cohort": "fresh_64",
+      "ecology_raw_b": {
+        "max": 0.8764836869564409,
+        "mean": 0.8427063956191075,
+        "median": 0.8444866509600262,
+        "min": 0.7883688327757692,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 1.0,
+          "mean": 0.771064330706568,
+          "median": 0.7993776756872855,
+          "min": 0.16788126208647416,
+          "n": 19
+        },
+        "b": {
+          "max": 0.23480533268575576,
+          "mean": 0.01418448710923827,
+          "median": 0.0007052449150224206,
+          "min": 0.0,
+          "n": 19
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9363968145241163,
+        "mean": 0.9033718061411024,
+        "median": 0.9055835259639182,
+        "min": 0.8698753537737478,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_3",
+      "cohort": "fresh_64",
+      "ecology_raw_b": {
+        "max": 0.8764836869564409,
+        "mean": 0.8427063956191075,
+        "median": 0.8444866509600262,
+        "min": 0.7883688327757692,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 1.0,
+          "mean": 0.8140480497636422,
+          "median": 0.8285353655857574,
+          "min": 0.0007052449150224206,
+          "n": 15
+        },
+        "b": {
+          "max": 0.8989842822057978,
+          "mean": 0.061108713306543105,
+          "median": 0.0007052449150224206,
+          "min": 0.0,
+          "n": 15
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9363968145241163,
+        "mean": 0.9033718061411024,
+        "median": 0.9055835259639182,
+        "min": 0.8698753537737478,
+        "n": 25
+      }
+    },
+    {
+      "arm": "starts_100",
+      "cohort": "fresh_64",
+      "ecology_raw_b": {
+        "max": 0.8764836869564409,
+        "mean": 0.8427063956191075,
+        "median": 0.8444866509600262,
+        "min": 0.7883688327757692,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 1.0,
+          "mean": 0.909439476025319,
+          "median": 1.0,
+          "min": 0.5487949406953984,
+          "n": 11
+        },
+        "b": {
+          "max": 0.04879494069539799,
+          "mean": 0.004821465934132511,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 11
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9363968145241163,
+        "mean": 0.9033718061411024,
+        "median": 0.9055835259639182,
+        "min": 0.8698753537737478,
+        "n": 25
+      }
+    },
+    {
+      "arm": "shared_4",
+      "cohort": "fresh_64",
+      "ecology_raw_b": {
+        "max": 0.8764836869564409,
+        "mean": 0.8427063956191075,
+        "median": 0.8444866509600262,
+        "min": 0.7883688327757692,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 1.0,
+          "mean": 0.8511741358298484,
+          "median": 0.9494921411028989,
+          "min": 0.0,
+          "n": 22
+        },
+        "b": {
+          "max": 1.0,
+          "mean": 0.08372463531601822,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 22
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9363968145241163,
+        "mean": 0.9033718061411024,
+        "median": 0.9055835259639182,
+        "min": 0.8698753537737478,
+        "n": 25
+      }
+    },
+    {
+      "arm": "source_4",
+      "cohort": "fresh_64",
+      "ecology_raw_b": {
+        "max": 0.8764836869564409,
+        "mean": 0.8427063956191075,
+        "median": 0.8444866509600262,
+        "min": 0.7883688327757692,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 1.0,
+          "mean": 0.9169861863565424,
+          "median": 1.0,
+          "min": 0.5487949406953984,
+          "n": 12
+        },
+        "b": {
+          "max": 0.04879494069539799,
+          "mean": 0.004419677106288136,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 12
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9363968145241163,
+        "mean": 0.9033718061411024,
+        "median": 0.9055835259639182,
+        "min": 0.8698753537737478,
+        "n": 25
+      }
+    },
+    {
+      "arm": "baseline",
+      "cohort": "fresh_256",
+      "ecology_raw_b": {
+        "max": 0.8604676337125412,
+        "mean": 0.8317050301677448,
+        "median": 0.8319664549167174,
+        "min": 0.8016375902855359,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 1.0,
+          "mean": 0.929667627597789,
+          "median": 0.9340855876567586,
+          "min": 0.8617340713915974,
+          "n": 21
+        },
+        "b": {
+          "max": 0.00017616041779536785,
+          "mean": 6.081453818017273e-05,
+          "median": 4.4030694059460414e-05,
+          "min": 0.0,
+          "n": 21
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9243405907551938,
+        "mean": 0.9038648725346821,
+        "median": 0.9061527761891168,
+        "min": 0.8909188737468503,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_2",
+      "cohort": "fresh_256",
+      "ecology_raw_b": {
+        "max": 0.8604676337125412,
+        "mean": 0.8317050301677448,
+        "median": 0.8319664549167174,
+        "min": 0.8016375902855359,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 0.9669987658218752,
+          "mean": 0.8380610804791219,
+          "median": 0.8396712741009725,
+          "min": 0.7269921138985178,
+          "n": 23
+        },
+        "b": {
+          "max": 0.0011064461508961258,
+          "mean": 0.0002858213127335012,
+          "median": 0.00017616041779536785,
+          "min": 0.0,
+          "n": 23
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9243405907551938,
+        "mean": 0.9038648725346821,
+        "median": 0.9061527761891168,
+        "min": 0.8909188737468503,
+        "n": 25
+      }
+    },
+    {
+      "arm": "pcs_3",
+      "cohort": "fresh_256",
+      "ecology_raw_b": {
+        "max": 0.8604676337125412,
+        "mean": 0.8317050301677448,
+        "median": 0.8319664549167174,
+        "min": 0.8016375902855359,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 0.9669987658218752,
+          "mean": 0.8585366718152686,
+          "median": 0.8473496625310147,
+          "min": 0.7512543763915974,
+          "n": 17
+        },
+        "b": {
+          "max": 0.0015859609706634522,
+          "mean": 0.0003113140874848549,
+          "median": 0.00017628959399422175,
+          "min": 0.0,
+          "n": 17
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9243405907551938,
+        "mean": 0.9038648725346821,
+        "median": 0.9061527761891168,
+        "min": 0.8909188737468503,
+        "n": 25
+      }
+    },
+    {
+      "arm": "starts_100",
+      "cohort": "fresh_256",
+      "ecology_raw_b": {
+        "max": 0.8604676337125412,
+        "mean": 0.8317050301677448,
+        "median": 0.8319664549167174,
+        "min": 0.8016375902855359,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 1.0,
+          "mean": 0.929667627597789,
+          "median": 0.9340855876567586,
+          "min": 0.8617340713915974,
+          "n": 21
+        },
+        "b": {
+          "max": 0.00017616041779536785,
+          "mean": 6.081453818017273e-05,
+          "median": 4.4030694059460414e-05,
+          "min": 0.0,
+          "n": 21
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9243405907551938,
+        "mean": 0.9038648725346821,
+        "median": 0.9061527761891168,
+        "min": 0.8909188737468503,
+        "n": 25
+      }
+    },
+    {
+      "arm": "shared_4",
+      "cohort": "fresh_256",
+      "ecology_raw_b": {
+        "max": 0.8604676337125412,
+        "mean": 0.8317050301677448,
+        "median": 0.8319664549167174,
+        "min": 0.8016375902855359,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": null,
+        "b": null
+      },
+      "morphology_raw_a": {
+        "max": 0.9243405907551938,
+        "mean": 0.9038648725346821,
+        "median": 0.9061527761891168,
+        "min": 0.8909188737468503,
+        "n": 25
+      }
+    },
+    {
+      "arm": "source_4",
+      "cohort": "fresh_256",
+      "ecology_raw_b": {
+        "max": 0.8604676337125412,
+        "mean": 0.8317050301677448,
+        "median": 0.8319664549167174,
+        "min": 0.8016375902855359,
+        "n": 25
+      },
+      "k2_axis_homogeneity": {
+        "a": {
+          "max": 1.0,
+          "mean": 0.9331297120059704,
+          "median": 0.9417663449464879,
+          "min": 0.8617340713915974,
+          "n": 21
+        },
+        "b": {
+          "max": 0.00017616041779536785,
+          "mean": 5.871681406905146e-05,
+          "median": 4.4030694059460414e-05,
+          "min": 0.0,
+          "n": 21
+        }
+      },
+      "morphology_raw_a": {
+        "max": 0.9243405907551938,
+        "mean": 0.9038648725346821,
+        "median": 0.9061527761891168,
+        "min": 0.8909188737468503,
+        "n": 25
+      }
+    }
+  ]
+}
