@@ -87,7 +87,11 @@ def write_integration_parameters(fit, destination):
             "normalized_weight": fitted.normalized_weight,
             "score_scale": fitted.scale,
             "n_pcs": fitted.config.n_pcs,
-            "source_fit_weighting": "Equal source observations; target draws retain all members",
+            "source_fit_weighting": (
+                "Equal target means per draw; repeated draws retain their multiplicity"
+                if fitted.config.pca_fit == "target_means"
+                else "Equal source observations; target draws retain all members"
+            ),
             "retained_source_indices": list(data.original_indices),
             "training_source_indices": [data.original_indices[j] for j in fitted.training_indices],
             "bootstrap_source_index_basis": "Retained rows; map through retained_source_indices",

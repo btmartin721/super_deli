@@ -129,6 +129,12 @@ def _prepare(inputs, config):
                         raise ValueError(
                             "Count view values require exactly representable nonnegative integers"
                         )
+        if view.pca_fit == "target_means" and (
+            data.level != "specimen"
+            or any(t != "continuous" for t in data.feature_types)
+            or not np.isfinite(data.values).all()
+        ):
+            raise ValueError("Target-mean PCA requires complete continuous specimen morphology")
         if (
             view.kind == "genomic"
             and not np.isin(data.values[~np.isnan(data.values)], [0, 1, 2]).all()
@@ -213,6 +219,30 @@ def _fit_view(data, view, units, draw, config, weight):
         diagnostics = {
             "gpa_iterations": len(fitted.history),
             "numerical_rank": model.numerical_rank,
+        }
+    elif view.pca_fit == "target_means":
+        drawn_units = [units[i] for i in draw]
+        # One raw mean per target draw: keep multiplicities, never weight by member count.
+        matrix = np.stack([data.values[groups[u]].mean(axis=0) for u in drawn_units])
+        model, _ = fit_tabular_pca(
+            matrix,
+            data.feature_names,
+            data.feature_types,
+            view.tabular_config(config.max_working_bytes),
+        )
+        scores = project_tabular_pca(raw, model=model)
+        diagnostics = {
+            "excluded_features": model.exclusions,
+            "imputed_cells": model.imputed_cells,
+            "pca_fit": "target_means",
+            "pca_training_target_ids": drawn_units,
+            "pca_training_counts": [len(groups[u]) for u in drawn_units],
+            "pca_feature_means": model.means.tolist(),
+            "pca_feature_scales": model.scales.tolist(),
+            "pca_kept_indices": model.kept_indices.tolist(),
+            "pca_components": model.pca.components_.tolist(),
+            "pca_center": model.pca.mean_.tolist(),
+            "pca_explained_variance": model.pca.explained_variance_.tolist(),
         }
     else:
         model, scores = fit_tabular_pca(

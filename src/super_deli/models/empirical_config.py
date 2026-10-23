@@ -5,7 +5,11 @@ from __future__ import annotations
 import math
 from dataclasses import dataclass, fields
 
-from super_deli.models.integrative_config import IntegrativeConfig, configuration_dict
+from super_deli.models.integrative_config import (
+    IntegrativeConfig,
+    configuration_dict,
+    require_calibrated_pca,
+)
 
 CASES = ("spherical_gaussian", "correlated_gaussian", "complementary", "heavy_tailed")
 
@@ -36,6 +40,7 @@ class EmpiricalCalibrationConfig:
             self.model, IntegrativeConfig
         ):
             raise ValueError("Explicitly assume iid joint Gaussian raw continuous views")
+        require_calibrated_pca(self.model)
         if self.model.covariance_type != "full":
             raise ValueError("Shared-covariance significance calibration is not yet supported")
         for name in ("n_simulations", "max_archive_bytes", "schema_version"):

@@ -6,7 +6,11 @@ import math
 from dataclasses import dataclass, fields, replace
 
 from super_deli.benchmarking.config import KINDS, Scenario
-from super_deli.models.integrative_config import IntegrativeConfig, configuration_dict
+from super_deli.models.integrative_config import (
+    IntegrativeConfig,
+    configuration_dict,
+    require_calibrated_pca,
+)
 
 REFERENCE_LAW = "four_view_continuous_population_v1"
 CASES = ("matched_null", "matched_complementary", "grouped_null", "grouped_complementary")
@@ -89,6 +93,7 @@ class PipelineCalibrationConfig:
             self.model, IntegrativeConfig
         ):
             raise ValueError("A reference population and integrative model are required")
+        require_calibrated_pca(self.model)
         if self.model.covariance_type != "full":
             raise ValueError("Shared-covariance significance calibration is not yet supported")
         for name in ("n_simulations", "max_archive_bytes", "schema_version"):
