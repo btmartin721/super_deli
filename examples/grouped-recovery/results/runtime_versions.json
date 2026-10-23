@@ -1,0 +1,8 @@
+{
+  "numpy": "2.2.6",
+  "python": "3.12.10",
+  "scikit-learn": "1.6.1",
+  "scipy": "1.15.3",
+  "super-deli": "0.26.0.dev0",
+  "threadpoolctl": "3.6.0"
+}

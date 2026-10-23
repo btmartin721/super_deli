@@ -3,7 +3,11 @@
 from dataclasses import dataclass, replace
 
 from super_deli.models.empirical_config import _options, validate_study_dimensions
-from super_deli.models.integrative_config import IntegrativeConfig, configuration_dict
+from super_deli.models.integrative_config import (
+    IntegrativeConfig,
+    configuration_dict,
+    require_calibrated_pca,
+)
 from super_deli.models.linked_config import LinkedCalibrationConfig
 
 CASES = ("zero_association", "linear_association", "complementary", "heavy_tailed", "cline")
@@ -32,6 +36,7 @@ class JointCalibrationConfig:
 
         if not isinstance(self.model, IntegrativeConfig):
             raise ValueError("An integrative model is required")
+        require_calibrated_pca(self.model)
         m = self.model
         genomic = [v for v in m.views if v.kind == "genomic"]
         if (

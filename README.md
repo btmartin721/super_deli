@@ -4,7 +4,7 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: shared-covariance grouped significance calibration.**
+**Current checkpoint: grouped PCA recovery improvement.**
 Genomic, numeric morphology/ecology and shape scores can be fused by exact unit
 IDs or explicit population/locality aggregation, with prespecified view weights.
 The package also supports individual-modality PCA/GMM, frozen-fit shape
@@ -380,3 +380,18 @@ family must be selected before analysis; stability remains separate.
 
 The [completed grouped shared-family study](docs/shared-grouped-calibration-results.md)
 reports 175 fresh observations, full-pipeline calibration and uncertainty.
+
+The frozen [grouped recovery diagnostic](docs/grouped-recovery-diagnostics.md)
+traces morphology/ecology signal through source PCA, group aggregation, fusion
+and joint PCA. The [completed diagnosis](docs/grouped-recovery-diagnostics-results.md)
+reports 750 point attempts (700 complete, 50 retained numerical failures), 75 separate
+truth-initialized diagnostics and 25 reproduced archived baselines. Defaults and
+existing p-values remain unchanged; exploratory settings are not promoted.
+
+An opt-in [group-mean morphology PCA policy](docs/grouped-pca.md) gives each linked
+population/locality equal influence on preprocessing and PCA. It supports frozen
+projection and whole-group stability; significance remains disabled for the new
+policy. The [completed four-arm study](docs/grouped-pca-results.md) reports all
+700 point workflows and 1,000 stability refits. Four joint PCs improved recovery
+at N=256; group-mean PCA added no consistent benefit in these laws. Defaults and
+historical p-values remain unchanged.

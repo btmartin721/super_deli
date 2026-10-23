@@ -16,7 +16,12 @@ def configuration_dict(value):
     return asdict(
         value,
         dict_factory=lambda pairs: {
-            key: item for key, item in pairs if not (key == "covariance_type" and item == "full")
+            key: item
+            for key, item in pairs
+            if not (
+                (key == "covariance_type" and item == "full")
+                or (key == "pca_fit" and item == "source_rows")
+            )
         },
     )
 
@@ -34,6 +39,7 @@ class ViewConfig:
     count_transform: str = "identity"
     ploidy: int | None = None
     shape: ShapeConfig | None = None
+    pca_fit: str = "source_rows"
 
     def __post_init__(self):
         if (
@@ -65,6 +71,17 @@ class ViewConfig:
             or len(set(self.feature_names)) != len(self.feature_names)
         ):
             raise ValueError("feature_names must contain unique, unpadded names")
+        if not isinstance(self.pca_fit, str) or self.pca_fit not in {"source_rows", "target_means"}:
+            raise ValueError("pca_fit must be source_rows or target_means")
+        if self.pca_fit == "target_means" and (
+            self.kind != "morphological"
+            or self.aggregation != "mean"
+            or self.missing_policy != "error"
+            or self.count_transform != "identity"
+        ):
+            raise ValueError(
+                "Target-mean PCA requires complete continuous morphology and mean aggregation"
+            )
         if self.kind in {"morphological", "ecological"}:
             if self.ploidy is not None or self.shape is not None:
                 raise ValueError("Tabular views cannot contain genomic/shape options")
@@ -178,6 +195,11 @@ class IntegrativeConfig(ClusterConfig):
             raise ValueError("rank_tol must be finite and between zero and one")
         if type(self.max_working_bytes) is not int or self.max_working_bytes < 1:
             raise ValueError("max_working_bytes must be positive")
+        if any(v.pca_fit == "target_means" for v in self.views) and self.target_level not in {
+            "population",
+            "locality",
+        }:
+            raise ValueError("Target-mean PCA requires explicit population/locality integration")
         if self.n_pcs > sum(v.n_pcs for v in self.views):
             raise ValueError("Joint n_pcs exceeds the declared score dimensions")
 
@@ -192,3 +214,9 @@ class IntegrativeConfig(ClusterConfig):
 
     def to_dict(self):
         return configuration_dict(self)
+
+
+def require_calibrated_pca(model):
+    """Keep new grouped preprocessing outside unvalidated significance workflows."""
+    if any(v.pca_fit != "source_rows" for v in model.views):
+        raise ValueError("Target-mean PCA significance calibration is not yet supported")

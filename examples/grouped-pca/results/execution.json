@@ -1,0 +1,22 @@
+{
+  "finished_at": "2026-10-23T06:11:58.926561+00:00",
+  "replacement_fits": 0,
+  "started_at": "2026-10-23T06:11:26.536055+00:00",
+  "status": "complete",
+  "summary": {
+    "attempted_bootstrap": 1000,
+    "datasets": 175,
+    "failed_bootstrap": 0,
+    "failed_points": 0,
+    "planned_bootstrap": 1000,
+    "planned_points": 700,
+    "reproduced_archived": 25,
+    "schema_version": 1,
+    "significance_fits": 0,
+    "successful_bootstrap": 1000,
+    "successful_points": 700,
+    "unattempted_bootstrap": 0
+  },
+  "threads_per_job": 1,
+  "workers": 4
+}
