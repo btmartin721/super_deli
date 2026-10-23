@@ -58,8 +58,11 @@ class GroupedCalibrationConfig:
             raise ValueError(
                 "Explicitly assume independent Gaussian groups and noninformative counts"
             )
-        if self.model.covariance_type != "full":
-            raise ValueError("Shared-covariance significance calibration is not yet supported")
+        if self.model.covariance_type == "tied" and self.schema_version == 1:
+            raise ValueError(
+                "Shared-covariance significance calibration is not yet supported by legacy "
+                "schema 1; use the boundary-capable schema 2"
+            )
         for name in ("n_simulations", "max_iterations", "max_archive_bytes", "schema_version"):
             if type(getattr(self, name)) is not int or getattr(self, name) < 1:
                 raise ValueError(f"{name} must be a positive integer")

@@ -50,13 +50,31 @@ def _dependencies():
 
 def run_grouped_calibration(dataset, *, config, base_dir, output_dir):
     config = GroupedCalibrationConfig.from_dict(config.to_dict())
+    # Keep the fitted raw law and seed namespace independent of the GMM family.
+    shared = config.model.covariance_type == "tied"
+    scope = SCOPE + (
+        " Shared covariance is fixed before analysis for every observed/null K search; "
+        "no selection across covariance families is calibrated."
+        if shared
+        else ""
+    )
+    evidence_options = (
+        {
+            "evidence_method": (
+                "Approximate full-pipeline conditional-PSD grouped Gaussian BIC bootstrap "
+                "(prespecified shared covariance)"
+            )
+        }
+        if shared
+        else {}
+    )
     return run_fitted_calibration(
         dataset,
         config=config,
         base_dir=base_dir,
         output_dir=output_dir,
         dependencies=_dependencies(),
-        scope=SCOPE,
+        scope=scope,
         tail_options=BOUNDARY_TAIL_OPTIONS if config.schema_version == 2 else TAIL_OPTIONS,
         seed_namespace="grouped_raw_gaussian_v2"
         if config.schema_version == 2
@@ -66,4 +84,5 @@ def run_grouped_calibration(dataset, *, config, base_dir, output_dir):
             "Independent joint Gaussian group effects and iid Gaussian morphology residuals; "
             "shared unknown between/within covariance; fixed noninformative counts"
         ),
+        **evidence_options,
     )

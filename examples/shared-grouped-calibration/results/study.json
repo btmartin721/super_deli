@@ -1,0 +1,46 @@
+{
+  "calibration": {
+    "alpha": 0.05,
+    "assume_gaussian_independent_groups": true,
+    "assume_noninformative_counts": true,
+    "model": {
+      "assume_independent_units": true,
+      "covariance_type": "tied",
+      "max_k": 4,
+      "min_cluster_size": 5,
+      "n_bootstrap": 0,
+      "n_init": 10,
+      "n_pcs": 2,
+      "random_seed": 71323,
+      "schema_version": 1,
+      "target_level": "locality",
+      "views": [
+        {
+          "aggregation": "mean",
+          "kind": "morphological",
+          "modality": "morphological",
+          "n_pcs": 2,
+          "weight": 1.0
+        },
+        {
+          "kind": "ecological",
+          "modality": "ecological",
+          "n_pcs": 2,
+          "weight": 1.0
+        }
+      ]
+    },
+    "n_simulations": 99,
+    "random_seed": 20261102,
+    "schema_version": 2,
+    "solver": {
+      "estimator": "conditional_psd_v1",
+      "max_line_search": 40,
+      "max_polish_iterations": 2000
+    }
+  },
+  "n_datasets": 25,
+  "n_units": 64,
+  "random_seed": 20261102,
+  "schema_version": 1
+}
