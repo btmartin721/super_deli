@@ -1,0 +1,45 @@
+{
+  "figure_files": {
+    "grouped-boundary-diagnostics.pdf": "aaac5c5228c5ca6925f9c5f92b5d563af13b3b0c15b498dd5b1b660978a60211",
+    "grouped-boundary-diagnostics.png": "5194797189f761a0dfb4925f38f73009384a1f73c439454c773d9210c8cb4ebf",
+    "grouped-boundary-diagnostics.svg": "826b865d28cf9fe578d9e9d729d73f6f23718d45aa6c079ff232a40e381f2c59"
+  },
+  "independent_candidate_equations_sha256": "9491654ee6286434b017066308289ec36e7b0e6ebcdd0121d6c3a14d3a2f9221",
+  "independent_checker_sha256": "711d993d3ac63e1720a01d7afc3b12fedc469ff6c76e5a69b3e3657222bdd26d",
+  "interpretation": "Diagnostic paired references; known parameters are unavailable empirically. No correction, general size, significant K or species-boundary guarantee.",
+  "local_artifact_id": "grouped-boundary-diagnostics-20261023",
+  "published_artifacts": {
+    "base_sources.json": "102b9da5ec6a3b3da2b3fd43c4a09436724dcc2150239f6ed7c5b73c7a6f9716",
+    "covariance.csv": "8219aa329a26681e5a9a1895544d60e51ad8ceb488ba05ef9a4fc12317e2c637",
+    "independent-tails.json": "611a251c8854864a767b6d0ead653a8b53153fd244568a42e544988936a1e5b9",
+    "observation-summary.json": "c4de9725bcfadb88ab04f28f84bb75b3956a455f5e070d65d1d3fd164bd3f699",
+    "observations.csv": "02a4cf44fd25f376bddfe66ff222a3c98ff19bd08ccc50ddd5b96d095ef680c9",
+    "paired-diagnostics.csv": "4c1c4851e622bb002ea86d7e4dda69bc35ba65e93ede137cb5206230749110cf",
+    "pipelines-correlated_gaussian.csv.gz": "4d5969b4123588e94cce8d68be1f8a81ff2e4e98179e9819914e663652d19a97",
+    "pipelines-independent_gaussian.csv.gz": "5a34609abdf2a2dbcbad45062665ba6038a373996e95d164d48aec3d1685edb9",
+    "pipelines-rank_two_gaussian.csv.gz": "58c09cc94297c5b3d272bf44c2dcb840f8fd6c938613f1c7ea85aba9e653e90d",
+    "pipelines-weak_conditional_gaussian.csv.gz": "336ab161f838005405e5b16575f5fcc30ba5d5e4e72de447958d3e512be7a0aa",
+    "pipelines-zero_conditional_gaussian.csv.gz": "b18eef564c09d49c8d7bca97b09d131c325c8f34674ac2bdc4115260cfc4eae6",
+    "preservation-summary.json": "7fdfd3d9442d7f15ad90f78710534e7ec8013d36539412e87a5625b1eb6900cc",
+    "prespecified-design.json": "546e7bd4aa1fa8336cda7b622de219b2aa39a5696c17f653d26f4b42f279fc7b",
+    "raw-likelihood.csv": "47200dd3842f8b986d4f05bf3f19c37c8c913d7d604ff15709c20e8f3f528112",
+    "reference-pins.json": "3c7a8ee70e351868c46a4eb72e440de05682b4139242d3ba139a32526c4f076f",
+    "runtime_package.json": "f8d728840e2f4e27e23789444065aac747f825484b344b78fe5e736ceb5c98fa",
+    "runtime_sources.json": "6b4566274f548161511b0e86b962f26e49907158d86f642f843d64da714438dc",
+    "runtime_versions.json": "a7fce1b5583bcc4eba0d2eb5610432ec295d747ec1d1df39476d2080164f6ce4",
+    "seed-domain-check.json": "ab5ff8ecae3e38ea84ef1f96607c2ae7411f8a9dbf5d9ba7164a54733cb0d6ea",
+    "source-changes.json": "250f01844bac3575d10d7388e3bf53229c285a7b60d884ff391d9854c54c55e7",
+    "study-execution.json": "6ac00e453bb0a2c761e6e95d9e6694f05b77b6edd742238e0146871bb2b431eb",
+    "study.json": "2447c4aef4287e4f4e36275c6f29f062ac5fb6666005da35d67eb61c14716203",
+    "summary.json": "2de59cdd91cb73c3597b7f37c7296ba4dfbb0681cc60c55909f57a8a773ede0f",
+    "tails.csv": "ab5cd624ad3c3c104e4f76f1b9d39b8e8ef7224a95e2877301f91c06fa039c86"
+  },
+  "report_script_sha256": "294f9268ca91168fabff981b50278da93b38dcd67f7bb821f70c4849efc150c4",
+  "runtime_wheel": {
+    "sha256": "0a31fba4797bf5e15c2c44ddad4f1da2fdedd36d2b0203e806f0e4e47ce0cd56",
+    "sources": 138,
+    "study_sha256": "2447c4aef4287e4f4e36275c6f29f062ac5fb6666005da35d67eb61c14716203",
+    "wheel": "super_deli-0.32.0.dev0-py3-none-any.whl"
+  },
+  "study_inventory_sha256": "bbc401a54e765fe887005b0d4a03e81e8bfb25e86aae411c49764f1e9baeb7ed"
+}

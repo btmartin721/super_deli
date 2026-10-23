@@ -1,0 +1,9 @@
+{
+  "before_sha256": "485cb326103870eb299a86b7cf91047e90bb13908da359e20ba6edb43fc95ec8",
+  "after_sha256": "485cb326103870eb299a86b7cf91047e90bb13908da359e20ba6edb43fc95ec8",
+  "prior_study_files": 188822,
+  "checkouts": 6,
+  "original_tps_files": 5,
+  "aic_metadata_files": 1078,
+  "cleanup_archive_sha256": "f97e46c0e34b6f248dd62f5afabdfa65b0cec82aa10bc963a3c0fa9740a7d080"
+}

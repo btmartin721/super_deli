@@ -1,0 +1,768 @@
+{
+  "cases": [
+    "independent_gaussian",
+    "correlated_gaussian",
+    "zero_conditional_gaussian",
+    "rank_two_gaussian",
+    "weak_conditional_gaussian"
+  ],
+  "n_datasets_per_case": 25,
+  "n_units": 64,
+  "draws_per_arm": 99,
+  "alpha": 0.05,
+  "new_unique_pipeline_fits": 24875,
+  "master_seed": 20261116,
+  "model_seed": 71323,
+  "seeds": [
+    {
+      "case": "independent_gaussian",
+      "repetition": 0,
+      "data_seed": 1633529064780446073,
+      "null_stream_seed": 17942806235422198478
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 1,
+      "data_seed": 11834255618272774958,
+      "null_stream_seed": 2969914717944141547
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 2,
+      "data_seed": 7180158230472032851,
+      "null_stream_seed": 17415383069820046938
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 3,
+      "data_seed": 11969549768932444703,
+      "null_stream_seed": 14165324192040347558
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 4,
+      "data_seed": 6618601757033273456,
+      "null_stream_seed": 15057155677917851597
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 5,
+      "data_seed": 456979019378428368,
+      "null_stream_seed": 10841987987316759454
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 6,
+      "data_seed": 17988009892801262105,
+      "null_stream_seed": 1990854349050138499
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 7,
+      "data_seed": 989462246002370282,
+      "null_stream_seed": 6830889823210813824
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 8,
+      "data_seed": 1266402804524219741,
+      "null_stream_seed": 3847338939056886247
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 9,
+      "data_seed": 16132329183532189592,
+      "null_stream_seed": 11061845498070816375
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 10,
+      "data_seed": 11110477199870912691,
+      "null_stream_seed": 2862202404123106876
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 11,
+      "data_seed": 6386026834636764822,
+      "null_stream_seed": 2332332600327053538
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 12,
+      "data_seed": 1931767480486573407,
+      "null_stream_seed": 10165443132858622180
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 13,
+      "data_seed": 11031211193579066444,
+      "null_stream_seed": 10250294288932069199
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 14,
+      "data_seed": 11437978856924008664,
+      "null_stream_seed": 10002603811997033084
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 15,
+      "data_seed": 1613590109449085334,
+      "null_stream_seed": 5439655445615497007
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 16,
+      "data_seed": 15130570266380641704,
+      "null_stream_seed": 9087967949823267936
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 17,
+      "data_seed": 8726752393127044708,
+      "null_stream_seed": 9772608084199640084
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 18,
+      "data_seed": 14199753490814147403,
+      "null_stream_seed": 1140485063284604331
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 19,
+      "data_seed": 8145994867273343778,
+      "null_stream_seed": 15715842545419272445
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 20,
+      "data_seed": 11578100127927840347,
+      "null_stream_seed": 97398036333974254
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 21,
+      "data_seed": 90259822187669639,
+      "null_stream_seed": 1220835758466117161
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 22,
+      "data_seed": 3798503675556771670,
+      "null_stream_seed": 18172194118973834454
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 23,
+      "data_seed": 10922720357521947943,
+      "null_stream_seed": 9060974753280495244
+    },
+    {
+      "case": "independent_gaussian",
+      "repetition": 24,
+      "data_seed": 13042568672205208035,
+      "null_stream_seed": 11204740340316066990
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 0,
+      "data_seed": 4625823410505599122,
+      "null_stream_seed": 1519375545204959209
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 1,
+      "data_seed": 2123080274533097396,
+      "null_stream_seed": 7248566752100141761
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 2,
+      "data_seed": 14881616979925264261,
+      "null_stream_seed": 16590482520119529670
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 3,
+      "data_seed": 3371257250193625945,
+      "null_stream_seed": 11745221642225264863
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 4,
+      "data_seed": 6070912379399471674,
+      "null_stream_seed": 2279770389693082277
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 5,
+      "data_seed": 8574272278680067607,
+      "null_stream_seed": 17843014296583015115
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 6,
+      "data_seed": 9827212415402809446,
+      "null_stream_seed": 7622795351986658152
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 7,
+      "data_seed": 15094778034665724200,
+      "null_stream_seed": 1588663420113172007
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 8,
+      "data_seed": 4132953877275844839,
+      "null_stream_seed": 1991693871991999692
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 9,
+      "data_seed": 14762463977966733606,
+      "null_stream_seed": 8337195806600941231
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 10,
+      "data_seed": 13381490544789470196,
+      "null_stream_seed": 17646723782731470314
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 11,
+      "data_seed": 16975206379607529585,
+      "null_stream_seed": 12632305340027245765
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 12,
+      "data_seed": 16210654695768039468,
+      "null_stream_seed": 10482888725987797399
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 13,
+      "data_seed": 5437501284317961766,
+      "null_stream_seed": 16181541662428438030
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 14,
+      "data_seed": 10925710067818484437,
+      "null_stream_seed": 4081067320726252940
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 15,
+      "data_seed": 13902206629464854075,
+      "null_stream_seed": 17159596235320023514
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 16,
+      "data_seed": 4047181808213415634,
+      "null_stream_seed": 5993574128885963357
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 17,
+      "data_seed": 114760866239743492,
+      "null_stream_seed": 9201029405831168582
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 18,
+      "data_seed": 5017273914685755947,
+      "null_stream_seed": 14994802795432538160
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 19,
+      "data_seed": 6627226291770499519,
+      "null_stream_seed": 4758819865190851363
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 20,
+      "data_seed": 5577702876254027181,
+      "null_stream_seed": 4922815692062086393
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 21,
+      "data_seed": 4926427871328975522,
+      "null_stream_seed": 11033314589086237359
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 22,
+      "data_seed": 3882639459020407308,
+      "null_stream_seed": 4096363128769087584
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 23,
+      "data_seed": 15214355666342417901,
+      "null_stream_seed": 10829604726537287973
+    },
+    {
+      "case": "correlated_gaussian",
+      "repetition": 24,
+      "data_seed": 15032004704333294558,
+      "null_stream_seed": 17635307013959133112
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 0,
+      "data_seed": 12942036410043140554,
+      "null_stream_seed": 420853532708270943
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 1,
+      "data_seed": 12684711038956245023,
+      "null_stream_seed": 3174345043795777090
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 2,
+      "data_seed": 6098642127055287964,
+      "null_stream_seed": 4128097593867185729
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 3,
+      "data_seed": 6428147463866021511,
+      "null_stream_seed": 7795589403098387219
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 4,
+      "data_seed": 4258214158672975837,
+      "null_stream_seed": 18076257980419311303
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 5,
+      "data_seed": 3810109239970560956,
+      "null_stream_seed": 13124832232151304906
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 6,
+      "data_seed": 1428951687491126507,
+      "null_stream_seed": 1490186120356128920
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 7,
+      "data_seed": 831345827420824337,
+      "null_stream_seed": 13674400765880131606
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 8,
+      "data_seed": 17532232994709751105,
+      "null_stream_seed": 10940110698561588213
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 9,
+      "data_seed": 6849932605065695278,
+      "null_stream_seed": 1244860729749921384
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 10,
+      "data_seed": 2965422966531899466,
+      "null_stream_seed": 153005267195981257
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 11,
+      "data_seed": 13148913237992685151,
+      "null_stream_seed": 12774073146846217655
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 12,
+      "data_seed": 14275296692936977430,
+      "null_stream_seed": 7251147298081599063
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 13,
+      "data_seed": 16240198491262677017,
+      "null_stream_seed": 7580721412936569010
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 14,
+      "data_seed": 13479308918968209161,
+      "null_stream_seed": 13323920771269390764
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 15,
+      "data_seed": 1579015402478682127,
+      "null_stream_seed": 18248973840765678306
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 16,
+      "data_seed": 12480742514492602193,
+      "null_stream_seed": 8865768221397363085
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 17,
+      "data_seed": 10776297441297892854,
+      "null_stream_seed": 17914352410508556248
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 18,
+      "data_seed": 18027457949851118327,
+      "null_stream_seed": 10789232518146911557
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 19,
+      "data_seed": 1461326466560774527,
+      "null_stream_seed": 13592393249476745391
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 20,
+      "data_seed": 15530881083887055598,
+      "null_stream_seed": 13882438013751232414
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 21,
+      "data_seed": 1891894053898014293,
+      "null_stream_seed": 10050144157550356407
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 22,
+      "data_seed": 10222613694512723217,
+      "null_stream_seed": 16083198932886734411
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 23,
+      "data_seed": 7610163280361166686,
+      "null_stream_seed": 11359057547086411456
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "repetition": 24,
+      "data_seed": 14910791870875653599,
+      "null_stream_seed": 9675465676479518559
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 0,
+      "data_seed": 6499085275598890968,
+      "null_stream_seed": 12750947932514403322
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 1,
+      "data_seed": 1915545516712615669,
+      "null_stream_seed": 7579813575633731643
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 2,
+      "data_seed": 2048218008775032113,
+      "null_stream_seed": 3504265172221010814
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 3,
+      "data_seed": 3520499455453259692,
+      "null_stream_seed": 2774566146713255234
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 4,
+      "data_seed": 13781080283088618361,
+      "null_stream_seed": 16298855820531682123
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 5,
+      "data_seed": 2790188212191902613,
+      "null_stream_seed": 11840326612701239122
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 6,
+      "data_seed": 13058184227865389463,
+      "null_stream_seed": 5334205257581419008
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 7,
+      "data_seed": 3431110187688686426,
+      "null_stream_seed": 14225431614940004850
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 8,
+      "data_seed": 14535055903736357591,
+      "null_stream_seed": 5573680905321604183
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 9,
+      "data_seed": 6881933385625345034,
+      "null_stream_seed": 10868646285263864643
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 10,
+      "data_seed": 7361039980289256457,
+      "null_stream_seed": 776285445057460078
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 11,
+      "data_seed": 7199045557593978569,
+      "null_stream_seed": 11734201651183263934
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 12,
+      "data_seed": 7782436171215195951,
+      "null_stream_seed": 17467744047648226122
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 13,
+      "data_seed": 3362355098644315239,
+      "null_stream_seed": 10369037626777287746
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 14,
+      "data_seed": 768008752599732363,
+      "null_stream_seed": 4331991452408086701
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 15,
+      "data_seed": 18326223203916711916,
+      "null_stream_seed": 11985509488261973396
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 16,
+      "data_seed": 6138884348256234236,
+      "null_stream_seed": 16222049827821869888
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 17,
+      "data_seed": 12095916489325774676,
+      "null_stream_seed": 17919639109726418156
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 18,
+      "data_seed": 17561614638708659245,
+      "null_stream_seed": 1636705009276398426
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 19,
+      "data_seed": 7866236925541769664,
+      "null_stream_seed": 13448693651098336416
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 20,
+      "data_seed": 2968824582291077095,
+      "null_stream_seed": 5298460733041228919
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 21,
+      "data_seed": 1266779091365200779,
+      "null_stream_seed": 13274467382292305099
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 22,
+      "data_seed": 17300346342770216057,
+      "null_stream_seed": 12336508841938855775
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 23,
+      "data_seed": 2883594621357867941,
+      "null_stream_seed": 10506086898990977663
+    },
+    {
+      "case": "rank_two_gaussian",
+      "repetition": 24,
+      "data_seed": 14366606990022884206,
+      "null_stream_seed": 10717830818606733543
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 0,
+      "data_seed": 15801766195663991906,
+      "null_stream_seed": 15113549737848452616
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 1,
+      "data_seed": 960025290081556493,
+      "null_stream_seed": 12225481934512047135
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 2,
+      "data_seed": 5223052174169975035,
+      "null_stream_seed": 8323892127537866752
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 3,
+      "data_seed": 11285204612040155194,
+      "null_stream_seed": 11369810920559814088
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 4,
+      "data_seed": 3018589392259141333,
+      "null_stream_seed": 7066797861863622802
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 5,
+      "data_seed": 14406939778014870741,
+      "null_stream_seed": 10596081137606897410
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 6,
+      "data_seed": 15610810810303514504,
+      "null_stream_seed": 5935182772318852383
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 7,
+      "data_seed": 7176923776812570311,
+      "null_stream_seed": 440855773896335352
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 8,
+      "data_seed": 1910701785055740097,
+      "null_stream_seed": 6412815223464139332
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 9,
+      "data_seed": 5752876712928903254,
+      "null_stream_seed": 5412076626494974537
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 10,
+      "data_seed": 14341811067724531076,
+      "null_stream_seed": 15758097117612016924
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 11,
+      "data_seed": 17004493934443942646,
+      "null_stream_seed": 3990778280305174608
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 12,
+      "data_seed": 1988453538556064625,
+      "null_stream_seed": 12122045208255314567
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 13,
+      "data_seed": 5463495634078982149,
+      "null_stream_seed": 12878324320063271178
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 14,
+      "data_seed": 12236806834323287760,
+      "null_stream_seed": 478983456668018516
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 15,
+      "data_seed": 1628205791660113185,
+      "null_stream_seed": 320785041234263446
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 16,
+      "data_seed": 3342725605409549541,
+      "null_stream_seed": 6208976093725764373
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 17,
+      "data_seed": 15125201220714966123,
+      "null_stream_seed": 13310155137793383415
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 18,
+      "data_seed": 15523180694864373137,
+      "null_stream_seed": 18349337154102770781
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 19,
+      "data_seed": 379703960899709629,
+      "null_stream_seed": 14129776465813888206
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 20,
+      "data_seed": 7186366147582726017,
+      "null_stream_seed": 10745871313476004522
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 21,
+      "data_seed": 11155896642156689356,
+      "null_stream_seed": 6726997440332903398
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 22,
+      "data_seed": 10416431627026251924,
+      "null_stream_seed": 6458181489598790381
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 23,
+      "data_seed": 7176763983160402511,
+      "null_stream_seed": 5238329549575886877
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "repetition": 24,
+      "data_seed": 13317038011748075945,
+      "null_stream_seed": 334859671937666807
+    }
+  ]
+}

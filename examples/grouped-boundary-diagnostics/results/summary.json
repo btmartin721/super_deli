@@ -1,0 +1,3776 @@
+{
+  "archive_members": 1198875,
+  "cases": [
+    {
+      "attempted_fits": 4975,
+      "case": "independent_gaussian",
+      "datasets": 25,
+      "failed_fits": 0,
+      "failed_observations": 0,
+      "planned_fits": 4975,
+      "replacement_draws": 0,
+      "replacement_observations": 0,
+      "scope": "Paired simulation diagnostic of estimated versus known Gaussian nuisance parameters. Same counts, identities, model settings and Gaussian innovations per paired draw. One shared observed point fit. Known-law results are not empirical p-values, a correction, general size guarantee or species-boundary evidence. No stability resampling.",
+      "successful_fits": 4975,
+      "unattempted_fits": 0,
+      "withheld_observations": 0
+    },
+    {
+      "attempted_fits": 4975,
+      "case": "correlated_gaussian",
+      "datasets": 25,
+      "failed_fits": 0,
+      "failed_observations": 0,
+      "planned_fits": 4975,
+      "replacement_draws": 0,
+      "replacement_observations": 0,
+      "scope": "Paired simulation diagnostic of estimated versus known Gaussian nuisance parameters. Same counts, identities, model settings and Gaussian innovations per paired draw. One shared observed point fit. Known-law results are not empirical p-values, a correction, general size guarantee or species-boundary evidence. No stability resampling.",
+      "successful_fits": 4975,
+      "unattempted_fits": 0,
+      "withheld_observations": 0
+    },
+    {
+      "attempted_fits": 4975,
+      "case": "zero_conditional_gaussian",
+      "datasets": 25,
+      "failed_fits": 0,
+      "failed_observations": 0,
+      "planned_fits": 4975,
+      "replacement_draws": 0,
+      "replacement_observations": 0,
+      "scope": "Paired simulation diagnostic of estimated versus known Gaussian nuisance parameters. Same counts, identities, model settings and Gaussian innovations per paired draw. One shared observed point fit. Known-law results are not empirical p-values, a correction, general size guarantee or species-boundary evidence. No stability resampling.",
+      "successful_fits": 4975,
+      "unattempted_fits": 0,
+      "withheld_observations": 0
+    },
+    {
+      "attempted_fits": 4975,
+      "case": "rank_two_gaussian",
+      "datasets": 25,
+      "failed_fits": 0,
+      "failed_observations": 0,
+      "planned_fits": 4975,
+      "replacement_draws": 0,
+      "replacement_observations": 0,
+      "scope": "Paired simulation diagnostic of estimated versus known Gaussian nuisance parameters. Same counts, identities, model settings and Gaussian innovations per paired draw. One shared observed point fit. Known-law results are not empirical p-values, a correction, general size guarantee or species-boundary evidence. No stability resampling.",
+      "successful_fits": 4975,
+      "unattempted_fits": 0,
+      "withheld_observations": 0
+    },
+    {
+      "attempted_fits": 4975,
+      "case": "weak_conditional_gaussian",
+      "datasets": 25,
+      "failed_fits": 0,
+      "failed_observations": 0,
+      "planned_fits": 4975,
+      "replacement_draws": 0,
+      "replacement_observations": 0,
+      "scope": "Paired simulation diagnostic of estimated versus known Gaussian nuisance parameters. Same counts, identities, model settings and Gaussian innovations per paired draw. One shared observed point fit. Known-law results are not empirical p-values, a correction, general size guarantee or species-boundary evidence. No stability resampling.",
+      "successful_fits": 4975,
+      "unattempted_fits": 0,
+      "withheld_observations": 0
+    }
+  ],
+  "new_unique_planned_fits": 24875,
+  "new_unique_successful_fits": 24875,
+  "no_model_refits": true,
+  "paired_changes": [
+    {
+      "available_pairs": 25,
+      "case": "correlated_gaussian",
+      "fitted_only_reject": 0,
+      "known_only_reject": 0,
+      "p_fitted_minus_known": {
+        "max": 0.12,
+        "mean": 0.008,
+        "mean_mcse": 0.009966610925150702,
+        "median": 0.0,
+        "min": -0.10999999999999999,
+        "n": 25
+      },
+      "statistic_kind": "likelihood"
+    },
+    {
+      "available_pairs": 25,
+      "case": "correlated_gaussian",
+      "fitted_only_reject": 0,
+      "known_only_reject": 0,
+      "p_fitted_minus_known": {
+        "max": 0.0,
+        "mean": 0.0,
+        "mean_mcse": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 25
+      },
+      "statistic_kind": "bic"
+    },
+    {
+      "available_pairs": 25,
+      "case": "independent_gaussian",
+      "fitted_only_reject": 0,
+      "known_only_reject": 1,
+      "p_fitted_minus_known": {
+        "max": 0.09999999999999998,
+        "mean": -0.014000000000000004,
+        "mean_mcse": 0.01408308678285174,
+        "median": -0.010000000000000009,
+        "min": -0.15999999999999998,
+        "n": 25
+      },
+      "statistic_kind": "likelihood"
+    },
+    {
+      "available_pairs": 25,
+      "case": "independent_gaussian",
+      "fitted_only_reject": 0,
+      "known_only_reject": 0,
+      "p_fitted_minus_known": {
+        "max": 0.0,
+        "mean": 0.0,
+        "mean_mcse": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 25
+      },
+      "statistic_kind": "bic"
+    },
+    {
+      "available_pairs": 25,
+      "case": "rank_two_gaussian",
+      "fitted_only_reject": 0,
+      "known_only_reject": 0,
+      "p_fitted_minus_known": {
+        "max": 0.07999999999999999,
+        "mean": -0.008400000000000005,
+        "mean_mcse": 0.010241744643044627,
+        "median": -0.010000000000000002,
+        "min": -0.15000000000000002,
+        "n": 25
+      },
+      "statistic_kind": "likelihood"
+    },
+    {
+      "available_pairs": 25,
+      "case": "rank_two_gaussian",
+      "fitted_only_reject": 0,
+      "known_only_reject": 0,
+      "p_fitted_minus_known": {
+        "max": 0.0,
+        "mean": 0.0,
+        "mean_mcse": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 25
+      },
+      "statistic_kind": "bic"
+    },
+    {
+      "available_pairs": 25,
+      "case": "weak_conditional_gaussian",
+      "fitted_only_reject": 0,
+      "known_only_reject": 0,
+      "p_fitted_minus_known": {
+        "max": 0.12,
+        "mean": 0.018,
+        "mean_mcse": 0.01066145706114632,
+        "median": 0.0,
+        "min": -0.06,
+        "n": 25
+      },
+      "statistic_kind": "likelihood"
+    },
+    {
+      "available_pairs": 25,
+      "case": "weak_conditional_gaussian",
+      "fitted_only_reject": 0,
+      "known_only_reject": 0,
+      "p_fitted_minus_known": {
+        "max": 0.0,
+        "mean": 0.0,
+        "mean_mcse": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 25
+      },
+      "statistic_kind": "bic"
+    },
+    {
+      "available_pairs": 25,
+      "case": "zero_conditional_gaussian",
+      "fitted_only_reject": 0,
+      "known_only_reject": 0,
+      "p_fitted_minus_known": {
+        "max": 0.09999999999999998,
+        "mean": -0.0064000000000000055,
+        "mean_mcse": 0.010196077677224708,
+        "median": 0.0,
+        "min": -0.14,
+        "n": 25
+      },
+      "statistic_kind": "likelihood"
+    },
+    {
+      "available_pairs": 25,
+      "case": "zero_conditional_gaussian",
+      "fitted_only_reject": 0,
+      "known_only_reject": 0,
+      "p_fitted_minus_known": {
+        "max": 0.0,
+        "mean": 0.0,
+        "mean_mcse": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 25
+      },
+      "statistic_kind": "bic"
+    }
+  ],
+  "pooled_metric_scope": "Descriptive draws; across-observation uncertainty uses observation-summary.json",
+  "scope": "Paired simulation diagnostic of estimated versus known Gaussian nuisance parameters. Same counts, identities, model settings and Gaussian innovations per paired draw. One shared observed point fit. Known-law results are not empirical p-values, a correction, general size guarantee or species-boundary evidence. No stability resampling.",
+  "study_files": 28140,
+  "summaries": [
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "correlated_gaussian",
+      "cohort": "archived",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 1,
+        "3": 17,
+        "4": 7
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.47062882070362244,
+          "mean": 0.14585268950734645,
+          "median": 0.17614619558184733,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 16815.37488226308,
+          "mean": 656.8068188098205,
+          "median": 1.0000000000069382,
+          "min": 0.9999999997743121,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.9270065999630389,
+          "mean": 0.8300200358400587,
+          "median": 0.8323356874582606,
+          "min": 0.6614637219813508,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.5756782405724526,
+          "mean": 0.21568420106879385,
+          "median": 0.21446506277742744,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.8909653092311152,
+          "mean": 0.7615419229934687,
+          "median": 0.762667284285839,
+          "min": 0.595991226223351,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 164.47323065675585,
+          "mean": 73.46925395692692,
+          "median": 75.00977891437435,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.5156748858013284,
+          "mean": 0.4356496741147,
+          "mean_mcse": 0.015215396744183138,
+          "median": 0.45885356823220325,
+          "min": 0.18333352029482072,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 1.6707789555237689,
+          "mean": 1.1616304028793984,
+          "mean_mcse": 0.053919992726350695,
+          "median": 1.161144732714502,
+          "min": 0.6492567301007167,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.8451871974680936,
+          "mean": 2.40587287024745,
+          "mean_mcse": 0.040119358459947775,
+          "median": 2.378508242820043,
+          "min": 1.9904546446591076,
+          "n": 25
+        },
+        "optimality": {
+          "max": 5.566672437659625e-07,
+          "mean": 1.270029080012447e-07,
+          "mean_mcse": 2.214389721871404e-08,
+          "median": 9.260125280463605e-08,
+          "min": 3.854286420579278e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.367073103319961,
+          "mean": 1.367073103319961,
+          "mean_mcse": 0.0,
+          "median": 1.367073103319961,
+          "min": 1.367073103319961,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.2673879804524506,
+          "mean": 2.26738798045245,
+          "mean_mcse": 9.064933036736789e-17,
+          "median": 2.2673879804524506,
+          "min": 2.2673879804524506,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "bic",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "correlated_gaussian",
+      "cohort": "archived",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 1,
+        "3": 17,
+        "4": 7
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.47062882070362244,
+          "mean": 0.14585268950734645,
+          "median": 0.17614619558184733,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 16815.37488226308,
+          "mean": 656.8068188098205,
+          "median": 1.0000000000069382,
+          "min": 0.9999999997743121,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.9270065999630389,
+          "mean": 0.8300200358400587,
+          "median": 0.8323356874582606,
+          "min": 0.6614637219813508,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.5756782405724526,
+          "mean": 0.21568420106879385,
+          "median": 0.21446506277742744,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.8909653092311152,
+          "mean": 0.7615419229934687,
+          "median": 0.762667284285839,
+          "min": 0.595991226223351,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 164.47323065675585,
+          "mean": 73.46925395692692,
+          "median": 75.00977891437435,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.5156748858013284,
+          "mean": 0.4356496741147,
+          "mean_mcse": 0.015215396744183138,
+          "median": 0.45885356823220325,
+          "min": 0.18333352029482072,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 1.6707789555237689,
+          "mean": 1.1616304028793984,
+          "mean_mcse": 0.053919992726350695,
+          "median": 1.161144732714502,
+          "min": 0.6492567301007167,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.8451871974680936,
+          "mean": 2.40587287024745,
+          "mean_mcse": 0.040119358459947775,
+          "median": 2.378508242820043,
+          "min": 1.9904546446591076,
+          "n": 25
+        },
+        "optimality": {
+          "max": 5.566672437659625e-07,
+          "mean": 1.270029080012447e-07,
+          "mean_mcse": 2.214389721871404e-08,
+          "median": 9.260125280463605e-08,
+          "min": 3.854286420579278e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.367073103319961,
+          "mean": 1.367073103319961,
+          "mean_mcse": 0.0,
+          "median": 1.367073103319961,
+          "min": 1.367073103319961,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.2673879804524506,
+          "mean": 2.26738798045245,
+          "mean_mcse": 9.064933036736789e-17,
+          "median": 2.2673879804524506,
+          "min": 2.2673879804524506,
+          "n": 25
+        }
+      },
+      "rejected": 1,
+      "requested": 25,
+      "statistic_kind": "likelihood",
+      "wilson_95": [
+        0.007096233501987265,
+        0.19544063736193734
+      ],
+      "withheld_bounds": [
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "independent_gaussian",
+      "cohort": "archived",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 25
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5244590159116199,
+          "mean": 0.155307475757352,
+          "median": 0.1831754453082514,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 18201.790709337663,
+          "mean": 906.5960501356009,
+          "median": 4.516838683430522,
+          "min": 0.9999999997901571,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7819814173024542,
+          "mean": 0.6175194752690304,
+          "median": 0.6144332448876095,
+          "min": 0.5275796170319529,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.5244590159116199,
+          "mean": 0.21209914648929765,
+          "median": 0.21143976328406908,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7617933539008019,
+          "mean": 0.6245661614000926,
+          "median": 0.6221701056019646,
+          "min": 0.5324631177856107,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 163.50532946287944,
+          "mean": 79.87239721657629,
+          "median": 83.75557012307604,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 1.5807213448495658,
+          "mean": 0.9562313428191525,
+          "mean_mcse": 0.04657143794090043,
+          "median": 0.9631336139880615,
+          "min": 0.48568701024766986,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 6.765563609083027,
+          "mean": 4.8759376466615585,
+          "mean_mcse": 0.13304158582882758,
+          "median": 4.866083002799136,
+          "min": 3.7193085454932078,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 1.6558135301906374,
+          "mean": 1.5082921337832333,
+          "mean_mcse": 0.014057988655061252,
+          "median": 1.5090969322462966,
+          "min": 1.3710146451824954,
+          "n": 25
+        },
+        "optimality": {
+          "max": 1.1820295496133698e-07,
+          "mean": 3.542681973682862e-08,
+          "mean_mcse": 5.1051931985141764e-09,
+          "median": 2.956820275429317e-08,
+          "min": 9.778171376761957e-09,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 5.333333333333335,
+          "mean": 5.333333333333335,
+          "mean_mcse": 0.0,
+          "median": 5.333333333333335,
+          "min": 5.333333333333335,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 1.473684210526316,
+          "mean": 1.473684210526316,
+          "mean_mcse": 0.0,
+          "median": 1.473684210526316,
+          "min": 1.473684210526316,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "bic",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "independent_gaussian",
+      "cohort": "archived",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 25
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5244590159116199,
+          "mean": 0.155307475757352,
+          "median": 0.1831754453082514,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 18201.790709337663,
+          "mean": 906.5960501356009,
+          "median": 4.516838683430522,
+          "min": 0.9999999997901571,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7819814173024542,
+          "mean": 0.6175194752690304,
+          "median": 0.6144332448876095,
+          "min": 0.5275796170319529,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.5244590159116199,
+          "mean": 0.21209914648929765,
+          "median": 0.21143976328406908,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7617933539008019,
+          "mean": 0.6245661614000926,
+          "median": 0.6221701056019646,
+          "min": 0.5324631177856107,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 163.50532946287944,
+          "mean": 79.87239721657629,
+          "median": 83.75557012307604,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 1.5807213448495658,
+          "mean": 0.9562313428191525,
+          "mean_mcse": 0.04657143794090043,
+          "median": 0.9631336139880615,
+          "min": 0.48568701024766986,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 6.765563609083027,
+          "mean": 4.8759376466615585,
+          "mean_mcse": 0.13304158582882758,
+          "median": 4.866083002799136,
+          "min": 3.7193085454932078,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 1.6558135301906374,
+          "mean": 1.5082921337832333,
+          "mean_mcse": 0.014057988655061252,
+          "median": 1.5090969322462966,
+          "min": 1.3710146451824954,
+          "n": 25
+        },
+        "optimality": {
+          "max": 1.1820295496133698e-07,
+          "mean": 3.542681973682862e-08,
+          "mean_mcse": 5.1051931985141764e-09,
+          "median": 2.956820275429317e-08,
+          "min": 9.778171376761957e-09,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 5.333333333333335,
+          "mean": 5.333333333333335,
+          "mean_mcse": 0.0,
+          "median": 5.333333333333335,
+          "min": 5.333333333333335,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 1.473684210526316,
+          "mean": 1.473684210526316,
+          "mean_mcse": 0.0,
+          "median": 1.473684210526316,
+          "min": 1.473684210526316,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "likelihood",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "rank_two_gaussian",
+      "cohort": "archived",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 9,
+        "3": 16,
+        "4": 0
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.4904015981908663,
+          "mean": 0.14629505136266666,
+          "median": 0.17597517411487879,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 15788.513594732209,
+          "mean": 728.6614417263786,
+          "median": 1.002091823075,
+          "min": 0.999999999776402,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7455725830586178,
+          "mean": 0.6193227267504577,
+          "median": 0.6180013304988476,
+          "min": 0.5272228881473581,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.4628243178640781,
+          "mean": 0.213775554673498,
+          "median": 0.21507973682093018,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.8342844317543259,
+          "mean": 0.6824917913432497,
+          "median": 0.6814033448326549,
+          "min": 0.5569455018532056,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 146.8838359219684,
+          "mean": 77.24202726839341,
+          "median": 80.28453429275072,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.632149307546693,
+          "mean": 0.44779399953776916,
+          "mean_mcse": 0.02400582175457563,
+          "median": 0.47214394816965544,
+          "min": 0.20954817358130734,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 2.162080475265796,
+          "mean": 1.499134776543539,
+          "mean_mcse": 0.06267627276225739,
+          "median": 1.4832827158654638,
+          "min": 0.9964423055783332,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.5039345393787262,
+          "mean": 2.207638567371576,
+          "mean_mcse": 0.034970753456854596,
+          "median": 2.2215532167420395,
+          "min": 1.8774745738092131,
+          "n": 25
+        },
+        "optimality": {
+          "max": 1.5309801031093695e-07,
+          "mean": 5.540706632667369e-08,
+          "mean_mcse": 7.499009297934008e-09,
+          "median": 4.050723510784504e-08,
+          "min": 4.988585267096113e-09,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.5999999999999996,
+          "mean": 1.5999999999999996,
+          "mean_mcse": 0.0,
+          "median": 1.5999999999999996,
+          "min": 1.5999999999999996,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.153846153846154,
+          "mean": 2.153846153846154,
+          "mean_mcse": 0.0,
+          "median": 2.153846153846154,
+          "min": 2.153846153846154,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "bic",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "rank_two_gaussian",
+      "cohort": "archived",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 9,
+        "3": 16,
+        "4": 0
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.4904015981908663,
+          "mean": 0.14629505136266666,
+          "median": 0.17597517411487879,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 15788.513594732209,
+          "mean": 728.6614417263786,
+          "median": 1.002091823075,
+          "min": 0.999999999776402,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7455725830586178,
+          "mean": 0.6193227267504577,
+          "median": 0.6180013304988476,
+          "min": 0.5272228881473581,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.4628243178640781,
+          "mean": 0.213775554673498,
+          "median": 0.21507973682093018,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.8342844317543259,
+          "mean": 0.6824917913432497,
+          "median": 0.6814033448326549,
+          "min": 0.5569455018532056,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 146.8838359219684,
+          "mean": 77.24202726839341,
+          "median": 80.28453429275072,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.632149307546693,
+          "mean": 0.44779399953776916,
+          "mean_mcse": 0.02400582175457563,
+          "median": 0.47214394816965544,
+          "min": 0.20954817358130734,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 2.162080475265796,
+          "mean": 1.499134776543539,
+          "mean_mcse": 0.06267627276225739,
+          "median": 1.4832827158654638,
+          "min": 0.9964423055783332,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.5039345393787262,
+          "mean": 2.207638567371576,
+          "mean_mcse": 0.034970753456854596,
+          "median": 2.2215532167420395,
+          "min": 1.8774745738092131,
+          "n": 25
+        },
+        "optimality": {
+          "max": 1.5309801031093695e-07,
+          "mean": 5.540706632667369e-08,
+          "mean_mcse": 7.499009297934008e-09,
+          "median": 4.050723510784504e-08,
+          "min": 4.988585267096113e-09,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.5999999999999996,
+          "mean": 1.5999999999999996,
+          "mean_mcse": 0.0,
+          "median": 1.5999999999999996,
+          "min": 1.5999999999999996,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.153846153846154,
+          "mean": 2.153846153846154,
+          "mean_mcse": 0.0,
+          "median": 2.153846153846154,
+          "min": 2.153846153846154,
+          "n": 25
+        }
+      },
+      "rejected": 4,
+      "requested": 25,
+      "statistic_kind": "likelihood",
+      "wilson_95": [
+        0.0640345145667644,
+        0.3465362160717886
+      ],
+      "withheld_bounds": [
+        0.16,
+        0.16
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "weak_conditional_gaussian",
+      "cohort": "archived",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 5,
+        "3": 18,
+        "4": 2
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.4983293458280897,
+          "mean": 0.1470444299451395,
+          "median": 0.17496802256611768,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 14640.278761756119,
+          "mean": 665.8705664549256,
+          "median": 1.0000000000819278,
+          "min": 0.9999999997811322,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7778309688332063,
+          "mean": 0.6262168639056086,
+          "median": 0.6230560289993146,
+          "min": 0.5277857050058442,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.4888623065606802,
+          "mean": 0.21198323498226382,
+          "median": 0.21142589876194737,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.8227929793557396,
+          "mean": 0.6754153741122656,
+          "median": 0.6731314203524704,
+          "min": 0.5347981666520267,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 161.5609998332198,
+          "mean": 77.12568035245187,
+          "median": 79.88618584856721,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.8529809851271852,
+          "mean": 0.4451438450287541,
+          "mean_mcse": 0.03268487006719633,
+          "median": 0.4848401343421826,
+          "min": 0.14944286104469884,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 2.081421050391831,
+          "mean": 1.4589288319262324,
+          "mean_mcse": 0.06428787327506764,
+          "median": 1.4997965607137225,
+          "min": 0.8899739565108647,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.647044042324164,
+          "mean": 2.203182586066916,
+          "mean_mcse": 0.03899002696588731,
+          "median": 2.1442825303763255,
+          "min": 1.9581220476944596,
+          "n": 25
+        },
+        "optimality": {
+          "max": 2.2043680819594513e-07,
+          "mean": 8.364382311880358e-08,
+          "mean_mcse": 1.2939064246444656e-08,
+          "median": 5.4419364459157293e-08,
+          "min": 1.2346509335736666e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.6333333333333337,
+          "mean": 1.6333333333333337,
+          "mean_mcse": 0.0,
+          "median": 1.6333333333333337,
+          "min": 1.6333333333333337,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.139240506329114,
+          "mean": 2.139240506329114,
+          "mean_mcse": 0.0,
+          "median": 2.139240506329114,
+          "min": 2.139240506329114,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "bic",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "weak_conditional_gaussian",
+      "cohort": "archived",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 5,
+        "3": 18,
+        "4": 2
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.4983293458280897,
+          "mean": 0.1470444299451395,
+          "median": 0.17496802256611768,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 14640.278761756119,
+          "mean": 665.8705664549256,
+          "median": 1.0000000000819278,
+          "min": 0.9999999997811322,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7778309688332063,
+          "mean": 0.6262168639056086,
+          "median": 0.6230560289993146,
+          "min": 0.5277857050058442,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.4888623065606802,
+          "mean": 0.21198323498226382,
+          "median": 0.21142589876194737,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.8227929793557396,
+          "mean": 0.6754153741122656,
+          "median": 0.6731314203524704,
+          "min": 0.5347981666520267,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 161.5609998332198,
+          "mean": 77.12568035245187,
+          "median": 79.88618584856721,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.8529809851271852,
+          "mean": 0.4451438450287541,
+          "mean_mcse": 0.03268487006719633,
+          "median": 0.4848401343421826,
+          "min": 0.14944286104469884,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 2.081421050391831,
+          "mean": 1.4589288319262324,
+          "mean_mcse": 0.06428787327506764,
+          "median": 1.4997965607137225,
+          "min": 0.8899739565108647,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.647044042324164,
+          "mean": 2.203182586066916,
+          "mean_mcse": 0.03899002696588731,
+          "median": 2.1442825303763255,
+          "min": 1.9581220476944596,
+          "n": 25
+        },
+        "optimality": {
+          "max": 2.2043680819594513e-07,
+          "mean": 8.364382311880358e-08,
+          "mean_mcse": 1.2939064246444656e-08,
+          "median": 5.4419364459157293e-08,
+          "min": 1.2346509335736666e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.6333333333333337,
+          "mean": 1.6333333333333337,
+          "mean_mcse": 0.0,
+          "median": 1.6333333333333337,
+          "min": 1.6333333333333337,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.139240506329114,
+          "mean": 2.139240506329114,
+          "mean_mcse": 0.0,
+          "median": 2.139240506329114,
+          "min": 2.139240506329114,
+          "n": 25
+        }
+      },
+      "rejected": 3,
+      "requested": 25,
+      "statistic_kind": "likelihood",
+      "wilson_95": [
+        0.04166817150440358,
+        0.2995579392092732
+      ],
+      "withheld_bounds": [
+        0.12,
+        0.12
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "zero_conditional_gaussian",
+      "cohort": "archived",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 12,
+        "2": 11,
+        "3": 2,
+        "4": 0
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5384334687363219,
+          "mean": 0.16029977836169218,
+          "median": 0.18774506756575315,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 13538.283184268072,
+          "mean": 601.3976881280558,
+          "median": 1.0000000000164468,
+          "min": 0.9999999996617793,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7664116516959172,
+          "mean": 0.6193479080813352,
+          "median": 0.6181417219004537,
+          "min": 0.5249366293443385,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.5384334687363219,
+          "mean": 0.2199205957932769,
+          "median": 0.21792679883307337,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7810353683332154,
+          "mean": 0.6430557847780288,
+          "median": 0.6409666626302877,
+          "min": 0.5424124021962947,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 186.5464610445867,
+          "mean": 76.43873849284202,
+          "median": 78.70004315617535,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.30953343370078884,
+          "mean": 0.12171395143287503,
+          "mean_mcse": 0.014904140564808316,
+          "median": 0.09993187861510532,
+          "min": 0.00598550643016854,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 0.3844348558868099,
+          "mean": 0.14539984323934388,
+          "mean_mcse": 0.0205544469627208,
+          "median": 0.11269694008858216,
+          "min": 0.005985506430168451,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 3.9798250911224193,
+          "mean": 3.623399807334609,
+          "mean_mcse": 0.04594790450968162,
+          "median": 3.6922008900632797,
+          "min": 3.1440004101275543,
+          "n": 25
+        },
+        "optimality": {
+          "max": 2.6098586277875646e-07,
+          "mean": 9.590419522673837e-08,
+          "mean_mcse": 1.2856039725071544e-08,
+          "median": 8.318043165367328e-08,
+          "min": 1.4540233319454421e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 0.0,
+          "mean": 0.0,
+          "mean_mcse": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 4.0,
+          "mean": 4.0,
+          "mean_mcse": 0.0,
+          "median": 4.0,
+          "min": 4.0,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "bic",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "zero_conditional_gaussian",
+      "cohort": "archived",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 12,
+        "2": 11,
+        "3": 2,
+        "4": 0
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5384334687363219,
+          "mean": 0.16029977836169218,
+          "median": 0.18774506756575315,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 13538.283184268072,
+          "mean": 601.3976881280558,
+          "median": 1.0000000000164468,
+          "min": 0.9999999996617793,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7664116516959172,
+          "mean": 0.6193479080813352,
+          "median": 0.6181417219004537,
+          "min": 0.5249366293443385,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.5384334687363219,
+          "mean": 0.2199205957932769,
+          "median": 0.21792679883307337,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7810353683332154,
+          "mean": 0.6430557847780288,
+          "median": 0.6409666626302877,
+          "min": 0.5424124021962947,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 186.5464610445867,
+          "mean": 76.43873849284202,
+          "median": 78.70004315617535,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.30953343370078884,
+          "mean": 0.12171395143287503,
+          "mean_mcse": 0.014904140564808316,
+          "median": 0.09993187861510532,
+          "min": 0.00598550643016854,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 0.3844348558868099,
+          "mean": 0.14539984323934388,
+          "mean_mcse": 0.0205544469627208,
+          "median": 0.11269694008858216,
+          "min": 0.005985506430168451,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 3.9798250911224193,
+          "mean": 3.623399807334609,
+          "mean_mcse": 0.04594790450968162,
+          "median": 3.6922008900632797,
+          "min": 3.1440004101275543,
+          "n": 25
+        },
+        "optimality": {
+          "max": 2.6098586277875646e-07,
+          "mean": 9.590419522673837e-08,
+          "mean_mcse": 1.2856039725071544e-08,
+          "median": 8.318043165367328e-08,
+          "min": 1.4540233319454421e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 0.0,
+          "mean": 0.0,
+          "mean_mcse": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 4.0,
+          "mean": 4.0,
+          "mean_mcse": 0.0,
+          "median": 4.0,
+          "min": 4.0,
+          "n": 25
+        }
+      },
+      "rejected": 3,
+      "requested": 25,
+      "statistic_kind": "likelihood",
+      "wilson_95": [
+        0.04166817150440358,
+        0.2995579392092732
+      ],
+      "withheld_bounds": [
+        0.12,
+        0.12
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "correlated_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 1,
+        "3": 17,
+        "4": 7
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5355193921256282,
+          "mean": 0.15048794138110771,
+          "median": 0.1782736815447124,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 13194.300160789275,
+          "mean": 692.7663245647537,
+          "median": 1.0000000000203189,
+          "min": 0.9999999997151225,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.911490212341397,
+          "mean": 0.8192870733416905,
+          "median": 0.8218203885716566,
+          "min": 0.6825055970747236,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.5355193921256282,
+          "mean": 0.21714495599405897,
+          "median": 0.21548104312398217,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.8983408128519629,
+          "mean": 0.759691832090135,
+          "median": 0.7588007462102523,
+          "min": 0.5870183452339464,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 153.09607390472283,
+          "mean": 75.93051330849096,
+          "median": 78.46053874167694,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.6316603358061627,
+          "mean": 0.44489149845313597,
+          "mean_mcse": 0.018156175205035034,
+          "median": 0.44735876808816527,
+          "min": 0.24171957984028206,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 1.902017797224649,
+          "mean": 1.2079352182175258,
+          "mean_mcse": 0.05729510155036962,
+          "median": 1.173952599197483,
+          "min": 0.6937450536449001,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.771765948175444,
+          "mean": 2.373048305714798,
+          "mean_mcse": 0.03846555568509093,
+          "median": 2.39897579086142,
+          "min": 1.9593235452890834,
+          "n": 25
+        },
+        "optimality": {
+          "max": 3.135329355585803e-07,
+          "mean": 9.764928165276188e-08,
+          "mean_mcse": 1.2840201924170763e-08,
+          "median": 8.544006641075796e-08,
+          "min": 3.0440249015883936e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.367073103319961,
+          "mean": 1.367073103319961,
+          "mean_mcse": 0.0,
+          "median": 1.367073103319961,
+          "min": 1.367073103319961,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.2673879804524506,
+          "mean": 2.26738798045245,
+          "mean_mcse": 9.064933036736789e-17,
+          "median": 2.2673879804524506,
+          "min": 2.2673879804524506,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "bic",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "correlated_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 1,
+        "3": 17,
+        "4": 7
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5355193921256282,
+          "mean": 0.15048794138110771,
+          "median": 0.1782736815447124,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 13194.300160789275,
+          "mean": 692.7663245647537,
+          "median": 1.0000000000203189,
+          "min": 0.9999999997151225,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.911490212341397,
+          "mean": 0.8192870733416905,
+          "median": 0.8218203885716566,
+          "min": 0.6825055970747236,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.5355193921256282,
+          "mean": 0.21714495599405897,
+          "median": 0.21548104312398217,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.8983408128519629,
+          "mean": 0.759691832090135,
+          "median": 0.7588007462102523,
+          "min": 0.5870183452339464,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 153.09607390472283,
+          "mean": 75.93051330849096,
+          "median": 78.46053874167694,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.6316603358061627,
+          "mean": 0.44489149845313597,
+          "mean_mcse": 0.018156175205035034,
+          "median": 0.44735876808816527,
+          "min": 0.24171957984028206,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 1.902017797224649,
+          "mean": 1.2079352182175258,
+          "mean_mcse": 0.05729510155036962,
+          "median": 1.173952599197483,
+          "min": 0.6937450536449001,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.771765948175444,
+          "mean": 2.373048305714798,
+          "mean_mcse": 0.03846555568509093,
+          "median": 2.39897579086142,
+          "min": 1.9593235452890834,
+          "n": 25
+        },
+        "optimality": {
+          "max": 3.135329355585803e-07,
+          "mean": 9.764928165276188e-08,
+          "mean_mcse": 1.2840201924170763e-08,
+          "median": 8.544006641075796e-08,
+          "min": 3.0440249015883936e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.367073103319961,
+          "mean": 1.367073103319961,
+          "mean_mcse": 0.0,
+          "median": 1.367073103319961,
+          "min": 1.367073103319961,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.2673879804524506,
+          "mean": 2.26738798045245,
+          "mean_mcse": 9.064933036736789e-17,
+          "median": 2.2673879804524506,
+          "min": 2.2673879804524506,
+          "n": 25
+        }
+      },
+      "rejected": 1,
+      "requested": 25,
+      "statistic_kind": "likelihood",
+      "wilson_95": [
+        0.007096233501987265,
+        0.19544063736193734
+      ],
+      "withheld_bounds": [
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "arm": "known",
+      "available": 25,
+      "case": "correlated_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 1,
+        "3": 17,
+        "4": 7
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5486753451522747,
+          "mean": 0.1474128667882413,
+          "median": 0.17737321106147813,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 14908.592029692449,
+          "mean": 692.2191456631407,
+          "median": 1.0000000000073537,
+          "min": 0.9999999997323746,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.900045070093863,
+          "mean": 0.8251766494232736,
+          "median": 0.8280041772458604,
+          "min": 0.689655878521066,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.4971169082404599,
+          "mean": 0.21541263571389246,
+          "median": 0.21512475360123703,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.8820950253293056,
+          "mean": 0.7575108646996861,
+          "median": 0.7591595257536311,
+          "min": 0.639568786095928,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 153.33243260387948,
+          "mean": 75.19889987147992,
+          "median": 76.96100093905557,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.6316603358061627,
+          "mean": 0.44489149845313597,
+          "mean_mcse": 0.018156175205035034,
+          "median": 0.44735876808816527,
+          "min": 0.24171957984028206,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 1.902017797224649,
+          "mean": 1.2079352182175258,
+          "mean_mcse": 0.05729510155036962,
+          "median": 1.173952599197483,
+          "min": 0.6937450536449001,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.771765948175444,
+          "mean": 2.373048305714798,
+          "mean_mcse": 0.03846555568509093,
+          "median": 2.39897579086142,
+          "min": 1.9593235452890834,
+          "n": 25
+        },
+        "optimality": {
+          "max": 3.135329355585803e-07,
+          "mean": 9.764928165276188e-08,
+          "mean_mcse": 1.2840201924170763e-08,
+          "median": 8.544006641075796e-08,
+          "min": 3.0440249015883936e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.367073103319961,
+          "mean": 1.367073103319961,
+          "mean_mcse": 0.0,
+          "median": 1.367073103319961,
+          "min": 1.367073103319961,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.2673879804524506,
+          "mean": 2.26738798045245,
+          "mean_mcse": 9.064933036736789e-17,
+          "median": 2.2673879804524506,
+          "min": 2.2673879804524506,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "bic",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "known",
+      "available": 25,
+      "case": "correlated_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 1,
+        "3": 17,
+        "4": 7
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5486753451522747,
+          "mean": 0.1474128667882413,
+          "median": 0.17737321106147813,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 14908.592029692449,
+          "mean": 692.2191456631407,
+          "median": 1.0000000000073537,
+          "min": 0.9999999997323746,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.900045070093863,
+          "mean": 0.8251766494232736,
+          "median": 0.8280041772458604,
+          "min": 0.689655878521066,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.4971169082404599,
+          "mean": 0.21541263571389246,
+          "median": 0.21512475360123703,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.8820950253293056,
+          "mean": 0.7575108646996861,
+          "median": 0.7591595257536311,
+          "min": 0.639568786095928,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 153.33243260387948,
+          "mean": 75.19889987147992,
+          "median": 76.96100093905557,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.6316603358061627,
+          "mean": 0.44489149845313597,
+          "mean_mcse": 0.018156175205035034,
+          "median": 0.44735876808816527,
+          "min": 0.24171957984028206,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 1.902017797224649,
+          "mean": 1.2079352182175258,
+          "mean_mcse": 0.05729510155036962,
+          "median": 1.173952599197483,
+          "min": 0.6937450536449001,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.771765948175444,
+          "mean": 2.373048305714798,
+          "mean_mcse": 0.03846555568509093,
+          "median": 2.39897579086142,
+          "min": 1.9593235452890834,
+          "n": 25
+        },
+        "optimality": {
+          "max": 3.135329355585803e-07,
+          "mean": 9.764928165276188e-08,
+          "mean_mcse": 1.2840201924170763e-08,
+          "median": 8.544006641075796e-08,
+          "min": 3.0440249015883936e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.367073103319961,
+          "mean": 1.367073103319961,
+          "mean_mcse": 0.0,
+          "median": 1.367073103319961,
+          "min": 1.367073103319961,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.2673879804524506,
+          "mean": 2.26738798045245,
+          "mean_mcse": 9.064933036736789e-17,
+          "median": 2.2673879804524506,
+          "min": 2.2673879804524506,
+          "n": 25
+        }
+      },
+      "rejected": 1,
+      "requested": 25,
+      "statistic_kind": "likelihood",
+      "wilson_95": [
+        0.007096233501987265,
+        0.19544063736193734
+      ],
+      "withheld_bounds": [
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "independent_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 25
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.446394457064698,
+          "mean": 0.15107912876278315,
+          "median": 0.17771503327862076,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 15520.178414269796,
+          "mean": 925.2365179054394,
+          "median": 4.301329677249517,
+          "min": 0.999999999789348,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.747517451411863,
+          "mean": 0.6238360640323346,
+          "median": 0.6218215876295696,
+          "min": 0.5264090816451752,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.4129657384444095,
+          "mean": 0.21003431610735548,
+          "median": 0.21031022134236899,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7674037916480436,
+          "mean": 0.6317562293907992,
+          "median": 0.6313502031025271,
+          "min": 0.5271013057397833,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 159.77542968117586,
+          "mean": 79.57560195845424,
+          "median": 83.35813781305,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 1.486601150152891,
+          "mean": 1.070250714080043,
+          "mean_mcse": 0.03838848579463733,
+          "median": 1.087592650954893,
+          "min": 0.7469217249761252,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 6.049696381425258,
+          "mean": 4.781913429595616,
+          "mean_mcse": 0.13343958636734676,
+          "median": 4.7431275321093285,
+          "min": 3.4741823980116555,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 1.7203075182680083,
+          "mean": 1.5142461319868803,
+          "mean_mcse": 0.015594611135647224,
+          "median": 1.5085504270187027,
+          "min": 1.4233953915265132,
+          "n": 25
+        },
+        "optimality": {
+          "max": 1.446908716798423e-07,
+          "mean": 4.548618182640546e-08,
+          "mean_mcse": 7.646194960403991e-09,
+          "median": 3.005857804327938e-08,
+          "min": 8.679288901296267e-09,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 5.333333333333335,
+          "mean": 5.333333333333335,
+          "mean_mcse": 0.0,
+          "median": 5.333333333333335,
+          "min": 5.333333333333335,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 1.473684210526316,
+          "mean": 1.473684210526316,
+          "mean_mcse": 0.0,
+          "median": 1.473684210526316,
+          "min": 1.473684210526316,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "bic",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "independent_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 25
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.446394457064698,
+          "mean": 0.15107912876278315,
+          "median": 0.17771503327862076,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 15520.178414269796,
+          "mean": 925.2365179054394,
+          "median": 4.301329677249517,
+          "min": 0.999999999789348,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.747517451411863,
+          "mean": 0.6238360640323346,
+          "median": 0.6218215876295696,
+          "min": 0.5264090816451752,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.4129657384444095,
+          "mean": 0.21003431610735548,
+          "median": 0.21031022134236899,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7674037916480436,
+          "mean": 0.6317562293907992,
+          "median": 0.6313502031025271,
+          "min": 0.5271013057397833,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 159.77542968117586,
+          "mean": 79.57560195845424,
+          "median": 83.35813781305,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 1.486601150152891,
+          "mean": 1.070250714080043,
+          "mean_mcse": 0.03838848579463733,
+          "median": 1.087592650954893,
+          "min": 0.7469217249761252,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 6.049696381425258,
+          "mean": 4.781913429595616,
+          "mean_mcse": 0.13343958636734676,
+          "median": 4.7431275321093285,
+          "min": 3.4741823980116555,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 1.7203075182680083,
+          "mean": 1.5142461319868803,
+          "mean_mcse": 0.015594611135647224,
+          "median": 1.5085504270187027,
+          "min": 1.4233953915265132,
+          "n": 25
+        },
+        "optimality": {
+          "max": 1.446908716798423e-07,
+          "mean": 4.548618182640546e-08,
+          "mean_mcse": 7.646194960403991e-09,
+          "median": 3.005857804327938e-08,
+          "min": 8.679288901296267e-09,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 5.333333333333335,
+          "mean": 5.333333333333335,
+          "mean_mcse": 0.0,
+          "median": 5.333333333333335,
+          "min": 5.333333333333335,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 1.473684210526316,
+          "mean": 1.473684210526316,
+          "mean_mcse": 0.0,
+          "median": 1.473684210526316,
+          "min": 1.473684210526316,
+          "n": 25
+        }
+      },
+      "rejected": 3,
+      "requested": 25,
+      "statistic_kind": "likelihood",
+      "wilson_95": [
+        0.04166817150440358,
+        0.2995579392092732
+      ],
+      "withheld_bounds": [
+        0.12,
+        0.12
+      ]
+    },
+    {
+      "arm": "known",
+      "available": 25,
+      "case": "independent_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 25
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5752846086524313,
+          "mean": 0.15575803889763715,
+          "median": 0.18015131091090034,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 18692.153905620908,
+          "mean": 847.0329408955848,
+          "median": 5.979609263239817,
+          "min": 0.9999999997221484,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.6876758663953477,
+          "mean": 0.590194809178785,
+          "median": 0.5882593216061549,
+          "min": 0.5231664517338686,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.4410763588733438,
+          "mean": 0.20898743851197454,
+          "median": 0.20911429937512446,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7159060588556034,
+          "mean": 0.5918558360940498,
+          "median": 0.5898700765410703,
+          "min": 0.5173932563738882,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 155.190256615117,
+          "mean": 80.68807371039875,
+          "median": 85.1736035836733,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 1.486601150152891,
+          "mean": 1.070250714080043,
+          "mean_mcse": 0.03838848579463733,
+          "median": 1.087592650954893,
+          "min": 0.7469217249761252,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 6.049696381425258,
+          "mean": 4.781913429595616,
+          "mean_mcse": 0.13343958636734676,
+          "median": 4.7431275321093285,
+          "min": 3.4741823980116555,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 1.7203075182680083,
+          "mean": 1.5142461319868803,
+          "mean_mcse": 0.015594611135647224,
+          "median": 1.5085504270187027,
+          "min": 1.4233953915265132,
+          "n": 25
+        },
+        "optimality": {
+          "max": 1.446908716798423e-07,
+          "mean": 4.548618182640546e-08,
+          "mean_mcse": 7.646194960403991e-09,
+          "median": 3.005857804327938e-08,
+          "min": 8.679288901296267e-09,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 5.333333333333335,
+          "mean": 5.333333333333335,
+          "mean_mcse": 0.0,
+          "median": 5.333333333333335,
+          "min": 5.333333333333335,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 1.473684210526316,
+          "mean": 1.473684210526316,
+          "mean_mcse": 0.0,
+          "median": 1.473684210526316,
+          "min": 1.473684210526316,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "bic",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "known",
+      "available": 25,
+      "case": "independent_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 25
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5752846086524313,
+          "mean": 0.15575803889763715,
+          "median": 0.18015131091090034,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 18692.153905620908,
+          "mean": 847.0329408955848,
+          "median": 5.979609263239817,
+          "min": 0.9999999997221484,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.6876758663953477,
+          "mean": 0.590194809178785,
+          "median": 0.5882593216061549,
+          "min": 0.5231664517338686,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.4410763588733438,
+          "mean": 0.20898743851197454,
+          "median": 0.20911429937512446,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7159060588556034,
+          "mean": 0.5918558360940498,
+          "median": 0.5898700765410703,
+          "min": 0.5173932563738882,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 155.190256615117,
+          "mean": 80.68807371039875,
+          "median": 85.1736035836733,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 1.486601150152891,
+          "mean": 1.070250714080043,
+          "mean_mcse": 0.03838848579463733,
+          "median": 1.087592650954893,
+          "min": 0.7469217249761252,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 6.049696381425258,
+          "mean": 4.781913429595616,
+          "mean_mcse": 0.13343958636734676,
+          "median": 4.7431275321093285,
+          "min": 3.4741823980116555,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 1.7203075182680083,
+          "mean": 1.5142461319868803,
+          "mean_mcse": 0.015594611135647224,
+          "median": 1.5085504270187027,
+          "min": 1.4233953915265132,
+          "n": 25
+        },
+        "optimality": {
+          "max": 1.446908716798423e-07,
+          "mean": 4.548618182640546e-08,
+          "mean_mcse": 7.646194960403991e-09,
+          "median": 3.005857804327938e-08,
+          "min": 8.679288901296267e-09,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 5.333333333333335,
+          "mean": 5.333333333333335,
+          "mean_mcse": 0.0,
+          "median": 5.333333333333335,
+          "min": 5.333333333333335,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 1.473684210526316,
+          "mean": 1.473684210526316,
+          "mean_mcse": 0.0,
+          "median": 1.473684210526316,
+          "min": 1.473684210526316,
+          "n": 25
+        }
+      },
+      "rejected": 4,
+      "requested": 25,
+      "statistic_kind": "likelihood",
+      "wilson_95": [
+        0.0640345145667644,
+        0.3465362160717886
+      ],
+      "withheld_bounds": [
+        0.16,
+        0.16
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "rank_two_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 9,
+        "3": 15,
+        "4": 1
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.543100944700989,
+          "mean": 0.14345980549333723,
+          "median": 0.17262249489895481,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 21844.806189288385,
+          "mean": 708.7232656886343,
+          "median": 1.0000000000420133,
+          "min": 0.99999999970727,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7518227303172618,
+          "mean": 0.624460853509878,
+          "median": 0.6245767781507806,
+          "min": 0.5295833055782864,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.543100944700989,
+          "mean": 0.21450093353496405,
+          "median": 0.2136958167123909,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.8178358497846265,
+          "mean": 0.6948404066186514,
+          "median": 0.6949445762210719,
+          "min": 0.5665490691767128,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 151.17697183280535,
+          "mean": 75.55929671215812,
+          "median": 77.91410747085911,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.7711951876121229,
+          "mean": 0.4731879763339883,
+          "mean_mcse": 0.026345497897314753,
+          "median": 0.45565097853266395,
+          "min": 0.28402994534158543,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 2.1706801759185606,
+          "mean": 1.5086669835669928,
+          "mean_mcse": 0.06784953901906919,
+          "median": 1.4402449771885433,
+          "min": 0.9668480478468494,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.5385997734355996,
+          "mean": 2.1929539382613585,
+          "mean_mcse": 0.034560618504662674,
+          "median": 2.192320036208387,
+          "min": 1.9053464029436815,
+          "n": 25
+        },
+        "optimality": {
+          "max": 3.45730915618514e-07,
+          "mean": 8.748332689899329e-08,
+          "mean_mcse": 1.549428593316769e-08,
+          "median": 6.461223256426507e-08,
+          "min": 1.274353532421113e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.5999999999999996,
+          "mean": 1.5999999999999996,
+          "mean_mcse": 0.0,
+          "median": 1.5999999999999996,
+          "min": 1.5999999999999996,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.153846153846154,
+          "mean": 2.153846153846154,
+          "mean_mcse": 0.0,
+          "median": 2.153846153846154,
+          "min": 2.153846153846154,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "bic",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "rank_two_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 9,
+        "3": 15,
+        "4": 1
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.543100944700989,
+          "mean": 0.14345980549333723,
+          "median": 0.17262249489895481,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 21844.806189288385,
+          "mean": 708.7232656886343,
+          "median": 1.0000000000420133,
+          "min": 0.99999999970727,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7518227303172618,
+          "mean": 0.624460853509878,
+          "median": 0.6245767781507806,
+          "min": 0.5295833055782864,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.543100944700989,
+          "mean": 0.21450093353496405,
+          "median": 0.2136958167123909,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.8178358497846265,
+          "mean": 0.6948404066186514,
+          "median": 0.6949445762210719,
+          "min": 0.5665490691767128,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 151.17697183280535,
+          "mean": 75.55929671215812,
+          "median": 77.91410747085911,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.7711951876121229,
+          "mean": 0.4731879763339883,
+          "mean_mcse": 0.026345497897314753,
+          "median": 0.45565097853266395,
+          "min": 0.28402994534158543,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 2.1706801759185606,
+          "mean": 1.5086669835669928,
+          "mean_mcse": 0.06784953901906919,
+          "median": 1.4402449771885433,
+          "min": 0.9668480478468494,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.5385997734355996,
+          "mean": 2.1929539382613585,
+          "mean_mcse": 0.034560618504662674,
+          "median": 2.192320036208387,
+          "min": 1.9053464029436815,
+          "n": 25
+        },
+        "optimality": {
+          "max": 3.45730915618514e-07,
+          "mean": 8.748332689899329e-08,
+          "mean_mcse": 1.549428593316769e-08,
+          "median": 6.461223256426507e-08,
+          "min": 1.274353532421113e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.5999999999999996,
+          "mean": 1.5999999999999996,
+          "mean_mcse": 0.0,
+          "median": 1.5999999999999996,
+          "min": 1.5999999999999996,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.153846153846154,
+          "mean": 2.153846153846154,
+          "mean_mcse": 0.0,
+          "median": 2.153846153846154,
+          "min": 2.153846153846154,
+          "n": 25
+        }
+      },
+      "rejected": 1,
+      "requested": 25,
+      "statistic_kind": "likelihood",
+      "wilson_95": [
+        0.007096233501987265,
+        0.19544063736193734
+      ],
+      "withheld_bounds": [
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "arm": "known",
+      "available": 25,
+      "case": "rank_two_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 9,
+        "3": 15,
+        "4": 1
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.4921737675209144,
+          "mean": 0.14829057504564325,
+          "median": 0.1786271326668312,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 15015.953525615074,
+          "mean": 739.4708862995373,
+          "median": 1.0000003116053138,
+          "min": 0.9999999997514134,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.6918874264812824,
+          "mean": 0.5885436973439375,
+          "median": 0.5873594337377954,
+          "min": 0.5150759720573519,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.4921737675209144,
+          "mean": 0.21120832427217393,
+          "median": 0.21083394941372777,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7789369901769974,
+          "mean": 0.6677463014182544,
+          "median": 0.6687447007718326,
+          "min": 0.5488691566000783,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 158.75008623920644,
+          "mean": 77.12052201994528,
+          "median": 80.34889740887093,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.7711951876121229,
+          "mean": 0.4731879763339883,
+          "mean_mcse": 0.026345497897314753,
+          "median": 0.45565097853266395,
+          "min": 0.28402994534158543,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 2.1706801759185606,
+          "mean": 1.5086669835669928,
+          "mean_mcse": 0.06784953901906919,
+          "median": 1.4402449771885433,
+          "min": 0.9668480478468494,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.5385997734355996,
+          "mean": 2.1929539382613585,
+          "mean_mcse": 0.034560618504662674,
+          "median": 2.192320036208387,
+          "min": 1.9053464029436815,
+          "n": 25
+        },
+        "optimality": {
+          "max": 3.45730915618514e-07,
+          "mean": 8.748332689899329e-08,
+          "mean_mcse": 1.549428593316769e-08,
+          "median": 6.461223256426507e-08,
+          "min": 1.274353532421113e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.5999999999999996,
+          "mean": 1.5999999999999996,
+          "mean_mcse": 0.0,
+          "median": 1.5999999999999996,
+          "min": 1.5999999999999996,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.153846153846154,
+          "mean": 2.153846153846154,
+          "mean_mcse": 0.0,
+          "median": 2.153846153846154,
+          "min": 2.153846153846154,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "bic",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "known",
+      "available": 25,
+      "case": "rank_two_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 9,
+        "3": 15,
+        "4": 1
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.4921737675209144,
+          "mean": 0.14829057504564325,
+          "median": 0.1786271326668312,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 15015.953525615074,
+          "mean": 739.4708862995373,
+          "median": 1.0000003116053138,
+          "min": 0.9999999997514134,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.6918874264812824,
+          "mean": 0.5885436973439375,
+          "median": 0.5873594337377954,
+          "min": 0.5150759720573519,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.4921737675209144,
+          "mean": 0.21120832427217393,
+          "median": 0.21083394941372777,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7789369901769974,
+          "mean": 0.6677463014182544,
+          "median": 0.6687447007718326,
+          "min": 0.5488691566000783,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 158.75008623920644,
+          "mean": 77.12052201994528,
+          "median": 80.34889740887093,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.7711951876121229,
+          "mean": 0.4731879763339883,
+          "mean_mcse": 0.026345497897314753,
+          "median": 0.45565097853266395,
+          "min": 0.28402994534158543,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 2.1706801759185606,
+          "mean": 1.5086669835669928,
+          "mean_mcse": 0.06784953901906919,
+          "median": 1.4402449771885433,
+          "min": 0.9668480478468494,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.5385997734355996,
+          "mean": 2.1929539382613585,
+          "mean_mcse": 0.034560618504662674,
+          "median": 2.192320036208387,
+          "min": 1.9053464029436815,
+          "n": 25
+        },
+        "optimality": {
+          "max": 3.45730915618514e-07,
+          "mean": 8.748332689899329e-08,
+          "mean_mcse": 1.549428593316769e-08,
+          "median": 6.461223256426507e-08,
+          "min": 1.274353532421113e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.5999999999999996,
+          "mean": 1.5999999999999996,
+          "mean_mcse": 0.0,
+          "median": 1.5999999999999996,
+          "min": 1.5999999999999996,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.153846153846154,
+          "mean": 2.153846153846154,
+          "mean_mcse": 0.0,
+          "median": 2.153846153846154,
+          "min": 2.153846153846154,
+          "n": 25
+        }
+      },
+      "rejected": 1,
+      "requested": 25,
+      "statistic_kind": "likelihood",
+      "wilson_95": [
+        0.007096233501987265,
+        0.19544063736193734
+      ],
+      "withheld_bounds": [
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "weak_conditional_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 13,
+        "3": 11,
+        "4": 1
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5096247197256528,
+          "mean": 0.14777455068971554,
+          "median": 0.1783717016774833,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 16226.488656232246,
+          "mean": 737.0097705035563,
+          "median": 1.000000000126885,
+          "min": 0.9999999993622918,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7873296847709419,
+          "mean": 0.6250350043897444,
+          "median": 0.6229944817038265,
+          "min": 0.531581238628714,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.4933260117371548,
+          "mean": 0.2158019407905853,
+          "median": 0.2143387227955537,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.8241666810999663,
+          "mean": 0.6691743092219857,
+          "median": 0.6679810951622795,
+          "min": 0.5504357722443483,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 166.1495943652559,
+          "mean": 76.8025870480353,
+          "median": 79.79615349094087,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.8485569726430023,
+          "mean": 0.4682542085346785,
+          "mean_mcse": 0.029037000858264474,
+          "median": 0.4403107398133149,
+          "min": 0.2499365725936324,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 2.2238523432068926,
+          "mean": 1.4906007585815957,
+          "mean_mcse": 0.061973092921602094,
+          "median": 1.5171285289957885,
+          "min": 1.0164768237728792,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.4764908123874556,
+          "mean": 2.193746424746615,
+          "mean_mcse": 0.030824212178274985,
+          "median": 2.2033440128673583,
+          "min": 1.9380532216857407,
+          "n": 25
+        },
+        "optimality": {
+          "max": 1.7568642009246904e-07,
+          "mean": 7.008906162678936e-08,
+          "mean_mcse": 8.557480258797728e-09,
+          "median": 5.979173831049955e-08,
+          "min": 1.3700182599496458e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.6333333333333337,
+          "mean": 1.6333333333333337,
+          "mean_mcse": 0.0,
+          "median": 1.6333333333333337,
+          "min": 1.6333333333333337,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.139240506329114,
+          "mean": 2.139240506329114,
+          "mean_mcse": 0.0,
+          "median": 2.139240506329114,
+          "min": 2.139240506329114,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "bic",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "weak_conditional_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 13,
+        "3": 11,
+        "4": 1
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5096247197256528,
+          "mean": 0.14777455068971554,
+          "median": 0.1783717016774833,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 16226.488656232246,
+          "mean": 737.0097705035563,
+          "median": 1.000000000126885,
+          "min": 0.9999999993622918,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7873296847709419,
+          "mean": 0.6250350043897444,
+          "median": 0.6229944817038265,
+          "min": 0.531581238628714,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.4933260117371548,
+          "mean": 0.2158019407905853,
+          "median": 0.2143387227955537,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.8241666810999663,
+          "mean": 0.6691743092219857,
+          "median": 0.6679810951622795,
+          "min": 0.5504357722443483,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 166.1495943652559,
+          "mean": 76.8025870480353,
+          "median": 79.79615349094087,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.8485569726430023,
+          "mean": 0.4682542085346785,
+          "mean_mcse": 0.029037000858264474,
+          "median": 0.4403107398133149,
+          "min": 0.2499365725936324,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 2.2238523432068926,
+          "mean": 1.4906007585815957,
+          "mean_mcse": 0.061973092921602094,
+          "median": 1.5171285289957885,
+          "min": 1.0164768237728792,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.4764908123874556,
+          "mean": 2.193746424746615,
+          "mean_mcse": 0.030824212178274985,
+          "median": 2.2033440128673583,
+          "min": 1.9380532216857407,
+          "n": 25
+        },
+        "optimality": {
+          "max": 1.7568642009246904e-07,
+          "mean": 7.008906162678936e-08,
+          "mean_mcse": 8.557480258797728e-09,
+          "median": 5.979173831049955e-08,
+          "min": 1.3700182599496458e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.6333333333333337,
+          "mean": 1.6333333333333337,
+          "mean_mcse": 0.0,
+          "median": 1.6333333333333337,
+          "min": 1.6333333333333337,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.139240506329114,
+          "mean": 2.139240506329114,
+          "mean_mcse": 0.0,
+          "median": 2.139240506329114,
+          "min": 2.139240506329114,
+          "n": 25
+        }
+      },
+      "rejected": 1,
+      "requested": 25,
+      "statistic_kind": "likelihood",
+      "wilson_95": [
+        0.007096233501987265,
+        0.19544063736193734
+      ],
+      "withheld_bounds": [
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "arm": "known",
+      "available": 25,
+      "case": "weak_conditional_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 13,
+        "3": 11,
+        "4": 1
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5739341635913184,
+          "mean": 0.15042160412442682,
+          "median": 0.17795871060813387,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 17348.155353070495,
+          "mean": 774.3707384562309,
+          "median": 1.000000000940098,
+          "min": 0.9999999997888533,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7269736968909164,
+          "mean": 0.5890957452122559,
+          "median": 0.5865451013484365,
+          "min": 0.5154185663481008,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.5739341635913184,
+          "mean": 0.2126408110337662,
+          "median": 0.21115904201724592,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7788663515041547,
+          "mean": 0.6662257368482231,
+          "median": 0.6659706399057173,
+          "min": 0.55672140949687,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 152.90346285839126,
+          "mean": 76.75636933123525,
+          "median": 79.83013750965549,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.8485569726430023,
+          "mean": 0.4682542085346785,
+          "mean_mcse": 0.029037000858264474,
+          "median": 0.4403107398133149,
+          "min": 0.2499365725936324,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 2.2238523432068926,
+          "mean": 1.4906007585815957,
+          "mean_mcse": 0.061973092921602094,
+          "median": 1.5171285289957885,
+          "min": 1.0164768237728792,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.4764908123874556,
+          "mean": 2.193746424746615,
+          "mean_mcse": 0.030824212178274985,
+          "median": 2.2033440128673583,
+          "min": 1.9380532216857407,
+          "n": 25
+        },
+        "optimality": {
+          "max": 1.7568642009246904e-07,
+          "mean": 7.008906162678936e-08,
+          "mean_mcse": 8.557480258797728e-09,
+          "median": 5.979173831049955e-08,
+          "min": 1.3700182599496458e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.6333333333333337,
+          "mean": 1.6333333333333337,
+          "mean_mcse": 0.0,
+          "median": 1.6333333333333337,
+          "min": 1.6333333333333337,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.139240506329114,
+          "mean": 2.139240506329114,
+          "mean_mcse": 0.0,
+          "median": 2.139240506329114,
+          "min": 2.139240506329114,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "bic",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "known",
+      "available": 25,
+      "case": "weak_conditional_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 0,
+        "1": 0,
+        "2": 13,
+        "3": 11,
+        "4": 1
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5739341635913184,
+          "mean": 0.15042160412442682,
+          "median": 0.17795871060813387,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 17348.155353070495,
+          "mean": 774.3707384562309,
+          "median": 1.000000000940098,
+          "min": 0.9999999997888533,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7269736968909164,
+          "mean": 0.5890957452122559,
+          "median": 0.5865451013484365,
+          "min": 0.5154185663481008,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.5739341635913184,
+          "mean": 0.2126408110337662,
+          "median": 0.21115904201724592,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7788663515041547,
+          "mean": 0.6662257368482231,
+          "median": 0.6659706399057173,
+          "min": 0.55672140949687,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 152.90346285839126,
+          "mean": 76.75636933123525,
+          "median": 79.83013750965549,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.8485569726430023,
+          "mean": 0.4682542085346785,
+          "mean_mcse": 0.029037000858264474,
+          "median": 0.4403107398133149,
+          "min": 0.2499365725936324,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 2.2238523432068926,
+          "mean": 1.4906007585815957,
+          "mean_mcse": 0.061973092921602094,
+          "median": 1.5171285289957885,
+          "min": 1.0164768237728792,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 2.4764908123874556,
+          "mean": 2.193746424746615,
+          "mean_mcse": 0.030824212178274985,
+          "median": 2.2033440128673583,
+          "min": 1.9380532216857407,
+          "n": 25
+        },
+        "optimality": {
+          "max": 1.7568642009246904e-07,
+          "mean": 7.008906162678936e-08,
+          "mean_mcse": 8.557480258797728e-09,
+          "median": 5.979173831049955e-08,
+          "min": 1.3700182599496458e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 1.6333333333333337,
+          "mean": 1.6333333333333337,
+          "mean_mcse": 0.0,
+          "median": 1.6333333333333337,
+          "min": 1.6333333333333337,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 2.139240506329114,
+          "mean": 2.139240506329114,
+          "mean_mcse": 0.0,
+          "median": 2.139240506329114,
+          "min": 2.139240506329114,
+          "n": 25
+        }
+      },
+      "rejected": 1,
+      "requested": 25,
+      "statistic_kind": "likelihood",
+      "wilson_95": [
+        0.007096233501987265,
+        0.19544063736193734
+      ],
+      "withheld_bounds": [
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "zero_conditional_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 2,
+        "1": 7,
+        "2": 15,
+        "3": 1,
+        "4": 0
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.6215508340165072,
+          "mean": 0.15873811789347472,
+          "median": 0.18955752528240605,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 19208.552079778958,
+          "mean": 573.3247185882715,
+          "median": 1.0000000000135667,
+          "min": 0.9999999996704919,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7589420670179117,
+          "mean": 0.6257042931094184,
+          "median": 0.6235298358374395,
+          "min": 0.5233060919469924,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.5163338936759667,
+          "mean": 0.2195026019645265,
+          "median": 0.21826683904788716,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7962202159268867,
+          "mean": 0.6497709766443505,
+          "median": 0.6483197097026376,
+          "min": 0.5365991369016305,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 160.80569892104978,
+          "mean": 76.25851213021794,
+          "median": 77.87835323269121,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.3077083107410637,
+          "mean": 0.15124150622259347,
+          "mean_mcse": 0.014703410133382003,
+          "median": 0.15384802934565545,
+          "min": 1.6157676304855602e-16,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 0.3534376038609526,
+          "mean": 0.17486491737706802,
+          "mean_mcse": 0.018182055822308724,
+          "median": 0.19200670241377532,
+          "min": 0.0,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 4.0,
+          "mean": 3.5284407703112777,
+          "mean_mcse": 0.04556371689284281,
+          "median": 3.4582810131644255,
+          "min": 3.1636168366876656,
+          "n": 25
+        },
+        "optimality": {
+          "max": 4.849062074409327e-07,
+          "mean": 1.2551158269234058e-07,
+          "mean_mcse": 2.7459227843815493e-08,
+          "median": 7.865315455879429e-08,
+          "min": 1.6401498104112733e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 0.0,
+          "mean": 0.0,
+          "mean_mcse": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 4.0,
+          "mean": 4.0,
+          "mean_mcse": 0.0,
+          "median": 4.0,
+          "min": 4.0,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "bic",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "fitted",
+      "available": 25,
+      "case": "zero_conditional_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 2,
+        "1": 7,
+        "2": 15,
+        "3": 1,
+        "4": 0
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.6215508340165072,
+          "mean": 0.15873811789347472,
+          "median": 0.18955752528240605,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 19208.552079778958,
+          "mean": 573.3247185882715,
+          "median": 1.0000000000135667,
+          "min": 0.9999999996704919,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.7589420670179117,
+          "mean": 0.6257042931094184,
+          "median": 0.6235298358374395,
+          "min": 0.5233060919469924,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.5163338936759667,
+          "mean": 0.2195026019645265,
+          "median": 0.21826683904788716,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7962202159268867,
+          "mean": 0.6497709766443505,
+          "median": 0.6483197097026376,
+          "min": 0.5365991369016305,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 160.80569892104978,
+          "mean": 76.25851213021794,
+          "median": 77.87835323269121,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.3077083107410637,
+          "mean": 0.15124150622259347,
+          "mean_mcse": 0.014703410133382003,
+          "median": 0.15384802934565545,
+          "min": 1.6157676304855602e-16,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 0.3534376038609526,
+          "mean": 0.17486491737706802,
+          "mean_mcse": 0.018182055822308724,
+          "median": 0.19200670241377532,
+          "min": 0.0,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 4.0,
+          "mean": 3.5284407703112777,
+          "mean_mcse": 0.04556371689284281,
+          "median": 3.4582810131644255,
+          "min": 3.1636168366876656,
+          "n": 25
+        },
+        "optimality": {
+          "max": 4.849062074409327e-07,
+          "mean": 1.2551158269234058e-07,
+          "mean_mcse": 2.7459227843815493e-08,
+          "median": 7.865315455879429e-08,
+          "min": 1.6401498104112733e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 0.0,
+          "mean": 0.0,
+          "mean_mcse": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 4.0,
+          "mean": 4.0,
+          "mean_mcse": 0.0,
+          "median": 4.0,
+          "min": 4.0,
+          "n": 25
+        }
+      },
+      "rejected": 3,
+      "requested": 25,
+      "statistic_kind": "likelihood",
+      "wilson_95": [
+        0.04166817150440358,
+        0.2995579392092732
+      ],
+      "withheld_bounds": [
+        0.12,
+        0.12
+      ]
+    },
+    {
+      "arm": "known",
+      "available": 25,
+      "case": "zero_conditional_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 2,
+        "1": 7,
+        "2": 15,
+        "3": 1,
+        "4": 0
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5583613289046019,
+          "mean": 0.16453816284985878,
+          "median": 0.1934333420359444,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 12763.76274271491,
+          "mean": 563.3276286280457,
+          "median": 1.0000000000242883,
+          "min": 0.9999999998290792,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.6947942470047084,
+          "mean": 0.5899665911429454,
+          "median": 0.5879865401285931,
+          "min": 0.5130577428147881,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.5583613289046019,
+          "mean": 0.22145140884431416,
+          "median": 0.2205340167511322,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7451391688518662,
+          "mean": 0.6267246567954079,
+          "median": 0.6260155002536175,
+          "min": 0.5375779582020199,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 159.1039508655515,
+          "mean": 76.70244774356308,
+          "median": 77.99539779270245,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.3077083107410637,
+          "mean": 0.15124150622259347,
+          "mean_mcse": 0.014703410133382003,
+          "median": 0.15384802934565545,
+          "min": 1.6157676304855602e-16,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 0.3534376038609526,
+          "mean": 0.17486491737706802,
+          "mean_mcse": 0.018182055822308724,
+          "median": 0.19200670241377532,
+          "min": 0.0,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 4.0,
+          "mean": 3.5284407703112777,
+          "mean_mcse": 0.04556371689284281,
+          "median": 3.4582810131644255,
+          "min": 3.1636168366876656,
+          "n": 25
+        },
+        "optimality": {
+          "max": 4.849062074409327e-07,
+          "mean": 1.2551158269234058e-07,
+          "mean_mcse": 2.7459227843815493e-08,
+          "median": 7.865315455879429e-08,
+          "min": 1.6401498104112733e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 0.0,
+          "mean": 0.0,
+          "mean_mcse": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 4.0,
+          "mean": 4.0,
+          "mean_mcse": 0.0,
+          "median": 4.0,
+          "min": 4.0,
+          "n": 25
+        }
+      },
+      "rejected": 0,
+      "requested": 25,
+      "statistic_kind": "bic",
+      "wilson_95": [
+        1.3877787807814457e-17,
+        0.13319225093904846
+      ],
+      "withheld_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "arm": "known",
+      "available": 25,
+      "case": "zero_conditional_gaussian",
+      "cohort": "fresh",
+      "fitted_ranks": {
+        "0": 2,
+        "1": 7,
+        "2": 15,
+        "3": 1,
+        "4": 0
+      },
+      "null_pipeline_metrics": {
+        "count_association": {
+          "max": 0.5583613289046019,
+          "mean": 0.16453816284985878,
+          "median": 0.1934333420359444,
+          "min": 0.0,
+          "n": 2475
+        },
+        "covariance_min_over_regularizer": {
+          "max": 12763.76274271491,
+          "mean": 563.3276286280457,
+          "median": 1.0000000000242883,
+          "min": 0.9999999998290792,
+          "n": 2475
+        },
+        "ecology_retained_variance": {
+          "max": 0.6947942470047084,
+          "mean": 0.5899665911429454,
+          "median": 0.5879865401285931,
+          "min": 0.5130577428147881,
+          "n": 2475
+        },
+        "lr_count_association": {
+          "max": 0.5583613289046019,
+          "mean": 0.22145140884431416,
+          "median": 0.2205340167511322,
+          "min": 0.0,
+          "n": 2475
+        },
+        "morphology_retained_variance": {
+          "max": 0.7451391688518662,
+          "mean": 0.6267246567954079,
+          "median": 0.6260155002536175,
+          "min": 0.5375779582020199,
+          "n": 2475
+        },
+        "statistic": {
+          "max": 159.1039508655515,
+          "mean": 76.70244774356308,
+          "median": 77.99539779270245,
+          "min": 0.0,
+          "n": 2475
+        }
+      },
+      "raw_metrics": {
+        "conditional_error": {
+          "max": 0.3077083107410637,
+          "mean": 0.15124150622259347,
+          "mean_mcse": 0.014703410133382003,
+          "median": 0.15384802934565545,
+          "min": 1.6157676304855602e-16,
+          "n": 25
+        },
+        "fitted_conditional_trace": {
+          "max": 0.3534376038609526,
+          "mean": 0.17486491737706802,
+          "mean_mcse": 0.018182055822308724,
+          "median": 0.19200670241377532,
+          "min": 0.0,
+          "n": 25
+        },
+        "fitted_count_variance_ratio": {
+          "max": 4.0,
+          "mean": 3.5284407703112777,
+          "mean_mcse": 0.04556371689284281,
+          "median": 3.4582810131644255,
+          "min": 3.1636168366876656,
+          "n": 25
+        },
+        "optimality": {
+          "max": 4.849062074409327e-07,
+          "mean": 1.2551158269234058e-07,
+          "mean_mcse": 2.7459227843815493e-08,
+          "median": 7.865315455879429e-08,
+          "min": 1.6401498104112733e-08,
+          "n": 25
+        },
+        "true_conditional_trace": {
+          "max": 0.0,
+          "mean": 0.0,
+          "mean_mcse": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 25
+        },
+        "true_count_variance_ratio": {
+          "max": 4.0,
+          "mean": 4.0,
+          "mean_mcse": 0.0,
+          "median": 4.0,
+          "min": 4.0,
+          "n": 25
+        }
+      },
+      "rejected": 3,
+      "requested": 25,
+      "statistic_kind": "likelihood",
+      "wilson_95": [
+        0.04166817150440358,
+        0.2995579392092732
+      ],
+      "withheld_bounds": [
+        0.12,
+        0.12
+      ]
+    }
+  ],
+  "unique_pipeline_records_audited": 37375
+}

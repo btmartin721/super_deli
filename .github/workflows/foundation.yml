@@ -119,6 +119,7 @@ jobs:
           super-deli analyze-grouped-calibration "$RUNNER_TEMP/full-groupmean-study" --output-dir "$RUNNER_TEMP/full-groupmean-audit"
           python "$GITHUB_WORKSPACE/examples/full-grouped-diagnostics/smoke.py" --grouped-study "$GITHUB_WORKSPACE/examples/full-groupmean-calibration/smoke.json" --output-dir "$RUNNER_TEMP/full-grouped-diagnostics"
           python "$GITHUB_WORKSPACE/examples/grouped-likelihood/smoke.py" --study "$GITHUB_WORKSPACE/examples/grouped-likelihood/smoke.json" --output-dir "$RUNNER_TEMP/grouped-likelihood"
+          python "$GITHUB_WORKSPACE/examples/grouped-boundary-diagnostics/smoke.py" --study "$GITHUB_WORKSPACE/examples/grouped-boundary-diagnostics/smoke.json" --output-dir "$RUNNER_TEMP/grouped-boundary-diagnostics"
           super-deli calibrate-grouped-integrative "$RUNNER_TEMP/full-groupmean-study/correlated_gaussian/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/full-groupmean-study/correlated_gaussian/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/full-groupmean-direct"
           python "$GITHUB_WORKSPACE/examples/grouped-recovery/smoke.py" --grouped-study "$GITHUB_WORKSPACE/examples/shared-grouped-calibration/smoke.json" --output-dir "$RUNNER_TEMP/grouped-recovery"
           python "$GITHUB_WORKSPACE/examples/grouped-pca/smoke.py" --source-artifacts "$RUNNER_TEMP/grouped-recovery" --output-dir "$RUNNER_TEMP/grouped-pca"

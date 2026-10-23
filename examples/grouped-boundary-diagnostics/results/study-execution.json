@@ -1,0 +1,35 @@
+{
+  "started_utc": "2026-10-23T21:53:50.077191+00:00",
+  "status": "complete",
+  "workers": 4,
+  "threads_per_job": 1,
+  "replacement_observations": 0,
+  "replacement_draws": 0,
+  "planned_unique_pipeline_fits": 24875,
+  "shared_observed_fits": 125,
+  "model_seed": 71323,
+  "master_seed": 20261116,
+  "finished_utc": "2026-10-23T22:12:23.816493+00:00",
+  "cases": [
+    {
+      "case": "zero_conditional_gaussian",
+      "returncode": 0
+    },
+    {
+      "case": "rank_two_gaussian",
+      "returncode": 0
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "returncode": 0
+    },
+    {
+      "case": "independent_gaussian",
+      "returncode": 0
+    },
+    {
+      "case": "correlated_gaussian",
+      "returncode": 0
+    }
+  ]
+}

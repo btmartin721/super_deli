@@ -4,10 +4,13 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: experimental grouped AIC/likelihood improvement.**
-See the [method](docs/grouped-likelihood.md) and [paired results](docs/grouped-likelihood-results.md).
-Recovery improved under the constructed alternatives; boundary size and point
-overpartitioning remain unresolved. BIC defaults and historical p-values are unchanged.
+**Current checkpoint: grouped boundary-rejection diagnostics.**
+See the [method](docs/grouped-boundary-diagnostics.md) and
+[paired diagnostic results](docs/grouped-boundary-diagnostics-results.md).
+Fresh boundary decisions match the known-law controls, so the earlier elevation
+is not consistently reproduced or isolated to fitted covariance boundaries.
+Calibration remains unresolved; the AIC/likelihood option stays experimental.
+BIC defaults, production fitting/sampling and historical p-values are unchanged.
 Genomic, numeric morphology/ecology and shape scores can be fused by exact unit
 IDs or explicit population/locality aggregation, with prespecified view weights.
 The package also supports individual-modality PCA/GMM, frozen-fit shape

@@ -368,6 +368,18 @@ def main(argv: list[str] | None = None) -> int:
     )
     likelihood_audit.add_argument("config", type=Path)
     likelihood_audit.add_argument("--output-dir", type=Path, required=True)
+    boundary_diagnostic = commands.add_parser(
+        "diagnose-grouped-boundaries", help="Compare fitted and known Gaussian simulation laws"
+    )
+    boundary_diagnostic.add_argument("config", type=Path)
+    boundary_diagnostic.add_argument("--case", required=True)
+    boundary_diagnostic.add_argument("--output-dir", type=Path, required=True)
+    boundary_audit = commands.add_parser(
+        "analyze-grouped-boundaries", help="Audit paired boundary diagnostics without fitting"
+    )
+    boundary_audit.add_argument("config", type=Path)
+    boundary_audit.add_argument("--archived-study", type=Path)
+    boundary_audit.add_argument("--output-dir", type=Path, required=True)
     shared = commands.add_parser(
         "benchmark-shared-covariance", help="Run a frozen paired integrative covariance study"
     )
@@ -404,6 +416,26 @@ def main(argv: list[str] | None = None) -> int:
             )
 
             summary = audit_full_grouped_diagnostics(source, output_dir=args.output_dir)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "diagnose-grouped-boundaries":
+            from super_deli.benchmarking.grouped_boundary_diagnostics import run_case
+            from super_deli.models.grouped_likelihood_config import GroupedLikelihoodStudyConfig
+
+            with redirect_stdout(sys.stderr):
+                summary = run_case(
+                    GroupedLikelihoodStudyConfig.from_dict(read_json(source)),
+                    case=args.case,
+                    output_dir=args.output_dir,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "analyze-grouped-boundaries":
+            from super_deli.benchmarking.grouped_boundary_analysis import audit_study
+
+            summary = audit_study(
+                source, output_dir=args.output_dir, archived_study=args.archived_study
+            )
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
             return 0
         if args.command == "calibrate-grouped-likelihood":

@@ -1,0 +1,14 @@
+{
+  "prior_modules": 134,
+  "unchanged": 132,
+  "changed": [
+    "__init__.py",
+    "cli.py"
+  ],
+  "new_modules": [
+    "benchmarking/grouped_boundary_analysis.py",
+    "benchmarking/grouped_boundary_diagnostics.py",
+    "benchmarking/grouped_boundary_metrics.py",
+    "benchmarking/grouped_boundary_reference.py"
+  ]
+}
