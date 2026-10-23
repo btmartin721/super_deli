@@ -1,0 +1,27 @@
+{
+  "audit_summary_sha256": "8f6a5b8592f067dd048521519e21054577ddfdf116204e97165aa618930cd8d1",
+  "audited_inventory_sha256": "dd024c0ee6946b795cc72b071954beb450937bf3466b8a23812c1996e7fadd9c",
+  "frozen_wheel_sha256": "59f528d5825fbceb0b159385bce66f40416ab07a1d230fc9ef314a3157782c1e",
+  "local_artifact_id": "full-groupmean-null-20261023",
+  "publication_files": {
+    "docs/figures/full-groupmean-calibration/full-groupmean-calibration.pdf": "724d8ca0143fcde1475218ee4f16c364a21bd29dd938b1b56062dd3d93778be6",
+    "docs/figures/full-groupmean-calibration/full-groupmean-calibration.png": "8132fc29cc8839e72b7a1ad8993dd41b1aec29ef52f84085da8da7d9af698c30",
+    "docs/figures/full-groupmean-calibration/full-groupmean-calibration.svg": "043891e7204ef5f6e3e6632faba8e827a34051f70c72fd89e3b703630b398fa0",
+    "scripts/grouped_calibration_reporting.py": "65df2fc983c3b5a161eb1846509b851f17edb2181e63a5dd606756a4fb174fe6",
+    "scripts/report_full_groupmean_calibration.py": "4dbba3247df346d3db12826ffa2657c52e9e143099f98f3f4dc211087e395c40",
+    "scripts/report_groupmean_calibration.py": "b37eba80a1bf26b93df633a9a51cbc717528b48ff1c76e5ec766976610b48d44",
+    "scripts/report_shared_calibration.py": "21adf8798f56a573bc9cde3ec878d89dc5d85fe7efbd800cc17dddc6f20be901",
+    "scripts/report_shared_grouped_calibration.py": "b93ed6df3c1d6d5841007e5622533f37fe17aa16a324792840764c90dd4f2027"
+  },
+  "published_artifacts": {
+    "datasets.csv": "fc2b3ffda5bc61c77f8b7678307f0ec349205aa4faa44670e0e0c1a9b80d962a",
+    "diagnostics.csv": "2df73a04b75ce4b60495417a7622bef1fac723db595a567b63c2ab422a86dc65",
+    "execution.json": "9b05eb16d0db11b12d984cedab8a8fb84bdcbaa71bb741e0fd4db5559f222fce",
+    "recovery.csv": "a90e91eee9938daaf013b9deb077c9d775190f85fb4c85138acfcd3641366bf3",
+    "recovery_summary.json": "914cd7485aa4957a3031cb9f84f4aeb8f5e20487cc5722b2a3c40f05df68a0ef",
+    "runtime_sources.json": "44a3a147c92c61e74c7b608911f542330ad6032aab826a2e8fe9c2370ae6c4f8",
+    "runtime_versions.json": "28c44ef0191d2fc66b942d065448f65855925e90d510c3d0a1f30481fa4a0a1d",
+    "study.json": "527502b002f558c8ec36b1994e54857fcac456545aef739efd6ff2aa1e8b0c3d",
+    "summary.json": "ed1d0c091f12177a0f32ac3affdf476e29109fe4d35f8fac8a75b8455f860b4c"
+  }
+}

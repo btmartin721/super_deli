@@ -56,3 +56,6 @@ recursive-include docs/figures/grouped-pca *.pdf *.svg *.png
 
 recursive-include examples/groupmean-calibration *.json *.csv
 recursive-include docs/figures/groupmean-calibration *.pdf *.svg *.png
+
+recursive-include examples/full-groupmean-calibration *.json *.csv
+recursive-include docs/figures/full-groupmean-calibration *.pdf *.svg *.png

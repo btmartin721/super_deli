@@ -1,0 +1,337 @@
+{
+  "archive_members": 541975,
+  "attempted_fits": 17500,
+  "audit_scope": "Regenerated raw observations/draws; checked raw ML parameters (dense likelihood/score for grouped fits), selected likelihoods, fusion/projection, selection and p-values; no pipeline fits. View PCA and nonselected likelihoods preserved/checksummed, not refitted. Outer failures retain attempt-ledger counts without complete numerical re-audit. Independently reconstructed both views' PCA feature selection, training means/scales, eigen-equations, target identities/counts, raw projections and aggregated profiles for every successful observed/null pipeline.",
+  "conditional_rank_counts": {
+    "complementary": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 7,
+      "4": 18
+    },
+    "correlated_gaussian": {
+      "0": 0,
+      "1": 0,
+      "2": 1,
+      "3": 15,
+      "4": 9
+    },
+    "heavy_tailed": {
+      "0": 0,
+      "1": 0,
+      "2": 5,
+      "3": 18,
+      "4": 2
+    },
+    "independent_gaussian": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 25
+    },
+    "rank_two_gaussian": {
+      "0": 0,
+      "1": 0,
+      "2": 10,
+      "3": 14,
+      "4": 1
+    },
+    "weak_conditional_gaussian": {
+      "0": 0,
+      "1": 0,
+      "2": 7,
+      "3": 17,
+      "4": 1
+    },
+    "zero_conditional_gaussian": {
+      "0": 0,
+      "1": 6,
+      "2": 14,
+      "3": 5,
+      "4": 0
+    }
+  },
+  "datasets": 175,
+  "failed_fits": 0,
+  "planned_fits": 17500,
+  "rates": [
+    {
+      "case": "independent_gaussian",
+      "events": 1,
+      "interpretation": "Type-I error under the specified hierarchical Gaussian with noninformative unequal counts",
+      "max": 1.0,
+      "mcse": 0.04,
+      "mean": 0.04,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "rate_scope": "Conditional on test availability; withheld bounds are not confidence intervals",
+      "sd": 0.2,
+      "wilson_95": [
+        0.007096233501987265,
+        0.19544063736193729
+      ],
+      "withheld_outcome_bounds": [
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "case": "correlated_gaussian",
+      "events": 1,
+      "interpretation": "Type-I error under the specified hierarchical Gaussian with noninformative unequal counts",
+      "max": 1.0,
+      "mcse": 0.04,
+      "mean": 0.04,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "rate_scope": "Conditional on test availability; withheld bounds are not confidence intervals",
+      "sd": 0.2,
+      "wilson_95": [
+        0.007096233501987265,
+        0.19544063736193729
+      ],
+      "withheld_outcome_bounds": [
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "case": "complementary",
+      "events": 6,
+      "interpretation": "Power for the complementary four-group alternative",
+      "max": 1.0,
+      "mcse": 0.08717797887081347,
+      "mean": 0.24,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "rate_scope": "Conditional on test availability; withheld bounds are not confidence intervals",
+      "sd": 0.43588989435406733,
+      "wilson_95": [
+        0.11496313693401444,
+        0.43429683355429066
+      ],
+      "withheld_outcome_bounds": [
+        0.24,
+        0.24
+      ]
+    },
+    {
+      "case": "heavy_tailed",
+      "events": 4,
+      "interpretation": "Gaussian misspecification sensitivity; NOT species/clustering type-I error",
+      "max": 1.0,
+      "mcse": 0.07483314773547882,
+      "mean": 0.16,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "rate_scope": "Conditional on test availability; withheld bounds are not confidence intervals",
+      "sd": 0.3741657386773941,
+      "wilson_95": [
+        0.0640345145667644,
+        0.3465362160717885
+      ],
+      "withheld_outcome_bounds": [
+        0.16,
+        0.16
+      ]
+    },
+    {
+      "case": "zero_conditional_gaussian",
+      "events": 0,
+      "interpretation": "Type-I error under the specified hierarchical Gaussian with noninformative unequal counts",
+      "max": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "rate_scope": "Conditional on test availability; withheld bounds are not confidence intervals",
+      "sd": 0.0,
+      "wilson_95": [
+        0.0,
+        0.1331922509390484
+      ],
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "rank_two_gaussian",
+      "events": 0,
+      "interpretation": "Type-I error under the specified hierarchical Gaussian with noninformative unequal counts",
+      "max": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "rate_scope": "Conditional on test availability; withheld bounds are not confidence intervals",
+      "sd": 0.0,
+      "wilson_95": [
+        0.0,
+        0.1331922509390484
+      ],
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "weak_conditional_gaussian",
+      "events": 0,
+      "interpretation": "Type-I error under the specified hierarchical Gaussian with noninformative unequal counts",
+      "max": 0.0,
+      "mcse": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "n_available": 25,
+      "n_missing": 0,
+      "rate_scope": "Conditional on test availability; withheld bounds are not confidence intervals",
+      "sd": 0.0,
+      "wilson_95": [
+        0.0,
+        0.1331922509390484
+      ],
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "raw_files": 20671,
+  "schema_version": 1,
+  "selected_k_counts": {
+    "complementary": {
+      "1": 19,
+      "2": 6,
+      "3": 0,
+      "4": 0
+    },
+    "correlated_gaussian": {
+      "1": 24,
+      "2": 1,
+      "3": 0,
+      "4": 0
+    },
+    "heavy_tailed": {
+      "1": 21,
+      "2": 4,
+      "3": 0,
+      "4": 0
+    },
+    "independent_gaussian": {
+      "1": 24,
+      "2": 1,
+      "3": 0,
+      "4": 0
+    },
+    "rank_two_gaussian": {
+      "1": 25,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "weak_conditional_gaussian": {
+      "1": 25,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "zero_conditional_gaussian": {
+      "1": 25,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    }
+  },
+  "status": "complete",
+  "study": {
+    "calibration": {
+      "alpha": 0.05,
+      "assume_gaussian_independent_groups": true,
+      "assume_noninformative_counts": true,
+      "gradient_tol": 1e-05,
+      "max_archive_bytes": 2147483648,
+      "max_iterations": 1000,
+      "model": {
+        "assignment_threshold": 0.0,
+        "assume_independent_units": true,
+        "max_iter": 500,
+        "max_k": 4,
+        "max_pairwise_bytes": 268435456,
+        "max_working_bytes": 268435456,
+        "min_cluster_size": 5,
+        "missing_views": "error",
+        "n_bootstrap": 0,
+        "n_init": 10,
+        "n_pcs": 4,
+        "n_threads": 1,
+        "random_seed": 71323,
+        "rank_tol": 1e-12,
+        "reg_covar": 1e-06,
+        "schema_version": 1,
+        "target_level": "locality",
+        "tol": 0.001,
+        "views": [
+          {
+            "aggregation": "mean",
+            "count_transform": "identity",
+            "feature_names": [],
+            "kind": "morphological",
+            "missing_policy": "error",
+            "modality": "morphological",
+            "n_pcs": 2,
+            "pca_fit": "target_means",
+            "ploidy": null,
+            "scaling": null,
+            "shape": null,
+            "weight": 1.0
+          },
+          {
+            "aggregation": "none",
+            "count_transform": "identity",
+            "feature_names": [],
+            "kind": "ecological",
+            "missing_policy": "error",
+            "modality": "ecological",
+            "n_pcs": 2,
+            "ploidy": null,
+            "scaling": null,
+            "shape": null,
+            "weight": 1.0
+          }
+        ]
+      },
+      "n_simulations": 99,
+      "random_seed": 20261110,
+      "rank_tol": 1e-08,
+      "schema_version": 2,
+      "solver": {
+        "estimator": "conditional_psd_v1",
+        "max_line_search": 40,
+        "max_polish_iterations": 2000
+      }
+    },
+    "n_datasets": 25,
+    "n_units": 64,
+    "random_seed": 20261110,
+    "schema_version": 1
+  },
+  "successful_fits": 17500,
+  "unattempted_fits": 0,
+  "verified_successful_pipelines": 17500
+}

@@ -76,6 +76,17 @@ def run_grouped_calibration(dataset, *, config, base_dir, output_dir):
         if shared
         else {}
     )
+    if target_means and not shared:
+        scope += (
+            " Full covariance per mixture component is fixed before analysis for every "
+            "observed/null K search; no selection across covariance families is calibrated."
+        )
+        evidence_options = {
+            "evidence_method": (
+                "Approximate full-pipeline conditional-PSD grouped Gaussian BIC bootstrap "
+                "(prespecified full covariance; group-mean morphology PCA)"
+            )
+        }
     return run_fitted_calibration(
         dataset,
         config=config,

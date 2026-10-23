@@ -38,9 +38,9 @@ It is neither species probability nor a significance test. Failed replicates ret
 requested denominators and identification bounds; OOB pairs have separate counts.
 
 The later [schema-2 grouped calibration](groupmean-calibration.md) supports this
-policy with a prespecified shared-covariance GMM. Legacy grouped schema 1, full-
-covariance target-mean calibration, matched continuous, raw reference, joint
-genomic–phenotypic and frozen-score adapters continue to reject it. Historical p-values and archived evidence remain
+policy with a prespecified shared-covariance GMM. [Full-covariance grouped calibration](full-groupmean-calibration.md) is also
+available under schema 2. Legacy grouped schema 1, matched continuous, raw
+reference, joint genomic–phenotypic and frozen-score adapters continue to reject it. Historical p-values and archived evidence remain
 unchanged. Full covariance and two joint PCs remain available and remain defaults.
 
 ## Example

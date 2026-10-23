@@ -63,11 +63,8 @@ class GroupedCalibrationConfig:
                 "Explicitly assume independent Gaussian groups and noninformative counts"
             )
         if any(v.pca_fit == "target_means" for v in self.model.views):
-            if self.schema_version != 2 or self.model.covariance_type != "tied":
-                raise ValueError(
-                    "Target-mean PCA significance calibration requires schema 2 "
-                    "and prespecified shared covariance"
-                )
+            if self.schema_version != 2:
+                raise ValueError("Target-mean PCA significance calibration requires schema 2")
         else:
             require_calibrated_pca(self.model)
         if self.model.covariance_type == "tied" and self.schema_version == 1:

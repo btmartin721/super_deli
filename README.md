@@ -4,7 +4,7 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: full-pipeline group-mean PCA significance calibration.**
+**Current checkpoint: full-covariance group-mean PCA significance calibration.**
 Genomic, numeric morphology/ecology and shape scores can be fused by exact unit
 IDs or explicit population/locality aggregation, with prespecified view weights.
 The package also supports individual-modality PCA/GMM, frozen-fit shape
@@ -403,4 +403,12 @@ refits group means, preprocessing/PCA, integration and the full K search. This
 opt-in approximate departure test preserves defaults and historical results.
 
 The [completed group-mean calibration study](docs/groupmean-calibration-results.md)
+reports all 175 observations, full-pipeline checks and uncertainty.
+
+[Full-covariance group-mean PCA calibration](docs/full-groupmean-calibration.md)
+uses the same schema-2 grouped raw null with a prespecified covariance per mixture
+component. Both covariance families are supported; fix one before analysis.
+Defaults and historical p-values are preserved.
+
+The [completed full-covariance group-mean study](docs/full-groupmean-calibration-results.md)
 reports all 175 observations, full-pipeline checks and uncertainty.

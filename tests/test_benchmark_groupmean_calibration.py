@@ -1,6 +1,7 @@
 """Full raw refits, independent PCA audits and retained failures for grouped means."""
 
 # ruff: noqa: E402
+import hashlib
 import io
 import json
 from dataclasses import replace
@@ -29,25 +30,26 @@ ROOT = Path(__file__).resolve().parents[1]
 pytestmark = pytest.mark.baseline
 
 
-def policy(level="locality"):
+def policy(level="locality", family="tied"):
     config = GroupedCalibrationConfig.from_dict(
         read_json(ROOT / "examples/groupmean-calibration/calibration.json")
     )
     return replace(
         config,
         n_simulations=2,
-        model=replace(config.model, target_level=level, n_init=1, max_k=2),
+        model=replace(config.model, target_level=level, covariance_type=family, n_init=1, max_k=2),
     )
 
 
+@pytest.mark.parametrize("family", ["full", "tied"])
 @pytest.mark.parametrize("level", ["population", "locality"])
 @pytest.mark.parametrize("reverse", [False, True])
 def test_groupmeans_and_all_preprocessing_refit_for_every_raw_draw(
-    tmp_path, monkeypatch, level, reverse
+    tmp_path, monkeypatch, level, reverse, family
 ):
     from super_deli.workflows import integrative
 
-    c = policy(level)
+    c = policy(level, family)
     if reverse:
         c = replace(c, model=replace(c.model, views=c.model.views[::-1]))
     values, layout, _ = simulate_grouped("correlated_gaussian", 64, 193, target_level=level)
@@ -85,13 +87,14 @@ def test_groupmeans_and_all_preprocessing_refit_for_every_raw_draw(
     assert before == {p: p.read_bytes() for p in before}
 
 
-def test_raw_law_and_same_seed_draws_are_independent_of_pca_policy(tmp_path):
+@pytest.mark.parametrize("family", ["full", "tied"])
+def test_raw_law_and_same_seed_draws_are_independent_of_pca_policy(tmp_path, family):
     values, layout, _ = simulate_grouped("zero_conditional_gaussian", 64, 193)
     dataset = write_raw_views(values, layout, tmp_path / "raw")
     tables = ingest_tabular(
         dataset, base_dir=tmp_path / "raw", output_dir=tmp_path / "ingestion"
     ).tables
-    target = policy()
+    target = policy(family=family)
     source = replace(
         target,
         model=replace(
@@ -106,9 +109,10 @@ def test_raw_law_and_same_seed_draws_are_independent_of_pca_policy(tmp_path):
         np.testing.assert_array_equal(array, simulate_null(b, 239)[name])
 
 
+@pytest.mark.parametrize("family", ["full", "tied"])
 @pytest.mark.parametrize("failure_call", [1, 2])
 def test_failed_groupmean_point_or_draw_withholds_p_without_replacement(
-    tmp_path, monkeypatch, failure_call
+    tmp_path, monkeypatch, failure_call, family
 ):
     from super_deli.workflows import integrative
 
@@ -124,7 +128,10 @@ def test_failed_groupmean_point_or_draw_withholds_p_without_replacement(
 
     monkeypatch.setattr(integrative, "run_integrative", injected)
     result = run_grouped_calibration(
-        dataset, config=policy(), base_dir=tmp_path / "raw", output_dir=tmp_path / "out"
+        dataset,
+        config=policy(family=family),
+        base_dir=tmp_path / "raw",
+        output_dir=tmp_path / "out",
     )
     assert result["inference"]["p_value"] is None
     assert result["inference"]["reject_grouped_raw_gaussian"] is None
@@ -132,14 +139,22 @@ def test_failed_groupmean_point_or_draw_withholds_p_without_replacement(
     assert result["unattempted_fits"] == (2 if failure_call == 1 else 0)
 
 
-def test_seven_case_audit_never_refits_and_reconstructs_pca(tmp_path, monkeypatch):
+@pytest.mark.parametrize("family", ["full", "tied"])
+def test_seven_case_audit_never_refits_and_reconstructs_pca(tmp_path, monkeypatch, family):
     from super_deli.models import grouped_conditional, grouped_gaussian, mixture, tabular_gmm
     from super_deli.workflows import integrative
 
     study = GroupedStudyConfig.from_dict(
         read_json(ROOT / "examples/groupmean-calibration/smoke.json")
     )
-    study = replace(study, calibration=replace(study.calibration, n_simulations=1))
+    study = replace(
+        study,
+        calibration=replace(
+            study.calibration,
+            n_simulations=1,
+            model=replace(study.calibration.model, covariance_type=family),
+        ),
+    )
     root = tmp_path / "study"
     root.mkdir()
     for case in study_cases(study):
@@ -205,3 +220,69 @@ def test_seven_case_audit_never_refits_and_reconstructs_pca(tmp_path, monkeypatc
 
             with pytest.raises((AssertionError, ValueError)):
                 audit_tabular_views(Corrupted(), "observed/run/", c.model, values, layout)
+
+
+def test_full_component_covariances_have_independent_density_and_bic_audit(tmp_path):
+    from scipy.special import logsumexp
+    from scipy.stats import multivariate_normal
+
+    from super_deli.benchmarking.pipeline_analysis import audit_pipeline_point
+
+    c = policy(family="full")
+    c = replace(c, n_simulations=1, model=replace(c.model, n_init=3))
+    values, layout, _ = simulate_grouped("complementary", 128, 193)
+    dataset = write_raw_views(values, layout, tmp_path / "raw")
+    out = tmp_path / "calibration"
+    result = run_grouped_calibration(dataset, config=c, base_dir=tmp_path / "raw", output_dir=out)
+    assert result["successful_fits"] == 2 and result["point"]["selected_k"] == 2
+    with ZipFile(out / "pipeline_artifacts.zip") as archive:
+        name = "observed/run/mixture.npz"
+        with np.load(io.BytesIO(archive.read(name)), allow_pickle=False) as arrays:
+            model = {k: arrays[k] for k in arrays.files}
+        assert not np.allclose(model["covariances"][0], model["covariances"][1])
+        scores = model["scores"]
+        components = np.column_stack(
+            [
+                np.log(w) + multivariate_normal.logpdf(scores, mean=m, cov=v)
+                for w, m, v in zip(
+                    model["weights"], model["means"], model["covariances"], strict=True
+                )
+            ]
+        )
+        log_density = logsumexp(components, axis=1)
+        np.testing.assert_allclose(
+            model["membership"], np.exp(components - log_density[:, None]), atol=1e-10
+        )
+        n, d = scores.shape
+        k = len(model["weights"])
+        # Count a separate symmetric covariance for every component directly.
+        parameter_count = (k - 1) + k * d + k * d * (d + 1) // 2
+        candidate = next(x for x in result["point"]["candidates"] if x["k"] == k)
+        np.testing.assert_allclose(
+            candidate["bic"], -2 * log_density.sum() + parameter_count * np.log(n), atol=1e-8
+        )
+        audit_pipeline_point(archive, result["point"], c)
+        wrong = replace(c, model=replace(c.model, covariance_type="tied"))
+        with pytest.raises(ValueError, match="configuration mismatch"):
+            audit_pipeline_point(archive, result["point"], wrong)
+        # Update both hashes deliberately so the independent density check,
+        # rather than inventory integrity alone, must reject changed covariance.
+        model["covariances"][0] *= 1.2
+        handle = io.BytesIO()
+        np.savez(handle, **model)
+        raw = handle.getvalue()
+        digest = hashlib.sha256(raw).hexdigest()
+        record = {**result["point"], "mixture_sha256": digest}
+        summary = json.loads(archive.read("observed/run/summary.json"))
+        summary["provenance"]["mixture_sha256"] = digest
+
+        class Corrupt:
+            def read(self, path):
+                if path == name:
+                    return raw
+                if path == "observed/run/summary.json":
+                    return json.dumps(summary).encode()
+                return archive.read(path)
+
+        with pytest.raises(AssertionError):
+            audit_pipeline_point(Corrupt(), record, c)

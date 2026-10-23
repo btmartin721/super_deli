@@ -2,8 +2,9 @@
 
 The opt-in `pca_fit="target_means"` policy is supported for **schema-2 grouped
 morphology–ecology calibration with prespecified shared covariance**. Source-row
-PCA, two joint PCs and full covariance remain defaults. Legacy schema 1 and all
-other target-mean significance workflows remain disabled. Historical settings,
+PCA, two joint PCs and full covariance remain defaults. The later [full-covariance extension](full-groupmean-calibration.md) supports
+schema-2 grouped models with a prespecified covariance per component. Legacy
+schema 1 and other target-mean significance workflows remain disabled. Historical settings,
 configuration serialization and p-values remain unchanged.
 
 ## Raw null and fixed sampling design
