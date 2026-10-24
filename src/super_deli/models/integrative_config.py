@@ -208,8 +208,7 @@ class IntegrativeConfig(ClusterConfig):
         }:
             raise ValueError("selection_criterion must be bic or aic")
         if self.selection_criterion == "aic" and (
-            self.covariance_type != "full"
-            or self.target_level not in {"population", "locality"}
+            self.target_level not in {"population", "locality"}
             or {v.kind for v in self.views} != {"morphological", "ecological"}
             or any(
                 v.pca_fit != ("target_means" if v.kind == "morphological" else "source_rows")
@@ -219,10 +218,13 @@ class IntegrativeConfig(ClusterConfig):
                 for v in self.views
             )
         ):
-            raise ValueError(
-                "AIC requires full-covariance grouped continuous views "
-                "with group-mean morphology PCA"
-            )
+            raise ValueError("AIC requires grouped continuous views with group-mean morphology PCA")
+        if (
+            self.selection_criterion == "aic"
+            and self.covariance_type == "tied"
+            and self.n_bootstrap
+        ):
+            raise ValueError("Shared-family AIC stability is not validated")
         if self.n_pcs > sum(v.n_pcs for v in self.views):
             raise ValueError("Joint n_pcs exceeds the declared score dimensions")
 

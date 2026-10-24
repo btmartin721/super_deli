@@ -204,3 +204,9 @@ jobs:
         run: |
           cd "$RUNNER_TEMP"
           python "$GITHUB_WORKSPACE/examples/predictive-recovery/smoke.py" --output-dir "$RUNNER_TEMP/predictive-recovery-smoke"
+
+      - name: Check shared predictive installed workflow
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/shared-predictive/smoke.py" --output-dir "$RUNNER_TEMP/shared-predictive-smoke"

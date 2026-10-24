@@ -25,13 +25,14 @@ class PredictiveScreenConfig:
             raise ValueError("An explicit integrative model is required")
         if (
             model.selection_criterion != "aic"
-            or model.covariance_type != "full"
+            or model.covariance_type not in {"full", "tied"}
             or model.n_bootstrap
             or model.n_threads != 1
             or model.missing_views != "error"
         ):
             raise ValueError(
-                "Screening requires single-thread grouped AIC/full covariance without stability"
+                "Screening requires single-thread grouped AIC/full or tied covariance "
+                "without stability"
             )
 
     def to_dict(self):

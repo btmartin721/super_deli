@@ -1,0 +1,484 @@
+[
+  {
+    "cell": "independent_gaussian_n64",
+    "eligible_k4_validation_gain": {
+      "mean": null,
+      "median": null,
+      "n": 0,
+      "q25": null,
+      "q75": null,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 13,
+      "full_ineligible": 12
+    }
+  },
+  {
+    "cell": "independent_gaussian_n64",
+    "eligible_k4_validation_gain": {
+      "mean": -0.43132525412652706,
+      "median": -0.43132525412652706,
+      "n": 2,
+      "q25": -0.4522374828738205,
+      "q75": -0.41041302537923363,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 15,
+      "full_ineligible": 8,
+      "nonpositive_gain": 2
+    }
+  },
+  {
+    "cell": "independent_gaussian_n256",
+    "eligible_k4_validation_gain": {
+      "mean": -0.22334134002656345,
+      "median": -0.22218852541770634,
+      "n": 24,
+      "q25": -0.24790021284432753,
+      "q75": -0.19292254022941127,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 1,
+      "nonpositive_gain": 24
+    }
+  },
+  {
+    "cell": "independent_gaussian_n256",
+    "eligible_k4_validation_gain": {
+      "mean": -0.06482384381238432,
+      "median": -0.06120936099157205,
+      "n": 22,
+      "q25": -0.07588458720922445,
+      "q75": -0.04937254916844412,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 3,
+      "nonpositive_gain": 22
+    }
+  },
+  {
+    "cell": "correlated_gaussian_n64",
+    "eligible_k4_validation_gain": {
+      "mean": null,
+      "median": null,
+      "n": 0,
+      "q25": null,
+      "q75": null,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 15,
+      "full_ineligible": 10
+    }
+  },
+  {
+    "cell": "correlated_gaussian_n64",
+    "eligible_k4_validation_gain": {
+      "mean": -0.6313379963968968,
+      "median": -0.6313379963968968,
+      "n": 2,
+      "q25": -0.6891305319458325,
+      "q75": -0.5735454608479611,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 15,
+      "full_ineligible": 8,
+      "nonpositive_gain": 2
+    }
+  },
+  {
+    "cell": "correlated_gaussian_n256",
+    "eligible_k4_validation_gain": {
+      "mean": -0.26231452602883304,
+      "median": -0.25738585627364213,
+      "n": 23,
+      "q25": -0.2838542389819534,
+      "q75": -0.21998148482395674,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 2,
+      "nonpositive_gain": 23
+    }
+  },
+  {
+    "cell": "correlated_gaussian_n256",
+    "eligible_k4_validation_gain": {
+      "mean": -0.062061239730582696,
+      "median": -0.05809526293071057,
+      "n": 21,
+      "q25": -0.07819401443156176,
+      "q75": -0.03953636563808825,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 3,
+      "full_ineligible": 1,
+      "nonpositive_gain": 21
+    }
+  },
+  {
+    "cell": "zero_conditional_gaussian_n64",
+    "eligible_k4_validation_gain": {
+      "mean": null,
+      "median": null,
+      "n": 0,
+      "q25": null,
+      "q75": null,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 13,
+      "full_ineligible": 12
+    }
+  },
+  {
+    "cell": "zero_conditional_gaussian_n64",
+    "eligible_k4_validation_gain": {
+      "mean": null,
+      "median": null,
+      "n": 0,
+      "q25": null,
+      "q75": null,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 17,
+      "full_ineligible": 8
+    }
+  },
+  {
+    "cell": "zero_conditional_gaussian_n256",
+    "eligible_k4_validation_gain": {
+      "mean": -0.23809231767634054,
+      "median": -0.23494901718341174,
+      "n": 25,
+      "q25": -0.2660165268658141,
+      "q75": -0.21311358338092065,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "nonpositive_gain": 25
+    }
+  },
+  {
+    "cell": "zero_conditional_gaussian_n256",
+    "eligible_k4_validation_gain": {
+      "mean": -0.061160476682224026,
+      "median": -0.06054495388087272,
+      "n": 23,
+      "q25": -0.08296914662602324,
+      "q75": -0.03453392749519485,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 2,
+      "nonpositive_gain": 23
+    }
+  },
+  {
+    "cell": "four_n64_s3_0",
+    "eligible_k4_validation_gain": {
+      "mean": -1.3846656661206784,
+      "median": -1.4419332385047199,
+      "n": 3,
+      "q25": -1.4900108524809181,
+      "q75": -1.3079542659524592,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 20,
+      "full_ineligible": 2,
+      "nonpositive_gain": 3
+    }
+  },
+  {
+    "cell": "four_n64_s3_0",
+    "eligible_k4_validation_gain": {
+      "mean": 0.22132780126796367,
+      "median": 0.194950803529649,
+      "n": 20,
+      "q25": 0.13041660429931226,
+      "q75": 0.34262324604568994,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 3,
+      "full_ineligible": 2,
+      "nonpositive_gain": 3,
+      "selected_four": 17
+    }
+  },
+  {
+    "cell": "four_n64_s4_5",
+    "eligible_k4_validation_gain": {
+      "mean": -0.5404794456868298,
+      "median": -0.6613487242627806,
+      "n": 7,
+      "q25": -0.9044698667482692,
+      "q75": -0.1566081820740907,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "aic_prefers_other": 1,
+      "fold_ineligible": 15,
+      "full_ineligible": 3,
+      "nonpositive_gain": 5,
+      "selected_four": 1
+    }
+  },
+  {
+    "cell": "four_n64_s4_5",
+    "eligible_k4_validation_gain": {
+      "mean": 0.7671308926999864,
+      "median": 0.7725028563294818,
+      "n": 25,
+      "q25": 0.6814244009119758,
+      "q75": 0.8589165856776657,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "selected_four": 25
+    }
+  },
+  {
+    "cell": "four_n256_s3_0",
+    "eligible_k4_validation_gain": {
+      "mean": 0.3180369959725484,
+      "median": 0.30615797698602537,
+      "n": 25,
+      "q25": 0.2667991166121838,
+      "q75": 0.3618159993914441,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "selected_four": 25
+    }
+  },
+  {
+    "cell": "four_n256_s3_0",
+    "eligible_k4_validation_gain": {
+      "mean": 0.4414405492764422,
+      "median": 0.44647872579630266,
+      "n": 25,
+      "q25": 0.4032404998684799,
+      "q75": 0.4768634637891493,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "selected_four": 25
+    }
+  },
+  {
+    "cell": "four_n256_s4_5",
+    "eligible_k4_validation_gain": {
+      "mean": 0.9149122765890333,
+      "median": 0.9139281334542376,
+      "n": 25,
+      "q25": 0.8647037539211413,
+      "q75": 0.9528571313239304,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "selected_four": 25
+    }
+  },
+  {
+    "cell": "four_n256_s4_5",
+    "eligible_k4_validation_gain": {
+      "mean": 1.0252012648615831,
+      "median": 1.0159505063963057,
+      "n": 25,
+      "q25": 0.9948787935713577,
+      "q75": 1.0512790557842815,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "selected_four": 25
+    }
+  },
+  {
+    "cell": "heavy_tailed_n64",
+    "eligible_k4_validation_gain": {
+      "mean": null,
+      "median": null,
+      "n": 0,
+      "q25": null,
+      "q75": null,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "full_ineligible": 25
+    }
+  },
+  {
+    "cell": "heavy_tailed_n64",
+    "eligible_k4_validation_gain": {
+      "mean": null,
+      "median": null,
+      "n": 0,
+      "q25": null,
+      "q75": null,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "full_ineligible": 25
+    }
+  },
+  {
+    "cell": "cline_n64",
+    "eligible_k4_validation_gain": {
+      "mean": null,
+      "median": null,
+      "n": 0,
+      "q25": null,
+      "q75": null,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 11,
+      "full_ineligible": 14
+    }
+  },
+  {
+    "cell": "cline_n64",
+    "eligible_k4_validation_gain": {
+      "mean": -0.2977661037741443,
+      "median": -0.2977661037741443,
+      "n": 1,
+      "q25": -0.2977661037741443,
+      "q75": -0.2977661037741443,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 16,
+      "full_ineligible": 8,
+      "nonpositive_gain": 1
+    }
+  },
+  {
+    "cell": "unequal_variance_n64",
+    "eligible_k4_validation_gain": {
+      "mean": null,
+      "median": null,
+      "n": 0,
+      "q25": null,
+      "q75": null,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 13,
+      "full_ineligible": 12
+    }
+  },
+  {
+    "cell": "unequal_variance_n64",
+    "eligible_k4_validation_gain": {
+      "mean": 0.11894770667054877,
+      "median": 0.04344493630293599,
+      "n": 4,
+      "q25": -0.06321129821639308,
+      "q75": 0.22560394118987784,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "fold_ineligible": 12,
+      "full_ineligible": 9,
+      "nonpositive_gain": 2,
+      "selected_four": 2
+    }
+  },
+  {
+    "cell": "unequal_variance_n256",
+    "eligible_k4_validation_gain": {
+      "mean": 0.9006072393151671,
+      "median": 0.9024150839740854,
+      "n": 24,
+      "q25": 0.8158990494561321,
+      "q75": 0.9476778809144311,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "aic_prefers_other": 2,
+      "fold_ineligible": 1,
+      "selected_four": 22
+    }
+  },
+  {
+    "cell": "unequal_variance_n256",
+    "eligible_k4_validation_gain": {
+      "mean": 0.33766463647623374,
+      "median": 0.33053720483732185,
+      "n": 24,
+      "q25": 0.29040570283290956,
+      "q75": 0.3757384315900135,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "observations": 25,
+    "sequential_k4_reasons": {
+      "aic_prefers_other": 1,
+      "fold_ineligible": 1,
+      "selected_four": 23
+    }
+  }
+]

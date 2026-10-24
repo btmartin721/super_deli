@@ -378,6 +378,9 @@ def _audit(task):
                 order = sorted(range(k), key=lambda j: int(np.flatnonzero(labels == j)[0]))
                 with np.load(workflow / "selected_model.npz", allow_pickle=False) as p:
                     np.testing.assert_array_equal(p["component_order"], order)
+                    if config.model.covariance_type == "tied":
+                        if str(p["covariance_type"]) != "tied":
+                            raise ValueError("Selected shared family was not retained")
                     for key in ("weights", "means", "covariances"):
                         np.testing.assert_array_equal(p[key], pool[f"k{k}_{key}"][order])
                 with np.load(workflow / "selected_memberships.npz", allow_pickle=False) as p:

@@ -52,7 +52,9 @@ def select_gaussian_mixture(
     counts distinct source units when ``unit_indices`` is supplied.
     """
     criterion = getattr(config, "selection_criterion", "bic")
-    if criterion not in {"bic", "aic"} or (criterion == "aic" and covariance_type != "full"):
+    if criterion not in {"bic", "aic"} or (
+        criterion == "aic" and covariance_type not in {"full", "tied"}
+    ):
         raise ValueError("Unsupported mixture selection criterion/covariance")
     pool = {} if criterion == "aic" else None
     if pool is not None:
@@ -114,7 +116,11 @@ def select_gaussian_mixture(
                     for key, value in {
                         "weights": estimator.weights_,
                         "means": estimator.means_,
-                        "covariances": estimator.covariances_,
+                        "covariances": (
+                            np.repeat(estimator.covariances_[None], k, axis=0)
+                            if covariance_type == "tied"
+                            else estimator.covariances_
+                        ),
                         "membership": probabilities,
                         "labels": labels,
                     }.items()

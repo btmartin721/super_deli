@@ -106,7 +106,10 @@ def check_pool(raw_pool, candidates, *, counts, config, heldout=None):
                 raise ValueError("Candidate eligibility differs")
             if admissible:
                 eligible.append(c)
-            q = k - 1 + k * d + k * d * (d + 1) // 2
+            tied = getattr(config, "covariance_type", "full") == "tied"
+            if tied:
+                np.testing.assert_array_equal(cov, np.repeat(cov[:1], k, axis=0))
+            q = k - 1 + k * d + (1 if tied else k) * d * (d + 1) // 2
             np.testing.assert_allclose(c["log_likelihood"], ll.sum(), atol=1e-7, rtol=1e-10)
             np.testing.assert_allclose(
                 [c["aic"], c["bic"]],
@@ -115,15 +118,9 @@ def check_pool(raw_pool, candidates, *, counts, config, heldout=None):
             )
             if heldout is not None:
                 test = heldout["scores"]
-                z = logsumexp(
-                    np.column_stack(
-                        [
-                            np.log(a) + multivariate_normal.logpdf(test, mean=m, cov=v)
-                            for a, m, v in zip(w, means, cov, strict=True)
-                        ]
-                    ),
-                    axis=1,
-                )
+                from super_deli.benchmarking.predictive_density_audit import log_density
+
+                z = log_density(test, w, means, cov)
                 np.testing.assert_allclose(heldout[f"k{k}"], z, atol=1e-8, rtol=1e-10)
                 density[str(k)] = z
         return {

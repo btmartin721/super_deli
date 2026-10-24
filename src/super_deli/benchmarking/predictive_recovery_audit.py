@@ -121,8 +121,8 @@ def audit_signal(run, labels, reported):
 def external_densities(pool, candidates, held):
     """Audit saved densities by triangular solves, avoiding eigenvalue cancellation."""
     import numpy as np
-    from scipy.linalg import cholesky, solve_triangular
-    from scipy.special import logsumexp
+
+    from super_deli.benchmarking.predictive_density_audit import log_density
 
     density = {}
     scores = held["scores"]
@@ -130,18 +130,9 @@ def external_densities(pool, candidates, held):
         if candidate["status"] == "insufficient_samples":
             continue
         k = candidate["k"]
-        terms = []
-        for weight, mean, covariance in zip(
-            pool[f"k{k}_weights"], pool[f"k{k}_means"], pool[f"k{k}_covariances"], strict=True
-        ):
-            factor = cholesky(covariance, lower=True)
-            solved = solve_triangular(factor, (scores - mean).T, lower=True)
-            logdet = 2 * np.log(np.diag(factor)).sum()
-            terms.append(
-                np.log(weight)
-                - 0.5 * (scores.shape[1] * np.log(2 * np.pi) + logdet + (solved * solved).sum(0))
-            )
-        values = logsumexp(np.column_stack(terms), axis=1)
+        values = log_density(
+            scores, pool[f"k{k}_weights"], pool[f"k{k}_means"], pool[f"k{k}_covariances"]
+        )
         np.testing.assert_allclose(held[f"k{k}"], values, atol=1e-8, rtol=1e-10)
         density[str(k)] = values
     return density

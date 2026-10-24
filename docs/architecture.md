@@ -240,9 +240,22 @@ reference labels need independent evidence and documented uncertainty.
 13. **Completed:** Larger prespecified benchmark, raw-artifact audit and results analysis.
 14. **Completed:** Approximate single-Gaussian calibration in frozen integrative scores.
 15. **Completed:** Full-pipeline Monte Carlo calibration under a declared raw-data reference law.
-16. **Current:** Fitted joint raw-Gaussian calibration for matched continuous morphology/ecology.
-17. Anatomical landmark learning and additional models in separate batches.
-18. Further integration models and empirical calibration after baseline benchmarks.
+16. **Completed:** Matched/grouped empirical morphology/ecology nulls and boundary-aware covariance fitting.
+17. **Completed:** Independent-SNP, linked-block and joint genomic–phenotypic fitted nulls.
+18. **Completed:** Full/shared integrative and grouped clustering, group-mean PCA and scoped calibration.
+19. **Completed:** Grouped AIC, full-pipeline likelihood-gain tests and larger false-positive/power studies.
+20. **Completed:** Predictive-screened full-family AIC and N=64 recovery diagnostics.
+21. **Completed:** Optional shared-covariance grouped AIC and predictive screening with paired validation.
+22. Empirical species-delimitation validation with independently supported biological reference groups.
+23. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
+24. Anatomical landmark learning, semilandmark sliding and further model families.
+25. Consolidated user guidance, end-to-end examples and a scoped research release.
+
+The later calibration and diagnostic workflows remain restricted to their declared
+assumptions and data types; completing their engineering does not establish species
+boundaries. See the current README and linked result reports for precise validation
+coverage. The shared predictive extension is described in
+[shared-covariance predictive screening](shared-predictive.md).
 
 The genomic baseline reports genetic clustering and locus-block sensitivity.
 It does not supply taxonomic validation, formal species-boundary significance,

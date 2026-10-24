@@ -4,18 +4,19 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: diagnosing small-sample predictive-screen recovery.**
-The [completed diagnosis](docs/predictive-recovery-results.md) audited all 625 prior
-observations and evaluated 100 fresh datasets with repeated locality partitions,
-paired ten/100-start fits and separate truth-initialized optimization diagnostics.
-All 3,350 main searches/replays and 450 oracle fits completed; independent audits
-passed. At N=64 the first-split screen recovered K=4 in 0/25 and 2/25 datasets at
-signals 3 and 4.5; 100 starts recovered none. At N=256 signal 3, ten-start screened
-recovery was 24/25. Size eligibility, predictive gain and optimization behavior all
-matter; retained PCA signal alone does not explain recovery.
-See the [design and commands](docs/predictive-recovery.md). No production model,
-selector, default or historical p-value changed; detailed evidence remains local.
-The preceding [predictive-screen validation](docs/predictive-aic-results.md) and
+**Current checkpoint: shared-covariance predictive-screened grouped AIC.**
+The optional shared family pools within-cluster covariance while retaining the
+same whole-locality predictive screen. See the [method](docs/shared-predictive.md)
+and [completed paired validation](docs/shared-predictive-results.md): 350 fresh
+observations, 4,200 paired candidate searches and 25 exact six-search archived
+replays, with independent audits and uncertainty reporting. At N=64, screened K=4 recovery was 17/25 and 25/25 with shared covariance,
+versus 0/25 and 1/25 with full covariance at signals 3 and 4.5. Shared screening
+selected extra components in 5/150 Gaussian controls versus 1/150 under full
+screening, and label agreement was lower under unequal-variance stress.
+Covariance family must be prespecified; full covariance/BIC remain defaults and historical p-values
+are unchanged. Detailed evidence remains local.
+The preceding [N=64 diagnosis](docs/predictive-recovery-results.md),
+[predictive-screen validation](docs/predictive-aic-results.md) and
 [power study](docs/grouped-power-recovery-results.md) remain available.
 
 The preceding [larger false-positive validation](docs/grouped-false-positive-validation-results.md)

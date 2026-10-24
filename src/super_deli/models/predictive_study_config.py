@@ -103,6 +103,10 @@ class PredictiveStudyConfig:
             or len({c.name for c in self.cells}) != len(self.cells)
         ):
             raise ValueError("Distinct explicit cells required")
+        if self.model.covariance_type == "tied" and any(
+            c.law == "gaussian_scores" for c in self.cells
+        ):
+            raise ValueError("Shared-family validation requires raw grouped views")
         if type(self.n_test) is not int or self.n_test < 20 or self.n_test % 4:
             raise ValueError("Use >=20 independent external units divisible by four")
         if self.n_test * 1024 > self.model.max_working_bytes:

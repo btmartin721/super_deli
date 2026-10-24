@@ -1,0 +1,2186 @@
+[
+  {
+    "available_spaces": 25,
+    "cell": "independent_gaussian_n64",
+    "condition_numbers": {
+      "mean": 188139.16104556498,
+      "median": 394.0554371147482,
+      "n": 25,
+      "q25": 83.92211731030662,
+      "q75": 268174.91771151684,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 13,
+    "external_gain_four": {
+      "mean": -0.7795006217034077,
+      "median": -0.6956558914098168,
+      "n": 25,
+      "q25": -0.978566308894579,
+      "q75": -0.5402583216612709,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.0016152274416419339,
+      "median": 8.731581715808491e-06,
+      "n": 25,
+      "q25": 9.99999999981955e-07,
+      "q75": 0.0034666042636911885,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 6.0,
+      "median": 5.0,
+      "n": 25,
+      "q25": 3.0,
+      "q75": 8.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "independent_gaussian_n64",
+    "condition_numbers": {
+      "mean": 232682.17427481362,
+      "median": 224978.30929360865,
+      "n": 125,
+      "q25": 1878.7315650491516,
+      "q75": 347769.12643989426,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 40,
+    "external_gain_four": {
+      "mean": -1.151880299461584,
+      "median": -1.069671275013714,
+      "n": 125,
+      "q25": -1.4464603474371924,
+      "q75": -0.8693852022001214,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.0006034463688463525,
+      "median": 1.0000000000011182e-06,
+      "n": 125,
+      "q25": 9.999999999913661e-07,
+      "q75": 0.00012258667876353016,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 4.4,
+      "median": 4.0,
+      "n": 125,
+      "q25": 3.0,
+      "q75": 6.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "independent_gaussian_n64",
+    "condition_numbers": {
+      "mean": 5.855986059496269,
+      "median": 5.901799498573882,
+      "n": 25,
+      "q25": 3.76665867305998,
+      "q75": 7.462186081767785,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 17,
+    "external_gain_four": {
+      "mean": -0.2726212129112082,
+      "median": -0.2510214531864787,
+      "n": 25,
+      "q25": -0.3070372513961006,
+      "q75": -0.2100138857047688,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.0504147867227743,
+      "median": 0.0438808798403728,
+      "n": 25,
+      "q25": 0.0362339860640461,
+      "q75": 0.061565103967015734,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 6.16,
+      "median": 6.0,
+      "n": 25,
+      "q25": 4.0,
+      "q75": 8.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "independent_gaussian_n64",
+    "condition_numbers": {
+      "mean": 7.568122483665155,
+      "median": 6.495284276247752,
+      "n": 125,
+      "q25": 5.115536849990824,
+      "q75": 9.106038367024626,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 67,
+    "external_gain_four": {
+      "mean": -0.4164760036687318,
+      "median": -0.39240522923857446,
+      "n": 125,
+      "q25": -0.4770395000628442,
+      "q75": -0.31765329266731523,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.040091959205347076,
+      "median": 0.038313006491166736,
+      "n": 125,
+      "q25": 0.02944953105133224,
+      "q75": 0.0500442541433999,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 4.976,
+      "median": 5.0,
+      "n": 125,
+      "q25": 3.0,
+      "q75": 6.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "independent_gaussian_n256",
+    "condition_numbers": {
+      "mean": 36.000442935788385,
+      "median": 17.322920748401167,
+      "n": 25,
+      "q25": 13.14587816477295,
+      "q75": 31.47755972926014,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 25,
+    "external_gain_four": {
+      "mean": -0.16785339390963128,
+      "median": -0.16544734556049598,
+      "n": 25,
+      "q25": -0.18225324847007987,
+      "q75": -0.14853466696579326,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.020773494732616603,
+      "median": 0.020278145750783832,
+      "n": 25,
+      "q25": 0.01568716412997004,
+      "q75": 0.026038497400425232,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 34.96,
+      "median": 35.0,
+      "n": 25,
+      "q25": 26.0,
+      "q75": 42.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "independent_gaussian_n256",
+    "condition_numbers": {
+      "mean": 1877.2803247926518,
+      "median": 30.4432968011465,
+      "n": 125,
+      "q25": 18.524962033356438,
+      "q75": 99.82206558388144,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 124,
+    "external_gain_four": {
+      "mean": -0.2262303146171429,
+      "median": -0.22669587468994795,
+      "n": 125,
+      "q25": -0.2556952354108925,
+      "q75": -0.19123535221640042,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.014048733884499235,
+      "median": 0.01327992203755988,
+      "n": 125,
+      "q25": 0.004939623718693,
+      "q75": 0.019800590796237114,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 24.872,
+      "median": 25.0,
+      "n": 125,
+      "q25": 17.0,
+      "q75": 32.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "independent_gaussian_n256",
+    "condition_numbers": {
+      "mean": 2.2217133939453415,
+      "median": 2.0351054252613494,
+      "n": 25,
+      "q25": 1.945142415242708,
+      "q75": 2.4576179207059514,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 25,
+    "external_gain_four": {
+      "mean": -0.04012547331785723,
+      "median": -0.04157015207482138,
+      "n": 25,
+      "q25": -0.047741988364372115,
+      "q75": -0.027622126791205986,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.11637522448367874,
+      "median": 0.11753059232484707,
+      "n": 25,
+      "q25": 0.10754812654318854,
+      "q75": 0.13213970169734704,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 32.64,
+      "median": 33.0,
+      "n": 25,
+      "q25": 24.0,
+      "q75": 38.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "independent_gaussian_n256",
+    "condition_numbers": {
+      "mean": 2.684053585809394,
+      "median": 2.4533504893928115,
+      "n": 125,
+      "q25": 2.2334268712784837,
+      "q75": 2.9131595538664206,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 122,
+    "external_gain_four": {
+      "mean": -0.05961349035914597,
+      "median": -0.05623571185775972,
+      "n": 125,
+      "q25": -0.07404929631863334,
+      "q75": -0.04321360522757173,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.09968021231813351,
+      "median": 0.1031793099003692,
+      "n": 125,
+      "q25": 0.08859332509137535,
+      "q75": 0.1121871858522296,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 25.76,
+      "median": 26.0,
+      "n": 125,
+      "q25": 19.0,
+      "q75": 34.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "correlated_gaussian_n64",
+    "condition_numbers": {
+      "mean": 135467.88999824913,
+      "median": 5469.01287206284,
+      "n": 25,
+      "q25": 535.382407098749,
+      "q75": 285006.25533912337,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 15,
+    "external_gain_four": {
+      "mean": -1.1948965967748806,
+      "median": -1.1146849283952838,
+      "n": 25,
+      "q25": -1.5964703284543642,
+      "q75": -0.8488778915113515,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.001277476604717508,
+      "median": 4.9833836171098374e-05,
+      "n": 25,
+      "q25": 9.999999999950501e-07,
+      "q75": 0.0008263503353696682,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 6.12,
+      "median": 6.0,
+      "n": 25,
+      "q25": 3.0,
+      "q75": 10.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "correlated_gaussian_n64",
+    "condition_numbers": {
+      "mean": 209815.68400020964,
+      "median": 179665.08604096598,
+      "n": 125,
+      "q25": 1265.9717254545508,
+      "q75": 329369.27399619267,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 39,
+    "external_gain_four": {
+      "mean": -1.746334187743361,
+      "median": -1.5908685223474908,
+      "n": 125,
+      "q25": -2.0470305980650396,
+      "q75": -1.234895312107036,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.00037374972515142723,
+      "median": 1e-06,
+      "n": 125,
+      "q25": 9.999999999901962e-07,
+      "q75": 7.803333383739758e-05,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 4.2,
+      "median": 4.0,
+      "n": 125,
+      "q25": 3.0,
+      "q75": 5.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "correlated_gaussian_n64",
+    "condition_numbers": {
+      "mean": 7.236938890890795,
+      "median": 7.375117920348066,
+      "n": 25,
+      "q25": 5.2126365926376135,
+      "q75": 9.217574174601314,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 17,
+    "external_gain_four": {
+      "mean": -0.4048019429954838,
+      "median": -0.40842307530941424,
+      "n": 25,
+      "q25": -0.5018273131757103,
+      "q75": -0.32011178179926003,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.04264394761332547,
+      "median": 0.03874280663904288,
+      "n": 25,
+      "q25": 0.03249136720228293,
+      "q75": 0.04841681075606469,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 6.08,
+      "median": 7.0,
+      "n": 25,
+      "q25": 3.0,
+      "q75": 8.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "correlated_gaussian_n64",
+    "condition_numbers": {
+      "mean": 9.196006884345788,
+      "median": 7.502749600052026,
+      "n": 125,
+      "q25": 5.880679242728537,
+      "q75": 10.36192891054664,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 69,
+    "external_gain_four": {
+      "mean": -0.5406314383110264,
+      "median": -0.5105523023291523,
+      "n": 125,
+      "q25": -0.6123931308168423,
+      "q75": -0.3956068685845091,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.03486933033054234,
+      "median": 0.0352022251421609,
+      "n": 125,
+      "q25": 0.026308024248424506,
+      "q75": 0.04032417843042903,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 4.92,
+      "median": 5.0,
+      "n": 125,
+      "q25": 3.0,
+      "q75": 7.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "correlated_gaussian_n256",
+    "condition_numbers": {
+      "mean": 67.0405252889645,
+      "median": 16.890373560623154,
+      "n": 25,
+      "q25": 9.750600088866392,
+      "q75": 43.87373719657537,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 25,
+    "external_gain_four": {
+      "mean": -0.18901352175132044,
+      "median": -0.18244639296538775,
+      "n": 25,
+      "q25": -0.21637989958862358,
+      "q75": -0.15694983627559683,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.023012579674014128,
+      "median": 0.022473155409428316,
+      "n": 25,
+      "q25": 0.01169372530358378,
+      "q75": 0.033242882635347686,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 35.48,
+      "median": 35.0,
+      "n": 25,
+      "q25": 26.0,
+      "q75": 46.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "correlated_gaussian_n256",
+    "condition_numbers": {
+      "mean": 155.09215640700495,
+      "median": 34.05296979236392,
+      "n": 125,
+      "q25": 21.5949558204862,
+      "q75": 87.55797250136914,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 123,
+    "external_gain_four": {
+      "mean": -0.26506908741966223,
+      "median": -0.26363968330918824,
+      "n": 125,
+      "q25": -0.30396173716074226,
+      "q75": -0.22515342999254623,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.012908191717956959,
+      "median": 0.011069769193197493,
+      "n": 125,
+      "q25": 0.00516965270373815,
+      "q75": 0.018259519886915133,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 25.344,
+      "median": 25.0,
+      "n": 125,
+      "q25": 18.0,
+      "q75": 33.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "correlated_gaussian_n256",
+    "condition_numbers": {
+      "mean": 3.4727609310262233,
+      "median": 3.022350555768839,
+      "n": 25,
+      "q25": 2.8249078798496017,
+      "q75": 4.087400915853415,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 24,
+    "external_gain_four": {
+      "mean": -0.056064580666695625,
+      "median": -0.05413422060185899,
+      "n": 25,
+      "q25": -0.06730647779208868,
+      "q75": -0.04066822737399598,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.08322276818551719,
+      "median": 0.08538308335733609,
+      "n": 25,
+      "q25": 0.0735786671044292,
+      "q75": 0.09331883847873249,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 31.64,
+      "median": 34.0,
+      "n": 25,
+      "q25": 24.0,
+      "q75": 42.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "correlated_gaussian_n256",
+    "condition_numbers": {
+      "mean": 4.174158608019093,
+      "median": 3.8559586533083836,
+      "n": 125,
+      "q25": 3.1480535901167217,
+      "q75": 4.940123962946563,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 119,
+    "external_gain_four": {
+      "mean": -0.07766988384957807,
+      "median": -0.07227649297443368,
+      "n": 125,
+      "q25": -0.09368780077612059,
+      "q75": -0.05871941892433773,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.07337823902836081,
+      "median": 0.07396486981172788,
+      "n": 125,
+      "q25": 0.06283680488259165,
+      "q75": 0.08352358762827863,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 23.192,
+      "median": 25.0,
+      "n": 125,
+      "q25": 16.0,
+      "q75": 31.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "zero_conditional_gaussian_n64",
+    "condition_numbers": {
+      "mean": 98679.24700824573,
+      "median": 2357.6217677635627,
+      "n": 25,
+      "q25": 86.83953804824752,
+      "q75": 160850.32858237726,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 13,
+    "external_gain_four": {
+      "mean": -0.9978246992974548,
+      "median": -0.9851078375481926,
+      "n": 25,
+      "q25": -1.1945356532186553,
+      "q75": -0.6569722877934023,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.0008528217283077775,
+      "median": 2.21155076706088e-06,
+      "n": 25,
+      "q25": 9.99999999999999e-07,
+      "q75": 0.0006126986424031365,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 4.64,
+      "median": 5.0,
+      "n": 25,
+      "q25": 3.0,
+      "q75": 6.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "zero_conditional_gaussian_n64",
+    "condition_numbers": {
+      "mean": 225936.8939275456,
+      "median": 182857.49138744417,
+      "n": 125,
+      "q25": 10721.94813595522,
+      "q75": 335679.25318346464,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 33,
+    "external_gain_four": {
+      "mean": -1.2608320818539869,
+      "median": -1.2055539302258234,
+      "n": 125,
+      "q25": -1.5346361828096922,
+      "q75": -0.9443050165486452,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.0002472106168429215,
+      "median": 9.99999999999716e-07,
+      "n": 125,
+      "q25": 9.999999999878713e-07,
+      "q75": 2.1181331417786515e-06,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 3.992,
+      "median": 4.0,
+      "n": 125,
+      "q25": 3.0,
+      "q75": 5.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "zero_conditional_gaussian_n64",
+    "condition_numbers": {
+      "mean": 9.911951302300446,
+      "median": 7.81964861383154,
+      "n": 25,
+      "q25": 6.693866762776872,
+      "q75": 11.281270754948055,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 17,
+    "external_gain_four": {
+      "mean": -0.3162350884773544,
+      "median": -0.33989463323889435,
+      "n": 25,
+      "q25": -0.3900657230529927,
+      "q75": -0.21615240089662247,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.032763262919565016,
+      "median": 0.03203360869620939,
+      "n": 25,
+      "q25": 0.024991526796039526,
+      "q75": 0.042232832135221665,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 6.12,
+      "median": 6.0,
+      "n": 25,
+      "q25": 4.0,
+      "q75": 8.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "zero_conditional_gaussian_n64",
+    "condition_numbers": {
+      "mean": 13.152807729299353,
+      "median": 10.883582876473927,
+      "n": 125,
+      "q25": 7.746908596833856,
+      "q75": 16.545898952644716,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 64,
+    "external_gain_four": {
+      "mean": -0.43368497101305353,
+      "median": -0.4219514536461728,
+      "n": 125,
+      "q25": -0.5212338492334239,
+      "q75": -0.31197704371529167,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.02747868746403188,
+      "median": 0.02527062219151803,
+      "n": 125,
+      "q25": 0.018213399810738565,
+      "q75": 0.03554330363208908,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 4.92,
+      "median": 5.0,
+      "n": 125,
+      "q25": 3.0,
+      "q75": 7.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "zero_conditional_gaussian_n256",
+    "condition_numbers": {
+      "mean": 85.39814942588215,
+      "median": 24.197428130249552,
+      "n": 25,
+      "q25": 17.419638722229838,
+      "q75": 40.181762789017796,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 25,
+    "external_gain_four": {
+      "mean": -0.176758427056247,
+      "median": -0.17679505713867172,
+      "n": 25,
+      "q25": -0.20329127426599639,
+      "q75": -0.1474068196761683,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.015767161445595066,
+      "median": 0.016890783106847846,
+      "n": 25,
+      "q25": 0.011933132868240584,
+      "q75": 0.019934254600169926,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 32.92,
+      "median": 35.0,
+      "n": 25,
+      "q25": 28.0,
+      "q75": 39.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "zero_conditional_gaussian_n256",
+    "condition_numbers": {
+      "mean": 720.4941182034315,
+      "median": 53.24916539326336,
+      "n": 125,
+      "q25": 26.31288919395964,
+      "q75": 117.24521774749488,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 125,
+    "external_gain_four": {
+      "mean": -0.24806933393346087,
+      "median": -0.23258555258282182,
+      "n": 125,
+      "q25": -0.2858683657349197,
+      "q75": -0.20799780120688688,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.010526967666949221,
+      "median": 0.008439408831859526,
+      "n": 125,
+      "q25": 0.004646891338655731,
+      "q75": 0.015442090964363078,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 25.104,
+      "median": 25.0,
+      "n": 125,
+      "q25": 18.0,
+      "q75": 33.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "zero_conditional_gaussian_n256",
+    "condition_numbers": {
+      "mean": 5.093259374917165,
+      "median": 4.954574797937648,
+      "n": 25,
+      "q25": 4.462333241364522,
+      "q75": 5.713315516207924,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 25,
+    "external_gain_four": {
+      "mean": -0.04889496791490648,
+      "median": -0.048910783371138356,
+      "n": 25,
+      "q25": -0.058851195957529114,
+      "q75": -0.034667295077158364,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.05524356307050235,
+      "median": 0.053305357163569086,
+      "n": 25,
+      "q25": 0.048123834320293414,
+      "q75": 0.06218074321373444,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 30.32,
+      "median": 29.0,
+      "n": 25,
+      "q25": 25.0,
+      "q75": 37.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "zero_conditional_gaussian_n256",
+    "condition_numbers": {
+      "mean": 5.763915511279715,
+      "median": 5.460261046327258,
+      "n": 125,
+      "q25": 4.4710645238151425,
+      "q75": 6.8392839826691105,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 122,
+    "external_gain_four": {
+      "mean": -0.06477905215373131,
+      "median": -0.062291528828642626,
+      "n": 125,
+      "q25": -0.08190783925441669,
+      "q75": -0.04337427839702971,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.05411462909520953,
+      "median": 0.05239192032384502,
+      "n": 125,
+      "q25": 0.0438175387915601,
+      "q75": 0.060294804081928784,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 21.912,
+      "median": 22.0,
+      "n": 125,
+      "q25": 16.0,
+      "q75": 27.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "four_n64_s3_0",
+    "condition_numbers": {
+      "mean": 17826.4467652492,
+      "median": 31.15676011929648,
+      "n": 25,
+      "q25": 16.909914627811297,
+      "q75": 45.5320688980718,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 23,
+    "external_gain_four": {
+      "mean": -0.5290012331940016,
+      "median": -0.4478032102605882,
+      "n": 25,
+      "q25": -0.6873908507614372,
+      "q75": -0.3134854322475046,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.006273747236863447,
+      "median": 0.005612676441174702,
+      "n": 25,
+      "q25": 0.0035938928704137983,
+      "q75": 0.008620007183650759,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 11.96,
+      "median": 13.0,
+      "n": 25,
+      "q25": 10.0,
+      "q75": 15.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "four_n64_s3_0",
+    "condition_numbers": {
+      "mean": 65074.01773060917,
+      "median": 930.3272873854311,
+      "n": 125,
+      "q25": 66.03945860313956,
+      "q75": 120703.32244036369,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 72,
+    "external_gain_four": {
+      "mean": -1.0317204394891561,
+      "median": -0.8868649469493652,
+      "n": 125,
+      "q25": -1.3705515337985887,
+      "q75": -0.5790449963446803,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.0018597606179650077,
+      "median": 0.00013036008209083645,
+      "n": 125,
+      "q25": 9.999999999999208e-07,
+      "q75": 0.0025764288808543105,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 6.128,
+      "median": 5.0,
+      "n": 125,
+      "q25": 3.0,
+      "q75": 9.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "four_n64_s3_0",
+    "condition_numbers": {
+      "mean": 9.980733681655718,
+      "median": 7.9885519928877,
+      "n": 25,
+      "q25": 6.5447456780198685,
+      "q75": 10.431248357077767,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 23,
+    "external_gain_four": {
+      "mean": 0.2320514825221361,
+      "median": 0.2635803170754245,
+      "n": 25,
+      "q25": 0.17390389013027613,
+      "q75": 0.321570936600288,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.022282848327160674,
+      "median": 0.02341502393355667,
+      "n": 25,
+      "q25": 0.017472317612519325,
+      "q75": 0.02533117587307568,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 13.36,
+      "median": 15.0,
+      "n": 25,
+      "q25": 14.0,
+      "q75": 15.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "four_n64_s3_0",
+    "condition_numbers": {
+      "mean": 9.856839703461683,
+      "median": 8.702180490375145,
+      "n": 125,
+      "q25": 6.589905477906499,
+      "q75": 11.66519386519727,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 118,
+    "external_gain_four": {
+      "mean": 0.14649777190735302,
+      "median": 0.18320550476080602,
+      "n": 125,
+      "q25": 0.024125859285930223,
+      "q75": 0.29847326842696953,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.021091758810151646,
+      "median": 0.020856008123822666,
+      "n": 125,
+      "q25": 0.01704519572234057,
+      "q75": 0.025556980570041386,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 9.664,
+      "median": 10.0,
+      "n": 125,
+      "q25": 9.0,
+      "q75": 11.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "four_n64_s4_5",
+    "condition_numbers": {
+      "mean": 2079.738474346816,
+      "median": 21.36246466674382,
+      "n": 25,
+      "q25": 17.92105549073113,
+      "q75": 25.404029331484644,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 22,
+    "external_gain_four": {
+      "mean": 0.2458903200451571,
+      "median": 0.2850458896871386,
+      "n": 25,
+      "q25": 0.10851216216332416,
+      "q75": 0.40980288885920896,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.005662798832814773,
+      "median": 0.005963719652353617,
+      "n": 25,
+      "q25": 0.003957940972503757,
+      "q75": 0.006954786572708855,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 13.52,
+      "median": 15.0,
+      "n": 25,
+      "q25": 14.0,
+      "q75": 16.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "four_n64_s4_5",
+    "condition_numbers": {
+      "mean": 21043.789417053733,
+      "median": 36.875677581268185,
+      "n": 125,
+      "q25": 23.957093919083665,
+      "q75": 143.248702843753,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 98,
+    "external_gain_four": {
+      "mean": -0.42986359129566587,
+      "median": -0.3031507998253796,
+      "n": 125,
+      "q25": -0.6658340896146422,
+      "q75": 0.0029838431137077896,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.003393046567289681,
+      "median": 0.0031498998444993145,
+      "n": 125,
+      "q25": 0.0001719482873032535,
+      "q75": 0.005355402040274915,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 8.896,
+      "median": 11.0,
+      "n": 125,
+      "q25": 5.0,
+      "q75": 12.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "four_n64_s4_5",
+    "condition_numbers": {
+      "mean": 7.956947910317639,
+      "median": 7.647495110247174,
+      "n": 25,
+      "q25": 6.864923248255514,
+      "q75": 9.0035883461878,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 25,
+    "external_gain_four": {
+      "mean": 0.8690129269906852,
+      "median": 0.8769557910117853,
+      "n": 25,
+      "q25": 0.828574831329481,
+      "q75": 0.9169193466571103,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.01545001157052276,
+      "median": 0.0156840680583724,
+      "n": 25,
+      "q25": 0.01356585000165673,
+      "q75": 0.01684910576023381,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 15.8,
+      "median": 16.0,
+      "n": 25,
+      "q25": 16.0,
+      "q75": 16.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "four_n64_s4_5",
+    "condition_numbers": {
+      "mean": 8.328795452048459,
+      "median": 8.289297882998577,
+      "n": 125,
+      "q25": 6.983575866630341,
+      "q75": 9.578412330584943,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 125,
+    "external_gain_four": {
+      "mean": 0.8018716444148143,
+      "median": 0.8147992492952271,
+      "n": 125,
+      "q25": 0.7520185336323237,
+      "q75": 0.8867410032946507,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.014745214920229798,
+      "median": 0.014448513237482773,
+      "n": 125,
+      "q25": 0.01266617118979788,
+      "q75": 0.016657802802400496,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 11.144,
+      "median": 11.0,
+      "n": 125,
+      "q25": 11.0,
+      "q75": 12.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "four_n256_s3_0",
+    "condition_numbers": {
+      "mean": 9.004644206973294,
+      "median": 8.21088225337167,
+      "n": 25,
+      "q25": 7.290163695361118,
+      "q75": 9.92385293217392,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 25,
+    "external_gain_four": {
+      "mean": 0.36741302879406634,
+      "median": 0.3629051068095606,
+      "n": 25,
+      "q25": 0.34164340663206094,
+      "q75": 0.40841333580557837,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.022238810788994215,
+      "median": 0.022168771196491875,
+      "n": 25,
+      "q25": 0.020484370267693473,
+      "q75": 0.024844857204910618,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 57.88,
+      "median": 58.0,
+      "n": 25,
+      "q25": 56.0,
+      "q75": 60.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "four_n256_s3_0",
+    "condition_numbers": {
+      "mean": 10.4703561355856,
+      "median": 9.821695232352797,
+      "n": 125,
+      "q25": 8.323570229650546,
+      "q75": 11.979731731460205,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 125,
+    "external_gain_four": {
+      "mean": 0.3192299855377988,
+      "median": 0.319861344328813,
+      "n": 125,
+      "q25": 0.2841206290837833,
+      "q75": 0.3653427791698139,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.019878822663461335,
+      "median": 0.020332069882681363,
+      "n": 125,
+      "q25": 0.01727304937953976,
+      "q75": 0.022581837154290862,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 44.752,
+      "median": 46.0,
+      "n": 125,
+      "q25": 43.0,
+      "q75": 47.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "four_n256_s3_0",
+    "condition_numbers": {
+      "mean": 5.852170642819865,
+      "median": 5.719039256944571,
+      "n": 25,
+      "q25": 5.200806088526013,
+      "q75": 6.439777559216705,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 25,
+    "external_gain_four": {
+      "mean": 0.4571013564885654,
+      "median": 0.4586531856451195,
+      "n": 25,
+      "q25": 0.4402954907044495,
+      "q75": 0.4712337998033559,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.031897559067407044,
+      "median": 0.032179236374953936,
+      "n": 25,
+      "q25": 0.029149393094440965,
+      "q75": 0.03420385259832332,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 60.64,
+      "median": 61.0,
+      "n": 25,
+      "q25": 60.0,
+      "q75": 62.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "four_n256_s3_0",
+    "condition_numbers": {
+      "mean": 5.926725459607193,
+      "median": 5.861127779411123,
+      "n": 125,
+      "q25": 5.1766284619870975,
+      "q75": 6.611318825603445,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 125,
+    "external_gain_four": {
+      "mean": 0.4467156750139474,
+      "median": 0.4427956092158617,
+      "n": 125,
+      "q25": 0.4263898746079485,
+      "q75": 0.46404051616180025,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.03151165541185831,
+      "median": 0.03164984831646353,
+      "n": 125,
+      "q25": 0.02887083769800017,
+      "q75": 0.03375802063880258,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 46.912,
+      "median": 47.0,
+      "n": 125,
+      "q25": 45.0,
+      "q75": 49.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "four_n256_s4_5",
+    "condition_numbers": {
+      "mean": 11.114104795112056,
+      "median": 10.904895550177029,
+      "n": 25,
+      "q25": 9.39650926445852,
+      "q75": 13.043143428348342,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 25,
+    "external_gain_four": {
+      "mean": 0.9538463020685168,
+      "median": 0.9478087006193077,
+      "n": 25,
+      "q25": 0.9148746176759592,
+      "q75": 0.9846753673755493,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.012908887968226878,
+      "median": 0.013117529397124576,
+      "n": 25,
+      "q25": 0.0119215310872079,
+      "q75": 0.013692064145606904,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 63.4,
+      "median": 63.0,
+      "n": 25,
+      "q25": 63.0,
+      "q75": 64.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "four_n256_s4_5",
+    "condition_numbers": {
+      "mean": 12.000113932488118,
+      "median": 11.80823139976831,
+      "n": 125,
+      "q25": 10.346932683759126,
+      "q75": 13.37978162480033,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 125,
+    "external_gain_four": {
+      "mean": 0.9152699781603004,
+      "median": 0.9087661778189854,
+      "n": 125,
+      "q25": 0.8750384535558294,
+      "q75": 0.956370289731149,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.012004278167625594,
+      "median": 0.012006269776721907,
+      "n": 125,
+      "q25": 0.01072662270680956,
+      "q75": 0.01325066878683147,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 47.4,
+      "median": 48.0,
+      "n": 125,
+      "q25": 46.0,
+      "q75": 49.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "four_n256_s4_5",
+    "condition_numbers": {
+      "mean": 7.710422716293803,
+      "median": 7.860810332766422,
+      "n": 25,
+      "q25": 6.8961863055523684,
+      "q75": 8.237348828394781,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 25,
+    "external_gain_four": {
+      "mean": 1.0312249706500667,
+      "median": 1.0352570738474507,
+      "n": 25,
+      "q25": 1.0022220758609783,
+      "q75": 1.0579473765734244,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.01703784960148771,
+      "median": 0.016908007342182157,
+      "n": 25,
+      "q25": 0.01583482103299098,
+      "q75": 0.018018083208800502,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 63.36,
+      "median": 63.0,
+      "n": 25,
+      "q25": 63.0,
+      "q75": 64.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "four_n256_s4_5",
+    "condition_numbers": {
+      "mean": 7.800987217523495,
+      "median": 7.642502290209338,
+      "n": 125,
+      "q25": 7.017423201464274,
+      "q75": 8.578718542502287,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 125,
+    "external_gain_four": {
+      "mean": 1.0211205793101634,
+      "median": 1.0272248119446763,
+      "n": 125,
+      "q25": 0.9969463942373119,
+      "q75": 1.0485419051066012,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.016855465931901147,
+      "median": 0.01677872508898867,
+      "n": 125,
+      "q25": 0.015495348513256641,
+      "q75": 0.018058910552227275,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 47.432,
+      "median": 48.0,
+      "n": 125,
+      "q25": 46.0,
+      "q75": 49.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "heavy_tailed_n64",
+    "condition_numbers": {
+      "mean": 985029.6444656188,
+      "median": 808078.0318239958,
+      "n": 25,
+      "q25": 582811.7887237158,
+      "q75": 1299322.776256949,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 0,
+    "external_gain_four": {
+      "mean": -1.5013552962145986,
+      "median": -1.467102881315673,
+      "n": 25,
+      "q25": -1.7487048015940072,
+      "q75": -0.878111323961729,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 9.999999999777175e-07,
+      "median": 9.99999999985269e-07,
+      "n": 25,
+      "q25": 9.999999999604206e-07,
+      "q75": 9.99999999998389e-07,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 2.24,
+      "median": 2.0,
+      "n": 25,
+      "q25": 1.0,
+      "q75": 3.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "heavy_tailed_n64",
+    "condition_numbers": {
+      "mean": 799540.7912743994,
+      "median": 677300.3245394166,
+      "n": 125,
+      "q25": 390991.0299666932,
+      "q75": 1143973.060965335,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 1,
+    "external_gain_four": {
+      "mean": -1.9027098167232257,
+      "median": -1.719275193328982,
+      "n": 125,
+      "q25": -2.505815413934519,
+      "q75": -1.141539446214659,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 1.9687182608070484e-06,
+      "median": 9.99999999980221e-07,
+      "n": 125,
+      "q25": 9.999999999557715e-07,
+      "q75": 9.999999999983063e-07,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 1.816,
+      "median": 1.0,
+      "n": 125,
+      "q25": 1.0,
+      "q75": 2.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "heavy_tailed_n64",
+    "condition_numbers": {
+      "mean": 6.08327257429529,
+      "median": 5.469618722653176,
+      "n": 25,
+      "q25": 4.0969666923736385,
+      "q75": 6.746968223896587,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 0,
+    "external_gain_four": {
+      "mean": -0.5649231839232052,
+      "median": -0.4732836715240205,
+      "n": 25,
+      "q25": -0.8147553235960983,
+      "q75": -0.12348856214114412,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.04906575031903003,
+      "median": 0.04718661832137865,
+      "n": 25,
+      "q25": 0.03579887293561779,
+      "q75": 0.05817234204134687,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 1.36,
+      "median": 1.0,
+      "n": 25,
+      "q25": 1.0,
+      "q75": 1.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "heavy_tailed_n64",
+    "condition_numbers": {
+      "mean": 7.293450260758117,
+      "median": 6.371909801766564,
+      "n": 125,
+      "q25": 4.930990136749589,
+      "q75": 8.26837522162709,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 1,
+    "external_gain_four": {
+      "mean": -0.7692904913661219,
+      "median": -0.697343462992644,
+      "n": 125,
+      "q25": -1.1604955483531427,
+      "q75": -0.3167883075952764,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.04023814263077442,
+      "median": 0.03861536133485056,
+      "n": 125,
+      "q25": 0.029066357660951076,
+      "q75": 0.04764011013352711,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 1.376,
+      "median": 1.0,
+      "n": 125,
+      "q25": 1.0,
+      "q75": 1.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "cline_n64",
+    "condition_numbers": {
+      "mean": 142958.3853101513,
+      "median": 86161.49555670377,
+      "n": 25,
+      "q25": 254.66859443340164,
+      "q75": 238624.36661930804,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 11,
+    "external_gain_four": {
+      "mean": -1.0024025987682925,
+      "median": -1.0308018880351026,
+      "n": 25,
+      "q25": -1.1639557964251748,
+      "q75": -0.7460906073116729,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.0009417835100119163,
+      "median": 1.0000000000091886e-06,
+      "n": 25,
+      "q25": 9.999999999863047e-07,
+      "q75": 0.0005087514631905479,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 4.96,
+      "median": 4.0,
+      "n": 25,
+      "q25": 3.0,
+      "q75": 7.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "cline_n64",
+    "condition_numbers": {
+      "mean": 150235.94566566637,
+      "median": 147248.1748376226,
+      "n": 125,
+      "q25": 31522.299223565336,
+      "q75": 213336.70000719716,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 31,
+    "external_gain_four": {
+      "mean": -1.4240488955385393,
+      "median": -1.219613930271545,
+      "n": 125,
+      "q25": -1.7364392383566887,
+      "q75": -0.9956392521343106,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.00025251701092251507,
+      "median": 9.999999999990794e-07,
+      "n": 125,
+      "q25": 9.999999999921475e-07,
+      "q75": 1.0000000240533953e-06,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 3.824,
+      "median": 3.0,
+      "n": 125,
+      "q25": 2.0,
+      "q75": 4.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "cline_n64",
+    "condition_numbers": {
+      "mean": 11.152947371293706,
+      "median": 10.925500474556818,
+      "n": 25,
+      "q25": 8.221715194226165,
+      "q75": 12.501144230044735,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 17,
+    "external_gain_four": {
+      "mean": -0.33903523582386585,
+      "median": -0.29126956598980436,
+      "n": 25,
+      "q25": -0.3773267822797328,
+      "q75": -0.26177262164797555,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.02750292003597329,
+      "median": 0.026302319511569146,
+      "n": 25,
+      "q25": 0.021238454814189046,
+      "q75": 0.03130297041850254,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 6.6,
+      "median": 7.0,
+      "n": 25,
+      "q25": 4.0,
+      "q75": 10.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "cline_n64",
+    "condition_numbers": {
+      "mean": 9.94463907394476,
+      "median": 8.922955637663247,
+      "n": 125,
+      "q25": 6.392319296583486,
+      "q75": 12.596776847942685,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 66,
+    "external_gain_four": {
+      "mean": -0.4494647420009086,
+      "median": -0.3991162474080616,
+      "n": 125,
+      "q25": -0.5230581336182165,
+      "q75": -0.32825661212261886,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.028366696480098468,
+      "median": 0.02612709631785845,
+      "n": 125,
+      "q25": 0.021086527692156607,
+      "q75": 0.03434856699983826,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 5.272,
+      "median": 5.0,
+      "n": 125,
+      "q25": 3.0,
+      "q75": 7.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "unequal_variance_n64",
+    "condition_numbers": {
+      "mean": 105841.97840311912,
+      "median": 208.6474145694813,
+      "n": 25,
+      "q25": 27.35761649157731,
+      "q75": 121150.4528215448,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 13,
+    "external_gain_four": {
+      "mean": -0.028140962234111402,
+      "median": 0.013760704909005042,
+      "n": 25,
+      "q25": -0.35280655107986647,
+      "q75": 0.2788221485845324,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.0018166837371654315,
+      "median": 0.0006017122380429984,
+      "n": 25,
+      "q25": 9.999999999900956e-07,
+      "q75": 0.0026544762892808183,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 6.76,
+      "median": 5.0,
+      "n": 25,
+      "q25": 3.0,
+      "q75": 11.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "unequal_variance_n64",
+    "condition_numbers": {
+      "mean": 150815.12291145793,
+      "median": 108530.14843434015,
+      "n": 125,
+      "q25": 164.79737944265412,
+      "q75": 286659.90593276866,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 50,
+    "external_gain_four": {
+      "mean": -0.5774661136528665,
+      "median": -0.48356047397746293,
+      "n": 125,
+      "q25": -0.9578319231776886,
+      "q75": -0.0494567059257095,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.0006617421302142505,
+      "median": 1.0000000000020862e-06,
+      "n": 125,
+      "q25": 9.99999999996117e-07,
+      "q75": 0.000733496355303611,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 4.72,
+      "median": 4.0,
+      "n": 125,
+      "q25": 3.0,
+      "q75": 6.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "unequal_variance_n64",
+    "condition_numbers": {
+      "mean": 11.545950396300903,
+      "median": 10.764295083116977,
+      "n": 25,
+      "q25": 8.71007432500331,
+      "q75": 13.37683536550905,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 16,
+    "external_gain_four": {
+      "mean": 0.14500337982584205,
+      "median": 0.16388566969052626,
+      "n": 25,
+      "q25": 0.07526903657560935,
+      "q75": 0.21231443329980296,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.023894630444584276,
+      "median": 0.02260117920667073,
+      "n": 25,
+      "q25": 0.01849135934327426,
+      "q75": 0.02764186801820548,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 6.96,
+      "median": 7.0,
+      "n": 25,
+      "q25": 4.0,
+      "q75": 11.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "unequal_variance_n64",
+    "condition_numbers": {
+      "mean": 12.672366454292499,
+      "median": 11.724113438717103,
+      "n": 125,
+      "q25": 7.968657486335056,
+      "q75": 15.551482307931536,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 75,
+    "external_gain_four": {
+      "mean": 0.03732216938286193,
+      "median": 0.08340124689219594,
+      "n": 125,
+      "q25": -0.03475646550633854,
+      "q75": 0.17539756223711722,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.022410848731375825,
+      "median": 0.02073668897709019,
+      "n": 125,
+      "q25": 0.017413017504777008,
+      "q75": 0.025443757011559327,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 5.536,
+      "median": 5.0,
+      "n": 125,
+      "q25": 3.0,
+      "q75": 8.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "unequal_variance_n256",
+    "condition_numbers": {
+      "mean": 13.795017102907284,
+      "median": 8.513044866495978,
+      "n": 25,
+      "q25": 7.185207320258648,
+      "q75": 9.73237213904202,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 25,
+    "external_gain_four": {
+      "mean": 0.990000765836797,
+      "median": 0.9954368819165641,
+      "n": 25,
+      "q25": 0.9642426333006544,
+      "q75": 1.0150477003110565,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.006306006259930158,
+      "median": 0.006271583812480806,
+      "n": 25,
+      "q25": 0.005518554240317802,
+      "q75": 0.0071523537736234615,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 53.44,
+      "median": 56.0,
+      "n": 25,
+      "q25": 50.0,
+      "q75": 59.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "unequal_variance_n256",
+    "condition_numbers": {
+      "mean": 1045.6661433351057,
+      "median": 9.457144123817185,
+      "n": 125,
+      "q25": 7.952999349784403,
+      "q75": 12.394219842154099,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 124,
+    "external_gain_four": {
+      "mean": 0.9382532205781028,
+      "median": 0.9371695811812265,
+      "n": 125,
+      "q25": 0.90952502984201,
+      "q75": 0.9806792927002691,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "full",
+    "minimum_eigenvalues": {
+      "mean": 0.0060919899928428105,
+      "median": 0.005942100044705166,
+      "n": 125,
+      "q25": 0.00530402252794451,
+      "q75": 0.0069776912403837765,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 39.52,
+      "median": 43.0,
+      "n": 125,
+      "q25": 35.0,
+      "q75": 46.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  },
+  {
+    "available_spaces": 25,
+    "cell": "unequal_variance_n256",
+    "condition_numbers": {
+      "mean": 7.184808507568062,
+      "median": 6.7456502672098235,
+      "n": 25,
+      "q25": 5.4492592297441895,
+      "q75": 8.011276867125506,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 25,
+    "external_gain_four": {
+      "mean": 0.37296778244859624,
+      "median": 0.3777184762287076,
+      "n": 25,
+      "q25": 0.33248219506843424,
+      "q75": 0.4011300476900497,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.031231144107646755,
+      "median": 0.03081823755857003,
+      "n": 25,
+      "q25": 0.027271654045273572,
+      "q75": 0.03345822666331768,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 40.32,
+      "median": 45.0,
+      "n": 25,
+      "q25": 36.0,
+      "q75": 51.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "full"
+  },
+  {
+    "available_spaces": 125,
+    "cell": "unequal_variance_n256",
+    "condition_numbers": {
+      "mean": 7.736030481627217,
+      "median": 7.203586714570115,
+      "n": 125,
+      "q25": 5.335905133622288,
+      "q75": 9.341966661177796,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "eligible_four": 124,
+    "external_gain_four": {
+      "mean": 0.3506748817106094,
+      "median": 0.3567153506152428,
+      "n": 125,
+      "q25": 0.3210417039237039,
+      "q75": 0.3868776905091492,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "family": "tied",
+    "minimum_eigenvalues": {
+      "mean": 0.030977849316906784,
+      "median": 0.03015947276339094,
+      "n": 125,
+      "q25": 0.02620373375035038,
+      "q75": 0.03458401914225616,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "minimum_hard_sizes": {
+      "mean": 31.464,
+      "median": 34.0,
+      "n": 125,
+      "q25": 24.0,
+      "q75": 41.0,
+      "scope": "Descriptive; folds are not independent datasets"
+    },
+    "space": "folds"
+  }
+]

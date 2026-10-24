@@ -19,6 +19,8 @@ class PredictiveRecoveryConfig:
             raise ValueError("Unsupported recovery diagnostic schema")
         if not isinstance(self.study, PredictiveStudyConfig):
             raise ValueError("Explicit frozen predictive study required")
+        if self.study.model.covariance_type != "full":
+            raise ValueError("The prior recovery/oracle diagnostic remains full-family only")
         if self.study.screening.n_folds != 5:
             raise ValueError("Five whole-locality folds required")
         if type(self.partitions) is not int or not 2 <= self.partitions <= 5:

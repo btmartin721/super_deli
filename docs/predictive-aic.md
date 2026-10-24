@@ -2,7 +2,9 @@
 
 Super Deli provides an opt-in predictive screen for complete continuous specimen
 morphology and one ecological observation per population/locality. It uses the
-existing full-covariance, group-mean morphology PCA model. Ordinary AIC/BIC,
+existing group-mean morphology PCA model. The original full-family study below
+remains unchanged; the separately validated [shared-covariance extension](shared-predictive.md)
+adds an explicit tied model. Ordinary AIC/BIC,
 defaults, existing fitting and historical p-values remain unchanged.
 
 The motivation is the [preceding diagnosis](aic-gaussian-diagnostics-results.md):

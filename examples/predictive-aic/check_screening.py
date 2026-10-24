@@ -112,7 +112,10 @@ def verify(study, audit):
                     if c["status"] == "insufficient_samples":
                         assert n < k * config["model"]["min_cluster_size"]
                         continue
-                    q = k - 1 + k * d + k * d * (d + 1) // 2
+                    covariance_count = (
+                        1 if config["model"].get("covariance_type", "full") == "tied" else k
+                    )
+                    q = k - 1 + k * d + covariance_count * d * (d + 1) // 2
                     assert math.isclose(c["aic"], -2 * c["log_likelihood"] + 2 * q, abs_tol=1e-7)
                     assert math.isclose(
                         c["bic"], -2 * c["log_likelihood"] + math.log(n) * q, abs_tol=1e-7

@@ -256,3 +256,9 @@ Set `covariance_type` to `"tied"` to use one full covariance matrix shared by
 all mixture components. The omitted/default value is `"full"`. See
 [shared-covariance clustering](shared-covariance-clustering.md) for assumptions,
 parameter counts, stability, calibration restrictions and the frozen validation.
+
+The optional [shared-covariance predictive screen](shared-predictive.md) also
+accepts tied covariance with ordinary grouped AIC for complete continuous
+morphology/ecology using group-mean morphology PCA. Choose the family before
+analysis. Full covariance/BIC remain defaults; this extension does not calibrate
+family selection, biological species boundaries or new likelihood p-values.

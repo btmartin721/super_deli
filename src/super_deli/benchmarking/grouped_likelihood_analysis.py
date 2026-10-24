@@ -49,7 +49,12 @@ def audit_candidates(archive, record, policy, values, layout):
                 raise ValueError("Candidate dimensions disagree")
             np.testing.assert_allclose(arrays["weights"].sum(), 1, atol=1e-12)
             ll = _dense_mixture(arrays)
-            q = k - 1 + k * d + k * d * (d + 1) // 2
+            tied = getattr(policy.model, "covariance_type", "full") == "tied"
+            if tied:
+                np.testing.assert_array_equal(
+                    arrays["covariances"], np.repeat(arrays["covariances"][:1], k, axis=0)
+                )
+            q = k - 1 + k * d + (1 if tied else k) * d * (d + 1) // 2
             np.testing.assert_allclose(candidate["log_likelihood"], ll, rtol=1e-10, atol=1e-7)
             np.testing.assert_allclose(candidate["aic"], -2 * ll + 2 * q, rtol=1e-10, atol=1e-7)
             np.testing.assert_allclose(

@@ -43,11 +43,12 @@ def test_legacy_serialization_and_scope_guards():
     for changes in (
         {"selection_criterion": []},
         {"selection_criterion": "aicc"},
-        {"covariance_type": "tied"},
         {"target_level": "specimen"},
     ):
         with pytest.raises(ValueError):
             replace(m, **changes)
+    with pytest.raises(ValueError, match="full-covariance"):
+        replace(s.calibration, model=replace(m, covariance_type="tied"))
     with pytest.raises(ValueError):
         replace(s.calibration, model=replace(m, selection_criterion="bic"))
     with pytest.raises(ValueError):

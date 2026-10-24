@@ -96,7 +96,7 @@ def predict_pool(run, scores, destination):
     return {k: v.tolist() for k, v in logs.items()}
 
 
-def write_selected(base, selection, units):
+def write_selected(base, selection, units, covariance_type="full"):
     import numpy as np
 
     k = selection["screened_k"]
@@ -110,6 +110,7 @@ def write_selected(base, selection, units):
         save_arrays(
             Path(base) / "selected_model.npz",
             component_order=np.asarray(order),
+            **({"covariance_type": np.asarray("tied")} if covariance_type == "tied" else {}),
             **{name: pool[f"k{k}_{name}"][order] for name in ("weights", "means", "covariances")},
         )
     save_arrays(
@@ -185,7 +186,7 @@ def finish_screen(base, values, layout, model, config, full_record, *, direct=Fa
         n_units=len(units),
         n_folds=config.n_folds,
     )
-    write_selected(base, selection, units)
+    write_selected(base, selection, units, model.covariance_type)
     return selection, fits
 
 
@@ -287,6 +288,8 @@ def run_score_screen(scores, *, model, screen_config, output_dir):
         or not np.isfinite(scores).all()
     ):
         raise ValueError("Finite score columns must match the declared PCA dimension")
+    if model.covariance_type != "full":
+        raise ValueError("Direct-score screening remains full-family only")
     with FIT_LOCK, threadpool_limits(limits=1):
         return _run_score_screen(
             scores, model=model, screen_config=screen_config, output_dir=output_dir
