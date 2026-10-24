@@ -183,3 +183,8 @@ jobs:
         run: |
           cd "$RUNNER_TEMP"
           python "$GITHUB_WORKSPACE/examples/grouped-false-positive/smoke.py" --output-dir "$RUNNER_TEMP/grouped-false-positive-smoke"
+      - name: Check bounded power/recovery installed workflow
+        shell: bash
+        run: |
+          cd "$RUNNER_TEMP"
+          python "$GITHUB_WORKSPACE/examples/grouped-power-recovery/smoke.py" --output-dir "$RUNNER_TEMP/grouped-power-recovery-smoke"

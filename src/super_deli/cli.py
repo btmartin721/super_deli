@@ -398,9 +398,67 @@ def main(argv: list[str] | None = None) -> int:
     )
     shared_audit.add_argument("config", type=Path)
     shared_audit.add_argument("--output-dir", type=Path, required=True)
+    power = commands.add_parser(
+        "benchmark-grouped-power", help="Run frozen AIC/likelihood power and recovery cells"
+    )
+    power.add_argument("config", type=Path)
+    power.add_argument("--output-dir", type=Path, required=True)
+    power.add_argument("--workers", type=int, default=1)
+    power.add_argument("--preflight", type=Path)
+    power_audit = commands.add_parser(
+        "analyze-grouped-power", help="Audit compact power/recovery evidence without refitting"
+    )
+    power_audit.add_argument("config", type=Path)
+    power_audit.add_argument("--output-dir", type=Path, required=True)
+    power_audit.add_argument("--scratch", type=Path, required=True)
+    power_audit.add_argument("--workers", type=int, default=1)
+    power_budget = commands.add_parser(
+        "preflight-grouped-power", help="Measure and enforce local evidence storage budget"
+    )
+    power_budget.add_argument("config", type=Path)
+    power_budget.add_argument("--probe-study", type=Path, required=True)
+    power_budget.add_argument("--probe-audit", type=Path, required=True)
+    power_budget.add_argument("--artifact-root", type=Path, required=True)
+    power_budget.add_argument("--scratch", type=Path, required=True)
+    power_budget.add_argument("--output-file", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command == "benchmark-grouped-power":
+            from super_deli.benchmarking.grouped_power_study import run_study
+            from super_deli.models.grouped_power_config import GroupedPowerStudyConfig
+
+            with redirect_stdout(sys.stderr):
+                summary = run_study(
+                    GroupedPowerStudyConfig.from_dict(read_json(source)),
+                    output_dir=args.output_dir,
+                    workers=args.workers,
+                    preflight=read_json(args.preflight) if args.preflight else None,
+                )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "analyze-grouped-power":
+            from super_deli.benchmarking.grouped_power_analysis import audit_study
+
+            summary = audit_study(
+                source, output_dir=args.output_dir, scratch=args.scratch, workers=args.workers
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "preflight-grouped-power":
+            from super_deli.benchmarking.grouped_power_preflight import storage_preflight
+            from super_deli.models.grouped_power_config import GroupedPowerStudyConfig
+
+            summary = storage_preflight(
+                GroupedPowerStudyConfig.from_dict(read_json(source)),
+                probe_study=args.probe_study,
+                probe_audit=args.probe_audit,
+                artifact_root=args.artifact_root,
+                scratch=args.scratch,
+                output_file=args.output_file,
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "diagnose-full-grouped":
             from super_deli.benchmarking.full_grouped_diagnostics import (
                 run_full_grouped_diagnostics,

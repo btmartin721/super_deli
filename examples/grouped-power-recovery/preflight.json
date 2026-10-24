@@ -1,0 +1,92 @@
+{
+  "calibration": {
+    "alpha": 0.05,
+    "assume_gaussian_independent_groups": true,
+    "assume_noninformative_counts": true,
+    "gradient_tol": 1e-05,
+    "max_archive_bytes": 2147483648,
+    "max_iterations": 1000,
+    "model": {
+      "assignment_threshold": 0.0,
+      "assume_independent_units": true,
+      "max_iter": 500,
+      "max_k": 4,
+      "max_pairwise_bytes": 268435456,
+      "max_working_bytes": 268435456,
+      "min_cluster_size": 5,
+      "missing_views": "error",
+      "n_bootstrap": 0,
+      "n_init": 10,
+      "n_pcs": 4,
+      "n_threads": 1,
+      "random_seed": 71323,
+      "rank_tol": 1e-12,
+      "reg_covar": 1e-06,
+      "schema_version": 1,
+      "selection_criterion": "aic",
+      "target_level": "locality",
+      "tol": 0.001,
+      "views": [
+        {
+          "aggregation": "mean",
+          "count_transform": "identity",
+          "feature_names": [],
+          "kind": "morphological",
+          "missing_policy": "error",
+          "modality": "morphological",
+          "n_pcs": 2,
+          "pca_fit": "target_means",
+          "ploidy": null,
+          "scaling": null,
+          "shape": null,
+          "weight": 1.0
+        },
+        {
+          "aggregation": "none",
+          "count_transform": "identity",
+          "feature_names": [],
+          "kind": "ecological",
+          "missing_policy": "error",
+          "modality": "ecological",
+          "n_pcs": 2,
+          "ploidy": null,
+          "scaling": null,
+          "shape": null,
+          "weight": 1.0
+        }
+      ]
+    },
+    "n_simulations": 99,
+    "random_seed": 20261122,
+    "rank_tol": 1e-08,
+    "schema_version": 2,
+    "solver": {
+      "estimator": "conditional_psd_v1",
+      "max_line_search": 40,
+      "max_polish_iterations": 2000
+    },
+    "statistic": "max_eligible_likelihood_gain_v1"
+  },
+  "cells": [
+    {
+      "law": "complementary",
+      "n_datasets": 1,
+      "n_units": 64,
+      "name": "probe_n64",
+      "signal": 3.0
+    },
+    {
+      "law": "complementary",
+      "n_datasets": 1,
+      "n_units": 256,
+      "name": "probe_n256",
+      "signal": 3.0
+    }
+  ],
+  "max_artifact_bytes": 8589934592,
+  "min_free_bytes": 8589934592,
+  "random_seed": 20261122,
+  "schema_version": 1,
+  "stability_draws": 25,
+  "stability_first": 1
+}
