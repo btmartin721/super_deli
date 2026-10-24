@@ -65,7 +65,7 @@ under alternatives; no alternative or new significance calibration was run here.
 ## Independent prediction and mechanisms
 
 Every fresh observation had 2,048 independent held-out units projected through
-its frozen training transformations. All **732 AIC-selected multicomponent
+its frozen training transformations. All **632 AIC-selected multicomponent
 fits** had negative observed mean held-out log-density gain relative to their
 own K=1 candidate. K=1 selections have zero gain by construction. Individual
 conditional Monte Carlo errors and densities remain local; aggregate gains are
