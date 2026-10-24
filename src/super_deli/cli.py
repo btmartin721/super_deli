@@ -380,6 +380,12 @@ def main(argv: list[str] | None = None) -> int:
     boundary_audit.add_argument("config", type=Path)
     boundary_audit.add_argument("--archived-study", type=Path)
     boundary_audit.add_argument("--output-dir", type=Path, required=True)
+    false_positive = commands.add_parser(
+        "analyze-grouped-false-positives", help="Audit larger paired Gaussian null validation"
+    )
+    false_positive.add_argument("config", type=Path)
+    false_positive.add_argument("--output-dir", type=Path, required=True)
+    false_positive.add_argument("--workers", type=int, default=1)
     shared = commands.add_parser(
         "benchmark-shared-covariance", help="Run a frozen paired integrative covariance study"
     )
@@ -436,6 +442,12 @@ def main(argv: list[str] | None = None) -> int:
             summary = audit_study(
                 source, output_dir=args.output_dir, archived_study=args.archived_study
             )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "analyze-grouped-false-positives":
+            from super_deli.benchmarking.grouped_false_positive import audit_study
+
+            summary = audit_study(source, output_dir=args.output_dir, workers=args.workers)
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
             return 0
         if args.command == "calibrate-grouped-likelihood":

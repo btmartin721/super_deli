@@ -152,3 +152,8 @@ jobs:
           super-deli calibrate-joint-integrative "$RUNNER_TEMP/joint-study/linear_association/dataset_0000/observed/dataset.json" --calibration-config "$RUNNER_TEMP/joint-study/linear_association/dataset_0000/calibration/configuration.json" --output-dir "$RUNNER_TEMP/joint-direct-calibration"
           python "$GITHUB_WORKSPACE/examples/recovery-diagnostics/smoke.py" --joint-study "$GITHUB_WORKSPACE/examples/joint-calibration/smoke.json" --output-dir "$RUNNER_TEMP/recovery-diagnostics"
           python "$GITHUB_WORKSPACE/examples/shared-covariance/smoke.py" --source-artifacts "$RUNNER_TEMP/recovery-diagnostics" --output-dir "$RUNNER_TEMP/shared-covariance"
+      - name: Check larger null-validation installed workflow
+        shell: bash
+        run: |
+          cd "$RUNNER_TEMP"
+          python "$GITHUB_WORKSPACE/examples/grouped-false-positive/smoke.py" --output-dir "$RUNNER_TEMP/grouped-false-positive-smoke"
