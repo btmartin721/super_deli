@@ -72,5 +72,5 @@ recursive-include docs/figures/grouped-boundary-diagnostics *.pdf *.svg *.png
 recursive-include examples/grouped-false-positive *.json *.py
 recursive-include docs/figures/grouped-false-positives *.pdf *.svg *.png
 
-recursive-include examples/grouped-power-recovery *.json *.py
+recursive-include examples/grouped-power-recovery *.json *.py *.csv
 recursive-include docs/figures/grouped-power-recovery *.pdf *.svg *.png

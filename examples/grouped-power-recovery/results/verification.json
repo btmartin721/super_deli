@@ -1,0 +1,61 @@
+{
+  "archive_members": 1278800,
+  "fit_accounting": {
+    "attempted_fits": 40780,
+    "failed_fits": 0,
+    "planned_fits": 40780,
+    "successful_fits": 40780,
+    "unattempted_fits": 0
+  },
+  "independent_standard_library_audit": {
+    "calibration_pipeline_records": 40000,
+    "dependencies": "Python standard library only",
+    "observations": 400,
+    "passed": true,
+    "tails_checked": 800,
+    "withheld_tails": 0
+  },
+  "large_artifacts_remain_local": true,
+  "local_checks": {
+    "figure_png_and_rendered_pdf_QA": "passed",
+    "foundation_tests_passed": 842,
+    "foundation_tests_skipped": 96,
+    "git_diff_check": "passed",
+    "preliminary_CI": {
+      "all_four_jobs_success": true,
+      "foundation_skips_per_version": 96,
+      "foundation_tests_per_version": 842,
+      "python_versions": [
+        "3.11",
+        "3.12"
+      ],
+      "run_id": 40111228191,
+      "scientific_tests_per_version": 1350
+    },
+    "python": "3.12.10",
+    "ruff_check": "passed",
+    "ruff_format": "passed",
+    "scientific_tests_passed": 1350
+  },
+  "local_storage": {
+    "artifact_cap_bytes": 8589934592,
+    "free_after_study_and_audit_bytes": 14286872576,
+    "minimum_free_bytes": 8589934592,
+    "preflight_passed": true,
+    "projected_complete_bytes": 8301528457,
+    "retained_after_study_and_audit_bytes": 7330322407,
+    "scope": "Post-study/audit measurement before small final package and CI records"
+  },
+  "no_audit_model_refits": true,
+  "numerically_audited_observations": 400,
+  "preservation": {
+    "before_after_identical": true,
+    "cleanup_archive_verified": true,
+    "original_TPS_downloads": "Five already absent at checkpoint start; no preservation claim",
+    "other_prior_files": 1078,
+    "prior_checkouts": 8,
+    "prior_study_files": 779477
+  },
+  "production_defaults_and_historical_pvalues": "unchanged",
+  "raw_artifact_or_private_file_indexes_published": false
+}

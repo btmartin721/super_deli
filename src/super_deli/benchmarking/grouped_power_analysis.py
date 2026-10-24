@@ -48,7 +48,14 @@ def _paired(rows, left, right, names):
     result = paired_decisions(
         {r["repetition"]: left(r) for r in rows}, {r["repetition"]: right(r) for r in rows}
     )
-    return {k.replace("known", names[1]).replace("fitted", names[0]): v for k, v in result.items()}
+    return {
+        k.replace("known", names[1])
+        .replace("fitted", names[0])
+        .replace("_rejections", "_events")
+        .replace("both_do_not_reject", "neither_event")
+        .replace("both_reject", "both_events"): v
+        for k, v in result.items()
+    }
 
 
 def summarize(rows, config):
@@ -130,6 +137,24 @@ def summarize(rows, config):
                 "requested_draws": sum(s["requested"] for s in stability),
                 "successful_draws": sum(s["successful"] for s in stability),
                 "failed_draws": sum(s["failed"] for s in stability),
+                "selected_k_counts_descriptive": {
+                    str(k): sum(s.get("selected_k_counts", {}).get(str(k), 0) for s in stability)
+                    for k in range(1, config.calibration.model.max_k + 1)
+                },
+                "selected_k_frequencies_across_observations": {
+                    str(k): describe(
+                        [
+                            s["selected_k_counts"][str(k)] / s["successful"]
+                            for s in stability
+                            if s.get("successful", 0)
+                        ]
+                    )
+                    for k in range(1, config.calibration.model.max_k + 1)
+                },
+                "frequency_scope": (
+                    "Per-observation fractions among successful stability draws; "
+                    "pooled draw counts are descriptive, not independent study replicates"
+                ),
                 "coassignment_truth_mse_across_observations": describe(
                     [s.get("coassignment_truth_mse") for s in stability]
                 ),

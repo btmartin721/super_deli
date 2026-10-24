@@ -197,9 +197,10 @@ def _stability_audit(base, config, layout, values, labels, observed):
         )
         if counts["successful"]
         else None,
-        "bootstrap_k4_count": sum(
-            r.get("selected_k") == 4 for r in replicas if r["status"] == "complete"
-        ),
+        "selected_k_counts": {
+            str(k): sum(r.get("selected_k") == k for r in replicas if r["status"] == "complete")
+            for k in range(1, model.max_k + 1)
+        },
         "density_audit_scope": (
             "All replay-point candidates; resamples audited by seeds, multiplicities, "
             "PCA, criteria, partitions and coassignment. Per-resample Gaussian parameter "

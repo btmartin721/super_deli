@@ -4,14 +4,20 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: larger grouped false-positive validation.**
-See the [frozen method](docs/grouped-false-positive-validation.md) and
-[completed results](docs/grouped-false-positive-validation-results.md).
-The study completed 2,500 datasets and 497,500 pipeline fits. Fitted-null rejection
-was 4.4–5.4% and known-parameter controls 4.6–5.8%; all ten adjusted rate intervals
-include the nominal 5%. Earlier elevated boundary rates did not persist in this
-cohort. General calibration and species-boundary validity remain unestablished;
-BIC defaults, production fitting/sampling and historical p-values are unchanged.
+**Current checkpoint: bounded grouped AIC/likelihood power and recovery validation.**
+See the [frozen method](docs/grouped-power-recovery.md) and
+[completed results](docs/grouped-power-recovery-results.md).
+All 400 datasets and 40,780 planned fits completed without failures.
+At the original signal strength, likelihood detection was 48% with 64 localities
+and 100% with 256; AIC selected four components in 26% and 96%, respectively.
+AIC also selected multiple components in 18/25 Gaussian controls at N=64, so
+component count alone is unsuitable as species evidence. BIC defaults and
+historical p-values remain unchanged; AIC remains opt-in.
+
+The preceding [larger false-positive validation](docs/grouped-false-positive-validation-results.md)
+completed 2,500 datasets and 497,500 fits; fitted-null rejection was 4.4–5.4%.
+The present small control cells do not replace that study. General calibration
+and species-boundary validity remain unestablished.
 Genomic, numeric morphology/ecology and shape scores can be fused by exact unit
 IDs or explicit population/locality aggregation, with prespecified view weights.
 The package also supports individual-modality PCA/GMM, frozen-fit shape

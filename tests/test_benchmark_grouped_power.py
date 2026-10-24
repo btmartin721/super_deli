@@ -88,6 +88,7 @@ def test_compact_numerical_and_whole_group_audit_never_refits(
     assert result["audit_status"] == "complete_numerical_audit"
     assert result["stability"]["point_replay_verified"]
     assert result["stability"]["requested"] == result["stability"]["successful"] == 2
+    assert sum(result["stability"]["selected_k_counts"].values()) == 2
     assert len(result["pipelines"]) == 2
 
 
