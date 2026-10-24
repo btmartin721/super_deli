@@ -198,3 +198,9 @@ jobs:
         run: |
           cd "$RUNNER_TEMP"
           python "$GITHUB_WORKSPACE/examples/predictive-aic/smoke.py" --output-dir "$RUNNER_TEMP/predictive-screen-smoke"
+
+      - name: Check predictive recovery installed workflow
+        shell: bash
+        run: |
+          cd "$RUNNER_TEMP"
+          python "$GITHUB_WORKSPACE/examples/predictive-recovery/smoke.py" --output-dir "$RUNNER_TEMP/predictive-recovery-smoke"

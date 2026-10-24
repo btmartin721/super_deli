@@ -80,3 +80,6 @@ recursive-include docs/figures/aic-gaussian-diagnostics *.pdf *.svg *.png
 
 recursive-include examples/predictive-aic *.json *.csv *.py
 recursive-include docs/figures/predictive-aic *.png *.svg *.pdf
+
+recursive-include examples/predictive-recovery *.json *.csv *.py
+recursive-include docs/figures/predictive-recovery *.png *.svg *.pdf

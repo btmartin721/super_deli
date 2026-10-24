@@ -4,16 +4,19 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: predictive-screened AIC for grouped morphology/ecology.**
-The new opt-in workflow refits the complete pipeline inside whole-locality folds
-and screens larger mixtures using held-out predictive gain. See the
-[method](docs/predictive-aic.md) and [completed validation](docs/predictive-aic-results.md).
-All 625 datasets and 3,775 main searches/replays completed without failed fits.
-Screening reduced Gaussian-control K>1 selections from 205/400 to 0/400, but lost
-all four-group recovery at 64 localities. At 256 localities, recovery was 23/25
-and 25/25 at signals 3 and 4.5. This predictive heuristic remains opt-in;
-ordinary AIC/BIC, defaults and historical p-values remain unchanged.
-The [preceding power study](docs/grouped-power-recovery-results.md) remains available.
+**Current checkpoint: diagnosing small-sample predictive-screen recovery.**
+The [completed diagnosis](docs/predictive-recovery-results.md) audited all 625 prior
+observations and evaluated 100 fresh datasets with repeated locality partitions,
+paired ten/100-start fits and separate truth-initialized optimization diagnostics.
+All 3,350 main searches/replays and 450 oracle fits completed; independent audits
+passed. At N=64 the first-split screen recovered K=4 in 0/25 and 2/25 datasets at
+signals 3 and 4.5; 100 starts recovered none. At N=256 signal 3, ten-start screened
+recovery was 24/25. Size eligibility, predictive gain and optimization behavior all
+matter; retained PCA signal alone does not explain recovery.
+See the [design and commands](docs/predictive-recovery.md). No production model,
+selector, default or historical p-value changed; detailed evidence remains local.
+The preceding [predictive-screen validation](docs/predictive-aic-results.md) and
+[power study](docs/grouped-power-recovery-results.md) remain available.
 
 The preceding [larger false-positive validation](docs/grouped-false-positive-validation-results.md)
 completed 2,500 datasets and 497,500 fits; fitted-null rejection was 4.4–5.4%.

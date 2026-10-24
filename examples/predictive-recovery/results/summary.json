@@ -1,0 +1,2305 @@
+{
+  "attempted_oracles": 450,
+  "attempted_searches": 3200,
+  "calibration_draws": 0,
+  "cells": [
+    {
+      "cell": {
+        "law": "independent_gaussian",
+        "n_datasets": 25,
+        "n_units": 64,
+        "name": "independent_gaussian_n64",
+        "role": "control",
+        "signal": null
+      },
+      "methods": {
+        "baseline_ordinary": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "external_gain": {
+            "mcse_mean": 0.1028799864264377,
+            "mean": -0.5175820822866021,
+            "median": -0.4185286109588386,
+            "n": 25,
+            "q25": -0.7601792105468963,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 7,
+            "2": 7,
+            "3": 5,
+            "4": 6
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.5061231781937445,
+              0.8792833114959333
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.40762154412256585,
+              0.9275927224579564
+            ],
+            "events": 18,
+            "exact_interval_95": [
+              0.5061231781937445,
+              0.8792833114959333
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.0897997772825746,
+            "rate_among_available": 0.72,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.72,
+              0.72
+            ]
+          }
+        },
+        "baseline_screened": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "external_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 25,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.22775909695156918
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "extended_ordinary": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "external_gain": {
+            "mcse_mean": 0.07886626164403579,
+            "mean": -0.3506176214537416,
+            "median": -0.2666893692815934,
+            "n": 25,
+            "q25": -0.4647701814009312,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 8,
+            "2": 9,
+            "3": 6,
+            "4": 2
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.4649992825026276,
+              0.8505045773864304
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.36880954260995735,
+              0.9055869821242355
+            ],
+            "events": 17,
+            "exact_interval_95": [
+              0.4649992825026276,
+              0.8505045773864304
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.0932952303175248,
+            "rate_among_available": 0.68,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.68,
+              0.68
+            ]
+          }
+        },
+        "extended_screened": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "external_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 25,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.22775909695156918
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "split_sensitivity": [
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 0,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 1,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 2,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 3,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 4,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 5,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 6,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 7,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 8,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 9,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 10,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 11,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 12,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 13,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 14,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 15,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 16,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 17,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 18,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 19,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 20,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 21,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 22,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 23,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 24,
+          "requested": 5
+        }
+      ]
+    },
+    {
+      "cell": {
+        "law": "complementary",
+        "n_datasets": 25,
+        "n_units": 64,
+        "name": "four_n64_s3_0",
+        "role": "alternative",
+        "signal": 3.0
+      },
+      "methods": {
+        "baseline_ordinary": {
+          "ari": {
+            "mcse_mean": 0.0307873423554755,
+            "mean": 0.6226276813004523,
+            "median": 0.5864385370614916,
+            "n": 25,
+            "q25": 0.4935244344672768,
+            "q75": 0.6840264282938204
+          },
+          "external_gain": {
+            "mcse_mean": 0.06564012861748174,
+            "mean": -0.3397212861610325,
+            "median": -0.29186084787117816,
+            "n": 25,
+            "q25": -0.5420582630179387,
+            "q75": -0.09472962130942689
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 2,
+            "3": 13,
+            "4": 10
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.211254806465142,
+              0.61334650374316
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.14401700030373468,
+              0.7034455604453955
+            ],
+            "events": 10,
+            "exact_interval_95": [
+              0.211254806465142,
+              0.61334650374316
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.09797958971132711,
+            "rate_among_available": 0.4,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.4,
+              0.4
+            ]
+          }
+        },
+        "baseline_screened": {
+          "ari": {
+            "mcse_mean": 0.047510146149401106,
+            "mean": 0.2059759172288044,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.45707756034852165
+          },
+          "external_gain": {
+            "mcse_mean": 0.01887401986311186,
+            "mean": 0.06250369683288103,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.1466000654839872
+          },
+          "k_counts": {
+            "1": 14,
+            "2": 11,
+            "3": 0,
+            "4": 0
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.22775909695156918
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "extended_ordinary": {
+          "ari": {
+            "mcse_mean": 0.02300506759822893,
+            "mean": 0.5514156619120006,
+            "median": 0.5646088623032697,
+            "n": 25,
+            "q25": 0.46153846153846156,
+            "q75": 0.6107369636328651
+          },
+          "external_gain": {
+            "mcse_mean": 0.07106497791605762,
+            "mean": -0.3999622228627649,
+            "median": -0.31409974600143364,
+            "n": 25,
+            "q25": -0.6981919463730546,
+            "q75": -0.1520749629563219
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 2,
+            "3": 17,
+            "4": 6
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.09356443933174285,
+              0.4512880178166864
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.052522986690684094,
+              0.551553890362543
+            ],
+            "events": 6,
+            "exact_interval_95": [
+              0.09356443933174285,
+              0.4512880178166864
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.0854166260162505,
+            "rate_among_available": 0.24,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.24,
+              0.24
+            ]
+          }
+        },
+        "extended_screened": {
+          "ari": {
+            "mcse_mean": 0.04905316345841034,
+            "mean": 0.2099672912337377,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.45707756034852165
+          },
+          "external_gain": {
+            "mcse_mean": 0.016994215282364503,
+            "mean": 0.04989896090105303,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.11840722623946325
+          },
+          "k_counts": {
+            "1": 14,
+            "2": 10,
+            "3": 1,
+            "4": 0
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.22775909695156918
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "split_sensitivity": [
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 0,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 1,
+          "repetition": 1,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 4,
+          "repetition": 2,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 2,
+          "repetition": 3,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 4,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 5,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 3,
+          "repetition": 6,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 7,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 8,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 9,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 1,
+          "repetition": 10,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 2,
+          "repetition": 11,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 12,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 1,
+          "repetition": 13,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 14,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 3,
+          "repetition": 15,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 16,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 17,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 2,
+          "repetition": 18,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 1,
+          "repetition": 19,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 20,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 3,
+          "repetition": 21,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 2,
+          "repetition": 22,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 23,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 0,
+          "repetition": 24,
+          "requested": 5
+        }
+      ]
+    },
+    {
+      "cell": {
+        "law": "complementary",
+        "n_datasets": 25,
+        "n_units": 64,
+        "name": "four_n64_s4_5",
+        "role": "alternative",
+        "signal": 4.5
+      },
+      "methods": {
+        "baseline_ordinary": {
+          "ari": {
+            "mcse_mean": 0.024925295303440145,
+            "mean": 0.9163933330469911,
+            "median": 0.9576475180534774,
+            "n": 25,
+            "q25": 0.8760298410638988,
+            "q75": 1.0
+          },
+          "external_gain": {
+            "mcse_mean": 0.0401362548528513,
+            "mean": 0.271682264845604,
+            "median": 0.29938733526228956,
+            "n": 25,
+            "q25": 0.22408909551855208,
+            "q75": 0.374915355667891
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 0,
+            "3": 5,
+            "4": 20
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.5929625677213226,
+              0.931688535987516
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.4915482870762219,
+              0.9649443701331099
+            ],
+            "events": 20,
+            "exact_interval_95": [
+              0.5929625677213226,
+              0.931688535987516
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.08,
+            "rate_among_available": 0.8,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.8,
+              0.8
+            ]
+          }
+        },
+        "baseline_screened": {
+          "ari": {
+            "mcse_mean": 0.04526821216411136,
+            "mean": 0.5483167806381017,
+            "median": 0.4878048780487805,
+            "n": 25,
+            "q25": 0.4878048780487805,
+            "q75": 0.704225352112676
+          },
+          "external_gain": {
+            "mcse_mean": 0.03708521445473357,
+            "mean": 0.39129565640357866,
+            "median": 0.45622338850384625,
+            "n": 25,
+            "q25": 0.2817659812428981,
+            "q75": 0.518238411945505
+          },
+          "k_counts": {
+            "1": 2,
+            "2": 14,
+            "3": 7,
+            "4": 2
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.00983959001879751,
+              0.2603058421052142
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.002323132082634697,
+              0.3601492194418845
+            ],
+            "events": 2,
+            "exact_interval_95": [
+              0.00983959001879751,
+              0.2603058421052142
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.054258639865002144,
+            "rate_among_available": 0.08,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.08,
+              0.08
+            ]
+          }
+        },
+        "extended_ordinary": {
+          "ari": {
+            "mcse_mean": 0.02910216013137289,
+            "mean": 0.7696415797146509,
+            "median": 0.704225352112676,
+            "n": 25,
+            "q25": 0.6686094463078023,
+            "q75": 0.9576475180534774
+          },
+          "external_gain": {
+            "mcse_mean": 0.06885614421968873,
+            "mean": 0.219416090007983,
+            "median": 0.30978918853139364,
+            "n": 25,
+            "q25": 0.22408909551855208,
+            "q75": 0.363027825040943
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 0,
+            "3": 16,
+            "4": 9
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.17971682058365537,
+              0.5747936504461505
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.11833186056661031,
+              0.6681714229077893
+            ],
+            "events": 9,
+            "exact_interval_95": [
+              0.17971682058365537,
+              0.5747936504461505
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.096,
+            "rate_among_available": 0.36,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.36,
+              0.36
+            ]
+          }
+        },
+        "extended_screened": {
+          "ari": {
+            "mcse_mean": 0.03720500390153239,
+            "mean": 0.5168059467973143,
+            "median": 0.4878048780487805,
+            "n": 25,
+            "q25": 0.4878048780487805,
+            "q75": 0.704225352112676
+          },
+          "external_gain": {
+            "mcse_mean": 0.03789890320566743,
+            "mean": 0.3837727038011201,
+            "median": 0.45378269441579616,
+            "n": 25,
+            "q25": 0.2400806406151227,
+            "q75": 0.518238411945505
+          },
+          "k_counts": {
+            "1": 2,
+            "2": 15,
+            "3": 8,
+            "4": 0
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.22775909695156918
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "split_sensitivity": [
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 0,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 3,
+          "k4_selections": 1,
+          "k_gt1": 5,
+          "repetition": 1,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 2,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 3,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 3,
+          "repetition": 4,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 5,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 6,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 3,
+          "k4_selections": 0,
+          "k_gt1": 4,
+          "repetition": 7,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 8,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 9,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 4,
+          "k4_selections": 1,
+          "k_gt1": 4,
+          "repetition": 10,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 4,
+          "repetition": 11,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 12,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 4,
+          "k4_selections": 1,
+          "k_gt1": 4,
+          "repetition": 13,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 3,
+          "k4_selections": 2,
+          "k_gt1": 5,
+          "repetition": 14,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 3,
+          "k4_selections": 1,
+          "k_gt1": 5,
+          "repetition": 15,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 16,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 17,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 18,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 19,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 20,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 4,
+          "repetition": 21,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 22,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 2,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 23,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 3,
+          "k4_selections": 1,
+          "k_gt1": 5,
+          "repetition": 24,
+          "requested": 5
+        }
+      ]
+    },
+    {
+      "cell": {
+        "law": "complementary",
+        "n_datasets": 25,
+        "n_units": 256,
+        "name": "four_n256_s3_0",
+        "role": "alternative",
+        "signal": 3.0
+      },
+      "methods": {
+        "baseline_ordinary": {
+          "ari": {
+            "mcse_mean": 0.011289627438772907,
+            "mean": 0.8915141834473659,
+            "median": 0.8985186167817799,
+            "n": 25,
+            "q25": 0.878795828497138,
+            "q75": 0.919326516455417
+          },
+          "external_gain": {
+            "mcse_mean": 0.0072702063793566194,
+            "mean": 0.3685761260218247,
+            "median": 0.3777283638660785,
+            "n": 25,
+            "q25": 0.3519076706040213,
+            "q75": 0.39533127304852345
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 24
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.796483086077586,
+              0.9989878003006891
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.6998277100119215,
+              0.999937453077093
+            ],
+            "events": 24,
+            "exact_interval_95": [
+              0.796483086077586,
+              0.9989878003006891
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.039191835884530866,
+            "rate_among_available": 0.96,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.96,
+              0.96
+            ]
+          }
+        },
+        "baseline_screened": {
+          "ari": {
+            "mcse_mean": 0.011289627438772907,
+            "mean": 0.8915141834473659,
+            "median": 0.8985186167817799,
+            "n": 25,
+            "q25": 0.878795828497138,
+            "q75": 0.919326516455417
+          },
+          "external_gain": {
+            "mcse_mean": 0.0072702063793566194,
+            "mean": 0.3685761260218247,
+            "median": 0.3777283638660785,
+            "n": 25,
+            "q25": 0.3519076706040213,
+            "q75": 0.39533127304852345
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 24
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.796483086077586,
+              0.9989878003006891
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.6998277100119215,
+              0.999937453077093
+            ],
+            "events": 24,
+            "exact_interval_95": [
+              0.796483086077586,
+              0.9989878003006891
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.039191835884530866,
+            "rate_among_available": 0.96,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.96,
+              0.96
+            ]
+          }
+        },
+        "extended_ordinary": {
+          "ari": {
+            "mcse_mean": 0.011310736985396709,
+            "mean": 0.8903458398687539,
+            "median": 0.8985186167817799,
+            "n": 25,
+            "q25": 0.878795828497138,
+            "q75": 0.919326516455417
+          },
+          "external_gain": {
+            "mcse_mean": 0.0071829274330645065,
+            "mean": 0.36866212731994386,
+            "median": 0.3777283638660782,
+            "n": 25,
+            "q25": 0.35191000940048395,
+            "q75": 0.3953312730485238
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 24
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.796483086077586,
+              0.9989878003006891
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.6998277100119215,
+              0.999937453077093
+            ],
+            "events": 24,
+            "exact_interval_95": [
+              0.796483086077586,
+              0.9989878003006891
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.039191835884530866,
+            "rate_among_available": 0.96,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.96,
+              0.96
+            ]
+          }
+        },
+        "extended_screened": {
+          "ari": {
+            "mcse_mean": 0.01483442590158382,
+            "mean": 0.8808337914646096,
+            "median": 0.8985186167817799,
+            "n": 25,
+            "q25": 0.8783894711979648,
+            "q75": 0.919326516455417
+          },
+          "external_gain": {
+            "mcse_mean": 0.007039699365835513,
+            "mean": 0.3669464392767643,
+            "median": 0.3755847683657292,
+            "n": 25,
+            "q25": 0.35191000940048395,
+            "q75": 0.3914154535416123
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 23
+          },
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.7396941578947858,
+              0.9901604099812025
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.6398507805581151,
+              0.9976768679173653
+            ],
+            "events": 23,
+            "exact_interval_95": [
+              0.7396941578947858,
+              0.9901604099812025
+            ],
+            "family_size": 16,
+            "mcse_among_available": 0.05425863986500213,
+            "rate_among_available": 0.92,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.92,
+              0.92
+            ]
+          }
+        }
+      },
+      "split_sensitivity": [
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 0,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 1,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 2,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 3,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 4,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 0,
+          "k_gt1": 5,
+          "repetition": 5,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 6,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 7,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 8,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 9,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 10,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 11,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 12,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 13,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 14,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 15,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 16,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 17,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 18,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 19,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 20,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 21,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 22,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 23,
+          "requested": 5
+        },
+        {
+          "available": 5,
+          "distinct_selections": 1,
+          "k4_selections": 5,
+          "k_gt1": 5,
+          "repetition": 24,
+          "requested": 5
+        }
+      ]
+    }
+  ],
+  "failed_oracles": 0,
+  "failed_searches": 0,
+  "no_audit_refits": true,
+  "observations": 100,
+  "paired": [
+    {
+      "available_pairs": 25,
+      "both_do_not_reject": 7,
+      "both_reject": 0,
+      "cell": "independent_gaussian_n64",
+      "comparison": "baseline_screened",
+      "comparison_only_events": 0,
+      "confidence": 0.99375,
+      "conservative_exact_difference_interval": [
+        0.17986244717099667,
+        0.9275927224579564
+      ],
+      "family_size": 8,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "reference": "baseline_ordinary",
+      "reference_minus_comparison": 0.72,
+      "reference_only_events": 18,
+      "requested_pairs": 25,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 25,
+      "both_do_not_reject": 25,
+      "both_reject": 0,
+      "cell": "independent_gaussian_n64",
+      "comparison": "extended_screened",
+      "comparison_only_events": 0,
+      "confidence": 0.99375,
+      "conservative_exact_difference_interval": [
+        -0.22775909695156918,
+        0.22775909695156918
+      ],
+      "family_size": 8,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "reference": "baseline_screened",
+      "reference_minus_comparison": 0.0,
+      "reference_only_events": 0,
+      "requested_pairs": 25,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 25,
+      "both_do_not_reject": 15,
+      "both_reject": 0,
+      "cell": "four_n64_s3_0",
+      "comparison": "baseline_screened",
+      "comparison_only_events": 0,
+      "confidence": 0.99375,
+      "conservative_exact_difference_interval": [
+        -0.0837420966478345,
+        0.7034455604453955
+      ],
+      "family_size": 8,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "reference": "baseline_ordinary",
+      "reference_minus_comparison": 0.4,
+      "reference_only_events": 10,
+      "requested_pairs": 25,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 25,
+      "both_do_not_reject": 25,
+      "both_reject": 0,
+      "cell": "four_n64_s3_0",
+      "comparison": "extended_screened",
+      "comparison_only_events": 0,
+      "confidence": 0.99375,
+      "conservative_exact_difference_interval": [
+        -0.22775909695156918,
+        0.22775909695156918
+      ],
+      "family_size": 8,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "reference": "baseline_screened",
+      "reference_minus_comparison": 0.0,
+      "reference_only_events": 0,
+      "requested_pairs": 25,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 25,
+      "both_do_not_reject": 5,
+      "both_reject": 2,
+      "cell": "four_n64_s4_5",
+      "comparison": "baseline_screened",
+      "comparison_only_events": 0,
+      "confidence": 0.99375,
+      "conservative_exact_difference_interval": [
+        0.17986244717099667,
+        0.9275927224579564
+      ],
+      "family_size": 8,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "reference": "baseline_ordinary",
+      "reference_minus_comparison": 0.72,
+      "reference_only_events": 18,
+      "requested_pairs": 25,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 25,
+      "both_do_not_reject": 23,
+      "both_reject": 0,
+      "cell": "four_n64_s4_5",
+      "comparison": "extended_screened",
+      "comparison_only_events": 0,
+      "confidence": 0.99375,
+      "conservative_exact_difference_interval": [
+        -0.22543596486893447,
+        0.3601492194418845
+      ],
+      "family_size": 8,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "reference": "baseline_screened",
+      "reference_minus_comparison": 0.08,
+      "reference_only_events": 2,
+      "requested_pairs": 25,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 25,
+      "both_do_not_reject": 1,
+      "both_reject": 24,
+      "cell": "four_n256_s3_0",
+      "comparison": "baseline_screened",
+      "comparison_only_events": 0,
+      "confidence": 0.99375,
+      "conservative_exact_difference_interval": [
+        -0.22775909695156918,
+        0.22775909695156918
+      ],
+      "family_size": 8,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "reference": "baseline_ordinary",
+      "reference_minus_comparison": 0.0,
+      "reference_only_events": 0,
+      "requested_pairs": 25,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 25,
+      "both_do_not_reject": 1,
+      "both_reject": 23,
+      "cell": "four_n256_s3_0",
+      "comparison": "extended_screened",
+      "comparison_only_events": 0,
+      "confidence": 0.99375,
+      "conservative_exact_difference_interval": [
+        -0.2276965500286622,
+        0.3001722899880781
+      ],
+      "family_size": 8,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "reference": "baseline_screened",
+      "reference_minus_comparison": 0.04,
+      "reference_only_events": 1,
+      "requested_pairs": 25,
+      "withheld_pairs": 0
+    }
+  ],
+  "planned_oracles": 450,
+  "planned_searches": 3200,
+  "primary_family_size": 16,
+  "primary_rates": [
+    {
+      "all_requested_pointwise_envelope": [
+        0.5061231781937445,
+        0.8792833114959333
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.40762154412256585,
+        0.9275927224579564
+      ],
+      "cell": "independent_gaussian_n64",
+      "event": "K>1",
+      "events": 18,
+      "exact_interval_95": [
+        0.5061231781937445,
+        0.8792833114959333
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.0897997772825746,
+      "method": "baseline_ordinary",
+      "rate_among_available": 0.72,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.72,
+        0.72
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.1371851715307125
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.22775909695156918
+      ],
+      "cell": "independent_gaussian_n64",
+      "event": "K>1",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.1371851715307125
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.0,
+      "method": "baseline_screened",
+      "rate_among_available": 0.0,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.4649992825026276,
+        0.8505045773864304
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.36880954260995735,
+        0.9055869821242355
+      ],
+      "cell": "independent_gaussian_n64",
+      "event": "K>1",
+      "events": 17,
+      "exact_interval_95": [
+        0.4649992825026276,
+        0.8505045773864304
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.0932952303175248,
+      "method": "extended_ordinary",
+      "rate_among_available": 0.68,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.68,
+        0.68
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.1371851715307125
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.22775909695156918
+      ],
+      "cell": "independent_gaussian_n64",
+      "event": "K>1",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.1371851715307125
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.0,
+      "method": "extended_screened",
+      "rate_among_available": 0.0,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.211254806465142,
+        0.61334650374316
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.14401700030373468,
+        0.7034455604453955
+      ],
+      "cell": "four_n64_s3_0",
+      "event": "K=4",
+      "events": 10,
+      "exact_interval_95": [
+        0.211254806465142,
+        0.61334650374316
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.09797958971132711,
+      "method": "baseline_ordinary",
+      "rate_among_available": 0.4,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.4,
+        0.4
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.1371851715307125
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.22775909695156918
+      ],
+      "cell": "four_n64_s3_0",
+      "event": "K=4",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.1371851715307125
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.0,
+      "method": "baseline_screened",
+      "rate_among_available": 0.0,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.09356443933174285,
+        0.4512880178166864
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.052522986690684094,
+        0.551553890362543
+      ],
+      "cell": "four_n64_s3_0",
+      "event": "K=4",
+      "events": 6,
+      "exact_interval_95": [
+        0.09356443933174285,
+        0.4512880178166864
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.0854166260162505,
+      "method": "extended_ordinary",
+      "rate_among_available": 0.24,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.24,
+        0.24
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.1371851715307125
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.22775909695156918
+      ],
+      "cell": "four_n64_s3_0",
+      "event": "K=4",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.1371851715307125
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.0,
+      "method": "extended_screened",
+      "rate_among_available": 0.0,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.5929625677213226,
+        0.931688535987516
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.4915482870762219,
+        0.9649443701331099
+      ],
+      "cell": "four_n64_s4_5",
+      "event": "K=4",
+      "events": 20,
+      "exact_interval_95": [
+        0.5929625677213226,
+        0.931688535987516
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.08,
+      "method": "baseline_ordinary",
+      "rate_among_available": 0.8,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.8,
+        0.8
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.00983959001879751,
+        0.2603058421052142
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.002323132082634697,
+        0.3601492194418845
+      ],
+      "cell": "four_n64_s4_5",
+      "event": "K=4",
+      "events": 2,
+      "exact_interval_95": [
+        0.00983959001879751,
+        0.2603058421052142
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.054258639865002144,
+      "method": "baseline_screened",
+      "rate_among_available": 0.08,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.08,
+        0.08
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.17971682058365537,
+        0.5747936504461505
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.11833186056661031,
+        0.6681714229077893
+      ],
+      "cell": "four_n64_s4_5",
+      "event": "K=4",
+      "events": 9,
+      "exact_interval_95": [
+        0.17971682058365537,
+        0.5747936504461505
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.096,
+      "method": "extended_ordinary",
+      "rate_among_available": 0.36,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.36,
+        0.36
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.1371851715307125
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.22775909695156918
+      ],
+      "cell": "four_n64_s4_5",
+      "event": "K=4",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.1371851715307125
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.0,
+      "method": "extended_screened",
+      "rate_among_available": 0.0,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.796483086077586,
+        0.9989878003006891
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.6998277100119215,
+        0.999937453077093
+      ],
+      "cell": "four_n256_s3_0",
+      "event": "K=4",
+      "events": 24,
+      "exact_interval_95": [
+        0.796483086077586,
+        0.9989878003006891
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.039191835884530866,
+      "method": "baseline_ordinary",
+      "rate_among_available": 0.96,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.96,
+        0.96
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.796483086077586,
+        0.9989878003006891
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.6998277100119215,
+        0.999937453077093
+      ],
+      "cell": "four_n256_s3_0",
+      "event": "K=4",
+      "events": 24,
+      "exact_interval_95": [
+        0.796483086077586,
+        0.9989878003006891
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.039191835884530866,
+      "method": "baseline_screened",
+      "rate_among_available": 0.96,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.96,
+        0.96
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.796483086077586,
+        0.9989878003006891
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.6998277100119215,
+        0.999937453077093
+      ],
+      "cell": "four_n256_s3_0",
+      "event": "K=4",
+      "events": 24,
+      "exact_interval_95": [
+        0.796483086077586,
+        0.9989878003006891
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.039191835884530866,
+      "method": "extended_ordinary",
+      "rate_among_available": 0.96,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.96,
+        0.96
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.7396941578947858,
+        0.9901604099812025
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.6398507805581151,
+        0.9976768679173653
+      ],
+      "cell": "four_n256_s3_0",
+      "event": "K=4",
+      "events": 23,
+      "exact_interval_95": [
+        0.7396941578947858,
+        0.9901604099812025
+      ],
+      "family_size": 16,
+      "mcse_among_available": 0.05425863986500213,
+      "method": "extended_screened",
+      "rate_among_available": 0.92,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.92,
+        0.92
+      ]
+    }
+  ],
+  "scope": "Diagnosis only; repeated partitions are not independent datasets or biological stability",
+  "stability_draws": 0,
+  "successful_oracles": 450,
+  "successful_searches": 3200,
+  "unattempted_oracles": 0,
+  "unattempted_searches": 0,
+  "withheld_parts": 0
+}

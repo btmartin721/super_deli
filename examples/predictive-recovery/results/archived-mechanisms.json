@@ -1,0 +1,4618 @@
+[
+  {
+    "cell": {
+      "law": "independent_gaussian",
+      "n_datasets": 50,
+      "n_units": 64,
+      "name": "independent_gaussian_n64",
+      "role": "control",
+      "signal": null
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "1": 50
+      },
+      "eligibility_only": {
+        "1": 34,
+        "2": 13,
+        "3": 3
+      },
+      "gain_only": {
+        "1": 50
+      },
+      "ordinary": {
+        "1": 15,
+        "2": 9,
+        "3": 8,
+        "4": 18
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": -1.2412406001257932,
+      "median": -1.149416296437372,
+      "n": 250,
+      "q25": -1.4864030317155517,
+      "q75": -0.867569131183273,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 431.74064359024555,
+      "median": 1.0,
+      "n": 250,
+      "q25": 0.99999999999089,
+      "q75": 40.95407813573955,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 4.188,
+      "median": 4.0,
+      "n": 250,
+      "q25": 3.0,
+      "q75": 5.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": -1.2385538116019374,
+      "median": -1.2172704789651019,
+      "n": 50,
+      "q25": -1.4828458557292081,
+      "q75": -0.9706422411983029,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 50,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "fold_ineligible": 28,
+      "full_ineligible": 22
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": 0.4450665335843654,
+        "median": 0.3182553767110032,
+        "n": 500,
+        "q25": 0.18977724850103728,
+        "q75": 0.6034667787121761,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "q25": null,
+        "q75": null,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "independent_gaussian",
+      "n_datasets": 50,
+      "n_units": 256,
+      "name": "independent_gaussian_n256",
+      "role": "control",
+      "signal": null
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "1": 50
+      },
+      "eligibility_only": {
+        "1": 35,
+        "2": 3,
+        "3": 5,
+        "4": 7
+      },
+      "gain_only": {
+        "1": 50
+      },
+      "ordinary": {
+        "1": 35,
+        "2": 3,
+        "3": 5,
+        "4": 7
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": -0.22664158136178086,
+      "median": -0.2262579494683307,
+      "n": 250,
+      "q25": -0.252230429359531,
+      "q75": -0.19496583674464885,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 14421.246589556213,
+      "median": 12886.77371337542,
+      "n": 250,
+      "q25": 6070.618090820039,
+      "q75": 20444.33915896261,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 25.904,
+      "median": 27.0,
+      "n": 250,
+      "q25": 20.0,
+      "q75": 32.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": -0.21879635684976198,
+      "median": -0.22284419527929397,
+      "n": 50,
+      "q25": -0.25638725365714565,
+      "q75": -0.18146032532535794,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 50,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "fold_ineligible": 3,
+      "nonpositive_gain": 47
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": 0.468218469950001,
+        "median": 0.3544760182002852,
+        "n": 500,
+        "q25": 0.2009893131963012,
+        "q75": 0.6043840952100341,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "q25": null,
+        "q75": null,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "correlated_gaussian",
+      "n_datasets": 50,
+      "n_units": 64,
+      "name": "correlated_gaussian_n64",
+      "role": "control",
+      "signal": null
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "1": 50
+      },
+      "eligibility_only": {
+        "1": 33,
+        "2": 10,
+        "3": 7
+      },
+      "gain_only": {
+        "1": 50
+      },
+      "ordinary": {
+        "1": 15,
+        "2": 11,
+        "3": 13,
+        "4": 11
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": -1.5556212331223165,
+      "median": -1.4490269844927988,
+      "n": 250,
+      "q25": -1.93393029003187,
+      "q75": -1.0632417676969137,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 334.7156324798032,
+      "median": 1.0,
+      "n": 250,
+      "q25": 0.9999999999907275,
+      "q75": 28.702595501617246,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 4.052,
+      "median": 4.0,
+      "n": 250,
+      "q25": 3.0,
+      "q75": 5.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": -1.555085762539299,
+      "median": -1.5396278580273322,
+      "n": 50,
+      "q25": -1.9173403332347614,
+      "q75": -1.2571405850573925,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 50,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "fold_ineligible": 26,
+      "full_ineligible": 23,
+      "nonpositive_gain": 1
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": 0.13264888997639315,
+        "median": 0.09223274191928614,
+        "n": 500,
+        "q25": 0.062400053967092695,
+        "q75": 0.15253860548843862,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "q25": null,
+        "q75": null,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "correlated_gaussian",
+      "n_datasets": 50,
+      "n_units": 256,
+      "name": "correlated_gaussian_n256",
+      "role": "control",
+      "signal": null
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "1": 50
+      },
+      "eligibility_only": {
+        "1": 36,
+        "2": 3,
+        "3": 4,
+        "4": 7
+      },
+      "gain_only": {
+        "1": 50
+      },
+      "ordinary": {
+        "1": 36,
+        "2": 3,
+        "3": 4,
+        "4": 7
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": -0.2543632221331319,
+      "median": -0.2511772633180547,
+      "n": 250,
+      "q25": -0.29198953928658655,
+      "q75": -0.20401394629237588,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 14372.42591418203,
+      "median": 12130.97567996182,
+      "n": 250,
+      "q25": 5347.357937711235,
+      "q75": 20620.836830422144,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 25.892,
+      "median": 26.0,
+      "n": 250,
+      "q25": 19.25,
+      "q75": 32.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": -0.25434761490434954,
+      "median": -0.250645413627263,
+      "n": 50,
+      "q25": -0.3011283314253864,
+      "q75": -0.22012025290747286,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 50,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "fold_ineligible": 2,
+      "full_ineligible": 1,
+      "nonpositive_gain": 47
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": 0.05241977302657227,
+        "median": 0.04564287559340621,
+        "n": 500,
+        "q25": 0.029688953752363002,
+        "q75": 0.06676147025613247,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "q25": null,
+        "q75": null,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "zero_conditional_gaussian",
+      "n_datasets": 50,
+      "n_units": 64,
+      "name": "zero_conditional_gaussian_n64",
+      "role": "control",
+      "signal": null
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "1": 50
+      },
+      "eligibility_only": {
+        "1": 28,
+        "2": 15,
+        "3": 6,
+        "4": 1
+      },
+      "gain_only": {
+        "1": 50
+      },
+      "ordinary": {
+        "1": 11,
+        "2": 8,
+        "3": 16,
+        "4": 15
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": -1.3734499921804295,
+      "median": -1.2202907147809774,
+      "n": 250,
+      "q25": -1.7100810266262807,
+      "q75": -0.9279162095775981,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 340.0705944514287,
+      "median": 1.0000000000000426,
+      "n": 250,
+      "q25": 0.9999999999916973,
+      "q75": 26.528226731605912,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 4.124,
+      "median": 4.0,
+      "n": 250,
+      "q25": 3.0,
+      "q75": 5.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": -1.3538462511393428,
+      "median": -1.3426472729115884,
+      "n": 50,
+      "q25": -1.4860502139018368,
+      "q75": -1.0904847100100967,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 50,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "fold_ineligible": 22,
+      "full_ineligible": 27,
+      "nonpositive_gain": 1
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": 0.4108420487694848,
+        "median": 0.28666914741224175,
+        "n": 500,
+        "q25": 0.16796524921306188,
+        "q75": 0.5377024203568388,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "q25": null,
+        "q75": null,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "zero_conditional_gaussian",
+      "n_datasets": 50,
+      "n_units": 256,
+      "name": "zero_conditional_gaussian_n256",
+      "role": "control",
+      "signal": null
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "1": 50
+      },
+      "eligibility_only": {
+        "1": 36,
+        "2": 1,
+        "3": 7,
+        "4": 6
+      },
+      "gain_only": {
+        "1": 50
+      },
+      "ordinary": {
+        "1": 36,
+        "2": 1,
+        "3": 5,
+        "4": 8
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": -0.22767414803143685,
+      "median": -0.21789680891906427,
+      "n": 250,
+      "q25": -0.2603456588476537,
+      "q75": -0.19029075816563434,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 10807.465015867308,
+      "median": 9412.446666829004,
+      "n": 250,
+      "q25": 4345.870153150259,
+      "q75": 15765.156859953822,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 23.84,
+      "median": 23.0,
+      "n": 250,
+      "q25": 17.0,
+      "q75": 30.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": -0.24457903805822678,
+      "median": -0.23642332735458782,
+      "n": 50,
+      "q25": -0.28035859190482176,
+      "q75": -0.20619777555024693,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 50,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "fold_ineligible": 3,
+      "nonpositive_gain": 47
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": 0.3808207054930074,
+        "median": 0.27166349302200543,
+        "n": 500,
+        "q25": 0.13861858953817924,
+        "q75": 0.4986919180853947,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "q25": null,
+        "q75": null,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "gaussian_scores",
+      "n_datasets": 50,
+      "n_units": 64,
+      "name": "gaussian_scores_n64",
+      "role": "control",
+      "signal": null
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "1": 50
+      },
+      "eligibility_only": {
+        "1": 31,
+        "2": 16,
+        "3": 3
+      },
+      "gain_only": {
+        "1": 50
+      },
+      "ordinary": {
+        "1": 12,
+        "2": 10,
+        "3": 15,
+        "4": 13
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": -1.4567248977784957,
+      "median": -1.3373317937640046,
+      "n": 250,
+      "q25": -1.7614783840528385,
+      "q75": -1.017003809520273,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 291.2978369448623,
+      "median": 0.9999999999999216,
+      "n": 250,
+      "q25": 0.9999999999856176,
+      "q75": 1.0000000000411287,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 3.8,
+      "median": 3.0,
+      "n": 250,
+      "q25": 2.0,
+      "q75": 4.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": -1.4823773551623898,
+      "median": -1.443471404738283,
+      "n": 50,
+      "q25": -1.759792849268466,
+      "q75": -1.2003186942550181,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 50,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "fold_ineligible": 30,
+      "full_ineligible": 20
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "q25": null,
+        "q75": null,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "q25": null,
+        "q75": null,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "gaussian_scores",
+      "n_datasets": 50,
+      "n_units": 256,
+      "name": "gaussian_scores_n256",
+      "role": "control",
+      "signal": null
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "1": 50
+      },
+      "eligibility_only": {
+        "1": 35,
+        "2": 2,
+        "3": 3,
+        "4": 10
+      },
+      "gain_only": {
+        "1": 50
+      },
+      "ordinary": {
+        "1": 35,
+        "2": 2,
+        "3": 3,
+        "4": 10
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": -0.2569004853703645,
+      "median": -0.25281652035343494,
+      "n": 250,
+      "q25": -0.2884230630256027,
+      "q75": -0.22154885979611486,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 15013.176965094463,
+      "median": 13406.48747908356,
+      "n": 250,
+      "q25": 6695.993525517332,
+      "q75": 21794.159952061327,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 26.78,
+      "median": 27.0,
+      "n": 250,
+      "q25": 20.0,
+      "q75": 33.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": -0.25919694059662035,
+      "median": -0.2530096973280242,
+      "n": 50,
+      "q25": -0.2985964994549228,
+      "q75": -0.21611051177581062,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 50,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "fold_ineligible": 2,
+      "nonpositive_gain": 48
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "q25": null,
+        "q75": null,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "q25": null,
+        "q75": null,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "complementary",
+      "n_datasets": 25,
+      "n_units": 64,
+      "name": "four_n64_s1_5",
+      "role": "alternative",
+      "signal": 1.5
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "1": 25
+      },
+      "eligibility_only": {
+        "1": 12,
+        "2": 6,
+        "3": 7
+      },
+      "gain_only": {
+        "1": 25
+      },
+      "ordinary": {
+        "1": 8,
+        "2": 1,
+        "3": 7,
+        "4": 9
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": -1.3903111523913558,
+      "median": -1.2945923740058576,
+      "n": 125,
+      "q25": -1.6757381291894864,
+      "q75": -0.9600734201922558,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 646.3056359133252,
+      "median": 1.0000000000083615,
+      "n": 125,
+      "q25": 0.9999999999960975,
+      "q75": 456.5733786887043,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 4.84,
+      "median": 4.0,
+      "n": 125,
+      "q25": 3.0,
+      "q75": 7.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": -1.5798503256680028,
+      "median": -1.4782167029613897,
+      "n": 25,
+      "q25": -1.8893100646872247,
+      "q75": -1.0686544727155094,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 25,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "fold_ineligible": 13,
+      "full_ineligible": 12
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": 0.6841223780948734,
+          "median": 0.691394568975165,
+          "n": 125,
+          "q25": 0.6423293709423717,
+          "q75": 0.7419495818028983,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": 0.5667364525588195,
+          "median": 0.568921250315022,
+          "n": 125,
+          "q25": 0.5024025997123676,
+          "q75": 0.6243167855445959,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": 0.6841223780948734,
+          "median": 0.691394568975165,
+          "n": 125,
+          "q25": 0.6423293709423717,
+          "q75": 0.7419495818028983,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": 0.5667364525588195,
+          "median": 0.568921250315022,
+          "n": 125,
+          "q25": 0.5024025997123676,
+          "q75": 0.6243167855445959,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": 0.09227947518394407,
+        "median": 0.07435875106816753,
+        "n": 250,
+        "q25": 0.049665436626865955,
+        "q75": 0.11246378212531934,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": 11.072,
+        "median": 11.0,
+        "n": 125,
+        "q25": 11.0,
+        "q75": 12.0,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": 0.0,
+              "median": 0.0,
+              "n": 125,
+              "q25": 0.0,
+              "q75": 0.0,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.0,
+              "median": 0.0,
+              "n": 125,
+              "q25": 0.0,
+              "q75": 0.0,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": 0.025093929691348386,
+              "median": 0.017131660178992147,
+              "n": 125,
+              "q25": 0.00667821897377785,
+              "q75": 0.03809546640758965,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.5134259370071735,
+              "median": 0.5064501594965793,
+              "n": 125,
+              "q25": 0.4478338746746372,
+              "q75": 0.5769770546592994,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": 0.0543644047345904,
+              "median": 0.0535512063422785,
+              "n": 125,
+              "q25": 0.027188423792382843,
+              "q75": 0.07748566833065962,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.5924555020176205,
+              "median": 0.6016074703904908,
+              "n": 125,
+              "q25": 0.5281555196850022,
+              "q75": 0.6569305737733477,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": 0.025093929691348386,
+              "median": 0.017131660178992147,
+              "n": 125,
+              "q25": 0.00667821897377785,
+              "q75": 0.03809546640758965,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.5134259370071735,
+              "median": 0.5064501594965793,
+              "n": 125,
+              "q25": 0.4478338746746372,
+              "q75": 0.5769770546592994,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": 0.020205607416918396,
+              "median": 0.007590945542028105,
+              "n": 125,
+              "q25": 0.001598090188111967,
+              "q75": 0.024879060124395558,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.01941667193349987,
+              "median": 0.012675077611724817,
+              "n": 125,
+              "q25": 0.0038814863526460686,
+              "q75": 0.02878992352676557,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": 0.6751977199242775,
+              "median": 0.6822638846774511,
+              "n": 125,
+              "q25": 0.6377185394084925,
+              "q75": 0.7344288314762515,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.022657738151610637,
+              "median": 0.014495645495997245,
+              "n": 125,
+              "q25": 0.006240934161812262,
+              "q75": 0.0295106855217665,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": 0.7303482410647812,
+              "median": 0.7382200421324909,
+              "n": 125,
+              "q25": 0.7002015044560657,
+              "q75": 0.7683811729380716,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.06276500732654287,
+              "median": 0.054162875348896855,
+              "n": 125,
+              "q25": 0.03576734351686661,
+              "q75": 0.08285327305792067,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": 0.5630005444872781,
+              "median": 0.564559344018507,
+              "n": 125,
+              "q25": 0.5123727061276604,
+              "q75": 0.6080233631194147,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.02066886132756863,
+              "median": 0.013493948375723708,
+              "n": 125,
+              "q25": 0.005563375392615089,
+              "q75": 0.02794298703655873,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "complementary",
+      "n_datasets": 25,
+      "n_units": 64,
+      "name": "four_n64_s3_0",
+      "role": "alternative",
+      "signal": 3.0
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "1": 10,
+        "2": 15
+      },
+      "eligibility_only": {
+        "2": 15,
+        "3": 8,
+        "4": 2
+      },
+      "gain_only": {
+        "1": 10,
+        "2": 15
+      },
+      "ordinary": {
+        "2": 7,
+        "3": 8,
+        "4": 10
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": -0.9892474782760415,
+      "median": -0.9056665516306225,
+      "n": 125,
+      "q25": -1.1988621337694343,
+      "q75": -0.5892138567386824,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 3137.4203682056987,
+      "median": 1994.127831394967,
+      "n": 125,
+      "q25": 4.784392942333549,
+      "q75": 4888.545995335104,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 7.264,
+      "median": 8.0,
+      "n": 125,
+      "q25": 5.0,
+      "q75": 10.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": -1.1015443726159382,
+      "median": -1.158267057768481,
+      "n": 25,
+      "q25": -1.4641567248044651,
+      "q75": -0.7918773417528098,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 25,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "fold_ineligible": 18,
+      "full_ineligible": 5,
+      "nonpositive_gain": 2
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": 0.8740297541195075,
+          "median": 0.8740231814946895,
+          "n": 125,
+          "q25": 0.859155044617642,
+          "q75": 0.8930766476788905,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": 0.8008147231666857,
+          "median": 0.7987383366518968,
+          "n": 125,
+          "q25": 0.7746733418918437,
+          "q75": 0.8289643039429638,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": 0.8740297541195075,
+          "median": 0.8740231814946895,
+          "n": 125,
+          "q25": 0.859155044617642,
+          "q75": 0.8930766476788905,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": 0.8008147231666857,
+          "median": 0.7987383366518968,
+          "n": 125,
+          "q25": 0.7746733418918437,
+          "q75": 0.8289643039429638,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": 0.060310210392841526,
+        "median": 0.050806888351383875,
+        "n": 250,
+        "q25": 0.032366703457391004,
+        "q75": 0.07503874780595861,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": 11.08,
+        "median": 11.0,
+        "n": 125,
+        "q25": 11.0,
+        "q75": 12.0,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": 0.0,
+              "median": 0.0,
+              "n": 125,
+              "q25": 0.0,
+              "q75": 0.0,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.0,
+              "median": 0.0,
+              "n": 125,
+              "q25": 0.0,
+              "q75": 0.0,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": 0.02351356958316033,
+              "median": 0.014779832017459582,
+              "n": 125,
+              "q25": 0.00822784428071699,
+              "q75": 0.030724510778233127,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.7765491076514487,
+              "median": 0.7779820340749359,
+              "n": 125,
+              "q25": 0.749511558957197,
+              "q75": 0.8065682144149258,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": 0.06366490659503149,
+              "median": 0.05415887847585632,
+              "n": 125,
+              "q25": 0.027620542605183207,
+              "q75": 0.09151159970368683,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.8430086522008795,
+              "median": 0.8434934974815145,
+              "n": 125,
+              "q25": 0.8248603365754004,
+              "q75": 0.8668118020788561,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": 0.02351356958316033,
+              "median": 0.014779832017459582,
+              "n": 125,
+              "q25": 0.00822784428071699,
+              "q75": 0.030724510778233127,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.7765491076514487,
+              "median": 0.7779820340749359,
+              "n": 125,
+              "q25": 0.749511558957197,
+              "q75": 0.8065682144149258,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": 0.02050370370966788,
+              "median": 0.0076522803795529,
+              "n": 125,
+              "q25": 0.002151648162492581,
+              "q75": 0.024819661666134363,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.022058251960801235,
+              "median": 0.009733326712022317,
+              "n": 125,
+              "q25": 0.0024449877750611915,
+              "q75": 0.03052503052503064,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": 0.8678408859814418,
+              "median": 0.8669951879730423,
+              "n": 125,
+              "q25": 0.853787071267169,
+              "q75": 0.8891803058283256,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.021771488325189794,
+              "median": 0.015090875704148465,
+              "n": 125,
+              "q25": 0.006071378522089277,
+              "q75": 0.03157386956940944,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": 0.9108212755119153,
+              "median": 0.9116006329526245,
+              "n": 125,
+              "q25": 0.8986642839847285,
+              "q75": 0.9238725887957159,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.06496573781006558,
+              "median": 0.054599443876201414,
+              "n": 125,
+              "q25": 0.027315074904840198,
+              "q75": 0.0944587554081805,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": 0.8097305345071278,
+              "median": 0.8069393852319827,
+              "n": 125,
+              "q25": 0.7938945199854694,
+              "q75": 0.828886673345069,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.02059001341296031,
+              "median": 0.016613418407707248,
+              "n": 125,
+              "q25": 0.00722489149442318,
+              "q75": 0.028528971912175738,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "complementary",
+      "n_datasets": 25,
+      "n_units": 64,
+      "name": "four_n64_s4_5",
+      "role": "alternative",
+      "signal": 4.5
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "1": 2,
+        "2": 15,
+        "3": 8
+      },
+      "eligibility_only": {
+        "3": 17,
+        "4": 8
+      },
+      "gain_only": {
+        "1": 2,
+        "2": 15,
+        "3": 7,
+        "4": 1
+      },
+      "ordinary": {
+        "3": 9,
+        "4": 16
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": -0.4782377837390486,
+      "median": -0.3693308628462349,
+      "n": 125,
+      "q25": -0.6200955280793943,
+      "q75": 0.02151550176363518,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 3456.6030435201505,
+      "median": 3319.4572040026037,
+      "n": 125,
+      "q25": 1706.89388603747,
+      "q75": 4931.071268974006,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 9.32,
+      "median": 11.0,
+      "n": 125,
+      "q25": 9.0,
+      "q75": 11.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": -0.7897264699025476,
+      "median": -0.6512472668866481,
+      "n": 25,
+      "q25": -0.975186833903262,
+      "q75": -0.4156280522633769,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 25,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "fold_ineligible": 11,
+      "full_ineligible": 2,
+      "nonpositive_gain": 12
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": 0.9381253959442253,
+          "median": 0.9374857974694284,
+          "n": 125,
+          "q25": 0.928323208177359,
+          "q75": 0.9464523981874042,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": 0.8979941796479824,
+          "median": 0.9000046973513407,
+          "n": 125,
+          "q25": 0.8850127125673264,
+          "q75": 0.9153700221666603,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": 0.9381253959442253,
+          "median": 0.9374857974694284,
+          "n": 125,
+          "q25": 0.928323208177359,
+          "q75": 0.9464523981874042,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": 0.8979941796479824,
+          "median": 0.9000046973513407,
+          "n": 125,
+          "q25": 0.8850127125673264,
+          "q75": 0.9153700221666603,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": 0.050560968682458914,
+        "median": 0.04132280187340487,
+        "n": 250,
+        "q25": 0.02757716746497442,
+        "q75": 0.06443258227956607,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": 11.104,
+        "median": 11.0,
+        "n": 125,
+        "q25": 11.0,
+        "q75": 12.0,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": 0.0,
+              "median": 0.0,
+              "n": 125,
+              "q25": 0.0,
+              "q75": 0.0,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.0,
+              "median": 0.0,
+              "n": 125,
+              "q25": 0.0,
+              "q75": 0.0,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": 0.023355549927232825,
+              "median": 0.01642302703010523,
+              "n": 125,
+              "q25": 0.005688625401119252,
+              "q75": 0.03324517432705998,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.8826946031183355,
+              "median": 0.8825444341283603,
+              "n": 125,
+              "q25": 0.8683861339208527,
+              "q75": 0.9030948108285661,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": 0.05673581917751848,
+              "median": 0.048439558512582526,
+              "n": 125,
+              "q25": 0.027232340073320205,
+              "q75": 0.0759036654416475,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.9241512059822579,
+              "median": 0.923376039934187,
+              "n": 125,
+              "q25": 0.9145285795933921,
+              "q75": 0.9339074332491759,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": 0.023355549927232825,
+              "median": 0.01642302703010523,
+              "n": 125,
+              "q25": 0.005688625401119252,
+              "q75": 0.03324517432705998,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.8826946031183355,
+              "median": 0.8825444341283603,
+              "n": 125,
+              "q25": 0.8683861339208527,
+              "q75": 0.9030948108285661,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": 0.02430615498195128,
+              "median": 0.016845457259428764,
+              "n": 125,
+              "q25": 0.004621614342875002,
+              "q75": 0.03555661729574744,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.021057274822634135,
+              "median": 0.011814805489109403,
+              "n": 125,
+              "q25": 0.002188585607940108,
+              "q75": 0.026493606384001667,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": 0.9355223633995514,
+              "median": 0.9348488870616868,
+              "n": 125,
+              "q25": 0.9264092481116641,
+              "q75": 0.9424541686097822,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.028516512841319588,
+              "median": 0.0203097747639015,
+              "n": 125,
+              "q25": 0.0063886025373213196,
+              "q75": 0.04525811403767477,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": 0.9575956375418266,
+              "median": 0.9578368486262258,
+              "n": 125,
+              "q25": 0.9522278938181652,
+              "q75": 0.9642584304393312,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.07204269386383565,
+              "median": 0.07196761224751946,
+              "n": 125,
+              "q25": 0.0391861556280918,
+              "q75": 0.09493119152393625,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": 0.902209700293483,
+              "median": 0.9026111886181895,
+              "n": 125,
+              "q25": 0.8929168193756738,
+              "q75": 0.9108168181481292,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.02762324314054684,
+              "median": 0.020319576877671497,
+              "n": 125,
+              "q25": 0.006729435514698512,
+              "q75": 0.04061277789821249,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "complementary",
+      "n_datasets": 25,
+      "n_units": 256,
+      "name": "four_n256_s1_5",
+      "role": "alternative",
+      "signal": 1.5
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "1": 20,
+        "2": 3,
+        "3": 2
+      },
+      "eligibility_only": {
+        "1": 2,
+        "2": 12,
+        "3": 5,
+        "4": 6
+      },
+      "gain_only": {
+        "1": 20,
+        "2": 3,
+        "3": 2
+      },
+      "ordinary": {
+        "1": 2,
+        "2": 12,
+        "3": 5,
+        "4": 6
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": -0.17069194356299633,
+      "median": -0.1573745042244488,
+      "n": 125,
+      "q25": -0.21587088315655428,
+      "q75": -0.12721701058953266,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 19448.892122924084,
+      "median": 18202.767041170304,
+      "n": 125,
+      "q25": 10993.34989746942,
+      "q75": 27194.99320395406,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 31.576,
+      "median": 31.0,
+      "n": 125,
+      "q25": 26.0,
+      "q75": 38.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": -0.1732927839241667,
+      "median": -0.17781667000712284,
+      "n": 25,
+      "q25": -0.1941161293528705,
+      "q75": -0.1552404753685933,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 25,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "nonpositive_gain": 25
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": 0.661425374554533,
+          "median": 0.6595393864285968,
+          "n": 125,
+          "q25": 0.6394066124101844,
+          "q75": 0.6832686062553028,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": 0.538879692517679,
+          "median": 0.5329806772548831,
+          "n": 125,
+          "q25": 0.5129101457047704,
+          "q75": 0.566775557134557,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": 0.661425374554533,
+          "median": 0.6595393864285968,
+          "n": 125,
+          "q25": 0.6394066124101844,
+          "q75": 0.6832686062553028,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": 0.538879692517679,
+          "median": 0.5329806772548831,
+          "n": 125,
+          "q25": 0.5129101457047704,
+          "q75": 0.566775557134557,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": 0.04104267243258492,
+        "median": 0.035527419356801856,
+        "n": 250,
+        "q25": 0.02564759654361844,
+        "q75": 0.052127504873421576,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": 48.176,
+        "median": 48.0,
+        "n": 125,
+        "q25": 47.0,
+        "q75": 49.0,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": 0.0,
+              "median": 0.0,
+              "n": 125,
+              "q25": 0.0,
+              "q75": 0.0,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.0,
+              "median": 0.0,
+              "n": 125,
+              "q25": 0.0,
+              "q75": 0.0,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": 0.0077108795560236944,
+              "median": 0.0048693230571850155,
+              "n": 125,
+              "q25": 0.0021726911822050887,
+              "q75": 0.010746936731034773,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.49423522916120843,
+              "median": 0.4905825483404459,
+              "n": 125,
+              "q25": 0.46497207616353964,
+              "q75": 0.5267187795100046,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": 0.01869792061658845,
+              "median": 0.012459233570647155,
+              "n": 125,
+              "q25": 0.00676015239820027,
+              "q75": 0.025727378729485717,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.5708568873161489,
+              "median": 0.5651082942592662,
+              "n": 125,
+              "q25": 0.5398546687811208,
+              "q75": 0.6065416923076054,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": 0.0077108795560236944,
+              "median": 0.0048693230571850155,
+              "n": 125,
+              "q25": 0.0021726911822050887,
+              "q75": 0.010746936731034773,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.49423522916120843,
+              "median": 0.4905825483404459,
+              "n": 125,
+              "q25": 0.46497207616353964,
+              "q75": 0.5267187795100046,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": 0.0050932836842049216,
+              "median": 0.002391273132582583,
+              "n": 125,
+              "q25": 0.0009230697318441949,
+              "q75": 0.006000444477368805,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.0077504381860449036,
+              "median": 0.00286059045923015,
+              "n": 125,
+              "q25": 0.000694097908875535,
+              "q75": 0.010421308126499662,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": 0.6577231817031294,
+              "median": 0.6576402713552791,
+              "n": 125,
+              "q25": 0.6354763624515078,
+              "q75": 0.6787771811450589,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.009154368951107366,
+              "median": 0.00427623921486342,
+              "n": 125,
+              "q25": 0.0016225906921344402,
+              "q75": 0.011192513974525253,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": 0.7183577433725907,
+              "median": 0.7167347363660335,
+              "n": 125,
+              "q25": 0.6943998876960711,
+              "q75": 0.7366483195434632,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.01925679765651933,
+              "median": 0.0163713682989578,
+              "n": 125,
+              "q25": 0.00946436137094464,
+              "q75": 0.025857920260338396,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": 0.5467586045347755,
+              "median": 0.5483392630432138,
+              "n": 125,
+              "q25": 0.5259974690232762,
+              "q75": 0.570916062846883,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.0073761777044751235,
+              "median": 0.005008475041840432,
+              "n": 125,
+              "q25": 0.0014310598046221035,
+              "q75": 0.010971513354896212,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "complementary",
+      "n_datasets": 25,
+      "n_units": 256,
+      "name": "four_n256_s3_0",
+      "role": "alternative",
+      "signal": 3.0
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "3": 2,
+        "4": 23
+      },
+      "eligibility_only": {
+        "3": 2,
+        "4": 23
+      },
+      "gain_only": {
+        "4": 25
+      },
+      "ordinary": {
+        "4": 25
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": 0.33988530971018965,
+      "median": 0.3487415187480867,
+      "n": 125,
+      "q25": 0.3153231311901136,
+      "q75": 0.3745613174434369,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 19439.772941689807,
+      "median": 19849.091575986055,
+      "n": 125,
+      "q25": 17052.479226225583,
+      "q75": 21956.91479102402,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 44.624,
+      "median": 46.0,
+      "n": 125,
+      "q25": 44.0,
+      "q75": 48.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": 0.309582330361341,
+      "median": 0.3262625625099962,
+      "n": 25,
+      "q25": 0.23456547761275068,
+      "q75": 0.3543325880887962,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 25,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "fold_ineligible": 2,
+      "selected_four": 23
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": 0.8659829320820451,
+          "median": 0.8673638805203632,
+          "n": 125,
+          "q25": 0.8567516543945951,
+          "q75": 0.8763514223513137,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": 0.8000812565707612,
+          "median": 0.8057186837600951,
+          "n": 125,
+          "q25": 0.783489301563963,
+          "q75": 0.8180624152036309,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": 0.8659829320820451,
+          "median": 0.8673638805203632,
+          "n": 125,
+          "q25": 0.8567516543945951,
+          "q75": 0.8763514223513137,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": 0.8000812565707612,
+          "median": 0.8057186837600951,
+          "n": 125,
+          "q25": 0.783489301563963,
+          "q75": 0.8180624152036309,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": 0.03215628827752855,
+        "median": 0.027693957546646143,
+        "n": 250,
+        "q25": 0.01930388037518877,
+        "q75": 0.04244435205662173,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": 47.888,
+        "median": 48.0,
+        "n": 125,
+        "q25": 47.0,
+        "q75": 49.0,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": 0.0,
+              "median": 0.0,
+              "n": 125,
+              "q25": 0.0,
+              "q75": 0.0,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.0,
+              "median": 0.0,
+              "n": 125,
+              "q25": 0.0,
+              "q75": 0.0,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": 0.006990909465745618,
+              "median": 0.004543413349766157,
+              "n": 125,
+              "q25": 0.0018568738192379364,
+              "q75": 0.010391486505451297,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.7731276902212217,
+              "median": 0.7750324798241346,
+              "n": 125,
+              "q25": 0.7587162411853872,
+              "q75": 0.7874411231610103,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": 0.016800396902955858,
+              "median": 0.01447261960309465,
+              "n": 125,
+              "q25": 0.007731906100608477,
+              "q75": 0.021434280811542528,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.8336262865862564,
+              "median": 0.8371217256398442,
+              "n": 125,
+              "q25": 0.8215900126914344,
+              "q75": 0.8467292572114147,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": 0.006990909465745618,
+              "median": 0.004543413349766157,
+              "n": 125,
+              "q25": 0.0018568738192379364,
+              "q75": 0.010391486505451297,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.7731276902212217,
+              "median": 0.7750324798241346,
+              "n": 125,
+              "q25": 0.7587162411853872,
+              "q75": 0.7874411231610103,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": 0.004036763993715893,
+              "median": 0.0013769982028625227,
+              "n": 125,
+              "q25": 0.00038700469540753346,
+              "q75": 0.0070140873059639786,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.005182123909923047,
+              "median": 0.0028219770631153773,
+              "n": 125,
+              "q25": 0.00042884256591424474,
+              "q75": 0.007135685132807934,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": 0.8642734391055498,
+              "median": 0.8650115996050357,
+              "n": 125,
+              "q25": 0.8556903643640996,
+              "q75": 0.8737289717951338,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.00640345940288549,
+              "median": 0.004337924708569751,
+              "n": 125,
+              "q25": 0.0020878316365842142,
+              "q75": 0.008882326788573591,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": 0.9031426679702964,
+              "median": 0.9034282664974018,
+              "n": 125,
+              "q25": 0.8951884810897629,
+              "q75": 0.9088097013898814,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.015794653905245353,
+              "median": 0.012644916285513674,
+              "n": 125,
+              "q25": 0.0073919958650265905,
+              "q75": 0.021860454475771007,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": 0.80757366693479,
+              "median": 0.8090589504497298,
+              "n": 125,
+              "q25": 0.7995472361723353,
+              "q75": 0.8161998762525887,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.006332421690005693,
+              "median": 0.004964281912303803,
+              "n": 125,
+              "q25": 0.0024257885859721995,
+              "q75": 0.009416264208093605,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "complementary",
+      "n_datasets": 25,
+      "n_units": 256,
+      "name": "four_n256_s4_5",
+      "role": "alternative",
+      "signal": 4.5
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "4": 25
+      },
+      "eligibility_only": {
+        "4": 25
+      },
+      "gain_only": {
+        "4": 25
+      },
+      "ordinary": {
+        "4": 25
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": 0.9241657681739446,
+      "median": 0.9382362535536213,
+      "n": 125,
+      "q25": 0.8948885334789642,
+      "q75": 0.9639775094559289,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 12425.272469334464,
+      "median": 12225.73192739499,
+      "n": 125,
+      "q25": 11044.34932642212,
+      "q75": 13594.177008390769,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 47.752,
+      "median": 48.0,
+      "n": 125,
+      "q25": 47.0,
+      "q75": 49.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": 0.8917545125855533,
+      "median": 0.8863534366336538,
+      "n": 25,
+      "q25": 0.847783682655293,
+      "q75": 0.9119809202479492,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 25,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "selected_four": 25
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": 0.9332341227115225,
+          "median": 0.9326439167128472,
+          "n": 125,
+          "q25": 0.928694135814559,
+          "q75": 0.9365417113360042,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": 0.8883038849480577,
+          "median": 0.8900598038985581,
+          "n": 125,
+          "q25": 0.8808445770046344,
+          "q75": 0.8969992168858342,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": 0.9332341227115225,
+          "median": 0.9326439167128472,
+          "n": 125,
+          "q25": 0.928694135814559,
+          "q75": 0.9365417113360042,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": 0.8883038849480577,
+          "median": 0.8900598038985581,
+          "n": 125,
+          "q25": 0.8808445770046344,
+          "q75": 0.8969992168858342,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": 0.023253666806708425,
+        "median": 0.019636254730435277,
+        "n": 250,
+        "q25": 0.012917233149189052,
+        "q75": 0.03137391829007634,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": 47.904,
+        "median": 48.0,
+        "n": 125,
+        "q25": 47.0,
+        "q75": 49.0,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": 0.0,
+              "median": 0.0,
+              "n": 125,
+              "q25": 0.0,
+              "q75": 0.0,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.0,
+              "median": 0.0,
+              "n": 125,
+              "q25": 0.0,
+              "q75": 0.0,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": 0.005014191226349025,
+              "median": 0.0036535269908378742,
+              "n": 125,
+              "q25": 0.0013307214627198416,
+              "q75": 0.0073441273540993945,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.8742235067164928,
+              "median": 0.875438964218431,
+              "n": 125,
+              "q25": 0.8639655770407079,
+              "q75": 0.8857394672289869,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": 0.013685273252105983,
+              "median": 0.010327320390854378,
+              "n": 125,
+              "q25": 0.006028544448456352,
+              "q75": 0.017468511543682452,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.9183739437217883,
+              "median": 0.9180987304062314,
+              "n": 125,
+              "q25": 0.9120303130371089,
+              "q75": 0.9248865444293194,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": 0.005014191226349025,
+              "median": 0.0036535269908378742,
+              "n": 125,
+              "q25": 0.0013307214627198416,
+              "q75": 0.0073441273540993945,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.8742235067164928,
+              "median": 0.875438964218431,
+              "n": 125,
+              "q25": 0.8639655770407079,
+              "q75": 0.8857394672289869,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": 0.0035431837626197613,
+              "median": 0.0015128024085530045,
+              "n": 125,
+              "q25": 0.0004702204813661348,
+              "q75": 0.0051953945436591376,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.005356440193342674,
+              "median": 0.0026651491332875255,
+              "n": 125,
+              "q25": 0.0007072760378414866,
+              "q75": 0.006210903069945206,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": 0.9325957965190811,
+              "median": 0.9318234833297451,
+              "n": 125,
+              "q25": 0.9282197650148991,
+              "q75": 0.9363404789770402,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.005824794837637097,
+              "median": 0.0031059391765687616,
+              "n": 125,
+              "q25": 0.0011073203759677241,
+              "q75": 0.00770889842615885,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": 0.9555992406422553,
+              "median": 0.9558942633414327,
+              "n": 125,
+              "q25": 0.9532426335952343,
+              "q75": 0.958335986879057,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.0157809151071389,
+              "median": 0.013940515163114231,
+              "n": 125,
+              "q25": 0.004585266750883443,
+              "q75": 0.022325727444986843,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": 0.9003415051881897,
+              "median": 0.9006051509646746,
+              "n": 125,
+              "q25": 0.8952122862495387,
+              "q75": 0.9055077275981968,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.004530068278234717,
+              "median": 0.0031267362381613983,
+              "n": 125,
+              "q25": 0.0014992504587335587,
+              "q75": 0.006322939008128636,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "heavy_tailed",
+      "n_datasets": 25,
+      "n_units": 64,
+      "name": "heavy_tailed_n64",
+      "role": "stress",
+      "signal": null
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "1": 25
+      },
+      "eligibility_only": {
+        "1": 24,
+        "2": 1
+      },
+      "gain_only": {
+        "1": 25
+      },
+      "ordinary": {
+        "1": 15,
+        "2": 7,
+        "3": 3
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": -2.511684956661069,
+      "median": -1.9146380159154885,
+      "n": 125,
+      "q25": -2.9113347772964007,
+      "q75": -1.2367823898813546,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 1.019573021829367,
+      "median": 0.999999999972981,
+      "n": 125,
+      "q25": 0.9999999999410429,
+      "q75": 0.999999999995756,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 2.072,
+      "median": 2.0,
+      "n": 125,
+      "q25": 1.0,
+      "q75": 3.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": -1.741016813479967,
+      "median": -1.4318893812882092,
+      "n": 25,
+      "q25": -1.987533445079737,
+      "q75": -1.232288891485307,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 25,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "full_ineligible": 25
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": 0.19761430197835653,
+        "median": 0.12213409954303778,
+        "n": 250,
+        "q25": 0.07671721686007087,
+        "q75": 0.21551559409567986,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "q25": null,
+        "q75": null,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "cline",
+      "n_datasets": 25,
+      "n_units": 64,
+      "name": "cline_n64",
+      "role": "stress",
+      "signal": null
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "1": 25
+      },
+      "eligibility_only": {
+        "1": 15,
+        "2": 8,
+        "3": 2
+      },
+      "gain_only": {
+        "1": 25
+      },
+      "ordinary": {
+        "1": 5,
+        "2": 3,
+        "3": 13,
+        "4": 4
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": -1.5175518183996703,
+      "median": -1.3412639104179445,
+      "n": 125,
+      "q25": -1.8391990324829435,
+      "q75": -1.1065383104310738,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 507.9505815872093,
+      "median": 1.0000000000059546,
+      "n": 125,
+      "q25": 0.9999999999946504,
+      "q75": 205.85631999920423,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 4.664,
+      "median": 4.0,
+      "n": 125,
+      "q25": 3.0,
+      "q75": 6.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": -1.4484453302133329,
+      "median": -1.4357351444201902,
+      "n": 25,
+      "q25": -1.6664139350449474,
+      "q75": -1.2406647292094146,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 25,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "fold_ineligible": 11,
+      "full_ineligible": 14
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "q25": null,
+          "q75": null,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": 0.08120104988098086,
+        "median": 0.06849669412257903,
+        "n": 250,
+        "q25": 0.046543892835199475,
+        "q75": 0.1043378226708573,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "q25": null,
+        "q75": null,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": null,
+              "median": null,
+              "n": 0,
+              "q25": null,
+              "q75": null,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "cell": {
+      "law": "unequal_variance",
+      "n_datasets": 25,
+      "n_units": 64,
+      "name": "unequal_variance_n64",
+      "role": "stress",
+      "signal": null
+    },
+    "counterfactual_k_counts": {
+      "actual": {
+        "1": 1,
+        "2": 18,
+        "3": 6
+      },
+      "eligibility_only": {
+        "2": 14,
+        "3": 11
+      },
+      "gain_only": {
+        "1": 1,
+        "2": 12,
+        "3": 10,
+        "4": 2
+      },
+      "ordinary": {
+        "2": 2,
+        "3": 11,
+        "4": 12
+      }
+    },
+    "k4_fold_external_gain": {
+      "mean": -0.5178209138574671,
+      "median": -0.4308261265598695,
+      "n": 125,
+      "q25": -0.7928486850981107,
+      "q75": -0.07690960030385974,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_eigenvalue_over_regularizer": {
+      "mean": 948.9552334124273,
+      "median": 1.0000000000078282,
+      "n": 125,
+      "q25": 0.9999999999983775,
+      "q75": 1524.178909944941,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_fold_minimum_hard_size": {
+      "mean": 4.88,
+      "median": 4.0,
+      "n": 125,
+      "q25": 3.0,
+      "q75": 7.0,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "k4_pooled_validation_gain_all_fitted": {
+      "mean": -0.6922698472200554,
+      "median": -0.6124887091615647,
+      "n": 25,
+      "q25": -1.0797936594920376,
+      "q75": -0.4249577535603142,
+      "scope": "Descriptive; no independent-fold standard error"
+    },
+    "observations": 25,
+    "scope": "Descriptive archived gate removals; never new production selectors",
+    "sequential_k4_reasons": {
+      "aic_prefers_other": 1,
+      "fold_ineligible": 15,
+      "full_ineligible": 9
+    },
+    "signal_and_maps": {
+      "fused_axis_r2": {
+        "a": {
+          "mean": 0.8534986952124592,
+          "median": 0.8488934721846095,
+          "n": 125,
+          "q25": 0.8298178465669641,
+          "q75": 0.8833455439304746,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": 0.7943185374843748,
+          "median": 0.8036708549003797,
+          "n": 125,
+          "q25": 0.7544008512222817,
+          "q75": 0.8291647412634128,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "joint_axis_r2": {
+        "a": {
+          "mean": 0.8534986952124592,
+          "median": 0.8488934721846095,
+          "n": 125,
+          "q25": 0.8298178465669641,
+          "q75": 0.8833455439304745,
+          "scope": "Descriptive; no independent-fold standard error"
+        },
+        "b": {
+          "mean": 0.7943185374843748,
+          "median": 0.8036708549003797,
+          "n": 125,
+          "q25": 0.7544008512222817,
+          "q75": 0.8291647412634128,
+          "scope": "Descriptive; no independent-fold standard error"
+        }
+      },
+      "maximum_map_angle_radians": {
+        "mean": 0.08251077362164175,
+        "median": 0.06381159047317769,
+        "n": 250,
+        "q25": 0.04327613979300284,
+        "q75": 0.1044391242195297,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "minimum_generating_count": {
+        "mean": 11.096,
+        "median": 11.0,
+        "n": 125,
+        "q25": 11.0,
+        "q75": 12.0,
+        "scope": "Descriptive; no independent-fold standard error"
+      },
+      "upstream_axes": {
+        "ecological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": 0.0,
+              "median": 0.0,
+              "n": 125,
+              "q25": 0.0,
+              "q75": 0.0,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.0,
+              "median": 0.0,
+              "n": 125,
+              "q25": 0.0,
+              "q75": 0.0,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": 0.03241296350880804,
+              "median": 0.0177820911650709,
+              "n": 125,
+              "q25": 0.00814288470036395,
+              "q75": 0.041803138440896004,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.7403251557453314,
+              "median": 0.7451160298126703,
+              "n": 125,
+              "q25": 0.7154465751709602,
+              "q75": 0.7802977727240904,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": 0.07331110901323287,
+              "median": 0.06534412628645192,
+              "n": 125,
+              "q25": 0.03485118002648113,
+              "q75": 0.09136916813162954,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.808066868810909,
+              "median": 0.8164847948239318,
+              "n": 125,
+              "q25": 0.7835802253066955,
+              "q75": 0.8423603675549662,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": 0.03241296350880804,
+              "median": 0.0177820911650709,
+              "n": 125,
+              "q25": 0.00814288470036395,
+              "q75": 0.041803138440896004,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.7403251557453314,
+              "median": 0.7451160298126703,
+              "n": 125,
+              "q25": 0.7154465751709602,
+              "q75": 0.7802977727240904,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        },
+        "morphological": {
+          "count_axis_r2": {
+            "a": {
+              "mean": 0.01408215928964654,
+              "median": 0.005326231691078487,
+              "n": 125,
+              "q25": 0.0010303136499035803,
+              "q75": 0.02196382428940591,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.023776018147773553,
+              "median": 0.014112836316226063,
+              "n": 125,
+              "q25": 0.0018058723610772098,
+              "q75": 0.03003003003003013,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "profile_axis_r2": {
+            "a": {
+              "mean": 0.8447862603347767,
+              "median": 0.8422845428406437,
+              "n": 125,
+              "q25": 0.8226490652732495,
+              "q75": 0.8733585615630405,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.040003449502818145,
+              "median": 0.028318989417170704,
+              "n": 125,
+              "q25": 0.010107505704657127,
+              "q75": 0.06029658298288598,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "raw_group_axis_r2": {
+            "a": {
+              "mean": 0.8879928660317379,
+              "median": 0.888907491309525,
+              "n": 125,
+              "q25": 0.8693328004368742,
+              "q75": 0.9111633955584157,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.07342265492242835,
+              "median": 0.07030811388804381,
+              "n": 125,
+              "q25": 0.03542933052794639,
+              "q75": 0.09891278597537101,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          },
+          "source_axis_r2": {
+            "a": {
+              "mean": 0.7717464794438134,
+              "median": 0.7787535051726211,
+              "n": 125,
+              "q25": 0.756951910665083,
+              "q75": 0.7933539479016918,
+              "scope": "Descriptive; no independent-fold standard error"
+            },
+            "b": {
+              "mean": 0.03352429259247462,
+              "median": 0.020571949507181997,
+              "n": 125,
+              "q25": 0.009281271570852678,
+              "q75": 0.050443256011456716,
+              "scope": "Descriptive; no independent-fold standard error"
+            }
+          }
+        }
+      }
+    }
+  }
+]
