@@ -193,3 +193,8 @@ jobs:
         run: |
           cd "$RUNNER_TEMP"
           python "$GITHUB_WORKSPACE/examples/aic-gaussian-diagnostics/smoke.py" --output-dir "$RUNNER_TEMP/aic-gaussian-diagnostic-smoke"
+      - name: Check predictive-screen installed workflow
+        shell: bash
+        run: |
+          cd "$RUNNER_TEMP"
+          python "$GITHUB_WORKSPACE/examples/predictive-aic/smoke.py" --output-dir "$RUNNER_TEMP/predictive-screen-smoke"

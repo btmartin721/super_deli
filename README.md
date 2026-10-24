@@ -4,19 +4,20 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: bounded grouped AIC/likelihood power and recovery validation.**
-See the [frozen method](docs/grouped-power-recovery.md) and
-[completed results](docs/grouped-power-recovery-results.md).
-All 400 datasets and 40,780 planned fits completed without failures.
-At the original signal strength, likelihood detection was 48% with 64 localities
-and 100% with 256; AIC selected four components in 26% and 96%, respectively.
-AIC also selected multiple components in 18/25 Gaussian controls at N=64, so
-component count alone is unsuitable as species evidence. BIC defaults and
-historical p-values remain unchanged; AIC remains opt-in.
+**Current checkpoint: predictive-screened AIC for grouped morphology/ecology.**
+The new opt-in workflow refits the complete pipeline inside whole-locality folds
+and screens larger mixtures using held-out predictive gain. See the
+[method](docs/predictive-aic.md) and [completed validation](docs/predictive-aic-results.md).
+All 625 datasets and 3,775 main searches/replays completed without failed fits.
+Screening reduced Gaussian-control K>1 selections from 205/400 to 0/400, but lost
+all four-group recovery at 64 localities. At 256 localities, recovery was 23/25
+and 25/25 at signals 3 and 4.5. This predictive heuristic remains opt-in;
+ordinary AIC/BIC, defaults and historical p-values remain unchanged.
+The [preceding power study](docs/grouped-power-recovery-results.md) remains available.
 
 The preceding [larger false-positive validation](docs/grouped-false-positive-validation-results.md)
 completed 2,500 datasets and 497,500 fits; fitted-null rejection was 4.4–5.4%.
-The present small control cells do not replace that study. General calibration
+These selection-control cells do not replace that significance study. General calibration
 and species-boundary validity remain unestablished.
 Genomic, numeric morphology/ecology and shape scores can be fused by exact unit
 IDs or explicit population/locality aggregation, with prespecified view weights.

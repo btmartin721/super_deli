@@ -77,3 +77,6 @@ recursive-include docs/figures/grouped-power-recovery *.pdf *.svg *.png
 
 recursive-include examples/aic-gaussian-diagnostics *.json *.py *.csv
 recursive-include docs/figures/aic-gaussian-diagnostics *.pdf *.svg *.png
+
+recursive-include examples/predictive-aic *.json *.csv *.py
+recursive-include docs/figures/predictive-aic *.png *.svg *.pdf

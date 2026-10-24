@@ -24,6 +24,9 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.benchmarking.aic_diagnostic_cli import register_commands
 
     aic_commands = register_commands(commands)
+    from super_deli.benchmarking.predictive_cli import register_commands as register_predictive
+
+    predictive_commands = register_predictive(commands)
     validate = commands.add_parser("validate", help="Check declarations and local file references")
     validate.add_argument("config", type=Path, help="Versioned dataset JSON configuration")
     validate.add_argument("--report", type=Path, help="Also save JSON to a new file")
@@ -427,6 +430,15 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command in predictive_commands:
+            from super_deli.benchmarking.predictive_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            if args.command == "cluster-integrative-predictive":
+                return 0 if summary["selection"]["status"] == "complete" else 1
+            return 0
         if args.command in aic_commands:
             from super_deli.benchmarking.aic_diagnostic_cli import dispatch
 

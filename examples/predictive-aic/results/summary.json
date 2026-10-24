@@ -1,0 +1,4107 @@
+{
+  "attempted_fits": 3750,
+  "calibration_draws": 0,
+  "cells": [
+    {
+      "cell": {
+        "law": "independent_gaussian",
+        "n_datasets": 50,
+        "n_units": 64,
+        "name": "independent_gaussian_n64",
+        "role": "control",
+        "signal": null
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.07112173646419764
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.07335347787682214,
+            "mean": -0.5841549783451013,
+            "median": -0.5556615001130216,
+            "n": 50,
+            "q25": -1.0617526187685287,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 15,
+            "2": 9,
+            "3": 8,
+            "4": 18
+          },
+          "negative_external_gain": 35,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.5539176743388218,
+              0.821382154335853
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.4710569146917991,
+              0.8744912048698574
+            ],
+            "events": 35,
+            "exact_interval_95": [
+              0.5539176743388218,
+              0.821382154335853
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.06480740698407861,
+            "rate_among_available": 0.7,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.7,
+              0.7
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.07112173646419764
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.13100827768006904
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "independent_gaussian",
+        "n_datasets": 50,
+        "n_units": 256,
+        "name": "independent_gaussian_n256",
+        "role": "control",
+        "signal": null
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.07112173646419764
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.011852887412900017,
+            "mean": -0.048742886141411326,
+            "median": 0.0,
+            "n": 50,
+            "q25": -0.05791676161252225,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 35,
+            "2": 3,
+            "3": 5,
+            "4": 7
+          },
+          "negative_external_gain": 15,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.17861784566414687,
+              0.4460823256611783
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.12550879513014257,
+              0.5289430853082009
+            ],
+            "events": 15,
+            "exact_interval_95": [
+              0.17861784566414687,
+              0.4460823256611783
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0648074069840786,
+            "rate_among_available": 0.3,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.3,
+              0.3
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.07112173646419764
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.13100827768006904
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "correlated_gaussian",
+        "n_datasets": 50,
+        "n_units": 64,
+        "name": "correlated_gaussian_n64",
+        "role": "control",
+        "signal": null
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0015645341665770298,
+            "mean": -0.001564534166577029,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 49,
+            "2": 1,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 1,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.000506227983040829,
+              0.1064695457114999
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.000506227983040829,
+              0.1064695457114999
+            ],
+            "events": 1,
+            "exact_interval_95": [
+              0.000506227983040829,
+              0.1064695457114999
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.01979898987322333,
+            "rate_among_available": 0.02,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.02,
+              0.02
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.08718821322616084,
+            "mean": -0.6324891850395246,
+            "median": -0.5173776343399887,
+            "n": 50,
+            "q25": -1.1022210916335577,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 15,
+            "2": 11,
+            "3": 13,
+            "4": 11
+          },
+          "negative_external_gain": 35,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.5539176743388218,
+              0.821382154335853
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.4710569146917991,
+              0.8744912048698574
+            ],
+            "events": 35,
+            "exact_interval_95": [
+              0.5539176743388218,
+              0.821382154335853
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.06480740698407861,
+            "rate_among_available": 0.7,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.7,
+              0.7
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.07112173646419764
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.13100827768006904
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "correlated_gaussian",
+        "n_datasets": 50,
+        "n_units": 256,
+        "name": "correlated_gaussian_n256",
+        "role": "control",
+        "signal": null
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.07112173646419764
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.012056834680472823,
+            "mean": -0.047723337219880875,
+            "median": 0.0,
+            "n": 50,
+            "q25": -0.06415271226112171,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 36,
+            "2": 3,
+            "3": 4,
+            "4": 7
+          },
+          "negative_external_gain": 14,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.16231060070717523,
+              0.42490535701610865
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.11190775100961403,
+              0.5080353773285264
+            ],
+            "events": 14,
+            "exact_interval_95": [
+              0.16231060070717523,
+              0.42490535701610865
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.06349803146555018,
+            "rate_among_available": 0.28,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.28,
+              0.28
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.07112173646419764
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.13100827768006904
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "zero_conditional_gaussian",
+        "n_datasets": 50,
+        "n_units": 64,
+        "name": "zero_conditional_gaussian_n64",
+        "role": "control",
+        "signal": null
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.07112173646419764
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.08147133495508226,
+            "mean": -0.6239954134277448,
+            "median": -0.5776715722126344,
+            "n": 50,
+            "q25": -0.8709093553568709,
+            "q75": -0.20139468140356986
+          },
+          "k_counts": {
+            "1": 11,
+            "2": 8,
+            "3": 16,
+            "4": 15
+          },
+          "negative_external_gain": 39,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.6403881114342107,
+              0.8847341739621514
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.5573361178946387,
+              0.9261403711459998
+            ],
+            "events": 39,
+            "exact_interval_95": [
+              0.6403881114342107,
+              0.8847341739621514
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.05858327406350723,
+            "rate_among_available": 0.78,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.78,
+              0.78
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.07112173646419764
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.13100827768006904
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "zero_conditional_gaussian",
+        "n_datasets": 50,
+        "n_units": 256,
+        "name": "zero_conditional_gaussian_n256",
+        "role": "control",
+        "signal": null
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.07112173646419764
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.01215719095936419,
+            "mean": -0.0478530640083008,
+            "median": 0.0,
+            "n": 50,
+            "q25": -0.0882687861185337,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 36,
+            "2": 1,
+            "3": 5,
+            "4": 8
+          },
+          "negative_external_gain": 14,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.16231060070717523,
+              0.42490535701610865
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.11190775100961403,
+              0.5080353773285264
+            ],
+            "events": 14,
+            "exact_interval_95": [
+              0.16231060070717523,
+              0.42490535701610865
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.06349803146555018,
+            "rate_among_available": 0.28,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.28,
+              0.28
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.07112173646419764
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.13100827768006904
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "gaussian_scores",
+        "n_datasets": 50,
+        "n_units": 64,
+        "name": "gaussian_scores_n64",
+        "role": "control",
+        "signal": null
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.07112173646419764
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.08155054203273304,
+            "mean": -0.6641557289956226,
+            "median": -0.5194985561075222,
+            "n": 50,
+            "q25": -1.1181854275070549,
+            "q75": -0.17615569447578278
+          },
+          "k_counts": {
+            "1": 12,
+            "2": 10,
+            "3": 15,
+            "4": 13
+          },
+          "negative_external_gain": 38,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.6183092518959619,
+              0.8693900838025427
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.5350737781872703,
+              0.913950435135328
+            ],
+            "events": 38,
+            "exact_interval_95": [
+              0.6183092518959619,
+              0.8693900838025427
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.060398675482166,
+            "rate_among_available": 0.76,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.76,
+              0.76
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.07112173646419764
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.13100827768006904
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "gaussian_scores",
+        "n_datasets": 50,
+        "n_units": 256,
+        "name": "gaussian_scores_n256",
+        "role": "control",
+        "signal": null
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.07112173646419764
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0130769190582228,
+            "mean": -0.055659503955721154,
+            "median": 0.0,
+            "n": 50,
+            "q25": -0.11215468126110809,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 35,
+            "2": 2,
+            "3": 3,
+            "4": 10
+          },
+          "negative_external_gain": 15,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.17861784566414687,
+              0.4460823256611783
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.12550879513014257,
+              0.5289430853082009
+            ],
+            "events": 15,
+            "exact_interval_95": [
+              0.17861784566414687,
+              0.4460823256611783
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0648074069840786,
+            "rate_among_available": 0.3,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.3,
+              0.3
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 50,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 50,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.07112173646419764
+            ],
+            "available": 50,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.13100827768006904
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.07112173646419764
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 50,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "complementary",
+        "n_datasets": 25,
+        "n_units": 64,
+        "name": "four_n64_s1_5",
+        "role": "alternative",
+        "signal": 1.5
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 25,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": 0.029724917484915587,
+            "mean": 0.19203726629509038,
+            "median": 0.21896420411271897,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.31382684142514305
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.12461013415857965,
+            "mean": -0.6895653437577047,
+            "median": -0.6339621568009193,
+            "n": 25,
+            "q25": -1.1369425042063832,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 8,
+            "2": 1,
+            "3": 7,
+            "4": 9
+          },
+          "negative_external_gain": 17,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.17971682058365537,
+              0.5747936504461505
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.1094979808687981,
+              0.6831369501163542
+            ],
+            "events": 9,
+            "exact_interval_95": [
+              0.17971682058365537,
+              0.5747936504461505
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.096,
+            "rate_among_available": 0.36,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.36,
+              0.36
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 25,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.24485338653943997
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "complementary",
+        "n_datasets": 25,
+        "n_units": 64,
+        "name": "four_n64_s3_0",
+        "role": "alternative",
+        "signal": 3.0
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": 0.04627287446558317,
+            "mean": 0.20019948125367776,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.45707756034852165
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.020056530346255683,
+            "mean": 0.014375991781071306,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.030504734170239564
+          },
+          "k_counts": {
+            "1": 14,
+            "2": 11,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 4,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": 0.02641528417147406,
+            "mean": 0.5562976673057864,
+            "median": 0.5703657780533168,
+            "n": 25,
+            "q25": 0.45707756034852165,
+            "q75": 0.6357848518111965
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.09463238201949256,
+            "mean": -0.3632494101284832,
+            "median": -0.3429488071900177,
+            "n": 25,
+            "q25": -0.6015791299091272,
+            "q75": -0.011301719586235746
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 7,
+            "3": 8,
+            "4": 10
+          },
+          "negative_external_gain": 19,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.211254806465142,
+              0.61334650374316
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.1341411162754977,
+              0.7177066363659597
+            ],
+            "events": 10,
+            "exact_interval_95": [
+              0.211254806465142,
+              0.61334650374316
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.09797958971132711,
+            "rate_among_available": 0.4,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.4,
+              0.4
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": 0.04635929609000802,
+            "mean": 0.2770737491900588,
+            "median": 0.4289788933257273,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.45707756034852165
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.02430043918990247,
+            "mean": 0.04611722053859329,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.11632425517923846
+          },
+          "k_counts": {
+            "1": 10,
+            "2": 15,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 4,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.24485338653943997
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "complementary",
+        "n_datasets": 25,
+        "n_units": 64,
+        "name": "four_n64_s4_5",
+        "role": "alternative",
+        "signal": 4.5
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": 0.014639053256291243,
+            "mean": 0.5113171495204273,
+            "median": 0.4878048780487805,
+            "n": 25,
+            "q25": 0.4878048780487805,
+            "q75": 0.4878048780487805
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.03966962804870774,
+            "mean": 0.3888690579502563,
+            "median": 0.45503896363099394,
+            "n": 25,
+            "q25": 0.32251971068080887,
+            "q75": 0.5108438732320044
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 22,
+            "3": 3,
+            "4": 0
+          },
+          "negative_external_gain": 1,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": 0.030558347894273356,
+            "mean": 0.8449869600433008,
+            "median": 0.9166612452020038,
+            "n": 25,
+            "q25": 0.704225352112676,
+            "q75": 0.9576475180534774
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.06504824805365954,
+            "mean": 0.1980694414540141,
+            "median": 0.24550951717462952,
+            "n": 25,
+            "q25": 0.06176214231449715,
+            "q75": 0.4057918654377676
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 0,
+            "3": 9,
+            "4": 16
+          },
+          "negative_external_gain": 6,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.42520634955384945,
+              0.8202831794163445
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.3168630498836459,
+              0.890502019131202
+            ],
+            "events": 16,
+            "exact_interval_95": [
+              0.42520634955384945,
+              0.8202831794163445
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.096,
+            "rate_among_available": 0.64,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.64,
+              0.64
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": 0.03693225596622459,
+            "mean": 0.5153813105651193,
+            "median": 0.4878048780487805,
+            "n": 25,
+            "q25": 0.4878048780487805,
+            "q75": 0.704225352112676
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.05401876129567078,
+            "mean": 0.32826685714853227,
+            "median": 0.4493396035077527,
+            "n": 25,
+            "q25": 0.12208104318505666,
+            "q75": 0.5108438732320044
+          },
+          "k_counts": {
+            "1": 2,
+            "2": 15,
+            "3": 8,
+            "4": 0
+          },
+          "negative_external_gain": 4,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.24485338653943997
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "complementary",
+        "n_datasets": 25,
+        "n_units": 256,
+        "name": "four_n256_s1_5",
+        "role": "alternative",
+        "signal": 1.5
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 25,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": 0.019879199011372486,
+            "mean": 0.3071634216003191,
+            "median": 0.3325814324542377,
+            "n": 25,
+            "q25": 0.29613727986908217,
+            "q75": 0.3522266036890988
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.013566785646790416,
+            "mean": -0.04121023646600516,
+            "median": -0.004762916445726099,
+            "n": 25,
+            "q25": -0.08520492954509935,
+            "q75": 0.00954833039665184
+          },
+          "k_counts": {
+            "1": 2,
+            "2": 12,
+            "3": 5,
+            "4": 6
+          },
+          "negative_external_gain": 13,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.09356443933174285,
+              0.4512880178166864
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.04713363961089931,
+              0.5682338190863556
+            ],
+            "events": 6,
+            "exact_interval_95": [
+              0.09356443933174285,
+              0.4512880178166864
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0854166260162505,
+            "rate_among_available": 0.24,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.24,
+              0.24
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": 0.028833370150156766,
+            "mean": 0.07033641517107471,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.00480659939071283,
+            "mean": -0.007519975019785927,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 20,
+            "2": 3,
+            "3": 2,
+            "4": 0
+          },
+          "negative_external_gain": 4,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.24485338653943997
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "complementary",
+        "n_datasets": 25,
+        "n_units": 256,
+        "name": "four_n256_s3_0",
+        "role": "alternative",
+        "signal": 3.0
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": 0.014016456225955104,
+            "mean": 0.5013175215752069,
+            "median": 0.48156954974112426,
+            "n": 25,
+            "q25": 0.4666551111496295,
+            "q75": 0.4892599518523414
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.004706862467170712,
+            "mean": 0.30222450033292014,
+            "median": 0.3011947390549008,
+            "n": 25,
+            "q25": 0.2854489933498252,
+            "q75": 0.316725499099712
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 22,
+            "3": 3,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": 0.015491321667994204,
+            "mean": 0.8685508183003836,
+            "median": 0.8891543706549279,
+            "n": 25,
+            "q25": 0.8403452027034227,
+            "q75": 0.9179082862791709
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.008491987194631925,
+            "mean": 0.3811478281932608,
+            "median": 0.38893913895296295,
+            "n": 25,
+            "q25": 0.35062088079454334,
+            "q75": 0.41172330954585457
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 25
+          },
+          "negative_external_gain": 0,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.8628148284692875,
+              1.0
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.7551466134605601,
+              1.0
+            ],
+            "events": 25,
+            "exact_interval_95": [
+              0.8628148284692875,
+              1.0
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 1.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              1.0,
+              1.0
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": 0.020499995473987984,
+            "mean": 0.8551923277102421,
+            "median": 0.8891543706549279,
+            "n": 25,
+            "q25": 0.8403452027034227,
+            "q75": 0.9179082862791709
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.008998846926583808,
+            "mean": 0.37852921580215815,
+            "median": 0.38893913895296295,
+            "n": 25,
+            "q25": 0.3476784018147682,
+            "q75": 0.41172330954585457
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 23
+          },
+          "negative_external_gain": 0,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.7396941578947858,
+              0.9901604099812025
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.6221610768079612,
+              0.9982515793987333
+            ],
+            "events": 23,
+            "exact_interval_95": [
+              0.7396941578947858,
+              0.9901604099812025
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.05425863986500213,
+            "rate_among_available": 0.92,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.92,
+              0.92
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "complementary",
+        "n_datasets": 25,
+        "n_units": 256,
+        "name": "four_n256_s4_5",
+        "role": "alternative",
+        "signal": 4.5
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": 0.0019234164500505624,
+            "mean": 0.9870789888340079,
+            "median": 0.9895421100815222,
+            "n": 25,
+            "q25": 0.979248046875,
+            "q75": 0.9895421100815222
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.010157820240385002,
+            "mean": 0.9595558893579887,
+            "median": 0.9770600887264278,
+            "n": 25,
+            "q25": 0.9304922101518313,
+            "q75": 0.993077063743743
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 25
+          },
+          "negative_external_gain": 0,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.8628148284692875,
+              1.0
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.8628148284692875,
+              1.0
+            ],
+            "events": 25,
+            "exact_interval_95": [
+              0.8628148284692875,
+              1.0
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 1.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              1.0,
+              1.0
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": 0.0019234164500505624,
+            "mean": 0.9870789888340079,
+            "median": 0.9895421100815222,
+            "n": 25,
+            "q25": 0.979248046875,
+            "q75": 0.9895421100815222
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.010157820240385002,
+            "mean": 0.9595558893579887,
+            "median": 0.9770600887264278,
+            "n": 25,
+            "q25": 0.9304922101518313,
+            "q75": 0.993077063743743
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 25
+          },
+          "negative_external_gain": 0,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.8628148284692875,
+              1.0
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.7551466134605601,
+              1.0
+            ],
+            "events": 25,
+            "exact_interval_95": [
+              0.8628148284692875,
+              1.0
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 1.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              1.0,
+              1.0
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": 0.0019234164500505624,
+            "mean": 0.9870789888340079,
+            "median": 0.9895421100815222,
+            "n": 25,
+            "q25": 0.979248046875,
+            "q75": 0.9895421100815222
+          },
+          "available": 25,
+          "event": "K=4",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.010157820240385002,
+            "mean": 0.9595558893579887,
+            "median": 0.9770600887264278,
+            "n": 25,
+            "q25": 0.9304922101518313,
+            "q75": 0.993077063743743
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 25
+          },
+          "negative_external_gain": 0,
+          "primary": true,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.8628148284692875,
+              1.0
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.7551466134605601,
+              1.0
+            ],
+            "events": 25,
+            "exact_interval_95": [
+              0.8628148284692875,
+              1.0
+            ],
+            "family_size": 28,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 1.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              1.0,
+              1.0
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "heavy_tailed",
+        "n_datasets": 25,
+        "n_units": 64,
+        "name": "heavy_tailed_n64",
+        "role": "stress",
+        "signal": null
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 25,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0616181726085801,
+            "mean": -0.09966521244656229,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 19,
+            "2": 6,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 4,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.09356443933174285,
+              0.4512880178166864
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.09356443933174285,
+              0.4512880178166864
+            ],
+            "events": 6,
+            "exact_interval_95": [
+              0.09356443933174285,
+              0.4512880178166864
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0854166260162505,
+            "rate_among_available": 0.24,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.24,
+              0.24
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 25,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.09654589086630175,
+            "mean": -0.24050053720722742,
+            "median": 0.0,
+            "n": 25,
+            "q25": -0.3242587610252379,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 15,
+            "2": 7,
+            "3": 3,
+            "4": 0
+          },
+          "negative_external_gain": 8,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.211254806465142,
+              0.61334650374316
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.211254806465142,
+              0.61334650374316
+            ],
+            "events": 10,
+            "exact_interval_95": [
+              0.211254806465142,
+              0.61334650374316
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.09797958971132711,
+            "rate_among_available": 0.4,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.4,
+              0.4
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 25,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 25,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "cline",
+        "n_datasets": 25,
+        "n_units": 64,
+        "name": "cline_n64",
+        "role": "stress",
+        "signal": null
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 25,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 25,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 25,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0785997807540639,
+            "mean": -0.5709966941295579,
+            "median": -0.6052898596926559,
+            "n": 25,
+            "q25": -0.8122823631594205,
+            "q75": -0.37547964638394715
+          },
+          "k_counts": {
+            "1": 5,
+            "2": 3,
+            "3": 13,
+            "4": 4
+          },
+          "negative_external_gain": 20,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.5929625677213226,
+              0.931688535987516
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.5929625677213226,
+              0.931688535987516
+            ],
+            "events": 20,
+            "exact_interval_95": [
+              0.5929625677213226,
+              0.931688535987516
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.08,
+            "rate_among_available": 0.8,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.8,
+              0.8
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": null,
+            "mean": null,
+            "median": null,
+            "n": 0,
+            "q25": null,
+            "q75": null
+          },
+          "available": 25,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 25,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "k_counts": {
+            "1": 25,
+            "2": 0,
+            "3": 0,
+            "4": 0
+          },
+          "negative_external_gain": 0,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.0,
+              0.1371851715307125
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "events": 0,
+            "exact_interval_95": [
+              0.0,
+              0.1371851715307125
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 0.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    },
+    {
+      "cell": {
+        "law": "unequal_variance",
+        "n_datasets": 25,
+        "n_units": 64,
+        "name": "unequal_variance_n64",
+        "role": "stress",
+        "signal": null
+      },
+      "methods": {
+        "bic": {
+          "ari": {
+            "mcse_mean": 0.020362921451887447,
+            "mean": 0.5339514709250736,
+            "median": 0.4878048780487805,
+            "n": 25,
+            "q25": 0.45707756034852165,
+            "q75": 0.6168277755533947
+          },
+          "available": 25,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.04656134683657341,
+            "mean": 0.4221668462648923,
+            "median": 0.48035758462258293,
+            "n": 25,
+            "q25": 0.30736920525343914,
+            "q75": 0.5604482536758979
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 14,
+            "3": 11,
+            "4": 0
+          },
+          "negative_external_gain": 2,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.8628148284692875,
+              1.0
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.8628148284692875,
+              1.0
+            ],
+            "events": 25,
+            "exact_interval_95": [
+              0.8628148284692875,
+              1.0
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 1.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              1.0,
+              1.0
+            ]
+          },
+          "withheld": 0
+        },
+        "ordinary": {
+          "ari": {
+            "mcse_mean": 0.023527799339430923,
+            "mean": 0.6556044778337585,
+            "median": 0.6686094463078023,
+            "n": 25,
+            "q25": 0.5879163439194423,
+            "q75": 0.7296024119087997
+          },
+          "available": 25,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.07818906604303014,
+            "mean": 0.2135798209391887,
+            "median": 0.2945802628451115,
+            "n": 25,
+            "q25": -0.07873246236337542,
+            "q75": 0.47279739268960574
+          },
+          "k_counts": {
+            "1": 0,
+            "2": 2,
+            "3": 11,
+            "4": 12
+          },
+          "negative_external_gain": 7,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.8628148284692875,
+              1.0
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.8628148284692875,
+              1.0
+            ],
+            "events": 25,
+            "exact_interval_95": [
+              0.8628148284692875,
+              1.0
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.0,
+            "rate_among_available": 1.0,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              1.0,
+              1.0
+            ]
+          },
+          "withheld": 0
+        },
+        "screened": {
+          "ari": {
+            "mcse_mean": 0.02797466092604181,
+            "mean": 0.47865765711537045,
+            "median": 0.4878048780487805,
+            "n": 25,
+            "q25": 0.4289788933257273,
+            "q75": 0.4878048780487805
+          },
+          "available": 25,
+          "event": "K>1",
+          "external_logdensity_gain": {
+            "mcse_mean": 0.03715029006014105,
+            "mean": 0.43493611763249523,
+            "median": 0.475461279599644,
+            "n": 25,
+            "q25": 0.38729573083838065,
+            "q75": 0.5604482536758979
+          },
+          "k_counts": {
+            "1": 1,
+            "2": 18,
+            "3": 6,
+            "4": 0
+          },
+          "negative_external_gain": 1,
+          "primary": false,
+          "rate": {
+            "all_requested_pointwise_envelope": [
+              0.796483086077586,
+              0.9989878003006891
+            ],
+            "available": 25,
+            "bonferroni_familywise_95": [
+              0.796483086077586,
+              0.9989878003006891
+            ],
+            "events": 24,
+            "exact_interval_95": [
+              0.796483086077586,
+              0.9989878003006891
+            ],
+            "family_size": 1,
+            "mcse_among_available": 0.039191835884530866,
+            "rate_among_available": 0.96,
+            "requested": 25,
+            "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+            "withheld": 0,
+            "withheld_outcome_bounds": [
+              0.96,
+              0.96
+            ]
+          },
+          "withheld": 0
+        }
+      }
+    }
+  ],
+  "failed_fits": 0,
+  "no_audit_refits": true,
+  "observations": 625,
+  "paired": [
+    {
+      "available_pairs": 50,
+      "both_do_not_reject": 15,
+      "both_reject": 0,
+      "cell": "independent_gaussian_n64",
+      "confidence": 0.9964285714285714,
+      "conservative_exact_difference_interval": [
+        0.34004863701173005,
+        0.8744912048698574
+      ],
+      "event": "K>1",
+      "family_size": 14,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "ordinary_minus_screened": 0.7,
+      "ordinary_only_events": 35,
+      "requested_pairs": 50,
+      "screened_only_events": 0,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "both_do_not_reject": 35,
+      "both_reject": 0,
+      "cell": "independent_gaussian_n256",
+      "confidence": 0.9964285714285714,
+      "conservative_exact_difference_interval": [
+        -0.0054994825499264655,
+        0.5289430853082009
+      ],
+      "event": "K>1",
+      "family_size": 14,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "ordinary_minus_screened": 0.3,
+      "ordinary_only_events": 15,
+      "requested_pairs": 50,
+      "screened_only_events": 0,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "both_do_not_reject": 15,
+      "both_reject": 0,
+      "cell": "correlated_gaussian_n64",
+      "confidence": 0.9964285714285714,
+      "conservative_exact_difference_interval": [
+        0.34004863701173005,
+        0.8744912048698574
+      ],
+      "event": "K>1",
+      "family_size": 14,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "ordinary_minus_screened": 0.7,
+      "ordinary_only_events": 35,
+      "requested_pairs": 50,
+      "screened_only_events": 0,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "both_do_not_reject": 36,
+      "both_reject": 0,
+      "cell": "correlated_gaussian_n256",
+      "confidence": 0.9964285714285714,
+      "conservative_exact_difference_interval": [
+        -0.019100526670455004,
+        0.5080353773285264
+      ],
+      "event": "K>1",
+      "family_size": 14,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "ordinary_minus_screened": 0.28,
+      "ordinary_only_events": 14,
+      "requested_pairs": 50,
+      "screened_only_events": 0,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "both_do_not_reject": 11,
+      "both_reject": 0,
+      "cell": "zero_conditional_gaussian_n64",
+      "confidence": 0.9964285714285714,
+      "conservative_exact_difference_interval": [
+        0.4263278402145696,
+        0.9261403711459998
+      ],
+      "event": "K>1",
+      "family_size": 14,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "ordinary_minus_screened": 0.78,
+      "ordinary_only_events": 39,
+      "requested_pairs": 50,
+      "screened_only_events": 0,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "both_do_not_reject": 36,
+      "both_reject": 0,
+      "cell": "zero_conditional_gaussian_n256",
+      "confidence": 0.9964285714285714,
+      "conservative_exact_difference_interval": [
+        -0.019100526670455004,
+        0.5080353773285264
+      ],
+      "event": "K>1",
+      "family_size": 14,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "ordinary_minus_screened": 0.28,
+      "ordinary_only_events": 14,
+      "requested_pairs": 50,
+      "screened_only_events": 0,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "both_do_not_reject": 12,
+      "both_reject": 0,
+      "cell": "gaussian_scores_n64",
+      "confidence": 0.9964285714285714,
+      "conservative_exact_difference_interval": [
+        0.40406550050720125,
+        0.913950435135328
+      ],
+      "event": "K>1",
+      "family_size": 14,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "ordinary_minus_screened": 0.76,
+      "ordinary_only_events": 38,
+      "requested_pairs": 50,
+      "screened_only_events": 0,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "both_do_not_reject": 35,
+      "both_reject": 0,
+      "cell": "gaussian_scores_n256",
+      "confidence": 0.9964285714285714,
+      "conservative_exact_difference_interval": [
+        -0.0054994825499264655,
+        0.5289430853082009
+      ],
+      "event": "K>1",
+      "family_size": 14,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "ordinary_minus_screened": 0.3,
+      "ordinary_only_events": 15,
+      "requested_pairs": 50,
+      "screened_only_events": 0,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 25,
+      "both_do_not_reject": 16,
+      "both_reject": 0,
+      "cell": "four_n64_s1_5",
+      "confidence": 0.9964285714285714,
+      "conservative_exact_difference_interval": [
+        -0.13535540567064186,
+        0.6831369501163542
+      ],
+      "event": "K=4",
+      "family_size": 14,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "ordinary_minus_screened": 0.36,
+      "ordinary_only_events": 9,
+      "requested_pairs": 25,
+      "screened_only_events": 0,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 25,
+      "both_do_not_reject": 15,
+      "both_reject": 0,
+      "cell": "four_n64_s3_0",
+      "confidence": 0.9964285714285714,
+      "conservative_exact_difference_interval": [
+        -0.11071227026394226,
+        0.7177066363659597
+      ],
+      "event": "K=4",
+      "family_size": 14,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "ordinary_minus_screened": 0.4,
+      "ordinary_only_events": 10,
+      "requested_pairs": 25,
+      "screened_only_events": 0,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 25,
+      "both_do_not_reject": 9,
+      "both_reject": 0,
+      "cell": "four_n64_s4_5",
+      "confidence": 0.9964285714285714,
+      "conservative_exact_difference_interval": [
+        0.07200966334420592,
+        0.890502019131202
+      ],
+      "event": "K=4",
+      "family_size": 14,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "ordinary_minus_screened": 0.64,
+      "ordinary_only_events": 16,
+      "requested_pairs": 25,
+      "screened_only_events": 0,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 25,
+      "both_do_not_reject": 19,
+      "both_reject": 0,
+      "cell": "four_n256_s1_5",
+      "confidence": 0.9964285714285714,
+      "conservative_exact_difference_interval": [
+        -0.19771974692854066,
+        0.5682338190863556
+      ],
+      "event": "K=4",
+      "family_size": 14,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "ordinary_minus_screened": 0.24,
+      "ordinary_only_events": 6,
+      "requested_pairs": 25,
+      "screened_only_events": 0,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 25,
+      "both_do_not_reject": 0,
+      "both_reject": 23,
+      "cell": "four_n256_s3_0",
+      "confidence": 0.9964285714285714,
+      "conservative_exact_difference_interval": [
+        -0.24310496593817327,
+        0.3778389231920391
+      ],
+      "event": "K=4",
+      "family_size": 14,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "ordinary_minus_screened": 0.08,
+      "ordinary_only_events": 2,
+      "requested_pairs": 25,
+      "screened_only_events": 0,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 25,
+      "both_do_not_reject": 0,
+      "both_reject": 25,
+      "cell": "four_n256_s4_5",
+      "confidence": 0.9964285714285714,
+      "conservative_exact_difference_interval": [
+        -0.24485338653943997,
+        0.24485338653943997
+      ],
+      "event": "K=4",
+      "family_size": 14,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "ordinary_minus_screened": 0.0,
+      "ordinary_only_events": 0,
+      "requested_pairs": 25,
+      "screened_only_events": 0,
+      "withheld_pairs": 0
+    }
+  ],
+  "planned_fits": 3750,
+  "primary_family_size": 28,
+  "primary_rates": [
+    {
+      "all_requested_pointwise_envelope": [
+        0.5539176743388218,
+        0.821382154335853
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.4710569146917991,
+        0.8744912048698574
+      ],
+      "cell": "independent_gaussian_n64",
+      "event": "K>1",
+      "events": 35,
+      "exact_interval_95": [
+        0.5539176743388218,
+        0.821382154335853
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.06480740698407861,
+      "method": "ordinary",
+      "rate_among_available": 0.7,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.07112173646419764
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.13100827768006904
+      ],
+      "cell": "independent_gaussian_n64",
+      "event": "K>1",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.07112173646419764
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0,
+      "method": "screened",
+      "rate_among_available": 0.0,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.17861784566414687,
+        0.4460823256611783
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.12550879513014257,
+        0.5289430853082009
+      ],
+      "cell": "independent_gaussian_n256",
+      "event": "K>1",
+      "events": 15,
+      "exact_interval_95": [
+        0.17861784566414687,
+        0.4460823256611783
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0648074069840786,
+      "method": "ordinary",
+      "rate_among_available": 0.3,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.07112173646419764
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.13100827768006904
+      ],
+      "cell": "independent_gaussian_n256",
+      "event": "K>1",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.07112173646419764
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0,
+      "method": "screened",
+      "rate_among_available": 0.0,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.5539176743388218,
+        0.821382154335853
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.4710569146917991,
+        0.8744912048698574
+      ],
+      "cell": "correlated_gaussian_n64",
+      "event": "K>1",
+      "events": 35,
+      "exact_interval_95": [
+        0.5539176743388218,
+        0.821382154335853
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.06480740698407861,
+      "method": "ordinary",
+      "rate_among_available": 0.7,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.07112173646419764
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.13100827768006904
+      ],
+      "cell": "correlated_gaussian_n64",
+      "event": "K>1",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.07112173646419764
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0,
+      "method": "screened",
+      "rate_among_available": 0.0,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.16231060070717523,
+        0.42490535701610865
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.11190775100961403,
+        0.5080353773285264
+      ],
+      "cell": "correlated_gaussian_n256",
+      "event": "K>1",
+      "events": 14,
+      "exact_interval_95": [
+        0.16231060070717523,
+        0.42490535701610865
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.06349803146555018,
+      "method": "ordinary",
+      "rate_among_available": 0.28,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.28,
+        0.28
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.07112173646419764
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.13100827768006904
+      ],
+      "cell": "correlated_gaussian_n256",
+      "event": "K>1",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.07112173646419764
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0,
+      "method": "screened",
+      "rate_among_available": 0.0,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.6403881114342107,
+        0.8847341739621514
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.5573361178946387,
+        0.9261403711459998
+      ],
+      "cell": "zero_conditional_gaussian_n64",
+      "event": "K>1",
+      "events": 39,
+      "exact_interval_95": [
+        0.6403881114342107,
+        0.8847341739621514
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.05858327406350723,
+      "method": "ordinary",
+      "rate_among_available": 0.78,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.78,
+        0.78
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.07112173646419764
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.13100827768006904
+      ],
+      "cell": "zero_conditional_gaussian_n64",
+      "event": "K>1",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.07112173646419764
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0,
+      "method": "screened",
+      "rate_among_available": 0.0,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.16231060070717523,
+        0.42490535701610865
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.11190775100961403,
+        0.5080353773285264
+      ],
+      "cell": "zero_conditional_gaussian_n256",
+      "event": "K>1",
+      "events": 14,
+      "exact_interval_95": [
+        0.16231060070717523,
+        0.42490535701610865
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.06349803146555018,
+      "method": "ordinary",
+      "rate_among_available": 0.28,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.28,
+        0.28
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.07112173646419764
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.13100827768006904
+      ],
+      "cell": "zero_conditional_gaussian_n256",
+      "event": "K>1",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.07112173646419764
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0,
+      "method": "screened",
+      "rate_among_available": 0.0,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.6183092518959619,
+        0.8693900838025427
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.5350737781872703,
+        0.913950435135328
+      ],
+      "cell": "gaussian_scores_n64",
+      "event": "K>1",
+      "events": 38,
+      "exact_interval_95": [
+        0.6183092518959619,
+        0.8693900838025427
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.060398675482166,
+      "method": "ordinary",
+      "rate_among_available": 0.76,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.76,
+        0.76
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.07112173646419764
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.13100827768006904
+      ],
+      "cell": "gaussian_scores_n64",
+      "event": "K>1",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.07112173646419764
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0,
+      "method": "screened",
+      "rate_among_available": 0.0,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.17861784566414687,
+        0.4460823256611783
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.12550879513014257,
+        0.5289430853082009
+      ],
+      "cell": "gaussian_scores_n256",
+      "event": "K>1",
+      "events": 15,
+      "exact_interval_95": [
+        0.17861784566414687,
+        0.4460823256611783
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0648074069840786,
+      "method": "ordinary",
+      "rate_among_available": 0.3,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.07112173646419764
+      ],
+      "available": 50,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.13100827768006904
+      ],
+      "cell": "gaussian_scores_n256",
+      "event": "K>1",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.07112173646419764
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0,
+      "method": "screened",
+      "rate_among_available": 0.0,
+      "requested": 50,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.17971682058365537,
+        0.5747936504461505
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.1094979808687981,
+        0.6831369501163542
+      ],
+      "cell": "four_n64_s1_5",
+      "event": "K=4",
+      "events": 9,
+      "exact_interval_95": [
+        0.17971682058365537,
+        0.5747936504461505
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.096,
+      "method": "ordinary",
+      "rate_among_available": 0.36,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.36,
+        0.36
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.1371851715307125
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.24485338653943997
+      ],
+      "cell": "four_n64_s1_5",
+      "event": "K=4",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.1371851715307125
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0,
+      "method": "screened",
+      "rate_among_available": 0.0,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.211254806465142,
+        0.61334650374316
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.1341411162754977,
+        0.7177066363659597
+      ],
+      "cell": "four_n64_s3_0",
+      "event": "K=4",
+      "events": 10,
+      "exact_interval_95": [
+        0.211254806465142,
+        0.61334650374316
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.09797958971132711,
+      "method": "ordinary",
+      "rate_among_available": 0.4,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.4,
+        0.4
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.1371851715307125
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.24485338653943997
+      ],
+      "cell": "four_n64_s3_0",
+      "event": "K=4",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.1371851715307125
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0,
+      "method": "screened",
+      "rate_among_available": 0.0,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.42520634955384945,
+        0.8202831794163445
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.3168630498836459,
+        0.890502019131202
+      ],
+      "cell": "four_n64_s4_5",
+      "event": "K=4",
+      "events": 16,
+      "exact_interval_95": [
+        0.42520634955384945,
+        0.8202831794163445
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.096,
+      "method": "ordinary",
+      "rate_among_available": 0.64,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.64,
+        0.64
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.1371851715307125
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.24485338653943997
+      ],
+      "cell": "four_n64_s4_5",
+      "event": "K=4",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.1371851715307125
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0,
+      "method": "screened",
+      "rate_among_available": 0.0,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.09356443933174285,
+        0.4512880178166864
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.04713363961089931,
+        0.5682338190863556
+      ],
+      "cell": "four_n256_s1_5",
+      "event": "K=4",
+      "events": 6,
+      "exact_interval_95": [
+        0.09356443933174285,
+        0.4512880178166864
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0854166260162505,
+      "method": "ordinary",
+      "rate_among_available": 0.24,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.24,
+        0.24
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.0,
+        0.1371851715307125
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.0,
+        0.24485338653943997
+      ],
+      "cell": "four_n256_s1_5",
+      "event": "K=4",
+      "events": 0,
+      "exact_interval_95": [
+        0.0,
+        0.1371851715307125
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0,
+      "method": "screened",
+      "rate_among_available": 0.0,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.8628148284692875,
+        1.0
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.7551466134605601,
+        1.0
+      ],
+      "cell": "four_n256_s3_0",
+      "event": "K=4",
+      "events": 25,
+      "exact_interval_95": [
+        0.8628148284692875,
+        1.0
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0,
+      "method": "ordinary",
+      "rate_among_available": 1.0,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.7396941578947858,
+        0.9901604099812025
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.6221610768079612,
+        0.9982515793987333
+      ],
+      "cell": "four_n256_s3_0",
+      "event": "K=4",
+      "events": 23,
+      "exact_interval_95": [
+        0.7396941578947858,
+        0.9901604099812025
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.05425863986500213,
+      "method": "screened",
+      "rate_among_available": 0.92,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.92,
+        0.92
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.8628148284692875,
+        1.0
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.7551466134605601,
+        1.0
+      ],
+      "cell": "four_n256_s4_5",
+      "event": "K=4",
+      "events": 25,
+      "exact_interval_95": [
+        0.8628148284692875,
+        1.0
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0,
+      "method": "ordinary",
+      "rate_among_available": 1.0,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.8628148284692875,
+        1.0
+      ],
+      "available": 25,
+      "bonferroni_familywise_95": [
+        0.7551466134605601,
+        1.0
+      ],
+      "cell": "four_n256_s4_5",
+      "event": "K=4",
+      "events": 25,
+      "exact_interval_95": [
+        0.8628148284692875,
+        1.0
+      ],
+      "family_size": 28,
+      "mcse_among_available": 0.0,
+      "method": "screened",
+      "rate_among_available": 1.0,
+      "requested": 25,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "scope": "Predictive-screen selection/recovery; no new p-values or species-boundary claims",
+  "screening_withheld": 0,
+  "stability_draws": 0,
+  "successful_fits": 3750,
+  "unattempted_fits": 0
+}
