@@ -21,6 +21,9 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     commands = parser.add_subparsers(dest="command", required=True)
+    from super_deli.benchmarking.aic_diagnostic_cli import register_commands
+
+    aic_commands = register_commands(commands)
     validate = commands.add_parser("validate", help="Check declarations and local file references")
     validate.add_argument("config", type=Path, help="Versioned dataset JSON configuration")
     validate.add_argument("--report", type=Path, help="Also save JSON to a new file")
@@ -424,6 +427,13 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command in aic_commands:
+            from super_deli.benchmarking.aic_diagnostic_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "benchmark-grouped-power":
             from super_deli.benchmarking.grouped_power_study import run_study
             from super_deli.models.grouped_power_config import GroupedPowerStudyConfig

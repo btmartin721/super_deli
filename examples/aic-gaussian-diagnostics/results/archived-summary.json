@@ -1,0 +1,155 @@
+{
+  "audited": 2550,
+  "groups": [
+    {
+      "aic_k_counts": {
+        "1": 178,
+        "2": 66,
+        "3": 138,
+        "4": 118
+      },
+      "aic_multiple_without_old_rejection": 296,
+      "available": 500,
+      "bic_k_counts": {
+        "1": 499,
+        "2": 1,
+        "3": 0,
+        "4": 0
+      },
+      "case": "correlated_gaussian",
+      "cohort": "larger_null_validation",
+      "n": 64,
+      "old_likelihood_rejected": 26,
+      "requested": 500
+    },
+    {
+      "aic_k_counts": {
+        "1": 123,
+        "2": 97,
+        "3": 137,
+        "4": 143
+      },
+      "aic_multiple_without_old_rejection": 350,
+      "available": 500,
+      "bic_k_counts": {
+        "1": 500,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "case": "independent_gaussian",
+      "cohort": "larger_null_validation",
+      "n": 64,
+      "old_likelihood_rejected": 27,
+      "requested": 500
+    },
+    {
+      "aic_k_counts": {
+        "1": 141,
+        "2": 60,
+        "3": 143,
+        "4": 156
+      },
+      "aic_multiple_without_old_rejection": 337,
+      "available": 500,
+      "bic_k_counts": {
+        "1": 500,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "case": "rank_two_gaussian",
+      "cohort": "larger_null_validation",
+      "n": 64,
+      "old_likelihood_rejected": 22,
+      "requested": 500
+    },
+    {
+      "aic_k_counts": {
+        "1": 148,
+        "2": 72,
+        "3": 160,
+        "4": 120
+      },
+      "aic_multiple_without_old_rejection": 329,
+      "available": 500,
+      "bic_k_counts": {
+        "1": 499,
+        "2": 0,
+        "3": 1,
+        "4": 0
+      },
+      "case": "weak_conditional_gaussian",
+      "cohort": "larger_null_validation",
+      "n": 64,
+      "old_likelihood_rejected": 23,
+      "requested": 500
+    },
+    {
+      "aic_k_counts": {
+        "1": 130,
+        "2": 94,
+        "3": 140,
+        "4": 136
+      },
+      "aic_multiple_without_old_rejection": 344,
+      "available": 500,
+      "bic_k_counts": {
+        "1": 500,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "case": "zero_conditional_gaussian",
+      "cohort": "larger_null_validation",
+      "n": 64,
+      "old_likelihood_rejected": 26,
+      "requested": 500
+    },
+    {
+      "aic_k_counts": {
+        "1": 7,
+        "2": 6,
+        "3": 6,
+        "4": 6
+      },
+      "aic_multiple_without_old_rejection": 17,
+      "available": 25,
+      "bic_k_counts": {
+        "1": 25,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "case": "independent_gaussian",
+      "cohort": "power_controls",
+      "n": 64,
+      "old_likelihood_rejected": 1,
+      "requested": 25
+    },
+    {
+      "aic_k_counts": {
+        "1": 21,
+        "2": 0,
+        "3": 2,
+        "4": 2
+      },
+      "aic_multiple_without_old_rejection": 4,
+      "available": 25,
+      "bic_k_counts": {
+        "1": 25,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "case": "independent_gaussian",
+      "cohort": "power_controls",
+      "n": 256,
+      "old_likelihood_rejected": 0,
+      "requested": 25
+    }
+  ],
+  "new_significance_fits": 0,
+  "requested": 2550,
+  "source_models_unchanged": true
+}

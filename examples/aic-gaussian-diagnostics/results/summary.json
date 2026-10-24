@@ -1,0 +1,1476 @@
+{
+  "calibration_draws": 0,
+  "cells": [
+    {
+      "aic_k_counts": {
+        "1": 34,
+        "2": 3,
+        "3": 6,
+        "4": 7
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.012209350186803712,
+        "mean": -0.051965776709018245,
+        "median": 0.0,
+        "n": 50,
+        "q25": -0.09737105293751491,
+        "q75": 0.0
+      },
+      "arm": "baseline",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "correlated_gaussian",
+      "cell": "correlated_gaussian_n256",
+      "n": 256,
+      "negative_aic_selected_heldout_gain": 16,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.19520419466283934,
+          0.4669938401147306
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.14389451472820036,
+          0.5424002908909435
+        ],
+        "events": 16,
+        "exact_interval_95": [
+          0.19520419466283934,
+          0.4669938401147306
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.06596969000988256,
+        "rate_among_available": 0.32,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.32,
+          0.32
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 40,
+        "2": 0,
+        "3": 5,
+        "4": 5
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.010616345372573586,
+        "mean": -0.03585251365931315,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "arm": "homogeneous_mean_noise",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "correlated_gaussian",
+      "cell": "correlated_gaussian_n256",
+      "n": 256,
+      "negative_aic_selected_heldout_gain": 10,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.10030223747257103,
+          0.33718310838348775
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.06503439292946644,
+          0.41261506282737104
+        ],
+        "events": 10,
+        "exact_interval_95": [
+          0.10030223747257103,
+          0.33718310838348775
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.05656854249492381,
+        "rate_among_available": 0.2,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.2,
+          0.2
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 28,
+        "2": 4,
+        "3": 7,
+        "4": 11
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.01408978988069008,
+        "mean": -0.07211661560876831,
+        "median": 0.0,
+        "n": 50,
+        "q25": -0.12719295975079117,
+        "q75": 0.0
+      },
+      "arm": "starts_100",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "correlated_gaussian",
+      "cell": "correlated_gaussian_n256",
+      "n": 256,
+      "negative_aic_selected_heldout_gain": 22,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.2999072209275436,
+          0.5874558770583268
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.2369057999227757,
+          0.6584870488985762
+        ],
+        "events": 22,
+        "exact_interval_95": [
+          0.2999072209275436,
+          0.5874558770583268
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.07019971509913699,
+        "rate_among_available": 0.44,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.44,
+          0.44
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 10,
+        "2": 9,
+        "3": 16,
+        "4": 15
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.0839369467781325,
+        "mean": -0.7568702182959083,
+        "median": -0.782624077853523,
+        "n": 50,
+        "q25": -1.0441133507811466,
+        "q75": -0.3194123442023432
+      },
+      "arm": "baseline",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "correlated_gaussian",
+      "cell": "correlated_gaussian_n64",
+      "n": 64,
+      "negative_aic_selected_heldout_gain": 40,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.6628168916165122,
+          0.899697762527429
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.5873849371726294,
+          0.9349656070705337
+        ],
+        "events": 40,
+        "exact_interval_95": [
+          0.6628168916165122,
+          0.899697762527429
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.0565685424949238,
+        "rate_among_available": 0.8,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.8,
+          0.8
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 18,
+        "2": 7,
+        "3": 13,
+        "4": 12
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.0869808278634174,
+        "mean": -0.5910743428097907,
+        "median": -0.5343668470991126,
+        "n": 50,
+        "q25": -0.8491900652555683,
+        "q75": 0.0
+      },
+      "arm": "homogeneous_mean_noise",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "correlated_gaussian",
+      "cell": "correlated_gaussian_n64",
+      "n": 64,
+      "negative_aic_selected_heldout_gain": 32,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.49193135228560114,
+          0.7708429331794127
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.41755296595833175,
+          0.8264817676535752
+        ],
+        "events": 32,
+        "exact_interval_95": [
+          0.49193135228560114,
+          0.7708429331794127
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.06788225099390856,
+        "rate_among_available": 0.64,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.64,
+          0.64
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 15,
+        "2": 12,
+        "3": 17,
+        "4": 6
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.08670327885641807,
+        "mean": -0.5768237419673096,
+        "median": -0.45161502125022607,
+        "n": 50,
+        "q25": -0.8601614285418698,
+        "q75": 0.0
+      },
+      "arm": "starts_100",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "correlated_gaussian",
+      "cell": "correlated_gaussian_n64",
+      "n": 64,
+      "negative_aic_selected_heldout_gain": 35,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.5539176743388218,
+          0.821382154335853
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.47817165988937743,
+          0.870352276842399
+        ],
+        "events": 35,
+        "exact_interval_95": [
+          0.5539176743388218,
+          0.821382154335853
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.06480740698407861,
+        "rate_among_available": 0.7,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.7,
+          0.7
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 103,
+        "2": 13,
+        "3": 14,
+        "4": 20
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.007634114207808007,
+        "mean": -0.05594159905476467,
+        "median": 0.0,
+        "n": 150,
+        "q25": -0.08286583631488065,
+        "q75": 0.0
+      },
+      "arm": "scores",
+      "bic_k_counts": {
+        "1": 150,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 150,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "gaussian_scores",
+      "cell": "gaussian_scores_n256",
+      "n": 256,
+      "negative_aic_selected_heldout_gain": 47,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.2401519460969112,
+          0.39406171359705106
+        ],
+        "available": 150,
+        "bonferroni_familywise_95": [
+          0.2055368130303058,
+          0.43741566051154385
+        ],
+        "events": 47,
+        "exact_interval_95": [
+          0.2401519460969112,
+          0.39406171359705106
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.037873082398589775,
+        "rate_among_available": 0.31333333333333335,
+        "requested": 150,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.31333333333333335,
+          0.31333333333333335
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 46,
+        "2": 28,
+        "3": 32,
+        "4": 44
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.05332506126030237,
+        "mean": -0.6665681897974016,
+        "median": -0.5824230230564045,
+        "n": 150,
+        "q25": -1.0589381535065825,
+        "q75": 0.0
+      },
+      "arm": "scores",
+      "bic_k_counts": {
+        "1": 149,
+        "2": 1,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0011931016968624807,
+        "mean": -0.001193101696862481,
+        "median": 0.0,
+        "n": 150,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "gaussian_scores",
+      "cell": "gaussian_scores_n64",
+      "n": 64,
+      "negative_aic_selected_heldout_gain": 104,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.6128997034181229,
+          0.7659479938008387
+        ],
+        "available": 150,
+        "bonferroni_familywise_95": [
+          0.5696115284710929,
+          0.8001845219120838
+        ],
+        "events": 104,
+        "exact_interval_95": [
+          0.6128997034181229,
+          0.7659479938008387
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.037649455261417546,
+        "rate_among_available": 0.6933333333333334,
+        "requested": 150,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.6933333333333334,
+          0.6933333333333334
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 34,
+        "2": 4,
+        "3": 3,
+        "4": 9
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.012404536323419996,
+        "mean": -0.05128976761953862,
+        "median": 0.0,
+        "n": 50,
+        "q25": -0.08798132131415116,
+        "q75": 0.0
+      },
+      "arm": "baseline",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "independent_gaussian",
+      "cell": "independent_gaussian_n256",
+      "n": 256,
+      "negative_aic_selected_heldout_gain": 16,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.19520419466283934,
+          0.4669938401147306
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.14389451472820036,
+          0.5424002908909435
+        ],
+        "events": 16,
+        "exact_interval_95": [
+          0.19520419466283934,
+          0.4669938401147306
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.06596969000988256,
+        "rate_among_available": 0.32,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.32,
+          0.32
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 39,
+        "2": 5,
+        "3": 1,
+        "4": 5
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.009672508015013742,
+        "mean": -0.031517170884796414,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "arm": "homogeneous_mean_noise",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "independent_gaussian",
+      "cell": "independent_gaussian_n256",
+      "n": 256,
+      "negative_aic_selected_heldout_gain": 11,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.11526582603784856,
+          0.3596118885657894
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.07696183164004902,
+          0.43540575266168885
+        ],
+        "events": 11,
+        "exact_interval_95": [
+          0.11526582603784856,
+          0.3596118885657894
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.05858327406350724,
+        "rate_among_available": 0.22,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.22,
+          0.22
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 23,
+        "2": 1,
+        "3": 6,
+        "4": 20
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.015005857487354947,
+        "mean": -0.10287044516500421,
+        "median": -0.08876979104750339,
+        "n": 50,
+        "q25": -0.1974895038762305,
+        "q75": 0.0
+      },
+      "arm": "starts_100",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "independent_gaussian",
+      "cell": "independent_gaussian_n256",
+      "n": 256,
+      "negative_aic_selected_heldout_gain": 27,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.3932419761169223,
+          0.6818508214313913
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.32330229995432014,
+          0.7464374625392478
+        ],
+        "events": 27,
+        "exact_interval_95": [
+          0.3932419761169223,
+          0.6818508214313913
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.07048404074682439,
+        "rate_among_available": 0.54,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.54,
+          0.54
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 13,
+        "2": 7,
+        "3": 15,
+        "4": 15
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.06988213290348924,
+        "mean": -0.6022535612035905,
+        "median": -0.6060391391493618,
+        "n": 50,
+        "q25": -0.9763463748352089,
+        "q75": -0.03321016045545668
+      },
+      "arm": "baseline",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "independent_gaussian",
+      "cell": "independent_gaussian_n64",
+      "n": 64,
+      "negative_aic_selected_heldout_gain": 37,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.5965523212719344,
+          0.8536994156034455
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.5205044934361227,
+          0.8976129357025076
+        ],
+        "events": 37,
+        "exact_interval_95": [
+          0.5965523212719344,
+          0.8536994156034455
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.06203224967708329,
+        "rate_among_available": 0.74,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.74,
+          0.74
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 14,
+        "2": 6,
+        "3": 14,
+        "4": 16
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.0855578748342798,
+        "mean": -0.6403489990104247,
+        "median": -0.5114423251995786,
+        "n": 50,
+        "q25": -1.0639266966916714,
+        "q75": 0.0
+      },
+      "arm": "homogeneous_mean_noise",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "independent_gaussian",
+      "cell": "independent_gaussian_n64",
+      "n": 64,
+      "negative_aic_selected_heldout_gain": 36,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.5750946429838912,
+          0.8376893992928247
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.49913257253877397,
+          0.8841963017922947
+        ],
+        "events": 36,
+        "exact_interval_95": [
+          0.5750946429838912,
+          0.8376893992928247
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.06349803146555018,
+        "rate_among_available": 0.72,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.72,
+          0.72
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 14,
+        "2": 14,
+        "3": 10,
+        "4": 12
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.06932660539921474,
+        "mean": -0.5195774123874743,
+        "median": -0.4080464342765725,
+        "n": 50,
+        "q25": -0.8425497253085223,
+        "q75": 0.0
+      },
+      "arm": "starts_100",
+      "bic_k_counts": {
+        "1": 49,
+        "2": 1,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0038105894111910704,
+        "mean": -0.003810589411191069,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "independent_gaussian",
+      "cell": "independent_gaussian_n64",
+      "n": 64,
+      "negative_aic_selected_heldout_gain": 36,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.5750946429838912,
+          0.8376893992928247
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.49913257253877397,
+          0.8841963017922947
+        ],
+        "events": 36,
+        "exact_interval_95": [
+          0.5750946429838912,
+          0.8376893992928247
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.06349803146555018,
+        "rate_among_available": 0.72,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.72,
+          0.72
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 25,
+        "2": 3,
+        "3": 5,
+        "4": 17
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.013413576047596541,
+        "mean": -0.08233644631115584,
+        "median": -0.020985925901367237,
+        "n": 50,
+        "q25": -0.16870297804443912,
+        "q75": 0.0
+      },
+      "arm": "baseline",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "zero_conditional_gaussian",
+      "cell": "zero_conditional_gaussian_n256",
+      "n": 256,
+      "negative_aic_selected_heldout_gain": 25,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.3552729971299086,
+          0.6447270028700913
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.2878129820098534,
+          0.712187017990147
+        ],
+        "events": 25,
+        "exact_interval_95": [
+          0.3552729971299086,
+          0.6447270028700913
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.07071067811865475,
+        "rate_among_available": 0.5,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 40,
+        "2": 1,
+        "3": 4,
+        "4": 5
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.010558082218770411,
+        "mean": -0.03449926436375112,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "arm": "homogeneous_mean_noise",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "zero_conditional_gaussian",
+      "cell": "zero_conditional_gaussian_n256",
+      "n": 256,
+      "negative_aic_selected_heldout_gain": 10,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.10030223747257103,
+          0.33718310838348775
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.06503439292946644,
+          0.41261506282737104
+        ],
+        "events": 10,
+        "exact_interval_95": [
+          0.10030223747257103,
+          0.33718310838348775
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.05656854249492381,
+        "rate_among_available": 0.2,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.2,
+          0.2
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 16,
+        "2": 4,
+        "3": 3,
+        "4": 27
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.014067213431555961,
+        "mean": -0.11989667155006063,
+        "median": -0.14254601534719125,
+        "n": 50,
+        "q25": -0.19344356606279808,
+        "q75": 0.0
+      },
+      "arm": "starts_100",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "zero_conditional_gaussian",
+      "cell": "zero_conditional_gaussian_n256",
+      "n": 256,
+      "negative_aic_selected_heldout_gain": 34,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.5330061598852696,
+          0.8047958053371607
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.45759970910905695,
+          0.8561054852718
+        ],
+        "events": 34,
+        "exact_interval_95": [
+          0.5330061598852696,
+          0.8047958053371607
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.06596969000988256,
+        "rate_among_available": 0.68,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.68,
+          0.68
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 16,
+        "2": 7,
+        "3": 13,
+        "4": 14
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.08162258813373166,
+        "mean": -0.6006106507108298,
+        "median": -0.4968504106420629,
+        "n": 50,
+        "q25": -1.0695401660911759,
+        "q75": 0.0
+      },
+      "arm": "baseline",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "zero_conditional_gaussian",
+      "cell": "zero_conditional_gaussian_n64",
+      "n": 64,
+      "negative_aic_selected_heldout_gain": 34,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.5330061598852696,
+          0.8047958053371607
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.45759970910905695,
+          0.8561054852718
+        ],
+        "events": 34,
+        "exact_interval_95": [
+          0.5330061598852696,
+          0.8047958053371607
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.06596969000988256,
+        "rate_among_available": 0.68,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.68,
+          0.68
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 18,
+        "2": 6,
+        "3": 16,
+        "4": 10
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.07213958673425977,
+        "mean": -0.4924136306022436,
+        "median": -0.37361561391305836,
+        "n": 50,
+        "q25": -0.8270583116063068,
+        "q75": 0.0
+      },
+      "arm": "homogeneous_mean_noise",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "zero_conditional_gaussian",
+      "cell": "zero_conditional_gaussian_n64",
+      "n": 64,
+      "negative_aic_selected_heldout_gain": 32,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.49193135228560114,
+          0.7708429331794127
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.41755296595833175,
+          0.8264817676535752
+        ],
+        "events": 32,
+        "exact_interval_95": [
+          0.49193135228560114,
+          0.7708429331794127
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.06788225099390856,
+        "rate_among_available": 0.64,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.64,
+          0.64
+        ]
+      }
+    },
+    {
+      "aic_k_counts": {
+        "1": 22,
+        "2": 6,
+        "3": 18,
+        "4": 4
+      },
+      "aic_selected_heldout_gain": {
+        "mcse_mean": 0.05870465859441192,
+        "mean": -0.36675053477764363,
+        "median": -0.22459275793229075,
+        "n": 50,
+        "q25": -0.6401820718386156,
+        "q75": 0.0
+      },
+      "arm": "starts_100",
+      "bic_k_counts": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "bic_selected_heldout_gain": {
+        "mcse_mean": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 50,
+        "q25": 0.0,
+        "q75": 0.0
+      },
+      "case": "zero_conditional_gaussian",
+      "cell": "zero_conditional_gaussian_n64",
+      "n": 64,
+      "negative_aic_selected_heldout_gain": 28,
+      "primary_aic_multiple_components": {
+        "all_requested_pointwise_envelope": [
+          0.4125441229416732,
+          0.7000927790724565
+        ],
+        "available": 50,
+        "bonferroni_familywise_95": [
+          0.34151295110142416,
+          0.7630942000772246
+        ],
+        "events": 28,
+        "exact_interval_95": [
+          0.4125441229416732,
+          0.7000927790724565
+        ],
+        "family_size": 20,
+        "mcse_among_available": 0.07019971509913697,
+        "rate_among_available": 0.56,
+        "requested": 50,
+        "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+        "withheld": 0,
+        "withheld_outcome_bounds": [
+          0.56,
+          0.56
+        ]
+      }
+    }
+  ],
+  "failed_fits": 0,
+  "interval_scope": "Exact simultaneous intervals for independent-dataset K>1 rates; not species uncertainty",
+  "no_audit_refits": true,
+  "paired": [
+    {
+      "available_pairs": 50,
+      "baseline_minus_control": 0.02,
+      "baseline_only_events": 7,
+      "both_events": 30,
+      "cell": "independent_gaussian_n64",
+      "confidence": 0.9958333333333333,
+      "conservative_exact_difference_interval": [
+        -0.28689048785910604,
+        0.3212763193805813
+      ],
+      "control_arm": "homogeneous_mean_noise",
+      "control_only_events": 6,
+      "difference_scope": "Baseline minus control; exact marginal discordance bounds adjusted over prescribed comparisons",
+      "family_size": 12,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "neither_event": 7,
+      "requested_pairs": 50,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "baseline_minus_control": 0.02,
+      "baseline_only_events": 7,
+      "both_events": 30,
+      "cell": "independent_gaussian_n64",
+      "confidence": 0.9958333333333333,
+      "conservative_exact_difference_interval": [
+        -0.28689048785910604,
+        0.3212763193805813
+      ],
+      "control_arm": "starts_100",
+      "control_only_events": 6,
+      "difference_scope": "Baseline minus control; exact marginal discordance bounds adjusted over prescribed comparisons",
+      "family_size": 12,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "neither_event": 7,
+      "requested_pairs": 50,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "baseline_minus_control": 0.1,
+      "baseline_only_events": 7,
+      "both_events": 9,
+      "cell": "independent_gaussian_n256",
+      "confidence": 0.9958333333333333,
+      "conservative_exact_difference_interval": [
+        -0.1720139889674508,
+        0.3435795989118341
+      ],
+      "control_arm": "homogeneous_mean_noise",
+      "control_only_events": 2,
+      "difference_scope": "Baseline minus control; exact marginal discordance bounds adjusted over prescribed comparisons",
+      "family_size": 12,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "neither_event": 32,
+      "requested_pairs": 50,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "baseline_minus_control": -0.22,
+      "baseline_only_events": 0,
+      "both_events": 16,
+      "cell": "independent_gaussian_n256",
+      "confidence": 0.9958333333333333,
+      "conservative_exact_difference_interval": [
+        -0.43936264510113926,
+        0.05306565926770493
+      ],
+      "control_arm": "starts_100",
+      "control_only_events": 11,
+      "difference_scope": "Baseline minus control; exact marginal discordance bounds adjusted over prescribed comparisons",
+      "family_size": 12,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "neither_event": 23,
+      "requested_pairs": 50,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "baseline_minus_control": 0.16,
+      "baseline_only_events": 10,
+      "both_events": 30,
+      "cell": "correlated_gaussian_n64",
+      "confidence": 0.9958333333333333,
+      "conservative_exact_difference_interval": [
+        -0.14061425225529794,
+        0.41563737354588176
+      ],
+      "control_arm": "homogeneous_mean_noise",
+      "control_only_events": 2,
+      "difference_scope": "Baseline minus control; exact marginal discordance bounds adjusted over prescribed comparisons",
+      "family_size": 12,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "neither_event": 8,
+      "requested_pairs": 50,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "baseline_minus_control": 0.1,
+      "baseline_only_events": 9,
+      "both_events": 31,
+      "cell": "correlated_gaussian_n64",
+      "confidence": 0.9958333333333333,
+      "conservative_exact_difference_interval": [
+        -0.21242568246760293,
+        0.38431728703320034
+      ],
+      "control_arm": "starts_100",
+      "control_only_events": 4,
+      "difference_scope": "Baseline minus control; exact marginal discordance bounds adjusted over prescribed comparisons",
+      "family_size": 12,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "neither_event": 6,
+      "requested_pairs": 50,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "baseline_minus_control": 0.12,
+      "baseline_only_events": 8,
+      "both_events": 8,
+      "cell": "correlated_gaussian_n256",
+      "confidence": 0.9958333333333333,
+      "conservative_exact_difference_interval": [
+        -0.1622804448778108,
+        0.3682877851652171
+      ],
+      "control_arm": "homogeneous_mean_noise",
+      "control_only_events": 2,
+      "difference_scope": "Baseline minus control; exact marginal discordance bounds adjusted over prescribed comparisons",
+      "family_size": 12,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "neither_event": 32,
+      "requested_pairs": 50,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "baseline_minus_control": -0.12,
+      "baseline_only_events": 1,
+      "both_events": 15,
+      "cell": "correlated_gaussian_n256",
+      "confidence": 0.9958333333333333,
+      "conservative_exact_difference_interval": [
+        -0.3444947867830758,
+        0.13735299762841496
+      ],
+      "control_arm": "starts_100",
+      "control_only_events": 7,
+      "difference_scope": "Baseline minus control; exact marginal discordance bounds adjusted over prescribed comparisons",
+      "family_size": 12,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "neither_event": 27,
+      "requested_pairs": 50,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "baseline_minus_control": 0.04,
+      "baseline_only_events": 13,
+      "both_events": 21,
+      "cell": "zero_conditional_gaussian_n64",
+      "confidence": 0.9958333333333333,
+      "conservative_exact_difference_interval": [
+        -0.33897262030692765,
+        0.40816832416932525
+      ],
+      "control_arm": "homogeneous_mean_noise",
+      "control_only_events": 11,
+      "difference_scope": "Baseline minus control; exact marginal discordance bounds adjusted over prescribed comparisons",
+      "family_size": 12,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "neither_event": 5,
+      "requested_pairs": 50,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "baseline_minus_control": 0.12,
+      "baseline_only_events": 11,
+      "both_events": 23,
+      "cell": "zero_conditional_gaussian_n64",
+      "confidence": 0.9958333333333333,
+      "conservative_exact_difference_interval": [
+        -0.2172039965253539,
+        0.42392800932194585
+      ],
+      "control_arm": "starts_100",
+      "control_only_events": 5,
+      "difference_scope": "Baseline minus control; exact marginal discordance bounds adjusted over prescribed comparisons",
+      "family_size": 12,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "neither_event": 11,
+      "requested_pairs": 50,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "baseline_minus_control": 0.3,
+      "baseline_only_events": 16,
+      "both_events": 9,
+      "cell": "zero_conditional_gaussian_n256",
+      "confidence": 0.9958333333333333,
+      "conservative_exact_difference_interval": [
+        -0.02794210263713054,
+        0.546226944543739
+      ],
+      "control_arm": "homogeneous_mean_noise",
+      "control_only_events": 1,
+      "difference_scope": "Baseline minus control; exact marginal discordance bounds adjusted over prescribed comparisons",
+      "family_size": 12,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "neither_event": 24,
+      "requested_pairs": 50,
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 50,
+      "baseline_minus_control": -0.18,
+      "baseline_only_events": 0,
+      "both_events": 25,
+      "cell": "zero_conditional_gaussian_n256",
+      "confidence": 0.9958333333333333,
+      "conservative_exact_difference_interval": [
+        -0.39321527283970686,
+        0.07600517757573763
+      ],
+      "control_arm": "starts_100",
+      "control_only_events": 9,
+      "difference_scope": "Baseline minus control; exact marginal discordance bounds adjusted over prescribed comparisons",
+      "family_size": 12,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "neither_event": 16,
+      "requested_pairs": 50,
+      "withheld_pairs": 0
+    }
+  ],
+  "point_fits": 1200,
+  "prediction_scope": "Independent test data through each frozen training map; gains within each score space only",
+  "primary_family_size": 20,
+  "scope": "Gaussian-control component selection and score-space prediction; no new p-values or species claims",
+  "stability_draws": 0,
+  "successful_fits": 1200
+}

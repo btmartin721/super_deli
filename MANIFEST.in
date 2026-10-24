@@ -74,3 +74,6 @@ recursive-include docs/figures/grouped-false-positives *.pdf *.svg *.png
 
 recursive-include examples/grouped-power-recovery *.json *.py *.csv
 recursive-include docs/figures/grouped-power-recovery *.pdf *.svg *.png
+
+recursive-include examples/aic-gaussian-diagnostics *.json *.py *.csv
+recursive-include docs/figures/aic-gaussian-diagnostics *.pdf *.svg *.png

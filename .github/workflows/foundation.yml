@@ -188,3 +188,8 @@ jobs:
         run: |
           cd "$RUNNER_TEMP"
           python "$GITHUB_WORKSPACE/examples/grouped-power-recovery/smoke.py" --output-dir "$RUNNER_TEMP/grouped-power-recovery-smoke"
+      - name: Check Gaussian AIC diagnostic installed workflow
+        shell: bash
+        run: |
+          cd "$RUNNER_TEMP"
+          python "$GITHUB_WORKSPACE/examples/aic-gaussian-diagnostics/smoke.py" --output-dir "$RUNNER_TEMP/aic-gaussian-diagnostic-smoke"

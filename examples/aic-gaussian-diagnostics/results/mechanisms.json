@@ -1,0 +1,2122 @@
+{
+  "archived": [
+    {
+      "aic_multiple": 322,
+      "available": 500,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 500
+        },
+        "2": {
+          "eligible": 488,
+          "small_component": 12
+        },
+        "3": {
+          "eligible": 417,
+          "small_component": 83
+        },
+        "4": {
+          "eligible": 242,
+          "small_component": 258
+        }
+      },
+      "case": "correlated_gaussian",
+      "cohort": "larger_null_validation",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 11.33770076629545,
+        "mean": 6.1538379817109545,
+        "median": 5.8408915577341975,
+        "minimum": 4.022167791369714,
+        "n": 322
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 30.0,
+        "mean": 10.267080745341614,
+        "median": 9.0,
+        "minimum": 5.0,
+        "n": 322
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.22880914640963873,
+          "mean": 0.06317876860845374,
+          "median": 0.0561318898214421,
+          "minimum": 0.0006506153324102315,
+          "n": 322
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": null,
+          "mean": null,
+          "median": null,
+          "minimum": null,
+          "n": 0
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.29891879625976814,
+          "mean": 0.11329495228132858,
+          "median": 0.1068060680882594,
+          "minimum": 0.0014345490538550496,
+          "n": 322
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 58836.946484613436,
+          "mean": 4721.694422952365,
+          "median": 985.0681675964437,
+          "minimum": 1.0000881680532034,
+          "n": 322
+        }
+      },
+      "n": 64
+    },
+    {
+      "aic_multiple": 377,
+      "available": 500,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 500
+        },
+        "2": {
+          "eligible": 486,
+          "small_component": 14
+        },
+        "3": {
+          "eligible": 423,
+          "small_component": 77
+        },
+        "4": {
+          "eligible": 284,
+          "small_component": 216
+        }
+      },
+      "case": "independent_gaussian",
+      "cohort": "larger_null_validation",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 10.25452398403348,
+        "mean": 5.876160600631862,
+        "median": 5.487569479485986,
+        "minimum": 4.020313882003734,
+        "n": 377
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 31.0,
+        "mean": 11.13262599469496,
+        "median": 9.0,
+        "minimum": 5.0,
+        "n": 377
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.22377082358769554,
+          "mean": 0.05728200305732843,
+          "median": 0.050796840729168444,
+          "minimum": 0.0012652901911320014,
+          "n": 377
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": null,
+          "mean": null,
+          "median": null,
+          "minimum": null,
+          "n": 0
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.27273440165824464,
+          "mean": 0.10484282322404645,
+          "median": 0.09736370938961664,
+          "minimum": 0.0014324128642175201,
+          "n": 377
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 54020.96251823331,
+          "mean": 5632.761715259444,
+          "median": 1750.1388831019754,
+          "minimum": 1.021537861944704,
+          "n": 377
+        }
+      },
+      "n": 64
+    },
+    {
+      "aic_multiple": 359,
+      "available": 500,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 500
+        },
+        "2": {
+          "eligible": 491,
+          "small_component": 9
+        },
+        "3": {
+          "eligible": 427,
+          "small_component": 73
+        },
+        "4": {
+          "eligible": 282,
+          "small_component": 218
+        }
+      },
+      "case": "rank_two_gaussian",
+      "cohort": "larger_null_validation",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 11.26281926064438,
+        "mean": 5.97534130204208,
+        "median": 5.620922550493081,
+        "minimum": 4.047713332649935,
+        "n": 359
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 32.0,
+        "mean": 10.83008356545961,
+        "median": 9.0,
+        "minimum": 5.0,
+        "n": 359
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.20127337168319123,
+          "mean": 0.0630322590688792,
+          "median": 0.05861891524489028,
+          "minimum": 0.0006127667537797199,
+          "n": 359
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": null,
+          "mean": null,
+          "median": null,
+          "minimum": null,
+          "n": 0
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.28046957953469526,
+          "mean": 0.10964982751601275,
+          "median": 0.10032478884756739,
+          "minimum": 0.0036829877379929085,
+          "n": 359
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 50666.943512918384,
+          "mean": 4664.116525125646,
+          "median": 1184.0745515905905,
+          "minimum": 1.0068645961273595,
+          "n": 359
+        }
+      },
+      "n": 64
+    },
+    {
+      "aic_multiple": 352,
+      "available": 500,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 500
+        },
+        "2": {
+          "eligible": 493,
+          "small_component": 7
+        },
+        "3": {
+          "eligible": 441,
+          "small_component": 59
+        },
+        "4": {
+          "eligible": 261,
+          "small_component": 239
+        }
+      },
+      "case": "weak_conditional_gaussian",
+      "cohort": "larger_null_validation",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 11.979197604715896,
+        "mean": 5.910603034410284,
+        "median": 5.561528322942413,
+        "minimum": 4.004308706294671,
+        "n": 352
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 32.0,
+        "mean": 11.048295454545455,
+        "median": 9.5,
+        "minimum": 5.0,
+        "n": 352
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.2238357039293114,
+          "mean": 0.05632964528277452,
+          "median": 0.04797939944724162,
+          "minimum": 0.000990694430630823,
+          "n": 352
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": null,
+          "mean": null,
+          "median": null,
+          "minimum": null,
+          "n": 0
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.2757712634867967,
+          "mean": 0.11252047151851566,
+          "median": 0.10219094434745374,
+          "minimum": 0.002935665344839884,
+          "n": 352
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 55737.761065999955,
+          "mean": 4492.248632738453,
+          "median": 1222.6631583096612,
+          "minimum": 1.0075807950102293,
+          "n": 352
+        }
+      },
+      "n": 64
+    },
+    {
+      "aic_multiple": 370,
+      "available": 500,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 500
+        },
+        "2": {
+          "eligible": 485,
+          "small_component": 15
+        },
+        "3": {
+          "eligible": 420,
+          "small_component": 80
+        },
+        "4": {
+          "eligible": 249,
+          "small_component": 251
+        }
+      },
+      "case": "zero_conditional_gaussian",
+      "cohort": "larger_null_validation",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 11.498794055923955,
+        "mean": 6.249235728217993,
+        "median": 5.973221788585409,
+        "minimum": 4.006433974943015,
+        "n": 370
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 32.0,
+        "mean": 10.464864864864865,
+        "median": 9.0,
+        "minimum": 5.0,
+        "n": 370
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.20894589865607918,
+          "mean": 0.06395432827668293,
+          "median": 0.059462483058048354,
+          "minimum": 0.0006491978555850375,
+          "n": 370
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": null,
+          "mean": null,
+          "median": null,
+          "minimum": null,
+          "n": 0
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.3317555190171364,
+          "mean": 0.11121542439689591,
+          "median": 0.10761913514943912,
+          "minimum": 0.0009730400792777481,
+          "n": 370
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 42274.99047600454,
+          "mean": 3846.9923875086934,
+          "median": 974.3186972956205,
+          "minimum": 1.00043029115962,
+          "n": 370
+        }
+      },
+      "n": 64
+    },
+    {
+      "aic_multiple": 18,
+      "available": 25,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 25
+        },
+        "2": {
+          "eligible": 23,
+          "small_component": 2
+        },
+        "3": {
+          "eligible": 21,
+          "small_component": 4
+        },
+        "4": {
+          "eligible": 10,
+          "small_component": 15
+        }
+      },
+      "case": "independent_gaussian",
+      "cohort": "power_controls",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 9.23842859563989,
+        "mean": 5.533487292053824,
+        "median": 4.909322304516105,
+        "minimum": 4.113604958839536,
+        "n": 18
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 30.0,
+        "mean": 13.38888888888889,
+        "median": 14.5,
+        "minimum": 5.0,
+        "n": 18
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.1166088908452305,
+          "mean": 0.05368783273882605,
+          "median": 0.04885379549105322,
+          "minimum": 0.00711395626998948,
+          "n": 18
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": null,
+          "mean": null,
+          "median": null,
+          "minimum": null,
+          "n": 0
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.21545262248130898,
+          "mean": 0.10688810412551394,
+          "median": 0.09900836776912048,
+          "minimum": 0.022095900955561132,
+          "n": 18
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 32554.339584433026,
+          "mean": 8311.766074816005,
+          "median": 4480.942368600111,
+          "minimum": 52.94901281007257,
+          "n": 18
+        }
+      },
+      "n": 64
+    },
+    {
+      "aic_multiple": 4,
+      "available": 25,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 25
+        },
+        "2": {
+          "eligible": 25
+        },
+        "3": {
+          "eligible": 25
+        },
+        "4": {
+          "eligible": 25
+        }
+      },
+      "case": "independent_gaussian",
+      "cohort": "power_controls",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 7.138658090771033,
+        "mean": 5.870315217230118,
+        "median": 5.889819005305703,
+        "minimum": 4.562964767538034,
+        "n": 4
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 44.0,
+        "mean": 34.5,
+        "median": 32.5,
+        "minimum": 29.0,
+        "n": 4
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.03204332613695659,
+          "mean": 0.021353074712119696,
+          "median": 0.022493734627676447,
+          "minimum": 0.00838150345616931,
+          "n": 4
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": null,
+          "mean": null,
+          "median": null,
+          "minimum": null,
+          "n": 0
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.42904187112859304,
+          "mean": 0.3382824771355073,
+          "median": 0.3692043485589778,
+          "minimum": 0.18567934029548042,
+          "n": 4
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 62963.20796677738,
+          "mean": 29020.221958309132,
+          "median": 22506.4328397004,
+          "minimum": 8104.814187058343,
+          "n": 4
+        }
+      },
+      "n": 256
+    }
+  ],
+  "fresh": [
+    {
+      "aic_multiple": 16,
+      "arm": "baseline",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 50
+        },
+        "3": {
+          "eligible": 50
+        },
+        "4": {
+          "eligible": 50
+        }
+      },
+      "cell": "correlated_gaussian_n256",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 9.758423040578238,
+        "mean": 5.821140110371314,
+        "median": 5.610474090938457,
+        "minimum": 4.363514853445592,
+        "n": 16
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 121.0,
+        "mean": 49.25,
+        "median": 37.5,
+        "minimum": 10.0,
+        "n": 16
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.03429968406361471,
+          "mean": 0.01653421874564015,
+          "median": 0.01298117667148084,
+          "minimum": 0.003891755967751348,
+          "n": 16
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.054672327099074984,
+          "mean": -0.16239305221568204,
+          "median": -0.15367067221881708,
+          "minimum": -0.3114614821967011,
+          "n": 16
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.5723178774705842,
+          "mean": 0.43667098942373317,
+          "median": 0.47268496469779575,
+          "minimum": 0.2040993554315373,
+          "n": 16
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 84675.05998842613,
+          "mean": 25646.394895035064,
+          "median": 16423.65753645551,
+          "minimum": 235.67783802392822,
+          "n": 16
+        }
+      },
+      "multiple_negative_heldout_gain": 16
+    },
+    {
+      "aic_multiple": 10,
+      "arm": "homogeneous_mean_noise",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 50
+        },
+        "3": {
+          "eligible": 50
+        },
+        "4": {
+          "eligible": 50
+        }
+      },
+      "cell": "correlated_gaussian_n256",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 7.046385563670404,
+        "mean": 5.677656397217121,
+        "median": 5.5535929483106035,
+        "minimum": 4.30060621042919,
+        "n": 10
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 61.0,
+        "mean": 36.1,
+        "median": 37.0,
+        "minimum": 15.0,
+        "n": 10
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.03470474611382371,
+          "mean": 0.014147425836867542,
+          "median": 0.012464836171235342,
+          "minimum": 0.002091257014235584,
+          "n": 10
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.12067839319600233,
+          "mean": -0.17926256829656573,
+          "median": -0.1728795142336907,
+          "minimum": -0.26454296486444007,
+          "n": 10
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.5246044200446531,
+          "mean": 0.3940179942738513,
+          "median": 0.3873211478678223,
+          "minimum": 0.24389724262348259,
+          "n": 10
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 36765.700482157554,
+          "mean": 18125.390257311883,
+          "median": 15852.844220669405,
+          "minimum": 2629.3946647544276,
+          "n": 10
+        }
+      },
+      "multiple_negative_heldout_gain": 10
+    },
+    {
+      "aic_multiple": 22,
+      "arm": "starts_100",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 50
+        },
+        "3": {
+          "eligible": 50
+        },
+        "4": {
+          "eligible": 47,
+          "small_component": 3
+        }
+      },
+      "cell": "correlated_gaussian_n256",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 9.758423040578238,
+        "mean": 6.072420742661137,
+        "median": 5.961329873647978,
+        "minimum": 4.363514853445592,
+        "n": 22
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 121.0,
+        "mean": 43.09090909090909,
+        "median": 31.5,
+        "minimum": 9.0,
+        "n": 22
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.03429968406361471,
+          "mean": 0.016037145826109857,
+          "median": 0.015169326451029416,
+          "minimum": 0.003467515843253815,
+          "n": 22
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.04132684821423707,
+          "mean": -0.16390139911083706,
+          "median": -0.14056066213555743,
+          "minimum": -0.36969052231091704,
+          "n": 22
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.5614534797096609,
+          "mean": 0.40685610117637483,
+          "median": 0.44775564576810745,
+          "minimum": 0.2040993554315373,
+          "n": 22
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 84675.05998842613,
+          "mean": 22034.89422368647,
+          "median": 10457.369645768871,
+          "minimum": 150.15884779244604,
+          "n": 22
+        }
+      },
+      "multiple_negative_heldout_gain": 22
+    },
+    {
+      "aic_multiple": 40,
+      "arm": "baseline",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 48,
+          "small_component": 2
+        },
+        "3": {
+          "eligible": 45,
+          "small_component": 5
+        },
+        "4": {
+          "eligible": 28,
+          "small_component": 22
+        }
+      },
+      "cell": "correlated_gaussian_n64",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 8.337492769838162,
+        "mean": 6.033926292624509,
+        "median": 5.735268799059782,
+        "minimum": 4.023587735841768,
+        "n": 40
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 20.0,
+        "mean": 10.05,
+        "median": 9.0,
+        "minimum": 5.0,
+        "n": 40
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.13704740065740598,
+          "mean": 0.06025585940657546,
+          "median": 0.0569825459039637,
+          "minimum": 0.008531841569379417,
+          "n": 40
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.22715310592560545,
+          "mean": -0.9460877728698854,
+          "median": -0.9515055323270836,
+          "minimum": -2.020091596744733,
+          "n": 40
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.29239330041907347,
+          "mean": 0.11183662308191196,
+          "median": 0.10575679354057067,
+          "minimum": 0.03484198936538245,
+          "n": 40
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 30773.816024268,
+          "mean": 4981.23338751829,
+          "median": 1372.5936891518406,
+          "minimum": 1.0449783488901017,
+          "n": 40
+        }
+      },
+      "multiple_negative_heldout_gain": 40
+    },
+    {
+      "aic_multiple": 32,
+      "arm": "homogeneous_mean_noise",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 49,
+          "small_component": 1
+        },
+        "3": {
+          "eligible": 47,
+          "small_component": 3
+        },
+        "4": {
+          "eligible": 23,
+          "small_component": 27
+        }
+      },
+      "cell": "correlated_gaussian_n64",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 7.746997807389205,
+        "mean": 5.871946720177357,
+        "median": 5.43050836871951,
+        "minimum": 4.101040281992386,
+        "n": 32
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 26.0,
+        "mean": 10.5625,
+        "median": 8.5,
+        "minimum": 5.0,
+        "n": 32
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.11586929867194254,
+          "mean": 0.04823942957036517,
+          "median": 0.04404602567887235,
+          "minimum": 0.009475635421467149,
+          "n": 32
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.3048229874956826,
+          "mean": -0.923553660640298,
+          "median": -0.7739036223750361,
+          "minimum": -2.3827790077487547,
+          "n": 32
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.22660599071701765,
+          "mean": 0.10875937062376625,
+          "median": 0.11044621953081855,
+          "minimum": 0.028028307835026717,
+          "n": 32
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 22848.480122952027,
+          "mean": 3570.7409266716277,
+          "median": 953.4416736279417,
+          "minimum": 3.832339149738663,
+          "n": 32
+        }
+      },
+      "multiple_negative_heldout_gain": 32
+    },
+    {
+      "aic_multiple": 35,
+      "arm": "starts_100",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 46,
+          "small_component": 4
+        },
+        "3": {
+          "eligible": 26,
+          "small_component": 24
+        },
+        "4": {
+          "eligible": 7,
+          "small_component": 43
+        }
+      },
+      "cell": "correlated_gaussian_n64",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 7.57135006167792,
+        "mean": 5.495578776828986,
+        "median": 5.301558805445263,
+        "minimum": 4.023587735841768,
+        "n": 35
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 27.0,
+        "mean": 11.942857142857143,
+        "median": 10.0,
+        "minimum": 5.0,
+        "n": 35
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.16577091068394284,
+          "mean": 0.05853137193242381,
+          "median": 0.04411755857116194,
+          "minimum": 0.0008358512859850398,
+          "n": 35
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.2772783582679821,
+          "mean": -0.8240339170961564,
+          "median": -0.6897697852798865,
+          "minimum": -3.2857878238176457,
+          "n": 35
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.24295997536631253,
+          "mean": 0.12074231264515564,
+          "median": 0.11994265588337445,
+          "minimum": 0.05006525833518256,
+          "n": 35
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 30930.961541618453,
+          "mean": 5403.857341600205,
+          "median": 1476.1230369147488,
+          "minimum": 1.0449782551216076,
+          "n": 35
+        }
+      },
+      "multiple_negative_heldout_gain": 35
+    },
+    {
+      "aic_multiple": 47,
+      "arm": "scores",
+      "available": 150,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 150
+        },
+        "2": {
+          "eligible": 150
+        },
+        "3": {
+          "eligible": 150
+        },
+        "4": {
+          "eligible": 150
+        }
+      },
+      "cell": "gaussian_scores_n256",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 8.718238514977653,
+        "mean": 5.166431838404775,
+        "median": 4.882545782390648,
+        "minimum": 4.04571832423984,
+        "n": 47
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 123.0,
+        "mean": 56.48936170212766,
+        "median": 48.0,
+        "minimum": 14.0,
+        "n": 47
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": null,
+          "mean": null,
+          "median": null,
+          "minimum": null,
+          "n": 0
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.05407127537951117,
+          "mean": -0.1785370182598872,
+          "median": -0.1904245197356229,
+          "minimum": -0.3249868826583726,
+          "n": 47
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.5477721359141049,
+          "mean": 0.3779343716111062,
+          "median": 0.3930469410841163,
+          "minimum": 0.2185913128487854,
+          "n": 47
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 105426.75858626152,
+          "mean": 37311.055899353225,
+          "median": 30605.961974886428,
+          "minimum": 719.0629586494628,
+          "n": 47
+        }
+      },
+      "multiple_negative_heldout_gain": 47
+    },
+    {
+      "aic_multiple": 104,
+      "arm": "scores",
+      "available": 150,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 150
+        },
+        "2": {
+          "eligible": 147,
+          "small_component": 3
+        },
+        "3": {
+          "eligible": 119,
+          "small_component": 31
+        },
+        "4": {
+          "eligible": 89,
+          "small_component": 61
+        }
+      },
+      "cell": "gaussian_scores_n64",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 9.082481745988009,
+        "mean": 5.896333038781576,
+        "median": 5.617147792932578,
+        "minimum": 4.008539788772654,
+        "n": 104
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 32.0,
+        "mean": 11.39423076923077,
+        "median": 9.0,
+        "minimum": 5.0,
+        "n": 104
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": null,
+          "mean": null,
+          "median": null,
+          "minimum": null,
+          "n": 0
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.10853358261368629,
+          "mean": -0.9613964275924064,
+          "median": -0.833277346786181,
+          "minimum": -3.1502331556694267,
+          "n": 104
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.25537227347505487,
+          "mean": 0.10008796273903418,
+          "median": 0.09153762057143547,
+          "minimum": 0.0009739811392905387,
+          "n": 104
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 59357.17059820635,
+          "mean": 7740.390217338984,
+          "median": 2053.187496482262,
+          "minimum": 1.0095420263540165,
+          "n": 104
+        }
+      },
+      "multiple_negative_heldout_gain": 104
+    },
+    {
+      "aic_multiple": 16,
+      "arm": "baseline",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 50
+        },
+        "3": {
+          "eligible": 50
+        },
+        "4": {
+          "eligible": 50
+        }
+      },
+      "cell": "independent_gaussian_n256",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 7.997111648460147,
+        "mean": 5.375521415623845,
+        "median": 5.222193563728792,
+        "minimum": 4.2597063994486515,
+        "n": 16
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 97.0,
+        "mean": 48.375,
+        "median": 45.5,
+        "minimum": 17.0,
+        "n": 16
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.03376081528515852,
+          "mean": 0.01126930746490985,
+          "median": 0.008644108687823025,
+          "minimum": 0.0007780157155412859,
+          "n": 16
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.03705763033659953,
+          "mean": -0.16028052381105823,
+          "median": -0.16171366575608823,
+          "minimum": -0.3294299382383117,
+          "n": 16
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.5010123973721006,
+          "mean": 0.3779713123959928,
+          "median": 0.3871484822333042,
+          "minimum": 0.16051570416874267,
+          "n": 16
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 113078.02228671468,
+          "mean": 36456.36706090811,
+          "median": 16809.816718157632,
+          "minimum": 3359.6074931388403,
+          "n": 16
+        }
+      },
+      "multiple_negative_heldout_gain": 16
+    },
+    {
+      "aic_multiple": 11,
+      "arm": "homogeneous_mean_noise",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 50
+        },
+        "3": {
+          "eligible": 50
+        },
+        "4": {
+          "eligible": 50
+        }
+      },
+      "cell": "independent_gaussian_n256",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 6.401219257770114,
+        "mean": 5.0135232746515435,
+        "median": 5.0404324015391015,
+        "minimum": 4.014985287659874,
+        "n": 11
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 114.0,
+        "mean": 66.27272727272727,
+        "median": 47.0,
+        "minimum": 20.0,
+        "n": 11
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.018735551070270973,
+          "mean": 0.008786189752314799,
+          "median": 0.006771157969523697,
+          "minimum": 0.002736958760487296,
+          "n": 11
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.05571410246220339,
+          "mean": -0.14325986765816554,
+          "median": -0.17427529361962596,
+          "minimum": -0.2510106619380793,
+          "n": 11
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.5492863329093122,
+          "mean": 0.3544915380505318,
+          "median": 0.3341638100263077,
+          "minimum": 0.19026348064393234,
+          "n": 11
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 98070.2016375223,
+          "mean": 50125.270033332425,
+          "median": 23622.460639882782,
+          "minimum": 5551.2522608007785,
+          "n": 11
+        }
+      },
+      "multiple_negative_heldout_gain": 11
+    },
+    {
+      "aic_multiple": 27,
+      "arm": "starts_100",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 50
+        },
+        "3": {
+          "eligible": 50
+        },
+        "4": {
+          "eligible": 49,
+          "small_component": 1
+        }
+      },
+      "cell": "independent_gaussian_n256",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 11.845666149246775,
+        "mean": 5.880411100153833,
+        "median": 5.605307600853739,
+        "minimum": 4.197352731439005,
+        "n": 27
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 85.0,
+        "mean": 35.370370370370374,
+        "median": 35.0,
+        "minimum": 9.0,
+        "n": 27
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.029876139784708336,
+          "mean": 0.014809949020778732,
+          "median": 0.013895770487607054,
+          "minimum": 0.0017140578354664926,
+          "n": 27
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.04603272803863513,
+          "mean": -0.19050082437963745,
+          "median": -0.1961966551610371,
+          "minimum": -0.29087272524539315,
+          "n": 27
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.5278020315618961,
+          "mean": 0.3854962500244032,
+          "median": 0.3979616545228265,
+          "minimum": 0.2035228032039463,
+          "n": 27
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 99836.98296985513,
+          "mean": 15531.12453852054,
+          "median": 7567.20449559879,
+          "minimum": 403.8631616052224,
+          "n": 27
+        }
+      },
+      "multiple_negative_heldout_gain": 27
+    },
+    {
+      "aic_multiple": 37,
+      "arm": "baseline",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 49,
+          "small_component": 1
+        },
+        "3": {
+          "eligible": 46,
+          "small_component": 4
+        },
+        "4": {
+          "eligible": 29,
+          "small_component": 21
+        }
+      },
+      "cell": "independent_gaussian_n64",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 11.150624192375115,
+        "mean": 5.945979098308809,
+        "median": 5.66869897713228,
+        "minimum": 4.273385492972221,
+        "n": 37
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 30.0,
+        "mean": 10.81081081081081,
+        "median": 10.0,
+        "minimum": 5.0,
+        "n": 37
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.1770733573929099,
+          "mean": 0.06650124087074018,
+          "median": 0.0649482520114517,
+          "minimum": 0.00045502764881574786,
+          "n": 37
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.13284064182182673,
+          "mean": -0.8138561637886358,
+          "median": -0.7789608241591035,
+          "minimum": -1.5061188115037534,
+          "n": 37
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.20974458211099287,
+          "mean": 0.10698667076497519,
+          "median": 0.09966603881659755,
+          "minimum": 0.023292512082966576,
+          "n": 37
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 36703.52221059402,
+          "mean": 4396.6446016557065,
+          "median": 1650.5800961786547,
+          "minimum": 1.0000099877791004,
+          "n": 37
+        }
+      },
+      "multiple_negative_heldout_gain": 37
+    },
+    {
+      "aic_multiple": 36,
+      "arm": "homogeneous_mean_noise",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 46,
+          "small_component": 4
+        },
+        "3": {
+          "eligible": 45,
+          "small_component": 5
+        },
+        "4": {
+          "eligible": 29,
+          "small_component": 21
+        }
+      },
+      "cell": "independent_gaussian_n64",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 9.085392610785211,
+        "mean": 5.757091447978957,
+        "median": 5.595898823786072,
+        "minimum": 4.328959338287668,
+        "n": 36
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 20.0,
+        "mean": 10.305555555555555,
+        "median": 10.0,
+        "minimum": 5.0,
+        "n": 36
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.13339979372384805,
+          "mean": 0.06164573388647359,
+          "median": 0.06299436603655313,
+          "minimum": 0.001451368755524332,
+          "n": 36
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.12275137631177169,
+          "mean": -0.8893736097367011,
+          "median": -0.8730696499357277,
+          "minimum": -2.9157070819853272,
+          "n": 36
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.24519816169730715,
+          "mean": 0.09183002928259103,
+          "median": 0.07971013652117247,
+          "minimum": 0.018615373112733872,
+          "n": 36
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 61376.00784822009,
+          "mean": 7063.480141566757,
+          "median": 2387.2278574815637,
+          "minimum": 7.688283805783039,
+          "n": 36
+        }
+      },
+      "multiple_negative_heldout_gain": 36
+    },
+    {
+      "aic_multiple": 36,
+      "arm": "starts_100",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 42,
+          "small_component": 8
+        },
+        "3": {
+          "eligible": 25,
+          "small_component": 25
+        },
+        "4": {
+          "eligible": 14,
+          "small_component": 36
+        }
+      },
+      "cell": "independent_gaussian_n64",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 10.614721997142748,
+        "mean": 6.034656077975791,
+        "median": 5.444251216515824,
+        "minimum": 4.093065357378304,
+        "n": 36
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 31.0,
+        "mean": 12.277777777777779,
+        "median": 10.5,
+        "minimum": 5.0,
+        "n": 36
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.16149428353987796,
+          "mean": 0.057792039426649566,
+          "median": 0.03361759858418879,
+          "minimum": 0.00045502764881574786,
+          "n": 36
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.1360780519328047,
+          "mean": -0.7216352949826033,
+          "median": -0.7375114957804471,
+          "minimum": -1.831185201401413,
+          "n": 36
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.23762060287989056,
+          "mean": 0.10375009442979596,
+          "median": 0.10311404634211191,
+          "minimum": 0.0006517570424258996,
+          "n": 36
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 30039.219984581796,
+          "mean": 4741.901349402191,
+          "median": 1804.5419463883431,
+          "minimum": 1.0494685540718922,
+          "n": 36
+        }
+      },
+      "multiple_negative_heldout_gain": 36
+    },
+    {
+      "aic_multiple": 25,
+      "arm": "baseline",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 50
+        },
+        "3": {
+          "eligible": 50
+        },
+        "4": {
+          "eligible": 50
+        }
+      },
+      "cell": "zero_conditional_gaussian_n256",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 11.50469232669322,
+        "mean": 6.631851069625102,
+        "median": 6.290000921791224,
+        "minimum": 4.259644826293732,
+        "n": 25
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 109.0,
+        "mean": 37.2,
+        "median": 28.0,
+        "minimum": 5.0,
+        "n": 25
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.08018037631026405,
+          "mean": 0.027486403151374687,
+          "median": 0.021928418416268997,
+          "minimum": 0.003306241507803065,
+          "n": 25
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.041971851802734474,
+          "mean": -0.1646728926223117,
+          "median": -0.1687336488690901,
+          "minimum": -0.28820959001852975,
+          "n": 25
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.5863271073087923,
+          "mean": 0.4505565666764755,
+          "median": 0.4690161228805863,
+          "minimum": 0.21653289698761416,
+          "n": 25
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 74992.76853201013,
+          "mean": 15614.971728194352,
+          "median": 9201.002630491024,
+          "minimum": 58.54417774217518,
+          "n": 25
+        }
+      },
+      "multiple_negative_heldout_gain": 25
+    },
+    {
+      "aic_multiple": 10,
+      "arm": "homogeneous_mean_noise",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 50
+        },
+        "3": {
+          "eligible": 50
+        },
+        "4": {
+          "eligible": 49,
+          "small_component": 1
+        }
+      },
+      "cell": "zero_conditional_gaussian_n256",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 8.72400292217021,
+        "mean": 5.322474808187602,
+        "median": 4.775021230011614,
+        "minimum": 4.320147851354278,
+        "n": 10
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 119.0,
+        "mean": 44.1,
+        "median": 40.5,
+        "minimum": 9.0,
+        "n": 10
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.04608607870446545,
+          "mean": 0.015612643455255992,
+          "median": 0.01219328270043945,
+          "minimum": 0.003721719044624039,
+          "n": 10
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.058312137789643406,
+          "mean": -0.17249632181875563,
+          "median": -0.1761355001872304,
+          "minimum": -0.2707568796108841,
+          "n": 10
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.5458778178812117,
+          "mean": 0.4000796537191307,
+          "median": 0.4089547946830651,
+          "minimum": 0.23339765020065073,
+          "n": 10
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 43672.33964043479,
+          "mean": 15433.818044997863,
+          "median": 12079.395628757062,
+          "minimum": 48.32277300576611,
+          "n": 10
+        }
+      },
+      "multiple_negative_heldout_gain": 10
+    },
+    {
+      "aic_multiple": 34,
+      "arm": "starts_100",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 50
+        },
+        "3": {
+          "eligible": 50
+        },
+        "4": {
+          "eligible": 47,
+          "small_component": 3
+        }
+      },
+      "cell": "zero_conditional_gaussian_n256",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 14.324339230864915,
+        "mean": 7.006288820372785,
+        "median": 6.428007431820538,
+        "minimum": 4.232473019387063,
+        "n": 34
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 111.0,
+        "mean": 34.0,
+        "median": 26.0,
+        "minimum": 5.0,
+        "n": 34
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.0627438061349866,
+          "mean": 0.02558195825995928,
+          "median": 0.02175738687481043,
+          "minimum": 0.00285082648914535,
+          "n": 34
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.02921578772016066,
+          "mean": -0.17631863463244213,
+          "median": -0.17828864185921064,
+          "minimum": -0.30354562506733795,
+          "n": 34
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.6253063641357314,
+          "mean": 0.4152815476266021,
+          "median": 0.4218133900677924,
+          "minimum": 0.21653289698761416,
+          "n": 34
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 70175.272756909,
+          "mean": 9272.047593125193,
+          "median": 5290.574946244848,
+          "minimum": 20.884749646537028,
+          "n": 34
+        }
+      },
+      "multiple_negative_heldout_gain": 34
+    },
+    {
+      "aic_multiple": 34,
+      "arm": "baseline",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 48,
+          "small_component": 2
+        },
+        "3": {
+          "eligible": 38,
+          "small_component": 12
+        },
+        "4": {
+          "eligible": 23,
+          "small_component": 27
+        }
+      },
+      "cell": "zero_conditional_gaussian_n64",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 9.93444866517078,
+        "mean": 6.099795405095627,
+        "median": 6.0653237479761195,
+        "minimum": 4.2294624323086465,
+        "n": 34
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 28.0,
+        "mean": 10.588235294117647,
+        "median": 8.5,
+        "minimum": 5.0,
+        "n": 34
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.15044693075472446,
+          "mean": 0.06753290040617961,
+          "median": 0.06285874691524976,
+          "minimum": 0.01135128947592845,
+          "n": 34
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.18110230276347183,
+          "mean": -0.8832509569276908,
+          "median": -0.865135023004513,
+          "minimum": -1.9709690852165882,
+          "n": 34
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.30993932685460596,
+          "mean": 0.12131450234127762,
+          "median": 0.12232525904729245,
+          "minimum": 0.02265645397293566,
+          "n": 34
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 24308.67182801437,
+          "mean": 3913.2281509997915,
+          "median": 1157.0949604605166,
+          "minimum": 7.472082047290223,
+          "n": 34
+        }
+      },
+      "multiple_negative_heldout_gain": 34
+    },
+    {
+      "aic_multiple": 32,
+      "arm": "homogeneous_mean_noise",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 49,
+          "small_component": 1
+        },
+        "3": {
+          "eligible": 44,
+          "small_component": 6
+        },
+        "4": {
+          "eligible": 24,
+          "small_component": 26
+        }
+      },
+      "cell": "zero_conditional_gaussian_n64",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 9.403734328431172,
+        "mean": 5.818049396389508,
+        "median": 5.541518126120797,
+        "minimum": 4.274407106688748,
+        "n": 32
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 28.0,
+        "mean": 10.59375,
+        "median": 9.5,
+        "minimum": 5.0,
+        "n": 32
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.09667937895073422,
+          "mean": 0.04947807301645836,
+          "median": 0.050470897656457174,
+          "minimum": 0.0015150348945291436,
+          "n": 32
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.19565522573709465,
+          "mean": -0.7693962978160056,
+          "median": -0.7100918850298452,
+          "minimum": -1.9326006723271945,
+          "n": 32
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.22265275707370033,
+          "mean": 0.10881889499422662,
+          "median": 0.10280255190454654,
+          "minimum": 0.04287161668312168,
+          "n": 32
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 29037.251936594435,
+          "mean": 3487.167411742957,
+          "median": 553.122053379313,
+          "minimum": 4.230147239444009,
+          "n": 32
+        }
+      },
+      "multiple_negative_heldout_gain": 32
+    },
+    {
+      "aic_multiple": 28,
+      "arm": "starts_100",
+      "available": 50,
+      "candidate_status_counts": {
+        "1": {
+          "eligible": 50
+        },
+        "2": {
+          "eligible": 44,
+          "small_component": 6
+        },
+        "3": {
+          "eligible": 25,
+          "small_component": 25
+        },
+        "4": {
+          "eligible": 4,
+          "small_component": 46
+        }
+      },
+      "cell": "zero_conditional_gaussian_n64",
+      "maximum_component_mean_mahalanobis_squared": {
+        "maximum": 10.261402433885818,
+        "mean": 6.6725258509745355,
+        "median": 6.393852188014052,
+        "minimum": 4.2294624323086465,
+        "n": 28
+      },
+      "minimum_selected_hard_size": {
+        "maximum": 28.0,
+        "mean": 9.25,
+        "median": 7.0,
+        "minimum": 5.0,
+        "n": 28
+      },
+      "multiple_component_diagnostics": {
+        "count_label_mutual_information": {
+          "maximum": 0.1631849924760299,
+          "mean": 0.06349893699338598,
+          "median": 0.0583752327936414,
+          "minimum": 0.005848244830400723,
+          "n": 28
+        },
+        "heldout_mean_logdensity_gain_over_one": {
+          "maximum": -0.1450213306127637,
+          "mean": -0.6549116692457922,
+          "median": -0.6019735361888099,
+          "minimum": -1.4710471935357616,
+          "n": 28
+        },
+        "mean_assignment_entropy": {
+          "maximum": 0.30993932685460596,
+          "mean": 0.11502017257022455,
+          "median": 0.10964038935442577,
+          "minimum": 0.0018068043705493455,
+          "n": 28
+        },
+        "minimum_eigenvalue_over_regularizer": {
+          "maximum": 15872.355575848278,
+          "mean": 2396.6147458654027,
+          "median": 418.28583841294517,
+          "minimum": 1.0116299068731829,
+          "n": 28
+        }
+      },
+      "multiple_negative_heldout_gain": 28
+    }
+  ],
+  "optimization": [
+    {
+      "available_pairs": 50,
+      "candidate_comparisons": [
+        {
+          "eligibility_changes": 0,
+          "k": 1,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 0,
+          "k": 2,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 3.0726843089298654,
+            "mean": 0.33904585823308936,
+            "median": 0.0,
+            "minimum": -0.011752793440223286,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 0,
+          "k": 3,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 11.781187202095452,
+            "mean": 2.2542354878418767,
+            "median": 0.9342732414975217,
+            "minimum": -0.007375124739837702,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 3,
+          "k": 4,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 22.24392732719116,
+            "mean": 4.434957640235998,
+            "median": 2.4362346189355435,
+            "minimum": 0.0,
+            "n": 50
+          }
+        }
+      ],
+      "cell": "correlated_gaussian_n256",
+      "selected_k_changes": 13
+    },
+    {
+      "available_pairs": 50,
+      "candidate_comparisons": [
+        {
+          "eligibility_changes": 0,
+          "k": 1,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 2,
+          "k": 2,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 11.051083233012037,
+            "mean": 1.4178151081800463,
+            "median": 0.029525367826650495,
+            "minimum": 0.0,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 19,
+          "k": 3,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 25.799729169820992,
+            "mean": 7.291492926580668,
+            "median": 5.437414171893607,
+            "minimum": -4.3783643377537373e-11,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 23,
+          "k": 4,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 35.818744134159644,
+            "mean": 11.848043902767502,
+            "median": 10.836826572183398,
+            "minimum": 0.0,
+            "n": 50
+          }
+        }
+      ],
+      "cell": "correlated_gaussian_n64",
+      "selected_k_changes": 30
+    },
+    {
+      "available_pairs": 50,
+      "candidate_comparisons": [
+        {
+          "eligibility_changes": 0,
+          "k": 1,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 0,
+          "k": 2,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 6.708366022786095,
+            "mean": 1.0111054542598958,
+            "median": 0.4041930048420568,
+            "minimum": 0.0,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 0,
+          "k": 3,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 12.217891873592862,
+            "mean": 3.3402185059486715,
+            "median": 2.461486520226117,
+            "minimum": 0.0,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 1,
+          "k": 4,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 18.90425185934987,
+            "mean": 5.396442240092192,
+            "median": 4.775132532545115,
+            "minimum": 0.0,
+            "n": 50
+          }
+        }
+      ],
+      "cell": "independent_gaussian_n256",
+      "selected_k_changes": 16
+    },
+    {
+      "available_pairs": 50,
+      "candidate_comparisons": [
+        {
+          "eligibility_changes": 0,
+          "k": 1,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 7,
+          "k": 2,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 28.194420174427705,
+            "mean": 5.301894149617355,
+            "median": 2.7427926860459593,
+            "minimum": 0.0,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 21,
+          "k": 3,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 21.59647861608903,
+            "mean": 9.873855074828906,
+            "median": 8.316560130359676,
+            "minimum": 0.0,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 17,
+          "k": 4,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 23.78867429327225,
+            "mean": 11.07360297691921,
+            "median": 11.915645342979936,
+            "minimum": 0.0,
+            "n": 50
+          }
+        }
+      ],
+      "cell": "independent_gaussian_n64",
+      "selected_k_changes": 27
+    },
+    {
+      "available_pairs": 50,
+      "candidate_comparisons": [
+        {
+          "eligibility_changes": 0,
+          "k": 1,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 0,
+          "k": 2,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 9.779422505463799,
+            "mean": 0.8841743232539556,
+            "median": 0.003641083128172795,
+            "minimum": -0.00677601579354814,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 0,
+          "k": 3,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 10.2042835349298,
+            "mean": 1.693828136111921,
+            "median": 0.702555337268052,
+            "minimum": 0.0,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 3,
+          "k": 4,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 23.07824691627019,
+            "mean": 4.767984690155409,
+            "median": 2.7370607923475063,
+            "minimum": 0.0,
+            "n": 50
+          }
+        }
+      ],
+      "cell": "zero_conditional_gaussian_n256",
+      "selected_k_changes": 15
+    },
+    {
+      "available_pairs": 50,
+      "candidate_comparisons": [
+        {
+          "eligibility_changes": 0,
+          "k": 1,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "minimum": 0.0,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 4,
+          "k": 2,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 33.11853719498757,
+            "mean": 3.1976864795237385,
+            "median": 0.021455454493079174,
+            "minimum": 0.0,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 13,
+          "k": 3,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 23.336442315977678,
+            "mean": 6.059995344186413,
+            "median": 2.6332446173774855,
+            "minimum": 0.0,
+            "n": 50
+          }
+        },
+        {
+          "eligibility_changes": 21,
+          "k": 4,
+          "long_minus_baseline_loglikelihood": {
+            "maximum": 29.392674815737436,
+            "mean": 9.96677552056966,
+            "median": 9.75486179744815,
+            "minimum": 0.0,
+            "n": 50
+          }
+        }
+      ],
+      "cell": "zero_conditional_gaussian_n64",
+      "selected_k_changes": 26
+    }
+  ],
+  "scope": "Descriptive mechanisms; no refits, p-values, model selection on test data or default changes"
+}

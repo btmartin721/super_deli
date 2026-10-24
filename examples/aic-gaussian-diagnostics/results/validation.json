@@ -1,0 +1,42 @@
+{
+  "archived_observations_audited": 2550,
+  "base_master": "6992696a50d698d2578f3ccb4014d34fb609b712",
+  "calibration_draws": 0,
+  "existing_source_modules_unchanged": 143,
+  "failed_main_searches": 0,
+  "foundation_tests_passed": 867,
+  "foundation_tests_skipped": 97,
+  "fresh_observations": 600,
+  "fresh_searches": 1200,
+  "frozen_source_modules": 154,
+  "independent_checker": {
+    "candidates_checked": 4800,
+    "failed_searches": 0,
+    "no_refits": true,
+    "observations": 600,
+    "standard_library_check_passed": true,
+    "successful_searches": 1200
+  },
+  "installed_smoke_searches": 20,
+  "main_searches": 1250,
+  "preservation_before_after_identical": true,
+  "python_support": ">=3.11,<3.13",
+  "runtime_versions": {
+    "numpy": "2.2.6",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.3",
+    "snpio": "1.7.7",
+    "super-deli": "0.35.0.dev0",
+    "threadpoolctl": "3.6.0"
+  },
+  "scientific_tests_passed": 1383,
+  "scope": "Diagnostic only; production models, defaults, historical p-values and start eligibility unchanged",
+  "seed_domain": {
+    "disjoint": true,
+    "fresh_main_seeds": 1200,
+    "prior_unique_seeds_checked": 464616
+  },
+  "separate_preflight_searches": 25,
+  "stability_draws": 0,
+  "verified_main_replays": 50
+}

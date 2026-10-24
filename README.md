@@ -425,3 +425,13 @@ Defaults and historical p-values are preserved.
 
 The [completed full-covariance group-mean study](docs/full-groupmean-calibration-results.md)
 reports all 175 observations, full-pipeline checks and uncertainty.
+
+
+The [Gaussian-control AIC diagnostic](docs/aic-gaussian-diagnostics.md) examines
+finite-sample component selection, unequal-count measurement variance, optimization
+and independent prediction. It preserves production fitting, defaults and all
+historical p-values; detailed evidence stays local.
+
+The [completed Gaussian-control diagnosis](docs/aic-gaussian-diagnostics-results.md)
+reports 1,250 verified searches and the audit of 2,550 archived observations,
+with uncertainty and independent held-out prediction.
