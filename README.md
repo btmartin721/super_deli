@@ -4,12 +4,13 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: grouped boundary-rejection diagnostics.**
-See the [method](docs/grouped-boundary-diagnostics.md) and
-[paired diagnostic results](docs/grouped-boundary-diagnostics-results.md).
-Fresh boundary decisions match the known-law controls, so the earlier elevation
-is not consistently reproduced or isolated to fitted covariance boundaries.
-Calibration remains unresolved; the AIC/likelihood option stays experimental.
+**Current checkpoint: larger grouped false-positive validation.**
+See the [frozen method](docs/grouped-false-positive-validation.md) and
+[completed results](docs/grouped-false-positive-validation-results.md).
+The study completed 2,500 datasets and 497,500 pipeline fits. Fitted-null rejection
+was 4.4–5.4% and known-parameter controls 4.6–5.8%; all ten adjusted rate intervals
+include the nominal 5%. Earlier elevated boundary rates did not persist in this
+cohort. General calibration and species-boundary validity remain unestablished;
 BIC defaults, production fitting/sampling and historical p-values are unchanged.
 Genomic, numeric morphology/ecology and shape scores can be fused by exact unit
 IDs or explicit population/locality aggregation, with prespecified view weights.

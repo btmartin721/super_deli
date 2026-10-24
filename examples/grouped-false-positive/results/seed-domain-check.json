@@ -1,0 +1,10 @@
+{
+  "all_distinct": true,
+  "disjoint_from_retained_prior_seeds": true,
+  "fresh_data_seeds": 2500,
+  "fresh_null_streams": 2500,
+  "fresh_paired_draw_seeds": 247500,
+  "prior_data_seeds": 1700,
+  "prior_null_streams": 1700,
+  "prior_paired_draw_seeds": 168300
+}

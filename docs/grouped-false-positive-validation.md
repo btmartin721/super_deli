@@ -76,14 +76,16 @@ checker recomputes both statistics and every tail independently of the numerical
 package. Audits never refit a model.
 
 Full inputs, parameters, draws, candidate models, failures and logs are retained
-outside Git; portable aggregate evidence and compressed audited tables accompany
-the results. Existing archives and checkouts are fingerprinted before/after.
+outside Git. Only small aggregate summaries, settings, figures and checksums
+of published records accompany the published results; detailed audit tables remain local.
+Existing archives and checkouts are fingerprinted before/after.
 Source availability at checkpoint start is recorded explicitly; an earlier
 source download already absent at that time is not claimed as preserved.
 
 ## Reproduction
 
-Use Python 3.11 or 3.12 with the clustering extra. Freeze the recorded numerical
+Use Python 3.11 or 3.12 with the clustering extra. Figure generation additionally
+requires Matplotlib 3.7 or newer. Freeze the recorded numerical
 versions when reproducing the published fit experiment. A separate smoke uses
 one dataset/law and one draw/arm, with the same 64-locality analysis settings.
 

@@ -48,7 +48,8 @@ def report(summary, destination):
     top.axhline(5, color="#555555", ls="--", lw=1, label="Nominal 5%")
     top.set_ylabel("Rejection rate (%)")
     top.set_title("Grouped likelihood-gain calibration: fixed-procedure Gaussian null validation")
-    top.legend(frameon=False, ncol=3)
+    handles, legend_labels = top.get_legend_handles_labels()
+    figure.legend(handles, legend_labels, frameon=False, ncol=3, loc="outside upper center")
     for r in summary["paired_decisions"]:
         pos = names.index(r["case"])
         if r["known_minus_fitted"] is None:

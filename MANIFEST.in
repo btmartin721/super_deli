@@ -68,3 +68,6 @@ recursive-include docs/figures/grouped-likelihood *.pdf *.svg *.png
 
 recursive-include examples/grouped-boundary-diagnostics *.json *.csv *.py *.gz
 recursive-include docs/figures/grouped-boundary-diagnostics *.pdf *.svg *.png
+
+recursive-include examples/grouped-false-positive *.json *.py
+recursive-include docs/figures/grouped-false-positives *.pdf *.svg *.png

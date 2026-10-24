@@ -1,0 +1,30 @@
+{
+  "BIC_comparisons": "descriptive only",
+  "alpha": 0.05,
+  "cases": [
+    "independent_gaussian",
+    "correlated_gaussian",
+    "zero_conditional_gaussian",
+    "rank_two_gaussian",
+    "weak_conditional_gaussian"
+  ],
+  "datasets_per_case": 500,
+  "draws_per_arm": 99,
+  "familywise_confidence": 0.95,
+  "familywise_method": "Bonferroni exact Clopper-Pearson over five cases by two arms",
+  "localities": 64,
+  "master_seed": 20261118,
+  "missing_test_policy": "Withhold incomplete p-values; no replacements; retain bounds",
+  "model_seed": 71323,
+  "new_unique_pipeline_fits": 497500,
+  "no_parameter_tuning": true,
+  "paired_difference": "known minus fitted; exact discordance bounds, Bonferroni within pair",
+  "pointwise_confidence": 0.95,
+  "precision_planning_mcse_at_5pct": 0.009746794344808964,
+  "primary_rates": 10,
+  "primary_statistic": "max_eligible_likelihood_gain_v1",
+  "runtime_commit": "9c336d137da70f5f2cd772f575daeaead10c3adb",
+  "schema_version": 1,
+  "seed_records_retained_locally": 2500,
+  "stability_bootstrap": false
+}

@@ -1,0 +1,8 @@
+{
+  "finished_utc": "2026-10-24T11:00:27.776297+00:00",
+  "returncode": 0,
+  "started_utc": "2026-10-24T10:34:27.780703+00:00",
+  "status": "complete",
+  "threads_per_job": 1,
+  "workers": 4
+}

@@ -1,0 +1,472 @@
+{
+  "BIC": "Retained descriptive comparator; excluded from primary interval family",
+  "archive_members": 15985000,
+  "fit_accounting": {
+    "attempted_fits": 497500,
+    "failed_fits": 0,
+    "planned_fits": 497500,
+    "successful_fits": 497500,
+    "unattempted_fits": 0
+  },
+  "multiple_comparisons": "Ten primary rate intervals use Bonferroni exact coverage",
+  "no_model_refits": true,
+  "observations": 2500,
+  "paired_decisions": [
+    {
+      "available_pairs": 500,
+      "both_do_not_reject": 468,
+      "both_reject": 24,
+      "case": "independent_gaussian",
+      "confidence": 0.95,
+      "conservative_exact_difference_interval": [
+        -0.01663319210140939,
+        0.02438309250228871
+      ],
+      "fitted_only_rejections": 3,
+      "known_minus_fitted": 0.004,
+      "known_only_rejections": 5,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "requested_pairs": 500,
+      "simultaneous_across_five_cases": {
+        "available_pairs": 500,
+        "both_do_not_reject": 468,
+        "both_reject": 24,
+        "confidence": 0.99,
+        "conservative_exact_difference_interval": [
+          -0.021731078305824523,
+          0.029484342482819285
+        ],
+        "fitted_only_rejections": 3,
+        "known_minus_fitted": 0.004,
+        "known_only_rejections": 5,
+        "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+        "requested_pairs": 500,
+        "withheld_pairs": 0
+      },
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 500,
+      "both_do_not_reject": 468,
+      "both_reject": 20,
+      "case": "correlated_gaussian",
+      "confidence": 0.95,
+      "conservative_exact_difference_interval": [
+        -0.024424938562806843,
+        0.024424938562806843
+      ],
+      "fitted_only_rejections": 6,
+      "known_minus_fitted": 0.0,
+      "known_only_rejections": 6,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "requested_pairs": 500,
+      "simultaneous_across_five_cases": {
+        "available_pairs": 500,
+        "both_do_not_reject": 468,
+        "both_reject": 20,
+        "confidence": 0.99,
+        "conservative_exact_difference_interval": [
+          -0.03039846138649806,
+          0.03039846138649806
+        ],
+        "fitted_only_rejections": 6,
+        "known_minus_fitted": 0.0,
+        "known_only_rejections": 6,
+        "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+        "requested_pairs": 500,
+        "withheld_pairs": 0
+      },
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 500,
+      "both_do_not_reject": 467,
+      "both_reject": 19,
+      "case": "zero_conditional_gaussian",
+      "confidence": 0.95,
+      "conservative_exact_difference_interval": [
+        -0.026090555218572738,
+        0.026090555218572738
+      ],
+      "fitted_only_rejections": 7,
+      "known_minus_fitted": 0.0,
+      "known_only_rejections": 7,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "requested_pairs": 500,
+      "simultaneous_across_five_cases": {
+        "available_pairs": 500,
+        "both_do_not_reject": 467,
+        "both_reject": 19,
+        "confidence": 0.99,
+        "conservative_exact_difference_interval": [
+          -0.03245094157831827,
+          0.03245094157831827
+        ],
+        "fitted_only_rejections": 7,
+        "known_minus_fitted": 0.0,
+        "known_only_rejections": 7,
+        "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+        "requested_pairs": 500,
+        "withheld_pairs": 0
+      },
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 500,
+      "both_do_not_reject": 470,
+      "both_reject": 16,
+      "case": "rank_two_gaussian",
+      "confidence": 0.95,
+      "conservative_exact_difference_interval": [
+        -0.02211083916784043,
+        0.029956511887051295
+      ],
+      "fitted_only_rejections": 6,
+      "known_minus_fitted": 0.004,
+      "known_only_rejections": 8,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "requested_pairs": 500,
+      "simultaneous_across_five_cases": {
+        "available_pairs": 500,
+        "both_do_not_reject": 470,
+        "both_reject": 16,
+        "confidence": 0.99,
+        "conservative_exact_difference_interval": [
+          -0.028474343382564507,
+          0.036291325254725865
+        ],
+        "fitted_only_rejections": 6,
+        "known_minus_fitted": 0.004,
+        "known_only_rejections": 8,
+        "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+        "requested_pairs": 500,
+        "withheld_pairs": 0
+      },
+      "withheld_pairs": 0
+    },
+    {
+      "available_pairs": 500,
+      "both_do_not_reject": 472,
+      "both_reject": 18,
+      "case": "weak_conditional_gaussian",
+      "confidence": 0.95,
+      "conservative_exact_difference_interval": [
+        -0.022618332593766305,
+        0.022618332593766305
+      ],
+      "fitted_only_rejections": 5,
+      "known_minus_fitted": 0.0,
+      "known_only_rejections": 5,
+      "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+      "requested_pairs": 500,
+      "simultaneous_across_five_cases": {
+        "available_pairs": 500,
+        "both_do_not_reject": 472,
+        "both_reject": 18,
+        "confidence": 0.99,
+        "conservative_exact_difference_interval": [
+          -0.0281787660617605,
+          0.0281787660617605
+        ],
+        "fitted_only_rejections": 5,
+        "known_minus_fitted": 0.0,
+        "known_only_rejections": 5,
+        "method": "Bonferroni exact marginal discordance bounds; no arm independence assumption",
+        "requested_pairs": 500,
+        "withheld_pairs": 0
+      },
+      "withheld_pairs": 0
+    }
+  ],
+  "primary_rates": [
+    {
+      "all_requested_pointwise_envelope": [
+        0.03588425972193366,
+        0.07759746849493715
+      ],
+      "arm": "fitted",
+      "available": 500,
+      "bonferroni_familywise_95": [
+        0.029704957780359906,
+        0.08866034014922493
+      ],
+      "case": "independent_gaussian",
+      "events": 27,
+      "exact_interval_95": [
+        0.03588425972193366,
+        0.07759746849493715
+      ],
+      "family_size": 10,
+      "mcse_among_available": 0.010107818755794942,
+      "rate_among_available": 0.054,
+      "requested": 500,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.054,
+        0.054
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.039183868797187785,
+        0.08223822089383528
+      ],
+      "arm": "known",
+      "available": 500,
+      "bonferroni_familywise_95": [
+        0.03269848393308733,
+        0.09356069077445478
+      ],
+      "case": "independent_gaussian",
+      "events": 29,
+      "exact_interval_95": [
+        0.039183868797187785,
+        0.08223822089383528
+      ],
+      "family_size": 10,
+      "mcse_among_available": 0.010453324829928513,
+      "rate_among_available": 0.058,
+      "requested": 500,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.058,
+        0.058
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.034245698082767936,
+        0.07526637103062216
+      ],
+      "arm": "fitted",
+      "available": 500,
+      "bonferroni_familywise_95": [
+        0.028224004545871262,
+        0.08619498007730306
+      ],
+      "case": "correlated_gaussian",
+      "events": 26,
+      "exact_interval_95": [
+        0.034245698082767936,
+        0.07526637103062216
+      ],
+      "family_size": 10,
+      "mcse_among_available": 0.00992935043192655,
+      "rate_among_available": 0.052,
+      "requested": 500,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.052,
+        0.052
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.034245698082767936,
+        0.07526637103062216
+      ],
+      "arm": "known",
+      "available": 500,
+      "bonferroni_familywise_95": [
+        0.028224004545871262,
+        0.08619498007730306
+      ],
+      "case": "correlated_gaussian",
+      "events": 26,
+      "exact_interval_95": [
+        0.034245698082767936,
+        0.07526637103062216
+      ],
+      "family_size": 10,
+      "mcse_among_available": 0.00992935043192655,
+      "rate_among_available": 0.052,
+      "requested": 500,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.052,
+        0.052
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.034245698082767936,
+        0.07526637103062216
+      ],
+      "arm": "fitted",
+      "available": 500,
+      "bonferroni_familywise_95": [
+        0.028224004545871262,
+        0.08619498007730306
+      ],
+      "case": "zero_conditional_gaussian",
+      "events": 26,
+      "exact_interval_95": [
+        0.034245698082767936,
+        0.07526637103062216
+      ],
+      "family_size": 10,
+      "mcse_among_available": 0.00992935043192655,
+      "rate_among_available": 0.052,
+      "requested": 500,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.052,
+        0.052
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.034245698082767936,
+        0.07526637103062216
+      ],
+      "arm": "known",
+      "available": 500,
+      "bonferroni_familywise_95": [
+        0.028224004545871262,
+        0.08619498007730306
+      ],
+      "case": "zero_conditional_gaussian",
+      "events": 26,
+      "exact_interval_95": [
+        0.034245698082767936,
+        0.07526637103062216
+      ],
+      "family_size": 10,
+      "mcse_among_available": 0.00992935043192655,
+      "rate_among_available": 0.052,
+      "requested": 500,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.052,
+        0.052
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.02777676728557176,
+        0.06586100032359485
+      ],
+      "arm": "fitted",
+      "available": 500,
+      "bonferroni_familywise_95": [
+        0.022419935348801854,
+        0.07621892878689142
+      ],
+      "case": "rank_two_gaussian",
+      "events": 22,
+      "exact_interval_95": [
+        0.02777676728557176,
+        0.06586100032359485
+      ],
+      "family_size": 10,
+      "mcse_among_available": 0.009172131704244111,
+      "rate_among_available": 0.044,
+      "requested": 500,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.044,
+        0.044
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.030993168793505388,
+        0.07058079625732981
+      ],
+      "arm": "known",
+      "available": 500,
+      "bonferroni_familywise_95": [
+        0.02529663849388953,
+        0.081231162922678
+      ],
+      "case": "rank_two_gaussian",
+      "events": 24,
+      "exact_interval_95": [
+        0.030993168793505388,
+        0.07058079625732981
+      ],
+      "family_size": 10,
+      "mcse_among_available": 0.009559916317625379,
+      "rate_among_available": 0.048,
+      "requested": 500,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.048,
+        0.048
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.02938017539240278,
+        0.0682254278812379
+      ],
+      "arm": "fitted",
+      "available": 500,
+      "bonferroni_familywise_95": [
+        0.0238515724122666,
+        0.07873145220901878
+      ],
+      "case": "weak_conditional_gaussian",
+      "events": 23,
+      "exact_interval_95": [
+        0.02938017539240278,
+        0.0682254278812379
+      ],
+      "family_size": 10,
+      "mcse_among_available": 0.00936845771725528,
+      "rate_among_available": 0.046,
+      "requested": 500,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.046,
+        0.046
+      ]
+    },
+    {
+      "all_requested_pointwise_envelope": [
+        0.02938017539240278,
+        0.0682254278812379
+      ],
+      "arm": "known",
+      "available": 500,
+      "bonferroni_familywise_95": [
+        0.0238515724122666,
+        0.07873145220901878
+      ],
+      "case": "weak_conditional_gaussian",
+      "events": 23,
+      "exact_interval_95": [
+        0.02938017539240278,
+        0.0682254278812379
+      ],
+      "family_size": 10,
+      "mcse_among_available": 0.00936845771725528,
+      "rate_among_available": 0.046,
+      "requested": 500,
+      "scope": "Conditional-on-availability intervals; missing-outcome bounds are not CIs",
+      "withheld": 0,
+      "withheld_outcome_bounds": [
+        0.046,
+        0.046
+      ]
+    }
+  ],
+  "requested_by_case": {
+    "correlated_gaussian": 500,
+    "independent_gaussian": 500,
+    "rank_two_gaussian": 500,
+    "weak_conditional_gaussian": 500,
+    "zero_conditional_gaussian": 500
+  },
+  "scope": "Fixed-procedure Gaussian-law rejection rates from independent simulated observations. Known-law controls are simulation diagnostics, not empirical replacements. No correction, species-boundary claim, default change, or stability resampling.",
+  "unique_pipeline_records_audited": 497500
+}

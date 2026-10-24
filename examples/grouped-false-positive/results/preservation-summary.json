@@ -1,0 +1,9 @@
+{
+  "before_after_fingerprints_identical": true,
+  "original_tps_source_records": 5,
+  "original_tps_sources_present_at_start": 0,
+  "prior_aic_metadata_files_verified": 1078,
+  "prior_checkouts_verified": 7,
+  "prior_study_files_verified": 216962,
+  "source_availability_note": "The five original TPS downloads were already absent before this checkpoint; existing study artifacts remain preserved."
+}

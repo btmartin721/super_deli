@@ -1,0 +1,8 @@
+{
+  "observations": 2500,
+  "unique_pipeline_records": 497500,
+  "tails_checked": 10000,
+  "withheld_tails": 0,
+  "passed": true,
+  "dependencies": "Python standard library only"
+}
