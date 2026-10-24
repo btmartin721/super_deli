@@ -52,12 +52,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Reclaim hosted-runner scratch space
-        shell: bash
-        run: |
-          # Python workflows do not use the preinstalled Android/.NET SDKs.
-          sudo rm -rf -- /usr/local/lib/android /usr/share/dotnet
-          df -h "$RUNNER_TEMP"
       - name: Configure writable scientific-library caches
         shell: bash
         run: |
@@ -68,6 +62,7 @@ jobs:
       - name: Check benchmark scratch-space requirement
         shell: bash
         run: |
+          df -h /tmp "$RUNNER_TEMP"
           python - <<'PYCODE'
           import os
           import shutil
@@ -77,7 +72,20 @@ jobs:
               raise SystemExit("Benchmark runner requires at least 8 GiB free")
           PYCODE
       - name: Test scientific workflows and foundation
-        run: python -m pytest -q
+        run: python -m pytest -q --basetemp="$RUNNER_TEMP/super-deli-pytest"
+      - name: Report failed benchmark subprocesses
+        if: failure()
+        shell: bash
+        run: |
+          python - <<'PYCODE'
+          import os
+          from pathlib import Path
+          root = Path(os.environ["RUNNER_TEMP"]) / "super-deli-pytest"
+          for name in ("execution-outcomes.json", "stderr.log"):
+              for path in sorted(root.rglob(name)):
+                  print(f"--- {path.relative_to(root)} ---")
+                  print(path.read_text(errors="replace")[-4000:])
+          PYCODE
       - name: Check installed ingestion CLI outside checkout
         shell: bash
         run: |
