@@ -4,16 +4,19 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: fit-free empirical benchmark foundation.**
-A locked CC0 author mirror supplies matched morphology and foraging-isotope
-observations. The curator separates analytical features from reference labels,
-checks exact values and identities, and retains every missingness decision.
-Of 344 capture records, 330 have all six declared measurements. These are
-capture-level development data; independence and reference-evidence gates remain
-unresolved, so this checkpoint runs no statistical models. See the
-[method and commands](docs/empirical-benchmark-foundation.md) and
-[curation audit](docs/empirical-benchmark-curation-results.md). Full data stay local;
-only locks, compact metadata and invented fixtures are published.
+**Current checkpoint: empirical sampling and reference-evidence assessment.**
+The fit-free audit verifies all 344 source records, the unchanged 330-row complete
+cohort and all 1,980 retained measurements. It separates computed identity/join
+checks from reviewed biological claims. Published field assignments are available
+for descriptive development reporting; independence-dependent fitting and
+validation remain closed with exact evidence requirements. See the
+[method and commands](docs/empirical-evidence-gates.md) and
+[audit findings](docs/empirical-evidence-gates-results.md). Defaults and p-values
+are unchanged. Detailed evidence and empirical data stay local.
+
+The [preceding curation foundation](docs/empirical-benchmark-foundation.md)
+provides locked matched morphology/isotope inputs and the unchanged schema-1
+non-executable protocol. No empirical clustering has been run.
 
 **Preceding checkpoint: optional scaled fold sizes for shared predictive stability.**
 The separately versioned policy scales each training fold's minimum independent

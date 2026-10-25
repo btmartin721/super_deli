@@ -1,0 +1,97 @@
+{
+  "dataset_id": "penguin_capture_development_v1",
+  "empirical_fits": 0,
+  "evidence_sha256": "ed635997282f004f4611ce6d128dae5a60613f854abdf442103679b992bb0142",
+  "included_rows": 330,
+  "phase": "readiness_audit_only",
+  "profile_sha256": "874333b04169d0409579ed80a1888a6ef316b3515f67996a99323fedfe82a629",
+  "protocol_sha256": "5a6cfca873d96c0ceee959fc11a805c5b672c6f6451c32091c1b3fcf108f955e",
+  "readiness": {
+    "grouped_predictive_screen": {
+      "evidence_claims": [
+        "nest_crosswalk"
+      ],
+      "reasons": [
+        "capture_level_inputs_without_verified_group_design"
+      ],
+      "status": "inapplicable"
+    },
+    "independent_species_boundary_validation": {
+      "evidence_claims": [
+        "specimen_reference_independence",
+        "taxonomic_context"
+      ],
+      "reasons": [
+        "independent_specimen_reference_not_established",
+        "independent_sampling_units_not_established"
+      ],
+      "status": "blocked"
+    },
+    "independent_unit_point_fitting": {
+      "evidence_claims": [
+        "persistent_identity",
+        "nest_crosswalk",
+        "cross_season_identity"
+      ],
+      "reasons": [
+        "fit_free_checkpoint",
+        "independent_sampling_units_not_established"
+      ],
+      "status": "blocked"
+    },
+    "ingestion": {
+      "evidence_claims": [],
+      "reasons": [
+        "source_and_curated_semantics_verified"
+      ],
+      "status": "available"
+    },
+    "published_reference_description": {
+      "evidence_claims": [
+        "reference_provenance"
+      ],
+      "reasons": [
+        "development_field_assignments_only"
+      ],
+      "status": "available"
+    },
+    "resampling": {
+      "evidence_claims": [
+        "nest_dependence",
+        "nest_crosswalk",
+        "cross_season_identity"
+      ],
+      "reasons": [
+        "no_authorized_independent_resampling_units",
+        "fit_free_checkpoint"
+      ],
+      "status": "blocked"
+    },
+    "significance": {
+      "evidence_claims": [
+        "nest_dependence",
+        "persistent_identity"
+      ],
+      "reasons": [
+        "no_approved_empirical_null_for_this_sampling_design",
+        "fit_free_checkpoint"
+      ],
+      "status": "blocked"
+    }
+  },
+  "reference_coverage": 330,
+  "requirements": {
+    "cross_season_identity": "A persistent biological ID/recapture mapping across seasons, or a justified single-season sampling design with verified nest units.",
+    "nest_crosswalk": "An authoritative nest identifier for every retained capture, its scope across species/islands/seasons, and a prespecified handling rule for paired adults.",
+    "persistent_identity": "A source-authoritative capture-to-persistent-bird crosswalk and recapture history, or a documented independently sampled replacement cohort.",
+    "specimen_reference_independence": "Specimen-linked independent genetic/voucher identification with provenance, adjudication rules, ambiguity and missing-label accounting; define the validation estimand before fitting.",
+    "upstream_equivalence": "Retrieve the exact cited archive entities and verify checksums, version provenance and any row/value differences before claiming upstream equivalence."
+  },
+  "review_boundary": "Hashes bind snapshots and declarations; reviewed prose is not machine-certified biological truth",
+  "schema_version": 1,
+  "significance_draws": 0,
+  "source_rows": 344,
+  "source_sha256": "144f623143c9360fd77322a4f86acb06dc198814dbd2669724c63e6457b907bd",
+  "stability_draws": 0,
+  "status": "assessed"
+}

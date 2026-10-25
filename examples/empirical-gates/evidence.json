@@ -1,0 +1,175 @@
+{
+  "assumptions": [],
+  "claims": [
+    {
+      "claim_id": "persistent_identity",
+      "interpretation": "The documentation calls the field unique, while exact source values recur. The composite key identifies a source record.",
+      "limitation": "Code reuse cannot distinguish repeated birds from reused numbering or assignment errors.",
+      "locator": "Individual ID field description; issue 102",
+      "required_evidence": "A source-authoritative capture-to-persistent-bird crosswalk and recapture history, or a documented independently sampled replacement cohort.",
+      "source_ids": [
+        "mirror_documentation",
+        "identifier_issue"
+      ],
+      "status": "not_established"
+    },
+    {
+      "claim_id": "nest_dependence",
+      "interpretation": "Both mated adults were sampled at study nests; paired capture design is documented.",
+      "limitation": "Sampling together does not quantify their trait correlation or establish independence among nests.",
+      "locator": "Materials and Methods / Field Methods",
+      "required_evidence": "A justified sampling design with identified nesting units before any independence-dependent analysis.",
+      "source_ids": [
+        "field_methods"
+      ],
+      "status": "documented"
+    },
+    {
+      "claim_id": "nest_crosswalk",
+      "interpretation": "The reviewed sources do not establish a capture-to-nest crosswalk for this locked file.",
+      "limitation": "A1/A2 suffix patterns alone are not an authoritative mapping and are not parsed into nest IDs.",
+      "locator": "Field Methods; source data dictionary",
+      "required_evidence": "An authoritative nest identifier for every retained capture, its scope across species/islands/seasons, and a prespecified handling rule for paired adults.",
+      "source_ids": [
+        "field_methods",
+        "mirror_documentation"
+      ],
+      "status": "not_established"
+    },
+    {
+      "claim_id": "cross_season_identity",
+      "interpretation": "Records span three expeditions; shared individual codes are not certified biological recaptures.",
+      "limitation": "Neither distinct composite keys nor restricting to a season proves biological independence.",
+      "locator": "studyName and Individual ID fields; issue 102",
+      "required_evidence": "A persistent biological ID/recapture mapping across seasons, or a justified single-season sampling design with verified nest units.",
+      "source_ids": [
+        "mirror_documentation",
+        "identifier_issue"
+      ],
+      "status": "not_established"
+    },
+    {
+      "claim_id": "reference_provenance",
+      "interpretation": "Species assignments are supplied in the source study and retained as development references.",
+      "limitation": "The reviewed methods describe molecular sexing, not independent species adjudication of each capture; shared morphological evidence may introduce circularity.",
+      "locator": "Study species and field methods; Species field",
+      "required_evidence": "For descriptive concordance retain source assignments and limitations; independent validation additionally needs independently adjudicated specimen-linked evidence.",
+      "source_ids": [
+        "field_methods",
+        "mirror_documentation"
+      ],
+      "status": "documented"
+    },
+    {
+      "claim_id": "taxonomic_context",
+      "interpretation": "The field paper cites an earlier molecular penguin phylogeny as taxonomic context.",
+      "limitation": "This is verified citation context only. Direct access to the earlier article was challenged; neither its specimens nor labels were joined to these captures, and current taxonomic revisions were not adjudicated.",
+      "locator": "Introduction and reference 25, DOI 10.1098/rspb.2005.3260",
+      "required_evidence": "For independent specimen-level truth obtain a documented voucher/genetic crosswalk and adjudication independent of the fitted traits.",
+      "source_ids": [
+        "field_methods"
+      ],
+      "status": "documented"
+    },
+    {
+      "claim_id": "specimen_reference_independence",
+      "interpretation": "No independently adjudicated species-label crosswalk for these capture records was established by this review.",
+      "limitation": "Published taxonomy or a separate phylogeny does not itself verify each source record, blindness or feature independence.",
+      "locator": "Field and laboratory methods; source variable definitions",
+      "required_evidence": "Specimen-linked independent genetic/voucher identification with provenance, adjudication rules, ambiguity and missing-label accounting; define the validation estimand before fitting.",
+      "source_ids": [
+        "field_methods",
+        "mirror_documentation"
+      ],
+      "status": "not_established"
+    },
+    {
+      "claim_id": "upstream_equivalence",
+      "interpretation": "The pinned author-maintained mirror remains the actual source. Direct archive metadata access returned HTTP 403.",
+      "limitation": "Recipe and documentation cite different package versions; no byte-equivalence claim is made.",
+      "locator": "Cited EDI versions and retained HTTP access diagnostics",
+      "required_evidence": "Retrieve the exact cited archive entities and verify checksums, version provenance and any row/value differences before claiming upstream equivalence.",
+      "source_ids": [
+        "mirror_documentation",
+        "upstream_metadata",
+        "upstream_current"
+      ],
+      "status": "not_established"
+    }
+  ],
+  "contradictions": [
+    "The dictionary describes Individual ID as unique; the locked source has 190 distinct values across 344 capture records. Uniqueness holds only for the declared composite source key.",
+    "The original study used paired adults. A unique source-row key does not justify independent biological units."
+  ],
+  "dataset_id": "penguin_capture_development_v1",
+  "phase": "readiness_audit_only",
+  "profile_sha256": "874333b04169d0409579ed80a1888a6ef316b3515f67996a99323fedfe82a629",
+  "protocol_sha256": "5a6cfca873d96c0ceee959fc11a805c5b672c6f6451c32091c1b3fcf108f955e",
+  "schema_version": 1,
+  "source_sha256": "144f623143c9360fd77322a4f86acb06dc198814dbd2669724c63e6457b907bd",
+  "sources": [
+    {
+      "access": "usable",
+      "failure_reason": "",
+      "role": "primary_publication",
+      "sha256": "7410388c29d53a8d14a8d821ffb6b8fb7ee4b969342d94a1b926767657ee4a6c",
+      "size_bytes": 274704,
+      "source_id": "field_methods",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0090081"
+    },
+    {
+      "access": "unavailable",
+      "failure_reason": "HTTP 200 returned a browser/cookie challenge, not usable article content; body retained only as access evidence",
+      "role": "primary_publication",
+      "sha256": "aa9b341dcaa58d80d4b9bbb44852eb7694a1aacc4f6d7eecd37a88a15eda286b",
+      "size_bytes": 5590,
+      "source_id": "taxonomic_context",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16519228/"
+    },
+    {
+      "access": "usable",
+      "failure_reason": "",
+      "role": "author_documentation",
+      "sha256": "cfb72846ea2026c73fdd790644775356315398140c42db4ebbe090c76a33fe19",
+      "size_bytes": 3351,
+      "source_id": "mirror_documentation",
+      "url": "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/8957207b78d6ccd1b4654a9dd9c9041b657478ab/man/penguins_raw.Rd"
+    },
+    {
+      "access": "usable",
+      "failure_reason": "",
+      "role": "issue_report",
+      "sha256": "6e261ebac74f2af7496be34bac3f5042ebff58c769085b5af1d428a9e0ff166f",
+      "size_bytes": 2578,
+      "source_id": "identifier_issue",
+      "url": "https://api.github.com/repos/allisonhorst/palmerpenguins/issues/102"
+    },
+    {
+      "access": "usable",
+      "failure_reason": "",
+      "role": "issue_report",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size_bytes": 2,
+      "source_id": "identifier_comments",
+      "url": "https://api.github.com/repos/allisonhorst/palmerpenguins/issues/102/comments"
+    },
+    {
+      "access": "unavailable",
+      "failure_reason": "HTTP Error 403: Forbidden",
+      "role": "archive_metadata",
+      "sha256": null,
+      "size_bytes": 0,
+      "source_id": "upstream_metadata",
+      "url": "https://pasta.lternet.edu/package/metadata/eml/knb-lter-pal/219/3"
+    },
+    {
+      "access": "unavailable",
+      "failure_reason": "HTTP Error 403: Forbidden",
+      "role": "archive_metadata",
+      "sha256": null,
+      "size_bytes": 0,
+      "source_id": "upstream_current",
+      "url": "https://pasta.lternet.edu/package/metadata/eml/knb-lter-pal/219/5"
+    }
+  ]
+}

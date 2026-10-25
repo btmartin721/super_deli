@@ -1,0 +1,53 @@
+{
+  "distinct_identity_values": {
+    "Individual ID": 190,
+    "studyName": 3
+  },
+  "exact_numeric_tokens_checked": 1980,
+  "excluded_rows": 14,
+  "identity_token_reuse": {
+    "Individual ID": {
+      "distinct_reused_tokens": 114,
+      "rows_with_reused_tokens": 268
+    },
+    "studyName": {
+      "distinct_reused_tokens": 3,
+      "rows_with_reused_tokens": 344
+    }
+  },
+  "included_covariate_counts": {
+    "Clutch Completion": {
+      "No": 34,
+      "Yes": 296
+    },
+    "Island": {
+      "Biscoe": 166,
+      "Dream": 119,
+      "Torgersen": 45
+    },
+    "Sex": {
+      "FEMALE": 163,
+      "MALE": 161,
+      "NA": 6
+    },
+    "Stage": {
+      "Adult, 1 Egg Stage": 330
+    }
+  },
+  "included_rows": 330,
+  "nest_or_persistent_bird_links_created": 0,
+  "reference_counts": {
+    "Adelie Penguin (Pygoscelis adeliae)": 141,
+    "Chinstrap penguin (Pygoscelis antarctica)": 67,
+    "Gentoo penguin (Pygoscelis papua)": 122
+  },
+  "reference_coverage": 330,
+  "sampling_unit": "capture_record",
+  "source_reference_counts": {
+    "Adelie Penguin (Pygoscelis adeliae)": 152,
+    "Chinstrap penguin (Pygoscelis antarctica)": 68,
+    "Gentoo penguin (Pygoscelis papua)": 124
+  },
+  "source_rows": 344,
+  "unique_source_keys": 344
+}

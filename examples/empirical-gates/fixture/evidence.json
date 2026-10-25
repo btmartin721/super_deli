@@ -1,0 +1,113 @@
+{
+  "assumptions": [],
+  "claims": [
+    {
+      "claim_id": "persistent_identity",
+      "interpretation": "Invented review statement for persistent_identity. No real biological claim.",
+      "limitation": "Synthetic engineering evidence cannot establish real biological validity.",
+      "locator": "Invented engineering fixture",
+      "required_evidence": "A real documented study and review are required for biological use.",
+      "source_ids": [
+        "synthetic_review"
+      ],
+      "status": "not_established"
+    },
+    {
+      "claim_id": "nest_dependence",
+      "interpretation": "Invented review statement for nest_dependence. No real biological claim.",
+      "limitation": "Synthetic engineering evidence cannot establish real biological validity.",
+      "locator": "Invented engineering fixture",
+      "required_evidence": "A real documented study and review are required for biological use.",
+      "source_ids": [
+        "synthetic_review"
+      ],
+      "status": "documented"
+    },
+    {
+      "claim_id": "nest_crosswalk",
+      "interpretation": "Invented review statement for nest_crosswalk. No real biological claim.",
+      "limitation": "Synthetic engineering evidence cannot establish real biological validity.",
+      "locator": "Invented engineering fixture",
+      "required_evidence": "A real documented study and review are required for biological use.",
+      "source_ids": [
+        "synthetic_review"
+      ],
+      "status": "not_established"
+    },
+    {
+      "claim_id": "cross_season_identity",
+      "interpretation": "Invented review statement for cross_season_identity. No real biological claim.",
+      "limitation": "Synthetic engineering evidence cannot establish real biological validity.",
+      "locator": "Invented engineering fixture",
+      "required_evidence": "A real documented study and review are required for biological use.",
+      "source_ids": [
+        "synthetic_review"
+      ],
+      "status": "not_established"
+    },
+    {
+      "claim_id": "reference_provenance",
+      "interpretation": "Invented review statement for reference_provenance. No real biological claim.",
+      "limitation": "Synthetic engineering evidence cannot establish real biological validity.",
+      "locator": "Invented engineering fixture",
+      "required_evidence": "A real documented study and review are required for biological use.",
+      "source_ids": [
+        "synthetic_review"
+      ],
+      "status": "documented"
+    },
+    {
+      "claim_id": "taxonomic_context",
+      "interpretation": "Invented review statement for taxonomic_context. No real biological claim.",
+      "limitation": "Synthetic engineering evidence cannot establish real biological validity.",
+      "locator": "Invented engineering fixture",
+      "required_evidence": "A real documented study and review are required for biological use.",
+      "source_ids": [
+        "synthetic_review"
+      ],
+      "status": "documented"
+    },
+    {
+      "claim_id": "specimen_reference_independence",
+      "interpretation": "Invented review statement for specimen_reference_independence. No real biological claim.",
+      "limitation": "Synthetic engineering evidence cannot establish real biological validity.",
+      "locator": "Invented engineering fixture",
+      "required_evidence": "A real documented study and review are required for biological use.",
+      "source_ids": [
+        "synthetic_review"
+      ],
+      "status": "not_established"
+    },
+    {
+      "claim_id": "upstream_equivalence",
+      "interpretation": "Invented review statement for upstream_equivalence. No real biological claim.",
+      "limitation": "Synthetic engineering evidence cannot establish real biological validity.",
+      "locator": "Invented engineering fixture",
+      "required_evidence": "A real documented study and review are required for biological use.",
+      "source_ids": [
+        "synthetic_review"
+      ],
+      "status": "not_established"
+    }
+  ],
+  "contradictions": [
+    "Entirely invented documentation contradiction, used only to exercise schema validation."
+  ],
+  "dataset_id": "synthetic_empirical_curation_fixture",
+  "phase": "readiness_audit_only",
+  "profile_sha256": "64dc6b85941f69f6f756c8bfd02d3812947970471b4ec176b2f499c7f8fc14dd",
+  "protocol_sha256": "3931ce1edba5f485a63dce6b4517828ac812180bd4d7b436d9555888a6c4c0d9",
+  "schema_version": 1,
+  "source_sha256": "1af7f9b98ab8051dbecc629a16b183aeb85074fc0626ee1ba74adc7fee3e3a08",
+  "sources": [
+    {
+      "access": "usable",
+      "failure_reason": "",
+      "role": "primary_publication",
+      "sha256": "c45bbbfc787c827da484aabc49bde3300428a473efade8ad2b7e29606451000f",
+      "size_bytes": 127,
+      "source_id": "synthetic_review",
+      "url": "https://example.invalid/invented-review"
+    }
+  ]
+}

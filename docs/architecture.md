@@ -250,7 +250,8 @@ reference labels need independent evidence and documented uncertainty.
 23. **Completed:** N=64 shared predictive-bootstrap diagnosis with paired support/optimizer controls.
 24. **Completed:** Opt-in exposure-scaled fold sizes with paired whole-locality stability validation.
 25. **Foundation completed:** Fit-free empirical data curation, source locks, anonymous matched manifests and a frozen non-executable protocol.
-26. **Pending:** Resolve sampling/reference gates and run empirical species-delimitation validation.
+26. **Assessment completed:** Source-bound sampling/reference evidence review; ingestion and descriptive labels admitted, independence-dependent uses explicitly blocked and grouped screening inapplicable for the capture source.
+27. **Pending:** Obtain authoritative sampling crosswalks and independent specimen references, or audit a compatible replacement empirical source; freeze a justified design before empirical fitting/validation.
 27. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
 28. Anatomical landmark learning, semilandmark sliding and further model families.
 29. Consolidated user guidance, end-to-end examples and a scoped research release.
@@ -334,3 +335,11 @@ and separate reference/audit files. A versioned protocol binds all profile roles
 and future settings, and explicitly withholds fit authorization. This separates
 syntactic ingestion readiness from scientific applicability without weakening
 any existing model assumption. No empirical evaluator or estimator is added.
+
+
+The [empirical evidence assessment](empirical-evidence-gates.md) is separate from
+schema-1 curation and all estimators. An immutable review binds source, profile,
+protocol and evidence snapshots. The workflow reconstructs curated semantics,
+keeps computed facts separate from reviewed claims, and derives purpose-specific
+blocked/inapplicable/available decisions without a fitting dispatch. No readiness
+Boolean can override an existing model's independence requirement.
