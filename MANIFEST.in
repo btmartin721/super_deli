@@ -89,3 +89,6 @@ recursive-include docs/figures/shared-predictive *.png *.svg *.pdf
 
 recursive-include examples/predictive-stability *.json *.csv *.py
 recursive-include docs/figures/predictive-stability *.pdf *.svg *.png
+
+recursive-include examples/bootstrap-instability *.json *.csv *.py
+recursive-include docs/figures/bootstrap-instability *.png *.pdf *.svg

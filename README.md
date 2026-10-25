@@ -4,7 +4,17 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: whole-locality bootstrap stability for shared predictive AIC.**
+**Current checkpoint: diagnosis of N=64 predictive-bootstrap instability.**
+The frozen paired diagnostic preserves production fitting, sampling, defaults and
+historical p-values. It audits 40 previous observations and 3,960 retained draws,
+then compares multiplicities, unique support and additional optimizer starts on
+40 fresh datasets. Truth-initialized fits remain separate from selection.
+See the [protocol](docs/bootstrap-instability.md) and
+[results](docs/bootstrap-instability-results.md). Detailed evidence stays local;
+the controls are descriptive and do not define a corrected bootstrap or species
+support.
+
+**Preceding checkpoint: whole-locality bootstrap stability for shared predictive AIC.**
 The separate opt-in workflow resamples whole localities, preserves their members
 and multiplicities, and refits the complete fixed-fold predictive screen. It
 reports selected-K frequencies, cluster recovery/merging and both-out-of-bag

@@ -86,6 +86,12 @@ jobs:
                   print(f"--- {path.relative_to(root)} ---")
                   print(path.read_text(errors="replace")[-4000:])
           PYCODE
+      - name: Check bootstrap instability installed diagnostic
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/bootstrap-instability/smoke.py" --output-dir "$RUNNER_TEMP/bootstrap-instability-smoke"
+
       - name: Check predictive stability installed workflow
         working-directory: ${{ runner.temp }}
         run: |

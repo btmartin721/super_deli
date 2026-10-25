@@ -128,3 +128,9 @@ Keep detailed evidence local. The measured gate includes archive manifests, 25%
 growth, a replay allowance and 128 MiB reserve; require a 4 GiB new-artifact cap,
 8 GiB free, runtime guards and at most four single-thread workers. Publish only
 source, fixed configurations, documentation, small aggregates and figures.
+
+
+The subsequent [N=64 instability diagnostic](bootstrap-instability-results.md)
+examines gate failures, multiplicities, optimizer starts and assignment changes.
+Its unique-support control is not a replacement for this bootstrap. The original
+workflow and interpretation above remain unchanged.

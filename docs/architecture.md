@@ -247,10 +247,11 @@ reference labels need independent evidence and documented uncertainty.
 20. **Completed:** Predictive-screened full-family AIC and N=64 recovery diagnostics.
 21. **Completed:** Optional shared-covariance grouped AIC and predictive screening with paired validation.
 22. **Completed:** Whole-locality bootstrap stability for fixed-fold shared predictive AIC.
-23. Empirical species-delimitation validation with independently supported biological reference groups.
-24. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
-25. Anatomical landmark learning, semilandmark sliding and further model families.
-26. Consolidated user guidance, end-to-end examples and a scoped research release.
+23. **Completed:** N=64 shared predictive-bootstrap diagnosis with paired support/optimizer controls.
+24. Empirical species-delimitation validation with independently supported biological reference groups.
+25. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
+26. Anatomical landmark learning, semilandmark sliding and further model families.
+27. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The later calibration and diagnostic workflows remain restricted to their declared
 assumptions and data types; completing their engineering does not establish species
@@ -303,3 +304,11 @@ archival helpers in `workflows.calibration_artifacts`; neither duplicates the
 integrative estimator. The study/auditor reuse dataset accounting and selected
 pipeline numerical checks. Fitted nulls and known reference laws retain separate
 policies, evidence targets, assumptions and interpretation.
+
+
+The [small-sample bootstrap diagnostic](bootstrap-instability.md) is a separate
+benchmarking layer. It reuses unchanged production point/occurrence workflows,
+retains original-ID size accounting and runs truth-informed optimization only
+after ordinary fits. New diagnostic configuration, gate accounting, post-fit
+metrics, immutable studies and independent audits are separate modules; none
+change production defaults or historical p-values. Detailed evidence stays local.

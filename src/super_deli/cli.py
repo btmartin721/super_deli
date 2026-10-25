@@ -38,6 +38,9 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.benchmarking.predictive_bootstrap_cli import register as register_stability
 
     stability_commands = register_stability(commands)
+    from super_deli.benchmarking.bootstrap_diagnostic_cli import register as register_instability
+
+    instability_commands = register_instability(commands)
     validate = commands.add_parser("validate", help="Check declarations and local file references")
     validate.add_argument("config", type=Path, help="Versioned dataset JSON configuration")
     validate.add_argument("--report", type=Path, help="Also save JSON to a new file")
@@ -441,6 +444,13 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command in instability_commands:
+            from super_deli.benchmarking.bootstrap_diagnostic_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command in stability_commands:
             from super_deli.benchmarking.predictive_bootstrap_cli import dispatch
 
