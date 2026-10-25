@@ -134,3 +134,10 @@ The subsequent [N=64 instability diagnostic](bootstrap-instability-results.md)
 examines gate failures, multiplicities, optimizer starts and assignment changes.
 Its unique-support control is not a replacement for this bootstrap. The original
 workflow and interpretation above remain unchanged.
+
+
+A separate [optional scaled fold-size policy](scaled-fold-stability.md) is now
+available for the same restricted shared-family workflow. Omitting it retains
+this legacy method and serialization. See its [paired validation](scaled-fold-stability-results.md)
+for own-point/common-reference stability, Gaussian-control selection and OOB coverage.
+Prespecify the policy before analysis; it has no significance-calibration interface.

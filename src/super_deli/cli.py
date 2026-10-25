@@ -38,6 +38,9 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.benchmarking.predictive_bootstrap_cli import register as register_stability
 
     stability_commands = register_stability(commands)
+    from super_deli.benchmarking.scaled_fold_cli import register as register_scaled_fold
+
+    scaled_fold_commands = register_scaled_fold(commands)
     from super_deli.benchmarking.bootstrap_diagnostic_cli import register as register_instability
 
     instability_commands = register_instability(commands)
@@ -444,6 +447,13 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command in scaled_fold_commands:
+            from super_deli.benchmarking.scaled_fold_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command in instability_commands:
             from super_deli.benchmarking.bootstrap_diagnostic_cli import dispatch
 

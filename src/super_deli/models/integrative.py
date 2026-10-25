@@ -64,7 +64,7 @@ class IntegrativeFit:
     point_seed: int
 
 
-def _prepare(inputs, config):
+def _prepare(inputs, config, *, fold_minimum=None):
     inputs = tuple(inputs)
     if len(inputs) != len(config.views):
         raise ValueError("One raw input is required for every selected view")
@@ -157,7 +157,12 @@ def _prepare(inputs, config):
         )
     units = tuple(dict.fromkeys(i for i in inputs[0].target_ids if i in shared))
     n = len(units)
-    if n <= config.n_pcs or n < config.min_cluster_size:
+    minimum = config.min_cluster_size
+    if fold_minimum is not None:
+        from super_deli.models.predictive_fold_size import PredictiveFoldMixture
+
+        minimum = PredictiveFoldMixture.from_model(config, fold_minimum).min_cluster_size
+    if n <= config.n_pcs or n < minimum:
         raise ValueError("Too few shared independent target units for integration")
     if config.n_bootstrap and 128 * n * n > config.max_pairwise_bytes:
         raise ValueError("Dense stability exceeds max_pairwise_bytes")
@@ -279,7 +284,7 @@ def _project_view(data, fitted, units):
     return (profiles - fitted.mean) * np.sqrt(fitted.normalized_weight) / fitted.scale
 
 
-def _fit_once(inputs, units, config, seed, draw):
+def _fit_once(inputs, units, config, seed, draw, *, fold_minimum=None):
     weights = np.array([v.weight for v in config.views], dtype=float)
     weights /= weights.max()
     weights /= weights.sum()
@@ -299,8 +304,13 @@ def _fit_once(inputs, units, config, seed, draw):
     if pca.singular_values_[-1] <= config.rank_tol * max(pca.singular_values_[0], 1.0):
         raise ValueError("Requested fixed joint PCA dimension is rank deficient")
     scores = pca.transform(fused)
+    settings = config
+    if fold_minimum is not None:
+        from super_deli.models.predictive_fold_size import PredictiveFoldMixture
+
+        settings = PredictiveFoldMixture.from_model(config, fold_minimum)
     mixture = select_gaussian_mixture(
-        scores, config, seed, covariance_type=config.covariance_type, unit_indices=draw
+        scores, settings, seed, covariance_type=config.covariance_type, unit_indices=draw
     )
     return IntegrationPoint(mixture, views, fused, scores, pca)
 

@@ -1,0 +1,211 @@
+{
+  "artifacts": "Detailed raw inputs, fits, draw identities, fold predictions and archive manifests remain local; no private evidence is uploaded.",
+  "byte_audit": {
+    "audited_searches": 48000,
+    "draw_declarations": 7920,
+    "every_archive_member_verified": true,
+    "observations": 40,
+    "paired_ids_thresholds_and_gates_verified": true,
+    "status": "verified"
+  },
+  "environment": {
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.6.1",
+      "scipy": "1.15.3",
+      "snpio": "1.7.7",
+      "threadpoolctl": "3.6.0"
+    },
+    "python": "3.12.10"
+  },
+  "freeze": {
+    "base_master": "1bff2aac6e70d7c36163231044d770c1a2145cd0",
+    "bootstrap_draws_per_policy": 3960,
+    "forced_fits": 0,
+    "fresh_searches": 48000,
+    "main_observations": 40,
+    "main_searches": 48180,
+    "new_pvalues": 0,
+    "probe_searches": 9600,
+    "source_modules": 202,
+    "utc": "2026-10-25T05:35:03.953343+00:00"
+  },
+  "legacy_replays": {
+    "exact_searches": 180,
+    "observations": 10,
+    "status": "verified"
+  },
+  "numerical_audit": {
+    "audited_searches": 48000,
+    "failed_draws": 0,
+    "failed_fits": 0,
+    "observations": 40,
+    "paired_search_parameter_comparisons": 24000,
+    "status": "passed",
+    "successful_draws": 7920,
+    "successful_fits": 48000,
+    "unattempted_draws": 0,
+    "unattempted_fits": 0
+  },
+  "source_fingerprints_sha256": "b664ba2bf1330aa6388d6609ff673ef6d88b259b07c7397fd2e8d382b4127e71",
+  "storage_gate": {
+    "configuration_sha256": "e4ca464c74b60438e5a8da35129e101aea8b02c2b69bb5523c518f55d2c6521b",
+    "current_free_bytes": 254921818112,
+    "current_retained_bytes": 720298950,
+    "failed_probe_draws_retained": 0,
+    "growth_factor": 1.25,
+    "main_searches_including_replays": 48180,
+    "max_artifact_bytes": 6442450944,
+    "measured_cell_bytes": {
+      "cline_n64": 66217228,
+      "correlated_gaussian_n64": 72090926,
+      "four_n256_s3_0": 217870323,
+      "four_n64_s3_0": 68445197,
+      "four_n64_s4_5": 68689822,
+      "independent_gaussian_n64": 69171758,
+      "unequal_variance_n64": 70838293,
+      "zero_conditional_gaussian_n64": 71029326
+    },
+    "min_free_bytes": 8589934592,
+    "probe_searches": 9600,
+    "projected_complete_bytes": 5297572821,
+    "projected_new_bytes": 4577273871,
+    "replay_archive_allowance": 32680549,
+    "reserve_bytes": 134217728,
+    "status": "passed"
+  },
+  "study": {
+    "cells": [
+      {
+        "law": "independent_gaussian",
+        "n_datasets": 5,
+        "n_units": 64,
+        "name": "independent_gaussian_n64",
+        "role": "control",
+        "signal": null
+      },
+      {
+        "law": "correlated_gaussian",
+        "n_datasets": 5,
+        "n_units": 64,
+        "name": "correlated_gaussian_n64",
+        "role": "control",
+        "signal": null
+      },
+      {
+        "law": "zero_conditional_gaussian",
+        "n_datasets": 5,
+        "n_units": 64,
+        "name": "zero_conditional_gaussian_n64",
+        "role": "control",
+        "signal": null
+      },
+      {
+        "law": "complementary",
+        "n_datasets": 5,
+        "n_units": 64,
+        "name": "four_n64_s3_0",
+        "role": "alternative",
+        "signal": 3.0
+      },
+      {
+        "law": "complementary",
+        "n_datasets": 5,
+        "n_units": 64,
+        "name": "four_n64_s4_5",
+        "role": "alternative",
+        "signal": 4.5
+      },
+      {
+        "law": "complementary",
+        "n_datasets": 5,
+        "n_units": 256,
+        "name": "four_n256_s3_0",
+        "role": "alternative",
+        "signal": 3.0
+      },
+      {
+        "law": "unequal_variance",
+        "n_datasets": 5,
+        "n_units": 64,
+        "name": "unequal_variance_n64",
+        "role": "stress",
+        "signal": null
+      },
+      {
+        "law": "cline",
+        "n_datasets": 5,
+        "n_units": 64,
+        "name": "cline_n64",
+        "role": "stress",
+        "signal": null
+      }
+    ],
+    "fold_size_policy": {
+      "policy": "proportional_distinct",
+      "schema_version": 1
+    },
+    "max_artifact_bytes": 6442450944,
+    "min_free_bytes": 8589934592,
+    "model": {
+      "assignment_threshold": 0.0,
+      "assume_independent_units": true,
+      "covariance_type": "tied",
+      "max_iter": 500,
+      "max_k": 4,
+      "max_pairwise_bytes": 268435456,
+      "max_working_bytes": 268435456,
+      "min_cluster_size": 5,
+      "missing_views": "error",
+      "n_bootstrap": 0,
+      "n_init": 10,
+      "n_pcs": 4,
+      "n_threads": 1,
+      "random_seed": 71323,
+      "rank_tol": 1e-12,
+      "reg_covar": 1e-06,
+      "schema_version": 1,
+      "selection_criterion": "aic",
+      "target_level": "locality",
+      "tol": 0.001,
+      "views": [
+        {
+          "aggregation": "mean",
+          "count_transform": "identity",
+          "feature_names": [],
+          "kind": "morphological",
+          "missing_policy": "error",
+          "modality": "morphological",
+          "n_pcs": 2,
+          "pca_fit": "target_means",
+          "ploidy": null,
+          "scaling": null,
+          "shape": null,
+          "weight": 1.0
+        },
+        {
+          "aggregation": "none",
+          "count_transform": "identity",
+          "feature_names": [],
+          "kind": "ecological",
+          "missing_policy": "error",
+          "modality": "ecological",
+          "n_pcs": 2,
+          "ploidy": null,
+          "scaling": null,
+          "shape": null,
+          "weight": 1.0
+        }
+      ]
+    },
+    "n_bootstrap": 99,
+    "random_seed": 20261226,
+    "schema_version": 1,
+    "screening": {
+      "n_folds": 5,
+      "random_seed": 71324,
+      "schema_version": 1
+    }
+  }
+}

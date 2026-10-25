@@ -4,10 +4,17 @@ from pathlib import Path
 
 from super_deli.io.config import read_json, write_json
 from super_deli.io.predictive_inputs import project_exported, subset_raw
-from super_deli.workflows.predictive import fold_model, predict_pool, save_arrays, write_selected
+from super_deli.workflows.predictive import (
+    fold_with_support,
+    predict_pool,
+    save_arrays,
+    write_selected,
+)
 
 
-def occurrence_search(base, prefix, values, layout, indices, model):
+def occurrence_search(
+    base, prefix, values, layout, indices, model, *, fold_minimum=None, fold_support=None
+):
     """Reingest distinct raw members, then fit the explicitly expanded empirical measure."""
     import numpy as np
 
@@ -29,11 +36,32 @@ def occurrence_search(base, prefix, values, layout, indices, model):
     directory = Path(base) / prefix
     directory.mkdir()
     write_json(model.to_dict(), directory / "model.json")
+    if fold_support is not None:
+        u = fold_support["full_distinct"]
+        t = len(set(indices.tolist()))
+        m = model.min_cluster_size
+        if (
+            type(u) is not int
+            or not 0 < t < u
+            or fold_support["training_distinct"] != t
+            or fold_support["full_minimum"] != m
+            or fold_support["training_minimum"] != max(2, (m * t + u - 1) // u)
+            or fold_minimum != fold_support["training_minimum"]
+        ):
+            raise ValueError("Fold support and effective minimum must agree before fitting")
+        write_json(fold_support, directory / "fold_support.json")
     seed = int(np.random.SeedSequence(model.random_seed).spawn(1)[0].generate_state(1)[0])
     write_json({"original_indices": indices.tolist(), "point_seed": seed}, directory / "draw.json")
     run = directory / "run"
     run.mkdir()
     try:
+        if fold_minimum is not None:
+            from super_deli.models.predictive_fold_size import PredictiveFoldMixture
+
+            write_json(
+                PredictiveFoldMixture.from_model(model, fold_minimum).to_dict(),
+                run / "mixture_settings.json",
+            )
         selected = sorted(set(map(int, indices)))
         raw, sublayout = subset_raw(values, layout, selected)
         write_json(sublayout, directory / "training_layout.json")
@@ -47,12 +75,13 @@ def occurrence_search(base, prefix, values, layout, indices, model):
                 declaration, sources[view.modality], view, model, directory / "raw", destination
             )
             inputs.append(data)
-        inputs, units, excluded = _prepare(inputs, model)
+        options = {} if fold_minimum is None else dict(fold_minimum=fold_minimum)
+        inputs, units, excluded = _prepare(inputs, model, **options)
         if excluded or set(units) != set(sublayout["unit_ids"]):
             raise ValueError("Bootstrap training must retain every selected locality")
         positions = {u: i for i, u in enumerate(units)}
         draw = np.asarray([positions[layout["unit_ids"][j]] for j in indices], dtype=int)
-        pipeline = _fit_once(inputs, units, model, seed, draw)
+        pipeline = _fit_once(inputs, units, model, seed, draw, **options)
         occurrence_ids = tuple(units[i] for i in draw)
         fit = IntegrativeFit(
             pipeline.mixture,
@@ -91,12 +120,19 @@ def occurrence_search(base, prefix, values, layout, indices, model):
     return record
 
 
-def occurrence_screen(base, values, layout, indices, model, assignments):
+def occurrence_screen(base, values, layout, indices, model, assignments, *, fold_size_policy=None):
     """Keep original-ID folds fixed; expand validation occurrences rather than fold averages."""
     import numpy as np
 
     from super_deli.models.predictive_selection import gaussian_predictions, screen_candidates
 
+    if fold_size_policy is not None:
+        from super_deli.models.predictive_config import PredictiveScreenConfig
+        from super_deli.workflows.predictive import checked_policy
+
+        fold_size_policy = checked_policy(fold_size_policy, model, PredictiveScreenConfig())
+        if len(assignments) != 5 or sorted(r["fold"] for r in assignments) != list(range(5)):
+            raise ValueError("Scaled fold sizes require five declared original-ID folds")
     base = Path(base)
     base.mkdir()
     fits = [occurrence_search(base, "full", values, layout, indices, model)]
@@ -116,6 +152,7 @@ def occurrence_screen(base, values, layout, indices, model, assignments):
                 "original_validation_indices": indices[test].tolist(),
                 "prefix": prefix,
             }
+            exposure = None
             if not train or not test:
                 record = {
                     "status": "failed",
@@ -125,9 +162,36 @@ def occurrence_screen(base, values, layout, indices, model, assignments):
                 (base / prefix).mkdir()
                 write_json(record, base / prefix / "record.json")
             else:
-                record = occurrence_search(
-                    base, prefix, values, layout, indices[train], fold_model(model, i)
+                trained, exposure = fold_with_support(
+                    model, i, indices.tolist(), indices[train].tolist(), fold_size_policy
                 )
+                options = (
+                    {}
+                    if exposure is None
+                    else dict(fold_minimum=exposure["training_minimum"], fold_support=exposure)
+                )
+                record = occurrence_search(
+                    base, prefix, values, layout, indices[train], trained, **options
+                )
+            if fold_size_policy is not None:
+                if exposure is None:
+                    exposure = dict(
+                        status="unavailable",
+                        error=record["error"],
+                        full_distinct=len(set(indices.tolist())),
+                        training_distinct=len(set(indices[train].tolist())),
+                        full_minimum=model.min_cluster_size,
+                        training_minimum=None,
+                        policy=fold_size_policy.policy,
+                        schema_version=1,
+                    )
+                row["fold_support"] = exposure
+                path = base / prefix / "fold_support.json"
+                if path.exists():
+                    if read_json(path) != exposure:
+                        raise ValueError("Frozen fold-support record differs")
+                else:
+                    write_json(exposure, path)
             fits.append(record)
             row.update(status=record["status"])
             if record["status"] == "complete":
@@ -188,5 +252,7 @@ def occurrence_screen(base, values, layout, indices, model, assignments):
         "unattempted_fits": 6 - len(fits),
         "validation_failures": sum(f["status"] != "complete" for f in folds),
     }
+    if fold_size_policy is not None:
+        summary["fold_size_policy"] = fold_size_policy.to_dict()
     write_json(summary, base / "summary.json")
     return summary

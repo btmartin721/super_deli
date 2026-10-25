@@ -24,6 +24,7 @@ def register_commands(commands):
         if name == "cluster-integrative-predictive":
             p.add_argument("--model-config", type=Path, required=True)
             p.add_argument("--screen-config", type=Path, required=True)
+            p.add_argument("--fold-size-policy", type=Path)
         elif name != "preflight-predictive-aic":
             p.add_argument("--workers", type=int, default=1)
         if name in {"analyze-predictive-aic", "replay-predictive-aic"}:
@@ -42,14 +43,25 @@ def dispatch(args):
         from super_deli.io.config import load_config
         from super_deli.models.integrative_config import IntegrativeConfig
         from super_deli.models.predictive_config import PredictiveScreenConfig
+        from super_deli.models.predictive_fold_size import PredictiveFoldSizePolicy
         from super_deli.workflows.predictive import run_predictive
 
+        options = (
+            {}
+            if args.fold_size_policy is None
+            else dict(
+                fold_size_policy=PredictiveFoldSizePolicy.from_dict(
+                    read_json(args.fold_size_policy)
+                )
+            )
+        )
         return run_predictive(
             load_config(args.config),
             model_config=IntegrativeConfig.from_dict(read_json(args.model_config)),
             screen_config=PredictiveScreenConfig.from_dict(read_json(args.screen_config)),
             base_dir=args.config.absolute().parent,
             output_dir=args.output_dir,
+            **options,
         )
     if args.command == "analyze-predictive-aic":
         from super_deli.benchmarking.predictive_analysis import audit_study

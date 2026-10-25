@@ -24,6 +24,7 @@ def register(commands):
         else:
             p.add_argument("--output-dir", type=Path, required=True)
         if name.startswith("cluster-"):
+            p.add_argument("--fold-size-policy", type=Path)
             for key in ("model-config", "screen-config", "bootstrap-config"):
                 p.add_argument("--" + key, type=Path, required=True)
         elif name.startswith("benchmark-"):
@@ -86,8 +87,18 @@ def dispatch(args):
         from super_deli.models.integrative_config import IntegrativeConfig
         from super_deli.models.predictive_bootstrap_config import PredictiveBootstrapConfig
         from super_deli.models.predictive_config import PredictiveScreenConfig
+        from super_deli.models.predictive_fold_size import PredictiveFoldSizePolicy
         from super_deli.workflows.predictive_bootstrap import run_predictive_bootstrap
 
+        options = (
+            {}
+            if args.fold_size_policy is None
+            else dict(
+                fold_size_policy=PredictiveFoldSizePolicy.from_dict(
+                    read_json(args.fold_size_policy)
+                )
+            )
+        )
         return run_predictive_bootstrap(
             load_config(args.config),
             model_config=IntegrativeConfig.from_dict(read_json(args.model_config)),
@@ -95,6 +106,7 @@ def dispatch(args):
             bootstrap_config=PredictiveBootstrapConfig.from_dict(read_json(args.bootstrap_config)),
             base_dir=args.config.absolute().parent,
             output_dir=args.output_dir,
+            **options,
         )
     if args.command.startswith("analyze-"):
         from super_deli.benchmarking.predictive_bootstrap_audit import audit_study

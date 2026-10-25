@@ -4,7 +4,19 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: diagnosis of N=64 predictive-bootstrap instability.**
+**Current checkpoint: optional scaled fold sizes for shared predictive stability.**
+The separately versioned policy scales each training fold's minimum independent
+locality support to its distinct sampled exposure. It keeps the full-data minimum,
+bootstrap multiplicities, original-ID folds, positive predictive-gain gate and AIC
+ranking. The unchanged legacy rule remains the default. See the
+[method and CLI](docs/scaled-fold-stability.md) and
+[paired validation](docs/scaled-fold-stability-results.md). The 40-dataset study
+uses 99 paired whole-locality draws per policy, with independent numerical and
+archive audits. Own-point and common-legacy-point stability are reported
+separately; detailed evidence stays local. This is a predictive stability option,
+without new significance calibration or species-probability claims.
+
+**Preceding checkpoint: diagnosis of N=64 predictive-bootstrap instability.**
 The frozen paired diagnostic preserves production fitting, sampling, defaults and
 historical p-values. It audits 40 previous observations and 3,960 retained draws,
 then compares multiplicities, unique support and additional optimizer starts on

@@ -248,10 +248,11 @@ reference labels need independent evidence and documented uncertainty.
 21. **Completed:** Optional shared-covariance grouped AIC and predictive screening with paired validation.
 22. **Completed:** Whole-locality bootstrap stability for fixed-fold shared predictive AIC.
 23. **Completed:** N=64 shared predictive-bootstrap diagnosis with paired support/optimizer controls.
-24. Empirical species-delimitation validation with independently supported biological reference groups.
-25. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
-26. Anatomical landmark learning, semilandmark sliding and further model families.
-27. Consolidated user guidance, end-to-end examples and a scoped research release.
+24. **Completed:** Opt-in exposure-scaled fold sizes with paired whole-locality stability validation.
+25. Empirical species-delimitation validation with independently supported biological reference groups.
+26. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
+27. Anatomical landmark learning, semilandmark sliding and further model families.
+28. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The later calibration and diagnostic workflows remain restricted to their declared
 assumptions and data types; completing their engineering does not establish species
@@ -312,3 +313,14 @@ retains original-ID size accounting and runs truth-informed optimization only
 after ordinary fits. New diagnostic configuration, gate accounting, post-fit
 metrics, immutable studies and independent audits are separate modules; none
 change production defaults or historical p-values. Detailed evidence stays local.
+
+
+The [scaled fold-size policy](scaled-fold-stability.md) is an explicit typed
+configuration, separate from the integrative model and screening schemas. Optional
+hooks reuse the production fit/search and preserve the absent-policy path. A
+fold-only mixture settings object separates effective training support from the
+unchanged full-model minimum and dimension guards. Identity-derived thresholds
+and mixture settings are saved before estimation. The generic bounded-study
+runner, paired benchmark and independent archive/numerical audits remain outside
+the production selection/stability algorithm. No historical calibration or default
+changes, and no automatic policy selection, are introduced.

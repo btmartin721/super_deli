@@ -92,3 +92,6 @@ recursive-include docs/figures/predictive-stability *.pdf *.svg *.png
 
 recursive-include examples/bootstrap-instability *.json *.csv *.py
 recursive-include docs/figures/bootstrap-instability *.png *.pdf *.svg
+
+recursive-include examples/scaled-fold-stability *.json *.csv *.py
+recursive-include docs/figures/scaled-fold-stability *.png *.svg *.pdf

@@ -86,6 +86,12 @@ jobs:
                   print(f"--- {path.relative_to(root)} ---")
                   print(path.read_text(errors="replace")[-4000:])
           PYCODE
+      - name: Check scaled fold stability installed workflow
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/scaled-fold-stability/smoke.py" --output-dir "$RUNNER_TEMP/scaled-fold-stability-smoke"
+
       - name: Check bootstrap instability installed diagnostic
         working-directory: ${{ runner.temp }}
         run: |

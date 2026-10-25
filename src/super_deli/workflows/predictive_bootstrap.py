@@ -8,7 +8,14 @@ from super_deli.workflows.predictive import run_predictive, save_arrays
 
 
 def run_predictive_bootstrap(
-    dataset, *, model_config, screen_config, bootstrap_config, base_dir, output_dir
+    dataset,
+    *,
+    model_config,
+    screen_config,
+    bootstrap_config,
+    base_dir,
+    output_dir,
+    fold_size_policy=None,
 ):
     import numpy as np
     from threadpoolctl import threadpool_limits
@@ -21,6 +28,10 @@ def run_predictive_bootstrap(
     c = PredictiveBootstrapConfig.from_dict(bootstrap_config.to_dict())
     screen_config = PredictiveScreenConfig.from_dict(screen_config.to_dict())
     c.validate_model(model_config, screen_config)
+    from super_deli.workflows.predictive import checked_policy
+
+    fold_size_policy = checked_policy(fold_size_policy, model_config, screen_config)
+    policy_options = {} if fold_size_policy is None else {"fold_size_policy": fold_size_policy}
     n = len(dataset.localities)
     if 320 * n * n > model_config.max_pairwise_bytes:
         raise ValueError("Predictive stability exceeds max_pairwise_bytes")
@@ -32,6 +43,11 @@ def run_predictive_bootstrap(
             "model": model_config.to_dict(),
             "screening": screen_config.to_dict(),
             "bootstrap": c.to_dict(),
+            **(
+                {"fold_size_policy": fold_size_policy.to_dict()}
+                if fold_size_policy is not None
+                else {}
+            ),
         },
         base / "configuration.json",
     )
@@ -41,6 +57,7 @@ def run_predictive_bootstrap(
         screen_config=screen_config,
         base_dir=base_dir,
         output_dir=base / "point",
+        **policy_options,
     )
     planned = (1 + c.n_bootstrap) * 6
     if point["selection"]["status"] != "complete":
@@ -53,6 +70,11 @@ def run_predictive_bootstrap(
             "unattempted_fits": planned - point["attempted_fits"],
             "replicates": [],
         }
+        if fold_size_policy is not None:
+            result.update(
+                workflow="shared_predictive_scaled_fold_bootstrap_v1",
+                fold_size_policy=fold_size_policy.to_dict(),
+            )
         write_json(result, base / "summary.json")
         return result
     layout = read_json(base / "point/layout.json")
@@ -79,7 +101,7 @@ def run_predictive_bootstrap(
             }
             try:
                 summary = occurrence_screen(
-                    base / prefix, values, layout, draw, model_config, assignments
+                    base / prefix, values, layout, draw, model_config, assignments, **policy_options
                 )
                 row.update(
                     {
@@ -133,5 +155,10 @@ def run_predictive_bootstrap(
         "interpretation": "All-unit stability includes resubstitution; OOB support may "
         "be sparse. Neither is a species probability or p-value.",
     }
+    if fold_size_policy is not None:
+        result.update(
+            workflow="shared_predictive_scaled_fold_bootstrap_v1",
+            fold_size_policy=fold_size_policy.to_dict(),
+        )
     write_json(result, base / "summary.json")
     return result

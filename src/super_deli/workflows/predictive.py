@@ -25,6 +25,26 @@ def fold_model(model, i):
     )
 
 
+def fold_with_support(model, i, full_ids, training_ids, policy):
+    trained = fold_model(model, i)
+    if policy is None:
+        return trained, None
+    evidence = policy.evidence(model.min_cluster_size, full_ids, training_ids)
+    return trained, evidence
+
+
+def checked_policy(policy, model, screening):
+    if policy is None:
+        return None
+    from super_deli.models.predictive_fold_size import PredictiveFoldSizePolicy
+
+    if not isinstance(policy, PredictiveFoldSizePolicy):
+        raise ValueError("An explicit PredictiveFoldSizePolicy is required")
+    policy = PredictiveFoldSizePolicy.from_dict(policy.to_dict())
+    policy.validate_model(model, screening)
+    return policy
+
+
 def raw_search(base, prefix, values, layout, model):
     from super_deli.models.grouped_null import write_raw_views
 
@@ -128,7 +148,9 @@ def write_selected(base, selection, units, covariance_type="full"):
         )
 
 
-def finish_screen(base, values, layout, model, config, full_record, *, direct=False):
+def finish_screen(
+    base, values, layout, model, config, full_record, *, direct=False, fold_size_policy=None
+):
     import numpy as np
 
     from super_deli.models.predictive_selection import fold_assignments, screen_candidates
@@ -141,16 +163,35 @@ def finish_screen(base, values, layout, model, config, full_record, *, direct=Fa
     for assignment in assignments:
         i = assignment["fold"]
         prefix = f"fold_{i:03d}"
-        trained = fold_model(model, i)
         train, test = assignment["training_indices"], assignment["validation_indices"]
+        trained, exposure = fold_with_support(
+            model, i, units, [units[j] for j in train], fold_size_policy
+        )
         if direct:
             record = score_search(base, prefix, values[train], [units[j] for j in train], trained)
         else:
             training, training_layout = subset_raw(values, layout, train)
             validation, validation_layout = subset_raw(values, layout, test)
-            record = raw_search(base, prefix, training, training_layout, trained)
-            write_json(training_layout, Path(base) / prefix / "training_layout.json")
+            if exposure is None:
+                record = raw_search(base, prefix, training, training_layout, trained)
+                write_json(training_layout, Path(base) / prefix / "training_layout.json")
+            else:
+                from super_deli.workflows.predictive_resampling import occurrence_search
+
+                record = occurrence_search(
+                    base,
+                    prefix,
+                    values,
+                    layout,
+                    np.asarray(train, dtype=int),
+                    trained,
+                    fold_minimum=exposure["training_minimum"],
+                    fold_support=exposure,
+                )
             write_json(validation_layout, Path(base) / prefix / "validation_layout.json")
+        if exposure is not None:
+            if read_json(Path(base) / prefix / "fold_support.json") != exposure:
+                raise ValueError("Frozen fold-support record differs")
         fits.append(record)
         row = {
             **assignment,
@@ -158,6 +199,8 @@ def finish_screen(base, values, layout, model, config, full_record, *, direct=Fa
             "status": record["status"],
             "model": trained.to_dict(),
         }
+        if exposure is not None:
+            row["fold_support"] = exposure
         if record["status"] == "complete":
             try:
                 scores = (
@@ -190,7 +233,7 @@ def finish_screen(base, values, layout, model, config, full_record, *, direct=Fa
     return selection, fits
 
 
-def summary_for(base, selection, records, config):
+def summary_for(base, selection, records, config, fold_size_policy=None):
     result = {
         "schema_version": 1,
         "workflow": "predictive_screened_aic_v1",
@@ -204,17 +247,25 @@ def summary_for(base, selection, records, config):
         "unattempted_fits": 1 + config.n_folds - len(records),
         "scope": "Opt-in predictive selection only; significance and stability are unavailable",
     }
+    if fold_size_policy is not None:
+        result.update(
+            workflow="predictive_screened_aic_scaled_fold_v1",
+            fold_size_policy=fold_size_policy.to_dict(),
+        )
     write_json(result, Path(base) / "summary.json")
     return result
 
 
-def run_predictive(dataset, *, model_config, screen_config, base_dir, output_dir):
+def run_predictive(
+    dataset, *, model_config, screen_config, base_dir, output_dir, fold_size_policy=None
+):
     from threadpoolctl import threadpool_limits
 
     from super_deli.models.mixture import FIT_LOCK
 
     screen_config = PredictiveScreenConfig.from_dict(screen_config.to_dict())
     screen_config.validate_model(model_config)
+    fold_size_policy = checked_policy(fold_size_policy, model_config, screen_config)
     base = Path(output_dir).absolute()
     base.mkdir(exist_ok=False)
     write_json(
@@ -222,6 +273,11 @@ def run_predictive(dataset, *, model_config, screen_config, base_dir, output_dir
             "dataset": dataset.to_dict(),
             "predictive_model": model_config.to_dict(),
             "screening": screen_config.to_dict(),
+            **(
+                {"fold_size_policy": fold_size_policy.to_dict()}
+                if fold_size_policy is not None
+                else {}
+            ),
         },
         base / "configuration.json",
     )
@@ -233,18 +289,25 @@ def run_predictive(dataset, *, model_config, screen_config, base_dir, output_dir
                 {"status": "withheld", "screened_k": None, "error": "Full-data fit failed"},
                 [record],
                 screen_config,
+                fold_size_policy,
             )
         try:
             values, layout = load_sources(dataset, model_config, base / "full/run")
             write_json(layout, base / "layout.json")
             save_arrays(base / "source_values.npz", **values)
             selection, records = finish_screen(
-                base, values, layout, model_config, screen_config, record
+                base,
+                values,
+                layout,
+                model_config,
+                screen_config,
+                record,
+                fold_size_policy=fold_size_policy,
             )
         except (ValueError, RuntimeError, FloatingPointError) as exc:
             write_json({"error": str(exc)}, base / "workflow_failure.json")
             raise
-    return summary_for(base, selection, records, screen_config)
+    return summary_for(base, selection, records, screen_config, fold_size_policy)
 
 
 def _run_score_screen(scores, *, model, screen_config, output_dir):
