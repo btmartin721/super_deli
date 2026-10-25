@@ -61,7 +61,9 @@ super-deli cluster-integrative-predictive /absolute/dataset.json \
 The examples in `examples/predictive-aic/` show the model and screen configurations.
 The workflow accepts existing declared continuous morphology/ecology features,
 preserves their identities/units and explicit population/locality links, and
-requires both views to be complete. It disallows stability draws. The full-data
+requires both views to be complete. This point command disallows stability draws;
+a separate [shared-family locality-bootstrap workflow](predictive-stability.md)
+refits the complete screen under its narrower scope. The full-data
 candidate search keeps existing minimum-size and best-start screening behavior.
 
 `full/run/` retains the unmodified ordinary AIC pipeline. `fold_000/` through
@@ -74,10 +76,11 @@ contain the screened full-data candidate when available. The CLI exits nonzero
 when screening is withheld. Original AIC outputs remain available separately.
 
 Membership probabilities are conditional on the chosen fitted mixture. They do
-not quantify uncertainty in the screen itself. Significance and stability for
-the new selection policy require a later checkpoint: existing calibration APIs
-do not accept its distinct output/configuration schema. No historical p-values
-are overwritten or reinterpreted.
+not quantify uncertainty in the screen itself. Shared-family, fixed-fold locality
+resampling stability is available through the separate workflow linked above.
+Full-family screen stability and significance for either screened policy remain
+unsupported: existing calibration APIs do not accept the screened output/schema.
+No historical p-values are overwritten or reinterpreted.
 
 ## Frozen validation
 

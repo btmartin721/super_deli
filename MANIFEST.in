@@ -86,3 +86,6 @@ recursive-include docs/figures/predictive-recovery *.png *.svg *.pdf
 
 recursive-include examples/shared-predictive *.json *.csv *.py
 recursive-include docs/figures/shared-predictive *.png *.svg *.pdf
+
+recursive-include examples/predictive-stability *.json *.csv *.py
+recursive-include docs/figures/predictive-stability *.pdf *.svg *.png

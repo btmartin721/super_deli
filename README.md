@@ -4,7 +4,17 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: shared-covariance predictive-screened grouped AIC.**
+**Current checkpoint: whole-locality bootstrap stability for shared predictive AIC.**
+The separate opt-in workflow resamples whole localities, preserves their members
+and multiplicities, and refits the complete fixed-fold predictive screen. It
+reports selected-K frequencies, cluster recovery/merging and both-out-of-bag
+coverage with conditional Monte Carlo precision and explicit failure bounds.
+See the [method and CLI](docs/predictive-stability.md) and
+[bounded validation](docs/predictive-stability-results.md). Defaults and historical
+p-values remain unchanged; detailed evidence stays local. These frequencies
+measure conditional resampling stability, not species probabilities.
+
+**Preceding checkpoint: shared-covariance predictive-screened grouped AIC.**
 The optional shared family pools within-cluster covariance while retaining the
 same whole-locality predictive screen. See the [method](docs/shared-predictive.md)
 and [completed paired validation](docs/shared-predictive-results.md): 350 fresh

@@ -1,0 +1,678 @@
+{
+  "cells": [
+    {
+      "cell": "cline_n64",
+      "descriptive_dataset_summaries": {
+        "all_conditional_cross_merging": {
+          "maximum": 0.9544329830650087,
+          "mean": 0.9544329830650087,
+          "median": 0.9544329830650087,
+          "minimum": 0.9544329830650087
+        },
+        "all_conditional_within_cohesion": {
+          "maximum": 0.9973076524800663,
+          "mean": 0.9854052935231095,
+          "median": 0.9949945887445886,
+          "minimum": 0.954289923039923
+        },
+        "conditional_mean_draw_ari": null,
+        "conditional_mean_exact_point_cluster_recovery": {
+          "maximum": 0.98989898989899,
+          "mean": 0.7737373737373737,
+          "median": 0.9696969696969697,
+          "minimum": 0.0
+        },
+        "conditional_same_k_frequency": {
+          "maximum": 0.98989898989899,
+          "mean": 0.7838383838383839,
+          "median": 0.9696969696969697,
+          "minimum": 0.050505050505050504
+        },
+        "oob_conditional_cross_merging": {
+          "maximum": 0.9595452842487905,
+          "mean": 0.9595452842487905,
+          "median": 0.9595452842487905,
+          "minimum": 0.9595452842487905
+        },
+        "oob_conditional_within_cohesion": {
+          "maximum": 0.9966990676199513,
+          "mean": 0.9850155192600093,
+          "median": 0.995280873350203,
+          "minimum": 0.9510063688794024
+        },
+        "oob_covered_pair_fraction": {
+          "maximum": 0.8859126984126984,
+          "mean": 0.856547619047619,
+          "median": 0.8670634920634921,
+          "minimum": 0.7867063492063492
+        },
+        "oob_median_conditional_mc_interval_width": {
+          "maximum": 0.285401222275954,
+          "mean": 0.25824152113488363,
+          "median": 0.24705263800047095,
+          "minimum": 0.24705263800047095
+        },
+        "oob_median_successful_pairs": {
+          "maximum": 13.0,
+          "mean": 13.0,
+          "median": 13.0,
+          "minimum": 13.0
+        },
+        "point_ari": null
+      },
+      "independent_datasets": 5,
+      "law": "cline",
+      "mean_dataset_conditional_selected_k_frequencies": {
+        "1": 0.9636363636363636,
+        "2": 0.028282828282828285,
+        "3": 0.00808080808080808,
+        "4": 0.0
+      },
+      "n": 64,
+      "point_k_counts": {
+        "1": 4,
+        "2": 1,
+        "3": 0,
+        "4": 0
+      },
+      "requested_draws": 495,
+      "role": "stress",
+      "successful_draws": 495
+    },
+    {
+      "cell": "correlated_gaussian_n64",
+      "descriptive_dataset_summaries": {
+        "all_conditional_cross_merging": null,
+        "all_conditional_within_cohesion": {
+          "maximum": 0.9966780904280903,
+          "mean": 0.9872013788680455,
+          "median": 0.9884660092993426,
+          "minimum": 0.9699575116241783
+        },
+        "conditional_mean_draw_ari": null,
+        "conditional_mean_exact_point_cluster_recovery": {
+          "maximum": 0.98989898989899,
+          "mean": 0.9717171717171718,
+          "median": 0.9696969696969697,
+          "minimum": 0.9393939393939394
+        },
+        "conditional_same_k_frequency": {
+          "maximum": 0.98989898989899,
+          "mean": 0.9717171717171718,
+          "median": 0.9696969696969697,
+          "minimum": 0.9393939393939394
+        },
+        "oob_conditional_cross_merging": null,
+        "oob_conditional_within_cohesion": {
+          "maximum": 0.9964249932345964,
+          "mean": 0.9869735510121284,
+          "median": 0.9895313667451928,
+          "minimum": 0.9704210033156393
+        },
+        "oob_covered_pair_fraction": {
+          "maximum": 0.8878968253968254,
+          "mean": 0.8510912698412698,
+          "median": 0.8482142857142857,
+          "minimum": 0.8120039682539683
+        },
+        "oob_median_conditional_mc_interval_width": {
+          "maximum": 0.2646484693970512,
+          "mean": 0.24956204312858565,
+          "median": 0.24705263800047095,
+          "minimum": 0.2420038322444642
+        },
+        "oob_median_successful_pairs": {
+          "maximum": 13.0,
+          "mean": 13.0,
+          "median": 13.0,
+          "minimum": 13.0
+        },
+        "point_ari": null
+      },
+      "independent_datasets": 5,
+      "law": "correlated_gaussian",
+      "mean_dataset_conditional_selected_k_frequencies": {
+        "1": 0.9717171717171718,
+        "2": 0.028282828282828285,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "n": 64,
+      "point_k_counts": {
+        "1": 5,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "requested_draws": 495,
+      "role": "control",
+      "successful_draws": 495
+    },
+    {
+      "cell": "four_n256_s3_0",
+      "descriptive_dataset_summaries": {
+        "all_conditional_cross_merging": {
+          "maximum": 0.013594017299681673,
+          "mean": 0.009214232821155225,
+          "median": 0.008064857602930941,
+          "minimum": 0.004771418217686085
+        },
+        "all_conditional_within_cohesion": {
+          "maximum": 0.9852302562929806,
+          "mean": 0.9726577780649936,
+          "median": 0.9760775433101619,
+          "minimum": 0.9588998984025582
+        },
+        "conditional_mean_draw_ari": {
+          "maximum": 0.9410713326088166,
+          "mean": 0.9153973568597175,
+          "median": 0.8999136140219651,
+          "minimum": 0.8972533245954383
+        },
+        "conditional_mean_exact_point_cluster_recovery": {
+          "maximum": 0.398989898989899,
+          "mean": 0.23232323232323235,
+          "median": 0.2373737373737374,
+          "minimum": 0.045454545454545456
+        },
+        "conditional_same_k_frequency": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "minimum": 1.0
+        },
+        "oob_conditional_cross_merging": {
+          "maximum": 0.015546288172061277,
+          "mean": 0.009357828932519428,
+          "median": 0.008464195293662956,
+          "minimum": 0.004002889051609134
+        },
+        "oob_conditional_within_cohesion": {
+          "maximum": 0.9864105069733112,
+          "mean": 0.970639430685907,
+          "median": 0.9734718180167138,
+          "minimum": 0.9505066017081522
+        },
+        "oob_covered_pair_fraction": {
+          "maximum": 0.8803615196078431,
+          "mean": 0.8671813725490196,
+          "median": 0.8694240196078431,
+          "minimum": 0.848468137254902
+        },
+        "oob_median_conditional_mc_interval_width": {
+          "maximum": 0.24705263800047092,
+          "mean": 0.23780251219025828,
+          "median": 0.23163576165011657,
+          "minimum": 0.23163576165011648
+        },
+        "oob_median_successful_pairs": {
+          "maximum": 13.0,
+          "mean": 13.0,
+          "median": 13.0,
+          "minimum": 13.0
+        },
+        "point_ari": {
+          "maximum": 0.9588323498300987,
+          "mean": 0.9305991009195683,
+          "median": 0.9192324344953104,
+          "minimum": 0.908559759322431
+        }
+      },
+      "independent_datasets": 5,
+      "law": "complementary",
+      "mean_dataset_conditional_selected_k_frequencies": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 1.0
+      },
+      "n": 256,
+      "point_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 5
+      },
+      "requested_draws": 495,
+      "role": "alternative",
+      "successful_draws": 495
+    },
+    {
+      "cell": "four_n64_s3_0",
+      "descriptive_dataset_summaries": {
+        "all_conditional_cross_merging": {
+          "maximum": 0.8007999103889516,
+          "mean": 0.5448913952030433,
+          "median": 0.5080314546112592,
+          "minimum": 0.2738715277777777
+        },
+        "all_conditional_within_cohesion": {
+          "maximum": 0.9908191647322081,
+          "mean": 0.9776992126450785,
+          "median": 0.9853324915824915,
+          "minimum": 0.9575429087624209
+        },
+        "conditional_mean_draw_ari": {
+          "maximum": 0.4352166060479387,
+          "mean": 0.30296995882255096,
+          "median": 0.345066702314375,
+          "minimum": 0.1491954295066932
+        },
+        "conditional_mean_exact_point_cluster_recovery": {
+          "maximum": 0.6313131313131313,
+          "mean": 0.16717171717171717,
+          "median": 0.07828282828282829,
+          "minimum": 0.007575757575757576
+        },
+        "conditional_same_k_frequency": {
+          "maximum": 0.6464646464646465,
+          "mean": 0.21414141414141416,
+          "median": 0.15151515151515152,
+          "minimum": 0.020202020202020204
+        },
+        "oob_conditional_cross_merging": {
+          "maximum": 0.8029322724816492,
+          "mean": 0.5505656368216632,
+          "median": 0.504708789466863,
+          "minimum": 0.27798792234832287
+        },
+        "oob_conditional_within_cohesion": {
+          "maximum": 0.9897777739405962,
+          "mean": 0.9732135917140008,
+          "median": 0.9799152030669624,
+          "minimum": 0.9450336561161334
+        },
+        "oob_covered_pair_fraction": {
+          "maximum": 0.8586309523809523,
+          "mean": 0.8494047619047619,
+          "median": 0.8541666666666666,
+          "minimum": 0.8253968253968254
+        },
+        "oob_median_conditional_mc_interval_width": {
+          "maximum": 0.4764506817342411,
+          "mean": 0.4272803673483701,
+          "median": 0.4104809447745684,
+          "minimum": 0.38802678316328854
+        },
+        "oob_median_successful_pairs": {
+          "maximum": 13.0,
+          "mean": 13.0,
+          "median": 13.0,
+          "minimum": 13.0
+        },
+        "point_ari": {
+          "maximum": 1.0,
+          "mean": 0.8218889875383295,
+          "median": 0.8756749723505303,
+          "minimum": 0.4878048780487805
+        }
+      },
+      "independent_datasets": 5,
+      "law": "complementary",
+      "mean_dataset_conditional_selected_k_frequencies": {
+        "1": 0.4303030303030303,
+        "2": 0.44646464646464645,
+        "3": 0.030303030303030304,
+        "4": 0.09292929292929293
+      },
+      "n": 64,
+      "point_k_counts": {
+        "1": 0,
+        "2": 1,
+        "3": 0,
+        "4": 4
+      },
+      "requested_draws": 495,
+      "role": "alternative",
+      "successful_draws": 495
+    },
+    {
+      "cell": "four_n64_s4_5",
+      "descriptive_dataset_summaries": {
+        "all_conditional_cross_merging": {
+          "maximum": 0.34576231060606055,
+          "mean": 0.2548790411580517,
+          "median": 0.2384785353535354,
+          "minimum": 0.17496580387205385
+        },
+        "all_conditional_within_cohesion": {
+          "maximum": 0.9967592592592591,
+          "mean": 0.9849572737072737,
+          "median": 0.9890782828282828,
+          "minimum": 0.9712299712299712
+        },
+        "conditional_mean_draw_ari": {
+          "maximum": 0.7170573714553444,
+          "mean": 0.6604928114775533,
+          "median": 0.6987614470963753,
+          "minimum": 0.5651747505552659
+        },
+        "conditional_mean_exact_point_cluster_recovery": {
+          "maximum": 0.5959595959595959,
+          "mean": 0.3883838383838384,
+          "median": 0.35353535353535354,
+          "minimum": 0.2828282828282828
+        },
+        "conditional_same_k_frequency": {
+          "maximum": 0.5959595959595959,
+          "mean": 0.4525252525252525,
+          "median": 0.46464646464646464,
+          "minimum": 0.3333333333333333
+        },
+        "oob_conditional_cross_merging": {
+          "maximum": 0.3801945502204867,
+          "mean": 0.27508340505760787,
+          "median": 0.2612923429292952,
+          "minimum": 0.1756057243186123
+        },
+        "oob_conditional_within_cohesion": {
+          "maximum": 0.9960300835860048,
+          "mean": 0.9820537041058083,
+          "median": 0.979647271762863,
+          "minimum": 0.9705506787600067
+        },
+        "oob_covered_pair_fraction": {
+          "maximum": 0.84375,
+          "mean": 0.8334325396825397,
+          "median": 0.8412698412698413,
+          "minimum": 0.7991071428571429
+        },
+        "oob_median_conditional_mc_interval_width": {
+          "maximum": 0.4877504657428894,
+          "mean": 0.4037396740510367,
+          "median": 0.45110878164324514,
+          "minimum": 0.28491415291815436
+        },
+        "oob_median_successful_pairs": {
+          "maximum": 13.0,
+          "mean": 12.5,
+          "median": 12.5,
+          "minimum": 12.0
+        },
+        "point_ari": {
+          "maximum": 1.0,
+          "mean": 0.9915295036106955,
+          "median": 1.0,
+          "minimum": 0.9576475180534774
+        }
+      },
+      "independent_datasets": 5,
+      "law": "complementary",
+      "mean_dataset_conditional_selected_k_frequencies": {
+        "1": 0.12525252525252525,
+        "2": 0.32525252525252524,
+        "3": 0.09696969696969697,
+        "4": 0.4525252525252525
+      },
+      "n": 64,
+      "point_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 5
+      },
+      "requested_draws": 495,
+      "role": "alternative",
+      "successful_draws": 495
+    },
+    {
+      "cell": "independent_gaussian_n64",
+      "descriptive_dataset_summaries": {
+        "all_conditional_cross_merging": null,
+        "all_conditional_within_cohesion": {
+          "maximum": 1.0,
+          "mean": 0.9970959595959595,
+          "median": 0.9954755892255892,
+          "minimum": 0.9948893698893698
+        },
+        "conditional_mean_draw_ari": null,
+        "conditional_mean_exact_point_cluster_recovery": {
+          "maximum": 1.0,
+          "mean": 0.993939393939394,
+          "median": 0.98989898989899,
+          "minimum": 0.98989898989899
+        },
+        "conditional_same_k_frequency": {
+          "maximum": 1.0,
+          "mean": 0.993939393939394,
+          "median": 0.98989898989899,
+          "minimum": 0.98989898989899
+        },
+        "oob_conditional_cross_merging": null,
+        "oob_conditional_within_cohesion": {
+          "maximum": 1.0,
+          "mean": 0.9974444337958756,
+          "median": 0.9963601167685059,
+          "minimum": 0.9953999697913739
+        },
+        "oob_covered_pair_fraction": {
+          "maximum": 0.8759920634920635,
+          "mean": 0.8423611111111111,
+          "median": 0.8363095238095238,
+          "minimum": 0.8134920634920635
+        },
+        "oob_median_conditional_mc_interval_width": {
+          "maximum": 0.24705263800047095,
+          "mean": 0.24705263800047095,
+          "median": 0.24705263800047095,
+          "minimum": 0.24705263800047095
+        },
+        "oob_median_successful_pairs": {
+          "maximum": 13.0,
+          "mean": 12.8,
+          "median": 13.0,
+          "minimum": 12.0
+        },
+        "point_ari": null
+      },
+      "independent_datasets": 5,
+      "law": "independent_gaussian",
+      "mean_dataset_conditional_selected_k_frequencies": {
+        "1": 0.993939393939394,
+        "2": 0.0060606060606060615,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "n": 64,
+      "point_k_counts": {
+        "1": 5,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "requested_draws": 495,
+      "role": "control",
+      "successful_draws": 495
+    },
+    {
+      "cell": "unequal_variance_n64",
+      "descriptive_dataset_summaries": {
+        "all_conditional_cross_merging": {
+          "maximum": 0.787948108536344,
+          "mean": 0.5522756624124499,
+          "median": 0.5726010101010102,
+          "minimum": 0.29627786859999533
+        },
+        "all_conditional_within_cohesion": {
+          "maximum": 0.9942162465907377,
+          "mean": 0.9328409965017024,
+          "median": 0.9840473003123604,
+          "minimum": 0.8015923120089786
+        },
+        "conditional_mean_draw_ari": {
+          "maximum": 0.4216870623319832,
+          "mean": 0.19325155237575092,
+          "median": 0.14913049780865242,
+          "minimum": 0.08317982829605271
+        },
+        "conditional_mean_exact_point_cluster_recovery": {
+          "maximum": 0.7878787878787878,
+          "mean": 0.42962962962962964,
+          "median": 0.40404040404040403,
+          "minimum": 0.050505050505050504
+        },
+        "conditional_same_k_frequency": {
+          "maximum": 0.7878787878787878,
+          "mean": 0.42424242424242425,
+          "median": 0.43434343434343436,
+          "minimum": 0.0707070707070707
+        },
+        "oob_conditional_cross_merging": {
+          "maximum": 0.7929376689127433,
+          "mean": 0.5610592852568601,
+          "median": 0.5865276068944327,
+          "minimum": 0.3037125799634044
+        },
+        "oob_conditional_within_cohesion": {
+          "maximum": 0.9977690713849883,
+          "mean": 0.935448735210317,
+          "median": 0.9810664772800614,
+          "minimum": 0.8035778045990026
+        },
+        "oob_covered_pair_fraction": {
+          "maximum": 0.8516865079365079,
+          "mean": 0.8353174603174603,
+          "median": 0.8328373015873016,
+          "minimum": 0.8179563492063492
+        },
+        "oob_median_conditional_mc_interval_width": {
+          "maximum": 0.44248753848373357,
+          "mean": 0.3667363558346118,
+          "median": 0.3368777092726958,
+          "minimum": 0.3084971078187608
+        },
+        "oob_median_successful_pairs": {
+          "maximum": 13.0,
+          "mean": 12.6,
+          "median": 13.0,
+          "minimum": 12.0
+        },
+        "point_ari": {
+          "maximum": 0.4878048780487805,
+          "mean": 0.2708918067849362,
+          "median": 0.4289788933257273,
+          "minimum": 0.0
+        }
+      },
+      "independent_datasets": 5,
+      "law": "unequal_variance",
+      "mean_dataset_conditional_selected_k_frequencies": {
+        "1": 0.5757575757575757,
+        "2": 0.39595959595959596,
+        "3": 0.024242424242424242,
+        "4": 0.00404040404040404
+      },
+      "n": 64,
+      "point_k_counts": {
+        "1": 2,
+        "2": 2,
+        "3": 1,
+        "4": 0
+      },
+      "requested_draws": 495,
+      "role": "stress",
+      "successful_draws": 495
+    },
+    {
+      "cell": "zero_conditional_gaussian_n64",
+      "descriptive_dataset_summaries": {
+        "all_conditional_cross_merging": null,
+        "all_conditional_within_cohesion": {
+          "maximum": 1.0,
+          "mean": 0.9948242344075677,
+          "median": 0.9966780904280903,
+          "minimum": 0.9825737534070867
+        },
+        "conditional_mean_draw_ari": null,
+        "conditional_mean_exact_point_cluster_recovery": {
+          "maximum": 1.0,
+          "mean": 0.9858585858585859,
+          "median": 0.98989898989899,
+          "minimum": 0.9494949494949495
+        },
+        "conditional_same_k_frequency": {
+          "maximum": 1.0,
+          "mean": 0.9858585858585859,
+          "median": 0.98989898989899,
+          "minimum": 0.9494949494949495
+        },
+        "oob_conditional_cross_merging": null,
+        "oob_conditional_within_cohesion": {
+          "maximum": 1.0,
+          "mean": 0.994792391207603,
+          "median": 0.9956023518901483,
+          "minimum": 0.9831901321830941
+        },
+        "oob_covered_pair_fraction": {
+          "maximum": 0.8814484126984127,
+          "mean": 0.8443452380952381,
+          "median": 0.8328373015873016,
+          "minimum": 0.8194444444444444
+        },
+        "oob_median_conditional_mc_interval_width": {
+          "maximum": 0.2646484693970512,
+          "mean": 0.24440505373964524,
+          "median": 0.24705263800047095,
+          "minimum": 0.23163576165011657
+        },
+        "oob_median_successful_pairs": {
+          "maximum": 13.0,
+          "mean": 12.8,
+          "median": 13.0,
+          "minimum": 12.0
+        },
+        "point_ari": null
+      },
+      "independent_datasets": 5,
+      "law": "zero_conditional_gaussian",
+      "mean_dataset_conditional_selected_k_frequencies": {
+        "1": 0.9858585858585859,
+        "2": 0.014141414141414142,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "n": 64,
+      "point_k_counts": {
+        "1": 5,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "requested_draws": 495,
+      "role": "control",
+      "successful_draws": 495
+    }
+  ],
+  "defaults_and_historical_pvalues_unchanged": true,
+  "detailed_artifacts_uploaded": false,
+  "main_study": {
+    "attempted_fits": 24000,
+    "failed_draws": 0,
+    "failed_fits": 0,
+    "observations": 40,
+    "planned_fits": 24000,
+    "requested": 40,
+    "status": "complete",
+    "successful_draws": 3960,
+    "successful_fits": 24000,
+    "unattempted_draws": 0,
+    "unattempted_fits": 0
+  },
+  "preflight": {
+    "both_audits": "passed",
+    "cap_GiB": 4,
+    "draws": 792,
+    "projected_GiB": 2.7523327954113483,
+    "searches": 4800
+  },
+  "replays": {
+    "attempted_fits": 90,
+    "failed_fits": 0,
+    "planned_searches": 90,
+    "requested_replays": 15,
+    "successful_fits": 90,
+    "unattempted_fits": 0,
+    "verified_replays": 15
+  },
+  "scientific_interpretation": "Five independent datasets per cell; draws are repeated measurements, not independent datasets. No stability-probability calibration, species probability, significance or general performance guarantee."
+}

@@ -210,3 +210,9 @@ jobs:
         run: |
           unset PYTHONPATH
           python "$GITHUB_WORKSPACE/examples/shared-predictive/smoke.py" --output-dir "$RUNNER_TEMP/shared-predictive-smoke"
+
+      - name: Check predictive stability installed workflow
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/predictive-stability/smoke.py" --output-dir "$RUNNER_TEMP/predictive-stability-smoke"

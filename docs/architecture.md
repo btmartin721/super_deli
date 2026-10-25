@@ -246,16 +246,18 @@ reference labels need independent evidence and documented uncertainty.
 19. **Completed:** Grouped AIC, full-pipeline likelihood-gain tests and larger false-positive/power studies.
 20. **Completed:** Predictive-screened full-family AIC and N=64 recovery diagnostics.
 21. **Completed:** Optional shared-covariance grouped AIC and predictive screening with paired validation.
-22. Empirical species-delimitation validation with independently supported biological reference groups.
-23. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
-24. Anatomical landmark learning, semilandmark sliding and further model families.
-25. Consolidated user guidance, end-to-end examples and a scoped research release.
+22. **Completed:** Whole-locality bootstrap stability for fixed-fold shared predictive AIC.
+23. Empirical species-delimitation validation with independently supported biological reference groups.
+24. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
+25. Anatomical landmark learning, semilandmark sliding and further model families.
+26. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The later calibration and diagnostic workflows remain restricted to their declared
 assumptions and data types; completing their engineering does not establish species
 boundaries. See the current README and linked result reports for precise validation
 coverage. The shared predictive extension is described in
-[shared-covariance predictive screening](shared-predictive.md).
+[shared-covariance predictive screening](shared-predictive.md), with a separate
+[whole-locality stability workflow](predictive-stability.md).
 
 The genomic baseline reports genetic clustering and locus-block sensitivity.
 It does not supply taxonomic validation, formal species-boundary significance,

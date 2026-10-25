@@ -9,6 +9,11 @@ Existing configurations, historical p-values and full-family results retain thei
 meaning. The [preceding diagnosis](predictive-recovery-results.md) motivates
 reducing covariance estimation at small sample sizes; improvement is not assumed.
 
+A separate [whole-locality bootstrap workflow](predictive-stability.md) now
+assesses the complete shared screen conditional on the original folds and seeds,
+with [bounded validation](predictive-stability-results.md). This does not enable
+ordinary unscreened shared-AIC stability or significance for screened results.
+
 ## Model and fixed selection rule
 
 Use `selection_criterion="aic"` and explicitly choose `covariance_type="tied"`
