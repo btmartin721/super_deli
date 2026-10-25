@@ -1,0 +1,45 @@
+{
+  "assessment_id": "juvenile_skate_correspondence_v1",
+  "contact_performed": false,
+  "database_mirrors_are_independent": false,
+  "email_sent": false,
+  "empirical_fits": 0,
+  "haul_link_counts": {
+    "unresolved": 84
+  },
+  "linked_hauls": 0,
+  "metadata_records": 84,
+  "mixed_source_label_hauls": 0,
+  "outside_cohort_claims": {
+    "haul_crosswalk": 0,
+    "voucher_crosswalk": 0
+  },
+  "phase": "correspondence_audit_only",
+  "prior_candidate_specimens": 53,
+  "prior_unmatched_specimens": 31,
+  "pvalues_generated": 0,
+  "readiness": {
+    "biological_independence": "not_established_by_mapping",
+    "empirical_analysis": "not_authorized_no_frozen_analysis_design",
+    "haul_correspondence": "unresolved",
+    "independent_benchmark": "not_established",
+    "significance": "not_authorized",
+    "voucher_correspondence": "unresolved"
+  },
+  "reference_records": 85,
+  "references_without_documented_archive_link": 85,
+  "resolved_haul_specimens": 0,
+  "resolved_voucher_specimens": 0,
+  "schema_version": 1,
+  "significance_draws": 0,
+  "source_label_haul_scope": "unavailable_no_specimen_haul_links",
+  "source_roles_are_reviewed_not_authenticated": true,
+  "specification_sha256": "a9daeddf7b0203b58076ae79ee1b7628f785eb6aff2f0af16700d87a515b3c41",
+  "stability_draws": 0,
+  "status": "assessed",
+  "survey_haul_records": 157,
+  "voucher_link_counts": {
+    "candidate": 53,
+    "unresolved": 31
+  }
+}

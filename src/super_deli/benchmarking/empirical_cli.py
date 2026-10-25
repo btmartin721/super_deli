@@ -24,7 +24,21 @@ def register(commands):
     replacement.add_argument("config", type=Path)
     replacement.add_argument("--source-dir", type=Path, required=True)
     replacement.add_argument("--output-dir", type=Path, required=True)
-    return frozenset({"curate-empirical", "assess-empirical", "audit-replacement-empirical"})
+    mapping = commands.add_parser(
+        "assess-correspondence",
+        help="Assess documentary specimen/reference/haul correspondence without fitting",
+    )
+    mapping.add_argument("config", type=Path)
+    for flag in ("prior-plan", "source-dir", "prior-audit-dir", "evidence-dir", "output-dir"):
+        mapping.add_argument("--" + flag, type=Path, required=True)
+    return frozenset(
+        {
+            "curate-empirical",
+            "assess-empirical",
+            "audit-replacement-empirical",
+            "assess-correspondence",
+        }
+    )
 
 
 def dispatch(args):
@@ -33,6 +47,19 @@ def dispatch(args):
     from super_deli.io.config import read_json
     from super_deli.workflows.empirical_curation import curate_empirical
 
+    if args.command == "assess-correspondence":
+        from super_deli.core.correspondence import CorrespondencePlan
+        from super_deli.core.replacement_audit import ReplacementAuditPlan
+        from super_deli.workflows.correspondence import assess_correspondence
+
+        return assess_correspondence(
+            CorrespondencePlan.from_dict(read_json(args.config)),
+            prior_plan=ReplacementAuditPlan.from_dict(read_json(args.prior_plan)),
+            source_dir=args.source_dir,
+            prior_audit_dir=args.prior_audit_dir,
+            evidence_dir=args.evidence_dir,
+            output_dir=args.output_dir,
+        )
     if args.command == "audit-replacement-empirical":
         from super_deli.core.replacement_audit import ReplacementAuditPlan
         from super_deli.workflows.replacement_audit import audit_replacement

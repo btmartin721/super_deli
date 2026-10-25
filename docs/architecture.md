@@ -252,10 +252,11 @@ reference labels need independent evidence and documented uncertainty.
 25. **Foundation completed:** Fit-free empirical data curation, source locks, anonymous matched manifests and a frozen non-executable protocol.
 26. **Assessment completed:** Source-bound sampling/reference evidence review; ingestion and descriptive labels admitted, independence-dependent uses explicitly blocked and grouped screening inapplicable for the capture source.
 27. **Audit completed:** Juvenile-skate replacement source, typed morphology/fixed-landmark representations and segregated COI reference diagnostics; voucher/haul correspondence remains insufficient for an independent benchmark.
-28. **Pending:** Obtain authoritative source/voucher and specimen/haul crosswalks, or audit a better documented source, then freeze a justified dependence-aware empirical design before fitting.
-27. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
-28. Anatomical landmark learning, semilandmark sliding and further model families.
-29. Consolidated user guidance, end-to-end examples and a scoped research release.
+28. **Assessment completed:** Bounded public-record skate correspondence review, source-bound mapping ledgers and local records-needed schemas; no authoritative specimen/voucher or specimen/haul bridge established, and no contact performed.
+29. **Pending:** Obtain authoritative correspondence without involving study authors, or audit a better documented source, then freeze a justified dependence-aware empirical design before fitting.
+30. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
+31. Anatomical landmark learning, semilandmark sliding and further model families.
+32. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The later calibration and diagnostic workflows remain restricted to their declared
 assumptions and data types; completing their engineering does not establish species
@@ -353,3 +354,10 @@ unchanged fixed-TPS reader for derivatives. Extended source TPS metadata is
 retained outside analytical features; curve sections are audited without being
 admitted to fixed-landmark models. Reference namespaces remain candidate-only,
 and no fitting, model configuration or older empirical schema is changed.
+
+
+The [correspondence assessment](skate-correspondence.md) adds separate immutable
+evidence declarations, documentary CSV/official haul adapters and fit-free
+orchestration. It binds the exact prior source audit, preserves candidate versus
+documented links, and keeps correspondence coverage separate from all analytical
+readiness. No old empirical schema, model or source reader is weakened.

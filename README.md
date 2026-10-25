@@ -4,15 +4,16 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: replacement empirical source audit.**
-The juvenile-skate candidate supplies 84 specimen records, 37 fixed-landmark
-full-disc shapes and 29 colour rows. The fit-free audit preserves all source
-records and separates descriptive labels from literal/candidate molecular
-reference links. Sampling and reference correspondence remain prerequisites
-for independent validation; ingestion success does not open those gates.
-See the [method and command](docs/replacement-empirical-audit.md) and
-[audit findings](docs/replacement-empirical-audit-results.md). Defaults and p-values
-are unchanged, and full data/evidence stay local.
+**Current checkpoint: skate specimen–voucher and haul correspondence.**
+The fit-free review checks all 84 archive specimens, 85 molecular records and
+157 official survey hauls. It retains 53 candidate voucher links and 31 unmatched
+IDs; no authoritative specimen–voucher or specimen–haul crosswalk was found in
+the checked public sources. The evidence gates remain unresolved. See the
+[method and command](docs/skate-correspondence.md) and
+[findings](docs/skate-correspondence-results.md). Defaults and p-values are
+unchanged; full evidence stays local. Nobody was contacted.
+The preceding [source audit](docs/replacement-empirical-audit-results.md) remains
+unchanged, including all shape/colour coverage and uncertainty limitations.
 
 The preceding [empirical evidence review](docs/empirical-evidence-gates.md)
 retains the penguin dataset's explicit limitations and its unchanged protocol.

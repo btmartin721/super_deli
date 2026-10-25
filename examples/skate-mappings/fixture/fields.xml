@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ArrayOfCls_Datras_FieldList xmlns="ices.dk.local/DATRAS"><Cls_Datras_FieldList><RecordHeader>CA</RecordHeader><FieldName>FishID</FieldName><FieldNameOld>FishID</FieldNameOld><DataFormat>char</DataFormat><Description>Invented running specimen sampling number; no link to archive IDs</Description></Cls_Datras_FieldList></ArrayOfCls_Datras_FieldList>

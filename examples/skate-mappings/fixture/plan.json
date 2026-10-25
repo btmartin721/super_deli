@@ -1,0 +1,71 @@
+{
+  "assessment_id": "synthetic_correspondence_v1",
+  "contact_policy": "no_contact",
+  "identity_policy": "literal_or_source_documented_only",
+  "phase": "correspondence_audit_only",
+  "prior_checksums_sha256": "fbfb16a52b2e30dd0f6d099b679729ec670e7fa6656397857cf2d40483d8f334",
+  "prior_specification_sha256": "2c066bedabacbc9cee30880f8bab8e57788e1ddeb8a97c6202a8c45fb9ef9aa9",
+  "schema_version": 1,
+  "sources": [
+    {
+      "filename": "hauls.xml",
+      "license_id": "CC0-1.0",
+      "limitation": "Synthetic testing only; no real specimen or issuer",
+      "provenance_group": "invented_records",
+      "review_locator": "Invented documentary table rows",
+      "role": "haul_catalogue",
+      "sha256": "dc85ab54b397d2bd65bb65b1684206d98c4e7719c6b1a8384026a1b3a5d8e8a7",
+      "size_bytes": 1095,
+      "source_id": "hauls",
+      "url": "https://example.org/invented/hauls.xml"
+    },
+    {
+      "filename": "fields.xml",
+      "license_id": "CC0-1.0",
+      "limitation": "Synthetic testing only; no real specimen or issuer",
+      "provenance_group": "invented_records",
+      "review_locator": "Invented documentary table rows",
+      "role": "field_dictionary",
+      "sha256": "a108f4566004916897511ba3e2a1a4d4334255caba34a96c14e93a3afac3af65",
+      "size_bytes": 388,
+      "source_id": "fields",
+      "url": "https://example.org/invented/fields.xml"
+    },
+    {
+      "filename": "search.json",
+      "license_id": "CC0-1.0",
+      "limitation": "Synthetic testing only; no real specimen or issuer",
+      "provenance_group": "invented_records",
+      "review_locator": "Invented documentary table rows",
+      "role": "search_register",
+      "sha256": "517171f08af82f80b9f5c6650f8eceee2da343f747c9e9b94641ef6088763de9",
+      "size_bytes": 304,
+      "source_id": "search",
+      "url": "https://example.org/invented/search.json"
+    },
+    {
+      "filename": "vouchers.csv",
+      "license_id": "CC0-1.0",
+      "limitation": "Synthetic testing only; no real specimen or issuer",
+      "provenance_group": "invented_records",
+      "review_locator": "Invented documentary table rows",
+      "role": "voucher_crosswalk",
+      "sha256": "2f9d3053b7376c08af5d60fc5ed32ede04c04bd4755583edeb44b0d37b25b3f8",
+      "size_bytes": 179,
+      "source_id": "vouchers",
+      "url": "https://example.org/invented/vouchers.csv"
+    },
+    {
+      "filename": "sampling.csv",
+      "license_id": "CC0-1.0",
+      "limitation": "Synthetic testing only; no real specimen or issuer",
+      "provenance_group": "invented_records",
+      "review_locator": "Invented documentary table rows",
+      "role": "haul_crosswalk",
+      "sha256": "c403902454ee5ceec750c12f0a33378047b68e28f25e4a26a5915e1551f251c4",
+      "size_bytes": 339,
+      "source_id": "sampling",
+      "url": "https://example.org/invented/sampling.csv"
+    }
+  ]
+}

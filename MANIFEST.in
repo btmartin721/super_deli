@@ -1035,3 +1035,22 @@ include src/super_deli/core/replacement_audit.py
 include src/super_deli/io/specimen_audit.py
 include src/super_deli/workflows/replacement_audit.py
 include tests/test_foundation_replacement_audit.py
+
+# Bounded fit-free specimen correspondence assets
+include docs/skate-correspondence-results.md
+include docs/skate-correspondence.md
+include examples/skate-mappings/README.md
+include examples/skate-mappings/fixture/fields.xml
+include examples/skate-mappings/fixture/hauls.xml
+include examples/skate-mappings/fixture/plan.json
+include examples/skate-mappings/fixture/sampling.csv
+include examples/skate-mappings/fixture/search.json
+include examples/skate-mappings/fixture/vouchers.csv
+include examples/skate-mappings/plan.json
+include examples/skate-mappings/results/checksums.json
+include examples/skate-mappings/results/summary.json
+include examples/skate-mappings/smoke.py
+include src/super_deli/core/correspondence.py
+include src/super_deli/io/correspondence.py
+include src/super_deli/workflows/correspondence.py
+include tests/test_foundation_correspondence.py
