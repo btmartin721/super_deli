@@ -86,6 +86,12 @@ jobs:
                   print(f"--- {path.relative_to(root)} ---")
                   print(path.read_text(errors="replace")[-4000:])
           PYCODE
+      - name: Check predictive stability installed workflow
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/predictive-stability/smoke.py" --output-dir "$RUNNER_TEMP/predictive-stability-smoke"
+
       - name: Check installed ingestion CLI outside checkout
         shell: bash
         run: |
@@ -210,9 +216,3 @@ jobs:
         run: |
           unset PYTHONPATH
           python "$GITHUB_WORKSPACE/examples/shared-predictive/smoke.py" --output-dir "$RUNNER_TEMP/shared-predictive-smoke"
-
-      - name: Check predictive stability installed workflow
-        working-directory: ${{ runner.temp }}
-        run: |
-          unset PYTHONPATH
-          python "$GITHUB_WORKSPACE/examples/predictive-stability/smoke.py" --output-dir "$RUNNER_TEMP/predictive-stability-smoke"

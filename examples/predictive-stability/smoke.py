@@ -7,6 +7,20 @@ import sys
 from pathlib import Path
 
 
+def command(base, name, *arguments):
+    result = subprocess.run(
+        [sys.executable, "-m", "super_deli", *map(str, arguments)],
+        capture_output=True,
+        text=True,
+    )
+    (base / (name + ".stdout.log")).write_text(result.stdout, encoding="utf-8")
+    (base / (name + ".stderr.log")).write_text(result.stderr, encoding="utf-8")
+    if result.returncode:
+        print(result.stderr, file=sys.stderr)
+    result.check_returncode()
+    return json.loads(result.stdout)
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--output-dir", type=Path, required=True)
@@ -15,16 +29,9 @@ def main():
     base.mkdir(exist_ok=False)
     example = Path(__file__).resolve().parent
 
-    def command(*arguments):
-        r = subprocess.run(
-            [sys.executable, "-m", "super_deli", *map(str, arguments)],
-            capture_output=True,
-            text=True,
-            check=True,
-        )
-        return json.loads(r.stdout)
-
     study = command(
+        base,
+        "study",
         "benchmark-predictive-stability",
         example / "smoke.json",
         "--output-dir",
@@ -33,6 +40,8 @@ def main():
         2,
     )
     audit = command(
+        base,
+        "audit",
         "analyze-predictive-stability",
         base / "study",
         "--output-dir",

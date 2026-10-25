@@ -137,3 +137,57 @@ def test_audited_storage_gate(tmp_path, monkeypatch, condition):
         with pytest.raises(RuntimeError):
             gate.storage_preflight(c, **args)
         assert read_json(tmp_path / "gate.json")["status"] == "failed"
+
+
+def test_storage_never_descends_into_transient_workspaces(tmp_path, monkeypatch):
+    import os
+
+    from super_deli.benchmarking.predictive_study import retained_bytes
+
+    for name in (".working", ".scratch"):
+        (tmp_path / name).mkdir()
+        (tmp_path / name / "temporary").write_bytes(b"transient")
+    (tmp_path / "retained").mkdir()
+    (tmp_path / "retained/archive").write_bytes(b"saved")
+    original = os.scandir
+
+    def concurrent_scandir(path):
+        if Path(path).name in {".working", ".scratch"}:
+            raise AssertionError("Storage traversal entered a concurrently removed workspace")
+        return original(path)
+
+    monkeypatch.setattr(os, "scandir", concurrent_scandir)
+    assert retained_bytes(tmp_path) == len(b"saved")
+
+
+def test_storage_permission_errors_are_not_silently_undercounted(tmp_path, monkeypatch):
+    import os
+
+    from super_deli.benchmarking.predictive_study import retained_bytes
+
+    (tmp_path / "retained").mkdir()
+    original = os.scandir
+
+    def denied(path):
+        if Path(path).name == "retained":
+            raise PermissionError("Cannot inspect retained evidence")
+        return original(path)
+
+    monkeypatch.setattr(os, "scandir", denied)
+    with pytest.raises(PermissionError):
+        retained_bytes(tmp_path)
+
+
+def test_installed_smoke_retains_and_prints_child_diagnostics(tmp_path, capsys):
+    import importlib.util
+    import subprocess
+
+    path = ROOT / "examples/predictive-stability/smoke.py"
+    spec = importlib.util.spec_from_file_location("stability_smoke", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    with pytest.raises(subprocess.CalledProcessError):
+        module.command(tmp_path, "bad", "not-a-super-deli-command")
+    assert (tmp_path / "bad.stdout.log").exists()
+    error = (tmp_path / "bad.stderr.log").read_text()
+    assert "invalid choice" in error and "invalid choice" in capsys.readouterr().err

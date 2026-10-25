@@ -83,7 +83,7 @@ calculations. A separate standard-library auditor checked immutable archive/memb
 bytes, folds, gates and counters. Archived replays exactly matched all candidate
 and transformation/mixture arrays in the prespecified prior full/shared workflows.
 
-Local verification passed 1,479 scientific tests and 938 foundation tests with
+Local verification passed 1,482 scientific tests and 941 foundation tests with
 101 optional-dependency skips. The installed-wheel eight-cell smoke passed
 144 smaller searches and both auditors. Python 3.11/3.12 remain the supported
 versions, with four required foundation/scientific CI jobs. The preflight's
@@ -97,3 +97,19 @@ See [the method and CLI](predictive-stability.md), the frozen
 and `scripts/report_predictive_stability.py` for regeneration. The preceding
 [shared-family comparison](shared-predictive-results.md) used different fresh
 observations and has a different validation purpose; comparisons are unpaired.
+
+## CI portability correction
+
+The initial Python 3.11 installed-smoke run failed after its scientific tests
+passed; its captured child-process diagnostics were not printed. The original
+CI logs remain preserved locally. Regression checks exposed a storage-accounting
+race: the size scan descended into excluded temporary trees while workers could
+remove them, a case the [Python 3.11 pathlib implementation](https://github.com/python/cpython/blob/3.11/Lib/pathlib.py#L350-L385)
+can propagate as a missing-directory error. Accounting now prunes these trees
+before traversal and fails closed on permission errors. The smoke wrapper retains
+and prints subprocess diagnostics before checking status, and runs earlier in CI.
+
+Only filesystem accounting and diagnostics changed after the frozen study.
+Numerical fitting and sampling functions, all study inputs/outputs, defaults and
+p-values remain unchanged. The original runtime is retained with the study;
+the final package has a separately fingerprinted runtime and amendment record.
