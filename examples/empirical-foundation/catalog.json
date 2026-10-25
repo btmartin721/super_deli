@@ -1,0 +1,81 @@
+{
+  "candidates": [
+    {
+      "data_source": {
+        "direct_upstream_verified": false,
+        "git_blob_sha1": "ba99fbd527f0bb983b3d9615ef5c81a5917ab7d9",
+        "license_id": "CC0-1.0",
+        "sha256": "144f623143c9360fd77322a4f86acb06dc198814dbd2669724c63e6457b907bd",
+        "size_bytes": 53098,
+        "source_role": "author_maintained_mirror",
+        "url": "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/8957207b78d6ccd1b4654a9dd9c9041b657478ab/inst/extdata/penguins_raw.csv"
+      },
+      "dataset_id": "penguin_capture_development_v1",
+      "identity_grain": "capture_record",
+      "identity_key": [
+        "studyName",
+        "Individual ID"
+      ],
+      "limitations": [
+        "Paired-nest sampling; no verified mapping from capture codes to independent nesting units",
+        "Cross-season biological identity and recapture status unresolved",
+        "Sex, year and island can confound structure; excluded from features and retained for evaluation",
+        "Islands contain multiple reference taxa; no locality aggregation is valid for this design",
+        "No genomic or landmark data in this selected source",
+        "Common familiar dataset; role is development/compatibility, not blinded biological validation"
+      ],
+      "modalities": [
+        "continuous morphology",
+        "individual blood isotope proxies for foraging ecology"
+      ],
+      "publication": "https://doi.org/10.1371/journal.pone.0090081",
+      "reference": "Published field species assignment; no independent reference-label audit",
+      "status": "curated_development_capture_cohort",
+      "upstream_version_equivalence": "Not independently verified; direct archive access returned HTTP 403",
+      "upstream_versions_in_mirror_readme": [
+        "https://doi.org/10.6073/pasta/98b16d7d563f265cb52372c8ca99e60f",
+        "https://doi.org/10.6073/pasta/7fca67fb28d56ee2ffa3d9370ebda689",
+        "https://doi.org/10.6073/pasta/c14dfcfada8ea13a17536e73eb6fbe9e"
+      ],
+      "upstream_versions_in_mirror_recipe": [
+        "https://doi.org/10.6073/pasta/abc50eed9138b75f54eaada0841b9b86",
+        "https://doi.org/10.6073/pasta/2b1cff60f81640f182433d23e68541ce",
+        "https://doi.org/10.6073/pasta/409c808f8fc9899d02401bdb04580af7"
+      ]
+    },
+    {
+      "dataset_id": "monitor_lizard_integrative_candidate",
+      "eligible_for_current_benchmark": false,
+      "individual_joins_verified": false,
+      "license_file_audit": "not performed",
+      "published_modalities": [
+        "DArTseq genotypes",
+        "linear morphology",
+        "landmarks and semilandmarks",
+        "spatial/environmental descriptors"
+      ],
+      "raw_downloaded": false,
+      "reason": "Requires audited DArT two-row genotype conversion and landmark correspondence/sliding decisions; reference assignments arise in the same integrative study",
+      "source": "https://doi.org/10.5061/dryad.tqjq2bwb0",
+      "status": "deferred_metadata_only"
+    },
+    {
+      "dataset_id": "songbird_elevation_candidate",
+      "eligible_for_current_benchmark": false,
+      "individual_joins_verified": false,
+      "license_file_audit": "not performed",
+      "published_modalities": [
+        "linear morphology",
+        "hydrogen isotope measurements"
+      ],
+      "raw_downloaded": false,
+      "reason": "Separate XLSX tables and incompletely documented voucher links require a workbook adapter and explicit join audit",
+      "source": "https://doi.org/10.5061/dryad.0sq68",
+      "status": "deferred_metadata_only"
+    }
+  ],
+  "reference_use": "Development reference hypotheses only; no empirical species-boundary validation has been run",
+  "schema_version": 1,
+  "selected_studies": 1,
+  "selection_rule": "Source compatibility and auditable identities/licensing; no clustering performance considered"
+}

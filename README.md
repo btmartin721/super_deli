@@ -4,7 +4,18 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: optional scaled fold sizes for shared predictive stability.**
+**Current checkpoint: fit-free empirical benchmark foundation.**
+A locked CC0 author mirror supplies matched morphology and foraging-isotope
+observations. The curator separates analytical features from reference labels,
+checks exact values and identities, and retains every missingness decision.
+Of 344 capture records, 330 have all six declared measurements. These are
+capture-level development data; independence and reference-evidence gates remain
+unresolved, so this checkpoint runs no statistical models. See the
+[method and commands](docs/empirical-benchmark-foundation.md) and
+[curation audit](docs/empirical-benchmark-curation-results.md). Full data stay local;
+only locks, compact metadata and invented fixtures are published.
+
+**Preceding checkpoint: optional scaled fold sizes for shared predictive stability.**
 The separately versioned policy scales each training fold's minimum independent
 locality support to its distinct sampled exposure. It keeps the full-data minimum,
 bootstrap multiplicities, original-ID folds, positive predictive-gain gate and AIC

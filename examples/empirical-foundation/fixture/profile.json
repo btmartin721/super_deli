@@ -1,0 +1,100 @@
+{
+  "dataset_id": "synthetic_empirical_curation_fixture",
+  "features": [
+    {
+      "kind": "morphological",
+      "name": "bill_length_mm",
+      "positive": true,
+      "source_column": "Culmen Length (mm)",
+      "unit": "mm"
+    },
+    {
+      "kind": "morphological",
+      "name": "bill_depth_mm",
+      "positive": true,
+      "source_column": "Culmen Depth (mm)",
+      "unit": "mm"
+    },
+    {
+      "kind": "morphological",
+      "name": "flipper_length_mm",
+      "positive": true,
+      "source_column": "Flipper Length (mm)",
+      "unit": "mm"
+    },
+    {
+      "kind": "morphological",
+      "name": "body_mass_g",
+      "positive": true,
+      "source_column": "Body Mass (g)",
+      "unit": "g"
+    },
+    {
+      "kind": "ecological",
+      "name": "delta_15n_permil",
+      "positive": false,
+      "source_column": "Delta 15 N (o/oo)",
+      "unit": "permil_air"
+    },
+    {
+      "kind": "ecological",
+      "name": "delta_13c_permil",
+      "positive": false,
+      "source_column": "Delta 13 C (o/oo)",
+      "unit": "permil_vpdb"
+    }
+  ],
+  "identity_columns": [
+    "studyName",
+    "Individual ID"
+  ],
+  "identity_grain": "capture_record",
+  "ignored_columns": [
+    "Comments"
+  ],
+  "metadata_columns": [
+    "Sample Number",
+    "Region",
+    "Island",
+    "Stage",
+    "Clutch Completion",
+    "Date Egg",
+    "Sex"
+  ],
+  "missing_values": [
+    "",
+    "NA",
+    "."
+  ],
+  "reference_column": "Species",
+  "reference_role": "development_reference",
+  "schema_version": 1,
+  "source": {
+    "direct_upstream_verified": false,
+    "git_blob_sha1": "516270680bd455073190c6440d6c62457ba6c79e",
+    "license_id": "CC0-1.0",
+    "sha256": "1af7f9b98ab8051dbecc629a16b183aeb85074fc0626ee1ba74adc7fee3e3a08",
+    "size_bytes": 1874,
+    "source_role": "author_maintained_mirror",
+    "url": "https://example.invalid/synthetic_fixture.csv"
+  },
+  "source_columns": [
+    "studyName",
+    "Sample Number",
+    "Species",
+    "Region",
+    "Island",
+    "Stage",
+    "Individual ID",
+    "Clutch Completion",
+    "Date Egg",
+    "Culmen Length (mm)",
+    "Culmen Depth (mm)",
+    "Flipper Length (mm)",
+    "Body Mass (g)",
+    "Sex",
+    "Delta 15 N (o/oo)",
+    "Delta 13 C (o/oo)",
+    "Comments"
+  ]
+}

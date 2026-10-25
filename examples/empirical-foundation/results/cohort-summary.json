@@ -1,0 +1,115 @@
+{
+  "audit": {
+    "all_output_bytes_verified": true,
+    "anonymous_ids_computed_without_reference_labels": true,
+    "bootstrap_draws": 0,
+    "checked_exact_numeric_tokens": 1980,
+    "clustering_fits": 0,
+    "direct_upstream_byte_verification": false,
+    "excluded_rows": 14,
+    "included_rows": 330,
+    "matched_views": 2,
+    "reference_and_covariate_separation": "verified",
+    "significance_draws": 0,
+    "source_bytes_unchanged": true,
+    "source_keys": 344,
+    "source_role": "verified_pinned_author_mirror",
+    "source_rows": 344,
+    "status": "verified"
+  },
+  "dataset_id": "penguin_capture_development_v1",
+  "excluded_rows": 14,
+  "features": [
+    {
+      "kind": "morphological",
+      "maximum": 59.6,
+      "mean": 43.9219298245614,
+      "minimum": 32.1,
+      "name": "bill_length_mm",
+      "observed": 342,
+      "sample_sd": 5.4595837139265315,
+      "source_missing": 2,
+      "unit": "mm"
+    },
+    {
+      "kind": "morphological",
+      "maximum": 21.5,
+      "mean": 17.151169590643274,
+      "minimum": 13.1,
+      "name": "bill_depth_mm",
+      "observed": 342,
+      "sample_sd": 1.9747931568167814,
+      "source_missing": 2,
+      "unit": "mm"
+    },
+    {
+      "kind": "morphological",
+      "maximum": 231.0,
+      "mean": 200.91520467836258,
+      "minimum": 172.0,
+      "name": "flipper_length_mm",
+      "observed": 342,
+      "sample_sd": 14.061713679356888,
+      "source_missing": 2,
+      "unit": "mm"
+    },
+    {
+      "kind": "morphological",
+      "maximum": 6300.0,
+      "mean": 4201.754385964912,
+      "minimum": 2700.0,
+      "name": "body_mass_g",
+      "observed": 342,
+      "sample_sd": 801.9545356980955,
+      "source_missing": 2,
+      "unit": "g"
+    },
+    {
+      "kind": "ecological",
+      "maximum": 10.02544,
+      "mean": 8.733381696969698,
+      "minimum": 7.6322,
+      "name": "delta_15n_permil",
+      "observed": 330,
+      "sample_sd": 0.5517703369138499,
+      "source_missing": 14,
+      "unit": "permil_air"
+    },
+    {
+      "kind": "ecological",
+      "maximum": -23.78767,
+      "mean": -25.686291540785497,
+      "minimum": -27.01854,
+      "name": "delta_13c_permil",
+      "observed": 331,
+      "sample_sd": 0.7939612110060316,
+      "source_missing": 13,
+      "unit": "permil_vpdb"
+    }
+  ],
+  "included_rows": 330,
+  "included_taxon_counts": {
+    "Adelie Penguin (Pygoscelis adeliae)": 141,
+    "Chinstrap penguin (Pygoscelis antarctica)": 67,
+    "Gentoo penguin (Pygoscelis papua)": 122
+  },
+  "independence": "unresolved",
+  "readiness": {
+    "bootstrap": "not_authorized",
+    "grouped_predictive_screen": "inapplicable_specimen_level",
+    "independence": "unresolved",
+    "ingestion": true,
+    "reference_independence": "unresolved",
+    "significance": "not_authorized",
+    "statistical_fitting": false
+  },
+  "role": "development_reference",
+  "source_composite_key_unique": 344,
+  "source_individual_id_unique": 190,
+  "source_rows": 344,
+  "source_taxon_counts": {
+    "Adelie Penguin (Pygoscelis adeliae)": 152,
+    "Chinstrap penguin (Pygoscelis antarctica)": 68,
+    "Gentoo penguin (Pygoscelis papua)": 124
+  }
+}

@@ -95,3 +95,16 @@ recursive-include docs/figures/bootstrap-instability *.png *.pdf *.svg
 
 recursive-include examples/scaled-fold-stability *.json *.csv *.py
 recursive-include docs/figures/scaled-fold-stability *.png *.svg *.pdf
+
+prune examples/empirical-foundation
+include examples/empirical-foundation/README.md
+include examples/empirical-foundation/catalog.json
+include examples/empirical-foundation/download.py
+include examples/empirical-foundation/profile.json
+include examples/empirical-foundation/protocol.json
+include examples/empirical-foundation/smoke.py
+include examples/empirical-foundation/fixture/profile.json
+include examples/empirical-foundation/fixture/protocol.json
+include examples/empirical-foundation/fixture/source.csv
+include examples/empirical-foundation/results/checksums.json
+include examples/empirical-foundation/results/cohort-summary.json

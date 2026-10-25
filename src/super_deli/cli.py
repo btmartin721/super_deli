@@ -44,6 +44,9 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.benchmarking.bootstrap_diagnostic_cli import register as register_instability
 
     instability_commands = register_instability(commands)
+    from super_deli.benchmarking.empirical_cli import register as register_empirical
+
+    empirical_commands = register_empirical(commands)
     validate = commands.add_parser("validate", help="Check declarations and local file references")
     validate.add_argument("config", type=Path, help="Versioned dataset JSON configuration")
     validate.add_argument("--report", type=Path, help="Also save JSON to a new file")
@@ -452,6 +455,12 @@ def main(argv: list[str] | None = None) -> int:
 
             with redirect_stdout(sys.stderr):
                 summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command in empirical_commands:
+            from super_deli.benchmarking.empirical_cli import dispatch as dispatch_empirical
+
+            summary = dispatch_empirical(args)
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
             return 0
         if args.command in instability_commands:

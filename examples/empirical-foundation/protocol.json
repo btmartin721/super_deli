@@ -1,0 +1,43 @@
+{
+  "cohort_rule": "complete_declared_features_only",
+  "comparison_rule": "descriptive_per_arm_only",
+  "dataset_id": "penguin_capture_development_v1",
+  "fitting_authorized": false,
+  "independent_units_confirmed": false,
+  "joint_n_pcs": 2,
+  "max_iter": 500,
+  "max_k": 4,
+  "min_cluster_size": 5,
+  "missing_policy": "error",
+  "n_init": 10,
+  "n_pcs_per_view": 2,
+  "n_threads": 1,
+  "phase": "curation_only",
+  "pipeline_reference_commit": "54fe5675b0308079f52c340cf801c59d8e3b7ea3",
+  "point_arms": [
+    "morphology_full_bic",
+    "ecology_full_bic",
+    "integrative_full_bic",
+    "integrative_tied_bic"
+  ],
+  "profile_sha256": "874333b04169d0409579ed80a1888a6ef316b3515f67996a99323fedfe82a629",
+  "random_seed": 20261230,
+  "reference_independence_confirmed": false,
+  "reference_metrics": [
+    "selected_k",
+    "adjusted_rand",
+    "adjusted_mutual_info",
+    "reference_coverage",
+    "failures"
+  ],
+  "reg_covar": 1e-06,
+  "scaling": "standard",
+  "schema_version": 1,
+  "selection_criterion": "bic",
+  "significance_draws": 0,
+  "source_sha256": "144f623143c9360fd77322a4f86acb06dc198814dbd2669724c63e6457b907bd",
+  "stability_draws": 0,
+  "target_level": "specimen",
+  "tol": 0.001,
+  "view_weights": "equal"
+}

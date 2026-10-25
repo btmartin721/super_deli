@@ -1,0 +1,100 @@
+{
+  "dataset_id": "penguin_capture_development_v1",
+  "features": [
+    {
+      "kind": "morphological",
+      "name": "bill_length_mm",
+      "positive": true,
+      "source_column": "Culmen Length (mm)",
+      "unit": "mm"
+    },
+    {
+      "kind": "morphological",
+      "name": "bill_depth_mm",
+      "positive": true,
+      "source_column": "Culmen Depth (mm)",
+      "unit": "mm"
+    },
+    {
+      "kind": "morphological",
+      "name": "flipper_length_mm",
+      "positive": true,
+      "source_column": "Flipper Length (mm)",
+      "unit": "mm"
+    },
+    {
+      "kind": "morphological",
+      "name": "body_mass_g",
+      "positive": true,
+      "source_column": "Body Mass (g)",
+      "unit": "g"
+    },
+    {
+      "kind": "ecological",
+      "name": "delta_15n_permil",
+      "positive": false,
+      "source_column": "Delta 15 N (o/oo)",
+      "unit": "permil_air"
+    },
+    {
+      "kind": "ecological",
+      "name": "delta_13c_permil",
+      "positive": false,
+      "source_column": "Delta 13 C (o/oo)",
+      "unit": "permil_vpdb"
+    }
+  ],
+  "identity_columns": [
+    "studyName",
+    "Individual ID"
+  ],
+  "identity_grain": "capture_record",
+  "ignored_columns": [
+    "Comments"
+  ],
+  "metadata_columns": [
+    "Sample Number",
+    "Region",
+    "Island",
+    "Stage",
+    "Clutch Completion",
+    "Date Egg",
+    "Sex"
+  ],
+  "missing_values": [
+    "",
+    "NA",
+    "."
+  ],
+  "reference_column": "Species",
+  "reference_role": "development_reference",
+  "schema_version": 1,
+  "source": {
+    "direct_upstream_verified": false,
+    "git_blob_sha1": "ba99fbd527f0bb983b3d9615ef5c81a5917ab7d9",
+    "license_id": "CC0-1.0",
+    "sha256": "144f623143c9360fd77322a4f86acb06dc198814dbd2669724c63e6457b907bd",
+    "size_bytes": 53098,
+    "source_role": "author_maintained_mirror",
+    "url": "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/8957207b78d6ccd1b4654a9dd9c9041b657478ab/inst/extdata/penguins_raw.csv"
+  },
+  "source_columns": [
+    "studyName",
+    "Sample Number",
+    "Species",
+    "Region",
+    "Island",
+    "Stage",
+    "Individual ID",
+    "Clutch Completion",
+    "Date Egg",
+    "Culmen Length (mm)",
+    "Culmen Depth (mm)",
+    "Flipper Length (mm)",
+    "Body Mass (g)",
+    "Sex",
+    "Delta 15 N (o/oo)",
+    "Delta 13 C (o/oo)",
+    "Comments"
+  ]
+}
