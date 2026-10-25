@@ -28,6 +28,11 @@ jobs:
         run: python -m pytest -q
       - name: Validate illustrative configuration
         run: super-deli validate examples/foundation/dataset.json --hash-inputs
+      - name: Check replacement empirical source audit
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/replacement-empirical/smoke.py" --output-dir "$RUNNER_TEMP/replacement-empirical-smoke"
       - name: Check fit-free empirical evidence assessment
         working-directory: ${{ runner.temp }}
         run: |
@@ -96,6 +101,11 @@ jobs:
                   print(f"--- {path.relative_to(root)} ---")
                   print(path.read_text(errors="replace")[-4000:])
           PYCODE
+      - name: Check replacement empirical source audit
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/replacement-empirical/smoke.py" --output-dir "$RUNNER_TEMP/replacement-empirical-smoke"
       - name: Check empirical evidence installed workflow
         working-directory: ${{ runner.temp }}
         run: |

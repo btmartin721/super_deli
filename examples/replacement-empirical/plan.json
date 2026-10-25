@@ -1,0 +1,117 @@
+{
+  "archive_license_id": "CC0-1.0",
+  "audit_id": "juvenile_skate_candidate_v1",
+  "phase": "source_audit_only",
+  "reference_policy": "candidate_namespaces_are_not_authoritative",
+  "review_limitations": [
+    "The paper documents deceased specimens and COI assignment independent of morphometric features; literal voucher-to-short-ID correspondence is not supplied by the archive.",
+    "Observed voucher prefixes are candidate namespace transformations, not an authoritative crosswalk. All source records remain accounted for.",
+    "The paper reports no co-occurrence of the two taxa within hauls. Neither short IDs nor broad GenBank locality descriptions provide specimen-to-haul links.",
+    "Unique specimen keys are not assertions of unrelatedness or within-haul independence.",
+    "Raw TPS SCALE factors are retained; no physical unit or rescaling is assumed. Semilandmark curves remain outside the fixed-landmark pipeline.",
+    "Single-locus mitochondrial source assignments are independent reference hypotheses for morphology, not infallible species boundaries or independent genomic features."
+  ],
+  "sampling_policy": "documented_design_without_independence_assertion",
+  "scale_policy": "retain_factor_without_physical_unit_assertion",
+  "schema_version": 1,
+  "sources": [
+    {
+      "filename": "source_metadata.csv",
+      "role": "metadata",
+      "sha256": "7795b9ff69c0accf065c8fcef7008a5020b6e726657aae17a1a538824a356fd5",
+      "size_bytes": 1649,
+      "url": "https://datadryad.org/downloads/file_stream/4934458"
+    },
+    {
+      "filename": "source_colour.csv",
+      "role": "colour",
+      "sha256": "2cd35ae0d79f28178911e37f6f3fbf58befcee6d2f44a2fd22b0ed84ad1a2b2b",
+      "size_bytes": 1803,
+      "url": "https://datadryad.org/downloads/file_stream/4934455"
+    },
+    {
+      "filename": "source_full_disc.tps",
+      "role": "full_disc",
+      "sha256": "e5974066a14c7189162a2712152aa7148d6ad099b18731ddf267981fbfe21130",
+      "size_bytes": 9383,
+      "url": "https://datadryad.org/downloads/file_stream/4934459"
+    },
+    {
+      "filename": "source_anterior.tps",
+      "role": "anterior",
+      "sha256": "af01412184d1986b80b8d4e50712a078da9050ccd240cb2f3a00b7121938ecb1",
+      "size_bytes": 24495,
+      "url": "https://datadryad.org/downloads/file_stream/4934456"
+    },
+    {
+      "filename": "source_rostrum.tps",
+      "role": "rostrum",
+      "sha256": "e8c2b1ff272d3b38e4f04f12faf62b1a5c94d06da4472e0487026b0bffabc163",
+      "size_bytes": 14848,
+      "url": "https://datadryad.org/downloads/file_stream/4934457"
+    },
+    {
+      "filename": "source_author_code.R",
+      "role": "author_code",
+      "sha256": "7e2dee6ecf3c933e4f47d42e341243c97839b960b7c0c2576822889a533fe4d2",
+      "size_bytes": 12269,
+      "url": "https://datadryad.org/downloads/file_stream/4934460"
+    },
+    {
+      "filename": "source_readme.md",
+      "role": "readme",
+      "sha256": "bfdb1b1224659e20cf9b265c253758fd6405e500645c624ddc70c4439ae38005",
+      "size_bytes": 9274,
+      "url": "https://datadryad.org/downloads/file_stream/4934463"
+    },
+    {
+      "filename": "reference_records.xml",
+      "role": "references",
+      "sha256": "f76feaa96d6c8a1389bcefd64e96c5fe872e2d7065c30bdc9f991b91bd39514b",
+      "size_bytes": 685951,
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=PZ664735,PZ664736,PZ664737,PZ664738,PZ664739,PZ664740,PZ664741,PZ664742,PZ664743,PZ664744,PZ664745,PZ664746,PZ664747,PZ664748,PZ664749,PZ664750,PZ664751,PZ664752,PZ664753,PZ664754,PZ664755,PZ664756,PZ664757,PZ664758,PZ664759,PZ664760,PZ664761,PZ664762,PZ664763,PZ664764,PZ664765,PZ664766,PZ664767,PZ664768,PZ664769,PZ664770,PZ664771,PZ664772,PZ664773,PZ664774,PZ664775,PZ664776,PZ664777,PZ664778,PZ664779,PZ664780,PZ664781,PZ664782,PZ664783,PZ664784,PZ664785,PZ664786,PZ664787,PZ664788,PZ664789,PZ664790,PZ664791,PZ664792,PZ664793,PZ664794,PZ664795,PZ664796,PZ664797,PZ664798,PZ664799,PZ664800,PZ664801,PZ664802,PZ664803,PZ664804,PZ664805,PZ664806,PZ664807,PZ664808,PZ664809,PZ664810,PZ664811,PZ664812,PZ664813,PZ664814,PZ664815,PZ664816,PZ664817,PZ664818,PZ664819&rettype=gb&retmode=xml"
+    },
+    {
+      "filename": "primary_article.xml",
+      "role": "publication",
+      "sha256": "3c47ae88b14c8f71dc1e9cde96876699e2415fbc1e9f36d39cfd7ac791ba89ca",
+      "size_bytes": 116093,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13544996/fullTextXML"
+    },
+    {
+      "filename": "source_supplement.docx",
+      "role": "supplement",
+      "sha256": "835b7b056a3ca7cb10178fea0a8c311a921bf00009c7707e5e8d2220d39147a9",
+      "size_bytes": 1734388,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13544996/supplementaryFiles#ECE3-16-e74305-s001.docx"
+    },
+    {
+      "filename": "archive_metadata.json",
+      "role": "archive_metadata",
+      "sha256": "7de785e711a8d211116390d28ee81af1db4fc9b820191a4cda8baa880a527f77",
+      "size_bytes": 6993,
+      "url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.z08kprrtz"
+    },
+    {
+      "filename": "archive_files.json",
+      "role": "archive_files",
+      "sha256": "b7ba31525b3ebdb5effe71dab64ef32170141bf1ff44350804258f27c4f88966",
+      "size_bytes": 4489,
+      "url": "https://datadryad.org/api/v2/versions/460651/files"
+    }
+  ],
+  "taxon_names": [
+    [
+      "batis",
+      "Dipturus batis"
+    ],
+    [
+      "intermedius",
+      "Dipturus intermedius"
+    ]
+  ],
+  "voucher_prefixes": [
+    "QUB-DINT-",
+    "QUB-DBAT-"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "archive_license_id": "CC0-1.0",
+  "audit_id": "invented_specimen_audit",
+  "phase": "source_audit_only",
+  "reference_policy": "candidate_namespaces_are_not_authoritative",
+  "review_limitations": [
+    "Entirely invented engineering fixtures. No real sampling, molecular or taxonomic evidence."
+  ],
+  "sampling_policy": "documented_design_without_independence_assertion",
+  "scale_policy": "retain_factor_without_physical_unit_assertion",
+  "schema_version": 1,
+  "sources": [
+    {
+      "filename": "metadata.csv",
+      "role": "metadata",
+      "sha256": "acb900cd799c9ef45896c73ddea09a4e57d8f1aea462477840956f618022b479",
+      "size_bytes": 80,
+      "url": "https://example.invalid/invented/metadata.csv"
+    },
+    {
+      "filename": "colour.csv",
+      "role": "colour",
+      "sha256": "392492a9a85e2e0e8a7af3d3bf02d484185c5ea69cba7688521761be72355115",
+      "size_bytes": 142,
+      "url": "https://example.invalid/invented/colour.csv"
+    },
+    {
+      "filename": "author_analysis.R",
+      "role": "author_code",
+      "sha256": "88f816e4aab05a0af97365989eaf2274ee4c0adb16552aae8bcc29c4a74c1499",
+      "size_bytes": 47,
+      "url": "https://example.invalid/invented/author_analysis.R"
+    },
+    {
+      "filename": "source_readme.md",
+      "role": "readme",
+      "sha256": "aca5c0f90e6c0fba9730537c5739f44adb59b7600b79295586b14452257e5980",
+      "size_bytes": 74,
+      "url": "https://example.invalid/invented/source_readme.md"
+    },
+    {
+      "filename": "primary_article.xml",
+      "role": "publication",
+      "sha256": "263cb6547ca9a2f70e2501b2534ed93d8d84347305a3b66bcd7ce0994145911e",
+      "size_bytes": 101,
+      "url": "https://example.invalid/invented/primary_article.xml"
+    },
+    {
+      "filename": "full_disc.tps",
+      "role": "full_disc",
+      "sha256": "00fbec19d702a3a57ef68fc01281ff8cd30b2c2382db1b0b203aae5cb085edb8",
+      "size_bytes": 636,
+      "url": "https://example.invalid/invented/full_disc.tps"
+    },
+    {
+      "filename": "anterior.tps",
+      "role": "anterior",
+      "sha256": "558f386264a4352e08bbb0fb1f0e9061d2ffebebee186390efaecc1881d92967",
+      "size_bytes": 522,
+      "url": "https://example.invalid/invented/anterior.tps"
+    },
+    {
+      "filename": "rostrum.tps",
+      "role": "rostrum",
+      "sha256": "416fb9363955c14fe8efe57e47a197ec8ae0f8f0a37efdd209d4ae6018180580",
+      "size_bytes": 374,
+      "url": "https://example.invalid/invented/rostrum.tps"
+    },
+    {
+      "filename": "reference_records.xml",
+      "role": "references",
+      "sha256": "f2b81e52506d2e8095aa9221bac0ed4c52f03cd353a1c4388a0136bbea6c3024",
+      "size_bytes": 3587,
+      "url": "https://example.invalid/invented/reference_records.xml"
+    },
+    {
+      "filename": "source_supplement.docx",
+      "role": "supplement",
+      "sha256": "81f972fc01f0fc2d33c1e316d4aceaab2befebfb02aea8cddcd6de59db1721e2",
+      "size_bytes": 2952,
+      "url": "https://example.invalid/invented/source_supplement.docx"
+    },
+    {
+      "filename": "archive_metadata.json",
+      "role": "archive_metadata",
+      "sha256": "bc80248a217cd72be30c1a9b4f35441f4a03f0d20ac55f1c20692ecd023b299e",
+      "size_bytes": 250,
+      "url": "https://example.invalid/invented/archive_metadata.json"
+    },
+    {
+      "filename": "archive_files.json",
+      "role": "archive_files",
+      "sha256": "a197099dca7568689eff8b59c95802a3aa9b6bc8154d00ad4129d14fca1a9f90",
+      "size_bytes": 1016,
+      "url": "https://example.invalid/invented/archive_files.json"
+    }
+  ],
+  "taxon_names": [
+    [
+      "alpha",
+      "Species alpha"
+    ],
+    [
+      "beta",
+      "Species beta"
+    ]
+  ],
+  "voucher_prefixes": [
+    "LAB-A-",
+    "LAB-B-"
+  ]
+}

@@ -4,19 +4,19 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: empirical sampling and reference-evidence assessment.**
-The fit-free audit verifies all 344 source records, the unchanged 330-row complete
-cohort and all 1,980 retained measurements. It separates computed identity/join
-checks from reviewed biological claims. Published field assignments are available
-for descriptive development reporting; independence-dependent fitting and
-validation remain closed with exact evidence requirements. See the
-[method and commands](docs/empirical-evidence-gates.md) and
-[audit findings](docs/empirical-evidence-gates-results.md). Defaults and p-values
-are unchanged. Detailed evidence and empirical data stay local.
+**Current checkpoint: replacement empirical source audit.**
+The juvenile-skate candidate supplies 84 specimen records, 37 fixed-landmark
+full-disc shapes and 29 colour rows. The fit-free audit preserves all source
+records and separates descriptive labels from literal/candidate molecular
+reference links. Sampling and reference correspondence remain prerequisites
+for independent validation; ingestion success does not open those gates.
+See the [method and command](docs/replacement-empirical-audit.md) and
+[audit findings](docs/replacement-empirical-audit-results.md). Defaults and p-values
+are unchanged, and full data/evidence stay local.
 
-The [preceding curation foundation](docs/empirical-benchmark-foundation.md)
-provides locked matched morphology/isotope inputs and the unchanged schema-1
-non-executable protocol. No empirical clustering has been run.
+The preceding [empirical evidence review](docs/empirical-evidence-gates.md)
+retains the penguin dataset's explicit limitations and its unchanged protocol.
+No empirical clustering has been run in these fit-free checkpoints.
 
 **Preceding checkpoint: optional scaled fold sizes for shared predictive stability.**
 The separately versioned policy scales each training fold's minimum independent

@@ -1,0 +1,4 @@
+Id,area_body,area_band,per_band,mean_grey_body,mean_grey_band,per_dif_grey
+U01,100,10,10,100,50,50
+U02,200,0,0,90,-,-
+U03,300,60,20,100,40,60

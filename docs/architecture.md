@@ -251,7 +251,8 @@ reference labels need independent evidence and documented uncertainty.
 24. **Completed:** Opt-in exposure-scaled fold sizes with paired whole-locality stability validation.
 25. **Foundation completed:** Fit-free empirical data curation, source locks, anonymous matched manifests and a frozen non-executable protocol.
 26. **Assessment completed:** Source-bound sampling/reference evidence review; ingestion and descriptive labels admitted, independence-dependent uses explicitly blocked and grouped screening inapplicable for the capture source.
-27. **Pending:** Obtain authoritative sampling crosswalks and independent specimen references, or audit a compatible replacement empirical source; freeze a justified design before empirical fitting/validation.
+27. **Audit completed:** Juvenile-skate replacement source, typed morphology/fixed-landmark representations and segregated COI reference diagnostics; voucher/haul correspondence remains insufficient for an independent benchmark.
+28. **Pending:** Obtain authoritative source/voucher and specimen/haul crosswalks, or audit a better documented source, then freeze a justified dependence-aware empirical design before fitting.
 27. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
 28. Anatomical landmark learning, semilandmark sliding and further model families.
 29. Consolidated user guidance, end-to-end examples and a scoped research release.
@@ -343,3 +344,12 @@ protocol and evidence snapshots. The workflow reconstructs curated semantics,
 keeps computed facts separate from reviewed claims, and derives purpose-specific
 blocked/inapplicable/available decisions without a fitting dispatch. No readiness
 Boolean can override an existing model's independence requirement.
+
+
+The [replacement source audit](replacement-empirical-audit.md) is a separate
+core declaration, narrow source-inspection adapter and orchestration workflow.
+It reuses existing structural validation, pure table/landmark parsers and the
+unchanged fixed-TPS reader for derivatives. Extended source TPS metadata is
+retained outside analytical features; curve sections are audited without being
+admitted to fixed-landmark models. Reference namespaces remain candidate-only,
+and no fitting, model configuration or older empirical schema is changed.

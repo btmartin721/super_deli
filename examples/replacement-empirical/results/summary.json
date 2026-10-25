@@ -1,0 +1,76 @@
+{
+  "analytical_colour_tokens": 162,
+  "analytical_coordinate_tokens": 666,
+  "archive_data_bytes": 73721,
+  "candidate_all_view_image_keys": 54,
+  "candidate_namespace_joins": 53,
+  "colour_records": 29,
+  "complete_colour_shape_overlap": 15,
+  "declared_source_specimens_preserved": 84,
+  "empirical_fits": 0,
+  "literal_molecular_joins": 0,
+  "metadata_lengths": 84,
+  "metadata_records": 84,
+  "missing_colour_by_column": {
+    "area_band": 0,
+    "area_body": 0,
+    "mean_grey_band": 6,
+    "mean_grey_body": 0,
+    "per_band": 0,
+    "per_dif_grey": 6
+  },
+  "molecular_records": 85,
+  "numeric_colour_discrepancies": 0,
+  "old_estimators_and_defaults_byte_identical": true,
+  "pvalues_generated": 0,
+  "readiness": {
+    "curve_shape": "inapplicable_fixed_landmark_pipeline",
+    "fixed_shape": "available_representation_only",
+    "grouped_resampling": "blocked_no_authoritative_specimen_haul_links",
+    "independent_holdout": "blocked_haul_species_confounding",
+    "independent_reference_concordance": "conditional_voucher_crosswalk_required",
+    "independent_unit_fitting": "blocked_no_approved_sampling_design",
+    "physical_scale": "blocked_unit_unverified",
+    "published_label_description": "available_development_only",
+    "significance": "not_authorized",
+    "typed_ingestion": "available_audit_manifests"
+  },
+  "reference_truth": "candidate_linkage_only",
+  "shape_colour_overlap": 18,
+  "shape_records": 37,
+  "significance_draws": 0,
+  "source_archive": {
+    "curationStatus": "Published",
+    "identifier": "doi:10.5061/dryad.z08kprrtz",
+    "license": "https://spdx.org/licenses/CC0-1.0.html",
+    "publicationDate": "2026-08-31",
+    "versionNumber": 8,
+    "versionStatus": "submitted",
+    "visibility": "public"
+  },
+  "source_coordinate_tokens": 3814,
+  "source_files": 12,
+  "source_label_counts": {
+    "batis": 45,
+    "intermedius": 39
+  },
+  "source_scale_factors": 89,
+  "species_haul_confounding": "documented_source_limitation",
+  "specification_sha256": "c634b4d2e40fd0d83e400595670d4185a7a95edd8d129bbc46f9aafbd6de1ce1",
+  "stability_draws": 0,
+  "status": "verified",
+  "supplement_measurement_rows": 53,
+  "unmatched_metadata_references": 31,
+  "unresolved_curve_membership_discrepancies": 1,
+  "view_reference_linkage": {
+    "colour": {
+      "candidate_namespace": 20,
+      "unmatched": 9
+    },
+    "full_disc": {
+      "candidate_namespace": 23,
+      "unmatched": 14
+    }
+  },
+  "zero_band_missing_statistics": 6
+}

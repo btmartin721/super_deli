@@ -17,7 +17,14 @@ def register(commands):
     audit.add_argument("config", type=Path)
     for flag in ("source", "protocol", "evidence", "curated-dir", "evidence-dir", "output-dir"):
         audit.add_argument("--" + flag, type=Path, required=True)
-    return frozenset({"curate-empirical", "assess-empirical"})
+    replacement = commands.add_parser(
+        "audit-replacement-empirical",
+        help="Inspect locked specimen/reference sources without fitting",
+    )
+    replacement.add_argument("config", type=Path)
+    replacement.add_argument("--source-dir", type=Path, required=True)
+    replacement.add_argument("--output-dir", type=Path, required=True)
+    return frozenset({"curate-empirical", "assess-empirical", "audit-replacement-empirical"})
 
 
 def dispatch(args):
@@ -26,6 +33,15 @@ def dispatch(args):
     from super_deli.io.config import read_json
     from super_deli.workflows.empirical_curation import curate_empirical
 
+    if args.command == "audit-replacement-empirical":
+        from super_deli.core.replacement_audit import ReplacementAuditPlan
+        from super_deli.workflows.replacement_audit import audit_replacement
+
+        return audit_replacement(
+            ReplacementAuditPlan.from_dict(read_json(args.config)),
+            source_dir=args.source_dir,
+            output_dir=args.output_dir,
+        )
     if args.command == "assess-empirical":
         from super_deli.core.empirical_evidence import EmpiricalEvidence
         from super_deli.workflows.empirical_assessment import assess_empirical
