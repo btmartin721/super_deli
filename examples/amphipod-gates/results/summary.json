@@ -1,0 +1,142 @@
+{
+  "assessment_id": "amphipod_evidence_v1",
+  "bootstrap_draws": 0,
+  "cohort_created": false,
+  "composite_context_rows": 3,
+  "contact_performed": false,
+  "correspondence_counts": {
+    "conflicting_documentary_evidence": 1,
+    "corroborated_explicit_table_pair": 3,
+    "corroborated_genbank_voucher": 156,
+    "no_valid_stated_accession": 854,
+    "source_asserted_accession_only": 7,
+    "unresolved_source_identity": 86,
+    "withheld_source_caution": 16
+  },
+  "count_comparison_scope": "Reported study counts versus retained table rows; no biological-unit equivalence assumed",
+  "documented_specimen_links": 159,
+  "empirical_fits": 0,
+  "empty_formatting_rows": 1045251,
+  "explicit_table_corroborations": 3,
+  "historical_partitions_replaced": false,
+  "molecular_partition_links": 117,
+  "partition_relations_on_linked_rows": {
+    "one_to_one": 74,
+    "split_or_merge_context": 43
+  },
+  "phase": "trait_evidence_audit_only",
+  "private_catalogue_access": false,
+  "published_vs_retained_counts": {
+    "delimitation_source_rows": {
+      "paper": 3310,
+      "retained": 3326
+    },
+    "phylogeny_source_rows": {
+      "paper": 561,
+      "retained": 560
+    },
+    "spatial_source_rows": {
+      "paper": 376,
+      "retained": 376
+    }
+  },
+  "pvalues_generated": 0,
+  "readiness": {
+    "catalogue_crosswalk": {
+      "reason": "catalogue_access_statement",
+      "status": "unavailable_publicly"
+    },
+    "descriptive_reference_labels": {
+      "reason": "mixed_source_basis_retained",
+      "status": "available"
+    },
+    "grouped_predictive_screen": {
+      "reason": "no_verified_independent_group_design_or_continuous_ecology",
+      "status": "blocked"
+    },
+    "historical_motu_replacement": {
+      "reason": "retain_distinct_source_versions_and_partitions",
+      "status": "not_authorized"
+    },
+    "independent_unit_fitting": {
+      "reason": "independent_units_not_established_and_fit_free_scope",
+      "status": "blocked"
+    },
+    "ingestion": {
+      "reason": "unchanged_prior_ingestion_verified",
+      "status": "available"
+    },
+    "molecular_reference_concordance": {
+      "documented_rows": 117,
+      "fitting_authorized": false,
+      "reason": "methodological_partitions_are_not_species_truth",
+      "status": "documented_links_available_for_future_design"
+    },
+    "resampling": {
+      "reason": "no_approved_independent_resampling_units",
+      "status": "blocked"
+    },
+    "significance": {
+      "reason": "no_validated_empirical_null_for_this_sampling_design",
+      "status": "blocked"
+    },
+    "species_boundary_validation": {
+      "reason": "species_truth_and_sampling_independence_not_established",
+      "status": "blocked"
+    }
+  },
+  "reference_species_truth_asserted": false,
+  "sampling_independence_asserted": false,
+  "schema_version": 1,
+  "source_accounting": {
+    "reference01": {
+      "duplicate_accession_keys": 58,
+      "formula_cells": 0,
+      "hidden_rows": 0,
+      "records": 3326,
+      "valid_accession_rows": 3324
+    },
+    "reference02": {
+      "composite_rows": 50,
+      "duplicate_accession_keys": 0,
+      "formula_cells": 0,
+      "hidden_rows": 0,
+      "records": 560,
+      "valid_accession_rows": 533
+    },
+    "reference03": {
+      "duplicate_accession_keys": 4,
+      "formula_cells": 0,
+      "hidden_rows": 0,
+      "records": 376,
+      "valid_accession_rows": 376
+    },
+    "reference05": {
+      "duplicate_accession_keys": 0,
+      "formula_cells": 0,
+      "hidden_rows": 0,
+      "records": 37,
+      "valid_accession_rows": 37
+    },
+    "reference07": {
+      "duplicate_accession_keys": 0,
+      "formula_cells": 0,
+      "hidden_rows": 0,
+      "records": 52,
+      "valid_accession_rows": 0
+    }
+  },
+  "source_basis_counts": {
+    "explicit_morphological_assignment": 17,
+    "explicit_type_locality_assignment": 34,
+    "no_historical_motu_assignment_stated": 218,
+    "source_stated_individual_accession": 173,
+    "specimen_assignment_basis_not_documented": 681
+  },
+  "source_code_executed": false,
+  "source_rows": 1123,
+  "source_workbook_rows": 1049967,
+  "specification_sha256": "b5035007987a5e6d7f53ced5070286f98b1464b61ccfbb7d529072223c8779a1",
+  "status": "assessed",
+  "valid_stated_accessions": 173
+}

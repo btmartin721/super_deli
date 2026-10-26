@@ -4,15 +4,15 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: fit-free groundwater-amphipod source audit.**
-The CC0 workbook has 1,123 records and 25 continuous traits. All 173 valid COI
-records were retrieved; 162 have literal voucher/COI links, including six source
-MOTU cautions, leaving 156 unflagged links. Sampling independence and independent
-reference truth remain unestablished. See the [method](docs/amphipod-audit.md)
-and [findings](docs/amphipod-audit-results.md). Defaults and p-values remain
-unchanged; detailed evidence stays local and nobody was contacted.
-The prior [skate mapping assessment](docs/skate-correspondence-results.md) and
-[source audit](docs/replacement-empirical-audit-results.md) remain unchanged.
+**Current checkpoint: amphipod sampling and reference-evidence gates.**
+The fit-free assessment corroborates three additional voucher/COI pairs, retains
+one conflicting claim and seven unresolved cases, and documents 117 raw molecular
+partition links. Sampling independence and species-reference truth remain
+unestablished. See the [method](docs/amphipod-evidence.md) and
+[findings](docs/amphipod-evidence-results.md). Defaults and p-values remain
+unchanged; full evidence stays local and nobody was contacted.
+The preceding [amphipod audit](docs/amphipod-audit-results.md) and
+[skate assessment](docs/skate-correspondence-results.md) remain unchanged.
 
 The preceding [empirical evidence review](docs/empirical-evidence-gates.md)
 retains the penguin dataset's explicit limitations and its unchanged protocol.

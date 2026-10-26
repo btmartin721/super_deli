@@ -254,8 +254,9 @@ reference labels need independent evidence and documented uncertainty.
 27. **Audit completed:** Juvenile-skate replacement source, typed morphology/fixed-landmark representations and segregated COI reference diagnostics; voucher/haul correspondence remains insufficient for an independent benchmark.
 28. **Assessment completed:** Bounded public-record skate correspondence review, source-bound mapping ledgers and local records-needed schemas; no authoritative specimen/voucher or specimen/haul bridge established, and no contact performed.
 29. **Audit completed:** Groundwater-amphipod continuous traits, source-bound workbook/COI/locality ledgers and typed ingestion; independent sampling and reference truth remain unestablished, with no empirical fitting or contact.
-30. **Pending:** Freeze a justified empirical design for traceable amphipod specimens, independently review reference evidence and sampling, and declare trait/missingness policies before fitting.
-31. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
+30. **Assessment completed:** Source-bound amphipod sampling/reference review, three additional documentary voucher/COI corroborations and explicit conflicting/unresolved evidence; independent-unit fitting and species-boundary validation remain blocked.
+31. **Pending:** Freeze a justified descriptive molecular-concordance design and trait/missingness policy; independence-dependent uses additionally require a justified sampling/dependence protocol.
+32. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
 31. Anatomical landmark learning, semilandmark sliding and further model families.
 32. Consolidated user guidance, end-to-end examples and a scoped research release.
 
@@ -369,3 +370,9 @@ molecular and raw locality context evidence remain distinct from analytical
 readiness. Its typed raw measurements use existing tabular contracts without
 changing production readers, models or older empirical schemas. Only locked
 source metadata, invented engineering fixtures and compact findings are public.
+
+The [amphipod evidence assessment](amphipod-evidence.md) binds and semantically
+replays the original trait audit. Its separate streamed reference profile counts
+formatting rows without turning them into specimens, preserves marker-donor and
+partition provenance, and separates documentary links from independence-dependent
+readiness. Existing readers, model paths and evidence schemas remain unchanged.

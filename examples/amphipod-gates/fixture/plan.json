@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "assessment_id": "invented_trait_evidence",
+  "phase": "trait_evidence_audit_only",
+  "prior_specification_sha256": "dbf5569033b9a99e7fee4d15b32ae4175dacff34cd952ddc2ed2a354cca9eb57",
+  "prior_checksums_sha256": "f3d4a6d96fa5a28d53e07a5e33936bfd097be4ed27ceef56e52f4921f4e18d0f",
+  "sources": [
+    {
+      "source_id": "reference01",
+      "role": "molecular_records",
+      "filename": "reference01.xlsx",
+      "url": "https://example.org/invented/reference01.xlsx",
+      "sha256": "87a08450f3d9c040c03a2aae5009d388d251ae4c3d8f63e57f07c09e6ab1b128",
+      "size_bytes": 2009,
+      "provenance_group": "invented_engineering_source",
+      "license_id": "CC0-1.0",
+      "review_locator": "Entirely invented source",
+      "limitation": "No real biological evidence or performance validation"
+    },
+    {
+      "source_id": "reference02",
+      "role": "molecular_records",
+      "filename": "reference02.xlsx",
+      "url": "https://example.org/invented/reference02.xlsx",
+      "sha256": "158fd6524a3db52fec4e17f3b9b2979b819c99336425cc3b868ee39d10882bb6",
+      "size_bytes": 1753,
+      "provenance_group": "invented_engineering_source",
+      "license_id": "CC0-1.0",
+      "review_locator": "Entirely invented source",
+      "limitation": "No real biological evidence or performance validation"
+    },
+    {
+      "source_id": "reference03",
+      "role": "molecular_records",
+      "filename": "reference03.xlsx",
+      "url": "https://example.org/invented/reference03.xlsx",
+      "sha256": "6367b185f028dc30d26c633de0760a92353eb2a571dfac5c0e786f915c310ffb",
+      "size_bytes": 1530,
+      "provenance_group": "invented_engineering_source",
+      "license_id": "CC0-1.0",
+      "review_locator": "Entirely invented source",
+      "limitation": "No real biological evidence or performance validation"
+    },
+    {
+      "source_id": "reference05",
+      "role": "molecular_records",
+      "filename": "reference05.xlsx",
+      "url": "https://example.org/invented/reference05.xlsx",
+      "sha256": "76577bef068981d3781f3e6386d1516775791d6eae0cd0bd8135b5c9c133f11a",
+      "size_bytes": 1449,
+      "provenance_group": "invented_engineering_source",
+      "license_id": "CC0-1.0",
+      "review_locator": "Entirely invented source",
+      "limitation": "No real biological evidence or performance validation"
+    },
+    {
+      "source_id": "reference07",
+      "role": "molecular_records",
+      "filename": "reference07.xlsx",
+      "url": "https://example.org/invented/reference07.xlsx",
+      "sha256": "91687ad864de88d786759b54042eb42e1d873fa7a6b3465c870f0f3674a51188",
+      "size_bytes": 1397,
+      "provenance_group": "invented_engineering_source",
+      "license_id": "CC0-1.0",
+      "review_locator": "Entirely invented source",
+      "limitation": "No real biological evidence or performance validation"
+    },
+    {
+      "source_id": "trait_text",
+      "role": "primary_publication",
+      "filename": "trait.txt",
+      "url": "https://example.org/invented/trait.txt",
+      "sha256": "fab6af532493f527ac895c3da8fd47de2a4fe47c53fddc84fd041bfc4ca54c0b",
+      "size_bytes": 97,
+      "provenance_group": "invented_engineering_source",
+      "license_id": "CC0-1.0",
+      "review_locator": "Entirely invented source",
+      "limitation": "No real biological evidence or performance validation"
+    },
+    {
+      "source_id": "molecular_text",
+      "role": "primary_publication",
+      "filename": "molecular.txt",
+      "url": "https://example.org/invented/molecular.txt",
+      "sha256": "e58d29ea479f76628bc59013b714d78d7caa5f4b25f165b365b2f77410e56abb",
+      "size_bytes": 106,
+      "provenance_group": "invented_engineering_source",
+      "license_id": "CC0-1.0",
+      "review_locator": "Entirely invented source",
+      "limitation": "No real biological evidence or performance validation"
+    },
+    {
+      "source_id": "catalogue_statement",
+      "role": "primary_publication",
+      "filename": "catalogue.txt",
+      "url": "https://example.org/invented/catalogue.txt",
+      "sha256": "391c45b2935e668dce0cd583b21f2e65d39d06c2c768644e8f131bbec8128f86",
+      "size_bytes": 68,
+      "provenance_group": "invented_engineering_source",
+      "license_id": "CC0-1.0",
+      "review_locator": "Entirely invented source",
+      "limitation": "No real biological evidence or performance validation"
+    },
+    {
+      "source_id": "tree",
+      "role": "molecular_records",
+      "filename": "tree.txt",
+      "url": "https://example.org/invented/tree.txt",
+      "sha256": "490aa76577dff823c4c7df2848b56e37496d5103eece84164b7d4badd64ebdfc",
+      "size_bytes": 60,
+      "provenance_group": "invented_engineering_source",
+      "license_id": "CC0-1.0",
+      "review_locator": "Entirely invented source",
+      "limitation": "No real biological evidence or performance validation"
+    },
+    {
+      "source_id": "regional",
+      "role": "molecular_records",
+      "filename": "regional.txt",
+      "url": "https://example.org/invented/regional.txt",
+      "sha256": "ba3d0d2aa598f16478a423684bd89b3059143a3cc1c64a3a3ce91cefd853f2c1",
+      "size_bytes": 8,
+      "provenance_group": "invented_engineering_source",
+      "license_id": "CC0-1.0",
+      "review_locator": "Entirely invented source",
+      "limitation": "No real biological evidence or performance validation"
+    },
+    {
+      "source_id": "reference_archive",
+      "role": "archive_metadata",
+      "filename": "archive.json",
+      "url": "https://example.org/invented/archive.json",
+      "sha256": "500ebdbe6bfd00d842b079d0332c09357ad64706c6e75d4f459b1c23b421caf3",
+      "size_bytes": 579,
+      "provenance_group": "invented_engineering_source",
+      "license_id": "CC0-1.0",
+      "review_locator": "Entirely invented source",
+      "limitation": "No real biological evidence or performance validation"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "trait_selection",
+      "status": "documented_targeted",
+      "source_id": "trait_text",
+      "anchor": "best-preserved morphology",
+      "locator": "Invented engineering source",
+      "interpretation": "Invented bounded evidence claim",
+      "limitation": "No biological truth or independence is established",
+      "required_evidence": "A separately reviewed source and future protocol"
+    },
+    {
+      "claim_id": "source_assignments",
+      "status": "documented_mixed_basis",
+      "source_id": "trait_text",
+      "anchor": "less stringently",
+      "locator": "Invented engineering source",
+      "interpretation": "Invented bounded evidence claim",
+      "limitation": "No biological truth or independence is established",
+      "required_evidence": "A separately reviewed source and future protocol"
+    },
+    {
+      "claim_id": "molecular_methods",
+      "status": "documented_sequence_based",
+      "source_id": "molecular_text",
+      "anchor": "ASAP",
+      "locator": "Invented engineering source",
+      "interpretation": "Invented bounded evidence claim",
+      "limitation": "No biological truth or independence is established",
+      "required_evidence": "A separately reviewed source and future protocol"
+    },
+    {
+      "claim_id": "accepted_partitions",
+      "status": "documented_integrative_review",
+      "source_id": "molecular_text",
+      "anchor": "comparative examination",
+      "locator": "Invented engineering source",
+      "interpretation": "Invented bounded evidence claim",
+      "limitation": "No biological truth or independence is established",
+      "required_evidence": "A separately reviewed source and future protocol"
+    },
+    {
+      "claim_id": "catalogue_access",
+      "status": "not_public",
+      "source_id": "catalogue_statement",
+      "anchor": "not publicly available",
+      "locator": "Invented engineering source",
+      "interpretation": "Invented bounded evidence claim",
+      "limitation": "No biological truth or independence is established",
+      "required_evidence": "A separately reviewed source and future protocol"
+    },
+    {
+      "claim_id": "sampling_independence",
+      "status": "not_established",
+      "source_id": "molecular_text",
+      "anchor": "haphazard and pragmatic",
+      "locator": "Invented engineering source",
+      "interpretation": "Invented bounded evidence claim",
+      "limitation": "No biological truth or independence is established",
+      "required_evidence": "A separately reviewed source and future protocol"
+    },
+    {
+      "claim_id": "reference_species_truth",
+      "status": "not_established",
+      "source_id": "molecular_text",
+      "anchor": "proxies",
+      "locator": "Invented engineering source",
+      "interpretation": "Invented bounded evidence claim",
+      "limitation": "No biological truth or independence is established",
+      "required_evidence": "A separately reviewed source and future protocol"
+    },
+    {
+      "claim_id": "imputation_provenance",
+      "status": "documented_reference_informed",
+      "source_id": "trait_text",
+      "anchor": "first 40",
+      "locator": "Invented engineering source",
+      "interpretation": "Invented bounded evidence claim",
+      "limitation": "No biological truth or independence is established",
+      "required_evidence": "A separately reviewed source and future protocol"
+    }
+  ],
+  "identity_policy": "literal_documentary_keys_only",
+  "reference_policy": "retain_partitions_without_species_truth_promotion",
+  "contact_policy": "no_contact"
+}

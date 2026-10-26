@@ -1,0 +1,5 @@
+#NEXUS
+Begin taxa;
+Dimensions ntax=2;
+Taxlabels M1 M2;
+End;

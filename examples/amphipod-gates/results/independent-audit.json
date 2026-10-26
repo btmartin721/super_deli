@@ -1,0 +1,21 @@
+{
+  "composite_phylogeny_rows": 50,
+  "conflicting_voucher_claims": 1,
+  "contact_performed": false,
+  "document_text_derivations": "reproduced",
+  "documented_specimen_links": 159,
+  "empirical_fits": 0,
+  "empty_formatting_rows": 1045251,
+  "models_imported": false,
+  "molecular_partition_links": 117,
+  "new_table_pair_corroborations": 3,
+  "populated_reference_cells": 73638,
+  "prior_semantics": "byte_identical",
+  "remaining_source_asserted_only": 7,
+  "reviewed_claims": 8,
+  "serialized_reference_rows": 1049967,
+  "source_reference_records": 4351,
+  "source_rows": 1123,
+  "status": "verified",
+  "valid_stated_accessions": 173
+}
