@@ -28,6 +28,11 @@ jobs:
         run: python -m pytest -q
       - name: Validate illustrative configuration
         run: super-deli validate examples/foundation/dataset.json --hash-inputs
+      - name: Check fit-free continuous trait source audit
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/amphipod-audit/smoke.py" --output-dir "$RUNNER_TEMP/amphipod-audit-smoke"
       - name: Check fit-free specimen correspondence
         working-directory: ${{ runner.temp }}
         run: |
@@ -106,6 +111,11 @@ jobs:
                   print(f"--- {path.relative_to(root)} ---")
                   print(path.read_text(errors="replace")[-4000:])
           PYCODE
+      - name: Check fit-free continuous trait source audit
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/amphipod-audit/smoke.py" --output-dir "$RUNNER_TEMP/amphipod-audit-smoke"
       - name: Check fit-free specimen correspondence
         working-directory: ${{ runner.temp }}
         run: |

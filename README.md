@@ -4,16 +4,15 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: skate specimen–voucher and haul correspondence.**
-The fit-free review checks all 84 archive specimens, 85 molecular records and
-157 official survey hauls. It retains 53 candidate voucher links and 31 unmatched
-IDs; no authoritative specimen–voucher or specimen–haul crosswalk was found in
-the checked public sources. The evidence gates remain unresolved. See the
-[method and command](docs/skate-correspondence.md) and
-[findings](docs/skate-correspondence-results.md). Defaults and p-values are
-unchanged; full evidence stays local. Nobody was contacted.
-The preceding [source audit](docs/replacement-empirical-audit-results.md) remains
-unchanged, including all shape/colour coverage and uncertainty limitations.
+**Current checkpoint: fit-free groundwater-amphipod source audit.**
+The CC0 workbook has 1,123 records and 25 continuous traits. All 173 valid COI
+records were retrieved; 162 have literal voucher/COI links, including six source
+MOTU cautions, leaving 156 unflagged links. Sampling independence and independent
+reference truth remain unestablished. See the [method](docs/amphipod-audit.md)
+and [findings](docs/amphipod-audit-results.md). Defaults and p-values remain
+unchanged; detailed evidence stays local and nobody was contacted.
+The prior [skate mapping assessment](docs/skate-correspondence-results.md) and
+[source audit](docs/replacement-empirical-audit-results.md) remain unchanged.
 
 The preceding [empirical evidence review](docs/empirical-evidence-gates.md)
 retains the penguin dataset's explicit limitations and its unchanged protocol.

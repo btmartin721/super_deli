@@ -31,12 +31,19 @@ def register(commands):
     mapping.add_argument("config", type=Path)
     for flag in ("prior-plan", "source-dir", "prior-audit-dir", "evidence-dir", "output-dir"):
         mapping.add_argument("--" + flag, type=Path, required=True)
+    traits = commands.add_parser(
+        "audit-trait-source", help="Audit a locked individual trait workbook without fitting"
+    )
+    traits.add_argument("config", type=Path)
+    traits.add_argument("--source-dir", type=Path, required=True)
+    traits.add_argument("--output-dir", type=Path, required=True)
     return frozenset(
         {
             "curate-empirical",
             "assess-empirical",
             "audit-replacement-empirical",
             "assess-correspondence",
+            "audit-trait-source",
         }
     )
 
@@ -47,6 +54,15 @@ def dispatch(args):
     from super_deli.io.config import read_json
     from super_deli.workflows.empirical_curation import curate_empirical
 
+    if args.command == "audit-trait-source":
+        from super_deli.core.trait_audit import TraitAuditPlan
+        from super_deli.workflows.trait_audit import audit_trait_source
+
+        return audit_trait_source(
+            TraitAuditPlan.from_dict(read_json(args.config)),
+            source_dir=args.source_dir,
+            output_dir=args.output_dir,
+        )
     if args.command == "assess-correspondence":
         from super_deli.core.correspondence import CorrespondencePlan
         from super_deli.core.replacement_audit import ReplacementAuditPlan

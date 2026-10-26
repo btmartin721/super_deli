@@ -1,0 +1,20 @@
+{
+  "contact_performed": false,
+  "continuous_traits": 25,
+  "empirical_fits": 0,
+  "exact_context_descriptors": 393,
+  "formula_caches_checked": 1,
+  "literal_links": 162,
+  "models_imported": false,
+  "numeric_issue_rows": 8,
+  "raw_ingestion_rows": 1029,
+  "source_and_output_hashes_verified": true,
+  "source_columns": 45,
+  "source_rows": 1123,
+  "status": "verified",
+  "stored_cells": 50721,
+  "unflagged_literal_links": 156,
+  "valid_accessions": 173,
+  "voucherless_rows": 86,
+  "xml_and_text_records": 173
+}

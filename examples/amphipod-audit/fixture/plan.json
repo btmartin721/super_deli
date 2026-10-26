@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "audit_id": "invented_trait_audit",
+  "phase": "trait_source_audit_only",
+  "profile_id": "groundwater_amphipods_v1",
+  "sources": [
+    {
+      "role": "workbook",
+      "filename": "traits.xlsx",
+      "url": "https://example.org/invented/traits.xlsx",
+      "access": "usable",
+      "sha256": "40af94cdf04389a382783f2d7ea089caf4ab232c84a3f9ce4533c3965cbf34e0",
+      "size_bytes": 4086,
+      "license_id": "CC0-1.0",
+      "limitation": "Invented test source, no real biological evidence"
+    },
+    {
+      "role": "archive",
+      "filename": "archive.json",
+      "url": "https://example.org/invented/archive.json",
+      "access": "usable",
+      "sha256": "06612fe6a1baac54b0b2a5e6c181b651062d107a24aae76806c31e1d5e31b698",
+      "size_bytes": 160,
+      "license_id": "CC0-1.0",
+      "limitation": "Invented test source, no real biological evidence"
+    },
+    {
+      "role": "collection",
+      "filename": "collection.json",
+      "url": "https://example.org/invented/collection.json",
+      "access": "usable",
+      "sha256": "28d04d946b538e31204153d532060c962dbcd38b084946be4ff9d01e69f217d9",
+      "size_bytes": 41,
+      "license_id": "CC0-1.0",
+      "limitation": "Invented test source, no real biological evidence"
+    },
+    {
+      "role": "publication",
+      "filename": "publication.xml",
+      "url": "https://example.org/invented/publication.xml",
+      "access": "usable",
+      "sha256": "ef18ecfec1a2889c799412fa44463384d6eb7e438791c48537973b4c9204eba8",
+      "size_bytes": 88,
+      "license_id": "CC-BY-4.0",
+      "limitation": "Invented test source, no real biological evidence"
+    },
+    {
+      "role": "references",
+      "filename": "references.xml",
+      "url": "https://example.org/invented/references.xml",
+      "access": "usable",
+      "sha256": "dac5a80cb8510ae8dd1dab13c131f97e2692748962049ef3f992744d31e54fc0",
+      "size_bytes": 2879,
+      "license_id": "review_or_public_sequence_record",
+      "limitation": "Invented test source, no real biological evidence"
+    },
+    {
+      "role": "reference_text",
+      "filename": "references.gb",
+      "url": "https://example.org/invented/references.gb",
+      "access": "usable",
+      "sha256": "0e26ba96de86fe4688f0b97b99af0d300166097fca13154f4eecf187433bd42c",
+      "size_bytes": 56,
+      "license_id": "review_or_public_sequence_record",
+      "limitation": "Invented test source, no real biological evidence"
+    },
+    {
+      "role": "screen",
+      "filename": "screen.json",
+      "url": "https://example.org/invented/screen.json",
+      "access": "usable",
+      "sha256": "0dae39961867669c74e062a1dc85c99c0dec60d94b6c227473be7b4251d0611e",
+      "size_bytes": 145,
+      "license_id": "review_or_public_sequence_record",
+      "limitation": "Invented test source, no real biological evidence"
+    }
+  ],
+  "published_counts": [
+    [
+      "rows",
+      6
+    ],
+    [
+      "motu_labels",
+      2
+    ],
+    [
+      "locality_names",
+      2
+    ]
+  ],
+  "identity_policy": "literal_vouchers_no_alias_inference",
+  "reference_policy": "availability_is_not_taxonomic_validation",
+  "contact_policy": "no_contact"
+}

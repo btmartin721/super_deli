@@ -253,8 +253,9 @@ reference labels need independent evidence and documented uncertainty.
 26. **Assessment completed:** Source-bound sampling/reference evidence review; ingestion and descriptive labels admitted, independence-dependent uses explicitly blocked and grouped screening inapplicable for the capture source.
 27. **Audit completed:** Juvenile-skate replacement source, typed morphology/fixed-landmark representations and segregated COI reference diagnostics; voucher/haul correspondence remains insufficient for an independent benchmark.
 28. **Assessment completed:** Bounded public-record skate correspondence review, source-bound mapping ledgers and local records-needed schemas; no authoritative specimen/voucher or specimen/haul bridge established, and no contact performed.
-29. **Pending:** Obtain authoritative correspondence without involving study authors, or audit a better documented source, then freeze a justified dependence-aware empirical design before fitting.
-30. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
+29. **Audit completed:** Groundwater-amphipod continuous traits, source-bound workbook/COI/locality ledgers and typed ingestion; independent sampling and reference truth remain unestablished, with no empirical fitting or contact.
+30. **Pending:** Freeze a justified empirical design for traceable amphipod specimens, independently review reference evidence and sampling, and declare trait/missingness policies before fitting.
+31. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
 31. Anatomical landmark learning, semilandmark sliding and further model families.
 32. Consolidated user guidance, end-to-end examples and a scoped research release.
 
@@ -361,3 +362,10 @@ evidence declarations, documentary CSV/official haul adapters and fit-free
 orchestration. It binds the exact prior source audit, preserves candidate versus
 documented links, and keeps correspondence coverage separate from all analytical
 readiness. No old empirical schema, model or source reader is weakened.
+
+The [amphipod source audit](amphipod-audit.md) adds a separate immutable plan,
+bounded standard-library workbook adapter and fit-free workflow. Literal voucher,
+molecular and raw locality context evidence remain distinct from analytical
+readiness. Its typed raw measurements use existing tabular contracts without
+changing production readers, models or older empirical schemas. Only locked
+source metadata, invented engineering fixtures and compact findings are public.

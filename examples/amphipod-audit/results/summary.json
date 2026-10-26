@@ -1,0 +1,105 @@
+{
+  "accession_rows_with_source_cautions": 6,
+  "archive": {
+    "doi": "10.6084/m9.figshare.24160872.v1",
+    "id": 24160872,
+    "license": {
+      "name": "CC0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "value": 2
+    },
+    "modified_date": "2024-02-09T11:47:11Z",
+    "published_date": "2024-02-09T11:47:11Z",
+    "version": 1
+  },
+  "audit_id": "groundwater_amphipod_audit_v1",
+  "bootstrap_draws": 0,
+  "computed_counts": {
+    "locality_names": 390,
+    "motu_labels": 313,
+    "rows": 1123
+  },
+  "contact_performed": false,
+  "continuous_traits": 25,
+  "count_disagreements": {
+    "locality_names": {
+      "computed": 390,
+      "published": 389
+    },
+    "motu_labels": {
+      "computed": 313,
+      "published": 314
+    }
+  },
+  "email_sent": false,
+  "empirical_fits": 0,
+  "formula_cells": 1,
+  "formula_evaluation": false,
+  "identity_counts": {
+    "missing": 86,
+    "unique": 1037
+  },
+  "legacy_identifiers_are_unique": false,
+  "locality_accounting": {
+    "complete_context_rows": 1086,
+    "context_descriptors_are_independence_assertions": false,
+    "coordinate_tokens_with_multiple_names": 3,
+    "date_kinds": {
+      "day_month_year": 60,
+      "missing": 174,
+      "stored_numeric_not_converted": 821,
+      "text_preserved_uninterpreted": 60,
+      "year_range": 8
+    },
+    "exact_context_descriptors": 393,
+    "names_with_multiple_coordinate_tokens": 8,
+    "source_mixed_motu_contexts": 26
+  },
+  "missing_requested_accessions": 0,
+  "nonpositive_measurement_rows": 6,
+  "numeric_issue_rows": 8,
+  "phase": "trait_source_audit_only",
+  "published_counts": {
+    "locality_names": 389,
+    "motu_labels": 314,
+    "rows": 1123
+  },
+  "pvalues_generated": 0,
+  "readiness": {
+    "biological_independence": "requires_separate_sampling_design",
+    "bootstrap": "not_authorized",
+    "continuous_ingestion": "available_ingestion_only",
+    "direct_molecular_correspondence": "available_for_unflagged_literal_links_only",
+    "ecological_model": "not_authorized_source_categories_are_metadata",
+    "empirical_fitting": "not_authorized",
+    "genomic_model": "not_authorized_COI_is_reference_only",
+    "reference_label_independence": "not_established_by_DNA_availability",
+    "significance": "not_authorized",
+    "specimen_traceability": "available_for_unique_source_vouchers_only"
+  },
+  "reference_link_counts": {
+    "literal_voucher_coi_match": 162,
+    "not_stated": 948,
+    "placeholder": 2,
+    "source_documented_record_voucher_absent": 11
+  },
+  "representation": {
+    "finite_tokens": 21652,
+    "missing_tokens": 4073,
+    "numeric_values_recalculated": false,
+    "observations": 1029,
+    "statistical_cohort_authorized": false,
+    "status": "available_ingestion_only"
+  },
+  "requested_accessions": 173,
+  "returned_reference_records": 173,
+  "schema_version": 1,
+  "source_columns": 45,
+  "source_reference_caution_rows": 16,
+  "source_rows": 1123,
+  "specification_sha256": "f27dc5c5a8cf4a859990a2b5fb36e16c8ba4ec992f7e84140efe9ff2f772b23a",
+  "status": "audited",
+  "unexpected_reference_records": 0,
+  "unflagged_literal_links": 156,
+  "valid_accession_rows": 173
+}
