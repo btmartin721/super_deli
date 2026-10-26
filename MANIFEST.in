@@ -1152,3 +1152,29 @@ include docs/figures/noisy-moons/connectivity-selection.png
 include docs/figures/noisy-moons/connectivity-selection.pdf
 include docs/figures/noisy-moons/fixed-moons-examples.png
 include docs/figures/noisy-moons/fixed-moons-examples.pdf
+
+# Unified tabular comparison: explicit public payload only.
+include docs/figures/tabular-analysis/comparison-overview.pdf
+include docs/figures/tabular-analysis/comparison-overview.png
+include docs/tabular-analysis-results.md
+include docs/tabular-analysis.md
+include examples/tabular-analysis/analysis.json
+include examples/tabular-analysis/dataset.json
+include examples/tabular-analysis/report.py
+include examples/tabular-analysis/results/checksums.json
+include examples/tabular-analysis/results/comparisons.json
+include examples/tabular-analysis/results/models.csv
+include examples/tabular-analysis/results/models.json
+include examples/tabular-analysis/results/summary.json
+include examples/tabular-analysis/smoke.py
+include examples/tabular-analysis/traits.tsv
+include examples/tabular-analysis/validate.py
+include examples/tabular-analysis/validation.json
+include src/super_deli/benchmarking/tabular_comparison.py
+include src/super_deli/benchmarking/tabular_comparison_audit.py
+include src/super_deli/core/partition_comparison.py
+include src/super_deli/models/tabular_analysis_config.py
+include src/super_deli/workflows/tabular_analysis.py
+include src/super_deli/workflows/tabular_comparison_report.py
+include tests/test_foundation_tabular_analysis.py
+include tests/test_tabular_analysis.py

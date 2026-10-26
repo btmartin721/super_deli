@@ -1,0 +1,22 @@
+{
+  "artifact_cap_bytes": 1073741824,
+  "failed_observations": 0,
+  "interpretation": "Three datasets/cell; descriptive orchestration validation, no general performance guarantee",
+  "main_pipeline_runs": 672,
+  "model_defaults_and_historical_p_values_unchanged": true,
+  "observations": 36,
+  "original_cap_bytes": 536870912,
+  "p_values_computed": false,
+  "pairwise_comparisons": 216,
+  "point_pipelines": 144,
+  "preflight_pipeline_runs": 88,
+  "resampling_pipelines": 480,
+  "schema_version": 1,
+  "source_audit_hashes": {
+    "independent-postfit-audit.json": "06db23cf43f941df82608ed9c577a1fa7a181ea9341d40bb72ec3fd72b8f580c",
+    "main-audit.json": "8fe80deebccccf5dd5e6bedb14a671152ae7b4edf0e77781d935719acb959c02",
+    "preflight-audit.json": "721007d14ac3da8e3342c9ed4001f6b313493402706ec24485ff3338b1274b3a"
+  },
+  "standalone_point_replays": 48,
+  "status": "passed"
+}

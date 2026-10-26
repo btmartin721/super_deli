@@ -506,3 +506,10 @@ historical p-values; detailed evidence stays local.
 The [completed Gaussian-control diagnosis](docs/aic-gaussian-diagnostics-results.md)
 reports 1,250 verified searches and the audit of 2,550 archived observations,
 with uncertainty and independent held-out prediction.
+
+## Unified tabular comparison
+
+The opt-in [unified tabular workflow](docs/tabular-analysis.md) compares
+prespecified PCA/GMM and PCA/HDBSCAN arms on one frozen continuous morphology
+or ecology table. It reports noise-aware agreement, coverage and separate
+family-specific stability without selecting a winning model or adding p-values.

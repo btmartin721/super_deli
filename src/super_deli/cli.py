@@ -144,6 +144,13 @@ def main(argv: list[str] | None = None) -> int:
     tabular_cluster.add_argument("--model-config", type=Path, required=True)
     tabular_cluster.add_argument("--modality", help="Select exactly one morphology/ecology table")
     tabular_cluster.add_argument("--output-dir", type=Path, required=True)
+    analysis = commands.add_parser(
+        "analyze-tabular", help="Compare prespecified tabular model arms"
+    )
+    analysis.add_argument("config", type=Path)
+    analysis.add_argument("--analysis-config", type=Path, required=True)
+    analysis.add_argument("--modality")
+    analysis.add_argument("--output-dir", type=Path, required=True)
     density = commands.add_parser("cluster-tabular-density", help="PCA/HDBSCAN with explicit noise")
     density.add_argument("config", type=Path)
     density.add_argument("--model-config", type=Path, required=True)
@@ -978,6 +985,19 @@ def main(argv: list[str] | None = None) -> int:
                 )
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
             return 0
+        if args.command == "analyze-tabular":
+            from super_deli.models.tabular_analysis_config import TabularAnalysisConfig
+            from super_deli.workflows.tabular_analysis import run_tabular_analysis
+
+            summary = run_tabular_analysis(
+                config,
+                analysis_config=TabularAnalysisConfig.from_dict(read_json(args.analysis_config)),
+                base_dir=source.parent,
+                output_dir=args.output_dir,
+                modality_name=args.modality,
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0 if summary["status"] == "complete" else 1
         if args.command == "cluster-tabular-density":
             from super_deli.models.hdbscan_config import HDBSCANConfig
             from super_deli.workflows.tabular_hdbscan import run_tabular_hdbscan

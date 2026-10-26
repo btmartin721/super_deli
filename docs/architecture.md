@@ -257,10 +257,11 @@ reference labels need independent evidence and documented uncertainty.
 30. **Assessment completed:** Source-bound amphipod sampling/reference review, three additional documentary voucher/COI corroborations and explicit conflicting/unresolved evidence; independent-unit fitting and species-boundary validation remain blocked.
 31. **Completed:** Separate opt-in continuous tabular PCA/HDBSCAN, noise-aware subsampling and paired simulation validation.
 32. **Completed:** Frozen noisy-moons density diagnosis, hierarchy/connectivity audits and archived replay parity; no production/default change.
-33. **Pending:** Freeze a justified descriptive molecular-concordance design and trait/missingness policy; independence-dependent uses additionally require a justified sampling/dependence protocol.
-34. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
-35. Anatomical landmark learning, semilandmark sliding and further model families.
-36. Consolidated user guidance, end-to-end examples and a scoped research release.
+33. **Completed:** Unified one-table PCA/GMM and PCA/HDBSCAN orchestration with coverage-explicit comparison and separate native stability.
+34. **Pending:** Freeze a justified descriptive molecular-concordance design and trait/missingness policy; independence-dependent uses additionally require a justified sampling/dependence protocol.
+35. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
+36. Anatomical landmark learning, semilandmark sliding and further model families.
+37. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The later calibration and diagnostic workflows remain restricted to their declared
 assumptions and data types; completing their engineering does not establish species
@@ -398,3 +399,9 @@ production fitting/sampling modules unchanged. Original-unit identities survive
 archived draw replays. Synthetic fixture construction supports installed tests
 without author contact or real empirical inputs. Frozen point arms and oracle
 post-fit explanations remain separate from user-facing model selection.
+
+The [unified tabular entry point](tabular-analysis.md) composes unchanged native
+workflows using a frozen source, dependency-free arm configuration and a shared
+report. Its label-invariant comparison lives in `core.partition_comparison`;
+family adapters preserve native evidence rather than coercing density noise
+into the GMM delimitation-result contract. No model-family ranking is performed.

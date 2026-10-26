@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "data_seed": 79103,
+  "main_seed": 79133,
+  "preflight_seed": 79139,
+  "model_seed": 79147,
+  "cases": [
+    "gaussian",
+    "four_spherical",
+    "four_unequal",
+    "moons",
+    "background",
+    "cline"
+  ],
+  "sample_sizes": [
+    64,
+    256
+  ],
+  "datasets_per_cell": 3,
+  "resampling_datasets_per_cell": 1,
+  "draws": 10,
+  "main_pipeline_runs": 672,
+  "preflight_pipeline_runs": 88,
+  "artifact_cap_bytes": 536870912,
+  "min_free_bytes": 8589934592,
+  "storage_allowance": 1.25,
+  "max_workers": 4
+}

@@ -1,0 +1,613 @@
+{
+  "dataset_id": "invented_density_data",
+  "localities": [],
+  "modalities": [
+    {
+      "features": [
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "trait_1",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "trait_2",
+          "role": "feature",
+          "unit": null
+        }
+      ],
+      "format": "tsv",
+      "kind": "morphological",
+      "level": "specimen",
+      "name": "traits",
+      "observations": [
+        {
+          "observation_id": "unit_0000",
+          "unit_id": "unit_0000"
+        },
+        {
+          "observation_id": "unit_0001",
+          "unit_id": "unit_0001"
+        },
+        {
+          "observation_id": "unit_0002",
+          "unit_id": "unit_0002"
+        },
+        {
+          "observation_id": "unit_0003",
+          "unit_id": "unit_0003"
+        },
+        {
+          "observation_id": "unit_0004",
+          "unit_id": "unit_0004"
+        },
+        {
+          "observation_id": "unit_0005",
+          "unit_id": "unit_0005"
+        },
+        {
+          "observation_id": "unit_0006",
+          "unit_id": "unit_0006"
+        },
+        {
+          "observation_id": "unit_0007",
+          "unit_id": "unit_0007"
+        },
+        {
+          "observation_id": "unit_0008",
+          "unit_id": "unit_0008"
+        },
+        {
+          "observation_id": "unit_0009",
+          "unit_id": "unit_0009"
+        },
+        {
+          "observation_id": "unit_0010",
+          "unit_id": "unit_0010"
+        },
+        {
+          "observation_id": "unit_0011",
+          "unit_id": "unit_0011"
+        },
+        {
+          "observation_id": "unit_0012",
+          "unit_id": "unit_0012"
+        },
+        {
+          "observation_id": "unit_0013",
+          "unit_id": "unit_0013"
+        },
+        {
+          "observation_id": "unit_0014",
+          "unit_id": "unit_0014"
+        },
+        {
+          "observation_id": "unit_0015",
+          "unit_id": "unit_0015"
+        },
+        {
+          "observation_id": "unit_0016",
+          "unit_id": "unit_0016"
+        },
+        {
+          "observation_id": "unit_0017",
+          "unit_id": "unit_0017"
+        },
+        {
+          "observation_id": "unit_0018",
+          "unit_id": "unit_0018"
+        },
+        {
+          "observation_id": "unit_0019",
+          "unit_id": "unit_0019"
+        },
+        {
+          "observation_id": "unit_0020",
+          "unit_id": "unit_0020"
+        },
+        {
+          "observation_id": "unit_0021",
+          "unit_id": "unit_0021"
+        },
+        {
+          "observation_id": "unit_0022",
+          "unit_id": "unit_0022"
+        },
+        {
+          "observation_id": "unit_0023",
+          "unit_id": "unit_0023"
+        },
+        {
+          "observation_id": "unit_0024",
+          "unit_id": "unit_0024"
+        },
+        {
+          "observation_id": "unit_0025",
+          "unit_id": "unit_0025"
+        },
+        {
+          "observation_id": "unit_0026",
+          "unit_id": "unit_0026"
+        },
+        {
+          "observation_id": "unit_0027",
+          "unit_id": "unit_0027"
+        },
+        {
+          "observation_id": "unit_0028",
+          "unit_id": "unit_0028"
+        },
+        {
+          "observation_id": "unit_0029",
+          "unit_id": "unit_0029"
+        },
+        {
+          "observation_id": "unit_0030",
+          "unit_id": "unit_0030"
+        },
+        {
+          "observation_id": "unit_0031",
+          "unit_id": "unit_0031"
+        },
+        {
+          "observation_id": "unit_0032",
+          "unit_id": "unit_0032"
+        },
+        {
+          "observation_id": "unit_0033",
+          "unit_id": "unit_0033"
+        },
+        {
+          "observation_id": "unit_0034",
+          "unit_id": "unit_0034"
+        },
+        {
+          "observation_id": "unit_0035",
+          "unit_id": "unit_0035"
+        },
+        {
+          "observation_id": "unit_0036",
+          "unit_id": "unit_0036"
+        },
+        {
+          "observation_id": "unit_0037",
+          "unit_id": "unit_0037"
+        },
+        {
+          "observation_id": "unit_0038",
+          "unit_id": "unit_0038"
+        },
+        {
+          "observation_id": "unit_0039",
+          "unit_id": "unit_0039"
+        },
+        {
+          "observation_id": "unit_0040",
+          "unit_id": "unit_0040"
+        },
+        {
+          "observation_id": "unit_0041",
+          "unit_id": "unit_0041"
+        },
+        {
+          "observation_id": "unit_0042",
+          "unit_id": "unit_0042"
+        },
+        {
+          "observation_id": "unit_0043",
+          "unit_id": "unit_0043"
+        },
+        {
+          "observation_id": "unit_0044",
+          "unit_id": "unit_0044"
+        },
+        {
+          "observation_id": "unit_0045",
+          "unit_id": "unit_0045"
+        },
+        {
+          "observation_id": "unit_0046",
+          "unit_id": "unit_0046"
+        },
+        {
+          "observation_id": "unit_0047",
+          "unit_id": "unit_0047"
+        },
+        {
+          "observation_id": "unit_0048",
+          "unit_id": "unit_0048"
+        },
+        {
+          "observation_id": "unit_0049",
+          "unit_id": "unit_0049"
+        },
+        {
+          "observation_id": "unit_0050",
+          "unit_id": "unit_0050"
+        },
+        {
+          "observation_id": "unit_0051",
+          "unit_id": "unit_0051"
+        },
+        {
+          "observation_id": "unit_0052",
+          "unit_id": "unit_0052"
+        },
+        {
+          "observation_id": "unit_0053",
+          "unit_id": "unit_0053"
+        },
+        {
+          "observation_id": "unit_0054",
+          "unit_id": "unit_0054"
+        },
+        {
+          "observation_id": "unit_0055",
+          "unit_id": "unit_0055"
+        },
+        {
+          "observation_id": "unit_0056",
+          "unit_id": "unit_0056"
+        },
+        {
+          "observation_id": "unit_0057",
+          "unit_id": "unit_0057"
+        },
+        {
+          "observation_id": "unit_0058",
+          "unit_id": "unit_0058"
+        },
+        {
+          "observation_id": "unit_0059",
+          "unit_id": "unit_0059"
+        },
+        {
+          "observation_id": "unit_0060",
+          "unit_id": "unit_0060"
+        },
+        {
+          "observation_id": "unit_0061",
+          "unit_id": "unit_0061"
+        },
+        {
+          "observation_id": "unit_0062",
+          "unit_id": "unit_0062"
+        },
+        {
+          "observation_id": "unit_0063",
+          "unit_id": "unit_0063"
+        }
+      ],
+      "path": "traits.tsv",
+      "popmapfile": null
+    }
+  ],
+  "populations": [],
+  "random_seed": 0,
+  "schema_version": 1,
+  "specimens": [
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0000"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0001"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0002"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0003"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0004"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0005"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0006"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0007"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0008"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0009"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0010"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0011"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0012"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0013"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0014"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0015"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0016"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0017"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0018"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0019"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0020"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0021"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0022"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0023"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0024"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0025"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0026"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0027"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0028"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0029"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0030"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0031"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0032"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0033"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0034"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0035"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0036"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0037"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0038"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0039"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0040"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0041"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0042"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0043"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0044"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0045"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0046"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0047"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0048"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0049"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0050"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0051"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0052"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0053"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0054"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0055"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0056"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0057"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0058"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0059"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0060"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0061"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0062"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0063"
+    }
+  ]
+}
