@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "n_datasets": 25,
+  "stability_datasets": 5,
+  "n_subsamples": 25,
+  "sample_sizes": [
+    64,
+    256
+  ],
+  "main_seed": 94217,
+  "preflight_seed": 93997,
+  "data_seed": 93709,
+  "subsampling_seed": 93737,
+  "optimizer_seed": 71323,
+  "artifact_cap_bytes": 1073741824,
+  "min_free_bytes": 8589934592
+}

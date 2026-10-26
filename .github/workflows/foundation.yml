@@ -147,6 +147,12 @@ jobs:
           unset PYTHONPATH
           python "$GITHUB_WORKSPACE/examples/empirical-foundation/smoke.py" --output-dir "$RUNNER_TEMP/empirical-curation-smoke"
 
+      - name: Check density clustering installed workflow
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/density-clustering/smoke.py" --output-dir "$RUNNER_TEMP/density-smoke"
+
       - name: Check scaled fold stability installed workflow
         working-directory: ${{ runner.temp }}
         run: |

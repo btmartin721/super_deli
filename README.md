@@ -4,7 +4,17 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: amphipod sampling and reference-evidence gates.**
+**Current checkpoint: opt-in continuous tabular PCA + HDBSCAN.**
+A second clustering family supports complete continuous morphology/ecology,
+explicit unassigned/noise observations and whole-unit subsampling stability.
+Existing PCA/GMM defaults and p-values remain unchanged. See the
+[model, scope and CLI](docs/tabular-density-clustering.md) and
+[paired simulation findings](docs/tabular-density-results.md).
+Density groups and membership strengths are species hypotheses, not calibrated
+species decisions or species probabilities. Genomic, shape and multimodal density
+adapters and deep learning remain later work. Detailed evidence stays local.
+
+**Preceding checkpoint: amphipod sampling and reference-evidence gates.**
 The fit-free assessment corroborates three additional voucher/COI pairs, retains
 one conflicting claim and seven unresolved cases, and documents 117 raw molecular
 partition links. Sampling independence and species-reference truth remain

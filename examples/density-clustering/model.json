@@ -1,0 +1,19 @@
+{
+  "assume_independent_units": true,
+  "schema_version": 1,
+  "model_family": "tabular_pca_hdbscan",
+  "feature_names": [],
+  "n_pcs": 2,
+  "min_cluster_size": 5,
+  "min_samples": 5,
+  "alpha": 1.0,
+  "cluster_selection_method": "eom",
+  "cluster_selection_epsilon": 0.0,
+  "allow_single_cluster": true,
+  "n_subsamples": 25,
+  "subsample_fraction": 0.8,
+  "random_seed": 93737,
+  "rank_tol": 1e-12,
+  "max_working_bytes": 268435456,
+  "max_pairwise_bytes": 268435456
+}

@@ -255,10 +255,11 @@ reference labels need independent evidence and documented uncertainty.
 28. **Assessment completed:** Bounded public-record skate correspondence review, source-bound mapping ledgers and local records-needed schemas; no authoritative specimen/voucher or specimen/haul bridge established, and no contact performed.
 29. **Audit completed:** Groundwater-amphipod continuous traits, source-bound workbook/COI/locality ledgers and typed ingestion; independent sampling and reference truth remain unestablished, with no empirical fitting or contact.
 30. **Assessment completed:** Source-bound amphipod sampling/reference review, three additional documentary voucher/COI corroborations and explicit conflicting/unresolved evidence; independent-unit fitting and species-boundary validation remain blocked.
-31. **Pending:** Freeze a justified descriptive molecular-concordance design and trait/missingness policy; independence-dependent uses additionally require a justified sampling/dependence protocol.
-32. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
-31. Anatomical landmark learning, semilandmark sliding and further model families.
-32. Consolidated user guidance, end-to-end examples and a scoped research release.
+31. **Completed:** Separate opt-in continuous tabular PCA/HDBSCAN, noise-aware subsampling and paired simulation validation.
+32. **Pending:** Freeze a justified descriptive molecular-concordance design and trait/missingness policy; independence-dependent uses additionally require a justified sampling/dependence protocol.
+33. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
+34. Anatomical landmark learning, semilandmark sliding and further model families.
+35. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The later calibration and diagnostic workflows remain restricted to their declared
 assumptions and data types; completing their engineering does not establish species
@@ -376,3 +377,13 @@ replays the original trait audit. Its separate streamed reference profile counts
 formatting rows without turning them into specimens, preserves marker-donor and
 partition provenance, and separates documentary links from independence-dependent
 readiness. Existing readers, model paths and evidence schemas remain unchanged.
+
+
+The [density family](tabular-density-clustering.md) has its own dependency-free
+configuration, numerical adapter, artifact contract and CLI. It reuses existing
+tabular validation/preprocessing without changing their GMM behavior. A generic
+inclusion-conditional subsampling accumulator separates noise, positive groups,
+coverage and failures; no absent-unit predictions or GMM significance evidence
+are synthesized. The frozen paired study and independent numerical/denominator
+auditor live in benchmarking modules, outside production inference. Existing
+models, defaults, empirical gates and p-values remain preserved.

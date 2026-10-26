@@ -1,0 +1,1154 @@
+[
+  {
+    "between": {
+      "approximate_95_lower": -0.0009135965012428179,
+      "approximate_95_upper": 0.003197253863220251,
+      "datasets": 5,
+      "mean": 0.0011418286809887167,
+      "se": 0.0007403082374593186
+    },
+    "case": "background",
+    "family": "hdbscan",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "n": 64,
+    "noise_frequency": {
+      "approximate_95_lower": 0.04515731825974027,
+      "approximate_95_upper": 0.1154510165813732,
+      "datasets": 5,
+      "mean": 0.08030416742055674,
+      "se": 0.01265893897740598
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.9849336980967853,
+      "approximate_95_upper": 1.0041199184117735,
+      "datasets": 5,
+      "mean": 0.9945268082542794,
+      "se": 0.0034551773199242375
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": -0.027840126920140866,
+      "approximate_95_upper": 0.1481316273850558,
+      "datasets": 5,
+      "mean": 0.060145750232457475,
+      "se": 0.03169011949412559
+    },
+    "case": "background",
+    "family": "gmm",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.03250051786172642,
+      "approximate_95_upper": 0.8314994821382737,
+      "datasets": 5,
+      "mean": 0.43200000000000005,
+      "se": 0.1438888459888396
+    },
+    "n": 64,
+    "noise_frequency": {
+      "approximate_95_lower": 0.0,
+      "approximate_95_upper": 0.0,
+      "datasets": 5,
+      "mean": 0.0,
+      "se": 0.0
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.7015206700005988,
+      "approximate_95_upper": 0.9711315080927351,
+      "datasets": 5,
+      "mean": 0.8363260890466669,
+      "se": 0.0485532448647006
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": 0.0012654227296320947,
+      "approximate_95_upper": 0.002272257540552668,
+      "datasets": 5,
+      "mean": 0.0017688401350923813,
+      "se": 0.00018131725511800543
+    },
+    "case": "background",
+    "family": "hdbscan",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "n": 256,
+    "noise_frequency": {
+      "approximate_95_lower": 0.059601470728041415,
+      "approximate_95_upper": 0.0888199437419401,
+      "datasets": 5,
+      "mean": 0.07421070723499076,
+      "se": 0.005261849578657007
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.9853954093806244,
+      "approximate_95_upper": 0.99763335997456,
+      "datasets": 5,
+      "mean": 0.9915143846775922,
+      "se": 0.0022038884491223784
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": 0.012073913921431506,
+      "approximate_95_upper": 0.10301797041056796,
+      "datasets": 5,
+      "mean": 0.05754594216599973,
+      "se": 0.016377787610293387
+    },
+    "case": "background",
+    "family": "gmm",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.7496589923605188,
+      "approximate_95_upper": 0.978341007639481,
+      "datasets": 5,
+      "mean": 0.8639999999999999,
+      "se": 0.04118252056394799
+    },
+    "n": 256,
+    "noise_frequency": {
+      "approximate_95_lower": 0.0,
+      "approximate_95_upper": 0.0,
+      "datasets": 5,
+      "mean": 0.0,
+      "se": 0.0
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.5561459654325518,
+      "approximate_95_upper": 1.001529546976711,
+      "datasets": 5,
+      "mean": 0.7788377562046314,
+      "se": 0.08020752521098906
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": null,
+      "approximate_95_upper": null,
+      "datasets": 0,
+      "mean": null,
+      "se": null
+    },
+    "case": "cline",
+    "family": "hdbscan",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.8897608773531932,
+      "approximate_95_upper": 1.0302391226468066,
+      "datasets": 5,
+      "mean": 0.96,
+      "se": 0.025298221281347028
+    },
+    "n": 64,
+    "noise_frequency": {
+      "approximate_95_lower": 0.03708263663280099,
+      "approximate_95_upper": 0.1240026224678055,
+      "datasets": 5,
+      "mean": 0.08054262955030324,
+      "se": 0.015653107218342097
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.8918841944741784,
+      "approximate_95_upper": 0.9671972499978037,
+      "datasets": 5,
+      "mean": 0.929540722235991,
+      "se": 0.013562856939370297
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": null,
+      "approximate_95_upper": null,
+      "datasets": 0,
+      "mean": null,
+      "se": null
+    },
+    "case": "cline",
+    "family": "gmm",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.7218083446029336,
+      "approximate_95_upper": 0.9901916553970666,
+      "datasets": 5,
+      "mean": 0.8560000000000001,
+      "se": 0.048332183894378274
+    },
+    "n": 64,
+    "noise_frequency": {
+      "approximate_95_lower": 0.0,
+      "approximate_95_upper": 0.0,
+      "datasets": 5,
+      "mean": 0.0,
+      "se": 0.0
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.8997232505431411,
+      "approximate_95_upper": 0.990408585216029,
+      "datasets": 5,
+      "mean": 0.945065917879585,
+      "se": 0.016331195330157148
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": null,
+      "approximate_95_upper": null,
+      "datasets": 0,
+      "mean": null,
+      "se": null
+    },
+    "case": "cline",
+    "family": "hdbscan",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "n": 256,
+    "noise_frequency": {
+      "approximate_95_lower": 0.15005179114539707,
+      "approximate_95_upper": 0.21703399050057726,
+      "datasets": 5,
+      "mean": 0.18354289082298716,
+      "se": 0.01206258305445737
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.8695233245926779,
+      "approximate_95_upper": 0.9253867243835641,
+      "datasets": 5,
+      "mean": 0.897455024488121,
+      "se": 0.01006023848379066
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": -0.0071826007260507585,
+      "approximate_95_upper": 0.529437225507364,
+      "datasets": 5,
+      "mean": 0.2611273123906567,
+      "se": 0.09663793194196525
+    },
+    "case": "cline",
+    "family": "gmm",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.4068295693234981,
+      "approximate_95_upper": 1.0011704306765017,
+      "datasets": 5,
+      "mean": 0.704,
+      "se": 0.10703270528207721
+    },
+    "n": 256,
+    "noise_frequency": {
+      "approximate_95_lower": 0.0,
+      "approximate_95_upper": 0.0,
+      "datasets": 5,
+      "mean": 0.0,
+      "se": 0.0
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.9045172404552844,
+      "approximate_95_upper": 0.9902549283253923,
+      "datasets": 5,
+      "mean": 0.9473860843903383,
+      "se": 0.015440191435731592
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": -0.17962801588293092,
+      "approximate_95_upper": 0.6053124727037891,
+      "datasets": 4,
+      "mean": 0.21284222841042905,
+      "se": 0.12332344575356588
+    },
+    "case": "four_spherical",
+    "family": "hdbscan",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.483987171723427,
+      "approximate_95_upper": 1.052012828276573,
+      "datasets": 5,
+      "mean": 0.768,
+      "se": 0.10229369482035536
+    },
+    "n": 64,
+    "noise_frequency": {
+      "approximate_95_lower": 0.0010295894413721307,
+      "approximate_95_upper": 0.02663518455452399,
+      "datasets": 5,
+      "mean": 0.01383238699794806,
+      "se": 0.004611219408807233
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.821318393679036,
+      "approximate_95_upper": 1.0628319803111639,
+      "datasets": 5,
+      "mean": 0.9420751869951,
+      "se": 0.04349331203775446
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": 0.017387085635544218,
+      "approximate_95_upper": 0.13837860190515905,
+      "datasets": 5,
+      "mean": 0.07788284377035164,
+      "se": 0.021788926430258954
+    },
+    "case": "four_spherical",
+    "family": "gmm",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.17962528074679163,
+      "approximate_95_upper": 0.8763747192532084,
+      "datasets": 5,
+      "mean": 0.528,
+      "se": 0.12547509713086497
+    },
+    "n": 64,
+    "noise_frequency": {
+      "approximate_95_lower": 0.0,
+      "approximate_95_upper": 0.0,
+      "datasets": 5,
+      "mean": 0.0,
+      "se": 0.0
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.9952586093412437,
+      "approximate_95_upper": 1.000012500203666,
+      "datasets": 5,
+      "mean": 0.9976355547724548,
+      "se": 0.0008561110849126069
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": -0.00025377959168966817,
+      "approximate_95_upper": 0.005466751717042124,
+      "datasets": 5,
+      "mean": 0.0026064860626762282,
+      "se": 0.0010301898816624095
+    },
+    "case": "four_spherical",
+    "family": "hdbscan",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.5108263414494599,
+      "approximate_95_upper": 1.2011736585505401,
+      "datasets": 5,
+      "mean": 0.8560000000000001,
+      "se": 0.12432216214336043
+    },
+    "n": 256,
+    "noise_frequency": {
+      "approximate_95_lower": 0.003225791125002174,
+      "approximate_95_upper": 0.05889805180927905,
+      "datasets": 5,
+      "mean": 0.031061921467140614,
+      "se": 0.010025816930443271
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.9491736396133835,
+      "approximate_95_upper": 0.9955559772918213,
+      "datasets": 5,
+      "mean": 0.9723648084526024,
+      "se": 0.008352828152734804
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": -0.0004526572899408031,
+      "approximate_95_upper": 0.0022407148317138024,
+      "datasets": 5,
+      "mean": 0.0008940287708864997,
+      "se": 0.0004850396855699268
+    },
+    "case": "four_spherical",
+    "family": "gmm",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "n": 256,
+    "noise_frequency": {
+      "approximate_95_lower": 0.0,
+      "approximate_95_upper": 0.0,
+      "datasets": 5,
+      "mean": 0.0,
+      "se": 0.0
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.9934367969346972,
+      "approximate_95_upper": 1.001357323346865,
+      "datasets": 5,
+      "mean": 0.997397060140781,
+      "se": 0.0014263790768525382
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": -0.0019079927251776391,
+      "approximate_95_upper": 0.004700651948338701,
+      "datasets": 5,
+      "mean": 0.001396329611580531,
+      "se": 0.0011901270191051606
+    },
+    "case": "four_unequal",
+    "family": "hdbscan",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.7443870842443836,
+      "approximate_95_upper": 0.9836129157556162,
+      "datasets": 5,
+      "mean": 0.8639999999999999,
+      "se": 0.04308131845707603
+    },
+    "n": 64,
+    "noise_frequency": {
+      "approximate_95_lower": -0.0010609552329373644,
+      "approximate_95_upper": 0.024930261144314465,
+      "datasets": 5,
+      "mean": 0.01193465295568855,
+      "se": 0.004680664553495677
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.9567896341876355,
+      "approximate_95_upper": 1.0029924109554416,
+      "datasets": 5,
+      "mean": 0.9798910225715385,
+      "se": 0.008320491675003682
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": 0.00023361337290668353,
+      "approximate_95_upper": 0.010128867673501754,
+      "datasets": 5,
+      "mean": 0.005181240523204219,
+      "se": 0.0017820007105615215
+    },
+    "case": "four_unequal",
+    "family": "gmm",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.8208919493053143,
+      "approximate_95_upper": 0.9871080506946855,
+      "datasets": 5,
+      "mean": 0.9039999999999999,
+      "se": 0.02993325909419154
+    },
+    "n": 64,
+    "noise_frequency": {
+      "approximate_95_lower": 0.0,
+      "approximate_95_upper": 0.0,
+      "datasets": 5,
+      "mean": 0.0,
+      "se": 0.0
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.9864355099479967,
+      "approximate_95_upper": 1.0063807552569002,
+      "datasets": 5,
+      "mean": 0.9964081326024484,
+      "se": 0.003591867397551618
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": -0.0003722673680868067,
+      "approximate_95_upper": 0.0018566370292862856,
+      "datasets": 5,
+      "mean": 0.0007421848305997394,
+      "se": 0.00040139536582235096
+    },
+    "case": "four_unequal",
+    "family": "hdbscan",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.9487965047736697,
+      "approximate_95_upper": 1.0032034952263302,
+      "datasets": 5,
+      "mean": 0.976,
+      "se": 0.00979795897113272
+    },
+    "n": 256,
+    "noise_frequency": {
+      "approximate_95_lower": -0.0011874440311170184,
+      "approximate_95_upper": 0.007919326889510532,
+      "datasets": 5,
+      "mean": 0.0033659414291967566,
+      "se": 0.0016400055782804263
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.9904628523473173,
+      "approximate_95_upper": 0.9993600848347326,
+      "datasets": 5,
+      "mean": 0.994911468591025,
+      "se": 0.0016022705564678198
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": 0.0,
+      "approximate_95_upper": 0.0,
+      "datasets": 5,
+      "mean": 0.0,
+      "se": 0.0
+    },
+    "case": "four_unequal",
+    "family": "gmm",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "n": 256,
+    "noise_frequency": {
+      "approximate_95_lower": 0.0,
+      "approximate_95_upper": 0.0,
+      "datasets": 5,
+      "mean": 0.0,
+      "se": 0.0
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": null,
+      "approximate_95_upper": null,
+      "datasets": 0,
+      "mean": null,
+      "se": null
+    },
+    "case": "gaussian",
+    "family": "hdbscan",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "n": 64,
+    "noise_frequency": {
+      "approximate_95_lower": 0.566455170412396,
+      "approximate_95_upper": 0.7945047573468466,
+      "datasets": 5,
+      "mean": 0.6804799638796213,
+      "se": 0.041068628820990834
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.5579037541109352,
+      "approximate_95_upper": 0.9033927940921914,
+      "datasets": 5,
+      "mean": 0.7306482741015633,
+      "se": 0.062217876977733906
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": null,
+      "approximate_95_upper": null,
+      "datasets": 0,
+      "mean": null,
+      "se": null
+    },
+    "case": "gaussian",
+    "family": "gmm",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.9315768783168352,
+      "approximate_95_upper": 1.0204231216831647,
+      "datasets": 5,
+      "mean": 0.976,
+      "se": 0.015999999999999993
+    },
+    "n": 64,
+    "noise_frequency": {
+      "approximate_95_lower": 0.0,
+      "approximate_95_upper": 0.0,
+      "datasets": 5,
+      "mean": 0.0,
+      "se": 0.0
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.9835634836015715,
+      "approximate_95_upper": 1.005378435825876,
+      "datasets": 5,
+      "mean": 0.9944709597137237,
+      "se": 0.003928576182447203
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": null,
+      "approximate_95_upper": null,
+      "datasets": 0,
+      "mean": null,
+      "se": null
+    },
+    "case": "gaussian",
+    "family": "hdbscan",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "n": 256,
+    "noise_frequency": {
+      "approximate_95_lower": 0.27415702572749967,
+      "approximate_95_upper": 0.34461050842510277,
+      "datasets": 5,
+      "mean": 0.3093837670763012,
+      "se": 0.012687713970232424
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.739578873180047,
+      "approximate_95_upper": 0.9282163418127805,
+      "datasets": 5,
+      "mean": 0.8338976074964137,
+      "se": 0.03397104237349845
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": null,
+      "approximate_95_upper": null,
+      "datasets": 0,
+      "mean": null,
+      "se": null
+    },
+    "case": "gaussian",
+    "family": "gmm",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "n": 256,
+    "noise_frequency": {
+      "approximate_95_lower": 0.0,
+      "approximate_95_upper": 0.0,
+      "datasets": 5,
+      "mean": 0.0,
+      "se": 0.0
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": null,
+      "approximate_95_upper": null,
+      "datasets": 1,
+      "mean": 0.7671519101187897,
+      "se": null
+    },
+    "case": "moons",
+    "family": "hdbscan",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.24184335650257716,
+      "approximate_95_upper": 1.342156643497423,
+      "datasets": 5,
+      "mean": 0.792,
+      "se": 0.19815145722401334
+    },
+    "n": 64,
+    "noise_frequency": {
+      "approximate_95_lower": 0.06693741548673597,
+      "approximate_95_upper": 0.1448918020347328,
+      "datasets": 5,
+      "mean": 0.10591460876073437,
+      "se": 0.014038524731149546
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.8375540179155805,
+      "approximate_95_upper": 0.9515259426778973,
+      "datasets": 5,
+      "mean": 0.8945399802967389,
+      "se": 0.020524793475827995
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": 0.0345438842803762,
+      "approximate_95_upper": 0.11181912985356002,
+      "datasets": 5,
+      "mean": 0.0731815070669681,
+      "se": 0.013916220678830709
+    },
+    "case": "moons",
+    "family": "gmm",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.4619244131355305,
+      "approximate_95_upper": 0.9940755868644695,
+      "datasets": 5,
+      "mean": 0.728,
+      "se": 0.0958331884056875
+    },
+    "n": 64,
+    "noise_frequency": {
+      "approximate_95_lower": 0.0,
+      "approximate_95_upper": 0.0,
+      "datasets": 5,
+      "mean": 0.0,
+      "se": 0.0
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.7543347088027699,
+      "approximate_95_upper": 0.9195619017119112,
+      "datasets": 5,
+      "mean": 0.8369483052573405,
+      "se": 0.02975517012740836
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": -0.2576368430905914,
+      "approximate_95_upper": 1.2592271059316538,
+      "datasets": 2,
+      "mean": 0.5007951314205312,
+      "se": 0.05968989090318172
+    },
+    "case": "moons",
+    "family": "hdbscan",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.1623233883405633,
+      "approximate_95_upper": 1.1496766116594366,
+      "datasets": 5,
+      "mean": 0.6559999999999999,
+      "se": 0.17780888616714294
+    },
+    "n": 256,
+    "noise_frequency": {
+      "approximate_95_lower": -0.0073984019084472035,
+      "approximate_95_upper": 0.03053611147531951,
+      "datasets": 5,
+      "mean": 0.011568854783436154,
+      "se": 0.00683148989921488
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.791372858593216,
+      "approximate_95_upper": 1.0472326482046677,
+      "datasets": 5,
+      "mean": 0.9193027533989419,
+      "se": 0.04607686806637292
+    }
+  },
+  {
+    "between": {
+      "approximate_95_lower": 0.02964030804624681,
+      "approximate_95_upper": 0.12288113971296133,
+      "datasets": 5,
+      "mean": 0.07626072387960407,
+      "se": 0.01679140558049533
+    },
+    "case": "moons",
+    "family": "gmm",
+    "independent_datasets": 5,
+    "k_match": {
+      "approximate_95_lower": 0.9103334400718494,
+      "approximate_95_upper": 1.0096665599281507,
+      "datasets": 5,
+      "mean": 0.96,
+      "se": 0.01788854381999831
+    },
+    "n": 256,
+    "noise_frequency": {
+      "approximate_95_lower": 0.0,
+      "approximate_95_upper": 0.0,
+      "datasets": 5,
+      "mean": 0.0,
+      "se": 0.0
+    },
+    "pair_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "unit_coverage": {
+      "approximate_95_lower": 1.0,
+      "approximate_95_upper": 1.0,
+      "datasets": 5,
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "within": {
+      "approximate_95_lower": 0.6911915465060416,
+      "approximate_95_upper": 0.9289415532056016,
+      "datasets": 5,
+      "mean": 0.8100665498558216,
+      "se": 0.04281554248172722
+    }
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "descriptive-metrics.json": "27c58391f1533e09d17da2e1858a516cf249c4fc06cc1869f3df1a00afd64327",
+  "metric-uncertainty.json": "0dc93b2c2f66ad761966587fb7c70b2bb0fdd7860ed7a27348520d2ef6e7bd1e",
+  "paired-differences.json": "6328bc80ec3107ea28d41489b09d9693fd3c9c38bd339782d3f3aa1b46ed8be0",
+  "primary-rates.csv": "8397cf14c5e680c745ea1935b0d62bcff23a5f5486aa4502885d929cd7256b92",
+  "primary-rates.json": "6c088ba200824728d8732ed8ea13e19d2044152768b49275cee175fc01f18ca1",
+  "stability.json": "d0965b85a4953d44499c05e357b20ba2300ad7e9b8b9ab5162b444fc84d91b1d",
+  "summary.json": "7516955285a72aa69cf30473330685fa229e97bd3e6afd570b2ecfcfba825ce8"
+}

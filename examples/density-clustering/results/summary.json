@@ -1,0 +1,40 @@
+{
+  "independent_numerical_audit": {
+    "numerically_audited_fits": 3600,
+    "status": "passed"
+  },
+  "limitations": [
+    "Fixed two-dimensional synthetic laws and frozen settings",
+    "No empirical fitting, author contact, species-significance or new p-values",
+    "Noise/unassigned coverage must accompany group counts and label agreement",
+    "Underlying HDBSCAN algorithm not independently reimplemented"
+  ],
+  "main": {
+    "attempted": 3600,
+    "failed": 0,
+    "observations": 300,
+    "phase": "main",
+    "planned_pipelines": 3600,
+    "status": "complete",
+    "successful": 3600,
+    "unattempted": 0
+  },
+  "preflight": {
+    "attempted": 624,
+    "failed": 0,
+    "observations": 12,
+    "phase": "preflight",
+    "planned_pipelines": 624,
+    "status": "complete",
+    "successful": 624,
+    "unattempted": 0
+  },
+  "schema_version": 1,
+  "simultaneous_primary_rates": 20,
+  "storage": {
+    "cap_bytes": 1073741824,
+    "projected_bytes_with_allowance": 110306971
+  },
+  "uncertainty": "Primary rates: simultaneous exact 95%; secondary means and paired differences: descriptive, approximate t intervals over independent datasets, unadjusted. Five stability datasets/cell, not 125 independent draws.",
+  "version": "0.48.0.dev0"
+}

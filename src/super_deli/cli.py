@@ -47,6 +47,9 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.benchmarking.empirical_cli import register as register_empirical
 
     empirical_commands = register_empirical(commands)
+    from super_deli.benchmarking.density_cli import register as register_density
+
+    density_commands = register_density(commands)
     validate = commands.add_parser("validate", help="Check declarations and local file references")
     validate.add_argument("config", type=Path, help="Versioned dataset JSON configuration")
     validate.add_argument("--report", type=Path, help="Also save JSON to a new file")
@@ -138,6 +141,11 @@ def main(argv: list[str] | None = None) -> int:
     tabular_cluster.add_argument("--model-config", type=Path, required=True)
     tabular_cluster.add_argument("--modality", help="Select exactly one morphology/ecology table")
     tabular_cluster.add_argument("--output-dir", type=Path, required=True)
+    density = commands.add_parser("cluster-tabular-density", help="PCA/HDBSCAN with explicit noise")
+    density.add_argument("config", type=Path)
+    density.add_argument("--model-config", type=Path, required=True)
+    density.add_argument("--modality")
+    density.add_argument("--output-dir", type=Path, required=True)
     integrate = commands.add_parser(
         "cluster-integrative", help="Integrate linked modality PC profiles"
     )
@@ -450,6 +458,12 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command in density_commands:
+            from super_deli.benchmarking.density_cli import dispatch
+
+            summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command in scaled_fold_commands:
             from super_deli.benchmarking.scaled_fold_cli import dispatch
 
@@ -955,6 +969,19 @@ def main(argv: list[str] | None = None) -> int:
                 )
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
             return 0
+        if args.command == "cluster-tabular-density":
+            from super_deli.models.hdbscan_config import HDBSCANConfig
+            from super_deli.workflows.tabular_hdbscan import run_tabular_hdbscan
+
+            summary = run_tabular_hdbscan(
+                config,
+                model_config=HDBSCANConfig.from_dict(read_json(args.model_config)),
+                base_dir=source.parent,
+                output_dir=args.output_dir,
+                modality_name=args.modality,
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0 if summary["stability"]["status"] in {"complete", "not_computed"} else 1
         if args.command == "cluster-tabular":
             from super_deli.models.tabular_cluster_config import TabularClusterConfig
             from super_deli.workflows.tabular_gmm import run_tabular_gmm

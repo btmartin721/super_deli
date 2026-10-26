@@ -112,6 +112,8 @@ def run_integrative_calibration(reference_dir, *, config, output_dir):
         )
     except (ImportError, OSError) as exc:
         raise RuntimeError("Install 'super-deli[clustering]' for score calibration") from exc
+    if read_json(source / "summary.json").get("model") == "tabular_pca_hdbscan":
+        raise ValueError("HDBSCAN significance calibration is not supported")
     files = ("summary.json", "mixture.npz", "fusion.npz", "scores.csv", "candidates.json")
     before = {name: fingerprint_file(source / name).sha256 for name in files}
     try:
