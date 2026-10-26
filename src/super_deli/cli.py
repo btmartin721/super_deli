@@ -50,6 +50,9 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.benchmarking.density_cli import register as register_density
 
     density_commands = register_density(commands)
+    from super_deli.benchmarking.moons_cli import register as register_moons
+
+    moons_commands = register_moons(commands)
     validate = commands.add_parser("validate", help="Check declarations and local file references")
     validate.add_argument("config", type=Path, help="Versioned dataset JSON configuration")
     validate.add_argument("--report", type=Path, help="Also save JSON to a new file")
@@ -458,6 +461,12 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         source = args.config.absolute()
+        if args.command in moons_commands:
+            from super_deli.benchmarking.moons_cli import dispatch
+
+            summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command in density_commands:
             from super_deli.benchmarking.density_cli import dispatch
 

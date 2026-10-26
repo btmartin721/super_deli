@@ -4,7 +4,17 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: opt-in continuous tabular PCA + HDBSCAN.**
+**Current checkpoint: noisy-moons density-recovery diagnosis.**
+The frozen diagnostic separates density connectivity, branch pruning and cluster
+selection while preserving production code, defaults and historical p-values.
+PCA retained both input dimensions. Original-noise small samples usually merged;
+low-noise larger samples often fragmented despite retaining perfect generating
+branches. Parameter changes traded one failure mode for another. See the
+[protocol and CLI](docs/noisy-moons-diagnostics.md) and
+[completed findings](docs/noisy-moons-results.md). Detailed evidence remains local;
+no new default, significance test or empirical species claim is introduced.
+
+**Preceding checkpoint: opt-in continuous tabular PCA + HDBSCAN.**
 A second clustering family supports complete continuous morphology/ecology,
 explicit unassigned/noise observations and whole-unit subsampling stability.
 Existing PCA/GMM defaults and p-values remain unchanged. See the

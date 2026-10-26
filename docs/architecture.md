@@ -256,10 +256,11 @@ reference labels need independent evidence and documented uncertainty.
 29. **Audit completed:** Groundwater-amphipod continuous traits, source-bound workbook/COI/locality ledgers and typed ingestion; independent sampling and reference truth remain unestablished, with no empirical fitting or contact.
 30. **Assessment completed:** Source-bound amphipod sampling/reference review, three additional documentary voucher/COI corroborations and explicit conflicting/unresolved evidence; independent-unit fitting and species-boundary validation remain blocked.
 31. **Completed:** Separate opt-in continuous tabular PCA/HDBSCAN, noise-aware subsampling and paired simulation validation.
-32. **Pending:** Freeze a justified descriptive molecular-concordance design and trait/missingness policy; independence-dependent uses additionally require a justified sampling/dependence protocol.
-33. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
-34. Anatomical landmark learning, semilandmark sliding and further model families.
-35. Consolidated user guidance, end-to-end examples and a scoped research release.
+32. **Completed:** Frozen noisy-moons density diagnosis, hierarchy/connectivity audits and archived replay parity; no production/default change.
+33. **Pending:** Freeze a justified descriptive molecular-concordance design and trait/missingness policy; independence-dependent uses additionally require a justified sampling/dependence protocol.
+34. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
+35. Anatomical landmark learning, semilandmark sliding and further model families.
+36. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The later calibration and diagnostic workflows remain restricted to their declared
 assumptions and data types; completing their engineering does not establish species
@@ -387,3 +388,13 @@ coverage and failures; no absent-unit predictions or GMM significance evidence
 are synthesized. The frozen paired study and independent numerical/denominator
 auditor live in benchmarking modules, outside production inference. Existing
 models, defaults, empirical gates and p-values remain preserved.
+
+
+The [moons diagnostic](noisy-moons-diagnostics.md) lives entirely in benchmarking
+modules with separate versioned configuration, source-archive reconstruction,
+guarded hierarchy instrumentation, graph/branch diagnostics and read-only audits.
+It reuses existing ingestion/PCA and the library estimator while leaving all
+production fitting/sampling modules unchanged. Original-unit identities survive
+archived draw replays. Synthetic fixture construction supports installed tests
+without author contact or real empirical inputs. Frozen point arms and oracle
+post-fit explanations remain separate from user-facing model selection.

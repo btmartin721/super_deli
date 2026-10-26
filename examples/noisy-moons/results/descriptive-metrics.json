@@ -1,0 +1,1288 @@
+[
+  {
+    "K_counts": {
+      "1": 24,
+      "5": 1
+    },
+    "arm": "baseline",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.015493086890046645,
+    "mean_assigned_ari": 0.020241030105851623,
+    "mean_assigned_fraction": 0.944375,
+    "mean_merged_predicted_groups": 1.0,
+    "mean_split_generating_groups": 0.04,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "2": 4,
+      "3": 7,
+      "4": 5,
+      "5": 6,
+      "6": 3
+    },
+    "arm": "no_single",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.5202988921089226,
+    "mean_assigned_ari": 0.6570056045792835,
+    "mean_assigned_fraction": 0.881875,
+    "mean_merged_predicted_groups": 0.44,
+    "mean_split_generating_groups": 1.32,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "3": 1,
+      "4": 8,
+      "5": 7,
+      "6": 7,
+      "7": 2
+    },
+    "arm": "leaf",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.27065431426067255,
+    "mean_assigned_ari": 0.4494585574968775,
+    "mean_assigned_fraction": 0.759375,
+    "mean_merged_predicted_groups": 0.16,
+    "mean_split_generating_groups": 1.88,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 5,
+      "3": 3,
+      "5": 4,
+      "6": 3,
+      "7": 5,
+      "8": 5
+    },
+    "arm": "samples_2",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.2996368082716656,
+    "mean_assigned_ari": 0.34612609241140424,
+    "mean_assigned_fraction": 0.94625,
+    "mean_merged_predicted_groups": 0.24,
+    "mean_split_generating_groups": 1.4,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 25
+    },
+    "arm": "samples_10",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": -0.00011283576010529629,
+    "mean_assigned_ari": 0.0,
+    "mean_assigned_fraction": 0.704375,
+    "mean_merged_predicted_groups": 1.0,
+    "mean_split_generating_groups": 0.0,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 22,
+      "5": 3
+    },
+    "arm": "cluster_3",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.035070739289245735,
+    "mean_assigned_ari": 0.053274262188440474,
+    "mean_assigned_fraction": 0.931875,
+    "mean_merged_predicted_groups": 0.96,
+    "mean_split_generating_groups": 0.2,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 23,
+      "2": 2
+    },
+    "arm": "cluster_10",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.0684481513328379,
+    "mean_assigned_ari": 0.06984367261508187,
+    "mean_assigned_fraction": 0.898125,
+    "mean_merged_predicted_groups": 1.0,
+    "mean_split_generating_groups": 0.08,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 23,
+      "5": 1,
+      "6": 1
+    },
+    "arm": "center_only",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.029077348834984175,
+    "mean_assigned_ari": 0.0319066599498137,
+    "mean_assigned_fraction": 0.945,
+    "mean_merged_predicted_groups": 0.96,
+    "mean_split_generating_groups": 0.16,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 13,
+      "10": 2,
+      "2": 6,
+      "3": 1,
+      "7": 3
+    },
+    "arm": "baseline",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.3736662021313647,
+    "mean_assigned_ari": 0.39195512402966337,
+    "mean_assigned_fraction": 0.979375,
+    "mean_merged_predicted_groups": 0.56,
+    "mean_split_generating_groups": 0.32,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "10": 3,
+      "13": 1,
+      "2": 8,
+      "3": 1,
+      "5": 1,
+      "6": 2,
+      "7": 6,
+      "8": 1,
+      "9": 2
+    },
+    "arm": "no_single",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.6618738612936172,
+    "mean_assigned_ari": 0.7279972999015232,
+    "mean_assigned_fraction": 0.93078125,
+    "mean_merged_predicted_groups": 0.08,
+    "mean_split_generating_groups": 0.96,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "12": 2,
+      "13": 1,
+      "14": 4,
+      "15": 4,
+      "16": 4,
+      "17": 8,
+      "18": 1,
+      "20": 1
+    },
+    "arm": "leaf",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.07060182552744129,
+    "mean_assigned_ari": 0.14836128747650457,
+    "mean_assigned_fraction": 0.68046875,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 2.0,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "12": 2,
+      "15": 1,
+      "16": 3,
+      "18": 2,
+      "19": 4,
+      "20": 2,
+      "21": 2,
+      "22": 3,
+      "23": 2,
+      "24": 1,
+      "25": 1,
+      "26": 1,
+      "9": 1
+    },
+    "arm": "samples_2",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.1589919076591285,
+    "mean_assigned_ari": 0.18704329566227865,
+    "mean_assigned_fraction": 0.90453125,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 1.88,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 24,
+      "4": 1
+    },
+    "arm": "samples_10",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.02926187529012619,
+    "mean_assigned_ari": 0.03129722405954558,
+    "mean_assigned_fraction": 0.98546875,
+    "mean_merged_predicted_groups": 0.96,
+    "mean_split_generating_groups": 0.04,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 11,
+      "10": 2,
+      "11": 2,
+      "15": 1,
+      "2": 6,
+      "3": 1,
+      "8": 2
+    },
+    "arm": "cluster_3",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.38357373434494507,
+    "mean_assigned_ari": 0.40973165149608803,
+    "mean_assigned_fraction": 0.9634375,
+    "mean_merged_predicted_groups": 0.48,
+    "mean_split_generating_groups": 0.48,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 14,
+      "2": 8,
+      "4": 1,
+      "6": 1,
+      "8": 1
+    },
+    "arm": "cluster_10",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.36806196124528,
+    "mean_assigned_ari": 0.37432444615548377,
+    "mean_assigned_fraction": 0.98890625,
+    "mean_merged_predicted_groups": 0.6,
+    "mean_split_generating_groups": 0.24,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 16,
+      "11": 2,
+      "2": 2,
+      "3": 1,
+      "7": 2,
+      "8": 2
+    },
+    "arm": "center_only",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.2239667626106269,
+    "mean_assigned_ari": 0.24247679138323242,
+    "mean_assigned_fraction": 0.976875,
+    "mean_merged_predicted_groups": 0.64,
+    "mean_split_generating_groups": 0.36,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 2,
+      "2": 6,
+      "3": 2,
+      "4": 7,
+      "5": 6,
+      "6": 1,
+      "7": 1
+    },
+    "arm": "baseline",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.5176403793309178,
+    "mean_assigned_ari": 0.6053539726420694,
+    "mean_assigned_fraction": 0.90375,
+    "mean_merged_predicted_groups": 0.24,
+    "mean_split_generating_groups": 1.24,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "2": 6,
+      "3": 2,
+      "4": 8,
+      "5": 6,
+      "6": 2,
+      "7": 1
+    },
+    "arm": "no_single",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.5524657420693468,
+    "mean_assigned_ari": 0.6504811272184514,
+    "mean_assigned_fraction": 0.895,
+    "mean_merged_predicted_groups": 0.16,
+    "mean_split_generating_groups": 1.36,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "4": 6,
+      "5": 12,
+      "6": 5,
+      "7": 2
+    },
+    "arm": "leaf",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.2737771244043666,
+    "mean_assigned_ari": 0.435298063231817,
+    "mean_assigned_fraction": 0.76875,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 1.92,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "3": 2,
+      "4": 1,
+      "5": 8,
+      "6": 6,
+      "7": 6,
+      "8": 1,
+      "9": 1
+    },
+    "arm": "samples_2",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.38204061054871746,
+    "mean_assigned_ari": 0.4305056702662664,
+    "mean_assigned_fraction": 0.928125,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 1.76,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 25
+    },
+    "arm": "samples_10",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.0006189144427677126,
+    "mean_assigned_ari": 0.0,
+    "mean_assigned_fraction": 0.7925,
+    "mean_merged_predicted_groups": 1.0,
+    "mean_split_generating_groups": 0.0,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "2": 5,
+      "3": 1,
+      "4": 6,
+      "5": 8,
+      "6": 2,
+      "7": 3
+    },
+    "arm": "cluster_3",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.49013828566880085,
+    "mean_assigned_ari": 0.6026509763430677,
+    "mean_assigned_fraction": 0.8725,
+    "mean_merged_predicted_groups": 0.12,
+    "mean_split_generating_groups": 1.44,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 4,
+      "2": 16,
+      "3": 5
+    },
+    "arm": "cluster_10",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.7214388738051766,
+    "mean_assigned_ari": 0.7640317254219763,
+    "mean_assigned_fraction": 0.97125,
+    "mean_merged_predicted_groups": 0.44,
+    "mean_split_generating_groups": 0.48,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 5,
+      "2": 2,
+      "3": 2,
+      "4": 4,
+      "5": 9,
+      "6": 2,
+      "7": 1
+    },
+    "arm": "center_only",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.3559378167554316,
+    "mean_assigned_ari": 0.4397219413930245,
+    "mean_assigned_fraction": 0.901875,
+    "mean_merged_predicted_groups": 0.24,
+    "mean_split_generating_groups": 1.32,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "10": 3,
+      "11": 2,
+      "12": 2,
+      "14": 2,
+      "16": 1,
+      "17": 2,
+      "18": 1,
+      "19": 1,
+      "2": 4,
+      "20": 1,
+      "22": 1,
+      "3": 1,
+      "4": 1,
+      "7": 1,
+      "9": 2
+    },
+    "arm": "baseline",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.5109046367467444,
+    "mean_assigned_ari": 0.5453788201426742,
+    "mean_assigned_fraction": 0.94125,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 1.16,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "10": 3,
+      "11": 2,
+      "12": 2,
+      "14": 2,
+      "16": 1,
+      "17": 2,
+      "18": 1,
+      "19": 1,
+      "2": 4,
+      "20": 1,
+      "22": 1,
+      "3": 1,
+      "4": 1,
+      "7": 1,
+      "9": 2
+    },
+    "arm": "no_single",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.5109046367467444,
+    "mean_assigned_ari": 0.5453788201426742,
+    "mean_assigned_fraction": 0.94125,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 1.16,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "18": 1,
+      "19": 4,
+      "20": 2,
+      "21": 5,
+      "22": 9,
+      "23": 1,
+      "24": 3
+    },
+    "arm": "leaf",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.0676721833848019,
+    "mean_assigned_ari": 0.10253371295392244,
+    "mean_assigned_fraction": 0.809375,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 2.0,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "15": 1,
+      "19": 1,
+      "22": 1,
+      "23": 4,
+      "24": 2,
+      "25": 3,
+      "26": 4,
+      "27": 2,
+      "28": 7
+    },
+    "arm": "samples_2",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.09875488554309601,
+    "mean_assigned_ari": 0.10792233020949964,
+    "mean_assigned_fraction": 0.9465625,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 1.96,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "2": 19,
+      "3": 3,
+      "4": 2,
+      "5": 1
+    },
+    "arm": "samples_10",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.9421395434779964,
+    "mean_assigned_ari": 0.9575447323881776,
+    "mean_assigned_fraction": 0.98984375,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.24,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "10": 1,
+      "11": 4,
+      "12": 2,
+      "13": 3,
+      "14": 1,
+      "17": 1,
+      "18": 2,
+      "2": 2,
+      "20": 3,
+      "21": 1,
+      "22": 1,
+      "23": 1,
+      "4": 1,
+      "6": 1,
+      "9": 1
+    },
+    "arm": "cluster_3",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.4371792849606737,
+    "mean_assigned_ari": 0.48215014310206145,
+    "mean_assigned_fraction": 0.9246875,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 1.28,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "2": 14,
+      "3": 3,
+      "4": 2,
+      "5": 1,
+      "6": 3,
+      "7": 1,
+      "9": 1
+    },
+    "arm": "cluster_10",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.8627074032321436,
+    "mean_assigned_ari": 0.8723724655059024,
+    "mean_assigned_fraction": 0.99140625,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.48,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "10": 3,
+      "11": 2,
+      "12": 3,
+      "13": 1,
+      "14": 1,
+      "15": 2,
+      "16": 2,
+      "19": 3,
+      "2": 2,
+      "7": 2,
+      "8": 1,
+      "9": 3
+    },
+    "arm": "center_only",
+    "case": "moons_002",
+    "datasets": 25,
+    "mean_ari": 0.45400913535603626,
+    "mean_assigned_ari": 0.49360656990501306,
+    "mean_assigned_fraction": 0.944375,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 1.28,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 25
+    },
+    "arm": "baseline",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 1.0,
+    "mean_assigned_fraction": 0.398125,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.0,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "0": 3,
+      "2": 17,
+      "3": 4,
+      "4": 1
+    },
+    "arm": "no_single",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 0.0,
+    "mean_assigned_fraction": 0.373125,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.88,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "0": 3,
+      "2": 13,
+      "3": 8,
+      "4": 1
+    },
+    "arm": "leaf",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 0.0,
+    "mean_assigned_fraction": 0.34375,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.88,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 25
+    },
+    "arm": "samples_2",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 1.0,
+    "mean_assigned_fraction": 0.756875,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.0,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 25
+    },
+    "arm": "samples_10",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 1.0,
+    "mean_assigned_fraction": 0.109375,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.0,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 25
+    },
+    "arm": "cluster_3",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 1.0,
+    "mean_assigned_fraction": 0.5075,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.0,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 25
+    },
+    "arm": "cluster_10",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 1.0,
+    "mean_assigned_fraction": 0.221875,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.0,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 25
+    },
+    "arm": "center_only",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 1.0,
+    "mean_assigned_fraction": 0.416875,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.0,
+    "n": 64,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 25
+    },
+    "arm": "baseline",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 1.0,
+    "mean_assigned_fraction": 0.723125,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.0,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "10": 3,
+      "11": 1,
+      "12": 2,
+      "2": 9,
+      "3": 2,
+      "4": 2,
+      "5": 1,
+      "6": 2,
+      "8": 1,
+      "9": 2
+    },
+    "arm": "no_single",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 0.0,
+    "mean_assigned_fraction": 0.613125,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 1.0,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "10": 7,
+      "11": 6,
+      "12": 5,
+      "13": 2,
+      "8": 3,
+      "9": 2
+    },
+    "arm": "leaf",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 0.0,
+    "mean_assigned_fraction": 0.40046875,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 1.0,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 25
+    },
+    "arm": "samples_2",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 1.0,
+    "mean_assigned_fraction": 0.90640625,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.0,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 25
+    },
+    "arm": "samples_10",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 1.0,
+    "mean_assigned_fraction": 0.32375,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.0,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 25
+    },
+    "arm": "cluster_3",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 1.0,
+    "mean_assigned_fraction": 0.7934375,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.0,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 25
+    },
+    "arm": "cluster_10",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 1.0,
+    "mean_assigned_fraction": 0.56796875,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.0,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 25
+    },
+    "arm": "center_only",
+    "case": "gaussian",
+    "datasets": 25,
+    "mean_ari": 0.0,
+    "mean_assigned_ari": 1.0,
+    "mean_assigned_fraction": 0.7278125,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 0.0,
+    "n": 256,
+    "origin": "fresh",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 22,
+      "3": 1,
+      "5": 2
+    },
+    "arm": "baseline",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.07246259363216698,
+    "mean_assigned_ari": 0.07828388026783188,
+    "mean_assigned_fraction": 0.941875,
+    "mean_merged_predicted_groups": 0.92,
+    "mean_split_generating_groups": 0.16,
+    "n": 64,
+    "origin": "archived",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "2": 2,
+      "3": 7,
+      "4": 9,
+      "5": 6,
+      "6": 1
+    },
+    "arm": "no_single",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.510873903476056,
+    "mean_assigned_ari": 0.6425570508066016,
+    "mean_assigned_fraction": 0.87875,
+    "mean_merged_predicted_groups": 0.2,
+    "mean_split_generating_groups": 1.32,
+    "n": 64,
+    "origin": "archived",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "3": 1,
+      "4": 9,
+      "5": 10,
+      "6": 4,
+      "7": 1
+    },
+    "arm": "leaf",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.3034756065752505,
+    "mean_assigned_ari": 0.46749135439836875,
+    "mean_assigned_fraction": 0.78375,
+    "mean_merged_predicted_groups": 0.12,
+    "mean_split_generating_groups": 1.88,
+    "n": 64,
+    "origin": "archived",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 2,
+      "3": 2,
+      "4": 3,
+      "5": 7,
+      "6": 9,
+      "7": 2
+    },
+    "arm": "samples_2",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.404071792154433,
+    "mean_assigned_ari": 0.4483589258038915,
+    "mean_assigned_fraction": 0.941875,
+    "mean_merged_predicted_groups": 0.16,
+    "mean_split_generating_groups": 1.6,
+    "n": 64,
+    "origin": "archived",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 25
+    },
+    "arm": "samples_10",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.003865238013400399,
+    "mean_assigned_ari": 0.0,
+    "mean_assigned_fraction": 0.704375,
+    "mean_merged_predicted_groups": 1.0,
+    "mean_split_generating_groups": 0.0,
+    "n": 64,
+    "origin": "archived",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 21,
+      "4": 1,
+      "5": 3
+    },
+    "arm": "cluster_3",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.07181207074378657,
+    "mean_assigned_ari": 0.08753823496123685,
+    "mean_assigned_fraction": 0.93,
+    "mean_merged_predicted_groups": 0.84,
+    "mean_split_generating_groups": 0.28,
+    "n": 64,
+    "origin": "archived",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 24,
+      "2": 1
+    },
+    "arm": "cluster_10",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.03822805398907933,
+    "mean_assigned_ari": 0.04,
+    "mean_assigned_fraction": 0.92375,
+    "mean_merged_predicted_groups": 0.96,
+    "mean_split_generating_groups": 0.0,
+    "n": 64,
+    "origin": "archived",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 22,
+      "3": 1,
+      "5": 2
+    },
+    "arm": "center_only",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.061533965683192055,
+    "mean_assigned_ari": 0.06940528045912196,
+    "mean_assigned_fraction": 0.94625,
+    "mean_merged_predicted_groups": 0.88,
+    "mean_split_generating_groups": 0.16,
+    "n": 64,
+    "origin": "archived",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 14,
+      "2": 4,
+      "3": 1,
+      "5": 1,
+      "6": 1,
+      "7": 2,
+      "8": 1,
+      "9": 1
+    },
+    "arm": "baseline",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.3333338479853362,
+    "mean_assigned_ari": 0.35967286139137833,
+    "mean_assigned_fraction": 0.97625,
+    "mean_merged_predicted_groups": 0.56,
+    "mean_split_generating_groups": 0.28,
+    "n": 256,
+    "origin": "archived",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "10": 1,
+      "11": 1,
+      "15": 1,
+      "2": 5,
+      "3": 2,
+      "4": 2,
+      "5": 1,
+      "6": 2,
+      "7": 3,
+      "8": 4,
+      "9": 3
+    },
+    "arm": "no_single",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.6410455173284343,
+    "mean_assigned_ari": 0.7073281102924355,
+    "mean_assigned_fraction": 0.9321875,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 1.04,
+    "n": 256,
+    "origin": "archived",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "14": 3,
+      "15": 3,
+      "16": 11,
+      "17": 4,
+      "18": 1,
+      "19": 3
+    },
+    "arm": "leaf",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.07182471457596387,
+    "mean_assigned_ari": 0.1461991209037954,
+    "mean_assigned_fraction": 0.69578125,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 2.0,
+    "n": 256,
+    "origin": "archived",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "10": 1,
+      "12": 1,
+      "14": 1,
+      "15": 1,
+      "18": 3,
+      "19": 3,
+      "20": 2,
+      "21": 4,
+      "22": 1,
+      "23": 2,
+      "24": 4,
+      "8": 1,
+      "9": 1
+    },
+    "arm": "samples_2",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.16674908800819072,
+    "mean_assigned_ari": 0.19146194681965864,
+    "mean_assigned_fraction": 0.9046875,
+    "mean_merged_predicted_groups": 0.0,
+    "mean_split_generating_groups": 1.88,
+    "n": 256,
+    "origin": "archived",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 24,
+      "2": 1
+    },
+    "arm": "samples_10",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.040086233778314814,
+    "mean_assigned_ari": 0.04,
+    "mean_assigned_fraction": 0.98265625,
+    "mean_merged_predicted_groups": 0.96,
+    "mean_split_generating_groups": 0.0,
+    "n": 256,
+    "origin": "archived",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 15,
+      "10": 1,
+      "2": 3,
+      "3": 1,
+      "5": 1,
+      "7": 1,
+      "8": 1,
+      "9": 2
+    },
+    "arm": "cluster_3",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.2805357511853122,
+    "mean_assigned_ari": 0.3049836165161723,
+    "mean_assigned_fraction": 0.97515625,
+    "mean_merged_predicted_groups": 0.6,
+    "mean_split_generating_groups": 0.32,
+    "n": 256,
+    "origin": "archived",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 15,
+      "2": 8,
+      "3": 1,
+      "4": 1
+    },
+    "arm": "cluster_10",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.3767658967015938,
+    "mean_assigned_ari": 0.3811332417603887,
+    "mean_assigned_fraction": 0.9946875,
+    "mean_merged_predicted_groups": 0.6,
+    "mean_split_generating_groups": 0.08,
+    "n": 256,
+    "origin": "archived",
+    "successful": 25
+  },
+  {
+    "K_counts": {
+      "1": 19,
+      "2": 2,
+      "3": 3,
+      "7": 1
+    },
+    "arm": "center_only",
+    "case": "moons_008",
+    "datasets": 25,
+    "mean_ari": 0.19404301197733126,
+    "mean_assigned_ari": 0.20011430905315095,
+    "mean_assigned_fraction": 0.9909375,
+    "mean_merged_predicted_groups": 0.76,
+    "mean_split_generating_groups": 0.16,
+    "n": 256,
+    "origin": "archived",
+    "successful": 25
+  }
+]

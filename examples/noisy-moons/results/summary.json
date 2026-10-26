@@ -1,0 +1,51 @@
+{
+  "archive_audit": {
+    "archived_hierarchy": "not retained; available only through explicit new fits",
+    "observations": 50,
+    "raw_features": 2,
+    "refits": 0,
+    "retained_draws": 250,
+    "retained_pcs": 2,
+    "source_commit": "85c5db3686d451673bb2a5a852ba86a6024e2e3d",
+    "status": "passed",
+    "verified_source_files": 3850
+  },
+  "fresh_independent_datasets": 150,
+  "independent_audit": {
+    "audited_successful_fits": 1610,
+    "status": "passed",
+    "unavailable_hierarchies": 0,
+    "verified_replays": 60
+  },
+  "limitations": [
+    "Synthetic fixed two-dimensional laws",
+    "Oracle branch/graph diagnostics use truth only after fitting",
+    "Archived comparisons are exploratory",
+    "No new calibration, resampling study or preferred default"
+  ],
+  "main": {
+    "attempted_fits": 1610,
+    "failed_fits": 0,
+    "observations": 210,
+    "phase": "main",
+    "status": "complete",
+    "successful_fits": 1610,
+    "unattempted_fits": 0,
+    "unavailable_hierarchies": 0
+  },
+  "preflight": {
+    "attempted_fits": 50,
+    "failed_fits": 0,
+    "observations": 8,
+    "phase": "preflight",
+    "status": "complete",
+    "successful_fits": 50,
+    "unattempted_fits": 0,
+    "unavailable_hierarchies": 0
+  },
+  "preservation": "Production models, defaults and historical p-values unchanged",
+  "primary_rates": 48,
+  "schema_version": 1,
+  "uncertainty": "Exact simultaneous primary intervals; secondary paired means/SEs are descriptive",
+  "version": "0.49.0.dev0"
+}

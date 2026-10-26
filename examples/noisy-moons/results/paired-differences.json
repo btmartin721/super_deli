@@ -1,0 +1,1262 @@
+[
+  {
+    "arm": "no_single",
+    "case": "moons_008",
+    "descriptive_se": 0.07483314773547882,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.16,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "no_single",
+    "case": "moons_008",
+    "descriptive_se": 0.043375715182663345,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.504805805218876,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "no_single",
+    "case": "moons_008",
+    "descriptive_se": 0.0147681738320394,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.0625,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "leaf",
+    "case": "moons_008",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "leaf",
+    "case": "moons_008",
+    "descriptive_se": 0.02444424365540845,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.2551612273706259,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "leaf",
+    "case": "moons_008",
+    "descriptive_se": 0.01977823008807074,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.185,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "samples_2",
+    "case": "moons_008",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "samples_2",
+    "case": "moons_008",
+    "descriptive_se": 0.04137189430906241,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.28414372138161903,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "samples_2",
+    "case": "moons_008",
+    "descriptive_se": 0.014527049123961824,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.001875,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "samples_10",
+    "case": "moons_008",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "samples_10",
+    "case": "moons_008",
+    "descriptive_se": 0.01575369796984774,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.01560592265015194,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "samples_10",
+    "case": "moons_008",
+    "descriptive_se": 0.03146902412161309,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.24,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "cluster_3",
+    "case": "moons_008",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "cluster_3",
+    "case": "moons_008",
+    "descriptive_se": 0.01501106512940049,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.019577652399199088,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "cluster_3",
+    "case": "moons_008",
+    "descriptive_se": 0.0140625,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.0125,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "cluster_10",
+    "case": "moons_008",
+    "descriptive_se": 0.05537749241945383,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.08,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "cluster_10",
+    "case": "moons_008",
+    "descriptive_se": 0.04711617439424069,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.05295506444279125,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "cluster_10",
+    "case": "moons_008",
+    "descriptive_se": 0.015637495003996006,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.04625,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "center_only",
+    "case": "moons_008",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "center_only",
+    "case": "moons_008",
+    "descriptive_se": 0.02560511709745834,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.01358426194493753,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "center_only",
+    "case": "moons_008",
+    "descriptive_se": 0.01042239425867844,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.000625,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "no_single",
+    "case": "moons_008",
+    "descriptive_se": 0.05537749241945383,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.08,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "no_single",
+    "case": "moons_008",
+    "descriptive_se": 0.06608607819727666,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.28820765916225255,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "no_single",
+    "case": "moons_008",
+    "descriptive_se": 0.01285324441248525,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.04859375,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "leaf",
+    "case": "moons_008",
+    "descriptive_se": 0.08717797887081348,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.24,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "leaf",
+    "case": "moons_008",
+    "descriptive_se": 0.08674521005481607,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.30306437660392344,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "leaf",
+    "case": "moons_008",
+    "descriptive_se": 0.015746790967725775,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.29890625,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "samples_2",
+    "case": "moons_008",
+    "descriptive_se": 0.08717797887081348,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.24,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "samples_2",
+    "case": "moons_008",
+    "descriptive_se": 0.09301487547368006,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.21467429447223627,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "samples_2",
+    "case": "moons_008",
+    "descriptive_se": 0.011782983681015744,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.07484375,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "samples_10",
+    "case": "moons_008",
+    "descriptive_se": 0.08717797887081348,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.24,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "samples_10",
+    "case": "moons_008",
+    "descriptive_se": 0.08965604405395197,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.3444043268412385,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "samples_10",
+    "case": "moons_008",
+    "descriptive_se": 0.007621626644511874,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.00609375,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "cluster_3",
+    "case": "moons_008",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "cluster_3",
+    "case": "moons_008",
+    "descriptive_se": 0.031427116751428605,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.009907532213580312,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "cluster_3",
+    "case": "moons_008",
+    "descriptive_se": 0.009003941555877996,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.0159375,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "cluster_10",
+    "case": "moons_008",
+    "descriptive_se": 0.05537749241945383,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.08,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "cluster_10",
+    "case": "moons_008",
+    "descriptive_se": 0.05271584319313544,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.005604240886084737,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "cluster_10",
+    "case": "moons_008",
+    "descriptive_se": 0.006739762442880189,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.00953125,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "center_only",
+    "case": "moons_008",
+    "descriptive_se": 0.09451631252505216,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.16,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "center_only",
+    "case": "moons_008",
+    "descriptive_se": 0.08617385366084626,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.1496994395207378,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "center_only",
+    "case": "moons_008",
+    "descriptive_se": 0.00895568335320743,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.0025,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "no_single",
+    "case": "moons_002",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "no_single",
+    "case": "moons_002",
+    "descriptive_se": 0.02630496177260752,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.03482536273842916,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "no_single",
+    "case": "moons_002",
+    "descriptive_se": 0.006634034720037774,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.00875,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "leaf",
+    "case": "moons_002",
+    "descriptive_se": 0.08717797887081347,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.24,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "leaf",
+    "case": "moons_002",
+    "descriptive_se": 0.06423571814740661,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.24386325492655112,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "leaf",
+    "case": "moons_002",
+    "descriptive_se": 0.027890807364016314,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.135,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "samples_2",
+    "case": "moons_002",
+    "descriptive_se": 0.08717797887081347,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.24,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "samples_2",
+    "case": "moons_002",
+    "descriptive_se": 0.06070891835005282,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.13559976878220026,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "samples_2",
+    "case": "moons_002",
+    "descriptive_se": 0.02364629221287487,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.024375,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "samples_10",
+    "case": "moons_002",
+    "descriptive_se": 0.08717797887081347,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.24,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "samples_10",
+    "case": "moons_002",
+    "descriptive_se": 0.058046154962234066,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.51702146488815,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "samples_10",
+    "case": "moons_002",
+    "descriptive_se": 0.015370849710843357,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.11125,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "cluster_3",
+    "case": "moons_002",
+    "descriptive_se": 0.04,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.04,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "cluster_3",
+    "case": "moons_002",
+    "descriptive_se": 0.02694191161331073,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.027502093662116863,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "cluster_3",
+    "case": "moons_002",
+    "descriptive_se": 0.01520262449929836,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.03125,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "cluster_10",
+    "case": "moons_002",
+    "descriptive_se": 0.1,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.4,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "cluster_10",
+    "case": "moons_002",
+    "descriptive_se": 0.06256575000430623,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.20379849447425888,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "cluster_10",
+    "case": "moons_002",
+    "descriptive_se": 0.016504418600281963,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0675,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "center_only",
+    "case": "moons_002",
+    "descriptive_se": 0.07483314773547882,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.16,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "center_only",
+    "case": "moons_002",
+    "descriptive_se": 0.06588942135119022,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.16170256257548615,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "center_only",
+    "case": "moons_002",
+    "descriptive_se": 0.016345871038277525,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.001875,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "no_single",
+    "case": "moons_002",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "no_single",
+    "case": "moons_002",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "no_single",
+    "case": "moons_002",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "leaf",
+    "case": "moons_002",
+    "descriptive_se": 0.07483314773547882,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.16,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "leaf",
+    "case": "moons_002",
+    "descriptive_se": 0.06506937255280434,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.4432324533619424,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "leaf",
+    "case": "moons_002",
+    "descriptive_se": 0.012361455524423153,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.131875,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "samples_2",
+    "case": "moons_002",
+    "descriptive_se": 0.07483314773547882,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.16,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "samples_2",
+    "case": "moons_002",
+    "descriptive_se": 0.06353994076913487,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.4121497512036483,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "samples_2",
+    "case": "moons_002",
+    "descriptive_se": 0.010613888184630237,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0053125,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "samples_10",
+    "case": "moons_002",
+    "descriptive_se": 0.11547005383792515,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.6,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "samples_10",
+    "case": "moons_002",
+    "descriptive_se": 0.06903143363509959,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.4312349067312522,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "samples_10",
+    "case": "moons_002",
+    "descriptive_se": 0.011455551272108937,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.04859375,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "cluster_3",
+    "case": "moons_002",
+    "descriptive_se": 0.08,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.08,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "cluster_3",
+    "case": "moons_002",
+    "descriptive_se": 0.0398325284853306,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.07372535178607055,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "cluster_3",
+    "case": "moons_002",
+    "descriptive_se": 0.006127875866090005,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.0165625,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "cluster_10",
+    "case": "moons_002",
+    "descriptive_se": 0.1,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.4,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "cluster_10",
+    "case": "moons_002",
+    "descriptive_se": 0.06475740353527358,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.3518027664853992,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "cluster_10",
+    "case": "moons_002",
+    "descriptive_se": 0.009958205303395955,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.05015625,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "center_only",
+    "case": "moons_002",
+    "descriptive_se": 0.08,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.08,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "center_only",
+    "case": "moons_002",
+    "descriptive_se": 0.05937995768157828,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.05689550139070796,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "center_only",
+    "case": "moons_002",
+    "descriptive_se": 0.011493052277399666,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.003125,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "no_single",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -1.0,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "no_single",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "no_single",
+    "case": "gaussian",
+    "descriptive_se": 0.007967217989988727,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.025,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "leaf",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -1.0,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "leaf",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "leaf",
+    "case": "gaussian",
+    "descriptive_se": 0.014881257437349393,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.054375,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "samples_2",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "samples_2",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "samples_2",
+    "case": "gaussian",
+    "descriptive_se": 0.04041894860396544,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.35875,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "samples_10",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "samples_10",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "samples_10",
+    "case": "gaussian",
+    "descriptive_se": 0.03700981710978858,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.28875,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "cluster_3",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "cluster_3",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "cluster_3",
+    "case": "gaussian",
+    "descriptive_se": 0.03708538149774562,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.109375,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "cluster_10",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "cluster_10",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "cluster_10",
+    "case": "gaussian",
+    "descriptive_se": 0.03502603198574835,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.17625,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "center_only",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 64
+  },
+  {
+    "arm": "center_only",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "ari",
+    "n": 64
+  },
+  {
+    "arm": "center_only",
+    "case": "gaussian",
+    "descriptive_se": 0.027406921076922646,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.01875,
+    "metric": "assigned_fraction",
+    "n": 64
+  },
+  {
+    "arm": "no_single",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -1.0,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "no_single",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "no_single",
+    "case": "gaussian",
+    "descriptive_se": 0.022913721993577527,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.11,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "leaf",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -1.0,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "leaf",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "leaf",
+    "case": "gaussian",
+    "descriptive_se": 0.021153945744775766,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.32265625,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "samples_2",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "samples_2",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "samples_2",
+    "case": "gaussian",
+    "descriptive_se": 0.018673781719242534,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.18328125,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "samples_10",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "samples_10",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "samples_10",
+    "case": "gaussian",
+    "descriptive_se": 0.028120731736308295,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.399375,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "cluster_3",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "cluster_3",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "cluster_3",
+    "case": "gaussian",
+    "descriptive_se": 0.019670079511654028,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0703125,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "cluster_10",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "cluster_10",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "cluster_10",
+    "case": "gaussian",
+    "descriptive_se": 0.029469560511565008,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": -0.15515625,
+    "metric": "assigned_fraction",
+    "n": 256
+  },
+  {
+    "arm": "center_only",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "correct_k",
+    "n": 256
+  },
+  {
+    "arm": "center_only",
+    "case": "gaussian",
+    "descriptive_se": 0.0,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0,
+    "metric": "ari",
+    "n": 256
+  },
+  {
+    "arm": "center_only",
+    "case": "gaussian",
+    "descriptive_se": 0.01701200652143705,
+    "direction": "arm minus baseline",
+    "independent_datasets": 25,
+    "mean_difference": 0.0046875,
+    "metric": "assigned_fraction",
+    "n": 256
+  }
+]

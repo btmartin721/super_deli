@@ -147,6 +147,12 @@ jobs:
           unset PYTHONPATH
           python "$GITHUB_WORKSPACE/examples/empirical-foundation/smoke.py" --output-dir "$RUNNER_TEMP/empirical-curation-smoke"
 
+      - name: Check noisy moons installed diagnostic
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/noisy-moons/smoke.py" --output-dir "$RUNNER_TEMP/noisy-moons-smoke"
+
       - name: Check density clustering installed workflow
         working-directory: ${{ runner.temp }}
         run: |

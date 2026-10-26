@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "datasets_per_cell": 25,
+  "sample_sizes": [
+    64,
+    256
+  ],
+  "main_seed": 129721,
+  "preflight_seed": 129737,
+  "data_seed": 129749,
+  "artifact_cap_bytes": 268435456,
+  "min_free_bytes": 8589934592
+}
