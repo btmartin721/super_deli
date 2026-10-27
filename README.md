@@ -4,7 +4,19 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: noisy-moons density-recovery diagnosis.**
+**Current checkpoint: observed-data GMM recovery and convergence diagnosis.**
+The [bounded diagnostic](docs/observed-recovery.md) separates BIC selection cost,
+convergence, initialization and measured-information limits using preserved
+archival evidence and 60 fresh datasets. Extended-budget and known-parameter
+fits remain separate from production results; defaults and p-values are unchanged.
+See the [audited findings](docs/observed-recovery-results.md).
+
+The opt-in [observed-coordinate GMM](docs/tabular-observed.md) fits incomplete
+continuous tables directly without PCA or completed-value substitution. It
+remains a point-only workflow; uncertainty, significance and empirical sampling
+gates are not resolved by this diagnostic.
+
+**Earlier checkpoint: noisy-moons density-recovery diagnosis.**
 The frozen diagnostic separates density connectivity, branch pruning and cluster
 selection while preserving production code, defaults and historical p-values.
 PCA retained both input dimensions. Original-noise small samples usually merged;
@@ -530,3 +542,9 @@ The opt-in [observed-data GMM](docs/tabular-observed.md) fits incomplete continu
 traits directly in raw feature space, retaining conditional-moment EM diagnostics.
 It provides point clusters and conditional memberships, without new p-values or
 a species-boundary guarantee; existing workflows and defaults are preserved.
+
+
+The [observed-data recovery diagnostic](docs/observed-recovery.md) separates
+small-sample component-selection cost from convergence and measured-information
+limits. It preserves original withheld searches and stores extended-budget and
+known-parameter diagnostic fits separately; it promotes no new model or default.

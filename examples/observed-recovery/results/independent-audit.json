@@ -1,0 +1,34 @@
+{
+  "archive-audit": {
+    "information_rejection_preserved": true,
+    "original_files_written": false,
+    "point_failures": 4,
+    "searches": 1224,
+    "starts": 47330,
+    "status": "passed"
+  },
+  "archive-preservation": {
+    "original_content_unchanged": true,
+    "original_files": 5618,
+    "status": "passed"
+  },
+  "main-audit": {
+    "continuations": 564,
+    "oracles": 160,
+    "phase": "main",
+    "production_EM_or_selection_called": false,
+    "searches": 252,
+    "starts": 10080,
+    "status": "passed",
+    "unplanned_continuations_excluded": 24
+  },
+  "preflight-audit": {
+    "continuations": 41,
+    "oracles": 8,
+    "phase": "preflight",
+    "production_EM_or_selection_called": false,
+    "searches": 30,
+    "starts": 1200,
+    "status": "passed"
+  }
+}

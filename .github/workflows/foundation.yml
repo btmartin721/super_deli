@@ -126,6 +126,11 @@ jobs:
         run: |
           unset PYTHONPATH
           python "$GITHUB_WORKSPACE/examples/tabular-observed/smoke.py" --output-dir "$RUNNER_TEMP/tabular-observed-smoke"
+      - name: Check observed-data diagnostic installed workflow
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/observed-recovery/smoke.py" --output-dir "$RUNNER_TEMP/observed-recovery-smoke"
       - name: Check opt-in missing tabular installed workflow
         working-directory: ${{ runner.temp }}
         run: |

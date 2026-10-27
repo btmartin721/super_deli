@@ -262,7 +262,8 @@ reference labels need independent evidence and documented uncertainty.
 35. **Completed:** Freeze the fit-free amphipod morphology pilot protocol and four trait/sex feasibility rosters. Independent raw-cell accounting verifies the sparse molecular overlap; executable fitting, resampling, significance and species validation remain blocked pending justified sampling/dependence and reference evidence.
 36. **Baseline completed:** Opt-in one-table complete-case/observed-mean policy comparison with refitted native stability, frozen simulation sensitivity and explicit retention/geometric-loss limits. Broader missing/unpaired/mixed-feature models and calibrated missing-value uncertainty remain pending.
 37. **Baseline completed:** Opt-in observed-coordinate GMM for incomplete continuous tables, with constrained conditional-moment EM, point-only BIC selection, retained failure evidence and raw-feature simulation comparisons. Resampling, significance calibration and grouped/integrative observed-data adapters remain pending.
-37. Anatomical landmark learning, semilandmark sliding and further model families.
+38. **Diagnostic completed:** Frozen observed-coordinate GMM recovery/convergence diagnosis with original evidence preservation, bounded saved-path continuations, independent fresh confirmation and isolated known-parameter starts. No new default, covariance family or uncertainty claim.
+39. Anatomical landmark learning, semilandmark sliding and further model families.
 38. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The later calibration and diagnostic workflows remain restricted to their declared
@@ -435,3 +436,13 @@ and existing eligibility accounting without routing through PCA.
 `benchmarking.observed_audit` reconstructs densities and updates independently
 of the fitting implementation. This opt-in workflow adds no significance test,
 resampling adapter or empirical readiness claim. See [the contract](tabular-observed.md).
+
+
+### Observed-coordinate recovery diagnostics
+
+The [recovery diagnostic](observed-recovery.md) lives entirely in benchmarking
+modules. Continuations call the unchanged EM, retain objective/trace anchors and
+reconstruct separate extended-budget candidates. Independent audits reuse the
+dense marginal/moment reference; known-generating-parameter starts remain
+isolated from unsupervised selection. No production configuration, default,
+old serialization, empirical gate or historical p-value is changed.

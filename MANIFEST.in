@@ -1264,3 +1264,20 @@ include src/super_deli/benchmarking/observed_study.py
 include src/super_deli/benchmarking/observed_audit.py
 include tests/test_foundation_observed_config.py
 include tests/test_tabular_observed.py
+
+include src/super_deli/benchmarking/observed_recovery.py
+include src/super_deli/benchmarking/observed_recovery_study.py
+include src/super_deli/benchmarking/observed_recovery_audit.py
+include src/super_deli/benchmarking/observed_recovery_report.py
+include examples/observed-recovery/run.py
+include examples/observed-recovery/smoke.py
+include docs/observed-recovery.md
+include docs/observed-recovery-results.md
+include examples/observed-recovery/results/summary.json
+include examples/observed-recovery/results/independent-audit.json
+include tests/test_tabular_observed_recovery.py
+include examples/observed-recovery/report.py
+include docs/figures/observed-recovery/recovery-selection.png
+include docs/figures/observed-recovery/recovery-selection.pdf
+include docs/figures/observed-recovery/recovery-selection.svg
+include docs/figures/observed-recovery/figure-data.json
