@@ -43,6 +43,21 @@ def register(commands):
     evidence.add_argument("config", type=Path)
     for flag in ("prior-plan", "source-dir", "prior-audit-dir", "evidence-dir", "output-dir"):
         evidence.add_argument("--" + flag, type=Path, required=True)
+    pilot = commands.add_parser(
+        "assess-trait-pilot",
+        help="Freeze raw morphology rosters and assess pilot feasibility without fitting",
+    )
+    pilot.add_argument("config", type=Path)
+    for flag in (
+        "prior-plan",
+        "evidence-plan",
+        "source-dir",
+        "prior-audit-dir",
+        "evidence-dir",
+        "prior-assessment-dir",
+        "output-dir",
+    ):
+        pilot.add_argument("--" + flag, type=Path, required=True)
     return frozenset(
         {
             "curate-empirical",
@@ -51,6 +66,7 @@ def register(commands):
             "assess-correspondence",
             "audit-trait-source",
             "assess-trait-evidence",
+            "assess-trait-pilot",
         }
     )
 
@@ -61,6 +77,22 @@ def dispatch(args):
     from super_deli.io.config import read_json
     from super_deli.workflows.empirical_curation import curate_empirical
 
+    if args.command == "assess-trait-pilot":
+        from super_deli.core.trait_audit import TraitAuditPlan
+        from super_deli.core.trait_evidence import TraitEvidencePlan
+        from super_deli.core.trait_pilot import TraitPilotProtocol
+        from super_deli.workflows.trait_pilot import assess_trait_pilot
+
+        return assess_trait_pilot(
+            TraitPilotProtocol.from_dict(read_json(args.config)),
+            prior_plan=TraitAuditPlan.from_dict(read_json(args.prior_plan)),
+            evidence_plan=TraitEvidencePlan.from_dict(read_json(args.evidence_plan)),
+            source_dir=args.source_dir,
+            prior_audit_dir=args.prior_audit_dir,
+            evidence_dir=args.evidence_dir,
+            prior_assessment_dir=args.prior_assessment_dir,
+            output_dir=args.output_dir,
+        )
     if args.command == "assess-trait-evidence":
         from super_deli.core.trait_audit import TraitAuditPlan
         from super_deli.core.trait_evidence import TraitEvidencePlan

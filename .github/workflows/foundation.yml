@@ -28,6 +28,11 @@ jobs:
         run: python -m pytest -q
       - name: Validate illustrative configuration
         run: super-deli validate examples/foundation/dataset.json --hash-inputs
+      - name: Check fit-free amphipod pilot feasibility
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/amphipod-pilot/smoke.py" --output-dir "$RUNNER_TEMP/amphipod-pilot-smoke"
       - name: Check fit-free trait sampling and reference evidence
         working-directory: ${{ runner.temp }}
         run: |
@@ -116,6 +121,11 @@ jobs:
                   print(f"--- {path.relative_to(root)} ---")
                   print(path.read_text(errors="replace")[-4000:])
           PYCODE
+      - name: Check fit-free amphipod pilot feasibility
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/amphipod-pilot/smoke.py" --output-dir "$RUNNER_TEMP/amphipod-pilot-smoke"
       - name: Check fit-free trait sampling and reference evidence
         working-directory: ${{ runner.temp }}
         run: |

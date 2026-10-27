@@ -1,0 +1,10 @@
+{
+  "all_roster_summary_fields_independently_recomputed": true,
+  "empirical_fits": 0,
+  "inferential_gates_closed": true,
+  "new_selection_or_workflow_imported": false,
+  "raw_cell_provenance_checked": true,
+  "roster_row_decisions": 4492,
+  "source_rows": 1123,
+  "status": "passed"
+}

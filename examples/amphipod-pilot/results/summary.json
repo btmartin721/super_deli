@@ -1,0 +1,134 @@
+{
+  "contact_performed": false,
+  "empirical_fits": 0,
+  "independent_units_confirmed": false,
+  "outcome": "descriptive_rosters_assessed_inferential_pilot_no_go",
+  "panels_overlap": true,
+  "phase": "trait_pilot_feasibility_only",
+  "pvalues_generated": 0,
+  "reference_species_truth_confirmed": false,
+  "rosters": {
+    "core19_female": {
+      "constant_traits": [],
+      "descriptive_concordance_feasibility": "documented_links_available_future_design_only",
+      "documentary_specimen_links": 7,
+      "duplicate_numeric_vector_groups": 1,
+      "duplicate_numeric_vector_rows": 2,
+      "excluded": 887,
+      "first_exclusion_counts": {
+        "ambiguous_identity": 86,
+        "missing_measurement": 77,
+        "nonpositive_measurement": 1,
+        "outside_family": 31,
+        "outside_sex_stage": 692
+      },
+      "included": 236,
+      "molecular_partition_links": 6,
+      "nominal_pca_rank_upper_bound": 19,
+      "overlapping_reason_counts": {
+        "ambiguous_identity": 86,
+        "formula_measurement": 1,
+        "missing_measurement": 317,
+        "nonpositive_measurement": 6,
+        "outside_family": 31,
+        "outside_sex_stage": 778,
+        "uncertain_measurement": 0
+      },
+      "size_five_group_count_upper_bound": 47,
+      "source_only_morphology_roster": "available",
+      "source_rows": 1123
+    },
+    "core19_male": {
+      "constant_traits": [],
+      "descriptive_concordance_feasibility": "documented_links_available_future_design_only",
+      "documentary_specimen_links": 5,
+      "duplicate_numeric_vector_groups": 0,
+      "duplicate_numeric_vector_rows": 0,
+      "excluded": 882,
+      "first_exclusion_counts": {
+        "ambiguous_identity": 86,
+        "missing_measurement": 85,
+        "outside_family": 31,
+        "outside_sex_stage": 680
+      },
+      "included": 241,
+      "molecular_partition_links": 4,
+      "nominal_pca_rank_upper_bound": 19,
+      "overlapping_reason_counts": {
+        "ambiguous_identity": 86,
+        "formula_measurement": 1,
+        "missing_measurement": 317,
+        "nonpositive_measurement": 6,
+        "outside_family": 31,
+        "outside_sex_stage": 774,
+        "uncertain_measurement": 0
+      },
+      "size_five_group_count_upper_bound": 48,
+      "source_only_morphology_roster": "available",
+      "source_rows": 1123
+    },
+    "somatic24_female": {
+      "constant_traits": [],
+      "descriptive_concordance_feasibility": "no_linked_partition_rows_under_fixed_policy",
+      "documentary_specimen_links": 0,
+      "duplicate_numeric_vector_groups": 1,
+      "duplicate_numeric_vector_rows": 2,
+      "excluded": 954,
+      "first_exclusion_counts": {
+        "ambiguous_identity": 86,
+        "missing_measurement": 140,
+        "nonpositive_measurement": 1,
+        "outside_family": 31,
+        "outside_sex_stage": 692,
+        "uncertain_measurement": 4
+      },
+      "included": 169,
+      "molecular_partition_links": 0,
+      "nominal_pca_rank_upper_bound": 24,
+      "overlapping_reason_counts": {
+        "ambiguous_identity": 86,
+        "formula_measurement": 1,
+        "missing_measurement": 720,
+        "nonpositive_measurement": 6,
+        "outside_family": 31,
+        "outside_sex_stage": 778,
+        "uncertain_measurement": 8
+      },
+      "size_five_group_count_upper_bound": 33,
+      "source_only_morphology_roster": "available",
+      "source_rows": 1123
+    },
+    "somatic24_male": {
+      "constant_traits": [],
+      "descriptive_concordance_feasibility": "no_linked_partition_rows_under_fixed_policy",
+      "documentary_specimen_links": 0,
+      "duplicate_numeric_vector_groups": 0,
+      "duplicate_numeric_vector_rows": 0,
+      "excluded": 964,
+      "first_exclusion_counts": {
+        "ambiguous_identity": 86,
+        "missing_measurement": 166,
+        "outside_family": 31,
+        "outside_sex_stage": 680,
+        "uncertain_measurement": 1
+      },
+      "included": 159,
+      "molecular_partition_links": 0,
+      "nominal_pca_rank_upper_bound": 24,
+      "overlapping_reason_counts": {
+        "ambiguous_identity": 86,
+        "formula_measurement": 1,
+        "missing_measurement": 720,
+        "nonpositive_measurement": 6,
+        "outside_family": 31,
+        "outside_sex_stage": 774,
+        "uncertain_measurement": 8
+      },
+      "size_five_group_count_upper_bound": 31,
+      "source_only_morphology_roster": "available",
+      "source_rows": 1123
+    }
+  },
+  "schema_version": 1,
+  "source_rows": 1123
+}

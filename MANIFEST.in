@@ -1206,3 +1206,14 @@ include src/super_deli/workflows/grouped_analysis.py
 include src/super_deli/workflows/grouped_analysis_adapters.py
 include tests/test_foundation_grouped_analysis.py
 include tests/test_tabular_grouped_analysis.py
+include src/super_deli/core/trait_pilot.py
+include src/super_deli/io/trait_pilot.py
+include src/super_deli/workflows/trait_pilot.py
+include tests/test_foundation_trait_pilot.py
+include examples/amphipod-pilot/smoke.py
+include examples/amphipod-pilot/plan.json
+include examples/amphipod-pilot/results/summary.json
+include examples/amphipod-pilot/results/independent-audit.json
+include docs/amphipod-pilot.md
+include docs/amphipod-pilot-results.md
+include src/super_deli/benchmarking/trait_pilot_audit.py

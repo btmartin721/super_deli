@@ -1,0 +1,13 @@
+{
+  "cohort_policy": "niphargidae_separate_male_female_core19_somatic24_raw_complete_positive",
+  "contact_policy": "no_contact",
+  "evidence_checksums_sha256": "d5f1c8ef6639d920d4a2015c0b9472d124e63646e4e247df45a196cc56945dfd",
+  "evidence_specification_sha256": "b5035007987a5e6d7f53ced5070286f98b1464b61ccfbb7d529072223c8779a1",
+  "fitting_authorized": false,
+  "independent_units_confirmed": false,
+  "phase": "trait_pilot_feasibility_only",
+  "protocol_id": "amphipod_pilot_v1",
+  "reference_policy": "attach_after_selection_separate_namespaces_no_species_truth",
+  "reference_species_truth_confirmed": false,
+  "schema_version": 1
+}

@@ -518,3 +518,6 @@ The [unified grouped interface](docs/grouped-analysis.md) compares existing
 full/shared BIC, AIC and predictive-screened AIC workflows for explicit
 morphology/ecology groups with unequal specimen counts. Native uncertainty
 contracts and existing defaults remain intact; it selects no winning species partition.
+
+The [fit-free amphipod pilot protocol](docs/amphipod-pilot.md) freezes raw morphology
+rosters and reports cohort feasibility while retaining unresolved inference gates.

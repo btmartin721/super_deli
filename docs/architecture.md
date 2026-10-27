@@ -259,7 +259,7 @@ reference labels need independent evidence and documented uncertainty.
 32. **Completed:** Frozen noisy-moons density diagnosis, hierarchy/connectivity audits and archived replay parity; no production/default change.
 33. **Completed:** Unified one-table PCA/GMM and PCA/HDBSCAN orchestration with coverage-explicit comparison and separate native stability.
 34. **Completed:** Unified grouped morphology/ecology comparisons with explicit counts, native selection/stability boundaries and standalone parity.
-35. **Pending:** Freeze a justified descriptive molecular-concordance design and trait/missingness policy; independence-dependent uses additionally require a justified sampling/dependence protocol.
+35. **Completed:** Freeze the fit-free amphipod morphology pilot protocol and four trait/sex feasibility rosters. Independent raw-cell accounting verifies the sparse molecular overlap; executable fitting, resampling, significance and species validation remain blocked pending justified sampling/dependence and reference evidence.
 36. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
 37. Anatomical landmark learning, semilandmark sliding and further model families.
 38. Consolidated user guidance, end-to-end examples and a scoped research release.
@@ -411,3 +411,10 @@ The [grouped analysis adapter](grouped-analysis.md) freezes both sources and the
 identity mapping, then invokes existing ordinary/predictive grouped engines.
 Its dependency-free configuration preserves native support boundaries; shared
 reporting and label-invariant comparison are reused from the tabular interface.
+
+The fit-free amphipod pilot protocol/cohort-feasibility checkpoint is complete: four
+frozen morphology rosters, independent raw-cell accounting and a non-executable
+comparison design. Sampling-dependent fitting, resampling, significance and species
+validation remain blocked; the next empirical analysis requires an explicit
+dependence interpretation and sufficient documented reference coverage. See
+[the findings](amphipod-pilot-results.md).
