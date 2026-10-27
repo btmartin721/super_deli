@@ -1,0 +1,420 @@
+{
+  "schema_version": 1,
+  "arms": [
+    {
+      "name": "full_bic",
+      "kind": "ordinary",
+      "model": {
+        "assume_independent_units": true,
+        "n_pcs": 4,
+        "max_k": 4,
+        "min_cluster_size": 5,
+        "n_bootstrap": 0,
+        "n_init": 10,
+        "max_iter": 500,
+        "tol": 0.001,
+        "reg_covar": 1e-06,
+        "assignment_threshold": 0.0,
+        "random_seed": 71323,
+        "n_threads": 1,
+        "max_pairwise_bytes": 268435456,
+        "views": [
+          {
+            "modality": "morphological",
+            "kind": "morphological",
+            "n_pcs": 2,
+            "weight": 1.0,
+            "aggregation": "mean",
+            "feature_names": [
+              "feature_0",
+              "feature_1",
+              "feature_2",
+              "feature_3"
+            ],
+            "missing_policy": "error",
+            "scaling": null,
+            "count_transform": "identity",
+            "ploidy": null,
+            "shape": null,
+            "pca_fit": "target_means"
+          },
+          {
+            "modality": "ecological",
+            "kind": "ecological",
+            "n_pcs": 2,
+            "weight": 1.0,
+            "aggregation": "none",
+            "feature_names": [
+              "feature_0",
+              "feature_1",
+              "feature_2",
+              "feature_3"
+            ],
+            "missing_policy": "error",
+            "scaling": null,
+            "count_transform": "identity",
+            "ploidy": null,
+            "shape": null
+          }
+        ],
+        "target_level": "locality",
+        "missing_views": "error",
+        "rank_tol": 1e-12,
+        "max_working_bytes": 268435456,
+        "schema_version": 1
+      },
+      "screen": null,
+      "bootstrap": null,
+      "fold_size_policy": null
+    },
+    {
+      "name": "shared_bic",
+      "kind": "ordinary",
+      "model": {
+        "assume_independent_units": true,
+        "n_pcs": 4,
+        "max_k": 4,
+        "min_cluster_size": 5,
+        "n_bootstrap": 0,
+        "n_init": 10,
+        "max_iter": 500,
+        "tol": 0.001,
+        "reg_covar": 1e-06,
+        "assignment_threshold": 0.0,
+        "random_seed": 71323,
+        "n_threads": 1,
+        "max_pairwise_bytes": 268435456,
+        "views": [
+          {
+            "modality": "morphological",
+            "kind": "morphological",
+            "n_pcs": 2,
+            "weight": 1.0,
+            "aggregation": "mean",
+            "feature_names": [
+              "feature_0",
+              "feature_1",
+              "feature_2",
+              "feature_3"
+            ],
+            "missing_policy": "error",
+            "scaling": null,
+            "count_transform": "identity",
+            "ploidy": null,
+            "shape": null,
+            "pca_fit": "target_means"
+          },
+          {
+            "modality": "ecological",
+            "kind": "ecological",
+            "n_pcs": 2,
+            "weight": 1.0,
+            "aggregation": "none",
+            "feature_names": [
+              "feature_0",
+              "feature_1",
+              "feature_2",
+              "feature_3"
+            ],
+            "missing_policy": "error",
+            "scaling": null,
+            "count_transform": "identity",
+            "ploidy": null,
+            "shape": null
+          }
+        ],
+        "target_level": "locality",
+        "missing_views": "error",
+        "rank_tol": 1e-12,
+        "max_working_bytes": 268435456,
+        "schema_version": 1,
+        "covariance_type": "tied"
+      },
+      "screen": null,
+      "bootstrap": null,
+      "fold_size_policy": null
+    },
+    {
+      "name": "full_aic",
+      "kind": "ordinary",
+      "model": {
+        "assume_independent_units": true,
+        "n_pcs": 4,
+        "max_k": 4,
+        "min_cluster_size": 5,
+        "n_bootstrap": 0,
+        "n_init": 10,
+        "max_iter": 500,
+        "tol": 0.001,
+        "reg_covar": 1e-06,
+        "assignment_threshold": 0.0,
+        "random_seed": 71323,
+        "n_threads": 1,
+        "max_pairwise_bytes": 268435456,
+        "views": [
+          {
+            "modality": "morphological",
+            "kind": "morphological",
+            "n_pcs": 2,
+            "weight": 1.0,
+            "aggregation": "mean",
+            "feature_names": [
+              "feature_0",
+              "feature_1",
+              "feature_2",
+              "feature_3"
+            ],
+            "missing_policy": "error",
+            "scaling": null,
+            "count_transform": "identity",
+            "ploidy": null,
+            "shape": null,
+            "pca_fit": "target_means"
+          },
+          {
+            "modality": "ecological",
+            "kind": "ecological",
+            "n_pcs": 2,
+            "weight": 1.0,
+            "aggregation": "none",
+            "feature_names": [
+              "feature_0",
+              "feature_1",
+              "feature_2",
+              "feature_3"
+            ],
+            "missing_policy": "error",
+            "scaling": null,
+            "count_transform": "identity",
+            "ploidy": null,
+            "shape": null
+          }
+        ],
+        "target_level": "locality",
+        "missing_views": "error",
+        "rank_tol": 1e-12,
+        "max_working_bytes": 268435456,
+        "schema_version": 1,
+        "selection_criterion": "aic"
+      },
+      "screen": null,
+      "bootstrap": null,
+      "fold_size_policy": null
+    },
+    {
+      "name": "shared_aic",
+      "kind": "ordinary",
+      "model": {
+        "assume_independent_units": true,
+        "n_pcs": 4,
+        "max_k": 4,
+        "min_cluster_size": 5,
+        "n_bootstrap": 0,
+        "n_init": 10,
+        "max_iter": 500,
+        "tol": 0.001,
+        "reg_covar": 1e-06,
+        "assignment_threshold": 0.0,
+        "random_seed": 71323,
+        "n_threads": 1,
+        "max_pairwise_bytes": 268435456,
+        "views": [
+          {
+            "modality": "morphological",
+            "kind": "morphological",
+            "n_pcs": 2,
+            "weight": 1.0,
+            "aggregation": "mean",
+            "feature_names": [
+              "feature_0",
+              "feature_1",
+              "feature_2",
+              "feature_3"
+            ],
+            "missing_policy": "error",
+            "scaling": null,
+            "count_transform": "identity",
+            "ploidy": null,
+            "shape": null,
+            "pca_fit": "target_means"
+          },
+          {
+            "modality": "ecological",
+            "kind": "ecological",
+            "n_pcs": 2,
+            "weight": 1.0,
+            "aggregation": "none",
+            "feature_names": [
+              "feature_0",
+              "feature_1",
+              "feature_2",
+              "feature_3"
+            ],
+            "missing_policy": "error",
+            "scaling": null,
+            "count_transform": "identity",
+            "ploidy": null,
+            "shape": null
+          }
+        ],
+        "target_level": "locality",
+        "missing_views": "error",
+        "rank_tol": 1e-12,
+        "max_working_bytes": 268435456,
+        "schema_version": 1,
+        "covariance_type": "tied",
+        "selection_criterion": "aic"
+      },
+      "screen": null,
+      "bootstrap": null,
+      "fold_size_policy": null
+    },
+    {
+      "name": "full_predictive",
+      "kind": "predictive",
+      "model": {
+        "assume_independent_units": true,
+        "n_pcs": 4,
+        "max_k": 4,
+        "min_cluster_size": 5,
+        "n_bootstrap": 0,
+        "n_init": 10,
+        "max_iter": 500,
+        "tol": 0.001,
+        "reg_covar": 1e-06,
+        "assignment_threshold": 0.0,
+        "random_seed": 71323,
+        "n_threads": 1,
+        "max_pairwise_bytes": 268435456,
+        "views": [
+          {
+            "modality": "morphological",
+            "kind": "morphological",
+            "n_pcs": 2,
+            "weight": 1.0,
+            "aggregation": "mean",
+            "feature_names": [
+              "feature_0",
+              "feature_1",
+              "feature_2",
+              "feature_3"
+            ],
+            "missing_policy": "error",
+            "scaling": null,
+            "count_transform": "identity",
+            "ploidy": null,
+            "shape": null,
+            "pca_fit": "target_means"
+          },
+          {
+            "modality": "ecological",
+            "kind": "ecological",
+            "n_pcs": 2,
+            "weight": 1.0,
+            "aggregation": "none",
+            "feature_names": [
+              "feature_0",
+              "feature_1",
+              "feature_2",
+              "feature_3"
+            ],
+            "missing_policy": "error",
+            "scaling": null,
+            "count_transform": "identity",
+            "ploidy": null,
+            "shape": null
+          }
+        ],
+        "target_level": "locality",
+        "missing_views": "error",
+        "rank_tol": 1e-12,
+        "max_working_bytes": 268435456,
+        "schema_version": 1,
+        "selection_criterion": "aic"
+      },
+      "screen": {
+        "n_folds": 5,
+        "random_seed": 71324,
+        "schema_version": 1
+      },
+      "bootstrap": null,
+      "fold_size_policy": null
+    },
+    {
+      "name": "shared_predictive",
+      "kind": "predictive",
+      "model": {
+        "assume_independent_units": true,
+        "n_pcs": 4,
+        "max_k": 4,
+        "min_cluster_size": 5,
+        "n_bootstrap": 0,
+        "n_init": 10,
+        "max_iter": 500,
+        "tol": 0.001,
+        "reg_covar": 1e-06,
+        "assignment_threshold": 0.0,
+        "random_seed": 71323,
+        "n_threads": 1,
+        "max_pairwise_bytes": 268435456,
+        "views": [
+          {
+            "modality": "morphological",
+            "kind": "morphological",
+            "n_pcs": 2,
+            "weight": 1.0,
+            "aggregation": "mean",
+            "feature_names": [
+              "feature_0",
+              "feature_1",
+              "feature_2",
+              "feature_3"
+            ],
+            "missing_policy": "error",
+            "scaling": null,
+            "count_transform": "identity",
+            "ploidy": null,
+            "shape": null,
+            "pca_fit": "target_means"
+          },
+          {
+            "modality": "ecological",
+            "kind": "ecological",
+            "n_pcs": 2,
+            "weight": 1.0,
+            "aggregation": "none",
+            "feature_names": [
+              "feature_0",
+              "feature_1",
+              "feature_2",
+              "feature_3"
+            ],
+            "missing_policy": "error",
+            "scaling": null,
+            "count_transform": "identity",
+            "ploidy": null,
+            "shape": null
+          }
+        ],
+        "target_level": "locality",
+        "missing_views": "error",
+        "rank_tol": 1e-12,
+        "max_working_bytes": 268435456,
+        "schema_version": 1,
+        "covariance_type": "tied",
+        "selection_criterion": "aic"
+      },
+      "screen": {
+        "n_folds": 5,
+        "random_seed": 71324,
+        "schema_version": 1
+      },
+      "bootstrap": {
+        "n_bootstrap": 2,
+        "random_seed": 79561,
+        "schema_version": 1
+      },
+      "fold_size_policy": null
+    }
+  ]
+}

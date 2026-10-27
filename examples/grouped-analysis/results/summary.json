@@ -1,0 +1,23 @@
+{
+  "artifact_cap_bytes": 4294967296,
+  "audit_hashes": {
+    "independent-postfit-audit.json": "9218dfe8c6da95145e1df76320930b88bff995cc799ad4f6e48c21242bba06ef",
+    "main-audit.json": "e734aa5ca6d6a551de138cfa51ac29c4cabfcfa17cd743785fed9ee1b162b648",
+    "preflight-audit.json": "1ba26feaf9c2417bb020b8755e3169d8a89e26078dcc9c5f7d38195cf897a548"
+  },
+  "bootstrap_searches": 1800,
+  "defaults_and_p_values_unchanged": true,
+  "main_candidate_searches": 2568,
+  "main_point_fold_searches": 576,
+  "model_arms": 6,
+  "observations": 36,
+  "p_values_computed": false,
+  "pairwise_comparisons": 540,
+  "preflight_candidate_searches": 364,
+  "schema_version": 1,
+  "scientific_fit_failures": 0,
+  "scope": "Three datasets/cell and 25 draws per selected dataset: descriptive orchestration validation",
+  "shared_predictive_draws": 300,
+  "standalone_replay_searches": 192,
+  "status": "passed"
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "cases": [
+    "independent_gaussian",
+    "correlated_gaussian",
+    "complementary",
+    "heavy_tailed",
+    "unequal_variance",
+    "cline"
+  ],
+  "sample_sizes": [
+    64,
+    256
+  ],
+  "datasets_per_cell": 3,
+  "draws": 25,
+  "data_seed": 79531,
+  "main_seed": 79571,
+  "preflight_seed": 79579,
+  "model_seed": 71323,
+  "split_seed": 71324,
+  "bootstrap_seed": 79561,
+  "artifact_cap_bytes": 2147483648,
+  "min_free_bytes": 8589934592,
+  "storage_allowance": 1.25,
+  "reserve_bytes": 134217728,
+  "main_searches": 2568,
+  "preflight_searches": 364
+}

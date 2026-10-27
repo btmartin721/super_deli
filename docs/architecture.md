@@ -258,10 +258,11 @@ reference labels need independent evidence and documented uncertainty.
 31. **Completed:** Separate opt-in continuous tabular PCA/HDBSCAN, noise-aware subsampling and paired simulation validation.
 32. **Completed:** Frozen noisy-moons density diagnosis, hierarchy/connectivity audits and archived replay parity; no production/default change.
 33. **Completed:** Unified one-table PCA/GMM and PCA/HDBSCAN orchestration with coverage-explicit comparison and separate native stability.
-34. **Pending:** Freeze a justified descriptive molecular-concordance design and trait/missingness policy; independence-dependent uses additionally require a justified sampling/dependence protocol.
-35. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
-36. Anatomical landmark learning, semilandmark sliding and further model families.
-37. Consolidated user guidance, end-to-end examples and a scoped research release.
+34. **Completed:** Unified grouped morphology/ecology comparisons with explicit counts, native selection/stability boundaries and standalone parity.
+35. **Pending:** Freeze a justified descriptive molecular-concordance design and trait/missingness policy; independence-dependent uses additionally require a justified sampling/dependence protocol.
+36. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
+37. Anatomical landmark learning, semilandmark sliding and further model families.
+38. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The later calibration and diagnostic workflows remain restricted to their declared
 assumptions and data types; completing their engineering does not establish species
@@ -405,3 +406,8 @@ workflows using a frozen source, dependency-free arm configuration and a shared
 report. Its label-invariant comparison lives in `core.partition_comparison`;
 family adapters preserve native evidence rather than coercing density noise
 into the GMM delimitation-result contract. No model-family ranking is performed.
+
+The [grouped analysis adapter](grouped-analysis.md) freezes both sources and the
+identity mapping, then invokes existing ordinary/predictive grouped engines.
+Its dependency-free configuration preserves native support boundaries; shared
+reporting and label-invariant comparison are reused from the tabular interface.

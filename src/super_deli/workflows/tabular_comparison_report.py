@@ -50,14 +50,28 @@ def write_comparison_report(summary, points, output):
     for row in rows:
         name = row["name"]
         plot = _plot(**points[name]) if name in points else "<p>Point fit unavailable.</p>"
+        summary_link = row.get("native_summary", f"arms/{name}/summary.json")
+        assignment_link = row.get("native_assignments", f"arms/{name}/assignments.csv")
         links = (
             (
-                f'<p><a href="arms/{name}/summary.json">Native summary</a>; '
-                f'<a href="arms/{name}/assignments.csv">Native assignments</a></p>'
+                f'<p><a href="{_escape(summary_link)}">Native summary</a>; '
+                f'<a href="{_escape(assignment_link)}">Native assignments</a></p>'
             )
             if name in points
             else f"<p>{_escape(row.get('error'))}</p>"
         )
+        if row.get("ordinary_summary"):
+            links += (
+                f'<p><a href="{_escape(row["ordinary_summary"])}">Retained ordinary fit</a></p>'
+            )
+        details = ""
+        for key, title in (
+            ("selection", "Native screening decisions"),
+            ("preprocessing", "Retained preprocessing evidence"),
+        ):
+            if key in row:
+                details += f"<details><summary>{title}</summary><pre>"
+                details += _escape(json.dumps(row[key], indent=2)) + "</pre></details>"
         sections.append(
             f"<section><h2>{_escape(name)}</h2>{plot}"
             + links
@@ -65,7 +79,9 @@ def write_comparison_report(summary, points, output):
             + _escape(json.dumps(row["configuration"], indent=2))
             + "</pre><h3>Family-specific resampling</h3><pre>"
             + _escape(json.dumps(row.get("stability"), indent=2))
-            + "</pre></section>"
+            + "</pre>"
+            + details
+            + "</section>"
         )
     document = (
         '<!doctype html><html lang="en"><meta charset="utf-8">'
@@ -93,6 +109,7 @@ def write_comparison_report(summary, points, output):
                 "noise_count",
                 "unresolved_count",
                 "stability_status",
+                *summary.get("report_columns", []),
             ),
         )
         + "<h2>Partition agreement</h2>"
@@ -114,6 +131,12 @@ def write_comparison_report(summary, points, output):
         + "<h2>Evidence boundaries</h2><p>"
         + _escape(" ".join(summary["limitations"]))
         + "</p>"
+        + (
+            "<h2>Explicit target sampling</h2>"
+            + _table(summary["groups"], ("target_id", "morphology_count", "ecology_count"))
+            if "groups" in summary
+            else ""
+        )
         + "".join(sections)
         + "</html>\n"
     )

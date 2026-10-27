@@ -144,6 +144,12 @@ def main(argv: list[str] | None = None) -> int:
     tabular_cluster.add_argument("--model-config", type=Path, required=True)
     tabular_cluster.add_argument("--modality", help="Select exactly one morphology/ecology table")
     tabular_cluster.add_argument("--output-dir", type=Path, required=True)
+    grouped = commands.add_parser(
+        "analyze-grouped-tabular", help="Compare grouped morphology/ecology models"
+    )
+    grouped.add_argument("config", type=Path)
+    grouped.add_argument("--analysis-config", type=Path, required=True)
+    grouped.add_argument("--output-dir", type=Path, required=True)
     analysis = commands.add_parser(
         "analyze-tabular", help="Compare prespecified tabular model arms"
     )
@@ -985,6 +991,18 @@ def main(argv: list[str] | None = None) -> int:
                 )
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
             return 0
+        if args.command == "analyze-grouped-tabular":
+            from super_deli.models.grouped_analysis_config import GroupedAnalysisConfig
+            from super_deli.workflows.grouped_analysis import run_grouped_tabular_analysis
+
+            summary = run_grouped_tabular_analysis(
+                config,
+                analysis_config=GroupedAnalysisConfig.from_dict(read_json(args.analysis_config)),
+                base_dir=source.parent,
+                output_dir=args.output_dir,
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0 if summary["status"] == "complete" else 1
         if args.command == "analyze-tabular":
             from super_deli.models.tabular_analysis_config import TabularAnalysisConfig
             from super_deli.workflows.tabular_analysis import run_tabular_analysis

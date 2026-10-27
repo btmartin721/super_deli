@@ -2,9 +2,9 @@
 
 from __future__ import annotations
 
-import re
 from dataclasses import dataclass
 
+from super_deli.models.analysis_contracts import validate_arm_name
 from super_deli.models.hdbscan_config import HDBSCANConfig
 from super_deli.models.tabular_cluster_config import TabularClusterConfig
 
@@ -15,10 +15,7 @@ class TabularAnalysisArm:
     model: TabularClusterConfig | HDBSCANConfig
 
     def __post_init__(self):
-        if not isinstance(self.name, str) or not re.fullmatch(r"[a-z][a-z0-9_-]{0,63}", self.name):
-            raise ValueError(
-                "Arm names must be safe lowercase identifiers of at most 64 characters"
-            )
+        validate_arm_name(self.name)
         if type(self.model) not in (TabularClusterConfig, HDBSCANConfig):
             raise ValueError("Unsupported tabular comparison model")
         type(self.model).from_dict(self.model.to_dict())

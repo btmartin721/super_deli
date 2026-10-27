@@ -1,0 +1,168 @@
+[
+  {
+    "case": "independent_gaussian",
+    "conditional_mean_ari_to_own_point": 1.0,
+    "conditioning": "Original locality folds/model settings; repeated draws, not independent datasets",
+    "datasets": 1,
+    "n": 64,
+    "point_k": 1,
+    "requested": 25,
+    "selected_k_counts": {
+      "1": 25
+    },
+    "successful": 25
+  },
+  {
+    "case": "independent_gaussian",
+    "conditional_mean_ari_to_own_point": 0.92,
+    "conditioning": "Original locality folds/model settings; repeated draws, not independent datasets",
+    "datasets": 1,
+    "n": 256,
+    "point_k": 1,
+    "requested": 25,
+    "selected_k_counts": {
+      "1": 23,
+      "2": 2
+    },
+    "successful": 25
+  },
+  {
+    "case": "correlated_gaussian",
+    "conditional_mean_ari_to_own_point": 0.96,
+    "conditioning": "Original locality folds/model settings; repeated draws, not independent datasets",
+    "datasets": 1,
+    "n": 64,
+    "point_k": 1,
+    "requested": 25,
+    "selected_k_counts": {
+      "1": 24,
+      "2": 1
+    },
+    "successful": 25
+  },
+  {
+    "case": "correlated_gaussian",
+    "conditional_mean_ari_to_own_point": 0.96,
+    "conditioning": "Original locality folds/model settings; repeated draws, not independent datasets",
+    "datasets": 1,
+    "n": 256,
+    "point_k": 1,
+    "requested": 25,
+    "selected_k_counts": {
+      "1": 24,
+      "2": 1
+    },
+    "successful": 25
+  },
+  {
+    "case": "complementary",
+    "conditional_mean_ari_to_own_point": 0.019737195417300922,
+    "conditioning": "Original locality folds/model settings; repeated draws, not independent datasets",
+    "datasets": 1,
+    "n": 64,
+    "point_k": 3,
+    "requested": 25,
+    "selected_k_counts": {
+      "1": 15,
+      "2": 10
+    },
+    "successful": 25
+  },
+  {
+    "case": "complementary",
+    "conditional_mean_ari_to_own_point": 0.9561930403823864,
+    "conditioning": "Original locality folds/model settings; repeated draws, not independent datasets",
+    "datasets": 1,
+    "n": 256,
+    "point_k": 4,
+    "requested": 25,
+    "selected_k_counts": {
+      "4": 25
+    },
+    "successful": 25
+  },
+  {
+    "case": "heavy_tailed",
+    "conditional_mean_ari_to_own_point": 1.0,
+    "conditioning": "Original locality folds/model settings; repeated draws, not independent datasets",
+    "datasets": 1,
+    "n": 64,
+    "point_k": 1,
+    "requested": 25,
+    "selected_k_counts": {
+      "1": 25
+    },
+    "successful": 25
+  },
+  {
+    "case": "heavy_tailed",
+    "conditional_mean_ari_to_own_point": 1.0,
+    "conditioning": "Original locality folds/model settings; repeated draws, not independent datasets",
+    "datasets": 1,
+    "n": 256,
+    "point_k": 1,
+    "requested": 25,
+    "selected_k_counts": {
+      "1": 25
+    },
+    "successful": 25
+  },
+  {
+    "case": "unequal_variance",
+    "conditional_mean_ari_to_own_point": 0.20824158004236762,
+    "conditioning": "Original locality folds/model settings; repeated draws, not independent datasets",
+    "datasets": 1,
+    "n": 64,
+    "point_k": 3,
+    "requested": 25,
+    "selected_k_counts": {
+      "1": 17,
+      "2": 8
+    },
+    "successful": 25
+  },
+  {
+    "case": "unequal_variance",
+    "conditional_mean_ari_to_own_point": 0.7627940151601079,
+    "conditioning": "Original locality folds/model settings; repeated draws, not independent datasets",
+    "datasets": 1,
+    "n": 256,
+    "point_k": 4,
+    "requested": 25,
+    "selected_k_counts": {
+      "2": 3,
+      "3": 6,
+      "4": 16
+    },
+    "successful": 25
+  },
+  {
+    "case": "cline",
+    "conditional_mean_ari_to_own_point": 0.92,
+    "conditioning": "Original locality folds/model settings; repeated draws, not independent datasets",
+    "datasets": 1,
+    "n": 64,
+    "point_k": 1,
+    "requested": 25,
+    "selected_k_counts": {
+      "1": 23,
+      "2": 2
+    },
+    "successful": 25
+  },
+  {
+    "case": "cline",
+    "conditional_mean_ari_to_own_point": 0.3183845265573634,
+    "conditioning": "Original locality folds/model settings; repeated draws, not independent datasets",
+    "datasets": 1,
+    "n": 256,
+    "point_k": 2,
+    "requested": 25,
+    "selected_k_counts": {
+      "1": 14,
+      "2": 8,
+      "3": 3
+    },
+    "successful": 25
+  }
+]

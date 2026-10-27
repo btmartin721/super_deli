@@ -147,6 +147,12 @@ jobs:
           unset PYTHONPATH
           python "$GITHUB_WORKSPACE/examples/empirical-foundation/smoke.py" --output-dir "$RUNNER_TEMP/empirical-curation-smoke"
 
+      - name: Check unified grouped installed workflow
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/grouped-analysis/smoke.py" --output-dir "$RUNNER_TEMP/grouped-analysis-smoke"
+
       - name: Check unified tabular installed workflow
         working-directory: ${{ runner.temp }}
         run: |

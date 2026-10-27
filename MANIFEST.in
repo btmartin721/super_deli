@@ -1178,3 +1178,31 @@ include src/super_deli/workflows/tabular_analysis.py
 include src/super_deli/workflows/tabular_comparison_report.py
 include tests/test_foundation_tabular_analysis.py
 include tests/test_tabular_analysis.py
+
+# Unified grouped analysis: explicit public payload only.
+include docs/figures/grouped-analysis/grouped-comparison.pdf
+include docs/figures/grouped-analysis/grouped-comparison.png
+include docs/grouped-analysis-results.md
+include docs/grouped-analysis.md
+include examples/grouped-analysis/analysis.json
+include examples/grouped-analysis/dataset.json
+include examples/grouped-analysis/report.py
+include examples/grouped-analysis/results/checksums.json
+include examples/grouped-analysis/results/models.json
+include examples/grouped-analysis/results/recovery.json
+include examples/grouped-analysis/results/stability.json
+include examples/grouped-analysis/results/summary.json
+include examples/grouped-analysis/smoke.py
+include examples/grouped-analysis/validate.py
+include examples/grouped-analysis/validation.json
+include examples/grouped-analysis/view_000.csv
+include examples/grouped-analysis/view_001.csv
+include src/super_deli/benchmarking/grouped_analysis_audit.py
+include src/super_deli/benchmarking/grouped_analysis_study.py
+include src/super_deli/io/grouped_analysis.py
+include src/super_deli/models/analysis_contracts.py
+include src/super_deli/models/grouped_analysis_config.py
+include src/super_deli/workflows/grouped_analysis.py
+include src/super_deli/workflows/grouped_analysis_adapters.py
+include tests/test_foundation_grouped_analysis.py
+include tests/test_tabular_grouped_analysis.py

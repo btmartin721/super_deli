@@ -513,3 +513,8 @@ The opt-in [unified tabular workflow](docs/tabular-analysis.md) compares
 prespecified PCA/GMM and PCA/HDBSCAN arms on one frozen continuous morphology
 or ecology table. It reports noise-aware agreement, coverage and separate
 family-specific stability without selecting a winning model or adding p-values.
+
+The [unified grouped interface](docs/grouped-analysis.md) compares existing
+full/shared BIC, AIC and predictive-screened AIC workflows for explicit
+morphology/ecology groups with unequal specimen counts. Native uncertainty
+contracts and existing defaults remain intact; it selects no winning species partition.
