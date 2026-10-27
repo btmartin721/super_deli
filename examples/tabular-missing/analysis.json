@@ -1,0 +1,68 @@
+{
+  "schema_version": 2,
+  "policies": [
+    "complete_case",
+    "mean"
+  ],
+  "arms": [
+    {
+      "name": "gmm",
+      "family": "gmm",
+      "model": {
+        "assume_independent_units": true,
+        "n_pcs": 2,
+        "max_k": 4,
+        "min_cluster_size": 5,
+        "n_bootstrap": 3,
+        "n_init": 10,
+        "max_iter": 500,
+        "tol": 0.001,
+        "reg_covar": 1e-06,
+        "assignment_threshold": 0.0,
+        "random_seed": 80323,
+        "n_threads": 1,
+        "max_pairwise_bytes": 268435456,
+        "feature_names": [
+          "trait_0",
+          "trait_1",
+          "trait_2",
+          "trait_3"
+        ],
+        "missing_policy": "error",
+        "scaling": "standard",
+        "count_transform": "identity",
+        "rank_tol": 1e-12,
+        "max_working_bytes": 268435456,
+        "schema_version": 1
+      }
+    },
+    {
+      "name": "density",
+      "family": "hdbscan",
+      "model": {
+        "assume_independent_units": true,
+        "schema_version": 1,
+        "model_family": "tabular_pca_hdbscan",
+        "feature_names": [
+          "trait_0",
+          "trait_1",
+          "trait_2",
+          "trait_3"
+        ],
+        "n_pcs": 2,
+        "min_cluster_size": 5,
+        "min_samples": 5,
+        "alpha": 1.0,
+        "cluster_selection_method": "eom",
+        "cluster_selection_epsilon": 0.0,
+        "allow_single_cluster": true,
+        "n_subsamples": 3,
+        "subsample_fraction": 0.8,
+        "random_seed": 80323,
+        "rank_tol": 1e-12,
+        "max_working_bytes": 268435456,
+        "max_pairwise_bytes": 268435456
+      }
+    }
+  ]
+}

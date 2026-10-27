@@ -1,0 +1,3958 @@
+{
+  "default_promoted": false,
+  "draw_failures": 0,
+  "exact_main_point_replays": 36,
+  "intervals": "pointwise descriptive exact intervals conditional on success; no multiple-testing or species claim",
+  "main_planned_pipeline_fits": 1836,
+  "native_draws": 480,
+  "observations": 60,
+  "phase": "main",
+  "point_failures": 0,
+  "point_pipelines": 1320,
+  "preflight_planned_pipeline_fits": 408,
+  "pvalues_generated": 0,
+  "rates": [
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.5,
+      "resolved_fraction_mean": 0.275,
+      "retained_fraction": 0.315625,
+      "selected_k_counts": {
+        "1": 5,
+        "2": 5
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.9595879556259905,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.315625,
+      "retained_fraction": 0.315625,
+      "selected_k_counts": {
+        "1": 7,
+        "2": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.5,
+      "datasets": 10,
+      "event_count": 5,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.5,
+        0.5
+      ],
+      "imputed_fraction_mean": 0.296875,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.263705679681624,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.18708602844739855,
+        0.8129139715526015
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.6903080937251902,
+      "resolved_fraction_mean": 0.8109375,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 2,
+        "3": 2,
+        "4": 5,
+        "5": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.3,
+      "datasets": 10,
+      "event_count": 3,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.3,
+        0.3
+      ],
+      "imputed_fraction_mean": 0.296875,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.43063410236288646,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.06673951117773447,
+        0.6524528500599973
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.5170108696507206,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "2": 4,
+        "3": 3,
+        "4": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.7,
+      "datasets": 10,
+      "event_count": 7,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.7,
+        0.7
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.3475471499400027,
+        0.9332604888222655
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.65625,
+      "retained_fraction": 0.671875,
+      "selected_k_counts": {
+        "1": 2,
+        "3": 1,
+        "4": 7
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.3,
+      "datasets": 10,
+      "event_count": 3,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.3,
+        0.3
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.2635639600470416,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.06673951117773447,
+        0.6524528500599973
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.7364360399529584,
+      "resolved_fraction_mean": 0.671875,
+      "retained_fraction": 0.671875,
+      "selected_k_counts": {
+        "2": 2,
+        "3": 5,
+        "4": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.094140625,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.956372963589271,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.9625,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 9,
+        "4": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.2,
+      "datasets": 10,
+      "event_count": 2,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.2,
+        0.2
+      ],
+      "imputed_fraction_mean": 0.094140625,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.2999670868913286,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.02521072632683336,
+        0.5560954623076415
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.66741419259648,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "2": 2,
+        "3": 6,
+        "4": 2
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.4149256711123529,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.1328125,
+      "retained_fraction": 0.2375,
+      "selected_k_counts": {
+        "1": 9,
+        "3": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.5098724722697626,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.4550420969455873,
+      "resolved_fraction_mean": 0.2375,
+      "retained_fraction": 0.2375,
+      "selected_k_counts": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.3024863066646101,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 1.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.7609375,
+      "retained_fraction": 0.9875,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.3024863066646101,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.9167440890993128,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.9875,
+      "retained_fraction": 0.9875,
+      "selected_k_counts": {
+        "1": 7,
+        "2": 1,
+        "3": 2
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.121875,
+      "retained_fraction": 0.240625,
+      "selected_k_counts": {
+        "1": 8,
+        "2": 2
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 1.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.240625,
+      "retained_fraction": 0.240625,
+      "selected_k_counts": {
+        "1": 6,
+        "2": 4
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.3000873039481084,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 1.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.659375,
+      "retained_fraction": 0.9875,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.3000873039481084,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 1.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.9875,
+      "retained_fraction": 0.9875,
+      "selected_k_counts": {
+        "1": 8,
+        "3": 2
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.8,
+      "datasets": 10,
+      "event_count": 8,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.8,
+        0.8
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "oracle",
+      "median_ari_loss_on_common": null,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.4439045376923585,
+        0.9747892736731666
+      ],
+      "policy": "complete",
+      "resolved_ari_median": 0.957704448893653,
+      "resolved_fraction_mean": 0.9734375,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 2,
+        "4": 8
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.9,
+      "datasets": 10,
+      "event_count": 9,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.9,
+        0.9
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "oracle",
+      "median_ari_loss_on_common": null,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.5549838829718047,
+        0.9974714214555382
+      ],
+      "policy": "complete",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "3": 1,
+        "4": 9
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 1.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.0921875,
+      "retained_fraction": 0.165625,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 1.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.165625,
+      "retained_fraction": 0.165625,
+      "selected_k_counts": {
+        "1": 7,
+        "2": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.3078125,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.946697254584,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.8203125,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 9,
+        "4": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.3078125,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.40945786138962514,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.4878048780487805,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 1,
+        "2": 5,
+        "3": 4
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.29140625,
+      "retained_fraction": 0.32421875,
+      "selected_k_counts": {
+        "1": 2,
+        "2": 5,
+        "3": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.006715443211395167,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.988927331132545,
+      "resolved_fraction_mean": 0.32421875,
+      "retained_fraction": 0.32421875,
+      "selected_k_counts": {
+        "2": 2,
+        "3": 8
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.3,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.4471932735754551,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.43447247732217975,
+      "resolved_fraction_mean": 0.7703125,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 4,
+        "11": 3,
+        "7": 2,
+        "9": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 1.0,
+      "datasets": 10,
+      "event_count": 10,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        1.0,
+        1.0
+      ],
+      "imputed_fraction_mean": 0.3,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.34064858467535936,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.6915028921812392,
+        1.0
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.6488935254061627,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 1.0,
+      "datasets": 10,
+      "event_count": 10,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        1.0,
+        1.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.6915028921812392,
+        1.0
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.9852769677005081,
+      "resolved_fraction_mean": 0.65625,
+      "retained_fraction": 0.665625,
+      "selected_k_counts": {
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 1.0,
+      "datasets": 10,
+      "event_count": 10,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        1.0,
+        1.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.6915028921812392,
+        1.0
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.665625,
+      "retained_fraction": 0.665625,
+      "selected_k_counts": {
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.2,
+      "datasets": 10,
+      "event_count": 2,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.2,
+        0.2
+      ],
+      "imputed_fraction_mean": 0.09609375,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.9890786508640663,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.02521072632683336,
+        0.5560954623076415
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.954296875,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 7,
+        "3": 1,
+        "4": 2
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 1.0,
+      "datasets": 10,
+      "event_count": 10,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        1.0,
+        1.0
+      ],
+      "imputed_fraction_mean": 0.09609375,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0415793266716003,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.6915028921812392,
+        1.0
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.9533538265774724,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 1.0,
+      "datasets": 10,
+      "event_count": 10,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        1.0,
+        1.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.6915028921812392,
+        1.0
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.237109375,
+      "retained_fraction": 0.2421875,
+      "selected_k_counts": {
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.4,
+      "datasets": 10,
+      "event_count": 4,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.4,
+        0.4
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.1910322589381689,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.12155225811982719,
+        0.7376219233930549
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.8086409223352125,
+      "resolved_fraction_mean": 0.2421875,
+      "retained_fraction": 0.2421875,
+      "selected_k_counts": {
+        "3": 6,
+        "4": 4
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.293608974417748,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.9920603427457355,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.807421875,
+      "retained_fraction": 0.994140625,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.3,
+      "datasets": 10,
+      "event_count": 3,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.3,
+        0.3
+      ],
+      "imputed_fraction_mean": 0.293608974417748,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.4084211147050017,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.06673951117773447,
+        0.6524528500599973
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.5801591812201341,
+      "resolved_fraction_mean": 0.994140625,
+      "retained_fraction": 0.994140625,
+      "selected_k_counts": {
+        "3": 7,
+        "4": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.3,
+      "datasets": 10,
+      "event_count": 3,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.3,
+        0.3
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.06673951117773447,
+        0.6524528500599973
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.9828425666642278,
+      "resolved_fraction_mean": 0.244921875,
+      "retained_fraction": 0.263671875,
+      "selected_k_counts": {
+        "1": 2,
+        "3": 5,
+        "4": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.4,
+      "datasets": 10,
+      "event_count": 4,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.4,
+        0.4
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.02778528489581844,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.12155225811982719,
+        0.7376219233930549
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.9620258182739527,
+      "resolved_fraction_mean": 0.263671875,
+      "retained_fraction": 0.263671875,
+      "selected_k_counts": {
+        "3": 6,
+        "4": 4
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.2881604315039173,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.9862747041916357,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.846484375,
+      "retained_fraction": 0.984765625,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.2,
+      "datasets": 10,
+      "event_count": 2,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.2,
+        0.2
+      ],
+      "imputed_fraction_mean": 0.2881604315039173,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.4466399856410237,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.02521072632683336,
+        0.5560954623076415
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.5395691769471331,
+      "resolved_fraction_mean": 0.984765625,
+      "retained_fraction": 0.984765625,
+      "selected_k_counts": {
+        "2": 1,
+        "3": 7,
+        "4": 2
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.8,
+      "datasets": 10,
+      "event_count": 8,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.8,
+        0.8
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "oracle",
+      "median_ari_loss_on_common": null,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.4439045376923585,
+        0.9747892736731666
+      ],
+      "policy": "complete",
+      "resolved_ari_median": 0.9842738448223451,
+      "resolved_fraction_mean": 0.97109375,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 1,
+        "4": 8,
+        "5": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 1.0,
+      "datasets": 10,
+      "event_count": 10,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        1.0,
+        1.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "oracle",
+      "median_ari_loss_on_common": null,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.6915028921812392,
+        1.0
+      ],
+      "policy": "complete",
+      "resolved_ari_median": 0.9895421100815222,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.5,
+      "datasets": 10,
+      "event_count": 5,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.5,
+        0.5
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.03378652597402598,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.18708602844739855,
+        0.8129139715526015
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.902998980710725,
+      "resolved_fraction_mean": 0.158203125,
+      "retained_fraction": 0.163671875,
+      "selected_k_counts": {
+        "1": 4,
+        "3": 1,
+        "4": 5
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.3,
+      "datasets": 10,
+      "event_count": 3,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.3,
+        0.3
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.17683471425092084,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.06673951117773447,
+        0.6524528500599973
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.7924885144605727,
+      "resolved_fraction_mean": 0.163671875,
+      "retained_fraction": 0.163671875,
+      "selected_k_counts": {
+        "2": 3,
+        "3": 4,
+        "4": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.30078125,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.9873764649347301,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.876171875,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 9,
+        "5": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "conditional_rate": 0.7,
+      "datasets": 10,
+      "event_count": 7,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.7,
+        0.7
+      ],
+      "imputed_fraction_mean": 0.30078125,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.040907018709037735,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.3475471499400027,
+        0.9332604888222655
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.9483020548696676,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "3": 3,
+        "4": 7
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.0796875,
+      "retained_fraction": 0.2953125,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.2953125,
+      "retained_fraction": 0.2953125,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.309375,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.38125,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.309375,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.1703125,
+      "retained_fraction": 0.65,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.65,
+      "retained_fraction": 0.65,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.1,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.33125,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.1,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.0796875,
+      "retained_fraction": 0.2375,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.2375,
+      "retained_fraction": 0.2375,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.29581473214285714,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.221875,
+      "retained_fraction": 0.990625,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.2,
+      "datasets": 10,
+      "event_count": 2,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.2,
+        0.2
+      ],
+      "imputed_fraction_mean": 0.29581473214285714,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.02521072632683336,
+        0.5560954623076415
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.990625,
+      "retained_fraction": 0.990625,
+      "selected_k_counts": {
+        "1": 8,
+        "2": 2
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.078125,
+      "retained_fraction": 0.2421875,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.2,
+      "datasets": 10,
+      "event_count": 2,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.2,
+        0.2
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.02521072632683336,
+        0.5560954623076415
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.2421875,
+      "retained_fraction": 0.2421875,
+      "selected_k_counts": {
+        "1": 8,
+        "2": 2
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.30302279345878136,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.228125,
+      "retained_fraction": 0.984375,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.30302279345878136,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.984375,
+      "retained_fraction": 0.984375,
+      "selected_k_counts": {
+        "1": 9,
+        "3": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "oracle",
+      "median_ari_loss_on_common": null,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.4,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "oracle",
+      "median_ari_loss_on_common": null,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.08125,
+      "retained_fraction": 0.1890625,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.1890625,
+      "retained_fraction": 0.1890625,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.28671875,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.2984375,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.28671875,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.21640625,
+      "retained_fraction": 0.326953125,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.326953125,
+      "retained_fraction": 0.326953125,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.3,
+      "datasets": 10,
+      "event_count": 3,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.3,
+        0.3
+      ],
+      "imputed_fraction_mean": 0.30107421875,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.06673951117773447,
+        0.6524528500599973
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.69609375,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 7,
+        "9": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.9,
+      "datasets": 10,
+      "event_count": 9,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.9,
+        0.9
+      ],
+      "imputed_fraction_mean": 0.30107421875,
+      "mask": "mar",
+      "median_ari_loss_on_common": 1.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.5549838829718047,
+        0.9974714214555382
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 1,
+        "2": 4,
+        "3": 4,
+        "4": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.448828125,
+      "retained_fraction": 0.64765625,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.64765625,
+      "retained_fraction": 0.64765625,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.10283203125,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.756640625,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.10283203125,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.12890625,
+      "retained_fraction": 0.2375,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.2375,
+      "retained_fraction": 0.2375,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.298664206425301,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.706640625,
+      "retained_fraction": 0.9921875,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.4,
+      "datasets": 10,
+      "event_count": 4,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.4,
+        0.4
+      ],
+      "imputed_fraction_mean": 0.298664206425301,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.12155225811982719,
+        0.7376219233930549
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.9921875,
+      "retained_fraction": 0.9921875,
+      "selected_k_counts": {
+        "1": 6,
+        "2": 4
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.13125,
+      "retained_fraction": 0.253515625,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.253515625,
+      "retained_fraction": 0.253515625,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.29663578432140875,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.705078125,
+      "retained_fraction": 0.98671875,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.5,
+      "datasets": 10,
+      "event_count": 5,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.5,
+        0.5
+      ],
+      "imputed_fraction_mean": 0.29663578432140875,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.5,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.18708602844739855,
+        0.8129139715526015
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.5,
+      "resolved_fraction_mean": 0.98671875,
+      "retained_fraction": 0.98671875,
+      "selected_k_counts": {
+        "1": 5,
+        "2": 5
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "oracle",
+      "median_ari_loss_on_common": null,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.776171875,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "oracle",
+      "median_ari_loss_on_common": null,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.056640625,
+      "retained_fraction": 0.15546875,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.15546875,
+      "retained_fraction": 0.15546875,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.301171875,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.631640625,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "spurious_k_gt_1",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.301171875,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.184375,
+      "retained_fraction": 0.3015625,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.8,
+      "datasets": 10,
+      "event_count": 8,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.8,
+        0.8
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mar",
+      "median_ari_loss_on_common": -0.05639438186320611,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.4439045376923585,
+        0.9747892736731666
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.43712638019551303,
+      "resolved_fraction_mean": 0.3015625,
+      "retained_fraction": 0.3015625,
+      "selected_k_counts": {
+        "1": 1,
+        "2": 8,
+        "3": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.300390625,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.7375,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 9,
+        "6": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.2,
+      "datasets": 10,
+      "event_count": 2,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.2,
+        0.2
+      ],
+      "imputed_fraction_mean": 0.300390625,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.3511018882972494,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.02521072632683336,
+        0.5560954623076415
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 6,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.625,
+      "retained_fraction": 0.6796875,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.006706469917224844,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.440627290008225,
+      "resolved_fraction_mean": 0.6796875,
+      "retained_fraction": 0.6796875,
+      "selected_k_counts": {
+        "3": 3,
+        "4": 7
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.096484375,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.88125,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.096484375,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.11529116735037126,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.3304632055272356,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 2,
+        "3": 4,
+        "4": 4
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.08125,
+      "retained_fraction": 0.2390625,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.6,
+      "datasets": 10,
+      "event_count": 6,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.6,
+        0.6
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.32751492827509504,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.26237807660694507,
+        0.8784477418801728
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.1613963768790598,
+      "resolved_fraction_mean": 0.2390625,
+      "retained_fraction": 0.2390625,
+      "selected_k_counts": {
+        "1": 4,
+        "2": 6
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.2910368263568869,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.7125,
+      "retained_fraction": 0.990625,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.2910368263568869,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.4592265334994549,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.990625,
+      "retained_fraction": 0.990625,
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.2,
+      "datasets": 10,
+      "event_count": 2,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.2,
+        0.2
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.02521072632683336,
+        0.5560954623076415
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 1.0,
+      "resolved_fraction_mean": 0.128125,
+      "retained_fraction": 0.253125,
+      "selected_k_counts": {
+        "1": 8,
+        "2": 2
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.3,
+      "datasets": 10,
+      "event_count": 3,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.3,
+        0.3
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.21001623706109193,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.06673951117773447,
+        0.6524528500599973
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.253125,
+      "retained_fraction": 0.253125,
+      "selected_k_counts": {
+        "1": 6,
+        "2": 3,
+        "3": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.28908690156169997,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.6515625,
+      "retained_fraction": 0.9875,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.2,
+      "datasets": 10,
+      "event_count": 2,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.2,
+        0.2
+      ],
+      "imputed_fraction_mean": 0.28908690156169997,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.41127529645532657,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.02521072632683336,
+        0.5560954623076415
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.9875,
+      "retained_fraction": 0.9875,
+      "selected_k_counts": {
+        "1": 6,
+        "2": 2,
+        "3": 2
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "oracle",
+      "median_ari_loss_on_common": null,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.9703125,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "oracle",
+      "median_ari_loss_on_common": null,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete",
+      "resolved_ari_median": 0.4773553956767066,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "3": 2,
+        "4": 8
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.08125,
+      "retained_fraction": 0.140625,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.42498365715388,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.140625,
+      "retained_fraction": 0.140625,
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.306640625,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.0,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.5484375,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.306640625,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.45984552602713247,
+      "n": 64,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 9,
+        "3": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.3,
+      "datasets": 10,
+      "event_count": 3,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.3,
+        0.3
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mar",
+      "median_ari_loss_on_common": -0.36087637191308963,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.06673951117773447,
+        0.6524528500599973
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.46322211468365726,
+      "resolved_fraction_mean": 0.30859375,
+      "retained_fraction": 0.333984375,
+      "selected_k_counts": {
+        "1": 3,
+        "2": 3,
+        "3": 2,
+        "5": 2
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.04375610367496696,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.548220010935683,
+      "resolved_fraction_mean": 0.333984375,
+      "retained_fraction": 0.333984375,
+      "selected_k_counts": {
+        "2": 1,
+        "3": 6,
+        "4": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.30078125,
+      "mask": "mar",
+      "median_ari_loss_on_common": -0.05033237766174576,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.1011933389173255,
+      "resolved_fraction_mean": 0.7484375,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 4,
+        "13": 1,
+        "14": 2,
+        "15": 2,
+        "16": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.30078125,
+      "mask": "mar",
+      "median_ari_loss_on_common": 0.2752129700279265,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.20369725916835751,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "2": 1,
+        "3": 5,
+        "4": 4
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.6578125,
+      "retained_fraction": 0.671875,
+      "selected_k_counts": {
+        "1": 8,
+        "2": 1,
+        "6": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": -0.000593427143804337,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.49516011320174536,
+      "resolved_fraction_mean": 0.671875,
+      "retained_fraction": 0.671875,
+      "selected_k_counts": {
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0939453125,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.9,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0939453125,
+      "mask": "mcar10",
+      "median_ari_loss_on_common": 0.14666337562777151,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.3227329276441593,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.240625,
+      "retained_fraction": 0.258984375,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.1217831838850851,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.34002229764759095,
+      "resolved_fraction_mean": 0.258984375,
+      "retained_fraction": 0.258984375,
+      "selected_k_counts": {
+        "3": 2,
+        "4": 8
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.2899508952674819,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.90390625,
+      "retained_fraction": 0.99453125,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.2899508952674819,
+      "mask": "mcar30",
+      "median_ari_loss_on_common": 0.4819799531873949,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.99453125,
+      "retained_fraction": 0.99453125,
+      "selected_k_counts": {
+        "1": 8,
+        "2": 1,
+        "3": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.2,
+      "datasets": 10,
+      "event_count": 2,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.2,
+        0.2
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mnar",
+      "median_ari_loss_on_common": -0.38238772741503463,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.02521072632683336,
+        0.5560954623076415
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.3812573451649261,
+      "resolved_fraction_mean": 0.223046875,
+      "retained_fraction": 0.253125,
+      "selected_k_counts": {
+        "1": 5,
+        "2": 2,
+        "3": 2,
+        "4": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.08772420028831696,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.544764988751413,
+      "resolved_fraction_mean": 0.253125,
+      "retained_fraction": 0.253125,
+      "selected_k_counts": {
+        "3": 2,
+        "4": 8
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.29209456141738877,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.904296875,
+      "retained_fraction": 0.9921875,
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.29209456141738877,
+      "mask": "mnar",
+      "median_ari_loss_on_common": 0.3112096958968974,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.178553569415333,
+      "resolved_fraction_mean": 0.9921875,
+      "retained_fraction": 0.9921875,
+      "selected_k_counts": {
+        "1": 2,
+        "3": 4,
+        "4": 4
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "oracle",
+      "median_ari_loss_on_common": null,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "complete",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.9921875,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "oracle",
+      "median_ari_loss_on_common": null,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete",
+      "resolved_ari_median": 0.49246502229009304,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.140625,
+      "retained_fraction": 0.16015625,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.0,
+      "mask": "pattern",
+      "median_ari_loss_on_common": -0.0035654081720776776,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "complete_case",
+      "resolved_ari_median": 0.4772001759820643,
+      "resolved_fraction_mean": 0.16015625,
+      "retained_fraction": 0.16015625,
+      "selected_k_counts": {
+        "3": 4,
+        "4": 6
+      },
+      "successful": 10
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "conditional_rate": 0.0,
+      "datasets": 10,
+      "event_count": 0,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "imputed_fraction_mean": 0.29814453125,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.0,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.0,
+      "resolved_fraction_mean": 0.862109375,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "conditional_rate": 0.1,
+      "datasets": 10,
+      "event_count": 1,
+      "event_definition": "correct_generating_k",
+      "failed_or_blocked": 0,
+      "failure_identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "imputed_fraction_mean": 0.29814453125,
+      "mask": "pattern",
+      "median_ari_loss_on_common": 0.2070293491241816,
+      "n": 256,
+      "pointwise_exact_95": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "policy": "mean",
+      "resolved_ari_median": 0.27023114865148623,
+      "resolved_fraction_mean": 1.0,
+      "retained_fraction": 1.0,
+      "selected_k_counts": {
+        "1": 4,
+        "2": 1,
+        "3": 4,
+        "4": 1
+      },
+      "successful": 10
+    }
+  ],
+  "schema_version": 1,
+  "status": "passed",
+  "uncertainty_unit": "independent raw dataset within each cell; masks/draws repeated"
+}

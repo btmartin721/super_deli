@@ -1,0 +1,711 @@
+{
+  "interpretation": "Native K frequencies conditional on mask/policy; not cluster recovery or species probability",
+  "records": [
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "complete_case",
+      "replicate": 0
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "complete_case",
+      "replicate": 0
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 9,
+        "3": 1
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 0.9,
+      "policy": "mean",
+      "replicate": 0
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "mean",
+      "replicate": 0
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "complete_case",
+      "replicate": 1
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "complete_case",
+      "replicate": 1
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 9,
+        "2": 1
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 0.9,
+      "policy": "mean",
+      "replicate": 1
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "mean",
+      "replicate": 1
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 8,
+        "3": 2
+      },
+      "n": 256,
+      "point_k": 1,
+      "point_k_frequency": 0.8,
+      "policy": "complete_case",
+      "replicate": 0
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 256,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "complete_case",
+      "replicate": 0
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 7,
+        "2": 3
+      },
+      "n": 256,
+      "point_k": 1,
+      "point_k_frequency": 0.7,
+      "policy": "mean",
+      "replicate": 0
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 256,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "mean",
+      "replicate": 0
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 6,
+        "2": 4
+      },
+      "n": 256,
+      "point_k": 1,
+      "point_k_frequency": 0.6,
+      "policy": "complete_case",
+      "replicate": 1
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 256,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "complete_case",
+      "replicate": 1
+    },
+    {
+      "arm": "gmm",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "2": 8,
+        "4": 2
+      },
+      "n": 256,
+      "point_k": 2,
+      "point_k_frequency": 0.8,
+      "policy": "mean",
+      "replicate": 1
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 256,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "mean",
+      "replicate": 1
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "complete_case",
+      "replicate": 0
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "complete_case",
+      "replicate": 0
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 2,
+        "2": 1,
+        "3": 5,
+        "4": 2
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 0.2,
+      "policy": "mean",
+      "replicate": 0
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "mean",
+      "replicate": 0
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 1,
+        "2": 9
+      },
+      "n": 64,
+      "point_k": 3,
+      "point_k_frequency": 0.0,
+      "policy": "complete_case",
+      "replicate": 1
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 9,
+        "2": 1
+      },
+      "n": 64,
+      "point_k": 3,
+      "point_k_frequency": 0.0,
+      "policy": "complete_case",
+      "replicate": 1
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "2": 3,
+        "3": 4,
+        "4": 3
+      },
+      "n": 64,
+      "point_k": 3,
+      "point_k_frequency": 0.4,
+      "policy": "mean",
+      "replicate": 1
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "mean",
+      "replicate": 1
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "3": 4,
+        "4": 6
+      },
+      "n": 256,
+      "point_k": 3,
+      "point_k_frequency": 0.4,
+      "policy": "complete_case",
+      "replicate": 0
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 5,
+        "3": 1,
+        "4": 4
+      },
+      "n": 256,
+      "point_k": 4,
+      "point_k_frequency": 0.4,
+      "policy": "complete_case",
+      "replicate": 0
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "3": 1,
+        "4": 9
+      },
+      "n": 256,
+      "point_k": 4,
+      "point_k_frequency": 0.9,
+      "policy": "mean",
+      "replicate": 0
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 256,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "mean",
+      "replicate": 0
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "3": 3,
+        "4": 7
+      },
+      "n": 256,
+      "point_k": 3,
+      "point_k_frequency": 0.3,
+      "policy": "complete_case",
+      "replicate": 1
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "3": 6,
+        "4": 4
+      },
+      "n": 256,
+      "point_k": 4,
+      "point_k_frequency": 0.4,
+      "policy": "complete_case",
+      "replicate": 1
+    },
+    {
+      "arm": "gmm",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "3": 1,
+        "4": 9
+      },
+      "n": 256,
+      "point_k": 4,
+      "point_k_frequency": 0.9,
+      "policy": "mean",
+      "replicate": 1
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 256,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "mean",
+      "replicate": 1
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 64,
+      "point_k": 2,
+      "point_k_frequency": 0.0,
+      "policy": "complete_case",
+      "replicate": 0
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "complete_case",
+      "replicate": 0
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 8,
+        "2": 1,
+        "4": 1
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 0.8,
+      "policy": "mean",
+      "replicate": 0
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "mean",
+      "replicate": 0
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 8,
+        "2": 2
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 0.8,
+      "policy": "complete_case",
+      "replicate": 1
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "complete_case",
+      "replicate": 1
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 4,
+        "2": 2,
+        "3": 3,
+        "4": 1
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 0.4,
+      "policy": "mean",
+      "replicate": 1
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 64,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "mean",
+      "replicate": 1
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "3": 6,
+        "4": 4
+      },
+      "n": 256,
+      "point_k": 3,
+      "point_k_frequency": 0.6,
+      "policy": "complete_case",
+      "replicate": 0
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 256,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "complete_case",
+      "replicate": 0
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "2": 2,
+        "3": 5,
+        "4": 3
+      },
+      "n": 256,
+      "point_k": 1,
+      "point_k_frequency": 0.0,
+      "policy": "mean",
+      "replicate": 0
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 256,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "mean",
+      "replicate": 0
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "3": 2,
+        "4": 8
+      },
+      "n": 256,
+      "point_k": 4,
+      "point_k_frequency": 0.8,
+      "policy": "complete_case",
+      "replicate": 1
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 9,
+        "2": 1
+      },
+      "n": 256,
+      "point_k": 1,
+      "point_k_frequency": 0.9,
+      "policy": "complete_case",
+      "replicate": 1
+    },
+    {
+      "arm": "gmm",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "2": 2,
+        "3": 4,
+        "4": 4
+      },
+      "n": 256,
+      "point_k": 1,
+      "point_k_frequency": 0.0,
+      "policy": "mean",
+      "replicate": 1
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "draws": 10,
+      "failed": 0,
+      "k_counts": {
+        "1": 10
+      },
+      "n": 256,
+      "point_k": 1,
+      "point_k_frequency": 1.0,
+      "policy": "mean",
+      "replicate": 1
+    }
+  ],
+  "status": "passed"
+}

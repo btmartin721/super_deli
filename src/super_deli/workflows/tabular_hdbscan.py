@@ -13,7 +13,9 @@ from super_deli.io.tabular import ingest_tabular
 from super_deli.models.hdbscan_config import HDBSCANConfig
 
 
-def run_tabular_hdbscan(dataset, *, model_config, base_dir, output_dir, modality_name=None):
+def run_tabular_hdbscan(
+    dataset, *, model_config, base_dir, output_dir, modality_name=None, preprocessing_context=None
+):
     dataset = config_from_dict(dataset.to_dict())
     config = HDBSCANConfig.from_dict(model_config.to_dict())
     selected = [
@@ -42,7 +44,11 @@ def run_tabular_hdbscan(dataset, *, model_config, base_dir, output_dir, modality
             modality_names=[selected[0].name],
         )
         table = loaded.tables[0]
-        fit = fit_tabular_hdbscan(table, config=config)
+        if preprocessing_context is None:
+            fit = fit_tabular_hdbscan(table, config=config)
+        else:
+            fit = fit_tabular_hdbscan(table, config=config, context=preprocessing_context)
+            preprocessing_context.save(out)
         with (out / "point.npz").open("xb") as f:
             np.savez_compressed(f, **point_arrays(fit.point))
         with (out / "stability.npz").open("xb") as f:
@@ -84,6 +90,8 @@ def run_tabular_hdbscan(dataset, *, model_config, base_dir, output_dir, modality
             "model": config.to_dict(),
             "modality": table.modality_name,
         }
+        if preprocessing_context is not None:
+            configuration["preprocessing_context"] = preprocessing_context.declaration()
         summary = {
             "schema_version": 1,
             "status": "complete",
@@ -120,8 +128,13 @@ def run_tabular_hdbscan(dataset, *, model_config, base_dir, output_dir, modality
             },
             "artifacts": {p.name: fingerprint_file(p).sha256 for p in out.iterdir() if p.is_file()},
         }
+        if preprocessing_context is not None:
+            summary["schema_version"] = 2
+            summary["effective_preprocessing"] = preprocessing_context.declaration()
         write_json(summary, out / "summary.json")
         return summary
     except Exception as exc:
+        if preprocessing_context is not None:
+            preprocessing_context.save(out)
         write_json({"status": "failed", "error": str(exc)}, out / "failure.json")
         raise

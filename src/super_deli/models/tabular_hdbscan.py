@@ -39,12 +39,15 @@ class DensityFit:
     config: HDBSCANConfig
 
 
-def prepare_density_table(table, config):
+def prepare_density_table(table, config, *, context=None):
     """Reuse the existing table contract and reject unsupported analytical types."""
-    x, names, types = _matrix(table, config.preprocessing_config())
+    prep = context.density_config(config) if context is not None else config.preprocessing_config()
+    x, names, types = _matrix(table, prep)
+    if context is not None:
+        context.check_budget(x, config.n_subsamples + 1, config.max_working_bytes)
     if set(types) != {"continuous"}:
         raise ValueError("HDBSCAN currently requires continuous analytical features")
-    if not np.isfinite(x).all():
+    if context is None and not np.isfinite(x).all():
         raise ValueError("HDBSCAN currently requires complete finite values")
     # Includes a conservative quadratic distance workspace, even for tree paths.
     if 64 * len(x) ** 2 + 160 * x.size > config.max_working_bytes:
@@ -60,9 +63,11 @@ def prepare_density_table(table, config):
     return x, names, types
 
 
-def fit_density_once(x, names, types, config):
+def fit_density_once(x, names, types, config, *, context=None):
     """No prediction interface: labels and strengths belong only to training units."""
-    model, scores = fit_tabular_pca(x, names, types, config.preprocessing_config())
+    prep = context.density_config(config) if context is not None else config.preprocessing_config()
+    fitter = context.fit_pca if context is not None else fit_tabular_pca
+    model, scores = fitter(x, names, types, prep)
     estimator = HDBSCAN(
         min_cluster_size=config.min_cluster_size,
         min_samples=config.min_samples,
@@ -82,7 +87,10 @@ def fit_density_once(x, names, types, config):
         or np.any(strength[labels < 0] != 0)
     ):
         raise ValueError("Invalid density labels or membership strength")
-    return DensityPoint(model, scores, labels.copy(), strength.copy())
+    point = DensityPoint(model, scores, labels.copy(), strength.copy())
+    if context is not None:
+        context.capture_density(point)
+    return point
 
 
 def point_arrays(point):
@@ -102,13 +110,14 @@ def point_arrays(point):
     }
 
 
-def fit_tabular_hdbscan(table, *, config):
+def fit_tabular_hdbscan(table, *, config, context=None):
     config = HDBSCANConfig.from_dict(config.to_dict())
-    x, names, types = prepare_density_table(table, config)
+    context_args = {} if context is None else {"context": context}
+    x, names, types = prepare_density_table(table, config, **context_args)
     arrays, records = {}, []
     with FIT_LOCK, threadpool_limits(limits=1):
         try:
-            point = fit_density_once(x, names, types, config)
+            point = fit_density_once(x, names, types, config, **context_args)
         except (FloatingPointError, np.linalg.LinAlgError) as exc:
             raise ValueError(f"Numerical HDBSCAN/PCA failure: {exc}") from exc
         for i, indices in enumerate(
@@ -124,7 +133,7 @@ def fit_tabular_hdbscan(table, *, config):
                 "unit_ids": [table.unit_ids[j] for j in indices],
             }
             try:
-                refit = fit_density_once(x[indices], names, types, config)
+                refit = fit_density_once(x[indices], names, types, config, **context_args)
                 arrays.update({f"draw_{i}_{key}": val for key, val in point_arrays(refit).items()})
                 record.update(
                     status="complete",

@@ -71,6 +71,10 @@ class TabularAnalysisConfig:
 
     @classmethod
     def from_dict(cls, value):
+        if isinstance(value, dict) and value.get("schema_version") == 2:
+            from super_deli.models.tabular_missing_config import TabularMissingAnalysisConfig
+
+            return TabularMissingAnalysisConfig.from_dict(value)
         if not isinstance(value, dict) or set(value) != {"schema_version", "arms"}:
             raise ValueError("Analysis requires exactly schema_version and arms")
         if not isinstance(value["arms"], (list, tuple)):

@@ -22,6 +22,7 @@ def run_tabular_gmm(
     base_dir: str | Path,
     output_dir: str | Path,
     modality_name: str | None = None,
+    preprocessing_context=None,
 ) -> dict:
     dataset = config_from_dict(dataset.to_dict())
     model_config = TabularClusterConfig.from_dict(model_config.to_dict())
@@ -51,12 +52,18 @@ def run_tabular_gmm(
             modality_names=[selected[0].name],
         )
         table = loaded.tables[0]
-        fit = fit_tabular_gmm(table, config=model_config)
+        if preprocessing_context is None:
+            fit = fit_tabular_gmm(table, config=model_config)
+        else:
+            fit = fit_tabular_gmm(table, config=model_config, context=preprocessing_context)
+            preprocessing_context.save(destination)
         configuration = {
             "dataset": dataset.to_dict(),
             "model": model_config.to_dict(),
             "modality": table.modality_name,
         }
+        if preprocessing_context is not None:
+            configuration["preprocessing_context"] = preprocessing_context.declaration()
         digest = configuration_hash(configuration)
         result = candidate_result(
             dataset,
@@ -165,8 +172,13 @@ def run_tabular_gmm(
                 },
             },
         }
+        if preprocessing_context is not None:
+            summary["schema_version"] = 2
+            summary["effective_preprocessing"] = preprocessing_context.declaration()
         write_json(summary, destination / "summary.json")
         return summary
     except Exception as exc:
+        if preprocessing_context is not None:
+            preprocessing_context.save(destination)
         write_json({"status": "failed", "error": str(exc)}, destination / "failure.json")
         raise

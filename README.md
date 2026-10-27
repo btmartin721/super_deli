@@ -521,3 +521,7 @@ contracts and existing defaults remain intact; it selects no winning species par
 
 The [fit-free amphipod pilot protocol](docs/amphipod-pilot.md) freezes raw morphology
 rosters and reports cohort feasibility while retaining unresolved inference gates.
+
+The [opt-in missing-data comparison](docs/tabular-missing.md) compares complete
+cases with training-only mean filling and preserves explicit coverage, failure
+and uncertainty limits. See [the sensitivity results](docs/tabular-missing-results.md).

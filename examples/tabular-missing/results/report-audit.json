@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "independent_rate_cells": 132,
+  "datasets_per_cell": 10,
+  "all_exact_intervals_recomputed": true,
+  "retention_and_failure_denominators_recomputed": true,
+  "native_stability_records": 48,
+  "unpooled_native_draws": 480,
+  "point_failures": 0,
+  "draw_failures": 0,
+  "no_new_pipeline_fits": true
+}

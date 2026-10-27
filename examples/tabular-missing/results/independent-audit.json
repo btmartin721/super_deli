@@ -1,0 +1,11 @@
+{
+  "blocked_replays": 0,
+  "exact_replays": 36,
+  "new_selection_or_orchestration_imported": false,
+  "observations": 60,
+  "phase": "main",
+  "planned_pipeline_fits": 1836,
+  "retained_draws": 480,
+  "status": "passed",
+  "successful_training_model_checks": 1800
+}

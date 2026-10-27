@@ -40,7 +40,7 @@ def _csv(path, rows):
         writer.writerows(rows)
 
 
-def _native(arm, dataset, base_dir, output_dir, modality_name):
+def _native(arm, dataset, base_dir, output_dir, modality_name, context=None):
     if arm.family == "gmm":
         from super_deli.workflows.tabular_gmm import run_tabular_gmm
 
@@ -49,12 +49,19 @@ def _native(arm, dataset, base_dir, output_dir, modality_name):
         from super_deli.workflows.tabular_hdbscan import run_tabular_hdbscan
 
         workflow = run_tabular_hdbscan
+    kwargs = {}
+    model = arm.model
+    if context is not None:
+        kwargs["preprocessing_context"] = context
+        if arm.family == "gmm":
+            model = replace(model, missing_policy="mean" if context.policy == "mean" else "error")
     return workflow(
         dataset,
-        model_config=arm.model,
+        model_config=model,
         base_dir=base_dir,
         output_dir=output_dir,
         modality_name=modality_name,
+        **kwargs,
     )
 
 
@@ -102,13 +109,33 @@ def _same_preprocessing(reference, current):
             raise ValueError(f"Child preprocessing mismatch: {name}")
 
 
-def run_tabular_analysis(dataset, *, analysis_config, base_dir, output_dir, modality_name=None):
+def run_tabular_analysis(
+    dataset,
+    *,
+    analysis_config,
+    base_dir,
+    output_dir,
+    modality_name=None,
+    _preprocessing_policy=None,
+):
     """Freeze one input, run independent arms and retain partial results on failures.
 
     Native numerical engines, seeds and output formats are preserved. The input
     is copied before fitting; later changes to the caller's source cannot alter
     the cohort seen by subsequent arms.
     """
+    from super_deli.models.tabular_missing_config import TabularMissingAnalysisConfig
+
+    if isinstance(analysis_config, TabularMissingAnalysisConfig):
+        from super_deli.workflows.tabular_missing import run_missing_analysis
+
+        return run_missing_analysis(
+            dataset,
+            analysis_config=analysis_config,
+            base_dir=base_dir,
+            output_dir=output_dir,
+            modality_name=modality_name,
+        )
     config = TabularAnalysisConfig.from_dict(analysis_config.to_dict())
     dataset = config_from_dict(dataset.to_dict())
     selected = [
@@ -134,17 +161,24 @@ def run_tabular_analysis(dataset, *, analysis_config, base_dir, output_dir, moda
         ):
             raise OSError("Input changed while freezing the source")
         frozen = replace(dataset, modalities=(replace(modality, path=snapshot.name),))
-        write_json(
-            {
-                "schema_version": 1,
-                "source": asdict(before),
-                "dataset": dataset.to_dict(),
-                "frozen_dataset": frozen.to_dict(),
-                "analysis": config.to_dict(),
-                "configuration_sha256": configuration_hash(config.to_dict()),
-            },
-            out / "manifest.json",
-        )
+        manifest = {
+            "schema_version": 1,
+            "source": asdict(before),
+            "dataset": dataset.to_dict(),
+            "frozen_dataset": frozen.to_dict(),
+            "analysis": config.to_dict(),
+            "configuration_sha256": configuration_hash(config.to_dict()),
+        }
+        if _preprocessing_policy is not None:
+            manifest["schema_version"] = 2
+            manifest["effective_preprocessing_policy"] = _preprocessing_policy
+            manifest["configuration_sha256"] = configuration_hash(
+                {
+                    "analysis": config.to_dict(),
+                    "effective_preprocessing_policy": _preprocessing_policy,
+                }
+            )
+        write_json(manifest, out / "manifest.json")
         loaded = ingest_tabular(frozen, base_dir=out, output_dir=out / "cohort")
         table = loaded.tables[0]
         # Reuse the density family's complete-continuous validation for every arm,
@@ -153,6 +187,11 @@ def run_tabular_analysis(dataset, *, analysis_config, base_dir, output_dir, moda
         from super_deli.models.tabular_hdbscan import prepare_density_table
 
         common = config.arms[0].model
+        validation_kwargs = {}
+        if _preprocessing_policy is not None:
+            from super_deli.models.tabular_missing import TrainingContext
+
+            validation_kwargs["context"] = TrainingContext(_preprocessing_policy)
         prepare_density_table(
             table,
             HDBSCANConfig(
@@ -163,6 +202,7 @@ def run_tabular_analysis(dataset, *, analysis_config, base_dir, output_dir, moda
                 max_working_bytes=common.max_working_bytes,
                 max_pairwise_bytes=common.max_pairwise_bytes,
             ),
+            **validation_kwargs,
         )
         (out / "arms").mkdir()
         rows, points, reference = [], {}, None
@@ -184,7 +224,17 @@ def run_tabular_analysis(dataset, *, analysis_config, base_dir, output_dir, moda
             try:
                 if fingerprint_file(snapshot).sha256 != before.sha256:
                     raise ValueError("Frozen input hash mismatch")
-                _native(arm, frozen, out, child, modality.name)
+                if _preprocessing_policy is None:
+                    _native(arm, frozen, out, child, modality.name)
+                else:
+                    _native(
+                        arm,
+                        frozen,
+                        out,
+                        child,
+                        modality.name,
+                        TrainingContext(_preprocessing_policy),
+                    )
                 summary, prep, point = _read_point(
                     arm, child, table.unit_ids, table.observation_ids, before.sha256
                 )
@@ -260,6 +310,9 @@ def run_tabular_analysis(dataset, *, analysis_config, base_dir, output_dir, moda
             "inference": {"status": "not_computed", "p_value": None},
             "source_sha256": before.sha256,
         }
+        if _preprocessing_policy is not None:
+            summary["schema_version"] = 2
+            summary["effective_preprocessing_policy"] = _preprocessing_policy
         write_json(comparisons, out / "comparisons.json")
         columns = (
             "name",

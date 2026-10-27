@@ -189,28 +189,37 @@ def fit_tabular_pca(x, names, types, config):
     return model, scores
 
 
-def _fit_once(x, names, types, config, seed, indices=None):
-    model, scores = fit_tabular_pca(x, names, types, config)
+def _fit_once(x, names, types, config, seed, indices=None, context=None):
+    fitter = context.fit_pca if context is not None else fit_tabular_pca
+    model, scores = fitter(x, names, types, config)
     mixture = select_gaussian_mixture(
         scores, config, seed, covariance_type="full", unit_indices=indices
     )
-    return TabularPipelineFit(model, scores, mixture)
+    fitted = TabularPipelineFit(model, scores, mixture)
+    if context is not None:
+        context.capture_mixture(fitted)
+    return fitted
 
 
-def fit_tabular_gmm(table: TabularTable, *, config: TabularClusterConfig) -> TabularMixtureFit:
+def fit_tabular_gmm(
+    table: TabularTable, *, config: TabularClusterConfig, context=None
+) -> TabularMixtureFit:
     """Fit candidate numeric groups at the table's level; no cross-modality fusion."""
     config = TabularClusterConfig.from_dict(config.to_dict())
     x, names, types = _matrix(table, config)
+    context_args = {} if context is None else {"context": context}
+    if context is not None:
+        context.check_budget(x, config.n_bootstrap + 1, config.max_working_bytes)
     seeds = np.random.SeedSequence(config.random_seed).spawn(config.n_bootstrap + 1)
     point_seed = int(seeds[0].generate_state(1)[0])
     with FIT_LOCK, threadpool_limits(limits=config.n_threads):
         try:
-            fitted = _fit_once(x, names, types, config, point_seed)
+            fitted = _fit_once(x, names, types, config, point_seed, **context_args)
         except (FloatingPointError, np.linalg.LinAlgError) as exc:
             raise ValueError(f"Numerical preprocessing/PCA failure: {exc}") from exc
 
         def fit_predict(indices, seed):
-            refit = _fit_once(x[indices], names, types, config, seed, indices)
+            refit = _fit_once(x[indices], names, types, config, seed, indices, **context_args)
             scores = project_tabular_pca(x, model=refit.model)
             probabilities = refit.mixture.mixture.predict_proba(scores)
             if not np.isfinite(probabilities).all():

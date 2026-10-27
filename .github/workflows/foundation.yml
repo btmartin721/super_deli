@@ -121,6 +121,11 @@ jobs:
                   print(f"--- {path.relative_to(root)} ---")
                   print(path.read_text(errors="replace")[-4000:])
           PYCODE
+      - name: Check opt-in missing tabular installed workflow
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/tabular-missing/smoke.py" --output-dir "$RUNNER_TEMP/tabular-missing-smoke"
       - name: Check fit-free amphipod pilot feasibility
         working-directory: ${{ runner.temp }}
         run: |

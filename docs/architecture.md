@@ -260,7 +260,7 @@ reference labels need independent evidence and documented uncertainty.
 33. **Completed:** Unified one-table PCA/GMM and PCA/HDBSCAN orchestration with coverage-explicit comparison and separate native stability.
 34. **Completed:** Unified grouped morphology/ecology comparisons with explicit counts, native selection/stability boundaries and standalone parity.
 35. **Completed:** Freeze the fit-free amphipod morphology pilot protocol and four trait/sex feasibility rosters. Independent raw-cell accounting verifies the sparse molecular overlap; executable fitting, resampling, significance and species validation remain blocked pending justified sampling/dependence and reference evidence.
-36. Broader missing/unpaired/mixed-feature inference and calibrated uncertainty.
+36. **Baseline completed:** Opt-in one-table complete-case/observed-mean policy comparison with refitted native stability, frozen simulation sensitivity and explicit retention/geometric-loss limits. Broader missing/unpaired/mixed-feature models and calibrated missing-value uncertainty remain pending.
 37. Anatomical landmark learning, semilandmark sliding and further model families.
 38. Consolidated user guidance, end-to-end examples and a scoped research release.
 
@@ -418,3 +418,9 @@ comparison design. Sampling-dependent fitting, resampling, significance and spec
 validation remain blocked; the next empirical analysis requires an explicit
 dependence interpretation and sufficient documented reference coverage. See
 [the findings](amphipod-pilot-results.md).
+
+The [missing-data tabular interface](tabular-missing.md) preserves the complete-data
+default and adds versioned policy/cohort accounting with per-training-fit
+imputation. Its [validation](tabular-missing-results.md) documents greater
+retention alongside distorted geometry and spurious Gaussian partitions; it
+promotes no default or empirical inference gate.
