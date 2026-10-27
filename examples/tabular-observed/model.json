@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "feature_names": [
+    "trait_0",
+    "trait_1",
+    "trait_2",
+    "trait_3"
+  ],
+  "max_k": 2,
+  "n_init": 2
+}

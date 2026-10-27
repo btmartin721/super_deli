@@ -261,6 +261,7 @@ reference labels need independent evidence and documented uncertainty.
 34. **Completed:** Unified grouped morphology/ecology comparisons with explicit counts, native selection/stability boundaries and standalone parity.
 35. **Completed:** Freeze the fit-free amphipod morphology pilot protocol and four trait/sex feasibility rosters. Independent raw-cell accounting verifies the sparse molecular overlap; executable fitting, resampling, significance and species validation remain blocked pending justified sampling/dependence and reference evidence.
 36. **Baseline completed:** Opt-in one-table complete-case/observed-mean policy comparison with refitted native stability, frozen simulation sensitivity and explicit retention/geometric-loss limits. Broader missing/unpaired/mixed-feature models and calibrated missing-value uncertainty remain pending.
+37. **Baseline completed:** Opt-in observed-coordinate GMM for incomplete continuous tables, with constrained conditional-moment EM, point-only BIC selection, retained failure evidence and raw-feature simulation comparisons. Resampling, significance calibration and grouped/integrative observed-data adapters remain pending.
 37. Anatomical landmark learning, semilandmark sliding and further model families.
 38. Consolidated user guidance, end-to-end examples and a scoped research release.
 
@@ -424,3 +425,13 @@ default and adds versioned policy/cohort accounting with per-training-fit
 imputation. Its [validation](tabular-missing-results.md) documents greater
 retention alongside distorted geometry and spurious Gaussian partitions; it
 promotes no default or empirical inference gate.
+
+### Observed-coordinate Gaussian-mixture baseline
+
+`models.observed_config`, `observed_likelihood` and `observed_gmm` isolate the
+point-only observed-coordinate likelihood, constrained conditional-moment EM and
+multistart candidate selection. `workflows.observed_gmm` reuses typed ingestion
+and existing eligibility accounting without routing through PCA.
+`benchmarking.observed_audit` reconstructs densities and updates independently
+of the fitting implementation. This opt-in workflow adds no significance test,
+resampling adapter or empirical readiness claim. See [the contract](tabular-observed.md).

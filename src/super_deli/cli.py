@@ -144,6 +144,13 @@ def main(argv: list[str] | None = None) -> int:
     tabular_cluster.add_argument("--model-config", type=Path, required=True)
     tabular_cluster.add_argument("--modality", help="Select exactly one morphology/ecology table")
     tabular_cluster.add_argument("--output-dir", type=Path, required=True)
+    observed = commands.add_parser(
+        "cluster-tabular-observed", help="Fit continuous features with observed-data GMM"
+    )
+    observed.add_argument("config", type=Path)
+    observed.add_argument("--model-config", type=Path, required=True)
+    observed.add_argument("--modality")
+    observed.add_argument("--output-dir", type=Path, required=True)
     grouped = commands.add_parser(
         "analyze-grouped-tabular", help="Compare grouped morphology/ecology models"
     )
@@ -1029,6 +1036,19 @@ def main(argv: list[str] | None = None) -> int:
             )
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
             return 0 if summary["stability"]["status"] in {"complete", "not_computed"} else 1
+        if args.command == "cluster-tabular-observed":
+            from super_deli.models.observed_config import ObservedGMMConfig
+            from super_deli.workflows.observed_gmm import run_observed_gmm
+
+            summary = run_observed_gmm(
+                config,
+                model_config=ObservedGMMConfig.from_dict(read_json(args.model_config)),
+                base_dir=source.parent,
+                output_dir=args.output_dir,
+                modality_name=args.modality,
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0 if summary["status"] == "complete" else 1
         if args.command == "cluster-tabular":
             from super_deli.models.tabular_cluster_config import TabularClusterConfig
             from super_deli.workflows.tabular_gmm import run_tabular_gmm

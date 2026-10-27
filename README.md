@@ -525,3 +525,8 @@ rosters and reports cohort feasibility while retaining unresolved inference gate
 The [opt-in missing-data comparison](docs/tabular-missing.md) compares complete
 cases with training-only mean filling and preserves explicit coverage, failure
 and uncertainty limits. See [the sensitivity results](docs/tabular-missing-results.md).
+
+The opt-in [observed-data GMM](docs/tabular-observed.md) fits incomplete continuous
+traits directly in raw feature space, retaining conditional-moment EM diagnostics.
+It provides point clusters and conditional memberships, without new p-values or
+a species-boundary guarantee; existing workflows and defaults are preserved.

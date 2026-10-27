@@ -1,0 +1,7396 @@
+{
+  "cells": [
+    {
+      "arm": "observed",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 397,
+        "failed_starts": 3,
+        "k4_eligible": 7,
+        "k4_status_counts": {
+          "eligible": 7,
+          "small_component": 3
+        },
+        "mean_complete_prediction": -5.817000358271191,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 1.0,
+      "mean_log_density": -5.229320838327267,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 5,
+        "k4_status_counts": {
+          "eligible": 5,
+          "small_component": 5
+        },
+        "mean_complete_prediction": -5.8798231760935575,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 1.0,
+      "mean_log_density": -5.284691384856904,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.66875,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 7,
+        "k4_status_counts": {
+          "eligible": 7,
+          "small_component": 3
+        },
+        "mean_complete_prediction": -5.819368125570742,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 1.0,
+      "mean_log_density": -5.232837659454047,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 4,
+        "k4_status_counts": {
+          "eligible": 4,
+          "small_component": 6
+        },
+        "mean_complete_prediction": -5.789028478189296,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 1.0,
+      "mean_log_density": -5.207399648445114,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 325,
+        "failed_starts": 75,
+        "k4_eligible": 7,
+        "k4_status_counts": {
+          "eligible": 7,
+          "small_component": 3
+        },
+        "mean_complete_prediction": -14.129772417121282,
+        "mean_membership_entropy": 0.07362857814008911,
+        "selected_bound_active": 2,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.7,
+      "mean_log_density": -6.319080172070935,
+      "mean_reference_common_ari": 0.7,
+      "mean_retention": 0.990625,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.3475471499399921,
+            0.9332604888222655
+          ],
+          "count": 7,
+          "failure_bounds": [
+            0.7,
+            0.7
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.06673951117773447,
+            0.652452850060008
+          ],
+          "count": 3,
+          "failure_bounds": [
+            0.3,
+            0.3
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 7,
+        "2": 2,
+        "3": 1,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 270,
+        "failed_starts": 0,
+        "k4_eligible": 0,
+        "k4_status_counts": {
+          "insufficient_samples": 10
+        },
+        "mean_complete_prediction": -8.056911033086035,
+        "mean_membership_entropy": 0.0003600426418867816,
+        "selected_bound_active": 2,
+        "start_attempts": 270
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.7,
+      "mean_log_density": -5.224042481109072,
+      "mean_reference_common_ari": 0.7,
+      "mean_retention": 0.2453125,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.3475471499399921,
+            0.9332604888222655
+          ],
+          "count": 7,
+          "failure_bounds": [
+            0.7,
+            0.7
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.06673951117773447,
+            0.652452850060008
+          ],
+          "count": 3,
+          "failure_bounds": [
+            0.3,
+            0.3
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 7,
+        "2": 3,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 7,
+        "k4_status_counts": {
+          "eligible": 7,
+          "small_component": 3
+        },
+        "mean_complete_prediction": -7.096483914139125,
+        "mean_membership_entropy": 0.04654815145902304,
+        "selected_bound_active": 8,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.2,
+      "mean_log_density": -4.701497269466477,
+      "mean_reference_common_ari": 0.2,
+      "mean_retention": 0.990625,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.025210726326833497,
+            0.5560954623076415
+          ],
+          "count": 2,
+          "failure_bounds": [
+            0.2,
+            0.2
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.4439045376923585,
+            0.9747892736731665
+          ],
+          "count": 8,
+          "failure_bounds": [
+            0.8,
+            0.8
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 2,
+        "2": 5,
+        "3": 1,
+        "4": 2
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 4,
+        "k4_status_counts": {
+          "eligible": 4,
+          "small_component": 6
+        },
+        "mean_complete_prediction": -5.789028478189296,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.064087593004308,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 355,
+        "failed_starts": 45,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -5.888096914487286,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.086642226871682,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 370,
+        "failed_starts": 0,
+        "k4_eligible": 1,
+        "k4_status_counts": {
+          "eligible": 1,
+          "insufficient_samples": 3,
+          "small_component": 6
+        },
+        "mean_complete_prediction": -8.992187113253516,
+        "mean_membership_entropy": 0.007218184578014229,
+        "selected_bound_active": 3,
+        "start_attempts": 370
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 0.5,
+      "mean_log_density": -5.795147746498393,
+      "mean_reference_common_ari": 0.5,
+      "mean_retention": 0.3609375,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.1870860284474045,
+            0.8129139715525955
+          ],
+          "count": 5,
+          "failure_bounds": [
+            0.5,
+            0.5
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.1870860284474045,
+            0.8129139715525955
+          ],
+          "count": 5,
+          "failure_bounds": [
+            0.5,
+            0.5
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 5,
+        "2": 2,
+        "3": 3,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 6,
+        "k4_status_counts": {
+          "eligible": 6,
+          "small_component": 4
+        },
+        "mean_complete_prediction": -7.3051870738799725,
+        "mean_membership_entropy": 0.03451417793812237,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 0.0,
+      "mean_log_density": -4.690223645422586,
+      "mean_reference_common_ari": 0.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 4,
+        "3": 3,
+        "4": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 7,
+        "k4_status_counts": {
+          "eligible": 7,
+          "small_component": 3
+        },
+        "mean_complete_prediction": -5.789028478189296,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.036429331634981,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 326,
+        "failed_starts": 74,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -18.22355355567378,
+        "mean_membership_entropy": 0.05952768918747007,
+        "selected_bound_active": 2,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.7,
+      "mean_log_density": -7.621762808540376,
+      "mean_reference_common_ari": 0.7,
+      "mean_retention": 0.9953125,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.3475471499399921,
+            0.9332604888222655
+          ],
+          "count": 7,
+          "failure_bounds": [
+            0.7,
+            0.7
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.06673951117773447,
+            0.652452850060008
+          ],
+          "count": 3,
+          "failure_bounds": [
+            0.3,
+            0.3
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 7,
+        "2": 2,
+        "3": 1,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 290,
+        "failed_starts": 0,
+        "k4_eligible": 0,
+        "k4_status_counts": {
+          "insufficient_samples": 8,
+          "small_component": 2
+        },
+        "mean_complete_prediction": -9.226415363616647,
+        "mean_membership_entropy": 0.0010684963683739606,
+        "selected_bound_active": 1,
+        "start_attempts": 290
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.8,
+      "mean_log_density": -5.010148814134572,
+      "mean_reference_common_ari": 0.8,
+      "mean_retention": 0.246875,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.4439045376923585,
+            0.9747892736731665
+          ],
+          "count": 8,
+          "failure_bounds": [
+            0.8,
+            0.8
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.025210726326833497,
+            0.5560954623076415
+          ],
+          "count": 2,
+          "failure_bounds": [
+            0.2,
+            0.2
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 8,
+        "2": 2,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -8.325584551787935,
+        "mean_membership_entropy": 0.08156966858310954,
+        "selected_bound_active": 7,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.1,
+      "mean_log_density": -4.90617043792809,
+      "mean_reference_common_ari": 0.1,
+      "mean_retention": 0.9953125,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0025285785444625728,
+            0.44501611702819543
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.5549838829718047,
+            0.9974714214555375
+          ],
+          "count": 9,
+          "failure_bounds": [
+            0.9,
+            0.9
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 1,
+        "2": 4,
+        "3": 2,
+        "4": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 5,
+        "k4_status_counts": {
+          "eligible": 5,
+          "small_component": 5
+        },
+        "mean_complete_prediction": -5.789028478189296,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.08082722587585,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 282,
+        "failed_starts": 118,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "numerical_failure": 1
+        },
+        "mean_complete_prediction": -5.857569896502745,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 1,
+      "mask": "pattern",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.0922216075044195,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6637328831200571,
+            1.0
+          ],
+          "count": 9,
+          "failure_bounds": [
+            0.9,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 9
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.33626711687994293
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 9
+        }
+      },
+      "selected_k_counts": {
+        "1": 9,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 9
+    },
+    {
+      "arm": "complete_case",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 180,
+        "failed_starts": 0,
+        "k4_eligible": 0,
+        "k4_status_counts": {
+          "insufficient_samples": 9
+        },
+        "mean_complete_prediction": -15.973251534643607,
+        "mean_membership_entropy": 0.0004046798859141115,
+        "selected_bound_active": 0,
+        "start_attempts": 180
+      },
+      "failed": 1,
+      "mask": "pattern",
+      "mean_ari": 0.7777777777777778,
+      "mean_log_density": -6.63908753565882,
+      "mean_reference_common_ari": 0.7777777777777778,
+      "mean_retention": 0.175,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.3999064262836879,
+            0.9718550265221126
+          ],
+          "count": 7,
+          "failure_bounds": [
+            0.7,
+            0.8
+          ],
+          "requested": 10,
+          "successful": 9
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.028144973477887324,
+            0.6000935737163121
+          ],
+          "count": 2,
+          "failure_bounds": [
+            0.2,
+            0.3
+          ],
+          "requested": 10,
+          "successful": 9
+        }
+      },
+      "selected_k_counts": {
+        "1": 7,
+        "2": 2,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 9
+    },
+    {
+      "arm": "mean",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 8,
+        "k4_status_counts": {
+          "eligible": 8,
+          "small_component": 2
+        },
+        "mean_complete_prediction": -8.17368523656741,
+        "mean_membership_entropy": 0.035671509463051476,
+        "selected_bound_active": 9,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 0.1,
+      "mean_log_density": -4.984812582103912,
+      "mean_reference_common_ari": 0.1,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0025285785444625728,
+            0.44501611702819543
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.5549838829718047,
+            0.9974714214555375
+          ],
+          "count": 9,
+          "failure_bounds": [
+            0.9,
+            0.9
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 1,
+        "2": 5,
+        "3": 2,
+        "4": 2
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 7,
+        "k4_status_counts": {
+          "eligible": 7,
+          "small_component": 3
+        },
+        "mean_complete_prediction": -5.789028478189296,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.050442922227974,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.723043968618175,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 1.0,
+      "mean_log_density": -5.14581590673473,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.735144575625801,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 1.0,
+      "mean_log_density": -5.155942378102162,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.63671875,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.788617431318707,
+        "mean_membership_entropy": 0.04207885392013365,
+        "selected_bound_active": 3,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 0.7,
+      "mean_log_density": -5.203997405981882,
+      "mean_reference_common_ari": 0.7,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.3475471499399921,
+            0.9332604888222655
+          ],
+          "count": 7,
+          "failure_bounds": [
+            0.7,
+            0.7
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.06673951117773447,
+            0.652452850060008
+          ],
+          "count": 3,
+          "failure_bounds": [
+            0.3,
+            0.3
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 7,
+        "2": 1,
+        "3": 2,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 399,
+        "failed_starts": 1,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.718477099758912,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 1.0,
+      "mean_log_density": -5.1416700385086385,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 392,
+        "failed_starts": 8,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.742166364803882,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.038492645538114,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.99296875,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 8,
+        "k4_status_counts": {
+          "eligible": 8,
+          "small_component": 2
+        },
+        "mean_complete_prediction": -5.846380498121581,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.10171722758082,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.22578125,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -6.859605317868649,
+        "mean_membership_entropy": 0.19192908519342153,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.0,
+      "mean_log_density": -4.709368321303954,
+      "mean_reference_common_ari": 0.0,
+      "mean_retention": 0.99296875,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 399,
+        "failed_starts": 1,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.718477099758911,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.0252347168448726,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 395,
+        "failed_starts": 5,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.749592975116877,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.008454518837187,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 6,
+        "k4_status_counts": {
+          "eligible": 6,
+          "small_component": 4
+        },
+        "mean_complete_prediction": -6.5582919800215835,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.780098105366932,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.332421875,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -6.778097129075118,
+        "mean_membership_entropy": 0.06937146392501178,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 0.0,
+      "mean_log_density": -4.463506809720358,
+      "mean_reference_common_ari": 0.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 4,
+        "4": 6
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 399,
+        "failed_starts": 1,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.718477099758912,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.9938702540119166,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 396,
+        "failed_starts": 4,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.872464284419523,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.981859851633275,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.994140625,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 8,
+        "k4_status_counts": {
+          "eligible": 8,
+          "small_component": 2
+        },
+        "mean_complete_prediction": -6.008087331246218,
+        "mean_membership_entropy": 0.00141319949554726,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.9,
+      "mean_log_density": -4.057554221960621,
+      "mean_reference_common_ari": 0.9,
+      "mean_retention": 0.230078125,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.5549838829718047,
+            0.9974714214555375
+          ],
+          "count": 9,
+          "failure_bounds": [
+            0.9,
+            0.9
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0025285785444625728,
+            0.44501611702819543
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -7.032827478229424,
+        "mean_membership_entropy": 0.20268519851135514,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.0,
+      "mean_log_density": -4.619881440655922,
+      "mean_reference_common_ari": 0.0,
+      "mean_retention": 0.994140625,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 399,
+        "failed_starts": 1,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.718477099758911,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.042873556552889,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 392,
+        "failed_starts": 8,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.7552890442984275,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.01702963120863,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 3,
+        "k4_status_counts": {
+          "eligible": 3,
+          "small_component": 7
+        },
+        "mean_complete_prediction": -5.8996294824394395,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.102670638543822,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.15703125,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -6.726321445803004,
+        "mean_membership_entropy": 0.09387608630811953,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 0.0,
+      "mean_log_density": -4.612942992913727,
+      "mean_reference_common_ari": 0.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 8
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "spherical",
+      "diagnostics": {
+        "converged_starts": 399,
+        "failed_starts": 1,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.718477099758912,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.999823679503389,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 394,
+        "failed_starts": 6,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.170596840214584,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.685401647518768,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 3,
+        "k4_status_counts": {
+          "eligible": 3,
+          "small_component": 7
+        },
+        "mean_complete_prediction": -5.217115564136002,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.725289709929002,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.6578125,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 8,
+        "k4_status_counts": {
+          "eligible": 8,
+          "small_component": 2
+        },
+        "mean_complete_prediction": -5.165634516112521,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.685391049814518,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -5.151706347815277,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.671501957728831,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 326,
+        "failed_starts": 74,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -101.98543000233148,
+        "mean_membership_entropy": 0.01784246547095548,
+        "selected_bound_active": 1,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.9,
+      "mean_log_density": -27.039038110150443,
+      "mean_reference_common_ari": 0.9,
+      "mean_retention": 0.9859375,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.5549838829718047,
+            0.9974714214555375
+          ],
+          "count": 9,
+          "failure_bounds": [
+            0.9,
+            0.9
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0025285785444625728,
+            0.44501611702819543
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 260,
+        "failed_starts": 0,
+        "k4_eligible": 0,
+        "k4_status_counts": {
+          "insufficient_samples": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -6.895924315522618,
+        "mean_membership_entropy": 0.0035960104773070426,
+        "selected_bound_active": 1,
+        "start_attempts": 260
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.9,
+      "mean_log_density": -4.475543137242698,
+      "mean_reference_common_ari": 0.9,
+      "mean_retention": 0.23125,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.5549838829718047,
+            0.9974714214555375
+          ],
+          "count": 9,
+          "failure_bounds": [
+            0.9,
+            0.9
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0025285785444625728,
+            0.44501611702819543
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 5,
+        "k4_status_counts": {
+          "eligible": 5,
+          "small_component": 5
+        },
+        "mean_complete_prediction": -6.151891787908669,
+        "mean_membership_entropy": 0.055355248203556986,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.0,
+      "mean_log_density": -4.307436911255412,
+      "mean_reference_common_ari": 0.0,
+      "mean_retention": 0.9859375,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 6,
+        "3": 4,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -5.151706347815278,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.7345316073182167,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 316,
+        "failed_starts": 84,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -19.584313146418125,
+        "mean_membership_entropy": 0.015335140353372367,
+        "selected_bound_active": 1,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 0.9,
+      "mean_log_density": -8.666213679463935,
+      "mean_reference_common_ari": 0.9,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.5549838829718047,
+            0.9974714214555375
+          ],
+          "count": 9,
+          "failure_bounds": [
+            0.9,
+            0.9
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0025285785444625728,
+            0.44501611702819543
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 330,
+        "failed_starts": 0,
+        "k4_eligible": 0,
+        "k4_status_counts": {
+          "insufficient_samples": 5,
+          "small_component": 5
+        },
+        "mean_complete_prediction": -7.007748878449537,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 330
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 1.0,
+      "mean_log_density": -5.085349425311863,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.2953125,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 7,
+        "k4_status_counts": {
+          "eligible": 7,
+          "small_component": 3
+        },
+        "mean_complete_prediction": -7.132179305542354,
+        "mean_membership_entropy": 0.03024653754823749,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 0.0,
+      "mean_log_density": -4.553433544026868,
+      "mean_reference_common_ari": 0.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 4,
+        "3": 5,
+        "4": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.151706347815277,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.71054479339751,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 328,
+        "failed_starts": 72,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -5.7255902763997435,
+        "mean_membership_entropy": 0.012750193877572365,
+        "selected_bound_active": 1,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.9,
+      "mean_log_density": -3.941280907944518,
+      "mean_reference_common_ari": 0.9,
+      "mean_retention": 0.9828125,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.5549838829718047,
+            0.9974714214555375
+          ],
+          "count": 9,
+          "failure_bounds": [
+            0.9,
+            0.9
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0025285785444625728,
+            0.44501611702819543
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 280,
+        "failed_starts": 0,
+        "k4_eligible": 0,
+        "k4_status_counts": {
+          "insufficient_samples": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -16.586617973264023,
+        "mean_membership_entropy": 0.0027189864457178715,
+        "selected_bound_active": 1,
+        "start_attempts": 280
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.6,
+      "mean_log_density": -8.48697333918139,
+      "mean_reference_common_ari": 0.6,
+      "mean_retention": 0.2625,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.2623780766069451,
+            0.8784477418801728
+          ],
+          "count": 6,
+          "failure_bounds": [
+            0.6,
+            0.6
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.12155225811982723,
+            0.7376219233930549
+          ],
+          "count": 4,
+          "failure_bounds": [
+            0.4,
+            0.4
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 6,
+        "2": 3,
+        "3": 1,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 6,
+        "k4_status_counts": {
+          "eligible": 6,
+          "small_component": 4
+        },
+        "mean_complete_prediction": -6.565522992392154,
+        "mean_membership_entropy": 0.04213296030856554,
+        "selected_bound_active": 7,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.2,
+      "mean_log_density": -4.304835792813532,
+      "mean_reference_common_ari": 0.2,
+      "mean_retention": 0.9828125,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.025210726326833497,
+            0.5560954623076415
+          ],
+          "count": 2,
+          "failure_bounds": [
+            0.2,
+            0.2
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.4439045376923585,
+            0.9747892736731665
+          ],
+          "count": 8,
+          "failure_bounds": [
+            0.8,
+            0.8
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 2,
+        "2": 4,
+        "3": 4,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -5.151706347815278,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.744205925583979,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 282,
+        "failed_starts": 118,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -111.71853718643328,
+        "mean_membership_entropy": 0.01809046426146226,
+        "selected_bound_active": 1,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 0.9,
+      "mean_log_density": -18.46229713816113,
+      "mean_reference_common_ari": 0.9,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.5549838829718047,
+            0.9974714214555375
+          ],
+          "count": 9,
+          "failure_bounds": [
+            0.9,
+            0.9
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0025285785444625728,
+            0.44501611702819543
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 180,
+        "failed_starts": 0,
+        "k4_eligible": 0,
+        "k4_status_counts": {
+          "insufficient_samples": 10
+        },
+        "mean_complete_prediction": -12.462737354813985,
+        "mean_membership_entropy": 0.00032740163891760736,
+        "selected_bound_active": 0,
+        "start_attempts": 180
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 0.9,
+      "mean_log_density": -6.107360926927365,
+      "mean_reference_common_ari": 0.9,
+      "mean_retention": 0.159375,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.5549838829718047,
+            0.9974714214555375
+          ],
+          "count": 9,
+          "failure_bounds": [
+            0.9,
+            0.9
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0025285785444625728,
+            0.44501611702819543
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 7,
+        "k4_status_counts": {
+          "eligible": 7,
+          "small_component": 3
+        },
+        "mean_complete_prediction": -7.004830025261102,
+        "mean_membership_entropy": 0.027372833205282193,
+        "selected_bound_active": 9,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 0.1,
+      "mean_log_density": -4.55377906277872,
+      "mean_reference_common_ari": 0.1,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0025285785444625728,
+            0.44501611702819543
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.5549838829718047,
+            0.9974714214555375
+          ],
+          "count": 9,
+          "failure_bounds": [
+            0.9,
+            0.9
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 1,
+        "2": 2,
+        "3": 4,
+        "4": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -5.151706347815278,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.6796289343405704,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.036273507842203,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.571963724840678,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.048493467671162,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.582310462199347,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.6671875,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 399,
+        "failed_starts": 1,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.062323432740284,
+        "mean_membership_entropy": 0.003793609909152671,
+        "selected_bound_active": 1,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 0.9,
+      "mean_log_density": -4.595261465460263,
+      "mean_reference_common_ari": 0.9,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.5549838829718047,
+            0.9974714214555375
+          ],
+          "count": 9,
+          "failure_bounds": [
+            0.9,
+            0.9
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0025285785444625728,
+            0.44501611702819543
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 9,
+        "2": 1,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.029918820460946,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.566711803759717,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 396,
+        "failed_starts": 4,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.055358034797567,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.6657128214541417,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.990234375,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 5,
+        "k4_status_counts": {
+          "eligible": 5,
+          "small_component": 5
+        },
+        "mean_complete_prediction": -5.145362412242825,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.7171500903247208,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.255078125,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.986491705332837,
+        "mean_membership_entropy": 0.15861421507441215,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.0,
+      "mean_log_density": -4.236727599907537,
+      "mean_reference_common_ari": 0.0,
+      "mean_retention": 0.990234375,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 4,
+        "4": 6
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 399,
+        "failed_starts": 1,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.029918820460946,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.6541701850390993,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 387,
+        "failed_starts": 13,
+        "k4_eligible": 8,
+        "k4_status_counts": {
+          "eligible": 8,
+          "small_component": 2
+        },
+        "mean_complete_prediction": -5.071901601346604,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.664990999740688,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -5.877279327033842,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 1.0,
+      "mean_log_density": -4.433849511920206,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.32890625,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -6.126026799127483,
+        "mean_membership_entropy": 0.07075140011793837,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 0.0,
+      "mean_log_density": -4.129205296033178,
+      "mean_reference_common_ari": 0.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 4,
+        "4": 6
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 399,
+        "failed_starts": 1,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.029918820460946,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.6471463448632164,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 390,
+        "failed_starts": 10,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.083587800095378,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.64308955818352,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.989453125,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 7,
+        "k4_status_counts": {
+          "eligible": 7,
+          "small_component": 3
+        },
+        "mean_complete_prediction": -5.4490881862973275,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.820395433639743,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.2703125,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -6.26362666916347,
+        "mean_membership_entropy": 0.18320051231268344,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.0,
+      "mean_log_density": -4.230188498591101,
+      "mean_reference_common_ari": 0.0,
+      "mean_retention": 0.989453125,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 9
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 399,
+        "failed_starts": 1,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.029918820460946,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.6566411849163614,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 392,
+        "failed_starts": 8,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.046902595800678,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.6428727296295813,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 2,
+        "k4_status_counts": {
+          "eligible": 2,
+          "small_component": 8
+        },
+        "mean_complete_prediction": -5.290384962968565,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.7861751098853964,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 0.166015625,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -6.079567052198886,
+        "mean_membership_entropy": 0.09099600971966541,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 0.0,
+      "mean_log_density": -4.256072112775229,
+      "mean_reference_common_ari": 0.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 7
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "correlated",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -5.029918820460946,
+        "mean_membership_entropy": 0.0,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 1.0,
+      "mean_log_density": -3.6343520072157687,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 10,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 8,
+        "k4_status_counts": {
+          "eligible": 8,
+          "small_component": 2
+        },
+        "mean_complete_prediction": -8.03981680394009,
+        "mean_membership_entropy": 0.019628558231551834,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 0.4943510983162408,
+      "mean_log_density": -7.2940113407400675,
+      "mean_reference_common_ari": 0.6761716905600815,
+      "mean_retention": 0.9984375,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 9,
+        "3": 1,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 7,
+        "k4_status_counts": {
+          "eligible": 7,
+          "small_component": 3
+        },
+        "mean_complete_prediction": -8.209907701131085,
+        "mean_membership_entropy": 1.0127987174519898e-05,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 0.505060413678051,
+      "mean_log_density": -7.43556186012061,
+      "mean_reference_common_ari": 0.6589839598206676,
+      "mean_retention": 0.6640625,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 10,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 7,
+        "k4_status_counts": {
+          "eligible": 7,
+          "small_component": 3
+        },
+        "mean_complete_prediction": -8.178472578386918,
+        "mean_membership_entropy": 0.0029133313309907794,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 0.18776731116110706,
+      "mean_log_density": -7.451579230253499,
+      "mean_reference_common_ari": 0.3160729747289504,
+      "mean_retention": 0.9984375,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.12155225811982723,
+            0.7376219233930549
+          ],
+          "count": 4,
+          "failure_bounds": [
+            0.4,
+            0.4
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 6,
+        "2": 3,
+        "3": 1,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -7.8881748815007615,
+        "mean_membership_entropy": 0.0003371608082924894,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 0.5680636071781361,
+      "mean_log_density": -7.178264578870726,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 7,
+        "3": 3,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 340,
+        "failed_starts": 60,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -89.80906914973687,
+        "mean_membership_entropy": 0.09713149779218562,
+        "selected_bound_active": 7,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.36403195394711363,
+      "mean_log_density": -25.829989242479503,
+      "mean_reference_common_ari": 0.3524365117923258,
+      "mean_retention": 0.99375,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0025285785444625728,
+            0.44501611702819543
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.4439045376923585,
+            0.9747892736731665
+          ],
+          "count": 8,
+          "failure_bounds": [
+            0.8,
+            0.8
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 2,
+        "2": 1,
+        "3": 6,
+        "4": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 240,
+        "failed_starts": 0,
+        "k4_eligible": 0,
+        "k4_status_counts": {
+          "insufficient_samples": 10
+        },
+        "mean_complete_prediction": -13.01230864232085,
+        "mean_membership_entropy": 0.000427495282608695,
+        "selected_bound_active": 1,
+        "start_attempts": 240
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.05328797857245247,
+      "mean_log_density": -7.652654894671869,
+      "mean_reference_common_ari": 0.07260439295196716,
+      "mean_retention": 0.228125,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.025210726326833497,
+            0.5560954623076415
+          ],
+          "count": 2,
+          "failure_bounds": [
+            0.2,
+            0.2
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 8,
+        "2": 2,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -9.019116787551647,
+        "mean_membership_entropy": 0.02193402309932701,
+        "selected_bound_active": 6,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.05046875213827349,
+      "mean_log_density": -6.453309347271206,
+      "mean_reference_common_ari": 0.07259407675097565,
+      "mean_retention": 0.99375,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.2623780766069451,
+            0.8784477418801728
+          ],
+          "count": 6,
+          "failure_bounds": [
+            0.6,
+            0.6
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 4,
+        "2": 1,
+        "3": 5,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -7.86802013718498,
+        "mean_membership_entropy": 0.00019944640940991394,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.5704830214676087,
+      "mean_log_density": -5.707685409672733,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 7,
+        "3": 3,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 274,
+        "failed_starts": 126,
+        "k4_eligible": 7,
+        "k4_status_counts": {
+          "eligible": 7,
+          "numerical_failure": 2,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -27.983624942246667,
+        "mean_membership_entropy": 0.0337194651418264,
+        "selected_bound_active": 7,
+        "start_attempts": 400
+      },
+      "failed": 2,
+      "mask": "mar",
+      "mean_ari": 0.5351478365142674,
+      "mean_log_density": -8.669700790908301,
+      "mean_reference_common_ari": 0.571423395670371,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.003159723531252275,
+            0.5265096708751638
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.3
+          ],
+          "requested": 10,
+          "successful": 8
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6305833524471808,
+            1.0
+          ],
+          "count": 8,
+          "failure_bounds": [
+            0.8,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 8
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 4,
+        "3": 3,
+        "4": 1
+      },
+      "successful": 8
+    },
+    {
+      "arm": "complete_case",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 360,
+        "failed_starts": 0,
+        "k4_eligible": 0,
+        "k4_status_counts": {
+          "insufficient_samples": 4,
+          "small_component": 6
+        },
+        "mean_complete_prediction": -19.348698351583074,
+        "mean_membership_entropy": 4.575560117890294e-07,
+        "selected_bound_active": 1,
+        "start_attempts": 360
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 0.13091785855796528,
+      "mean_log_density": -11.621449691638153,
+      "mean_reference_common_ari": 0.4326333978729787,
+      "mean_retention": 0.325,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.025210726326833497,
+            0.5560954623076415
+          ],
+          "count": 2,
+          "failure_bounds": [
+            0.2,
+            0.2
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 8,
+        "2": 1,
+        "3": 1,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -11.252003235783148,
+        "mean_membership_entropy": 0.005086519695634734,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 0.4509072574554236,
+      "mean_log_density": -6.510672763623741,
+      "mean_reference_common_ari": 0.3365728030164633,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.1870860284474045,
+            0.8129139715525955
+          ],
+          "count": 5,
+          "failure_bounds": [
+            0.5,
+            0.5
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 3,
+        "3": 2,
+        "4": 5
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -7.868020147432563,
+        "mean_membership_entropy": 0.00019944801413941454,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 0.5704830214676087,
+      "mean_log_density": -5.716774369991782,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 7,
+        "3": 3,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 331,
+        "failed_starts": 69,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -94.15901690590053,
+        "mean_membership_entropy": 0.1294946442627927,
+        "selected_bound_active": 8,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.3974803500292469,
+      "mean_log_density": -21.687521745244428,
+      "mean_reference_common_ari": 0.33670002929288045,
+      "mean_retention": 0.9859375,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.1870860284474045,
+            0.8129139715525955
+          ],
+          "count": 5,
+          "failure_bounds": [
+            0.5,
+            0.5
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 2,
+        "3": 3,
+        "4": 5
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 290,
+        "failed_starts": 0,
+        "k4_eligible": 0,
+        "k4_status_counts": {
+          "insufficient_samples": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -26.556546357202762,
+        "mean_membership_entropy": 0.0004936528640513461,
+        "selected_bound_active": 0,
+        "start_attempts": 290
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.19798614650145793,
+      "mean_log_density": -9.808129065523442,
+      "mean_reference_common_ari": 0.20853704260338052,
+      "mean_retention": 0.2609375,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.12155225811982723,
+            0.7376219233930549
+          ],
+          "count": 4,
+          "failure_bounds": [
+            0.4,
+            0.4
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 6,
+        "2": 3,
+        "3": 1,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -9.738522743544896,
+        "mean_membership_entropy": 0.024336390389237784,
+        "selected_bound_active": 7,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.11536006497299649,
+      "mean_log_density": -6.463273355380609,
+      "mean_reference_common_ari": 0.16220152788830666,
+      "mean_retention": 0.9859375,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.025210726326833497,
+            0.5560954623076415
+          ],
+          "count": 2,
+          "failure_bounds": [
+            0.2,
+            0.2
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.4439045376923585,
+            0.9747892736731665
+          ],
+          "count": 8,
+          "failure_bounds": [
+            0.8,
+            0.8
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 2,
+        "2": 4,
+        "3": 2,
+        "4": 2
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -7.888174881445719,
+        "mean_membership_entropy": 0.0003371608233949598,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.5680636071781361,
+      "mean_log_density": -5.717560817682971,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 7,
+        "3": 3,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 312,
+        "failed_starts": 88,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -110.70400760083324,
+        "mean_membership_entropy": 0.06379936453759939,
+        "selected_bound_active": 7,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 0.606401269043406,
+      "mean_log_density": -22.60936131573322,
+      "mean_reference_common_ari": 0.552861722562376,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.06673951117773447,
+            0.652452850060008
+          ],
+          "count": 3,
+          "failure_bounds": [
+            0.3,
+            0.3
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 2,
+        "3": 5,
+        "4": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 180,
+        "failed_starts": 0,
+        "k4_eligible": 0,
+        "k4_status_counts": {
+          "insufficient_samples": 10
+        },
+        "mean_complete_prediction": -66.1384371354188,
+        "mean_membership_entropy": 3.012805027620847e-05,
+        "selected_bound_active": 2,
+        "start_attempts": 180
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 0.012982246814619777,
+      "mean_log_density": -17.343412812721777,
+      "mean_reference_common_ari": -0.002002122957359624,
+      "mean_retention": 0.165625,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.06673951117773447,
+            0.652452850060008
+          ],
+          "count": 3,
+          "failure_bounds": [
+            0.3,
+            0.3
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 7,
+        "2": 3,
+        "3": 0,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 9,
+        "k4_status_counts": {
+          "eligible": 9,
+          "small_component": 1
+        },
+        "mean_complete_prediction": -9.729271861428872,
+        "mean_membership_entropy": 0.03669553574912264,
+        "selected_bound_active": 6,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 0.07245262212770695,
+      "mean_log_density": -6.69672800397351,
+      "mean_reference_common_ari": 0.07430760038799468,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.06673951117773447,
+            0.652452850060008
+          ],
+          "count": 3,
+          "failure_bounds": [
+            0.3,
+            0.3
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.3475471499399921,
+            0.9332604888222655
+          ],
+          "count": 7,
+          "failure_bounds": [
+            0.7,
+            0.7
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "4": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 8,
+        "k4_status_counts": {
+          "eligible": 8,
+          "small_component": 2
+        },
+        "mean_complete_prediction": -7.888174885369634,
+        "mean_membership_entropy": 0.0003371609148601903,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 0.5680636071781361,
+      "mean_log_density": -5.772379570547129,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 64,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 7,
+        "3": 3,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -7.088147563912638,
+        "mean_membership_entropy": 0.04059486713601001,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 0.9383599156642422,
+      "mean_log_density": -6.490386609506645,
+      "mean_reference_common_ari": 0.9373239118724778,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -7.173344958965041,
+        "mean_membership_entropy": 0.0003809804643542029,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 0.9984173020298506,
+      "mean_log_density": -6.560241677324507,
+      "mean_reference_common_ari": 0.9984173020298506,
+      "mean_retention": 0.655859375,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -7.525906687315677,
+        "mean_membership_entropy": 0.018610961899161248,
+        "selected_bound_active": 5,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 0.6427509827268505,
+      "mean_log_density": -6.876755404240804,
+      "mean_reference_common_ari": 0.6427064722255974,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.1870860284474045,
+            0.8129139715525955
+          ],
+          "count": 5,
+          "failure_bounds": [
+            0.5,
+            0.5
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 5,
+        "4": 5
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -7.060717829080572,
+        "mean_membership_entropy": 0.0006425901185649595,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar10",
+      "mean_ari": 0.9988857874562566,
+      "mean_log_density": -6.467424486977724,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -7.296360195079541,
+        "mean_membership_entropy": 0.17005986874287043,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.7280374982878889,
+      "mean_log_density": -5.3187679262795875,
+      "mean_reference_common_ari": 0.7270575804159974,
+      "mean_retention": 0.993359375,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 8,
+        "k4_status_counts": {
+          "eligible": 8,
+          "small_component": 2
+        },
+        "mean_complete_prediction": -8.306045540147624,
+        "mean_membership_entropy": 0.0002965168925564472,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.5870821259658644,
+      "mean_log_density": -5.909896496862355,
+      "mean_reference_common_ari": 0.5870821259658644,
+      "mean_retention": 0.235546875,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0025285785444625728,
+            0.44501611702819543
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 6,
+        "3": 3,
+        "4": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -8.524012905457605,
+        "mean_membership_entropy": 0.06748729280542963,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.19294593787361608,
+      "mean_log_density": -6.187239358219148,
+      "mean_reference_common_ari": 0.1929956797037319,
+      "mean_retention": 0.993359375,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.5549838829718047,
+            0.9974714214555375
+          ],
+          "count": 9,
+          "failure_bounds": [
+            0.9,
+            0.9
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 9
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -7.060717828368946,
+        "mean_membership_entropy": 0.0006425887552443315,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mcar30",
+      "mean_ari": 0.9988857874562566,
+      "mean_log_density": -5.2109014574530175,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 376,
+        "failed_starts": 24,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -10.282988049305377,
+        "mean_membership_entropy": 0.060023730859444305,
+        "selected_bound_active": 3,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 0.7173205169963939,
+      "mean_log_density": -5.452244598616796,
+      "mean_reference_common_ari": 0.7182832070385258,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.06673951117773447,
+            0.652452850060008
+          ],
+          "count": 3,
+          "failure_bounds": [
+            0.3,
+            0.3
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 7,
+        "4": 3
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 4,
+        "k4_status_counts": {
+          "eligible": 4,
+          "small_component": 6
+        },
+        "mean_complete_prediction": -11.764029113029489,
+        "mean_membership_entropy": 4.181335423495313e-05,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 0.9721315185143948,
+      "mean_log_density": -7.353155792570564,
+      "mean_reference_common_ari": 0.9721315185143948,
+      "mean_retention": 0.32890625,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0,
+            0.3084971078187629
+          ],
+          "count": 0,
+          "failure_bounds": [
+            0.0,
+            0.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 3,
+        "3": 7,
+        "4": 0
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -9.408454150040004,
+        "mean_membership_entropy": 0.04403309178085553,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 0.4782678555122667,
+      "mean_log_density": -5.986224893868412,
+      "mean_reference_common_ari": 0.4788386414947756,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.4439045376923585,
+            0.9747892736731665
+          ],
+          "count": 8,
+          "failure_bounds": [
+            0.8,
+            0.8
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 8
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -7.060717842173315,
+        "mean_membership_entropy": 0.0006425764890364038,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mar",
+      "mean_ari": 0.9988857874562566,
+      "mean_log_density": -5.18903516771391,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 397,
+        "failed_starts": 3,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -7.942424995452133,
+        "mean_membership_entropy": 0.18869875974625613,
+        "selected_bound_active": 1,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.509401793193439,
+      "mean_log_density": -5.368587764911308,
+      "mean_reference_common_ari": 0.5093165587372376,
+      "mean_retention": 0.985546875,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.3475471499399921,
+            0.9332604888222655
+          ],
+          "count": 7,
+          "failure_bounds": [
+            0.7,
+            0.7
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 7
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 4,
+        "k4_status_counts": {
+          "eligible": 4,
+          "small_component": 6
+        },
+        "mean_complete_prediction": -9.212802555788487,
+        "mean_membership_entropy": 0.00011360369245475902,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.9478690191285395,
+      "mean_log_density": -5.930503230971221,
+      "mean_reference_common_ari": 0.9478690191285395,
+      "mean_retention": 0.276953125,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0025285785444625728,
+            0.44501611702819543
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 9,
+        "4": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -8.883123083770013,
+        "mean_membership_entropy": 0.07849494230497511,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.2691178569108438,
+      "mean_log_density": -6.175868439545561,
+      "mean_reference_common_ari": 0.26952871368314846,
+      "mean_retention": 0.985546875,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.5549838829718047,
+            0.9974714214555375
+          ],
+          "count": 9,
+          "failure_bounds": [
+            0.9,
+            0.9
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 9
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -7.060717837822739,
+        "mean_membership_entropy": 0.0006425820189719085,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "mnar",
+      "mean_ari": 0.9988857874562566,
+      "mean_log_density": -5.225176313281495,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "observed",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -7.616445671954333,
+        "mean_membership_entropy": 0.07522486797587151,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 0.8929738639673117,
+      "mean_log_density": -5.463621094036155,
+      "mean_reference_common_ari": 0.894034517459726,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 10
+      },
+      "successful": 10
+    },
+    {
+      "arm": "complete_case",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 5,
+        "k4_status_counts": {
+          "eligible": 5,
+          "small_component": 5
+        },
+        "mean_complete_prediction": -9.130571361641259,
+        "mean_membership_entropy": 0.006388690658752656,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 0.48339342882494896,
+      "mean_log_density": -6.200952376923189,
+      "mean_reference_common_ari": 0.48339342882494896,
+      "mean_retention": 0.154296875,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.0025285785444625728,
+            0.44501611702819543
+          ],
+          "count": 1,
+          "failure_bounds": [
+            0.1,
+            0.1
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.4439045376923585,
+            0.9747892736731665
+          ],
+          "count": 8,
+          "failure_bounds": [
+            0.8,
+            0.8
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 2,
+        "2": 5,
+        "3": 2,
+        "4": 1
+      },
+      "successful": 10
+    },
+    {
+      "arm": "mean",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -8.509422538384097,
+        "mean_membership_entropy": 0.04817610914268412,
+        "selected_bound_active": 10,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 0.2215935216672577,
+      "mean_log_density": -6.218456289969307,
+      "mean_reference_common_ari": 0.22170642737552634,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.1870860284474045,
+            0.8129139715525955
+          ],
+          "count": 5,
+          "failure_bounds": [
+            0.5,
+            0.5
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 2,
+        "3": 3,
+        "4": 5
+      },
+      "successful": 10
+    },
+    {
+      "arm": "reference",
+      "case": "four_groups",
+      "diagnostics": {
+        "converged_starts": 400,
+        "failed_starts": 0,
+        "k4_eligible": 10,
+        "k4_status_counts": {
+          "eligible": 10
+        },
+        "mean_complete_prediction": -7.060718035444367,
+        "mean_membership_entropy": 0.0006424827705529504,
+        "selected_bound_active": 0,
+        "start_attempts": 400
+      },
+      "failed": 0,
+      "mask": "pattern",
+      "mean_ari": 0.9988857874562566,
+      "mean_log_density": -5.283115627077443,
+      "mean_reference_common_ari": 1.0,
+      "mean_retention": 1.0,
+      "n": 256,
+      "rates": {
+        "correct_k": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        },
+        "k_gt_1": {
+          "conditional_exact95": [
+            0.6915028921812371,
+            1.0
+          ],
+          "count": 10,
+          "failure_bounds": [
+            1.0,
+            1.0
+          ],
+          "requested": 10,
+          "successful": 10
+        }
+      },
+      "selected_k_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 10
+      },
+      "successful": 10
+    }
+  ],
+  "datasets": 60,
+  "defaults_changed": false,
+  "empirical_fits": false,
+  "inference": "Pointwise descriptive intervals across independent datasets; masks are paired",
+  "observed_minus_mean": [
+    {
+      "case": "spherical",
+      "conservative95_difference": [
+        -0.35480498785184633,
+        0.35480498785184633
+      ],
+      "correct_k_difference": 0.0,
+      "mask": "mcar10",
+      "median_predictive_gain": 0.009393132313917807,
+      "n": 64,
+      "paired_successful": 10
+    },
+    {
+      "case": "spherical",
+      "conservative95_difference": [
+        -0.26247651220152557,
+        0.8994093538116985
+      ],
+      "correct_k_difference": 0.5,
+      "mask": "mcar30",
+      "median_predictive_gain": 0.291125442091019,
+      "n": 64,
+      "paired_successful": 10
+    },
+    {
+      "case": "spherical",
+      "conservative95_difference": [
+        0.29039002429630734,
+        1.0
+      ],
+      "correct_k_difference": 1.0,
+      "mask": "mar",
+      "median_predictive_gain": 0.5605424705866517,
+      "n": 64,
+      "paired_successful": 10
+    },
+    {
+      "case": "spherical",
+      "conservative95_difference": [
+        -0.18213791089497,
+        0.9471966567867972
+      ],
+      "correct_k_difference": 0.6,
+      "mask": "mnar",
+      "median_predictive_gain": 0.4267785112096445,
+      "n": 64,
+      "paired_successful": 10
+    },
+    {
+      "case": "spherical",
+      "conservative95_difference": [
+        0.08465177957777831,
+        0.99860333377964
+      ],
+      "correct_k_difference": 0.8888888888888888,
+      "mask": "pattern",
+      "median_predictive_gain": 0.4572020378241657,
+      "n": 64,
+      "paired_successful": 9
+    },
+    {
+      "case": "spherical",
+      "conservative95_difference": [
+        -0.30325873206228005,
+        0.6915018049394461
+      ],
+      "correct_k_difference": 0.3,
+      "mask": "mcar10",
+      "median_predictive_gain": 0.018815695396351195,
+      "n": 256,
+      "paired_successful": 10
+    },
+    {
+      "case": "spherical",
+      "conservative95_difference": [
+        0.29039002429630734,
+        1.0
+      ],
+      "correct_k_difference": 1.0,
+      "mask": "mcar30",
+      "median_predictive_gain": 0.6623223490477157,
+      "n": 256,
+      "paired_successful": 10
+    },
+    {
+      "case": "spherical",
+      "conservative95_difference": [
+        0.29039002429630734,
+        1.0
+      ],
+      "correct_k_difference": 1.0,
+      "mask": "mar",
+      "median_predictive_gain": 0.44542812327739023,
+      "n": 256,
+      "paired_successful": 10
+    },
+    {
+      "case": "spherical",
+      "conservative95_difference": [
+        0.29039002429630734,
+        1.0
+      ],
+      "correct_k_difference": 1.0,
+      "mask": "mnar",
+      "median_predictive_gain": 0.6284944480087551,
+      "n": 256,
+      "paired_successful": 10
+    },
+    {
+      "case": "spherical",
+      "conservative95_difference": [
+        0.29039002429630734,
+        1.0
+      ],
+      "correct_k_difference": 1.0,
+      "mask": "pattern",
+      "median_predictive_gain": 0.5954117064656312,
+      "n": 256,
+      "paired_successful": 10
+    },
+    {
+      "case": "correlated",
+      "conservative95_difference": [
+        -0.35480498785184633,
+        0.35480498785184633
+      ],
+      "correct_k_difference": 0.0,
+      "mask": "mcar10",
+      "median_predictive_gain": 0.0007174985168654224,
+      "n": 64,
+      "paired_successful": 10
+    },
+    {
+      "case": "correlated",
+      "conservative95_difference": [
+        0.1545589061926298,
+        0.9987429125763632
+      ],
+      "correct_k_difference": 0.9,
+      "mask": "mcar30",
+      "median_predictive_gain": 0.4470461952270237,
+      "n": 64,
+      "paired_successful": 10
+    },
+    {
+      "case": "correlated",
+      "conservative95_difference": [
+        0.1545589061926298,
+        0.9987429125763632
+      ],
+      "correct_k_difference": 0.9,
+      "mask": "mar",
+      "median_predictive_gain": 0.4537588284807401,
+      "n": 64,
+      "paired_successful": 10
+    },
+    {
+      "case": "correlated",
+      "conservative95_difference": [
+        -0.04630679279129246,
+        0.9484537442104337
+      ],
+      "correct_k_difference": 0.7,
+      "mask": "mnar",
+      "median_predictive_gain": 0.4733536029644052,
+      "n": 64,
+      "paired_successful": 10
+    },
+    {
+      "case": "correlated",
+      "conservative95_difference": [
+        0.018727788088952257,
+        0.9974858251527267
+      ],
+      "correct_k_difference": 0.8,
+      "mask": "pattern",
+      "median_predictive_gain": 0.6125974492785398,
+      "n": 64,
+      "paired_successful": 10
+    },
+    {
+      "case": "correlated",
+      "conservative95_difference": [
+        -0.3535479004282099,
+        0.49063610595552387
+      ],
+      "correct_k_difference": 0.1,
+      "mask": "mcar10",
+      "median_predictive_gain": 0.014110642799843198,
+      "n": 256,
+      "paired_successful": 10
+    },
+    {
+      "case": "correlated",
+      "conservative95_difference": [
+        0.29039002429630734,
+        1.0
+      ],
+      "correct_k_difference": 1.0,
+      "mask": "mcar30",
+      "median_predictive_gain": 0.6059816036249313,
+      "n": 256,
+      "paired_successful": 10
+    },
+    {
+      "case": "correlated",
+      "conservative95_difference": [
+        0.29039002429630734,
+        1.0
+      ],
+      "correct_k_difference": 1.0,
+      "mask": "mar",
+      "median_predictive_gain": 0.45617305992970403,
+      "n": 256,
+      "paired_successful": 10
+    },
+    {
+      "case": "correlated",
+      "conservative95_difference": [
+        0.29039002429630734,
+        1.0
+      ],
+      "correct_k_difference": 1.0,
+      "mask": "mnar",
+      "median_predictive_gain": 0.5908627857176487,
+      "n": 256,
+      "paired_successful": 10
+    },
+    {
+      "case": "correlated",
+      "conservative95_difference": [
+        0.29039002429630734,
+        1.0
+      ],
+      "correct_k_difference": 1.0,
+      "mask": "pattern",
+      "median_predictive_gain": 0.605177952529842,
+      "n": 256,
+      "paired_successful": 10
+    },
+    {
+      "case": "four_groups",
+      "conservative95_difference": [
+        -0.35480498785184633,
+        0.35480498785184633
+      ],
+      "correct_k_difference": 0.0,
+      "mask": "mcar10",
+      "median_predictive_gain": 0.188092624041456,
+      "n": 64,
+      "paired_successful": 10
+    },
+    {
+      "case": "four_groups",
+      "conservative95_difference": [
+        -0.3535479004282099,
+        0.49063610595552387
+      ],
+      "correct_k_difference": 0.1,
+      "mask": "mcar30",
+      "median_predictive_gain": -4.0291640817361465,
+      "n": 64,
+      "paired_successful": 10
+    },
+    {
+      "case": "four_groups",
+      "conservative95_difference": [
+        -0.7899079148383866,
+        0.5094757301558281
+      ],
+      "correct_k_difference": -0.25,
+      "mask": "mar",
+      "median_predictive_gain": -0.7316206711072999,
+      "n": 64,
+      "paired_successful": 8
+    },
+    {
+      "case": "four_groups",
+      "conservative95_difference": [
+        -0.3913025471908589,
+        0.7705833188223652
+      ],
+      "correct_k_difference": 0.3,
+      "mask": "mnar",
+      "median_predictive_gain": -6.193035197141154,
+      "n": 64,
+      "paired_successful": 10
+    },
+    {
+      "case": "four_groups",
+      "conservative95_difference": [
+        -0.5815774121580353,
+        0.5815774121580353
+      ],
+      "correct_k_difference": 0.0,
+      "mask": "pattern",
+      "median_predictive_gain": -4.143977741170356,
+      "n": 64,
+      "paired_successful": 10
+    },
+    {
+      "case": "four_groups",
+      "conservative95_difference": [
+        -0.19630346453403527,
+        0.8414984766821889
+      ],
+      "correct_k_difference": 0.5,
+      "mask": "mcar10",
+      "median_predictive_gain": 0.4349028351983901,
+      "n": 256,
+      "paired_successful": 10
+    },
+    {
+      "case": "four_groups",
+      "conservative95_difference": [
+        -0.3535479004282099,
+        0.49063610595552387
+      ],
+      "correct_k_difference": 0.1,
+      "mask": "mcar30",
+      "median_predictive_gain": 0.8746653060859995,
+      "n": 256,
+      "paired_successful": 10
+    },
+    {
+      "case": "four_groups",
+      "conservative95_difference": [
+        -0.8994093538116985,
+        0.26247651220152557
+      ],
+      "correct_k_difference": -0.5,
+      "mask": "mar",
+      "median_predictive_gain": 0.6236022275164754,
+      "n": 256,
+      "paired_successful": 10
+    },
+    {
+      "case": "four_groups",
+      "conservative95_difference": [
+        -0.6902447175158096,
+        0.4390898501659576
+      ],
+      "correct_k_difference": -0.2,
+      "mask": "mnar",
+      "median_predictive_gain": 0.8270640847675472,
+      "n": 256,
+      "paired_successful": 10
+    },
+    {
+      "case": "four_groups",
+      "conservative95_difference": [
+        -0.19630346453403527,
+        0.8414984766821889
+      ],
+      "correct_k_difference": 0.5,
+      "mask": "pattern",
+      "median_predictive_gain": 0.7709781873589701,
+      "n": 256,
+      "paired_successful": 10
+    }
+  ],
+  "p_values": null,
+  "point_searches": 1200,
+  "replay_searches": 24,
+  "schema_version": 1,
+  "status": "audited"
+}

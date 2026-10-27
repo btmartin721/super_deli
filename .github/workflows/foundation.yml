@@ -121,6 +121,11 @@ jobs:
                   print(f"--- {path.relative_to(root)} ---")
                   print(path.read_text(errors="replace")[-4000:])
           PYCODE
+      - name: Check observed-data GMM installed workflow
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/tabular-observed/smoke.py" --output-dir "$RUNNER_TEMP/tabular-observed-smoke"
       - name: Check opt-in missing tabular installed workflow
         working-directory: ${{ runner.temp }}
         run: |

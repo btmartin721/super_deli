@@ -1,0 +1,16 @@
+{
+  "empirical_analysis": false,
+  "independently_audited_starts": 47330,
+  "large_artifacts_local_only": true,
+  "main_point_failures": 4,
+  "main_searches": 1224,
+  "new_pvalues": false,
+  "original_preflight_files_preserved": 84,
+  "preflight_searches": 144,
+  "raw_generator_masks_scaling_moments_likelihood_criteria_seeds_prediction_verified": true,
+  "replacement_searches": 0,
+  "reporting_and_audit_interruptions_preserved_locally": 2,
+  "scientific_kernels_and_generators_unchanged_since_initial_freeze": true,
+  "selected_parameters_and_memberships_verified": true,
+  "status": "passed"
+}

@@ -14,7 +14,7 @@ from super_deli.core.data import (
 from super_deli.core.validation import validate_dataset
 from super_deli.io.config import ConfigError, load_config, write_config
 
-__version__ = "0.53.0.dev0"
+__version__ = "0.54.0.dev0"
 
 __all__ = [
     "ConfigError",

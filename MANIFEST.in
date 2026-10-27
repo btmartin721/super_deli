@@ -1240,3 +1240,27 @@ include examples/tabular-missing/results/independent-audit.json
 include examples/tabular-missing/results/report-audit.json
 include examples/tabular-missing/results/stability-summary.json
 include examples/tabular-missing/results/summary.json
+
+include examples/tabular-observed/dataset.json
+include examples/tabular-observed/model.json
+include examples/tabular-observed/smoke.py
+include examples/tabular-observed/run.py
+include examples/tabular-observed/fixture/dataset.json
+include examples/tabular-observed/fixture/traits.tsv
+include docs/tabular-observed.md
+include docs/tabular-observed-results.md
+include examples/tabular-observed/results/summary.json
+include examples/tabular-observed/results/independent-audit.json
+include examples/tabular-observed/audit_report.py
+include examples/tabular-observed/report.py
+include docs/figures/tabular-observed/missing-data-comparison.png
+include docs/figures/tabular-observed/missing-data-comparison.pdf
+include docs/figures/tabular-observed/missing-data-comparison.svg
+include src/super_deli/models/observed_config.py
+include src/super_deli/models/observed_likelihood.py
+include src/super_deli/models/observed_gmm.py
+include src/super_deli/workflows/observed_gmm.py
+include src/super_deli/benchmarking/observed_study.py
+include src/super_deli/benchmarking/observed_audit.py
+include tests/test_foundation_observed_config.py
+include tests/test_tabular_observed.py
