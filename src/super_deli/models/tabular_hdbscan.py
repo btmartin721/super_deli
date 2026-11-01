@@ -8,6 +8,7 @@ import numpy as np
 from sklearn.cluster import HDBSCAN
 from threadpoolctl import threadpool_limits
 
+from super_deli.models.density_scores import fit_density_scores
 from super_deli.models.hdbscan_config import HDBSCANConfig
 from super_deli.models.mixture import FIT_LOCK
 from super_deli.models.subsample_stability import (
@@ -68,26 +69,8 @@ def fit_density_once(x, names, types, config, *, context=None):
     prep = context.density_config(config) if context is not None else config.preprocessing_config()
     fitter = context.fit_pca if context is not None else fit_tabular_pca
     model, scores = fitter(x, names, types, prep)
-    estimator = HDBSCAN(
-        min_cluster_size=config.min_cluster_size,
-        min_samples=config.min_samples,
-        metric="euclidean",
-        alpha=config.alpha,
-        cluster_selection_epsilon=float(config.cluster_selection_epsilon),
-        cluster_selection_method=config.cluster_selection_method,
-        allow_single_cluster=config.allow_single_cluster,
-        n_jobs=1,
-        copy=True,
-    ).fit(scores)
-    labels, strength = estimator.labels_, estimator.probabilities_
-    if (
-        np.any(labels < -1)
-        or not np.isfinite(strength).all()
-        or np.any((strength < 0) | (strength > 1))
-        or np.any(strength[labels < 0] != 0)
-    ):
-        raise ValueError("Invalid density labels or membership strength")
-    point = DensityPoint(model, scores, labels.copy(), strength.copy())
+    labels, strength = fit_density_scores(scores, config, estimator_class=HDBSCAN)
+    point = DensityPoint(model, scores, labels, strength)
     if context is not None:
         context.capture_density(point)
     return point

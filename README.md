@@ -4,7 +4,19 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: observed-data GMM recovery and convergence diagnosis.**
+**Current checkpoint: opt-in tabular autoencoder + HDBSCAN.**
+The first neural workflow learns a nonlinear two-dimensional representation of
+complete continuous morphology/ecology, then proposes density groups with
+explicit noise. It retains numeric weights, training traces and optional
+whole-unit subsampling, without changing existing defaults or p-values.
+See the [CLI/API and limitations](docs/tabular-neural.md),
+[frozen comparison protocol](docs/tabular-neural-study.md) and
+[audited results](docs/tabular-neural-results.md).
+This is a transductive research model, not an anatomical image detector or a
+validated species-boundary test. PyTorch is an optional dependency; ordinary
+installations and classical workflows remain independent of it.
+
+**Preceding checkpoint: observed-data GMM recovery and convergence diagnosis.**
 The [bounded diagnostic](docs/observed-recovery.md) separates BIC selection cost,
 convergence, initialization and measured-information limits using preserved
 archival evidence and 60 fresh datasets. Extended-budget and known-parameter

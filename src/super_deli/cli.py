@@ -169,6 +169,13 @@ def main(argv: list[str] | None = None) -> int:
     density.add_argument("--model-config", type=Path, required=True)
     density.add_argument("--modality")
     density.add_argument("--output-dir", type=Path, required=True)
+    neural = commands.add_parser(
+        "cluster-tabular-neural", help="CPU autoencoder/HDBSCAN with explicit noise"
+    )
+    neural.add_argument("config", type=Path)
+    neural.add_argument("--model-config", type=Path, required=True)
+    neural.add_argument("--modality")
+    neural.add_argument("--output-dir", type=Path, required=True)
     integrate = commands.add_parser(
         "cluster-integrative", help="Integrate linked modality PC profiles"
     )
@@ -1023,6 +1030,19 @@ def main(argv: list[str] | None = None) -> int:
             )
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
             return 0 if summary["status"] == "complete" else 1
+        if args.command == "cluster-tabular-neural":
+            from super_deli.models.neural_config import NeuralConfig
+            from super_deli.workflows.tabular_neural import run_tabular_neural
+
+            summary = run_tabular_neural(
+                config,
+                model_config=NeuralConfig.from_dict(read_json(args.model_config)),
+                base_dir=source.parent,
+                output_dir=args.output_dir,
+                modality_name=args.modality,
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0 if summary["stability"]["status"] in {"complete", "not_computed"} else 1
         if args.command == "cluster-tabular-density":
             from super_deli.models.hdbscan_config import HDBSCANConfig
             from super_deli.workflows.tabular_hdbscan import run_tabular_hdbscan

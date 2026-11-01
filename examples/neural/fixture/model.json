@@ -1,0 +1,20 @@
+{
+  "assume_independent_units": true,
+  "feature_names": [
+    "trait_1",
+    "trait_2",
+    "trait_3",
+    "trait_4",
+    "trait_5",
+    "trait_6",
+    "trait_7",
+    "trait_8"
+  ],
+  "max_pairwise_bytes": 268435456,
+  "max_working_bytes": 268435456,
+  "model_family": "tabular_autoencoder_hdbscan",
+  "n_subsamples": 2,
+  "random_seed": 0,
+  "schema_version": 1,
+  "subsampling_seed": 0
+}

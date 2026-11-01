@@ -1,0 +1,439 @@
+{
+  "dataset_id": "invented_neural_comparison",
+  "localities": [],
+  "modalities": [
+    {
+      "features": [
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "trait_1",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "trait_2",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "trait_3",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "trait_4",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "trait_5",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "trait_6",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "trait_7",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "trait_8",
+          "role": "feature",
+          "unit": null
+        }
+      ],
+      "format": "tsv",
+      "kind": "morphological",
+      "level": "specimen",
+      "name": "traits",
+      "observations": [
+        {
+          "observation_id": "invented_0000",
+          "unit_id": "invented_0000"
+        },
+        {
+          "observation_id": "invented_0001",
+          "unit_id": "invented_0001"
+        },
+        {
+          "observation_id": "invented_0002",
+          "unit_id": "invented_0002"
+        },
+        {
+          "observation_id": "invented_0003",
+          "unit_id": "invented_0003"
+        },
+        {
+          "observation_id": "invented_0004",
+          "unit_id": "invented_0004"
+        },
+        {
+          "observation_id": "invented_0005",
+          "unit_id": "invented_0005"
+        },
+        {
+          "observation_id": "invented_0006",
+          "unit_id": "invented_0006"
+        },
+        {
+          "observation_id": "invented_0007",
+          "unit_id": "invented_0007"
+        },
+        {
+          "observation_id": "invented_0008",
+          "unit_id": "invented_0008"
+        },
+        {
+          "observation_id": "invented_0009",
+          "unit_id": "invented_0009"
+        },
+        {
+          "observation_id": "invented_0010",
+          "unit_id": "invented_0010"
+        },
+        {
+          "observation_id": "invented_0011",
+          "unit_id": "invented_0011"
+        },
+        {
+          "observation_id": "invented_0012",
+          "unit_id": "invented_0012"
+        },
+        {
+          "observation_id": "invented_0013",
+          "unit_id": "invented_0013"
+        },
+        {
+          "observation_id": "invented_0014",
+          "unit_id": "invented_0014"
+        },
+        {
+          "observation_id": "invented_0015",
+          "unit_id": "invented_0015"
+        },
+        {
+          "observation_id": "invented_0016",
+          "unit_id": "invented_0016"
+        },
+        {
+          "observation_id": "invented_0017",
+          "unit_id": "invented_0017"
+        },
+        {
+          "observation_id": "invented_0018",
+          "unit_id": "invented_0018"
+        },
+        {
+          "observation_id": "invented_0019",
+          "unit_id": "invented_0019"
+        },
+        {
+          "observation_id": "invented_0020",
+          "unit_id": "invented_0020"
+        },
+        {
+          "observation_id": "invented_0021",
+          "unit_id": "invented_0021"
+        },
+        {
+          "observation_id": "invented_0022",
+          "unit_id": "invented_0022"
+        },
+        {
+          "observation_id": "invented_0023",
+          "unit_id": "invented_0023"
+        },
+        {
+          "observation_id": "invented_0024",
+          "unit_id": "invented_0024"
+        },
+        {
+          "observation_id": "invented_0025",
+          "unit_id": "invented_0025"
+        },
+        {
+          "observation_id": "invented_0026",
+          "unit_id": "invented_0026"
+        },
+        {
+          "observation_id": "invented_0027",
+          "unit_id": "invented_0027"
+        },
+        {
+          "observation_id": "invented_0028",
+          "unit_id": "invented_0028"
+        },
+        {
+          "observation_id": "invented_0029",
+          "unit_id": "invented_0029"
+        },
+        {
+          "observation_id": "invented_0030",
+          "unit_id": "invented_0030"
+        },
+        {
+          "observation_id": "invented_0031",
+          "unit_id": "invented_0031"
+        },
+        {
+          "observation_id": "invented_0032",
+          "unit_id": "invented_0032"
+        },
+        {
+          "observation_id": "invented_0033",
+          "unit_id": "invented_0033"
+        },
+        {
+          "observation_id": "invented_0034",
+          "unit_id": "invented_0034"
+        },
+        {
+          "observation_id": "invented_0035",
+          "unit_id": "invented_0035"
+        },
+        {
+          "observation_id": "invented_0036",
+          "unit_id": "invented_0036"
+        },
+        {
+          "observation_id": "invented_0037",
+          "unit_id": "invented_0037"
+        },
+        {
+          "observation_id": "invented_0038",
+          "unit_id": "invented_0038"
+        },
+        {
+          "observation_id": "invented_0039",
+          "unit_id": "invented_0039"
+        }
+      ],
+      "path": "traits.tsv",
+      "popmapfile": null
+    }
+  ],
+  "populations": [],
+  "random_seed": 0,
+  "schema_version": 1,
+  "specimens": [
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0000"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0001"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0002"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0003"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0004"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0005"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0006"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0007"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0008"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0009"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0010"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0011"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0012"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0013"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0014"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0015"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0016"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0017"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0018"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0019"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0020"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0021"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0022"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0023"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0024"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0025"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0026"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0027"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0028"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0029"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0030"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0031"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0032"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0033"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0034"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0035"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0036"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0037"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0038"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "invented_0039"
+    }
+  ]
+}

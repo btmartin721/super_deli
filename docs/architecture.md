@@ -263,8 +263,19 @@ reference labels need independent evidence and documented uncertainty.
 36. **Baseline completed:** Opt-in one-table complete-case/observed-mean policy comparison with refitted native stability, frozen simulation sensitivity and explicit retention/geometric-loss limits. Broader missing/unpaired/mixed-feature models and calibrated missing-value uncertainty remain pending.
 37. **Baseline completed:** Opt-in observed-coordinate GMM for incomplete continuous tables, with constrained conditional-moment EM, point-only BIC selection, retained failure evidence and raw-feature simulation comparisons. Resampling, significance calibration and grouped/integrative observed-data adapters remain pending.
 38. **Diagnostic completed:** Frozen observed-coordinate GMM recovery/convergence diagnosis with original evidence preservation, bounded saved-path continuations, independent fresh confirmation and isolated known-parameter starts. No new default, covariance family or uncertainty claim.
-39. Anatomical landmark learning, semilandmark sliding and further model families.
-38. Consolidated user guidance, end-to-end examples and a scoped research release.
+39. **First neural baseline:** Opt-in complete continuous tabular autoencoder/HDBSCAN, numeric frozen transforms, explicit noise and refitted whole-unit subsampling. Prespecified initialization comparisons remain separate from sampling stability; no significance adapter or new default.
+40. Genomic, shape and integrative neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
+41. Consolidated user guidance, end-to-end examples and a scoped research release.
+
+The [tabular neural workflow](tabular-neural.md) reuses typed ingestion and a
+shared density-assignment helper. Raw-feature and latent standardization are
+fitted separately within every whole-unit subsample. Its dependency-free
+configuration and lazy CLI dispatch keep PyTorch optional. Saved numeric weights
+support independently auditable encoder/decoder transforms without Python-object
+serialization; new measurements receive no invented HDBSCAN species prediction.
+Existing [density clustering](tabular-density-clustering.md), GMM workflows,
+configuration hashes and p-values keep their behavior. The frozen simulation
+comparison and independent audits are [documented separately](tabular-neural-study.md).
 
 The later calibration and diagnostic workflows remain restricted to their declared
 assumptions and data types; completing their engineering does not establish species
