@@ -264,8 +264,9 @@ reference labels need independent evidence and documented uncertainty.
 37. **Baseline completed:** Opt-in observed-coordinate GMM for incomplete continuous tables, with constrained conditional-moment EM, point-only BIC selection, retained failure evidence and raw-feature simulation comparisons. Resampling, significance calibration and grouped/integrative observed-data adapters remain pending.
 38. **Diagnostic completed:** Frozen observed-coordinate GMM recovery/convergence diagnosis with original evidence preservation, bounded saved-path continuations, independent fresh confirmation and isolated known-parameter starts. No new default, covariance family or uncertainty claim.
 39. **First neural baseline:** Opt-in complete continuous tabular autoencoder/HDBSCAN, numeric frozen transforms, explicit noise and refitted whole-unit subsampling. Prespecified initialization comparisons remain separate from sampling stability; no significance adapter or new default.
-40. Genomic, shape and integrative neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
-41. Consolidated user guidance, end-to-end examples and a scoped research release.
+40. **Diagnostic completed:** Archived neural curved-moons geometry, neighborhood, hierarchy and selection diagnosis with fixed saved weights, exact density replays and independent audits. No new training, model/default promotion or significance claim; mapping/noise/metric effects remain partly entangled.
+41. Genomic, shape and integrative neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
+42. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The [tabular neural workflow](tabular-neural.md) reuses typed ingestion and a
 shared density-assignment helper. Raw-feature and latent standardization are

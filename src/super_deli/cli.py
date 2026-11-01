@@ -53,6 +53,9 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.benchmarking.moons_cli import register as register_moons
 
     moons_commands = register_moons(commands)
+    from super_deli.benchmarking.neural_moons_cli import register as register_neural_moons
+
+    register_neural_moons(commands)
     validate = commands.add_parser("validate", help="Check declarations and local file references")
     validate.add_argument("config", type=Path, help="Versioned dataset JSON configuration")
     validate.add_argument("--report", type=Path, help="Also save JSON to a new file")
@@ -487,6 +490,12 @@ def main(argv: list[str] | None = None) -> int:
     power_budget.add_argument("--output-file", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
+        if args.command == "diagnose-neural-moons":
+            from super_deli.benchmarking.neural_moons_cli import dispatch
+
+            summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         source = args.config.absolute()
         if args.command in moons_commands:
             from super_deli.benchmarking.moons_cli import dispatch

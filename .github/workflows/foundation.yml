@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 3
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
@@ -31,12 +31,17 @@ jobs:
           python -m pip install '.[dev,neural]'
           python -m pip check
       - name: Test neural contracts and legacy density parity
-        run: python -m pytest -q tests/test_neural.py tests/test_neural_config.py tests/test_neural_study.py tests/test_tabular_hdbscan.py
+        run: python -m pytest -q tests/test_neural.py tests/test_neural_config.py tests/test_neural_study.py tests/test_tabular_hdbscan.py tests/test_foundation_neural_moons.py tests/test_benchmark_neural_moons.py
       - name: Check installed neural CLI and numeric-model roundtrip
         working-directory: ${{ runner.temp }}
         run: |
           unset PYTHONPATH
           python "$GITHUB_WORKSPACE/examples/neural/smoke.py" --output-dir "$RUNNER_TEMP/neural-smoke"
+      - name: Check installed neural-moons diagnostic
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/neural-moons/smoke.py" --output-dir "$RUNNER_TEMP/neural-moons-smoke"
   checks:
     runs-on: ubuntu-latest
     strategy:

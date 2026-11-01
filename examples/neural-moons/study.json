@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "fixture": false,
+  "artifact_cap_bytes": 1073741824,
+  "min_free_bytes": 8589934592,
+  "max_projected_seconds": 3600,
+  "max_workers": 2,
+  "max_working_bytes": 268435456
+}

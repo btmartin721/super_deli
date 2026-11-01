@@ -1,0 +1,51 @@
+{
+  "archive": {
+    "archive_failures": 0,
+    "kind": "neural_study_v1",
+    "original_workflows": 1330,
+    "passed": true,
+    "source_bundle_verified": true,
+    "source_software": {
+      "numpy": "2.2.6",
+      "scikit-learn": "1.6.1",
+      "scipy": "1.15.3",
+      "super-deli": "0.56.0.dev0",
+      "threadpoolctl": "3.6.0",
+      "torch": "2.15.0"
+    }
+  },
+  "main": {
+    "archive_replays": 248,
+    "attempted": 548,
+    "failed": 0,
+    "freeze_sha256": "9afdf8c3e8d257170894a3528ec0c43241fa3d70fdf17a2097aa922b1f714f25",
+    "limit": "Independent graph/condensation/frontier checks; not a second complete HDBSCAN implementation",
+    "passed": true,
+    "phase": "main",
+    "selection_evaluations": 1628,
+    "unavailable_hierarchies": 0
+  },
+  "preflight": {
+    "archive_replays": 26,
+    "attempted": 56,
+    "failed": 0,
+    "freeze_sha256": "9afdf8c3e8d257170894a3528ec0c43241fa3d70fdf17a2097aa922b1f714f25",
+    "limit": "Independent graph/condensation/frontier checks; not a second complete HDBSCAN implementation",
+    "passed": true,
+    "phase": "preflight",
+    "selection_evaluations": 164,
+    "unavailable_hierarchies": 0
+  },
+  "resource_gate": {
+    "cap_bytes": 1073741824,
+    "failed_fits": 0,
+    "free_bytes": 229270974464,
+    "freeze_sha256": "9afdf8c3e8d257170894a3528ec0c43241fa3d70fdf17a2097aa922b1f714f25",
+    "passed": true,
+    "preflight_audit_sha256": "751978293b8ce2e26e4a5c97f84c81408cf2be870b240eb3729d1169bccb991f",
+    "projected_bytes": 436441777,
+    "projected_main_seconds": 22.425900023455533,
+    "staging_bytes": 264508634,
+    "unavailable_hierarchies": 0
+  }
+}

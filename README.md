@@ -4,7 +4,14 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: opt-in tabular autoencoder + HDBSCAN.**
+**Current checkpoint: curved-moons neural recovery diagnosis.**
+The [bounded archival diagnostic](docs/neural-moons.md) separates input geometry,
+neural representation, latent scaling and density-group selection using saved
+weights and existing simulations. The [findings](docs/neural-moons-results.md)
+show mixed upstream and selection effects, with no reliable default repair.
+Production models, defaults and historical p-values remain unchanged.
+
+**First neural model completed: opt-in tabular autoencoder + HDBSCAN.**
 The first neural workflow learns a nonlinear two-dimensional representation of
 complete continuous morphology/ecology, then proposes density groups with
 explicit noise. It retains numeric weights, training traces and optional
