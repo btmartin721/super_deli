@@ -1,0 +1,884 @@
+[
+  {
+    "arm": "density",
+    "case": "gaussian",
+    "condition": "clean",
+    "mean_source_neighbor_overlap": 0.979296875,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "neural_0",
+    "case": "gaussian",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.01240097673945619,
+    "mean_source_neighbor_overlap": 0.926171875,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "neural_101",
+    "case": "gaussian",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.015377421810327477,
+    "mean_source_neighbor_overlap": 0.890234375,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "neural_202",
+    "case": "gaussian",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.008087319409140184,
+    "mean_source_neighbor_overlap": 0.915234375,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "denoising_0",
+    "case": "gaussian",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.013977506829251118,
+    "mean_source_neighbor_overlap": 0.91953125,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "denoising_101",
+    "case": "gaussian",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.01762373941277503,
+    "mean_source_neighbor_overlap": 0.898046875,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "denoising_202",
+    "case": "gaussian",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.013667275646410734,
+    "mean_source_neighbor_overlap": 0.92578125,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "density",
+    "case": "gaussian",
+    "condition": "noisy",
+    "mean_source_neighbor_overlap": 0.85625,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "neural_0",
+    "case": "gaussian",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.02206414062187081,
+    "mean_source_neighbor_overlap": 0.831640625,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "neural_101",
+    "case": "gaussian",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.02587101348669152,
+    "mean_source_neighbor_overlap": 0.80859375,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "neural_202",
+    "case": "gaussian",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.018931602651770407,
+    "mean_source_neighbor_overlap": 0.818359375,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "denoising_0",
+    "case": "gaussian",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.024445485459420047,
+    "mean_source_neighbor_overlap": 0.83359375,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "denoising_101",
+    "case": "gaussian",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.027644521068783214,
+    "mean_source_neighbor_overlap": 0.822265625,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "denoising_202",
+    "case": "gaussian",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.023721729903642276,
+    "mean_source_neighbor_overlap": 0.830078125,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "source_reference",
+    "case": "gaussian",
+    "condition": "source",
+    "mean_source_neighbor_overlap": 1.0,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "density",
+    "case": "gaussian",
+    "condition": "clean",
+    "mean_source_neighbor_overlap": 0.98310546875,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "neural_0",
+    "case": "gaussian",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.013278631019497505,
+    "mean_source_neighbor_overlap": 0.94912109375,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "neural_101",
+    "case": "gaussian",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.017000920040110976,
+    "mean_source_neighbor_overlap": 0.92138671875,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "neural_202",
+    "case": "gaussian",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.00901431595153567,
+    "mean_source_neighbor_overlap": 0.92607421875,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "denoising_0",
+    "case": "gaussian",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.014374045805938868,
+    "mean_source_neighbor_overlap": 0.94619140625,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "denoising_101",
+    "case": "gaussian",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.0177395075685187,
+    "mean_source_neighbor_overlap": 0.92548828125,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "denoising_202",
+    "case": "gaussian",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.0115845649203928,
+    "mean_source_neighbor_overlap": 0.928125,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "density",
+    "case": "gaussian",
+    "condition": "noisy",
+    "mean_source_neighbor_overlap": 0.72421875,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "neural_0",
+    "case": "gaussian",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.023377640598607266,
+    "mean_source_neighbor_overlap": 0.712109375,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "neural_101",
+    "case": "gaussian",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.027559671848932217,
+    "mean_source_neighbor_overlap": 0.70126953125,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "neural_202",
+    "case": "gaussian",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.020271975487871127,
+    "mean_source_neighbor_overlap": 0.6986328125,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "denoising_0",
+    "case": "gaussian",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.024828150679833464,
+    "mean_source_neighbor_overlap": 0.7162109375,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "denoising_101",
+    "case": "gaussian",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.02821184251830073,
+    "mean_source_neighbor_overlap": 0.70654296875,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "denoising_202",
+    "case": "gaussian",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.022668864372828702,
+    "mean_source_neighbor_overlap": 0.70693359375,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "source_reference",
+    "case": "gaussian",
+    "condition": "source",
+    "mean_source_neighbor_overlap": 1.0,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": null
+  },
+  {
+    "arm": "density",
+    "case": "four_spherical",
+    "condition": "clean",
+    "mean_source_neighbor_overlap": 0.98984375,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 1
+  },
+  {
+    "arm": "neural_0",
+    "case": "four_spherical",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.011497405415212743,
+    "mean_source_neighbor_overlap": 0.90546875,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 5
+  },
+  {
+    "arm": "neural_101",
+    "case": "four_spherical",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.011626755353771556,
+    "mean_source_neighbor_overlap": 0.8984375,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 3
+  },
+  {
+    "arm": "neural_202",
+    "case": "four_spherical",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.010662370036373176,
+    "mean_source_neighbor_overlap": 0.894140625,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 3
+  },
+  {
+    "arm": "denoising_0",
+    "case": "four_spherical",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.013948706587291564,
+    "mean_source_neighbor_overlap": 0.8875,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 5
+  },
+  {
+    "arm": "denoising_101",
+    "case": "four_spherical",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.013905823364704917,
+    "mean_source_neighbor_overlap": 0.88984375,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 3
+  },
+  {
+    "arm": "denoising_202",
+    "case": "four_spherical",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.01342680431041868,
+    "mean_source_neighbor_overlap": 0.877734375,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 5
+  },
+  {
+    "arm": "density",
+    "case": "four_spherical",
+    "condition": "noisy",
+    "mean_source_neighbor_overlap": 0.938671875,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 1
+  },
+  {
+    "arm": "neural_0",
+    "case": "four_spherical",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.01293417308997126,
+    "mean_source_neighbor_overlap": 0.875390625,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 5
+  },
+  {
+    "arm": "neural_101",
+    "case": "four_spherical",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.012994760527159496,
+    "mean_source_neighbor_overlap": 0.869140625,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 3
+  },
+  {
+    "arm": "neural_202",
+    "case": "four_spherical",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.011857411216818282,
+    "mean_source_neighbor_overlap": 0.86640625,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 3
+  },
+  {
+    "arm": "denoising_0",
+    "case": "four_spherical",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.0150519808298444,
+    "mean_source_neighbor_overlap": 0.87109375,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 5
+  },
+  {
+    "arm": "denoising_101",
+    "case": "four_spherical",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.015068404037285427,
+    "mean_source_neighbor_overlap": 0.869140625,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 3
+  },
+  {
+    "arm": "denoising_202",
+    "case": "four_spherical",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.014463688408954678,
+    "mean_source_neighbor_overlap": 0.86796875,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 3
+  },
+  {
+    "arm": "source_reference",
+    "case": "four_spherical",
+    "condition": "source",
+    "mean_source_neighbor_overlap": 1.0,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 1
+  },
+  {
+    "arm": "density",
+    "case": "four_spherical",
+    "condition": "clean",
+    "mean_source_neighbor_overlap": 0.99384765625,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_0",
+    "case": "four_spherical",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.010456842600142919,
+    "mean_source_neighbor_overlap": 0.9171875,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_101",
+    "case": "four_spherical",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.011182659571239002,
+    "mean_source_neighbor_overlap": 0.905859375,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_202",
+    "case": "four_spherical",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.010067704383553637,
+    "mean_source_neighbor_overlap": 0.89482421875,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_0",
+    "case": "four_spherical",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.01236179200836651,
+    "mean_source_neighbor_overlap": 0.90322265625,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_101",
+    "case": "four_spherical",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.012951707328213598,
+    "mean_source_neighbor_overlap": 0.89462890625,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_202",
+    "case": "four_spherical",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.012076027572707763,
+    "mean_source_neighbor_overlap": 0.88310546875,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "density",
+    "case": "four_spherical",
+    "condition": "noisy",
+    "mean_source_neighbor_overlap": 0.8572265625,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_0",
+    "case": "four_spherical",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.011880588385431611,
+    "mean_source_neighbor_overlap": 0.7892578125,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_101",
+    "case": "four_spherical",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.012497799759694448,
+    "mean_source_neighbor_overlap": 0.78515625,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_202",
+    "case": "four_spherical",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.011418248389229705,
+    "mean_source_neighbor_overlap": 0.77900390625,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_0",
+    "case": "four_spherical",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.013389813662307962,
+    "mean_source_neighbor_overlap": 0.82666015625,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_101",
+    "case": "four_spherical",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.013976204418355717,
+    "mean_source_neighbor_overlap": 0.81298828125,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_202",
+    "case": "four_spherical",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.013119841224432322,
+    "mean_source_neighbor_overlap": 0.808984375,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "source_reference",
+    "case": "four_spherical",
+    "condition": "source",
+    "mean_source_neighbor_overlap": 1.0,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "density",
+    "case": "moons",
+    "condition": "clean",
+    "mean_source_neighbor_overlap": 0.814453125,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_0",
+    "case": "moons",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.08787198105422596,
+    "mean_source_neighbor_overlap": 0.851171875,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_101",
+    "case": "moons",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.09041299167123922,
+    "mean_source_neighbor_overlap": 0.851953125,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_202",
+    "case": "moons",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.060261717953471614,
+    "mean_source_neighbor_overlap": 0.884765625,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_0",
+    "case": "moons",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.09471059434635852,
+    "mean_source_neighbor_overlap": 0.853515625,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_101",
+    "case": "moons",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.09642196036632834,
+    "mean_source_neighbor_overlap": 0.85,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_202",
+    "case": "moons",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.0645864679311711,
+    "mean_source_neighbor_overlap": 0.880078125,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "density",
+    "case": "moons",
+    "condition": "noisy",
+    "mean_source_neighbor_overlap": 0.560546875,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_0",
+    "case": "moons",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.18200008910800222,
+    "mean_source_neighbor_overlap": 0.60859375,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_101",
+    "case": "moons",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.18255223226220602,
+    "mean_source_neighbor_overlap": 0.61171875,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_202",
+    "case": "moons",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.17007831055293723,
+    "mean_source_neighbor_overlap": 0.62890625,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_0",
+    "case": "moons",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.1907684371934214,
+    "mean_source_neighbor_overlap": 0.612890625,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_101",
+    "case": "moons",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.1899251996584161,
+    "mean_source_neighbor_overlap": 0.615625,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_202",
+    "case": "moons",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.1737522592273531,
+    "mean_source_neighbor_overlap": 0.63515625,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "source_reference",
+    "case": "moons",
+    "condition": "source",
+    "mean_source_neighbor_overlap": 1.0,
+    "n": 64,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "density",
+    "case": "moons",
+    "condition": "clean",
+    "mean_source_neighbor_overlap": 0.73935546875,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_0",
+    "case": "moons",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.08998106168184931,
+    "mean_source_neighbor_overlap": 0.7431640625,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_101",
+    "case": "moons",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.09124034889071801,
+    "mean_source_neighbor_overlap": 0.74755859375,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 1
+  },
+  {
+    "arm": "neural_202",
+    "case": "moons",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.04885108356429159,
+    "mean_source_neighbor_overlap": 0.8376953125,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 8
+  },
+  {
+    "arm": "denoising_0",
+    "case": "moons",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.09233762225534749,
+    "mean_source_neighbor_overlap": 0.75185546875,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_101",
+    "case": "moons",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.09214317483620257,
+    "mean_source_neighbor_overlap": 0.75048828125,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 4
+  },
+  {
+    "arm": "denoising_202",
+    "case": "moons",
+    "condition": "clean",
+    "mean_final_clean_mse": 0.05091204464237635,
+    "mean_source_neighbor_overlap": 0.8228515625,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 8
+  },
+  {
+    "arm": "density",
+    "case": "moons",
+    "condition": "noisy",
+    "mean_source_neighbor_overlap": 0.2271484375,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_0",
+    "case": "moons",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.18316805727335275,
+    "mean_source_neighbor_overlap": 0.26005859375,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_101",
+    "case": "moons",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.1953325032670286,
+    "mean_source_neighbor_overlap": 0.25947265625,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "neural_202",
+    "case": "moons",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.16129514804418194,
+    "mean_source_neighbor_overlap": 0.2783203125,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_0",
+    "case": "moons",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.18530448905636737,
+    "mean_source_neighbor_overlap": 0.26171875,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_101",
+    "case": "moons",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.19804109527473607,
+    "mean_source_neighbor_overlap": 0.2609375,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "denoising_202",
+    "case": "moons",
+    "condition": "noisy",
+    "mean_final_clean_mse": 0.1623909360993055,
+    "mean_source_neighbor_overlap": 0.27841796875,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 0
+  },
+  {
+    "arm": "source_reference",
+    "case": "moons",
+    "condition": "source",
+    "mean_source_neighbor_overlap": 1.0,
+    "n": 256,
+    "resolved": 10,
+    "threshold_separable_count": 7
+  }
+]

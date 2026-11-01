@@ -265,8 +265,9 @@ reference labels need independent evidence and documented uncertainty.
 38. **Diagnostic completed:** Frozen observed-coordinate GMM recovery/convergence diagnosis with original evidence preservation, bounded saved-path continuations, independent fresh confirmation and isolated known-parameter starts. No new default, covariance family or uncertainty claim.
 39. **First neural baseline:** Opt-in complete continuous tabular autoencoder/HDBSCAN, numeric frozen transforms, explicit noise and refitted whole-unit subsampling. Prespecified initialization comparisons remain separate from sampling stability; no significance adapter or new default.
 40. **Diagnostic completed:** Archived neural curved-moons geometry, neighborhood, hierarchy and selection diagnosis with fixed saved weights, exact density replays and independent audits. No new training, model/default promotion or significance claim; mapping/noise/metric effects remain partly entangled.
-41. Genomic, shape and integrative neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
-42. Consolidated user guidance, end-to-end examples and a scoped research release.
+41. **Opt-in neural comparison completed:** Fixed-corruption denoising autoencoder/HDBSCAN with matched feature-noise controls, all three seeds, native subsampling, independent training/draw/replay audits and conservative pilot uncertainty. Curved-moons recovery remains weak; no default or significance change.
+42. Genomic, shape and integrative neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
+43. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The [tabular neural workflow](tabular-neural.md) reuses typed ingestion and a
 shared density-assignment helper. Raw-feature and latent standardization are
@@ -458,3 +459,15 @@ reconstruct separate extended-budget candidates. Independent audits reuse the
 dense marginal/moment reference; known-generating-parameter starts remain
 isolated from unsupervised selection. No production configuration, default,
 old serialization, empirical gate or historical p-value is changed.
+
+### Fixed-corruption tabular representation
+
+The opt-in [denoising adapter](tabular-denoising.md) has a separate dependency-free
+configuration and trainer. It reuses the ordinary fixed network, numeric forward
+transform, density fitter and inclusion-conditional accumulator while preserving
+the legacy numerical modules. A shared workflow helper owns ingestion, artifact
+exports, reports and strict numeric loading for both neural families. Corruption
+has its own local CPU generator; checkpoints and noise digests support a separate
+NumPy gradient/Adam auditor. The [paired comparison](denoising-study.md) freezes
+feature-map/noise controls, all neural seeds and resource gates. Production
+defaults, old serialization, p-values and empirical evidence gates stay unchanged.

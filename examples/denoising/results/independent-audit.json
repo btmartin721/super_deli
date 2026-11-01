@@ -1,0 +1,55 @@
+{
+  "main": {
+    "attempted_workflows": 2618,
+    "checks": [
+      "independent source laws and noise",
+      "exact row/draw pairing and hashes",
+      "independent forward and first Adam update",
+      "all corruption digests",
+      "PCA and density invariants",
+      "legacy numeric source/weight parity",
+      "independent subsampling denominators",
+      "exports and frozen fit accounting"
+    ],
+    "corruption_matrices_checked": 546000,
+    "density_audit_boundary": "invariants and distances; HDBSCAN not independently reimplemented",
+    "exact_fresh_replays": 30,
+    "exact_legacy_replays": 8,
+    "failed_workflows": 0,
+    "neural_training_fits": 2190,
+    "observations": 60,
+    "passed": true,
+    "phase": "main"
+  },
+  "preflight": {
+    "attempted_workflows": 266,
+    "checks": [
+      "independent source laws and noise",
+      "exact row/draw pairing and hashes",
+      "independent forward and first Adam update",
+      "all corruption digests",
+      "PCA and density invariants",
+      "legacy numeric source/weight parity",
+      "independent subsampling denominators",
+      "exports and frozen fit accounting"
+    ],
+    "corruption_matrices_checked": 54000,
+    "density_audit_boundary": "invariants and distances; HDBSCAN not independently reimplemented",
+    "exact_fresh_replays": 0,
+    "exact_legacy_replays": 8,
+    "failed_workflows": 0,
+    "neural_training_fits": 222,
+    "observations": 6,
+    "passed": true,
+    "phase": "preflight"
+  },
+  "resource_gate": {
+    "audit_sha256": "99c38f74a0a78cf2d1f84e4b77a09a86045ed29c540382a5394dcb51874a32b2",
+    "free_bytes": 228662636544,
+    "measured_staging_bytes": 125347818,
+    "projected_bytes": 1468265105,
+    "projected_main_seconds_two_workers": 426.45046950327117,
+    "staging_copies_counted": 2,
+    "status": "passed"
+  }
+}

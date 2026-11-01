@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "model_family": "tabular_denoising_autoencoder_hdbscan",
+  "feature_names": ["trait_1", "trait_2", "trait_3", "trait_4", "trait_5", "trait_6", "trait_7", "trait_8"],
+  "assume_independent_units": true,
+  "random_seed": 0,
+  "corruption_seed": 101,
+  "subsampling_seed": 202,
+  "n_subsamples": 20
+}

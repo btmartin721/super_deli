@@ -1,0 +1,1154 @@
+{
+  "independent_observations": 60,
+  "interpretation": [
+    "Ten independent observations/cell; broad pilot uncertainty",
+    "Clean means no extra feature noise; source moons remain noisy",
+    "Measurement noise is raw-scale; training corruption is standardized-scale",
+    "Correct K does not imply recovered groups or species boundaries",
+    "Seeds, paired tables and subsamples are repeated measurements",
+    "No new p-values, best seed or automatic default change"
+  ],
+  "main_audit_sha256": "34476246d43fdc749b53bc464bf0838a92bdb5c8b796f8ae4ad18b5fffb06cc5",
+  "paired_tables": 120,
+  "point_failures": 0,
+  "primary_paired_differences": [
+    {
+      "case": "gaussian",
+      "condition": "clean",
+      "denoising_only_correct": 0,
+      "failed_pairs": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "n": 64,
+      "ordinary_only_correct": 0,
+      "requested_pairs": 10,
+      "resolved_difference": 0.0,
+      "resolved_pairs": 10,
+      "simultaneous_95_difference_interval": [
+        -0.5408243221038702,
+        0.5408243221038702
+      ]
+    },
+    {
+      "case": "gaussian",
+      "condition": "noisy",
+      "denoising_only_correct": 0,
+      "failed_pairs": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "n": 64,
+      "ordinary_only_correct": 0,
+      "requested_pairs": 10,
+      "resolved_difference": 0.0,
+      "resolved_pairs": 10,
+      "simultaneous_95_difference_interval": [
+        -0.5408243221038702,
+        0.5408243221038702
+      ]
+    },
+    {
+      "case": "gaussian",
+      "condition": "clean",
+      "denoising_only_correct": 0,
+      "failed_pairs": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "n": 256,
+      "ordinary_only_correct": 0,
+      "requested_pairs": 10,
+      "resolved_difference": 0.0,
+      "resolved_pairs": 10,
+      "simultaneous_95_difference_interval": [
+        -0.5408243221038702,
+        0.5408243221038702
+      ]
+    },
+    {
+      "case": "gaussian",
+      "condition": "noisy",
+      "denoising_only_correct": 0,
+      "failed_pairs": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "n": 256,
+      "ordinary_only_correct": 0,
+      "requested_pairs": 10,
+      "resolved_difference": 0.0,
+      "resolved_pairs": 10,
+      "simultaneous_95_difference_interval": [
+        -0.5408243221038702,
+        0.5408243221038702
+      ]
+    },
+    {
+      "case": "four_spherical",
+      "condition": "clean",
+      "denoising_only_correct": 0,
+      "failed_pairs": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "n": 64,
+      "ordinary_only_correct": 0,
+      "requested_pairs": 10,
+      "resolved_difference": 0.0,
+      "resolved_pairs": 10,
+      "simultaneous_95_difference_interval": [
+        -0.5408243221038702,
+        0.5408243221038702
+      ]
+    },
+    {
+      "case": "four_spherical",
+      "condition": "noisy",
+      "denoising_only_correct": 0,
+      "failed_pairs": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "n": 64,
+      "ordinary_only_correct": 0,
+      "requested_pairs": 10,
+      "resolved_difference": 0.0,
+      "resolved_pairs": 10,
+      "simultaneous_95_difference_interval": [
+        -0.5408243221038702,
+        0.5408243221038702
+      ]
+    },
+    {
+      "case": "four_spherical",
+      "condition": "clean",
+      "denoising_only_correct": 0,
+      "failed_pairs": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "n": 256,
+      "ordinary_only_correct": 0,
+      "requested_pairs": 10,
+      "resolved_difference": 0.0,
+      "resolved_pairs": 10,
+      "simultaneous_95_difference_interval": [
+        -0.5408243221038702,
+        0.5408243221038702
+      ]
+    },
+    {
+      "case": "four_spherical",
+      "condition": "noisy",
+      "denoising_only_correct": 1,
+      "failed_pairs": 0,
+      "failure_bounds": [
+        0.1,
+        0.1
+      ],
+      "n": 256,
+      "ordinary_only_correct": 0,
+      "requested_pairs": 10,
+      "resolved_difference": 0.1,
+      "resolved_pairs": 10,
+      "simultaneous_95_difference_interval": [
+        -0.5407826476226413,
+        0.6604461358655411
+      ]
+    },
+    {
+      "case": "moons",
+      "condition": "clean",
+      "denoising_only_correct": 0,
+      "failed_pairs": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "n": 64,
+      "ordinary_only_correct": 0,
+      "requested_pairs": 10,
+      "resolved_difference": 0.0,
+      "resolved_pairs": 10,
+      "simultaneous_95_difference_interval": [
+        -0.5408243221038702,
+        0.5408243221038702
+      ]
+    },
+    {
+      "case": "moons",
+      "condition": "noisy",
+      "denoising_only_correct": 0,
+      "failed_pairs": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "n": 64,
+      "ordinary_only_correct": 0,
+      "requested_pairs": 10,
+      "resolved_difference": 0.0,
+      "resolved_pairs": 10,
+      "simultaneous_95_difference_interval": [
+        -0.5408243221038702,
+        0.5408243221038702
+      ]
+    },
+    {
+      "case": "moons",
+      "condition": "clean",
+      "denoising_only_correct": 0,
+      "failed_pairs": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "n": 256,
+      "ordinary_only_correct": 0,
+      "requested_pairs": 10,
+      "resolved_difference": 0.0,
+      "resolved_pairs": 10,
+      "simultaneous_95_difference_interval": [
+        -0.5408243221038702,
+        0.5408243221038702
+      ]
+    },
+    {
+      "case": "moons",
+      "condition": "noisy",
+      "denoising_only_correct": 0,
+      "failed_pairs": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "n": 256,
+      "ordinary_only_correct": 0,
+      "requested_pairs": 10,
+      "resolved_difference": 0.0,
+      "resolved_pairs": 10,
+      "simultaneous_95_difference_interval": [
+        -0.5408243221038702,
+        0.5408243221038702
+      ]
+    }
+  ],
+  "primary_rates": [
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "condition": "clean",
+      "correct_k": 10,
+      "failed": 0,
+      "failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "k_counts": {
+        "1": 10
+      },
+      "mean_ari": 0.0,
+      "mean_coverage": 0.4890625,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 1.0,
+      "simultaneous_95_interval": [
+        0.45917567789613484,
+        1.0
+      ]
+    },
+    {
+      "arm": "neural_0",
+      "case": "gaussian",
+      "condition": "clean",
+      "correct_k": 10,
+      "failed": 0,
+      "failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "k_counts": {
+        "1": 10
+      },
+      "mean_ari": 0.0,
+      "mean_coverage": 0.54375,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 1.0,
+      "simultaneous_95_interval": [
+        0.45917567789613484,
+        1.0
+      ]
+    },
+    {
+      "arm": "denoising_0",
+      "case": "gaussian",
+      "condition": "clean",
+      "correct_k": 10,
+      "failed": 0,
+      "failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "k_counts": {
+        "1": 10
+      },
+      "mean_ari": 0.0,
+      "mean_coverage": 0.5453125,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 1.0,
+      "simultaneous_95_interval": [
+        0.45917567789613484,
+        1.0
+      ]
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "condition": "noisy",
+      "correct_k": 10,
+      "failed": 0,
+      "failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "k_counts": {
+        "1": 10
+      },
+      "mean_ari": 0.0,
+      "mean_coverage": 0.409375,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 1.0,
+      "simultaneous_95_interval": [
+        0.45917567789613484,
+        1.0
+      ]
+    },
+    {
+      "arm": "neural_0",
+      "case": "gaussian",
+      "condition": "noisy",
+      "correct_k": 10,
+      "failed": 0,
+      "failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "k_counts": {
+        "1": 10
+      },
+      "mean_ari": 0.0,
+      "mean_coverage": 0.55625,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 1.0,
+      "simultaneous_95_interval": [
+        0.45917567789613484,
+        1.0
+      ]
+    },
+    {
+      "arm": "denoising_0",
+      "case": "gaussian",
+      "condition": "noisy",
+      "correct_k": 10,
+      "failed": 0,
+      "failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "k_counts": {
+        "1": 10
+      },
+      "mean_ari": 0.0,
+      "mean_coverage": 0.515625,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 1.0,
+      "simultaneous_95_interval": [
+        0.45917567789613484,
+        1.0
+      ]
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "condition": "clean",
+      "correct_k": 10,
+      "failed": 0,
+      "failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "k_counts": {
+        "1": 10
+      },
+      "mean_ari": 0.0,
+      "mean_coverage": 0.73671875,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 1.0,
+      "simultaneous_95_interval": [
+        0.45917567789613484,
+        1.0
+      ]
+    },
+    {
+      "arm": "neural_0",
+      "case": "gaussian",
+      "condition": "clean",
+      "correct_k": 10,
+      "failed": 0,
+      "failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "k_counts": {
+        "1": 10
+      },
+      "mean_ari": 0.0,
+      "mean_coverage": 0.70078125,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 1.0,
+      "simultaneous_95_interval": [
+        0.45917567789613484,
+        1.0
+      ]
+    },
+    {
+      "arm": "denoising_0",
+      "case": "gaussian",
+      "condition": "clean",
+      "correct_k": 10,
+      "failed": 0,
+      "failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "k_counts": {
+        "1": 10
+      },
+      "mean_ari": 0.0,
+      "mean_coverage": 0.716796875,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 1.0,
+      "simultaneous_95_interval": [
+        0.45917567789613484,
+        1.0
+      ]
+    },
+    {
+      "arm": "density",
+      "case": "gaussian",
+      "condition": "noisy",
+      "correct_k": 10,
+      "failed": 0,
+      "failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "k_counts": {
+        "1": 10
+      },
+      "mean_ari": 0.0,
+      "mean_coverage": 0.7171875,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 1.0,
+      "simultaneous_95_interval": [
+        0.45917567789613484,
+        1.0
+      ]
+    },
+    {
+      "arm": "neural_0",
+      "case": "gaussian",
+      "condition": "noisy",
+      "correct_k": 10,
+      "failed": 0,
+      "failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "k_counts": {
+        "1": 10
+      },
+      "mean_ari": 0.0,
+      "mean_coverage": 0.762890625,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 1.0,
+      "simultaneous_95_interval": [
+        0.45917567789613484,
+        1.0
+      ]
+    },
+    {
+      "arm": "denoising_0",
+      "case": "gaussian",
+      "condition": "noisy",
+      "correct_k": 10,
+      "failed": 0,
+      "failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "k_counts": {
+        "1": 10
+      },
+      "mean_ari": 0.0,
+      "mean_coverage": 0.748828125,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 1.0,
+      "simultaneous_95_interval": [
+        0.45917567789613484,
+        1.0
+      ]
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "condition": "clean",
+      "correct_k": 8,
+      "failed": 0,
+      "failure_bounds": [
+        0.8,
+        0.8
+      ],
+      "k_counts": {
+        "1": 1,
+        "4": 8,
+        "5": 1
+      },
+      "mean_ari": 0.8448423369936338,
+      "mean_coverage": 0.9734375,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.8,
+      "simultaneous_95_interval": [
+        0.2500698969337482,
+        0.9969320974471145
+      ]
+    },
+    {
+      "arm": "neural_0",
+      "case": "four_spherical",
+      "condition": "clean",
+      "correct_k": 9,
+      "failed": 0,
+      "failure_bounds": [
+        0.9,
+        0.9
+      ],
+      "k_counts": {
+        "4": 9,
+        "5": 1
+      },
+      "mean_ari": 0.9746810029130414,
+      "mean_coverage": 0.9890625,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.9,
+      "simultaneous_95_interval": [
+        0.33955386413446326,
+        0.9999583255187711
+      ]
+    },
+    {
+      "arm": "denoising_0",
+      "case": "four_spherical",
+      "condition": "clean",
+      "correct_k": 9,
+      "failed": 0,
+      "failure_bounds": [
+        0.9,
+        0.9
+      ],
+      "k_counts": {
+        "4": 9,
+        "5": 1
+      },
+      "mean_ari": 0.9788167353189738,
+      "mean_coverage": 0.9921875,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.9,
+      "simultaneous_95_interval": [
+        0.33955386413446326,
+        0.9999583255187711
+      ]
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "condition": "noisy",
+      "correct_k": 8,
+      "failed": 0,
+      "failure_bounds": [
+        0.8,
+        0.8
+      ],
+      "k_counts": {
+        "1": 1,
+        "4": 8,
+        "5": 1
+      },
+      "mean_ari": 0.8383971612882494,
+      "mean_coverage": 0.965625,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.8,
+      "simultaneous_95_interval": [
+        0.2500698969337482,
+        0.9969320974471145
+      ]
+    },
+    {
+      "arm": "neural_0",
+      "case": "four_spherical",
+      "condition": "noisy",
+      "correct_k": 9,
+      "failed": 0,
+      "failure_bounds": [
+        0.9,
+        0.9
+      ],
+      "k_counts": {
+        "4": 9,
+        "5": 1
+      },
+      "mean_ari": 0.9726079525675331,
+      "mean_coverage": 0.9875,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.9,
+      "simultaneous_95_interval": [
+        0.33955386413446326,
+        0.9999583255187711
+      ]
+    },
+    {
+      "arm": "denoising_0",
+      "case": "four_spherical",
+      "condition": "noisy",
+      "correct_k": 9,
+      "failed": 0,
+      "failure_bounds": [
+        0.9,
+        0.9
+      ],
+      "k_counts": {
+        "4": 9,
+        "5": 1
+      },
+      "mean_ari": 0.9809789331681177,
+      "mean_coverage": 0.990625,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.9,
+      "simultaneous_95_interval": [
+        0.33955386413446326,
+        0.9999583255187711
+      ]
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "condition": "clean",
+      "correct_k": 9,
+      "failed": 0,
+      "failure_bounds": [
+        0.9,
+        0.9
+      ],
+      "k_counts": {
+        "1": 1,
+        "4": 9
+      },
+      "mean_ari": 0.8560603462652674,
+      "mean_coverage": 0.968359375,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.9,
+      "simultaneous_95_interval": [
+        0.33955386413446326,
+        0.9999583255187711
+      ]
+    },
+    {
+      "arm": "neural_0",
+      "case": "four_spherical",
+      "condition": "clean",
+      "correct_k": 10,
+      "failed": 0,
+      "failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "k_counts": {
+        "4": 10
+      },
+      "mean_ari": 0.9699734945976424,
+      "mean_coverage": 0.984375,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 1.0,
+      "simultaneous_95_interval": [
+        0.45917567789613484,
+        1.0
+      ]
+    },
+    {
+      "arm": "denoising_0",
+      "case": "four_spherical",
+      "condition": "clean",
+      "correct_k": 10,
+      "failed": 0,
+      "failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "k_counts": {
+        "4": 10
+      },
+      "mean_ari": 0.9740893813581094,
+      "mean_coverage": 0.9859375,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 1.0,
+      "simultaneous_95_interval": [
+        0.45917567789613484,
+        1.0
+      ]
+    },
+    {
+      "arm": "density",
+      "case": "four_spherical",
+      "condition": "noisy",
+      "correct_k": 7,
+      "failed": 0,
+      "failure_bounds": [
+        0.7,
+        0.7
+      ],
+      "k_counts": {
+        "4": 7,
+        "5": 3
+      },
+      "mean_ari": 0.9158433771255673,
+      "mean_coverage": 0.948046875,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.7,
+      "simultaneous_95_interval": [
+        0.1784800300230417,
+        0.9844377926286403
+      ]
+    },
+    {
+      "arm": "neural_0",
+      "case": "four_spherical",
+      "condition": "noisy",
+      "correct_k": 9,
+      "failed": 0,
+      "failure_bounds": [
+        0.9,
+        0.9
+      ],
+      "k_counts": {
+        "4": 9,
+        "6": 1
+      },
+      "mean_ari": 0.9615885393599835,
+      "mean_coverage": 0.97890625,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.9,
+      "simultaneous_95_interval": [
+        0.33955386413446326,
+        0.9999583255187711
+      ]
+    },
+    {
+      "arm": "denoising_0",
+      "case": "four_spherical",
+      "condition": "noisy",
+      "correct_k": 10,
+      "failed": 0,
+      "failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "k_counts": {
+        "4": 10
+      },
+      "mean_ari": 0.9730518195557879,
+      "mean_coverage": 0.98515625,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 1.0,
+      "simultaneous_95_interval": [
+        0.45917567789613484,
+        1.0
+      ]
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "condition": "clean",
+      "correct_k": 0,
+      "failed": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "k_counts": {
+        "1": 3,
+        "3": 4,
+        "4": 3
+      },
+      "mean_ari": 0.24569045939162382,
+      "mean_coverage": 0.890625,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.0,
+      "simultaneous_95_interval": [
+        0.0,
+        0.5408243221038702
+      ]
+    },
+    {
+      "arm": "neural_0",
+      "case": "moons",
+      "condition": "clean",
+      "correct_k": 0,
+      "failed": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "k_counts": {
+        "1": 4,
+        "3": 2,
+        "4": 1,
+        "5": 3
+      },
+      "mean_ari": 0.19879454205911892,
+      "mean_coverage": 0.8984375,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.0,
+      "simultaneous_95_interval": [
+        0.0,
+        0.5408243221038702
+      ]
+    },
+    {
+      "arm": "denoising_0",
+      "case": "moons",
+      "condition": "clean",
+      "correct_k": 0,
+      "failed": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "k_counts": {
+        "1": 2,
+        "3": 2,
+        "4": 1,
+        "5": 3,
+        "6": 2
+      },
+      "mean_ari": 0.2569101641919578,
+      "mean_coverage": 0.8921875,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.0,
+      "simultaneous_95_interval": [
+        0.0,
+        0.5408243221038702
+      ]
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "condition": "noisy",
+      "correct_k": 0,
+      "failed": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "k_counts": {
+        "1": 9,
+        "3": 1
+      },
+      "mean_ari": 0.03367211894432355,
+      "mean_coverage": 0.8734375,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.0,
+      "simultaneous_95_interval": [
+        0.0,
+        0.5408243221038702
+      ]
+    },
+    {
+      "arm": "neural_0",
+      "case": "moons",
+      "condition": "noisy",
+      "correct_k": 0,
+      "failed": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "k_counts": {
+        "1": 8,
+        "3": 1,
+        "4": 1
+      },
+      "mean_ari": 0.04983017166097807,
+      "mean_coverage": 0.9390625,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.0,
+      "simultaneous_95_interval": [
+        0.0,
+        0.5408243221038702
+      ]
+    },
+    {
+      "arm": "denoising_0",
+      "case": "moons",
+      "condition": "noisy",
+      "correct_k": 0,
+      "failed": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "k_counts": {
+        "1": 8,
+        "3": 1,
+        "4": 1
+      },
+      "mean_ari": 0.04820469532518519,
+      "mean_coverage": 0.9390625,
+      "n": 64,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.0,
+      "simultaneous_95_interval": [
+        0.0,
+        0.5408243221038702
+      ]
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "condition": "clean",
+      "correct_k": 0,
+      "failed": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "k_counts": {
+        "1": 4,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 3
+      },
+      "mean_ari": 0.060809311517820396,
+      "mean_coverage": 0.844921875,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.0,
+      "simultaneous_95_interval": [
+        0.0,
+        0.5408243221038702
+      ]
+    },
+    {
+      "arm": "neural_0",
+      "case": "moons",
+      "condition": "clean",
+      "correct_k": 0,
+      "failed": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "k_counts": {
+        "1": 1,
+        "10": 1,
+        "11": 2,
+        "12": 4,
+        "15": 1,
+        "9": 1
+      },
+      "mean_ari": 0.21986742353862265,
+      "mean_coverage": 0.867578125,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.0,
+      "simultaneous_95_interval": [
+        0.0,
+        0.5408243221038702
+      ]
+    },
+    {
+      "arm": "denoising_0",
+      "case": "moons",
+      "condition": "clean",
+      "correct_k": 0,
+      "failed": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "k_counts": {
+        "1": 2,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "7": 1,
+        "9": 1
+      },
+      "mean_ari": 0.21432504979277608,
+      "mean_coverage": 0.881640625,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.0,
+      "simultaneous_95_interval": [
+        0.0,
+        0.5408243221038702
+      ]
+    },
+    {
+      "arm": "density",
+      "case": "moons",
+      "condition": "noisy",
+      "correct_k": 0,
+      "failed": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "k_counts": {
+        "1": 10
+      },
+      "mean_ari": 0.0010973604329973879,
+      "mean_coverage": 0.923828125,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.0,
+      "simultaneous_95_interval": [
+        0.0,
+        0.5408243221038702
+      ]
+    },
+    {
+      "arm": "neural_0",
+      "case": "moons",
+      "condition": "noisy",
+      "correct_k": 0,
+      "failed": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "k_counts": {
+        "1": 10
+      },
+      "mean_ari": -0.00014133552698175722,
+      "mean_coverage": 0.974609375,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.0,
+      "simultaneous_95_interval": [
+        0.0,
+        0.5408243221038702
+      ]
+    },
+    {
+      "arm": "denoising_0",
+      "case": "moons",
+      "condition": "noisy",
+      "correct_k": 0,
+      "failed": 0,
+      "failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "k_counts": {
+        "1": 10
+      },
+      "mean_ari": -0.00010617401422628849,
+      "mean_coverage": 0.978125,
+      "n": 256,
+      "requested": 10,
+      "resolved": 10,
+      "resolved_correct_k_rate": 0.0,
+      "simultaneous_95_interval": [
+        0.0,
+        0.5408243221038702
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "simultaneous_uncertainty": "60 exact binomial intervals; Bonferroni alpha=0.05/60; paired bounds from discordant categories"
+}

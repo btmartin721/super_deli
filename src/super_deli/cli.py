@@ -179,6 +179,13 @@ def main(argv: list[str] | None = None) -> int:
     neural.add_argument("--model-config", type=Path, required=True)
     neural.add_argument("--modality")
     neural.add_argument("--output-dir", type=Path, required=True)
+    denoising = commands.add_parser(
+        "cluster-tabular-denoising", help="Opt-in CPU denoising autoencoder/HDBSCAN"
+    )
+    denoising.add_argument("config", type=Path)
+    denoising.add_argument("--model-config", type=Path, required=True)
+    denoising.add_argument("--modality")
+    denoising.add_argument("--output-dir", type=Path, required=True)
     integrate = commands.add_parser(
         "cluster-integrative", help="Integrate linked modality PC profiles"
     )
@@ -1039,6 +1046,19 @@ def main(argv: list[str] | None = None) -> int:
             )
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
             return 0 if summary["status"] == "complete" else 1
+        if args.command == "cluster-tabular-denoising":
+            from super_deli.models.denoising_config import DenoisingConfig
+            from super_deli.workflows.tabular_denoising import run_tabular_denoising
+
+            summary = run_tabular_denoising(
+                config,
+                model_config=DenoisingConfig.from_dict(read_json(args.model_config)),
+                base_dir=source.parent,
+                output_dir=args.output_dir,
+                modality_name=args.modality,
+            )
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0 if summary["stability"]["status"] in {"complete", "not_computed"} else 1
         if args.command == "cluster-tabular-neural":
             from super_deli.models.neural_config import NeuralConfig
             from super_deli.workflows.tabular_neural import run_tabular_neural

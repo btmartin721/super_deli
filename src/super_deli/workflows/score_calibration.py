@@ -113,7 +113,7 @@ def run_integrative_calibration(reference_dir, *, config, output_dir):
     except (ImportError, OSError) as exc:
         raise RuntimeError("Install 'super-deli[clustering]' for score calibration") from exc
     family = read_json(source / "summary.json").get("model")
-    if family == "tabular_autoencoder_hdbscan":
+    if family in {"tabular_autoencoder_hdbscan", "tabular_denoising_autoencoder_hdbscan"}:
         raise ValueError("Neural significance calibration is not supported")
     if family == "tabular_pca_hdbscan":
         raise ValueError("HDBSCAN significance calibration is not supported")
