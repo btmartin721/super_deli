@@ -1,0 +1,39 @@
+{
+  "independent_datasets_per_cell": 20,
+  "interpretation": [
+    "Experimental point-only selection, not a species test",
+    "K=1 is heuristic selection, not statistical acceptance of one population",
+    "Abstentions/failures are not correct returned partitions",
+    "Gaussian nontrivial returns describe these laws, without a universal error guarantee",
+    "Paired settings are repeated measurements; available-only metrics are conditional",
+    "Neither graph setting nor baseline is selected automatically"
+  ],
+  "main_evaluations": 2592,
+  "neural_training_fits": 0,
+  "new_pvalues": false,
+  "numerical_audit": {
+    "audit_boundary": "Independent source/graph/QR/density equations, not second library implementations",
+    "evaluations": 2592,
+    "exact_workflow_replays": 32,
+    "execution_sha256": "9e1007deaa0f217c30e5a2d6866108203c3032b37d4d8b7a30811d9a909d82ac",
+    "observations": 320,
+    "passed": true,
+    "phase": "main",
+    "probes": 0,
+    "seconds": 46.511895042145625,
+    "statuses": {
+      "available": 2119,
+      "withheld": 473
+    },
+    "workflows": 2592
+  },
+  "observations": 320,
+  "paired_conditions": 2,
+  "point_workflows": 2560,
+  "primary_interval_family": 128,
+  "schema_version": 1,
+  "statuses": {
+    "available": 2093,
+    "withheld": 467
+  }
+}

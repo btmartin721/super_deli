@@ -4,7 +4,16 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: spectral-graph diagnosis on frozen representations.**
+**Current checkpoint: experimental unknown-K spectral clustering and fresh validation.**
+The [separate point CLI/API](docs/tabular-spectral.md) estimates a group count
+from complete raw continuous traits using a frozen eigengap rule with explicit
+abstentions. The [320-dataset fresh validation](docs/unknown-k-spectral-results.md)
+found substantial overpartitioning of low-dimensional Gaussian controls and
+no correct two-group moons returns in the tested cells. This rule is not ready
+for automatic species delimitation. It remains opt-in and experimental;
+existing defaults, schemas, p-values and empirical gates are unchanged.
+
+**Previous checkpoint: spectral-graph diagnosis on frozen representations.**
 The [separate archival diagnostic](docs/spectral-graphs.md) compares graphs across
 saved inputs, PCA and all neural seeds without retraining. The
 [audited findings](docs/spectral-graphs-results.md) show substantial moons

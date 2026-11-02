@@ -1,0 +1,16 @@
+{
+  "audit_boundary": "Independent source/graph/QR/density equations, not second library implementations",
+  "evaluations": 2592,
+  "exact_workflow_replays": 32,
+  "execution_sha256": "9e1007deaa0f217c30e5a2d6866108203c3032b37d4d8b7a30811d9a909d82ac",
+  "observations": 320,
+  "passed": true,
+  "phase": "main",
+  "probes": 0,
+  "seconds": 46.511895042145625,
+  "statuses": {
+    "available": 2119,
+    "withheld": 473
+  },
+  "workflows": 2592
+}

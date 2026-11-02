@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "model_family": "tabular_spectral_eigengap",
+  "assume_independent_units": true,
+  "feature_names": ["trait_1", "trait_2", "trait_3", "trait_4", "trait_5", "trait_6", "trait_7", "trait_8"],
+  "n_neighbors": 15,
+  "max_k": 6,
+  "min_cluster_size": 5,
+  "random_seed": 71323,
+  "max_working_bytes": 268435456
+}
