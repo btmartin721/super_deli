@@ -1,0 +1,16 @@
+{
+  "audit_boundary": "independent graph/eigenspace/QR equations; no second complete library eigensolver or HDBSCAN",
+  "available": 3781,
+  "component_partitions": 383,
+  "density_replays": 20,
+  "evaluations": 4628,
+  "exact_graph_replays": 204,
+  "failed": 0,
+  "neural_training_fits": 0,
+  "passed": true,
+  "phase": "main",
+  "seconds": 72.74222037498839,
+  "solver_called": 3398,
+  "source_observations": 60,
+  "withheld": 707
+}

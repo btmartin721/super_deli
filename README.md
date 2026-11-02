@@ -4,14 +4,23 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: opt-in denoising autoencoder + HDBSCAN.**
+**Current checkpoint: spectral-graph diagnosis on frozen representations.**
+The [separate archival diagnostic](docs/spectral-graphs.md) compares graphs across
+saved inputs, PCA and all neural seeds without retraining. The
+[audited findings](docs/spectral-graphs-results.md) show substantial moons
+membership signal when two groups are supplied, especially at N=256 on clean
+raw traits. Small samples, noise and disconnected graphs remain limitations.
+Supplied K is diagnostic: automatic group-count selection and fresh validation
+are still required. Defaults, p-values and empirical gates remain unchanged.
+
+**Previous checkpoint: opt-in denoising autoencoder + HDBSCAN.**
 The [separate neural workflow](docs/tabular-denoising.md) adds fixed input
 corruption during training, reproducible numeric checkpoints and whole-unit
 subsampling. The [paired simulation findings](docs/denoising-results.md) retain
 strong four-group performance but do not repair curved-moons recovery. No
 default, historical p-value or empirical evidence gate changes.
 
-**Previous checkpoint: curved-moons neural recovery diagnosis.**
+**Earlier checkpoint: curved-moons neural recovery diagnosis.**
 The [bounded archival diagnostic](docs/neural-moons.md) separates input geometry,
 neural representation, latent scaling and density-group selection using saved
 weights and existing simulations. The [findings](docs/neural-moons-results.md)

@@ -149,6 +149,11 @@ jobs:
           PYCODE
       - name: Test scientific workflows and foundation
         run: python -m pytest -q --basetemp="$RUNNER_TEMP/super-deli-pytest"
+      - name: Check installed spectral graph diagnostic
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/spectral-graphs/smoke.py" --output-dir "$RUNNER_TEMP/spectral-graph-smoke"
       - name: Report failed benchmark subprocesses
         if: failure()
         shell: bash
