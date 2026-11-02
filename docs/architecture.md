@@ -266,8 +266,12 @@ reference labels need independent evidence and documented uncertainty.
 39. **First neural baseline:** Opt-in complete continuous tabular autoencoder/HDBSCAN, numeric frozen transforms, explicit noise and refitted whole-unit subsampling. Prespecified initialization comparisons remain separate from sampling stability; no significance adapter or new default.
 40. **Diagnostic completed:** Archived neural curved-moons geometry, neighborhood, hierarchy and selection diagnosis with fixed saved weights, exact density replays and independent audits. No new training, model/default promotion or significance claim; mapping/noise/metric effects remain partly entangled.
 41. **Opt-in neural comparison completed:** Fixed-corruption denoising autoencoder/HDBSCAN with matched feature-noise controls, all three seeds, native subsampling, independent training/draw/replay audits and conservative pilot uncertainty. Curved-moons recovery remains weak; no default or significance change.
-42. Genomic, shape and integrative neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
-43. Consolidated user guidance, end-to-end examples and a scoped research release.
+42. **Diagnostic completed:** Frozen supplied-K spectral graph/representation comparisons, without new training or unsupervised count claims.
+43. **Experimental model and validation completed:** Raw-trait unknown-K eigengap workflow with explicit abstentions. Fresh validation found rank-two Gaussian oversplitting and no correct moons counts; the workflow is not recommended for automatic delimitation.
+44. **Benchmark-only feasibility completed:** A frozen Gaussian-reference graph-count rule reduced the tested Gaussian oversplitting but still missed moons groups, often returning K=1. No public model adapter, default or historical p-value changed; no-supported-split is not evidence of one population. See [results](gaussian-reference-spectral-results.md).
+45. **Unresolved:** A defensible group-count criterion before spectral resampling or user-facing reference-rule promotion; any follow-up requires a separately approved checkpoint.
+46. Genomic, shape and integrative neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
+47. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The [tabular neural workflow](tabular-neural.md) reuses typed ingestion and a
 shared density-assignment helper. Raw-feature and latent standardization are
@@ -471,3 +475,15 @@ has its own local CPU generator; checkpoints and noise digests support a separat
 NumPy gradient/Adam auditor. The [paired comparison](denoising-study.md) freezes
 feature-map/noise controls, all neural seeds and resource gates. Production
 defaults, old serialization, p-values and empirical evidence gates stay unchanged.
+
+
+### Gaussian-reference graph-count feasibility
+
+The versioned `benchmarking.gaussian_graph_*` modules own the frozen synthetic
+grid, PSD-aware raw Gaussian reference, independent-pilot normalization, paired
+count decisions, local evidence, resource gates and independent regeneration
+audits. They reuse the existing graph/assignment primitives and unchanged
+baseline workflows; production source and schema behavior remain intact.
+The entry point is a benchmark module, not a new `cluster-*` command. The
+[feasibility study](gaussian-reference-spectral-results.md) does not support
+promotion: fewer Gaussian splits coexist with missed nonlinear groups.

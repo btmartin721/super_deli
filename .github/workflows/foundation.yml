@@ -159,6 +159,11 @@ jobs:
         run: |
           unset PYTHONPATH
           python "$GITHUB_WORKSPACE/examples/unknown-k-spectral/smoke.py" --output-dir "$RUNNER_TEMP/unknown-k-spectral-smoke"
+      - name: Check installed Gaussian-reference benchmark
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/gaussian-reference-spectral/smoke.py" --output-dir "$RUNNER_TEMP/gaussian-reference-spectral-smoke"
       - name: Report failed benchmark subprocesses
         if: failure()
         shell: bash

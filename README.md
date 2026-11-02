@@ -4,7 +4,15 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: experimental unknown-K spectral clustering and fresh validation.**
+**Current checkpoint: Gaussian-reference spectral group-count feasibility.**
+The [frozen benchmark-only study](docs/gaussian-reference-spectral-results.md)
+reduced splitting of single Gaussian controls but did not recover the moons
+groups. At N=256, both reference arms returned a computational K=1 for all
+moons tables, illustrating that no supported split does not establish one
+population. The rule remains benchmarking-only; no production model, default,
+schema, historical p-value or empirical gate changed.
+
+**Previous checkpoint: experimental unknown-K spectral clustering and fresh validation.**
 The [separate point CLI/API](docs/tabular-spectral.md) estimates a group count
 from complete raw continuous traits using a frozen eigengap rule with explicit
 abstentions. The [320-dataset fresh validation](docs/unknown-k-spectral-results.md)

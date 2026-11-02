@@ -1432,3 +1432,32 @@ include docs/figures/unknown-k-spectral/group-recovery.png
 include docs/figures/unknown-k-spectral/group-recovery.pdf
 include docs/figures/unknown-k-spectral/group-recovery.svg
 include docs/figures/unknown-k-spectral/figure-data.json
+
+include examples/gaussian-reference-spectral/run.py
+include examples/gaussian-reference-spectral/smoke.py
+include src/super_deli/benchmarking/gaussian_graph_audit.py
+include src/super_deli/benchmarking/gaussian_graph_cli.py
+include src/super_deli/benchmarking/gaussian_graph_config.py
+include src/super_deli/benchmarking/gaussian_graph_fit.py
+include src/super_deli/benchmarking/gaussian_graph_reference.py
+include src/super_deli/benchmarking/gaussian_graph_report.py
+include src/super_deli/benchmarking/gaussian_graph_run.py
+include src/super_deli/benchmarking/gaussian_graph_study.py
+include tests/test_benchmark_gaussian_graph.py
+include tests/test_foundation_gaussian_graph.py
+include docs/gaussian-reference-spectral-study.md
+
+include docs/figures/gaussian-reference-spectral/figure-data.json
+include docs/figures/gaussian-reference-spectral/gaussian-controls.pdf
+include docs/figures/gaussian-reference-spectral/gaussian-controls.png
+include docs/figures/gaussian-reference-spectral/gaussian-controls.svg
+include docs/figures/gaussian-reference-spectral/group-recovery.pdf
+include docs/figures/gaussian-reference-spectral/group-recovery.png
+include docs/figures/gaussian-reference-spectral/group-recovery.svg
+include docs/gaussian-reference-spectral-results.md
+include examples/gaussian-reference-spectral/report.py
+include examples/gaussian-reference-spectral/results/all-groups.json
+include examples/gaussian-reference-spectral/results/independent-audit.json
+include examples/gaussian-reference-spectral/results/paired-comparisons.json
+include examples/gaussian-reference-spectral/results/primary-rates.json
+include examples/gaussian-reference-spectral/results/summary.json

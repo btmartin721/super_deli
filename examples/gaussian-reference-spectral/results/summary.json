@@ -1,0 +1,22 @@
+{
+  "fixture": false,
+  "interpretation": [
+    "Feasibility only; ten datasets/cell, no general size/power guarantee",
+    "Estimated Gaussian departure is not evidence that proposed K is correct",
+    "No-supported-split K=1 does not establish one population or species",
+    "Withheld results do not become K=1; paired maps are repeated measurements",
+    "Conditional Monte Carlo intervals exclude null-fitting uncertainty",
+    "No model, neighbor setting or default selected automatically"
+  ],
+  "main_evaluations": 97200,
+  "observations": 160,
+  "paired_interval_family": 64,
+  "point_outputs": 1920,
+  "primary_interval_family": 192,
+  "schema_version": 1,
+  "statuses": {
+    "available": 1627,
+    "withheld": 293
+  },
+  "tables": 320
+}

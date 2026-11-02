@@ -1,0 +1,53 @@
+{
+  "main": {
+    "actual_evaluation_attempts": 97200,
+    "assignment_steps": 459,
+    "audit_boundary": "Independent equations and source reconstruction, not a second eigensolver",
+    "embedding_step_bound": 1296,
+    "evaluations": 97200,
+    "execution_sha256": "7aa433c273ffd9aac8a603bec2d3a2378962aa069b74796b47eaa7f2773fb07d",
+    "observations": 160,
+    "passed": true,
+    "phase": "main",
+    "point_outputs": 1920,
+    "replay_outputs": 24,
+    "seconds": 450.7254490419291,
+    "statuses_including_replays": {
+      "available": 1650,
+      "withheld": 294
+    },
+    "table_replays": 4,
+    "tables": 320
+  },
+  "post_fit_arithmetic": {
+    "available_partitions_checked": 1627,
+    "conditional_monte_carlo_intervals": 640,
+    "groups_and_bounds": 192,
+    "paired_discordance_intervals": 64,
+    "passed": true,
+    "per_unit_labels_exported": false,
+    "point_outputs": 1920,
+    "primary_rates_and_binomial_tails": 192,
+    "raw_coordinates_exported": false
+  },
+  "preflight": {
+    "actual_evaluation_attempts": 10800,
+    "assignment_steps": 48,
+    "audit_boundary": "Independent equations and source reconstruction, not a second eigensolver",
+    "embedding_step_bound": 144,
+    "evaluations": 10800,
+    "execution_sha256": "45131d97ea6aba4331d6770a0fb102cdc7156b9326d0fc31ca5d8e108ce32467",
+    "observations": 16,
+    "passed": true,
+    "phase": "preflight",
+    "point_outputs": 192,
+    "replay_outputs": 24,
+    "seconds": 37.41594933299348,
+    "statuses_including_replays": {
+      "available": 181,
+      "withheld": 35
+    },
+    "table_replays": 4,
+    "tables": 32
+  }
+}
