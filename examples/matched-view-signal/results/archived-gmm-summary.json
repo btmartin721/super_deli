@@ -1,0 +1,1946 @@
+[
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -254.87489956746143,
+      "median": -258.39535496681066,
+      "min": -262.1130442530622
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 20.79441541679836,
+      "median": 20.79441541679836,
+      "min": 20.79441541679836
+    },
+    "selected": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 86.07422150009057,
+      "median": 40.0090482482056,
+      "min": 37.501199809522234
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -203.40075904746365,
+      "median": -225.43637577716294,
+      "min": -229.130457904323
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 45.747713916956386,
+      "median": 45.747713916956386,
+      "min": 45.747713916956386
+    },
+    "selected": 10
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 69.25368530999401,
+      "median": 26.841546080519095,
+      "min": 21.982554484389993
+    },
+    "case": "four_complementary",
+    "eligible": 9,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -199.33437789243294,
+      "median": -220.0350715325972,
+      "min": -225.01644765321123
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 70.70101241711441,
+      "median": 70.70101241711441,
+      "min": 70.70101241711441
+    },
+    "selected": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 49.1175337425795,
+      "median": 11.530255566772382,
+      "min": 5.898067108861028
+    },
+    "case": "four_complementary",
+    "eligible": 7,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -196.92580442606118,
+      "median": -214.4964350211886,
+      "min": -221.7340629483946
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 95.65431091727244,
+      "median": 95.65431091727244,
+      "min": 95.65431091727244
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -116.89704938377186,
+      "median": -117.77756673401925,
+      "min": -119.3253905131887
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 20.79441541679836,
+      "median": 20.79441541679836,
+      "min": 20.79441541679836
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 56.25322020337404,
+      "median": 45.22047425968694,
+      "min": 33.15993406201437
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -77.21262252239904,
+      "median": -82.63597340046067,
+      "min": -90.26877423210249
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 45.747713916956386,
+      "median": 45.747713916956386,
+      "min": 45.747713916956386
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 90.37698133188962,
+      "median": 55.78294738272234,
+      "min": 47.397409337390854
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -47.67409270806225,
+      "median": -64.49918168844417,
+      "min": -70.67338734433524
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 70.70101241711441,
+      "median": 70.70101241711441,
+      "min": 70.70101241711441
+    },
+    "selected": 3
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 95.82519412763503,
+      "median": 60.43513078933418,
+      "min": 44.07743761569219
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -32.47333706011053,
+      "median": -50.699341955881515,
+      "min": -59.85672395510556
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 95.65431091727244,
+      "median": 95.65431091727244,
+      "min": 95.65431091727244
+    },
+    "selected": 7
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -217.8608775217199,
+      "median": -219.32328322674704,
+      "min": -220.4871756123813
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 20.79441541679836,
+      "median": 20.79441541679836,
+      "min": 20.79441541679836
+    },
+    "selected": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 52.894711341644665,
+      "median": 41.50851223754984,
+      "min": 25.222839781453047
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -181.53510012239974,
+      "median": -185.91133680855438,
+      "min": -192.90721550358114
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 45.747713916956386,
+      "median": 45.747713916956386,
+      "min": 45.747713916956386
+    },
+    "selected": 9
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 55.64052591909439,
+      "median": 30.065623292244368,
+      "min": 8.701934557051061
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -166.8758959016077,
+      "median": -179.448992962125,
+      "min": -188.69101886570314
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 70.70101241711441,
+      "median": 70.70101241711441,
+      "min": 70.70101241711441
+    },
+    "selected": 1
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 42.94157571319528,
+      "median": 13.330457760532568,
+      "min": -7.667823869854715
+    },
+    "case": "four_complementary",
+    "eligible": 9,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -160.74872175447823,
+      "median": -174.75849752569798,
+      "min": -185.33671971552513
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 95.65431091727244,
+      "median": 95.65431091727244,
+      "min": 95.65431091727244
+    },
+    "selected": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -1028.7746670268307,
+      "median": -1031.0864377844719,
+      "min": -1040.0974988592775
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 27.725887222397812,
+      "median": 27.725887222397812,
+      "min": 27.725887222397812
+    },
+    "selected": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 239.0549112324179,
+      "median": 199.96558427533762,
+      "min": 146.88173863698398
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -899.9397147872739,
+      "median": -913.3958517196808,
+      "min": -945.6228692699297
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 60.99695188927519,
+      "median": 60.99695188927519,
+      "min": 60.99695188927519
+    },
+    "selected": 10
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 210.25551060043767,
+      "median": 175.2835287528651,
+      "min": 117.66302064743581
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -893.9920174225721,
+      "median": -910.6769521424322,
+      "min": -943.596695931265
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 94.26801655615256,
+      "median": 94.26801655615256,
+      "min": 94.26801655615256
+    },
+    "selected": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 181.4755835764904,
+      "median": 148.01616833068329,
+      "min": 94.52590944907888
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -890.5716786412922,
+      "median": -906.5989778605141,
+      "min": -938.5297191970049
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 127.53908122302994,
+      "median": 127.53908122302994,
+      "min": 127.53908122302994
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -468.1419021153573,
+      "median": -471.85630439089755,
+      "min": -474.93902689527505
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 27.725887222397812,
+      "median": 27.725887222397812,
+      "min": 27.725887222397812
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 235.20218714213252,
+      "median": 222.77432788552267,
+      "min": 182.26533079406397
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -335.7493519700795,
+      "median": -343.16898678670594,
+      "min": -367.17082916480433
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 60.99695188927519,
+      "median": 60.99695188927519,
+      "min": 60.99695188927519
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 346.32750280025914,
+      "median": 308.13256589330996,
+      "min": 264.4521765282668
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -262.51316896286585,
+      "median": -284.0113474517257,
+      "min": -309.44187396426423
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 94.26801655615256,
+      "median": 94.26801655615256,
+      "min": 94.26801655615256
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 427.99471921079896,
+      "median": 393.2150457678814,
+      "min": 327.04386942129213
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -205.04402842415726,
+      "median": -224.9329273228218,
+      "min": -259.2109141083848
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 127.53908122302994,
+      "median": 127.53908122302994,
+      "min": 127.53908122302994
+    },
+    "selected": 10
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -878.0201046291154,
+      "median": -880.1683384323785,
+      "min": -881.0815432329202
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 27.725887222397812,
+      "median": 27.725887222397812,
+      "min": 27.725887222397812
+    },
+    "selected": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 240.51846757513954,
+      "median": 224.73663972511463,
+      "min": 182.8077356190015
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -744.1867771119119,
+      "median": -750.7948265585453,
+      "min": -770.1744154217522
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 60.99695188927519,
+      "median": 60.99695188927519,
+      "min": 60.99695188927519
+    },
+    "selected": 10
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 216.00284679712922,
+      "median": 201.1195085404927,
+      "min": 159.11931030061737
+    },
+    "case": "four_complementary",
+    "eligible": 10,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -739.8090551674783,
+      "median": -746.6320456869471,
+      "min": -767.5202870906472
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 94.26801655615256,
+      "median": 94.26801655615256,
+      "min": 94.26801655615256
+    },
+    "selected": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 185.22444591163912,
+      "median": 172.25638213630702,
+      "min": 129.8243009539167
+    },
+    "case": "four_complementary",
+    "eligible": 9,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -738.5627232767847,
+      "median": -744.8081533867371,
+      "min": -765.532259430559
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 127.53908122302994,
+      "median": 127.53908122302994,
+      "min": 127.53908122302994
+    },
+    "selected": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -270.03667492705415,
+      "median": -270.21502705075994,
+      "min": -270.24771808385856
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 20.79441541679836,
+      "median": 20.79441541679836,
+      "min": 20.79441541679836
+    },
+    "selected": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 67.0023365810411,
+      "median": 55.6547273011567,
+      "min": 40.59255101280564
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -224.26990054325896,
+      "median": -229.9221833871662,
+      "min": -237.4667869419858
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 45.747713916956386,
+      "median": 45.747713916956386,
+      "min": 45.747713916956386
+    },
+    "selected": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 83.0422596668102,
+      "median": 62.13931856473147,
+      "min": 52.83653517761263
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -203.77328975029542,
+      "median": -214.2027540912127,
+      "min": -218.86285548384006
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 70.70101241711441,
+      "median": 70.70101241711441,
+      "min": 70.70101241711441
+    },
+    "selected": 1
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 98.03376762484163,
+      "median": 68.23400421634895,
+      "min": 54.85131264542446
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -183.80088652120068,
+      "median": -198.67588333476687,
+      "min": -205.37881749985513
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 95.65431091727244,
+      "median": 95.65431091727244,
+      "min": 95.65431091727244
+    },
+    "selected": 9
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -132.24960535343558,
+      "median": -133.05825612844984,
+      "min": -134.00816216528696
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 20.79441541679836,
+      "median": 20.79441541679836,
+      "min": 20.79441541679836
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 95.74991264302543,
+      "median": 85.15422187534799,
+      "min": 66.37584451798983
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -71.89799978184385,
+      "median": -78.08233796846928,
+      "min": -87.40711345468017
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 45.747713916956386,
+      "median": 45.747713916956386,
+      "min": 45.747713916956386
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 130.71407944185742,
+      "median": 114.66326030168145,
+      "min": 92.70907748106697
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -42.73448907205881,
+      "median": -51.27395651253419,
+      "min": -61.7638477230626
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 70.70101241711441,
+      "median": 70.70101241711441,
+      "min": 70.70101241711441
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 159.73215073956808,
+      "median": 138.3156426809083,
+      "min": 107.94741536256777
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -15.748804173124462,
+      "median": -26.6056723179204,
+      "min": -41.668029532233184
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 95.65431091727244,
+      "median": 95.65431091727244,
+      "min": 95.65431091727244
+    },
+    "selected": 10
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -225.81755487621268,
+      "median": -225.87206476889324,
+      "min": -225.90520400657084
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 20.79441541679836,
+      "median": 20.79441541679836,
+      "min": 20.79441541679836
+    },
+    "selected": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 50.031539878807166,
+      "median": 45.02908614581804,
+      "min": 26.740029722494285
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -188.3730987595309,
+      "median": -190.887379516126,
+      "min": -200.0319474774468
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 45.747713916956386,
+      "median": 45.747713916956386,
+      "min": 45.747713916956386
+    },
+    "selected": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 65.20505513274753,
+      "median": 55.13976323104788,
+      "min": 34.102364256333146
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -168.29611360512547,
+      "median": -173.3513216250726,
+      "min": -183.8130742478881
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 70.70101241711441,
+      "median": 70.70101241711441,
+      "min": 70.70101241711441
+    },
+    "selected": 1
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 71.4442533024698,
+      "median": 57.04506061179711,
+      "min": 34.054208355401215
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -152.6998652701853,
+      "median": -159.94087270574647,
+      "min": -171.42155966083533
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 95.65431091727244,
+      "median": 95.65431091727244,
+      "min": 95.65431091727244
+    },
+    "selected": 9
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -1080.8948654158394,
+      "median": -1080.9243244683548,
+      "min": -1080.9629786124688
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 27.725887222397812,
+      "median": 27.725887222397812,
+      "min": 27.725887222397812
+    },
+    "selected": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 275.69361778267216,
+      "median": 228.7868002185836,
+      "min": 193.10865516011472
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -926.4125241910647,
+      "median": -949.8978088300285,
+      "min": -967.7164973076566
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 60.99695188927519,
+      "median": 60.99695188927519,
+      "min": 60.99695188927519
+    },
+    "selected": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 367.9372625509352,
+      "median": 320.098426388922,
+      "min": 269.4317741968521
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -863.702473403644,
+      "median": -887.6260621893643,
+      "min": -912.9194054558492
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 94.26801655615256,
+      "median": 94.26801655615256,
+      "min": 94.26801655615256
+    },
+    "selected": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 460.49102573244454,
+      "median": 399.42587096572356,
+      "min": 338.18868400517886
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -800.7900594794507,
+      "median": -831.3072087895811,
+      "min": -861.9054182182472
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 127.53908122302994,
+      "median": 127.53908122302994,
+      "min": 127.53908122302994
+    },
+    "selected": 10
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -532.7413019687841,
+      "median": -535.0646727455367,
+      "min": -535.8843470887593
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 27.725887222397812,
+      "median": 27.725887222397812,
+      "min": 27.725887222397812
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 426.04046203934865,
+      "median": 396.2234390742394,
+      "min": 355.50290013224674
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -305.9623159696745,
+      "median": -318.80334525707224,
+      "min": -340.19228398516077
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 60.99695188927519,
+      "median": 60.99695188927519,
+      "min": 60.99695188927519
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 600.5100029546777,
+      "median": 568.1326624961989,
+      "min": 519.8420776806693
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -202.09201317857128,
+      "median": -216.9754286137949,
+      "min": -241.2028508291661
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 94.26801655615256,
+      "median": 94.26801655615256,
+      "min": 94.26801655615256
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 768.4225408483392,
+      "median": 726.4010551802548,
+      "min": 657.7358456383258
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -101.50021189830187,
+      "median": -120.78057373435347,
+      "min": -155.80474656524385
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 127.53908122302994,
+      "median": 127.53908122302994,
+      "min": 127.53908122302994
+    },
+    "selected": 10
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -903.4873538283894,
+      "median": -903.6111545125403,
+      "min": -903.6703917973261
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 27.725887222397812,
+      "median": 27.725887222397812,
+      "min": 27.725887222397812
+    },
+    "selected": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 259.3582552623677,
+      "median": 216.52004822510992,
+      "min": 184.05722416621234
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -757.3136416773409,
+      "median": -778.7265216093457,
+      "min": -794.8232094118446
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 60.99695188927519,
+      "median": 60.99695188927519,
+      "min": 60.99695188927519
+    },
+    "selected": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 369.43019896105784,
+      "median": 320.7228654699252,
+      "min": 274.9033721885701
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -685.6421374945571,
+      "median": -709.9627688933122,
+      "min": -732.764603067227
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 94.26801655615256,
+      "median": 94.26801655615256,
+      "min": 94.26801655615256
+    },
+    "selected": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 431.80822524301993,
+      "median": 404.50115116088136,
+      "min": 330.6527469400628
+    },
+    "case": "four_redundant",
+    "eligible": 10,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -637.8175920201375,
+      "median": -651.483289735289,
+      "min": -688.3137350277937
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 127.53908122302994,
+      "median": 127.53908122302994,
+      "min": 127.53908122302994
+    },
+    "selected": 10
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -268.1252725567929,
+      "median": -269.0157833818209,
+      "min": -269.238996984863
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 20.79441541679836,
+      "median": 20.79441541679836,
+      "min": 20.79441541679836
+    },
+    "selected": 10
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": -14.592749592956238,
+      "median": -20.174308377170746,
+      "min": -24.65519702648203
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -263.89239799102717,
+      "median": -266.2883753779193,
+      "min": -268.91515948780034
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 45.747713916956386,
+      "median": 45.747713916956386,
+      "min": 45.747713916956386
+    },
+    "selected": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": -4.395218703415139,
+      "median": -31.883238843406673,
+      "min": -44.71324216859966
+    },
+    "case": "morphology_only",
+    "eligible": 7,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -246.31698329617763,
+      "median": -259.7564037176028,
+      "min": -266.46753280878016
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 70.70101241711441,
+      "median": 70.70101241711441,
+      "min": 70.70101241711441
+    },
+    "selected": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": -13.755666101690394,
+      "median": -42.59756306859549,
+      "min": -46.72840061150532
+    },
+    "case": "morphology_only",
+    "eligible": 3,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -238.45099845200738,
+      "median": -252.76528114134672,
+      "min": -254.85771949212958
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 95.65431091727244,
+      "median": 95.65431091727244,
+      "min": 95.65431091727244
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -98.14709889707109,
+      "median": -101.24366517322169,
+      "min": -105.63445543851235
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 20.79441541679836,
+      "median": 20.79441541679836,
+      "min": 20.79441541679836
+    },
+    "selected": 9
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 44.87891824134164,
+      "median": -14.456020864676574,
+      "min": -17.980974594117356
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -63.23099052632126,
+      "median": -96.03542232733587,
+      "min": -100.77923363926189
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 45.747713916956386,
+      "median": 45.747713916956386,
+      "min": 45.747713916956386
+    },
+    "selected": 1
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 38.384195087686294,
+      "median": -30.0446933186322,
+      "min": -34.827403633902634
+    },
+    "case": "morphology_only",
+    "eligible": 9,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -54.001702853069915,
+      "median": -89.9393313883782,
+      "min": -97.0769678481147
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 70.70101241711441,
+      "median": 70.70101241711441,
+      "min": 70.70101241711441
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 22.42236441198054,
+      "median": -34.52877083588314,
+      "min": -46.75199881562378
+    },
+    "case": "morphology_only",
+    "eligible": 8,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -49.50596894084378,
+      "median": -81.39400509111161,
+      "min": -89.26841462711783
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 95.65431091727244,
+      "median": 95.65431091727244,
+      "min": 95.65431091727244
+    },
+    "selected": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -225.7511941737995,
+      "median": -225.87576214141305,
+      "min": -225.9193720444411
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 20.79441541679836,
+      "median": 20.79441541679836,
+      "min": 20.79441541679836
+    },
+    "selected": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 77.21130565999249,
+      "median": 53.03878658258097,
+      "min": 16.94040729074726
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -174.73629931779237,
+      "median": -186.90929082128952,
+      "min": -204.80434127834684
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 45.747713916956386,
+      "median": 45.747713916956386,
+      "min": 45.747713916956386
+    },
+    "selected": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 98.78687600844421,
+      "median": 67.72998930107025,
+      "min": 18.80867568534285
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -151.47186489348752,
+      "median": -167.0976610446738,
+      "min": -191.39355783097005
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 70.70101241711441,
+      "median": 70.70101241711441,
+      "min": 70.70101241711441
+    },
+    "selected": 3
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 112.10093115260196,
+      "median": 72.9601539571506,
+      "min": 14.393653899300602
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -132.33818807132963,
+      "median": -152.00592946655462,
+      "min": -181.12441947391216
+    },
+    "n": 64,
+    "penalty": {
+      "available": 10,
+      "max": 95.65431091727244,
+      "median": 95.65431091727244,
+      "min": 95.65431091727244
+    },
+    "selected": 7
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -1076.049523676044,
+      "median": -1076.94939272198,
+      "min": -1077.445927860827
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 27.725887222397812,
+      "median": 27.725887222397812,
+      "min": 27.725887222397812
+    },
+    "selected": 10
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": -22.75482419189757,
+      "median": -28.435608308847577,
+      "min": -30.949871769336823
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -1071.2546100345407,
+      "median": -1074.1067290792628,
+      "min": -1075.7319275312852
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 60.99695188927519,
+      "median": 60.99695188927519,
+      "min": 60.99695188927519
+    },
+    "selected": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": -48.88485499793342,
+      "median": -55.582833826172646,
+      "min": -62.04914868608785
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -1068.2217475406085,
+      "median": -1071.6015337955296,
+      "min": -1074.69549975282
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 94.26801655615256,
+      "median": 94.26801655615256,
+      "min": 94.26801655615256
+    },
+    "selected": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": -75.2536872656724,
+      "median": -82.2973308339399,
+      "min": -87.29845820184664
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -1064.7706313410392,
+      "median": -1067.5526718019219,
+      "min": -1070.635156080663
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 127.53908122302994,
+      "median": 127.53908122302994,
+      "min": 127.53908122302994
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -381.02769733985804,
+      "median": -391.05121078209277,
+      "min": -397.1356376326735
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 27.725887222397812,
+      "median": 27.725887222397812,
+      "min": 27.725887222397812
+    },
+    "selected": 10
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": -14.861245462295187,
+      "median": -21.144826349609048,
+      "min": -30.621824670151568
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -379.3819152795942,
+      "median": -384.3664741052039,
+      "min": -391.86260621785095
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 60.99695188927519,
+      "median": 60.99695188927519,
+      "min": 60.99695188927519
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": -40.98799796790183,
+      "median": -49.003042954531054,
+      "min": -58.83757211724367
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -375.2152520360345,
+      "median": -382.11576497568734,
+      "min": -389.6493247538434
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 94.26801655615256,
+      "median": 94.26801655615256,
+      "min": 94.26801655615256
+    },
+    "selected": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": -57.78827200679302,
+      "median": -74.2177572666169,
+      "min": -89.21480141945153
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -368.52516604518047,
+      "median": -377.91488542116156,
+      "min": -381.40242315203704
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 127.53908122302994,
+      "median": 127.53908122302994,
+      "min": 127.53908122302994
+    },
+    "selected": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 1,
+    "log_likelihood": {
+      "available": 10,
+      "max": -903.4437587831285,
+      "median": -903.6126082798337,
+      "min": -903.6609796914904
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 27.725887222397812,
+      "median": 27.725887222397812,
+      "min": 27.725887222397812
+    },
+    "selected": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 259.8645186721735,
+      "median": 225.21369855788134,
+      "min": 196.8180054102777
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 2,
+    "log_likelihood": {
+      "available": 10,
+      "max": -757.0762923908528,
+      "median": -774.389364204472,
+      "min": -788.610369449069
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 60.99695188927519,
+      "median": 60.99695188927519,
+      "min": 60.99695188927519
+    },
+    "selected": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 380.2557375163908,
+      "median": 323.7670732308044,
+      "min": 267.79041798427784
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 3,
+    "log_likelihood": {
+      "available": 10,
+      "max": -680.2451506353054,
+      "median": -708.4404899334261,
+      "min": -736.4886308286302
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 94.26801655615256,
+      "median": 94.26801655615256,
+      "min": 94.26801655615256
+    },
+    "selected": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "available": 10,
+    "bic_improvement_over_one": {
+      "available": 10,
+      "max": 443.60030633139513,
+      "median": 402.6463035074904,
+      "min": 332.7418937402781
+    },
+    "case": "morphology_only",
+    "eligible": 10,
+    "k": 4,
+    "log_likelihood": {
+      "available": 10,
+      "max": -631.9373338943647,
+      "median": -652.3455866402846,
+      "min": -687.3773606171915
+    },
+    "n": 256,
+    "penalty": {
+      "available": 10,
+      "max": 127.53908122302994,
+      "median": 127.53908122302994,
+      "min": 127.53908122302994
+    },
+    "selected": 10
+  }
+]

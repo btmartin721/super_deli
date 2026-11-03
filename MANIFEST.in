@@ -1502,3 +1502,30 @@ include examples/matched-neural/results/native-stability.json
 include examples/matched-neural/results/paired-comparisons.json
 include examples/matched-neural/results/primary-rates.json
 include examples/matched-neural/results/summary.json
+
+include src/super_deli/benchmarking/view_signal_archive.py
+include src/super_deli/benchmarking/view_signal_audit.py
+include src/super_deli/benchmarking/view_signal_cli.py
+include src/super_deli/benchmarking/view_signal_config.py
+include src/super_deli/benchmarking/view_signal_coordinates.py
+include src/super_deli/benchmarking/view_signal_fit.py
+include src/super_deli/benchmarking/view_signal_fixture.py
+include src/super_deli/benchmarking/view_signal_metrics.py
+include src/super_deli/benchmarking/view_signal_report.py
+include src/super_deli/benchmarking/view_signal_study.py
+include tests/test_foundation_view_signal.py
+include tests/test_benchmark_view_signal.py
+include examples/matched-view-signal/smoke.py
+include docs/matched-view-signal-study.md
+
+include examples/matched-view-signal/report.py
+include docs/matched-view-signal-results.md
+include examples/matched-view-signal/results/all-spaces.json
+include examples/matched-view-signal/results/archived-gmm-summary.json
+include examples/matched-view-signal/results/decoder-summary.json
+include examples/matched-view-signal/results/independent-audit.json
+include examples/matched-view-signal/results/summary.json
+include docs/figures/matched-view-signal/all-spaces-recovery.pdf
+include docs/figures/matched-view-signal/all-spaces-recovery.png
+include docs/figures/matched-view-signal/all-spaces-recovery.svg
+include docs/figures/matched-view-signal/figure-data.json

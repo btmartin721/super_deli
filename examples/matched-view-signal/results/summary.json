@@ -1,0 +1,26 @@
+{
+  "cells": 6,
+  "defaults_changed": false,
+  "gmm_refits": 0,
+  "historical_pvalues_changed": false,
+  "interpretation": "Exploratory archival diagnosis. Seeds/stages are repeated measures; intervals are descriptive and unadjusted, not confirmatory comparisons or species support.",
+  "main_audit": {
+    "attempted": 1260,
+    "failed": 0,
+    "freeze_sha256": "c61fd74afdd4b13222373097491cb4585d30ffaf6ec475aab7b22c5b7f711000",
+    "limit": "Independent graph/condensation/frontier checks; not a second complete HDBSCAN",
+    "native_replays": 660,
+    "passed": true,
+    "phase": "main",
+    "seconds": 37.160616625100374,
+    "unavailable": 0
+  },
+  "main_fits": 1260,
+  "new_neural_training": 0,
+  "new_resampling_or_significance_draws": 0,
+  "new_scientific_datasets": 0,
+  "observations": 60,
+  "preflight_fits": 126,
+  "representations": 21,
+  "schema_version": 1
+}

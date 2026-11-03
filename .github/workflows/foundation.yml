@@ -33,7 +33,7 @@ jobs:
           python -m pip install '.[dev,neural]'
           python -m pip check
       - name: Test neural contracts and legacy density parity
-        run: python -m pytest -q tests/test_neural.py tests/test_neural_config.py tests/test_neural_study.py tests/test_neural_denoising.py tests/test_neural_denoising_config.py tests/test_neural_denoising_study.py tests/test_tabular_hdbscan.py tests/test_foundation_neural_moons.py tests/test_benchmark_neural_moons.py tests/test_foundation_matched_neural.py tests/test_neural_matched.py tests/test_neural_matched_study.py tests/test_neural_matched_steps.py
+        run: python -m pytest -q tests/test_neural.py tests/test_neural_config.py tests/test_neural_study.py tests/test_neural_denoising.py tests/test_neural_denoising_config.py tests/test_neural_denoising_study.py tests/test_tabular_hdbscan.py tests/test_foundation_neural_moons.py tests/test_benchmark_neural_moons.py tests/test_foundation_matched_neural.py tests/test_neural_matched.py tests/test_neural_matched_study.py tests/test_neural_matched_steps.py tests/test_foundation_view_signal.py tests/test_benchmark_view_signal.py
       - name: Check installed matched neural integration
         working-directory: ${{ runner.temp }}
         run: |
@@ -154,6 +154,11 @@ jobs:
           PYCODE
       - name: Test scientific workflows and foundation
         run: python -m pytest -q --basetemp="$RUNNER_TEMP/super-deli-pytest"
+      - name: Check installed matched-view signal diagnostic
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/matched-view-signal/smoke.py" --output-dir "$RUNNER_TEMP/matched-view-signal-smoke"
       - name: Check installed spectral graph diagnostic
         working-directory: ${{ runner.temp }}
         run: |

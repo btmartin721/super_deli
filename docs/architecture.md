@@ -514,3 +514,14 @@ original-weight/loss replay and retained source/input hashes. The original
 serial-rollout guard failures remain evidence; the auditor does not select
 candidates or alter training. [Results and limits](matched-neural-results.md)
 keep computational verification separate from group recovery.
+
+## Archival matched-view diagnostics
+
+`benchmarking/view_signal_*` separates source binding, frozen-coordinate
+replay, post-fit geometry, density fitting, independent auditing and reports.
+The opt-in `diagnose-matched-view-signal` command never enters training or GMM
+fitting. It reuses the unchanged density core and guards native assignment
+parity. Frozen source/runtime/settings, audited preflight and measured resources
+are required before its main archival analysis. Invented engineering fixtures
+are explicitly separate from scientific evidence. Production defaults,
+calibration workflows and empirical gates are unaffected.

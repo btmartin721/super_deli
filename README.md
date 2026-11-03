@@ -4,7 +4,18 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: matched morphology–ecology neural integration.**
+**Current checkpoint: matched-view signal diagnosis.**
+The [completed archival diagnostic](docs/matched-view-signal-results.md) traces
+60 saved datasets through 21 fixed representations without neural retraining.
+Uninformative ecology changes useful morphology distance structure before
+compression; joint PCA and neural compression add further losses. Latent
+standardization alone does not explain the failure. All 1,260 main fits and
+660 native replays passed independent checks. A separate
+[diagnostic CLI/API](docs/matched-view-signal-study.md) retains all seeds,
+noise and failures. No repair, default or p-value changed. The proposed next
+checkpoint is a frozen, opt-in view-weight sensitivity study on fresh simulations.
+
+**Previous checkpoint: matched morphology–ecology neural integration.**
 The separate opt-in [CLI/API](docs/matched-neural.md) aligns complete continuous
 measurements from the same individuals, balances the two views in a shared
 autoencoder, and proposes HDBSCAN groups with explicit noise. It supports frozen
