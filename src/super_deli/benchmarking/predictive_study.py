@@ -4,44 +4,16 @@ from __future__ import annotations
 
 import contextlib
 import json
-import os
 import shutil
-import stat
 from concurrent.futures import FIRST_COMPLETED, ProcessPoolExecutor, wait
 from dataclasses import replace
 from pathlib import Path
 from time import perf_counter
 
-from super_deli.benchmarking.local_archives import compact_directory, write_progress
+from super_deli.benchmarking.local_archives import compact_directory, retained_bytes, write_progress
 from super_deli.core.provenance import configuration_hash
 from super_deli.io.config import read_json, write_json
 from super_deli.models.predictive_study_config import PredictiveCell, PredictiveStudyConfig
-
-
-def retained_bytes(root):
-    """Count retained evidence while other workers atomically publish archives."""
-    root = Path(root)
-    total = 0
-
-    def traversal_error(error):
-        # Removed directories contribute no retained bytes; other errors must
-        # fail closed instead of making a storage budget appear smaller.
-        if not isinstance(error, FileNotFoundError):
-            raise error
-
-    for directory, children, files in os.walk(root, topdown=True, onerror=traversal_error):
-        # Prune before traversal: workers remove these trees after verified
-        # compaction. Path.rglob can raise during descent on Python 3.11.
-        children[:] = [name for name in children if name not in {".working", ".scratch"}]
-        for name in files:
-            try:
-                info = (Path(directory) / name).stat()
-            except FileNotFoundError:
-                # A verified partial archive may have been atomically renamed.
-                continue
-            if stat.S_ISREG(info.st_mode):
-                total += info.st_size
-    return total
 
 
 def simulate(cell, n, seed):

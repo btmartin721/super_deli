@@ -167,3 +167,64 @@ def test_unverified_compaction_retains_source_and_partial(tmp_path, monkeypatch)
     assert (source / "data").read_text() == "irreplaceable evidence"
     assert (tmp_path / "result.tar.gz.partial").is_file()
     assert not (tmp_path / "result.tar.gz").exists()
+
+
+def test_shared_storage_prunes_concurrently_removed_workspaces(tmp_path, monkeypatch):
+    import os
+
+    from super_deli.benchmarking.local_archives import retained_bytes
+
+    for name in (".working", ".scratch"):
+        (tmp_path / name / "run").mkdir(parents=True)
+        (tmp_path / name / "run/temporary").write_bytes(b"not retained")
+    (tmp_path / "result.tar.gz").write_bytes(b"saved")
+    original = os.scandir
+
+    def removed_workspace(path):
+        if Path(path).name in {".working", ".scratch", "run"}:
+            raise AssertionError("Storage traversal entered a concurrently removed workspace")
+        return original(path)
+
+    monkeypatch.setattr(os, "scandir", removed_workspace)
+    assert retained_bytes(tmp_path) == len(b"saved")
+
+
+def test_shared_storage_tolerates_atomic_archive_rename(tmp_path, monkeypatch):
+    from super_deli.benchmarking.local_archives import retained_bytes
+
+    final = tmp_path / "result.tar.gz"
+    partial = tmp_path / "result.tar.gz.partial"
+    final.write_bytes(b"saved")
+    partial.write_bytes(b"saved")
+    original = Path.stat
+    original_is_file = Path.is_file
+
+    def renamed(path, *args, **kwargs):
+        if path == partial:
+            raise FileNotFoundError(path)
+        return original(path, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "stat", renamed)
+    # Model a stale positive is_file result immediately before atomic rename.
+    monkeypatch.setattr(
+        Path, "is_file", lambda path: True if path == partial else original_is_file(path)
+    )
+    assert retained_bytes(tmp_path) == len(b"saved")
+
+
+def test_shared_storage_propagates_retained_permission_errors(tmp_path, monkeypatch):
+    import os
+
+    from super_deli.benchmarking.local_archives import retained_bytes
+
+    (tmp_path / "retained").mkdir()
+    original = os.scandir
+
+    def denied(path):
+        if Path(path).name == "retained":
+            raise PermissionError("Retained evidence cannot be inspected")
+        return original(path)
+
+    monkeypatch.setattr(os, "scandir", denied)
+    with pytest.raises(PermissionError):
+        retained_bytes(tmp_path)

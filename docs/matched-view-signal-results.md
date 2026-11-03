@@ -43,6 +43,28 @@ preserved. The stationary-source rerun passed all 99 relevant scientific tests;
 the lightweight foundation suite passed 1,565 tests with 123 optional skips.
 The original matched-study numerical-audit failures also remain preserved.
 
+Final CI exposed a separate, pre-existing archive-size traversal race in the
+older Gaussian AIC installed smoke on Python 3.11, after all 2,328 scientific
+tests and the new diagnostic smoke had passed. The shared archive counter
+filtered `.working` and `.scratch` only after recursive descent, allowing a
+parallel worker's cleanup to remove a directory during that traversal. The
+publication follow-up reuses the existing race-safe predictive-workflow counter
+as one shared implementation: prune transient trees before descent, tolerate
+atomic archive renames, and propagate retained-evidence permission errors.
+Deterministic regression tests cover those boundaries. Model fitting, sampling,
+thresholds, defaults and p-values are unchanged; the failed CI log is retained.
+The storage-focused regression suite passed 67 tests, the expanded foundation
+suite passed 1,568 with 123 optional skips, and the formerly failing installed
+AIC smoke passed all 20 engineering searches. Regression and installed smoke
+fits are separate from the no-refit archival scientific experiment.
+
+The scientific execution source remains frozen at commit
+`0695159dcf7f239bdf90df11989ba7c49afa0010` in its separate clean worktree and
+source bundle. The storage-only publication fix is recorded separately; it does
+not rewrite that freeze or rerun the scientific observations. Reproduction of
+the completed freeze requires that pinned source/runtime. Fresh diagnostic
+studies freeze their own sources normally.
+
 ## Where morphology-only recovery disappears
 
 Here, morphology contains all four generating groups; ecology is an independent
