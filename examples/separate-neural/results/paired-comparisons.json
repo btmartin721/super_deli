@@ -1,0 +1,2162 @@
+[
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison_arm": "separate_0",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison_arm": "joint4_0",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison_arm": "separate_101",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison_arm": "joint4_101",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison_arm": "separate_202",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison_arm": "joint4_202",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison_arm": "separate_0",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison_arm": "joint4_0",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison_arm": "separate_101",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison_arm": "joint4_101",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison_arm": "separate_202",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison_arm": "joint4_202",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison_arm": "separate_0",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      -0.6,
+      -0.6
+    ],
+    "marginal_95_interval": [
+      -0.9633110179870926,
+      0.46938942183586263
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": -0.6,
+    "reference_arm": "joint2_0",
+    "reference_only": 3,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.9958158445046398,
+      0.7967847928946798
+    ],
+    "simultaneous_failure_interval": [
+      -0.9958158445046398,
+      0.7967847928946798
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison_arm": "joint4_0",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      -0.6,
+      -0.6
+    ],
+    "marginal_95_interval": [
+      -0.9633110179870926,
+      0.46938942183586263
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": -0.6,
+    "reference_arm": "joint2_0",
+    "reference_only": 3,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.9958158445046398,
+      0.7967847928946798
+    ],
+    "simultaneous_failure_interval": [
+      -0.9958158445046398,
+      0.7967847928946798
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison_arm": "separate_101",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      -0.6,
+      -0.6
+    ],
+    "marginal_95_interval": [
+      -0.9633110179870926,
+      0.46938942183586263
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": -0.6,
+    "reference_arm": "joint2_101",
+    "reference_only": 3,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.9958158445046398,
+      0.7967847928946798
+    ],
+    "simultaneous_failure_interval": [
+      -0.9958158445046398,
+      0.7967847928946798
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison_arm": "joint4_101",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      -0.6,
+      -0.6
+    ],
+    "marginal_95_interval": [
+      -0.9633110179870926,
+      0.46938942183586263
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": -0.6,
+    "reference_arm": "joint2_101",
+    "reference_only": 3,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.9958158445046398,
+      0.7967847928946798
+    ],
+    "simultaneous_failure_interval": [
+      -0.9958158445046398,
+      0.7967847928946798
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison_arm": "separate_202",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      -0.6,
+      -0.6
+    ],
+    "marginal_95_interval": [
+      -0.9633110179870926,
+      0.46938942183586263
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": -0.6,
+    "reference_arm": "joint2_202",
+    "reference_only": 3,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.9958158445046398,
+      0.7967847928946798
+    ],
+    "simultaneous_failure_interval": [
+      -0.9958158445046398,
+      0.7967847928946798
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison_arm": "joint4_202",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      -0.6,
+      -0.6
+    ],
+    "marginal_95_interval": [
+      -0.9633110179870926,
+      0.46938942183586263
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": -0.6,
+    "reference_arm": "joint2_202",
+    "reference_only": 3,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.9958158445046398,
+      0.7967847928946798
+    ],
+    "simultaneous_failure_interval": [
+      -0.9958158445046398,
+      0.7967847928946798
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison_arm": "separate_0",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      -0.8,
+      -0.8
+    ],
+    "marginal_95_interval": [
+      -0.9974874054218158,
+      0.3481320873844369
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": -0.8,
+    "reference_arm": "joint2_0",
+    "reference_only": 4,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.9999652753662611,
+      0.7450138823503147
+    ],
+    "simultaneous_failure_interval": [
+      -0.9999652753662611,
+      0.7450138823503147
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison_arm": "joint4_0",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      -0.8,
+      -0.8
+    ],
+    "marginal_95_interval": [
+      -0.9974874054218158,
+      0.3481320873844369
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": -0.8,
+    "reference_arm": "joint2_0",
+    "reference_only": 4,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.9999652753662611,
+      0.7450138823503147
+    ],
+    "simultaneous_failure_interval": [
+      -0.9999652753662611,
+      0.7450138823503147
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison_arm": "separate_101",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      -0.8,
+      -0.8
+    ],
+    "marginal_95_interval": [
+      -0.9974874054218158,
+      0.3481320873844369
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": -0.8,
+    "reference_arm": "joint2_101",
+    "reference_only": 4,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.9999652753662611,
+      0.7450138823503147
+    ],
+    "simultaneous_failure_interval": [
+      -0.9999652753662611,
+      0.7450138823503147
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison_arm": "joint4_101",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      -0.8,
+      -0.8
+    ],
+    "marginal_95_interval": [
+      -0.9974874054218158,
+      0.3481320873844369
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": -0.8,
+    "reference_arm": "joint2_101",
+    "reference_only": 4,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.9999652753662611,
+      0.7450138823503147
+    ],
+    "simultaneous_failure_interval": [
+      -0.9999652753662611,
+      0.7450138823503147
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison_arm": "separate_202",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      -1.0,
+      -1.0
+    ],
+    "marginal_95_interval": [
+      -1.0,
+      0.16744679259812711
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": -1.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 5,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -1.0,
+      0.6460470804016829
+    ],
+    "simultaneous_failure_interval": [
+      -1.0,
+      0.6460470804016829
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison_arm": "joint4_202",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      -1.0,
+      -1.0
+    ],
+    "marginal_95_interval": [
+      -1.0,
+      0.16744679259812711
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": -1.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 5,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -1.0,
+      0.6460470804016829
+    ],
+    "simultaneous_failure_interval": [
+      -1.0,
+      0.6460470804016829
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison_arm": "separate_0",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison_arm": "joint4_0",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison_arm": "separate_101",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison_arm": "joint4_101",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison_arm": "separate_202",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison_arm": "joint4_202",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison_arm": "separate_0",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison_arm": "joint4_0",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison_arm": "separate_101",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison_arm": "joint4_101",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison_arm": "separate_202",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison_arm": "joint4_202",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison_arm": "separate_0",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison_arm": "joint4_0",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison_arm": "separate_101",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison_arm": "joint4_101",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison_arm": "separate_202",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison_arm": "joint4_202",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison_arm": "separate_0",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison_arm": "joint4_0",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison_arm": "separate_101",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison_arm": "joint4_101",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison_arm": "separate_202",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison_arm": "joint4_202",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison_arm": "separate_0",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison_arm": "joint4_0",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison_arm": "separate_101",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison_arm": "joint4_101",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison_arm": "separate_202",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison_arm": "joint4_202",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison_arm": "separate_0",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison_arm": "joint4_0",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison_arm": "separate_101",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison_arm": "joint4_101",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison_arm": "separate_202",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison_arm": "joint4_202",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison_arm": "separate_0",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison_arm": "joint4_0",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison_arm": "separate_101",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison_arm": "joint4_101",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison_arm": "separate_202",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison_arm": "joint4_202",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison_arm": "separate_0",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison_arm": "joint4_0",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_0",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison_arm": "separate_101",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison_arm": "joint4_101",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_101",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison_arm": "separate_202",
+    "comparison_only": 0,
+    "family": "separate",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison_arm": "joint4_202",
+    "comparison_only": 0,
+    "family": "joint4",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "joint2_202",
+    "reference_only": 0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  }
+]

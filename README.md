@@ -4,7 +4,18 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: prespecified matched neural view weights.**
+**Current checkpoint: separate encoders for matched morphology/ecology.**
+The opt-in [CLI/API](docs/separate-neural.md) fits one unchanged two-coordinate
+autoencoder per view and applies HDBSCAN to their four concatenated coordinates.
+It supports frozen transforms and matched whole-individual subsampling. The
+[audited comparison](docs/separate-neural-results.md) retains every neural seed,
+includes dimension/capacity controls, and completed 1,480 main workflows plus a
+380-workflow preflight. Existing models, defaults, serialization and p-values
+remain unchanged. No seed, family or species partition is automatically selected;
+detailed inputs, weights and training traces stay local. Redundant groups were
+recovered, but complementary and one-view signal recovery did not improve.
+
+**Previous checkpoint: prespecified matched neural view weights.**
 The opt-in [schema-2 CLI/API](docs/matched-view-weights.md) supports declared
 morphology/ecology reconstruction fractions while preserving the legacy schema,
 default, trainer and p-values. The [frozen study](docs/matched-view-weights-results.md)
@@ -633,3 +644,11 @@ The [observed-data recovery diagnostic](docs/observed-recovery.md) separates
 small-sample component-selection cost from convergence and measured-information
 limits. It preserves original withheld searches and stores extended-budget and
 known-parameter diagnostic fits separately; it promotes no new model or default.
+
+
+The opt-in [separate morphology/ecology encoders](docs/separate-neural.md) retain
+two coordinates from each matched individual-level view and cluster their four
+combined coordinates with HDBSCAN. This adds no species p-values or automatic
+model selection. The [bounded comparison](docs/separate-neural-study.md) includes
+unchanged joint-two, dimension-matched joint-four, per-view PCA, single-view
+neural and integrative GMM controls.

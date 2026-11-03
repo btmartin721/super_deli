@@ -1,0 +1,46 @@
+{
+  "counts": {
+    "main": {
+      "density_fits": 1400,
+      "gmm_searches": 80,
+      "legacy_replays": 12,
+      "neural_fits": 1596,
+      "observations": 80,
+      "point_workflows": 1360,
+      "subsample_refits": 108,
+      "workflows": 1480
+    },
+    "preflight": {
+      "density_fits": 364,
+      "gmm_searches": 16,
+      "legacy_replays": 0,
+      "neural_fits": 432,
+      "observations": 16,
+      "point_workflows": 272,
+      "subsample_refits": 108,
+      "workflows": 380
+    }
+  },
+  "defaults_changed": false,
+  "failed_points": 0,
+  "historical_pvalues_changed": false,
+  "interpretation": "Prespecified workflow comparison with five independent datasets/cell. Two encoders change capacity and compute; dimension controls do not isolate every cause. Seeds and subsamples are repeated measurements. No winning model, calibrated control rate or species guarantee.",
+  "main_audit": {
+    "audit_boundary": "Actual-path NumPy gradient/Adam checks, independent losses, raw laws, identities, transforms, graph hierarchy, GMM likelihood and denominators. Failed endpoints retain partial evidence and are not claimed as verified fits.",
+    "branch_parity_checks": 480,
+    "branch_parity_planned": 480,
+    "execution_sha256": "01a659164a2d37f5c967333dcd7ddd71aea3dc5d299ff746606bea9ddd0275b3",
+    "failed_points": 0,
+    "freeze_sha256": "bad2563834686b8d49799e13c64f420d17d2f8a3d9be5eac7eae761c3c6d1d81",
+    "native_draws": 108,
+    "neural_fits": 1596,
+    "passed": true,
+    "phase": "main",
+    "seconds": 35.24307945789769,
+    "verified_optimizer_updates": 798000
+  },
+  "observations": 80,
+  "paired_comparisons": 72,
+  "primary_rates": 108,
+  "schema_version": 1
+}

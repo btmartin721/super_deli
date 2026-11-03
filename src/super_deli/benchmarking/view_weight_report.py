@@ -5,13 +5,10 @@ from pathlib import Path
 
 import numpy as np
 
-from super_deli.benchmarking.gaussian_graph_report import difference_interval
 from super_deli.benchmarking.matched_study import inventory
 from super_deli.benchmarking.neural_analysis import arrays, require
 from super_deli.benchmarking.neural_moons_fit import recovery
-from super_deli.benchmarking.unknown_k_report import interval
 from super_deli.benchmarking.view_signal_metrics import linear_recovery
-from super_deli.benchmarking.view_signal_report import spread
 from super_deli.benchmarking.view_weight_config import ARMS, JOINT, SEEDS, tasks
 from super_deli.benchmarking.view_weight_study import check_frozen
 from super_deli.core.provenance import fingerprint_file
@@ -104,99 +101,18 @@ def assess(root, config):
 
 
 def summarize(rows):
-    groups, primary, paired = [], [], []
-    for case, n in sorted({(r["case"], r["n"]) for r in rows}):
-        cell = [r for r in rows if (r["case"], r["n"]) == (case, n)]
-        for arm in ARMS:
-            selected = [r for r in cell if r["arm"] == arm]
-            done = [r for r in selected if r["status"] == "available"]
-            size, unknown = len(selected), len(selected) - len(done)
-            count = sum(r["endpoint"] for r in selected)
-            group = {
-                "case": case,
-                "n": n,
-                "arm": arm,
-                "requested": size,
-                "available": len(done),
-                "failures": unknown,
-                "endpoint_count": count,
-                "endpoint_rate_all_requests": count / size,
-                "endpoint": "nontrivial_return"
-                if case.startswith("gaussian_")
-                else "k4_full_ari_ge_0_8",
-                "available_only_rate": count / len(done) if done else None,
-                "failure_bounds": [count / size, (count + unknown) / size],
-                "selected_k_counts": dict(Counter(str(r["selected_k"]) for r in done)),
-            }
-            for metric in ("coverage", "ari", "assigned_ari"):
-                group[metric] = spread([r[metric] for r in done])
-            for view in ("morphology", "ecology"):
-                group["linear_" + view] = [
-                    spread([r["linear_" + view]["r2"][i] for r in done]) for i in (0, 1)
-                ]
-            if arm in JOINT:
-                group["standardized_mse_by_view"] = [
-                    spread([r["standardized_mse_by_view"][i] for r in done]) for i in (0, 1)
-                ]
-                primary.append(
-                    {
-                        **{k: group[k] for k in ("case", "n", "arm", "requested", "endpoint")},
-                        "count": count,
-                        "rate": count / size,
-                        "unavailable": unknown,
-                        "identification_bounds": group["failure_bounds"],
-                        "marginal_95_interval": interval(count, size, 0.05),
-                        "simultaneous_95_interval": interval(count, size, 0.05 / 108),
-                        "simultaneous_failure_interval": [
-                            interval(count, size, 0.05 / 108)[0],
-                            interval(count + unknown, size, 0.05 / 108)[1],
-                        ],
-                    }
-                )
-            groups.append(group)
-        for seed in SEEDS:
-            equal = {r["key"]: r for r in cell if r["arm"] == f"joint_equal_{seed}"}
-            for weight in ("morphology", "ecology"):
-                alternative = {r["key"]: r for r in cell if r["arm"] == f"joint_{weight}_{seed}"}
-                common = [
-                    k
-                    for k in equal
-                    if equal[k]["status"] == alternative[k]["status"] == "available"
-                ]
-                positive = sum(
-                    alternative[k]["endpoint"] and not equal[k]["endpoint"] for k in common
-                )
-                negative = sum(
-                    equal[k]["endpoint"] and not alternative[k]["endpoint"] for k in common
-                )
-                size, unknown = len(equal), len(equal) - len(common)
-                paired.append(
-                    {
-                        "case": case,
-                        "n": n,
-                        "neural_seed": seed,
-                        "weight": weight,
-                        "requested": size,
-                        "common_available": len(common),
-                        "unknown_pairs": unknown,
-                        "weighted_only": positive,
-                        "equal_only": negative,
-                        "rate_difference_known_contribution": (positive - negative) / size,
-                        "identification_bounds": [
-                            (positive - negative - unknown) / size,
-                            (positive - negative + unknown) / size,
-                        ],
-                        "marginal_95_interval": difference_interval(positive, negative, size, 0.05),
-                        "simultaneous_95_interval": difference_interval(
-                            positive, negative, size, 0.05 / 72
-                        ),
-                        "simultaneous_failure_interval": [
-                            difference_interval(positive, negative + unknown, size, 0.05 / 72)[0],
-                            difference_interval(positive + unknown, negative, size, 0.05 / 72)[1],
-                        ],
-                    }
-                )
-    return groups, primary, paired
+    from super_deli.benchmarking.neural_summary import summarize_rates
+
+    comparisons = [
+        dict(
+            reference=f"joint_equal_{s}",
+            alternative=f"joint_{w}_{s}",
+            labels=dict(neural_seed=s, weight=w),
+        )
+        for s in SEEDS
+        for w in ("morphology", "ecology")
+    ]
+    return summarize_rates(rows, arms=ARMS, joint=JOINT, comparisons=comparisons)
 
 
 def report(root):

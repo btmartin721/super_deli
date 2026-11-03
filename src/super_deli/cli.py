@@ -23,6 +23,9 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     commands = parser.add_subparsers(dest="command", required=True)
+    from super_deli.workflows.separate_cli import register as register_separate_neural
+
+    register_separate_neural(commands)
     from super_deli.benchmarking.view_weight_cli import register as register_view_weights
 
     register_view_weights(commands)
@@ -512,6 +515,12 @@ def main(argv: list[str] | None = None) -> int:
     power_budget.add_argument("--output-file", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
+        if args.command in {"cluster-matched-separate-neural", "benchmark-separate-neural"}:
+            from super_deli.workflows.separate_cli import dispatch
+
+            summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 1 if summary.get("status") == "failed" or summary.get("passed") is False else 0
         if args.command == "benchmark-view-weights":
             from super_deli.benchmarking.view_weight_cli import dispatch
 

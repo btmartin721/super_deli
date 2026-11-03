@@ -46,7 +46,19 @@ def audit_density(point, trace, index):
     np.testing.assert_allclose(strength, supports, atol=1e-12)
 
 
-def audit_trajectory(x, point, config, event, evidence, index, cache, *, paired):
+def audit_trajectory(
+    x,
+    point,
+    config,
+    event,
+    evidence,
+    index,
+    cache,
+    *,
+    paired,
+    initial_weights=None,
+    latent_auditor=None,
+):
     kept = point["kept_indices"]
     np.testing.assert_array_equal(kept, np.flatnonzero(x.std(0) > 0))
     np.testing.assert_allclose(point["means"], x.mean(0), atol=1e-12)
@@ -88,14 +100,20 @@ def audit_trajectory(x, point, config, event, evidence, index, cache, *, paired)
         if k.startswith(f"fit_{index}_initial_")
     }
     require(len(initial) == 12, "Complete initialization")
-    key = (z.shape[1], event["seed"])
+    key = (
+        (z.shape[1], event["seed"])
+        if initial_weights is None
+        else (z.shape[1], event["seed"], "alternate")
+    )
     if key not in cache:
         from super_deli.models.tabular_neural import _network, _torch, _weights
 
         torch = _torch()
         with torch.random.fork_rng(devices=[]):
             torch.random.default_generator.manual_seed(key[1])
-            cache[key] = _weights(_network(key[0]))
+            cache[key] = (
+                _weights(_network(key[0])) if initial_weights is None else initial_weights(key[0])
+            )
     for name, value in initial.items():
         np.testing.assert_array_equal(value, cache[key][name])
     require(
@@ -138,7 +156,7 @@ def audit_trajectory(x, point, config, event, evidence, index, cache, *, paired)
     np.testing.assert_array_equal(point["losses"], reported)
     require(expected_losses.shape == (501,), "All independently evaluated losses")
     np.testing.assert_allclose(reported, expected_losses, rtol=1e-10, atol=1e-12)
-    audit_latent(z, point)
+    (audit_latent if latent_auditor is None else latent_auditor)(z, point)
     decoded = neural_forward(neural_forward(z, point, "encoder"), point, "decoder")
     np.testing.assert_allclose(np.mean((decoded - z) ** 2), point["losses"][-1], atol=1e-11)
     return z

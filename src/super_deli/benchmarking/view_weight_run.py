@@ -14,7 +14,7 @@ from super_deli.benchmarking.view_weight_observer import retain_density, retain_
 from super_deli.io.config import load_config, read_json, write_json
 
 
-def run_arm(task, data_dir, canonical_dir, out, arm, *, legacy_config=None):
+def run_arm(task, data_dir, canonical_dir, out, arm, *, legacy_config=None, record_times=False):
     from super_deli.workflows.integrative import run_integrative
     from super_deli.workflows.matched_neural import run_matched_neural
     from super_deli.workflows.tabular_neural import run_tabular_neural
@@ -28,7 +28,9 @@ def run_arm(task, data_dir, canonical_dir, out, arm, *, legacy_config=None):
     try:
         if neural:
             with (
-                retain_training(out, paired=paired, guard_state=guard_state) as events,
+                retain_training(
+                    out, paired=paired, guard_state=guard_state, record_times=record_times
+                ) as events,
                 retain_density(out, events, paired=paired, guard_state=guard_state),
             ):
                 if paired:

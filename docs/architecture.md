@@ -525,3 +525,20 @@ parity. Frozen source/runtime/settings, audited preflight and measured resources
 are required before its main archival analysis. Invented engineering fixtures
 are explicitly separate from scientific evidence. Production defaults,
 calibration workflows and empirical gates are unaffected.
+
+
+### Separate matched-view encoders
+
+`models.separate_*` owns a distinct, opt-in schema and two unchanged native
+encoders. Each branch matches its standalone fit exactly; standardized branch
+coordinates are concatenated without joint compression. The shared paired
+workflow helper owns identity-bound ingestion, exports and failure handling;
+legacy two-coordinate output and serialization remain compatible. A separate
+paired resampler refits both branches on the same whole-individual draws.
+
+The `benchmarking.separate_*` modules freeze architecture/dimension controls,
+independent raw laws and all neural seeds. Shared lifecycle, numerical observers,
+rate summaries and explicit per-arm resource accounting avoid duplicated study
+logic. Benchmark-only joint-four and per-view PCA controls cannot be selected
+through the public clustering adapter. See the [input contract](separate-neural.md)
+and [prespecified comparison](separate-neural-study.md).

@@ -1,5 +1,6 @@
 """Worker-local read-only checking during primary training, never a second optimizer."""
 
+import time
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -15,11 +16,11 @@ class NumericalAuditFailure(RuntimeError):
 
 
 @contextmanager
-def retain_training(directory, *, paired, guard_state=None):
+def retain_training(directory, *, paired, guard_state=None, module=None, record_times=False):
     from super_deli.benchmarking import matched_steps
     from super_deli.models import matched_neural, tabular_neural
 
-    module = matched_neural if paired else tabular_neural
+    module = module if module is not None else matched_neural if paired else tabular_neural
     original_train, original_factory = module._train, tabular_neural._network
     records, saved = [], {}
     guard_state = {} if guard_state is None else guard_state
@@ -27,6 +28,7 @@ def retain_training(directory, *, paired, guard_state=None):
     def train(x, seed):
         if guard_state.get("failed"):
             raise NumericalAuditFailure("An earlier numerical guard stopped dependent work")
+        started = time.monotonic() if record_times else None
         index, initial = len(records), {}
         record = {
             "fit": index,
@@ -123,6 +125,8 @@ def retain_training(directory, *, paired, guard_state=None):
                 saved[f"fit_{index}_normalized_errors"] = normalized
                 saved[f"fit_{index}_comparison_counts"] = comparison_counts
                 record["updates_checked"] = len(checked.errors)
+            if started is not None:
+                record["seconds"] = time.monotonic() - started
 
     module._train = train
     try:
@@ -136,19 +140,19 @@ def retain_training(directory, *, paired, guard_state=None):
 
 
 @contextmanager
-def retain_density(directory, events, *, paired, guard_state):
+def retain_density(directory, events, *, paired, guard_state, module=None):
     from sklearn.cluster import HDBSCAN
 
     from super_deli.benchmarking.moons_hierarchy import retained_hierarchy
     from super_deli.models import matched_neural, tabular_neural
 
-    module = matched_neural if paired else tabular_neural
+    module = module if module is not None else matched_neural if paired else tabular_neural
     original = module.fit_density_scores
     saved, records = {}, []
 
     def density(scores, config):
         captured = {}
-        index = len(events) - 1
+        index = max(len(events) - 1, 0)
 
         def estimator(**kwargs):
             captured["estimator"] = HDBSCAN(**kwargs)
