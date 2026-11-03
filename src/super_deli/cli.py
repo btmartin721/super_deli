@@ -23,6 +23,9 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     commands = parser.add_subparsers(dest="command", required=True)
+    from super_deli.workflows.matched_neural_cli import register as register_matched_neural
+
+    register_matched_neural(commands)
     from super_deli.benchmarking.aic_diagnostic_cli import register_commands
 
     aic_commands = register_commands(commands)
@@ -503,6 +506,12 @@ def main(argv: list[str] | None = None) -> int:
     power_budget.add_argument("--output-file", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
+        if args.command in {"cluster-matched-neural", "benchmark-matched-neural"}:
+            from super_deli.workflows.matched_neural_cli import dispatch
+
+            summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 1 if summary.get("passed") is False or summary.get("status") == "failed" else 0
         if args.command in {"cluster-tabular-spectral", "benchmark-unknown-k-spectral"}:
             from super_deli.workflows.spectral_cli import dispatch
 

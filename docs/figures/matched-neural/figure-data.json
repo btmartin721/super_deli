@@ -1,0 +1,3642 @@
+[
+  {
+    "arm": "paired_0",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_101",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_202",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_0",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_101",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_202",
+    "case": "gaussian_independent",
+    "count": 1,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      0.0025285785444617848,
+      0.4450161170281954
+    ],
+    "n": 256,
+    "rate": 0.1,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      1.1161274852283228e-05,
+      0.7086479072178473
+    ],
+    "simultaneous_failure_interval": [
+      1.1161274852283228e-05,
+      0.7086479072178473
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "gaussian_independent",
+    "count": 1,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      0.0025285785444617848,
+      0.4450161170281954
+    ],
+    "n": 256,
+    "rate": 0.1,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      1.1161274852283228e-05,
+      0.7086479072178473
+    ],
+    "simultaneous_failure_interval": [
+      1.1161274852283228e-05,
+      0.7086479072178473
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_0",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_101",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_202",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "gaussian_correlated",
+    "count": 1,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      0.0025285785444617848,
+      0.4450161170281954
+    ],
+    "n": 64,
+    "rate": 0.1,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      1.1161274852283228e-05,
+      0.7086479072178473
+    ],
+    "simultaneous_failure_interval": [
+      1.1161274852283228e-05,
+      0.7086479072178473
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_0",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_101",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_202",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "gaussian_correlated",
+    "count": 1,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      0.0025285785444617848,
+      0.4450161170281954
+    ],
+    "n": 256,
+    "rate": 0.1,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      1.1161274852283228e-05,
+      0.7086479072178473
+    ],
+    "simultaneous_failure_interval": [
+      1.1161274852283228e-05,
+      0.7086479072178473
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "gaussian_correlated",
+    "count": 1,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      0.0025285785444617848,
+      0.4450161170281954
+    ],
+    "n": 256,
+    "rate": 0.1,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      1.1161274852283228e-05,
+      0.7086479072178473
+    ],
+    "simultaneous_failure_interval": [
+      1.1161274852283228e-05,
+      0.7086479072178473
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "gaussian_correlated",
+    "count": 1,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      0.0025285785444617848,
+      0.4450161170281954
+    ],
+    "n": 256,
+    "rate": 0.1,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      1.1161274852283228e-05,
+      0.7086479072178473
+    ],
+    "simultaneous_failure_interval": [
+      1.1161274852283228e-05,
+      0.7086479072178473
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_0",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_101",
+    "case": "four_redundant",
+    "count": 9,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.9,
+      0.9
+    ],
+    "marginal_95_interval": [
+      0.5549838829718047,
+      0.9974714214555382
+    ],
+    "n": 64,
+    "rate": 0.9,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "simultaneous_failure_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_202",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "case": "four_redundant",
+    "count": 9,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.9,
+      0.9
+    ],
+    "marginal_95_interval": [
+      0.5549838829718047,
+      0.9974714214555382
+    ],
+    "n": 64,
+    "rate": 0.9,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "simultaneous_failure_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "case": "four_redundant",
+    "count": 9,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.9,
+      0.9
+    ],
+    "marginal_95_interval": [
+      0.5549838829718047,
+      0.9974714214555382
+    ],
+    "n": 64,
+    "rate": 0.9,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "simultaneous_failure_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "four_redundant",
+    "count": 6,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.6,
+      0.6
+    ],
+    "marginal_95_interval": [
+      0.26237807660694507,
+      0.8784477418801728
+    ],
+    "n": 64,
+    "rate": 0.6,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.09524233925194127,
+      0.9720711678385838
+    ],
+    "simultaneous_failure_interval": [
+      0.09524233925194127,
+      0.9720711678385838
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_0",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_101",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_202",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "four_redundant",
+    "count": 8,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      0.4439045376923585,
+      0.9747892736731666
+    ],
+    "n": 256,
+    "rate": 0.8,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "simultaneous_failure_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "four_redundant",
+    "count": 9,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.9,
+      0.9
+    ],
+    "marginal_95_interval": [
+      0.5549838829718047,
+      0.9974714214555382
+    ],
+    "n": 256,
+    "rate": 0.9,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "simultaneous_failure_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "four_redundant",
+    "count": 9,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.9,
+      0.9
+    ],
+    "marginal_95_interval": [
+      0.5549838829718047,
+      0.9974714214555382
+    ],
+    "n": 256,
+    "rate": 0.9,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "simultaneous_failure_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "case": "four_redundant",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "four_redundant",
+    "count": 9,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.9,
+      0.9
+    ],
+    "marginal_95_interval": [
+      0.5549838829718047,
+      0.9974714214555382
+    ],
+    "n": 256,
+    "rate": 0.9,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "simultaneous_failure_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "four_redundant",
+    "count": 8,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      0.4439045376923585,
+      0.9747892736731666
+    ],
+    "n": 256,
+    "rate": 0.8,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "simultaneous_failure_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_0",
+    "case": "four_complementary",
+    "count": 9,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.9,
+      0.9
+    ],
+    "marginal_95_interval": [
+      0.5549838829718047,
+      0.9974714214555382
+    ],
+    "n": 64,
+    "rate": 0.9,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "simultaneous_failure_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_101",
+    "case": "four_complementary",
+    "count": 8,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      0.4439045376923585,
+      0.9747892736731666
+    ],
+    "n": 64,
+    "rate": 0.8,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "simultaneous_failure_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_202",
+    "case": "four_complementary",
+    "count": 8,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      0.4439045376923585,
+      0.9747892736731666
+    ],
+    "n": 64,
+    "rate": 0.8,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "simultaneous_failure_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "case": "four_complementary",
+    "count": 7,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.7,
+      0.7
+    ],
+    "marginal_95_interval": [
+      0.3475471499400027,
+      0.9332604888222655
+    ],
+    "n": 64,
+    "rate": 0.7,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.14577842156435902,
+      0.990067251637057
+    ],
+    "simultaneous_failure_interval": [
+      0.14577842156435902,
+      0.990067251637057
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_0",
+    "case": "four_complementary",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_101",
+    "case": "four_complementary",
+    "count": 7,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.7,
+      0.7
+    ],
+    "marginal_95_interval": [
+      0.3475471499400027,
+      0.9332604888222655
+    ],
+    "n": 256,
+    "rate": 0.7,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.14577842156435902,
+      0.990067251637057
+    ],
+    "simultaneous_failure_interval": [
+      0.14577842156435902,
+      0.990067251637057
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_202",
+    "case": "four_complementary",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "case": "four_complementary",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_0",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_101",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_202",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "morphology_only",
+    "count": 8,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      0.4439045376923585,
+      0.9747892736731666
+    ],
+    "n": 64,
+    "rate": 0.8,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "simultaneous_failure_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "morphology_only",
+    "count": 8,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      0.4439045376923585,
+      0.9747892736731666
+    ],
+    "n": 64,
+    "rate": 0.8,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "simultaneous_failure_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "morphology_only",
+    "count": 8,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      0.4439045376923585,
+      0.9747892736731666
+    ],
+    "n": 64,
+    "rate": 0.8,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "simultaneous_failure_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "case": "morphology_only",
+    "count": 7,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.7,
+      0.7
+    ],
+    "marginal_95_interval": [
+      0.3475471499400027,
+      0.9332604888222655
+    ],
+    "n": 64,
+    "rate": 0.7,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.14577842156435902,
+      0.990067251637057
+    ],
+    "simultaneous_failure_interval": [
+      0.14577842156435902,
+      0.990067251637057
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "morphology_only",
+    "count": 8,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      0.4439045376923585,
+      0.9747892736731666
+    ],
+    "n": 64,
+    "rate": 0.8,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "simultaneous_failure_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_0",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_101",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "paired_202",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "morphology_only",
+    "count": 8,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      0.4439045376923585,
+      0.9747892736731666
+    ],
+    "n": 256,
+    "rate": 0.8,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "simultaneous_failure_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "morphology_only",
+    "count": 9,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.9,
+      0.9
+    ],
+    "marginal_95_interval": [
+      0.5549838829718047,
+      0.9974714214555382
+    ],
+    "n": 256,
+    "rate": 0.9,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "simultaneous_failure_interval": [
+      0.29135209278214014,
+      0.9999888387251478
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "morphology_only",
+    "count": 8,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      0.4439045376923585,
+      0.9747892736731666
+    ],
+    "n": 256,
+    "rate": 0.8,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "simultaneous_failure_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "integrative_gmm",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_gmm",
+    "case": "morphology_only",
+    "count": 10,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.40250307170118593,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_gmm",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "morphology_only",
+    "count": 8,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      0.4439045376923585,
+      0.9747892736731666
+    ],
+    "n": 256,
+    "rate": 0.8,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "simultaneous_failure_interval": [
+      0.20973746852561775,
+      0.9984184918601079
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "returned_correct_k_ari08",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5974969282987992
+    ],
+    "unavailable": 0
+  }
+]

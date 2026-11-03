@@ -1,0 +1,21 @@
+{
+  "fixture": false,
+  "interpretation": [
+    "Shared representation is a transductive research baseline, not validated species",
+    "All three seeds retained as repeated measurements, no winning seed or default",
+    "Equal view loss does not imply equal biological influence",
+    "No new p-values or transfer of GMM significance",
+    "Ten independent observations/cell give pilot evidence; five subsamples only describe conditional sensitivity",
+    "Discordant/heavy-tail stress has no joint species truth; moons is secondary",
+    "GMM K=1..4 and density unknown K have different search/noise policies"
+  ],
+  "main_workflow_fits": 2708,
+  "observations": 160,
+  "paired_interval_family": 144,
+  "point_outputs": 2240,
+  "primary_interval_family": 224,
+  "schema_version": 1,
+  "statuses": {
+    "available": 2240
+  }
+}

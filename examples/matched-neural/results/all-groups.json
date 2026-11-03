@@ -1,0 +1,4471 @@
+[
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.440625,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.534375,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.4265625,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.4296875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.3890625,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.371875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.5609375,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.6203125,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.5046875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.359375,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.509375,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.818359375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.791015625,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.81640625,
+    "n": 256,
+    "overpartitioned_returns": 1,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.76328125,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.759765625,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.743359375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.810546875,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.8109375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.803125,
+    "n": 256,
+    "overpartitioned_returns": 1,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.753515625,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_independent",
+    "mean_coverage_all_requests": 0.80078125,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.4671875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.440625,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.4671875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.546875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.5671875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.515625,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.5953125,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.54375,
+    "n": 64,
+    "overpartitioned_returns": 1,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.5734375,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.5359375,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.528125,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.7359375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.752734375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.749609375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.68515625,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.715625,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.690625,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.781640625,
+    "n": 256,
+    "overpartitioned_returns": 1,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.7828125,
+    "n": 256,
+    "overpartitioned_returns": 1,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.78671875,
+    "n": 256,
+    "overpartitioned_returns": 1,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.6921875,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "gaussian_correlated",
+    "mean_coverage_all_requests": 0.76953125,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9876999107629352,
+      0.9876999107629352
+    ],
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": 0.9876999107629352,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.996875,
+    "n": 64,
+    "overpartitioned_returns": 1,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 9,
+      "5": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9564497267150391,
+      0.9564497267150391
+    ],
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": 0.9564497267150391,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.9796875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9586201190884976,
+      0.9586201190884976
+    ],
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": 0.9586201190884976,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.98125,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9238163365359273,
+      0.9238163365359273
+    ],
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": 0.9238163365359275,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.9671875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9833354410790021,
+      0.9833354410790021
+    ],
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": 0.9833354410790021,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.99375,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9749630835400375,
+      0.9749630835400375
+    ],
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": 0.9749630835400376,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.99375,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9688966721718202,
+      0.9688966721718202
+    ],
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": 0.9688966721718204,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.9890625,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9577167906273107,
+      0.9577167906273107
+    ],
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.9577167906273107,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "3": 1,
+      "4": 9
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9583904482414758,
+      0.9583904482414758
+    ],
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.9583904482414756,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "3": 1,
+      "4": 9
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.6508588576818932,
+      0.6508588576818932
+    ],
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": 0.6508588576818932,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.9734375,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 3,
+      "4": 7
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9709688208882383,
+      0.9709688208882383
+    ],
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": 0.9709688208882383,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.9875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9762473767769203,
+      0.9762473767769203
+    ],
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": 0.9762473767769204,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.9875,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9477029930375567,
+      0.9477029930375567
+    ],
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": 0.9477029930375567,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.97109375,
+    "n": 256,
+    "overpartitioned_returns": 2,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 8,
+      "5": 1,
+      "6": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.979728226891892,
+      0.979728226891892
+    ],
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": 0.979728226891892,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.987890625,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9665267282574046,
+      0.9665267282574046
+    ],
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": 0.9665267282574046,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.98203125,
+    "n": 256,
+    "overpartitioned_returns": 1,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 9,
+      "5": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.96778930112607,
+      0.96778930112607
+    ],
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": 0.9677893011260702,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.983984375,
+    "n": 256,
+    "overpartitioned_returns": 1,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 9,
+      "5": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9755552959024906,
+      0.9755552959024906
+    ],
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": 0.9755552959024903,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.984765625,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      1.0,
+      1.0
+    ],
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": 1.0,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9916671448954828,
+      0.9916671448954828
+    ],
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.9916671448954828,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9916671448954828,
+      0.9916671448954828
+    ],
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.9916671448954828,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.957754438946651,
+      0.957754438946651
+    ],
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": 0.957754438946651,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.976171875,
+    "n": 256,
+    "overpartitioned_returns": 1,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 9,
+      "5": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9465424620874806,
+      0.9465424620874806
+    ],
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": 0.9465424620874805,
+    "case": "four_redundant",
+    "mean_coverage_all_requests": 0.96953125,
+    "n": 256,
+    "overpartitioned_returns": 2,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 8,
+      "5": 2
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.8391551054540185,
+      0.8391551054540185
+    ],
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": 0.8391551054540185,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.975,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 1,
+      "4": 9
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.7482572482621639,
+      0.7482572482621639
+    ],
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": 0.748257248262164,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.9734375,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 2,
+      "4": 8
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.7525504885266283,
+      0.7525504885266283
+    ],
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": 0.7525504885266283,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.9796875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 2,
+      "4": 8
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.19152605100587655,
+      0.19152605100587655
+    ],
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": 0.19152605100587655,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.959375,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 6,
+      "2": 4
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.1390319587340776,
+      0.1390319587340776
+    ],
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": 0.1390319587340776,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.9484375,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 7,
+      "2": 2,
+      "3": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.22634037342118388,
+      0.22634037342118388
+    ],
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": 0.22634037342118388,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.9515625,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 5,
+      "2": 3,
+      "3": 2
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.23519218953392781,
+      0.23519218953392781
+    ],
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": 0.23519218953392781,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.946875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 5,
+      "2": 5
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.3796280040990908,
+      0.3796280040990908
+    ],
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": 0.37962800409909075,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.9703125,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 2,
+      "2": 8
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.3684839027723241,
+      0.3684839027723241
+    ],
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": 0.3684839027723241,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.9703125,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 2,
+      "2": 6,
+      "3": 2
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.8946586971955798,
+      0.8946586971955798
+    ],
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": 0.8946586971955798,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "3": 3,
+      "4": 7
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.48180186609165476,
+      0.48180186609165476
+    ],
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.4818018660916549,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "2": 9,
+      "3": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.4847321462787546,
+      0.4847321462787546
+    ],
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.4847321462787546,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "2": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.23863225666096805,
+      0.23863225666096805
+    ],
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": 0.23863225666096807,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.9421875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 5,
+      "2": 5
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.4628212948341899,
+      0.4628212948341899
+    ],
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": 0.4628212948341899,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.9671875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "2": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9577826355417203,
+      0.9577826355417203
+    ],
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": 0.9577826355417203,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.975390625,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9483815311328604,
+      0.9483815311328604
+    ],
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": 0.9483815311328605,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.974609375,
+    "n": 256,
+    "overpartitioned_returns": 3,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 7,
+      "5": 3
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9640756551641211,
+      0.9640756551641211
+    ],
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": 0.9640756551641211,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.980859375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.3853566028310416,
+      0.3853566028310416
+    ],
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": 0.38535660283104156,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.974609375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 2,
+      "2": 7,
+      "3": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.24482997954625052,
+      0.24482997954625052
+    ],
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": 0.24482997954625058,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.972265625,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 5,
+      "2": 5
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.2936102884844183,
+      0.2936102884844183
+    ],
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": 0.2936102884844182,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.974609375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 4,
+      "2": 6
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.2853360530505702,
+      0.2853360530505702
+    ],
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": 0.2853360530505702,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.965625,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 4,
+      "2": 4,
+      "3": 2
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.3821453195804295,
+      0.3821453195804295
+    ],
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": 0.3821453195804295,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.966796875,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 2,
+      "2": 6,
+      "3": 2
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.29063626191703207,
+      0.29063626191703207
+    ],
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": 0.29063626191703207,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.97734375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 4,
+      "2": 5,
+      "4": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.991675550918556,
+      0.991675550918556
+    ],
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": 0.991675550918556,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.49548512646514287,
+      0.49548512646514287
+    ],
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.49548512646514287,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "2": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.491619045599892,
+      0.491619045599892
+    ],
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.491619045599892,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "2": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.28435656000534965,
+      0.28435656000534965
+    ],
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": 0.2843565600053497,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.95703125,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 4,
+      "2": 5,
+      "3": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.43475234964259374,
+      0.43475234964259374
+    ],
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": 0.43475234964259374,
+    "case": "four_complementary",
+    "mean_coverage_all_requests": 0.96796875,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 1,
+      "2": 9
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.015311128505869692,
+      0.015311128505869692
+    ],
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": 0.015311128505869692,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.73125,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0056332379926787,
+      0.0056332379926787
+    ],
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": 0.0056332379926787,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.7453125,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.014279617606710069,
+      0.014279617606710069
+    ],
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": 0.014279617606710069,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.715625,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.8696735242432074,
+      0.8696735242432074
+    ],
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": 0.8696735242432077,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.9890625,
+    "n": 64,
+    "overpartitioned_returns": 1,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 1,
+      "4": 8,
+      "5": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.8554323763028788,
+      0.8554323763028788
+    ],
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": 0.8554323763028788,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.9875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 1,
+      "3": 1,
+      "4": 8
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.8534048420328209,
+      0.8534048420328209
+    ],
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": 0.8534048420328209,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.9890625,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 1,
+      "3": 1,
+      "4": 8
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -0.0006145541855031418,
+      -0.0006145541855031418
+    ],
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": -0.0006145541855031419,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.4578125,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -0.002307725874471949,
+      -0.002307725874471949
+    ],
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": -0.002307725874471949,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.453125,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -0.00047622461907773203,
+      -0.00047622461907773203
+    ],
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": -0.000476224619077732,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.4453125,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.04878048780487805,
+      0.04878048780487805
+    ],
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": 0.04878048780487805,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.8985618610498459,
+      0.8985618610498459
+    ],
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.8985618610498459,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "3": 3,
+      "4": 7
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.8487985327263601,
+      0.8487985327263601
+    ],
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": 0.84879853272636,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.9796875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 1,
+      "3": 1,
+      "4": 8
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0012328443380922188,
+      0.0012328443380922188
+    ],
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": 0.0012328443380922192,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.409375,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0011941576160958895,
+      0.0011941576160958895
+    ],
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": 0.0011941576160958895,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.8234375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0012235082874410468,
+      0.0012235082874410468
+    ],
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": 0.0012235082874410468,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.809375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.00038358587964284845,
+      0.00038358587964284845
+    ],
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": 0.0003835858796428484,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.81015625,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9596781055781871,
+      0.9596781055781871
+    ],
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": 0.9596781055781871,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.97890625,
+    "n": 256,
+    "overpartitioned_returns": 2,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 8,
+      "5": 2
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9712271975841466,
+      0.9712271975841466
+    ],
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": 0.9712271975841464,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.984765625,
+    "n": 256,
+    "overpartitioned_returns": 1,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 9,
+      "5": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9540394771117411,
+      0.9540394771117411
+    ],
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": 0.9540394771117409,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.976953125,
+    "n": 256,
+    "overpartitioned_returns": 2,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 8,
+      "5": 2
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -0.0005507391637049944,
+      -0.0005507391637049944
+    ],
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": -0.0005507391637049944,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.7703125,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -0.0004282713202851546,
+      -0.0004282713202851546
+    ],
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": -0.0004282713202851546,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.771875,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -0.00019558786412634169,
+      -0.00019558786412634169
+    ],
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": -0.00019558786412634169,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.81015625,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9926962054721982,
+      0.9926962054721982
+    ],
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.992696205472198,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0,
+      0.0
+    ],
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.0,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.9263645126348358,
+      0.9263645126348358
+    ],
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": 0.9263645126348358,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.955859375,
+    "n": 256,
+    "overpartitioned_returns": 2,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 8,
+      "5": 2
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -0.00022781621651546288,
+      -0.00022781621651546288
+    ],
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": -0.00022781621651546294,
+    "case": "morphology_only",
+    "mean_coverage_all_requests": 0.771484375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.09062361821130045,
+    "mean_coverage_all_requests": 0.8171875,
+    "morphology_reference_mean_ari": 0.08693890148219345,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 7,
+      "5": 1,
+      "7": 2
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.13696432772243333,
+    "mean_coverage_all_requests": 0.8234375,
+    "morphology_reference_mean_ari": 0.01968902157073229,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 8,
+      "6": 1,
+      "7": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.016749090018745843,
+    "mean_coverage_all_requests": 0.75,
+    "morphology_reference_mean_ari": 0.017458776642945834,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": -0.048798460334022443,
+    "mean_coverage_all_requests": 0.990625,
+    "morphology_reference_mean_ari": 0.9748651782911473,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": -0.047387839012686846,
+    "mean_coverage_all_requests": 0.990625,
+    "morphology_reference_mean_ari": 0.9535669094044191,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": -0.0479849678770019,
+    "mean_coverage_all_requests": 0.9859375,
+    "morphology_reference_mean_ari": 0.9644188435455234,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.8748631480907723,
+    "mean_coverage_all_requests": 0.990625,
+    "morphology_reference_mean_ari": -0.0437990047551137,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 1,
+      "4": 9
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.8624567916218112,
+    "mean_coverage_all_requests": 0.984375,
+    "morphology_reference_mean_ari": -0.04312283958109057,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 1,
+      "4": 8,
+      "5": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.8687662485872989,
+    "mean_coverage_all_requests": 0.9828125,
+    "morphology_reference_mean_ari": -0.04325933671573242,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 1,
+      "4": 8,
+      "5": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.09448824383973022,
+    "mean_coverage_all_requests": 1.0,
+    "morphology_reference_mean_ari": -0.004724412191986511,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 8,
+      "2": 2
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": -0.04327144315576542,
+    "mean_coverage_all_requests": 1.0,
+    "morphology_reference_mean_ari": 0.8654288631153084,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "3": 4,
+      "4": 6
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.9345899298459972,
+    "mean_coverage_all_requests": 1.0,
+    "morphology_reference_mean_ari": -0.04672949649229987,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "3": 2,
+      "4": 8
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": -0.04603831027836747,
+    "mean_coverage_all_requests": 0.965625,
+    "morphology_reference_mean_ari": 0.9289838852664458,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.8667883783845187,
+    "mean_coverage_all_requests": 0.984375,
+    "morphology_reference_mean_ari": -0.0430402740986945,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 1,
+      "4": 9
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.1761892541396841,
+    "mean_coverage_all_requests": 0.915234375,
+    "morphology_reference_mean_ari": 0.06383226729098443,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 6,
+      "10": 2,
+      "8": 2
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.0002951121198877634,
+    "mean_coverage_all_requests": 0.938671875,
+    "morphology_reference_mean_ari": 0.00036300280048676636,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 7.813501029911155e-05,
+    "mean_coverage_all_requests": 0.94375,
+    "morphology_reference_mean_ari": 0.0003259847023941386,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": -0.011669272261938073,
+    "mean_coverage_all_requests": 0.9890625,
+    "morphology_reference_mean_ari": 0.9771775691637463,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": -0.01163943903880996,
+    "mean_coverage_all_requests": 0.989453125,
+    "morphology_reference_mean_ari": 0.9807479970201411,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": -0.011564601313375078,
+    "mean_coverage_all_requests": 0.9875,
+    "morphology_reference_mean_ari": 0.9740881155520661,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.953742252610643,
+    "mean_coverage_all_requests": 0.974609375,
+    "morphology_reference_mean_ari": -0.011297398372318142,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 8,
+      "5": 2
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.9628573876702283,
+    "mean_coverage_all_requests": 0.98125,
+    "morphology_reference_mean_ari": -0.011471883165348504,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 9,
+      "5": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.9577782530758852,
+    "mean_coverage_all_requests": 0.979296875,
+    "morphology_reference_mean_ari": -0.011384043627340457,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 9,
+      "5": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.10893631331555516,
+    "mean_coverage_all_requests": 1.0,
+    "morphology_reference_mean_ari": 0.07206609994974641,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 6,
+      "2": 3,
+      "4": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": -0.011830065802557906,
+    "mean_coverage_all_requests": 1.0,
+    "morphology_reference_mean_ari": 0.9937584629068287,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.9916590845443451,
+    "mean_coverage_all_requests": 1.0,
+    "morphology_reference_mean_ari": -0.01175979070658565,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": -0.011413301334587934,
+    "mean_coverage_all_requests": 0.973046875,
+    "morphology_reference_mean_ari": 0.9547723940931391,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "discordant",
+    "ecology_reference_mean_ari": 0.9220476210433851,
+    "mean_coverage_all_requests": 0.953125,
+    "morphology_reference_mean_ari": -0.0108712771024504,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 8,
+      "5": 1,
+      "6": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.353125,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.24375,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.3109375,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.415625,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.446875,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.403125,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.5890625,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.45,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.51875,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.4234375,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.3890625,
+    "n": 64,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.696875,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.7046875,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.71015625,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 8,
+      "2": 2
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.766015625,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.76015625,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.70078125,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "3": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.672265625,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.74765625,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.708203125,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "2": 9,
+      "3": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 2,
+      "2": 8
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 3,
+      "2": 6,
+      "3": 1
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.722265625,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": null,
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": null,
+    "case": "heavy_tail",
+    "mean_coverage_all_requests": 0.639453125,
+    "n": 256,
+    "overpartitioned_returns": null,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -0.0013106455369585395,
+      -0.0013106455369585395
+    ],
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": -0.0013106455369585395,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.8953125,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -0.0005801956316153563,
+      -0.0005801956316153563
+    ],
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": -0.0005801956316153563,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.9015625,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      9.074574425284856e-05,
+      9.074574425284856e-05
+    ],
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": 9.074574425284852e-05,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.903125,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.006017521829563175,
+      0.006017521829563175
+    ],
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": 0.006017521829563175,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.86875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0014833120973386535,
+      0.0014833120973386535
+    ],
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": 0.0014833120973386537,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.88125,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.004509800633659028,
+      0.004509800633659028
+    ],
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": 0.004509800633659028,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.8765625,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0009728953707493588,
+      0.0009728953707493588
+    ],
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": 0.0009728953707493588,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.8765625,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0012956678457671056,
+      0.0012956678457671056
+    ],
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": 0.0012956678457671056,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.865625,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -0.0005664023913883138,
+      -0.0005664023913883138
+    ],
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": -0.0005664023913883138,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.8890625,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.37172263238641906,
+      0.37172263238641906
+    ],
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": 0.37172263238641906,
+    "case": "moons",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 8,
+    "requested": 10,
+    "selected_k_counts": {
+      "2": 2,
+      "3": 5,
+      "4": 3
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.2629849263291348,
+      0.2629849263291348
+    ],
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.2629849263291347,
+    "case": "moons",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 2,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 4,
+      "2": 4,
+      "3": 2
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.349715140883036,
+      0.349715140883036
+    ],
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.349715140883036,
+    "case": "moons",
+    "mean_coverage_all_requests": 1.0,
+    "n": 64,
+    "overpartitioned_returns": 4,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 3,
+      "2": 3,
+      "3": 2,
+      "4": 2
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.004824300244340037,
+      0.004824300244340037
+    ],
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": 0.004824300244340036,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.834375,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -0.0012461111113174523,
+      -0.0012461111113174523
+    ],
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": -0.0012461111113174523,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.8796875,
+    "n": 64,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -2.805105081695167e-05,
+      -2.805105081695167e-05
+    ],
+    "arm": "paired_0",
+    "available": 10,
+    "available_mean_ari": -2.8051050816951666e-05,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.968359375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0001280851597025387,
+      0.0001280851597025387
+    ],
+    "arm": "paired_101",
+    "available": 10,
+    "available_mean_ari": 0.0001280851597025387,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.97578125,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -7.533783595404172e-05,
+      -7.533783595404172e-05
+    ],
+    "arm": "paired_202",
+    "available": 10,
+    "available_mean_ari": -7.533783595404172e-05,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.968359375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.00024641923888227074,
+      0.00024641923888227074
+    ],
+    "arm": "morphology_0",
+    "available": 10,
+    "available_mean_ari": 0.00024641923888227074,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.91953125,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.00019256419379995636,
+      0.00019256419379995636
+    ],
+    "arm": "morphology_101",
+    "available": 10,
+    "available_mean_ari": 0.00019256419379995638,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.91640625,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -1.7442853973919974e-05,
+      -1.7442853973919974e-05
+    ],
+    "arm": "morphology_202",
+    "available": 10,
+    "available_mean_ari": -1.744285397391998e-05,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.923828125,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -0.0002315118979133276,
+      -0.0002315118979133276
+    ],
+    "arm": "ecology_0",
+    "available": 10,
+    "available_mean_ari": -0.0002315118979133276,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.926171875,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -0.00024043044815263707,
+      -0.00024043044815263707
+    ],
+    "arm": "ecology_101",
+    "available": 10,
+    "available_mean_ari": -0.00024043044815263713,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.926953125,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      -8.04176189842717e-05,
+      -8.04176189842717e-05
+    ],
+    "arm": "ecology_202",
+    "available": 10,
+    "available_mean_ari": -8.041761898427173e-05,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.949609375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.45702214505090105,
+      0.45702214505090105
+    ],
+    "arm": "integrative_gmm",
+    "available": 10,
+    "available_mean_ari": 0.45702214505090105,
+    "case": "moons",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 10,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.4172854601252164,
+      0.4172854601252164
+    ],
+    "arm": "morphology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.4172854601252163,
+    "case": "moons",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 10,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.45140128704625215,
+      0.45140128704625215
+    ],
+    "arm": "ecology_gmm",
+    "available": 10,
+    "available_mean_ari": 0.45140128704625215,
+    "case": "moons",
+    "mean_coverage_all_requests": 1.0,
+    "n": 256,
+    "overpartitioned_returns": 10,
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      0.0005835628388009147,
+      0.0005835628388009147
+    ],
+    "arm": "morphology_density",
+    "available": 10,
+    "available_mean_ari": 0.0005835628388009147,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.862109375,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  },
+  {
+    "all_request_ari_bounds": [
+      6.589817240509667e-05,
+      6.589817240509667e-05
+    ],
+    "arm": "ecology_density",
+    "available": 10,
+    "available_mean_ari": 6.589817240509667e-05,
+    "case": "moons",
+    "mean_coverage_all_requests": 0.890625,
+    "n": 256,
+    "overpartitioned_returns": 0,
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    },
+    "statuses": {
+      "available": 10
+    }
+  }
+]

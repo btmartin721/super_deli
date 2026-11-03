@@ -1,0 +1,1521 @@
+[
+  {
+    "arm": "paired_0",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.147,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.7020833333333334,
+    "n": 64,
+    "pair_coverage": 0.9920634920634921,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_101",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.09149166666666667,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.7479166666666667,
+    "n": 64,
+    "pair_coverage": 0.9920634920634921,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_202",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.21083333333333332,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.57265625,
+    "n": 64,
+    "pair_coverage": 0.9920634920634921,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.3908333333333333,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.3770833333333333,
+    "n": 64,
+    "pair_coverage": 0.9920634920634921,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.3904666666666667,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.37864583333333335,
+    "n": 64,
+    "pair_coverage": 0.9920634920634921,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.36469166666666664,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.39583333333333337,
+    "n": 64,
+    "pair_coverage": 0.9920634920634921,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.20961666666666667,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.6223958333333333,
+    "n": 64,
+    "pair_coverage": 0.9920634920634921,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.306875,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.5375000000000001,
+    "n": 64,
+    "pair_coverage": 0.9920634920634921,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.24547499999999997,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.5794270833333334,
+    "n": 64,
+    "pair_coverage": 0.9920634920634921,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.38205,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.38411458333333337,
+    "n": 64,
+    "pair_coverage": 0.9920634920634921,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.221475,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.6145833333333334,
+    "n": 64,
+    "pair_coverage": 0.9920634920634921,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_0",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.5578553513424612,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.25611979166666665,
+    "n": 256,
+    "pair_coverage": 0.9935049019607843,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_101",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.6621715801159492,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.19453125,
+    "n": 256,
+    "pair_coverage": 0.9935049019607843,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_202",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.5777676699148884,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.24934895833333334,
+    "n": 256,
+    "pair_coverage": 0.9935049019607843,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.49622240039472065,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.31197916666666664,
+    "n": 256,
+    "pair_coverage": 0.9935049019607843,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.5105027548209368,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.30794270833333337,
+    "n": 256,
+    "pair_coverage": 0.9935049019607843,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.32080043994901525,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.43697916666666664,
+    "n": 256,
+    "pair_coverage": 0.9935049019607843,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.5803950289872949,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.23821614583333334,
+    "n": 256,
+    "pair_coverage": 0.9935049019607843,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.5664472061181695,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.24713541666666666,
+    "n": 256,
+    "pair_coverage": 0.9935049019607843,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.47953157764894533,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.3070963541666667,
+    "n": 256,
+    "pair_coverage": 0.9935049019607843,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.5087100653756013,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.2993489583333333,
+    "n": 256,
+    "pair_coverage": 0.9935049019607843,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "gaussian_independent",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.46633773282348584,
+    "mean_included_truth_ari": 0.0,
+    "mean_noise_frequency": 0.31783854166666664,
+    "n": 256,
+    "pair_coverage": 0.9935049019607843,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_0",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23826173826173827,
+    "mean_included_truth_ari": 1.0,
+    "mean_noise_frequency": 0.0,
+    "n": 64,
+    "pair_coverage": 0.9930555555555556,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_101",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23826173826173827,
+    "mean_included_truth_ari": 1.0,
+    "mean_noise_frequency": 0.0,
+    "n": 64,
+    "pair_coverage": 0.9930555555555556,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_202",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23826173826173827,
+    "mean_included_truth_ari": 1.0,
+    "mean_noise_frequency": 0.0,
+    "n": 64,
+    "pair_coverage": 0.9930555555555556,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23663003663003665,
+    "mean_included_truth_ari": 0.9946957878315132,
+    "mean_noise_frequency": 0.003125,
+    "n": 64,
+    "pair_coverage": 0.9930555555555556,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.2339077589077589,
+    "mean_included_truth_ari": 0.97511563408232,
+    "mean_noise_frequency": 0.009375,
+    "n": 64,
+    "pair_coverage": 0.9930555555555556,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23708791208791208,
+    "mean_included_truth_ari": 0.9736498758592106,
+    "mean_noise_frequency": 0.003125,
+    "n": 64,
+    "pair_coverage": 0.9930555555555556,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23826173826173827,
+    "mean_included_truth_ari": 1.0,
+    "mean_noise_frequency": 0.0,
+    "n": 64,
+    "pair_coverage": 0.9930555555555556,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23826173826173827,
+    "mean_included_truth_ari": 1.0,
+    "mean_noise_frequency": 0.0,
+    "n": 64,
+    "pair_coverage": 0.9930555555555556,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23826173826173827,
+    "mean_included_truth_ari": 1.0,
+    "mean_noise_frequency": 0.0,
+    "n": 64,
+    "pair_coverage": 0.9930555555555556,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.39458041958041956,
+    "mean_included_truth_ari": 0.7779955115173646,
+    "mean_noise_frequency": 0.0140625,
+    "n": 64,
+    "pair_coverage": 0.9930555555555556,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 1,
+      "4": 4
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23659673659673658,
+    "mean_included_truth_ari": 0.9947208612242081,
+    "mean_noise_frequency": 0.00390625,
+    "n": 64,
+    "pair_coverage": 0.9930555555555556,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_0",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.2470117067159581,
+    "mean_included_truth_ari": 1.0,
+    "mean_noise_frequency": 0.0,
+    "n": 256,
+    "pair_coverage": 0.9944852941176471,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_101",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.2470117067159581,
+    "mean_included_truth_ari": 1.0,
+    "mean_noise_frequency": 0.0,
+    "n": 256,
+    "pair_coverage": 0.9944852941176471,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_202",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.2470117067159581,
+    "mean_included_truth_ari": 1.0,
+    "mean_noise_frequency": 0.0,
+    "n": 256,
+    "pair_coverage": 0.9944852941176471,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.2422745943725611,
+    "mean_included_truth_ari": 0.9752021028690617,
+    "mean_noise_frequency": 0.009895833333333333,
+    "n": 256,
+    "pair_coverage": 0.9944852941176471,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.2330452865064695,
+    "mean_included_truth_ari": 0.9532964069170193,
+    "mean_noise_frequency": 0.026497395833333333,
+    "n": 256,
+    "pair_coverage": 0.9944852941176471,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 4,
+      "5": 1
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23914561511604024,
+    "mean_included_truth_ari": 0.9674387330780136,
+    "mean_noise_frequency": 0.015950520833333332,
+    "n": 256,
+    "pair_coverage": 0.9944852941176471,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.24115424111727254,
+    "mean_included_truth_ari": 0.9671339306995932,
+    "mean_noise_frequency": 0.01171875,
+    "n": 256,
+    "pair_coverage": 0.9944852941176471,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.24001334976381186,
+    "mean_included_truth_ari": 0.9660132678161574,
+    "mean_noise_frequency": 0.0138671875,
+    "n": 256,
+    "pair_coverage": 0.9944852941176471,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.24103512014787432,
+    "mean_included_truth_ari": 0.9709234193185085,
+    "mean_noise_frequency": 0.012109374999999999,
+    "n": 256,
+    "pair_coverage": 0.9944852941176471,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.2281921339084001,
+    "mean_included_truth_ari": 0.9386379973664528,
+    "mean_noise_frequency": 0.03951822916666667,
+    "n": 256,
+    "pair_coverage": 0.9944852941176471,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 4,
+      "5": 1
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "four_redundant",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23996765249537894,
+    "mean_included_truth_ari": 0.9699131730689909,
+    "mean_noise_frequency": 0.014518229166666667,
+    "n": 256,
+    "pair_coverage": 0.9944852941176471,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_0",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.6792581503659348,
+    "mean_included_truth_ari": 0.3435450910293222,
+    "mean_noise_frequency": 0.0234375,
+    "n": 64,
+    "pair_coverage": 0.9940476190476191,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 3,
+      "3": 1,
+      "4": 1
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_101",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.643205256154358,
+    "mean_included_truth_ari": 0.3572801630842867,
+    "mean_noise_frequency": 0.046875,
+    "n": 64,
+    "pair_coverage": 0.9940476190476191,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 3,
+      "4": 2
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_202",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.6389637391882901,
+    "mean_included_truth_ari": 0.367346198189839,
+    "mean_noise_frequency": 0.04427083333333333,
+    "n": 64,
+    "pair_coverage": 0.9940476190476191,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 3,
+      "4": 2
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.8413423153692614,
+    "mean_included_truth_ari": 0.08506667909001456,
+    "mean_noise_frequency": 0.0328125,
+    "n": 64,
+    "pair_coverage": 0.9940476190476191,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 4,
+      "2": 1
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.6548819028609447,
+    "mean_included_truth_ari": 0.2804428108058991,
+    "mean_noise_frequency": 0.03046875,
+    "n": 64,
+    "pair_coverage": 0.9940476190476191,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 2,
+      "2": 3
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.5652528276779774,
+    "mean_included_truth_ari": 0.37875849944598766,
+    "mean_noise_frequency": 0.0265625,
+    "n": 64,
+    "pair_coverage": 0.9940476190476191,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 1,
+      "2": 4
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.7693779108449768,
+    "mean_included_truth_ari": 0.08609204309193559,
+    "mean_noise_frequency": 0.0703125,
+    "n": 64,
+    "pair_coverage": 0.9940476190476191,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 4,
+      "2": 1
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.5214986693280106,
+    "mean_included_truth_ari": 0.34977705922050795,
+    "mean_noise_frequency": 0.0546875,
+    "n": 64,
+    "pair_coverage": 0.9940476190476191,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 1,
+      "2": 4
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.8566200931470392,
+    "mean_included_truth_ari": 0.00098840832316423,
+    "mean_noise_frequency": 0.07421875,
+    "n": 64,
+    "pair_coverage": 0.9940476190476191,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.543047238855622,
+    "mean_included_truth_ari": 0.3583030756179874,
+    "mean_noise_frequency": 0.046875,
+    "n": 64,
+    "pair_coverage": 0.9940476190476191,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 1,
+      "2": 4
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.5363439787092481,
+    "mean_included_truth_ari": 0.34816262680156224,
+    "mean_noise_frequency": 0.04817708333333333,
+    "n": 64,
+    "pair_coverage": 0.9940476190476191,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 1,
+      "2": 4
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_0",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.21898999528466287,
+    "mean_included_truth_ari": 0.9093375164956401,
+    "mean_noise_frequency": 0.058854166666666666,
+    "n": 256,
+    "pair_coverage": 0.9962622549019607,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_101",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.22228765606740883,
+    "mean_included_truth_ari": 0.9190574336655697,
+    "mean_noise_frequency": 0.0474609375,
+    "n": 256,
+    "pair_coverage": 0.9962622549019607,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 4,
+      "5": 1
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_202",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.2210744818254505,
+    "mean_included_truth_ari": 0.9049675908654345,
+    "mean_noise_frequency": 0.0482421875,
+    "n": 256,
+    "pair_coverage": 0.9962622549019607,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 4,
+      "5": 1
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.8484864792832688,
+    "mean_included_truth_ari": 0.09509008657311346,
+    "mean_noise_frequency": 0.028124999999999997,
+    "n": 256,
+    "pair_coverage": 0.9962622549019607,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 4,
+      "2": 1
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.9355408286692498,
+    "mean_included_truth_ari": -0.00046487134995546115,
+    "mean_noise_frequency": 0.0328125,
+    "n": 256,
+    "pair_coverage": 0.9962622549019607,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.8557614244418477,
+    "mean_included_truth_ari": 0.09530435772481619,
+    "mean_noise_frequency": 0.026171875,
+    "n": 256,
+    "pair_coverage": 0.9962622549019607,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 4,
+      "2": 1
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.8416195132952006,
+    "mean_included_truth_ari": -0.00037714308293614144,
+    "mean_noise_frequency": 0.08235677083333333,
+    "n": 256,
+    "pair_coverage": 0.9962622549019607,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.6988298788363367,
+    "mean_included_truth_ari": 0.1871313513939276,
+    "mean_noise_frequency": 0.061328125,
+    "n": 256,
+    "pair_coverage": 0.9962622549019607,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 3,
+      "2": 2
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.8830396498349632,
+    "mean_included_truth_ari": -0.00023801641921138375,
+    "mean_noise_frequency": 0.06009114583333334,
+    "n": 256,
+    "pair_coverage": 0.9962622549019607,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.7347192324251185,
+    "mean_included_truth_ari": 0.1887283946656705,
+    "mean_noise_frequency": 0.0421875,
+    "n": 256,
+    "pair_coverage": 0.9962622549019607,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 3,
+      "2": 2
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "four_complementary",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.8024094347745864,
+    "mean_included_truth_ari": -0.0003831834513593345,
+    "mean_noise_frequency": 0.1044921875,
+    "n": 256,
+    "pair_coverage": 0.9962622549019607,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_0",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.3858490566037736,
+    "mean_included_truth_ari": 0.04221394214310918,
+    "mean_noise_frequency": 0.4265625,
+    "n": 64,
+    "pair_coverage": 0.9990079365079365,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_101",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.4175355842436279,
+    "mean_included_truth_ari": 0.042699404331339466,
+    "mean_noise_frequency": 0.41875,
+    "n": 64,
+    "pair_coverage": 0.9990079365079365,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_202",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.2521102284011917,
+    "mean_included_truth_ari": 0.08451226842540058,
+    "mean_noise_frequency": 0.5057291666666667,
+    "n": 64,
+    "pair_coverage": 0.9990079365079365,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23833167825223436,
+    "mean_included_truth_ari": 0.958426137101684,
+    "mean_noise_frequency": 0.0,
+    "n": 64,
+    "pair_coverage": 0.9990079365079365,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23833167825223436,
+    "mean_included_truth_ari": 0.958426137101684,
+    "mean_noise_frequency": 0.0,
+    "n": 64,
+    "pair_coverage": 0.9990079365079365,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23833167825223436,
+    "mean_included_truth_ari": 0.958426137101684,
+    "mean_noise_frequency": 0.0,
+    "n": 64,
+    "pair_coverage": 0.9990079365079365,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.31362131744455474,
+    "mean_included_truth_ari": -0.006844950556366347,
+    "mean_noise_frequency": 0.5268229166666667,
+    "n": 64,
+    "pair_coverage": 0.9990079365079365,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.28285335981463083,
+    "mean_included_truth_ari": -0.011363690376259462,
+    "mean_noise_frequency": 0.5059895833333334,
+    "n": 64,
+    "pair_coverage": 0.9990079365079365,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.19918073485600793,
+    "mean_included_truth_ari": -0.00472459927333516,
+    "mean_noise_frequency": 0.6294270833333333,
+    "n": 64,
+    "pair_coverage": 0.9990079365079365,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23833167825223436,
+    "mean_included_truth_ari": 0.958426137101684,
+    "mean_noise_frequency": 0.0,
+    "n": 64,
+    "pair_coverage": 0.9990079365079365,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.13980470043032106,
+    "mean_included_truth_ari": -0.00551732381895319,
+    "mean_noise_frequency": 0.6848958333333333,
+    "n": 64,
+    "pair_coverage": 0.9990079365079365,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_0",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.7774479263051838,
+    "mean_included_truth_ari": 0.001278588033083752,
+    "mean_noise_frequency": 0.11868489583333333,
+    "n": 256,
+    "pair_coverage": 0.9933210784313725,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_101",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.7043648345773446,
+    "mean_included_truth_ari": 0.005197394269436556,
+    "mean_noise_frequency": 0.16471354166666669,
+    "n": 256,
+    "pair_coverage": 0.9933210784313725,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "paired_202",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.5478754138136657,
+    "mean_included_truth_ari": 0.0005827694090838871,
+    "mean_noise_frequency": 0.2641927083333333,
+    "n": 256,
+    "pair_coverage": 0.9933210784313725,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_0",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.24015997368042274,
+    "mean_included_truth_ari": 0.9736396354358051,
+    "mean_noise_frequency": 0.011523437499999999,
+    "n": 256,
+    "pair_coverage": 0.9933210784313725,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 4,
+      "5": 1
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_101",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.24533495774474123,
+    "mean_included_truth_ari": 0.9859613380722797,
+    "mean_noise_frequency": 0.00390625,
+    "n": 256,
+    "pair_coverage": 0.9933210784313725,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_202",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.23085147944811135,
+    "mean_included_truth_ari": 0.9443166105059937,
+    "mean_noise_frequency": 0.022721354166666666,
+    "n": 256,
+    "pair_coverage": 0.9933210784313725,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 2,
+      "5": 3
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_0",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.5291191166491888,
+    "mean_included_truth_ari": -0.0005051762630560823,
+    "mean_noise_frequency": 0.2755208333333333,
+    "n": 256,
+    "pair_coverage": 0.9933210784313725,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_101",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.6235791540723378,
+    "mean_included_truth_ari": -0.0006773975574823621,
+    "mean_noise_frequency": 0.21875,
+    "n": 256,
+    "pair_coverage": 0.9933210784313725,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_202",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.6070168404170008,
+    "mean_included_truth_ari": 0.00026891280969870327,
+    "mean_noise_frequency": 0.22174479166666666,
+    "n": 256,
+    "pair_coverage": 0.9933210784313725,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "morphology_density",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.22730707544260068,
+    "mean_included_truth_ari": 0.9447455140839913,
+    "mean_noise_frequency": 0.03600260416666667,
+    "n": 256,
+    "pair_coverage": 0.9933210784313725,
+    "requested": 5,
+    "selected_k_counts": {
+      "4": 4,
+      "5": 1
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "ecology_density",
+    "case": "morphology_only",
+    "denominator": "successful unit/pair inclusions; five repeated draws, one biological dataset",
+    "failed": 0,
+    "mean_coassignment": 0.5797704233750746,
+    "mean_included_truth_ari": -0.00039301595257545675,
+    "mean_noise_frequency": 0.24355468749999998,
+    "n": 256,
+    "pair_coverage": 0.9933210784313725,
+    "requested": 5,
+    "selected_k_counts": {
+      "1": 5
+    },
+    "successful": 5,
+    "unit_coverage": 1.0
+  }
+]

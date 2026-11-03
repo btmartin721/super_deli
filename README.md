@@ -4,7 +4,20 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: Gaussian-reference spectral group-count feasibility.**
+**Current checkpoint: matched morphology–ecology neural integration.**
+The separate opt-in [CLI/API](docs/matched-neural.md) aligns complete continuous
+measurements from the same individuals, balances the two views in a shared
+autoencoder, and proposes HDBSCAN groups with explicit noise. It supports frozen
+paired transforms and matched whole-individual subsampling. The
+[frozen study](docs/matched-neural-study.md) compares all three neural seeds
+with unchanged single-view and integrative PCA baselines. The
+[audited results](docs/matched-neural-results.md) show useful complementary-signal
+recovery, losses with uninformative ecology, and weak moons recovery.
+Defaults, historical
+p-values and empirical evidence gates remain unchanged; this is an experimental
+research workflow, not a validated species decision.
+
+**Previous checkpoint: Gaussian-reference spectral group-count feasibility.**
 The [frozen benchmark-only study](docs/gaussian-reference-spectral-results.md)
 reduced splitting of single Gaussian controls but did not recover the moons
 groups. At N=256, both reference arms returned a computational K=1 for all

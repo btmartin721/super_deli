@@ -14,7 +14,7 @@ from super_deli.io.config import read_json, write_json
 from super_deli.io.tabular import ingest_tabular
 
 
-def _report(out, summary, point, units):
+def _report(out, summary, point, units, *, title=None, view_details=""):
     colors = ("#1565c0", "#d84315", "#2e7d32", "#6a1b9a", "#00796b", "#ad1457")
     low, high = point.scores.min(axis=0), point.scores.max(axis=0)
     span = high - low
@@ -36,10 +36,13 @@ def _report(out, summary, point, units):
         "td,th{text-align:left;padding:.3rem .8rem;border-bottom:1px solid #ddd}"
         "svg{max-width:100%;height:auto}caption{text-align:left;font-weight:bold}</style>"
         + (
-            "<h1>Tabular denoising autoencoder and HDBSCAN</h1>"
+            f"<h1>{html.escape(title)}</h1>"
+            if title
+            else "<h1>Tabular denoising autoencoder and HDBSCAN</h1>"
             if "denoising" in summary["model"]
             else "<h1>Tabular autoencoder and HDBSCAN</h1>"
         )
+        + view_details
         + f"<p>{len(units)} units; {summary['selected_k']} density groups; "
         f"{summary['noise_count']} noise/unassigned units.</p>"
         "<p>Two-dimensional latent representation. Colors identify local clusters. "

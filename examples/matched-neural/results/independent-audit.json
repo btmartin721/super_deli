@@ -1,0 +1,66 @@
+{
+  "main": {
+    "actual_workflow_attempts": 2708,
+    "audit_boundary": "Independent source/gradient/Adam/PCA/density-input/support equations; HDBSCAN invariants, not a second HDBSCAN implementation. Failed fits retain error/partial evidence without a validity claim.",
+    "classical_fits": 890,
+    "execution_sha256": "6ec4a05c050717a8e0237a25bb099b8d61d4532a160ab3c47f0528311b99c58d",
+    "max_training_loss_absolute_difference": 0.0,
+    "max_training_parameter_absolute_difference": 0.0,
+    "native_draws_audited": 440,
+    "neural_fits": 1818,
+    "numpy_optimizer_replays": 1818,
+    "observations": 160,
+    "optimizer_updates_checked": 909000,
+    "passed": true,
+    "phase": "main",
+    "point_fits": 2240,
+    "point_replays": 28,
+    "point_statuses_including_replays": {
+      "available": 2268
+    },
+    "seconds": 135.92927866685204,
+    "step_verification_audit_sha256": "e2465c13186de2438727e6ce4c6abd1ec71f73a1c7c71055b975ff0ac2092f9a",
+    "subsample_refits": 440,
+    "successful_point_replays": 28,
+    "training_audit_mode": "actual_path_per_step",
+    "training_audit_sha256": "b22ca44f2188e2416ae7142acd00342bcdc6c08861053990ffb1478453186ad0",
+    "workflows": 2708
+  },
+  "post_fit_arithmetic": {
+    "available_partitions_checked": 2240,
+    "groups_and_bounds": 224,
+    "native_stability_denominators": 88,
+    "paired_discordance_intervals": 144,
+    "passed": true,
+    "per_unit_labels_exported": false,
+    "point_outputs": 2240,
+    "primary_rates_and_binomial_tails": 224
+  },
+  "preflight": {
+    "actual_workflow_attempts": 472,
+    "audit_boundary": "Independent source/gradient/Adam/PCA/density-input/support equations; HDBSCAN invariants, not a second HDBSCAN implementation. Failed fits retain error/partial evidence without a validity claim.",
+    "classical_fits": 130,
+    "execution_sha256": "97b3a9a92cd11f26f72919545250fe1e939317d4acf28f99cd65a4a5c817dc9c",
+    "max_training_loss_absolute_difference": 0.0,
+    "max_training_parameter_absolute_difference": 0.0,
+    "native_draws_audited": 220,
+    "neural_fits": 342,
+    "numpy_optimizer_replays": 342,
+    "observations": 16,
+    "optimizer_updates_checked": 171000,
+    "passed": true,
+    "phase": "preflight",
+    "point_fits": 224,
+    "point_replays": 28,
+    "point_statuses_including_replays": {
+      "available": 252
+    },
+    "seconds": 20.48133245902136,
+    "step_verification_audit_sha256": "d479a43b0280a0e6f74f30d626ec4d92b82edfaab98984c2c20c59f47374c992",
+    "subsample_refits": 220,
+    "successful_point_replays": 28,
+    "training_audit_mode": "actual_path_per_step",
+    "training_audit_sha256": "bcd0c6d087a8175b193103cfd40b057e0a2effe96284f847950aa81d5c7c1346",
+    "workflows": 472
+  }
+}

@@ -270,8 +270,9 @@ reference labels need independent evidence and documented uncertainty.
 43. **Experimental model and validation completed:** Raw-trait unknown-K eigengap workflow with explicit abstentions. Fresh validation found rank-two Gaussian oversplitting and no correct moons counts; the workflow is not recommended for automatic delimitation.
 44. **Benchmark-only feasibility completed:** A frozen Gaussian-reference graph-count rule reduced the tested Gaussian oversplitting but still missed moons groups, often returning K=1. No public model adapter, default or historical p-value changed; no-supported-split is not evidence of one population. See [results](gaussian-reference-spectral-results.md).
 45. **Unresolved:** A defensible group-count criterion before spectral resampling or user-facing reference-rule promotion; any follow-up requires a separately approved checkpoint.
-46. Genomic, shape and integrative neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
-47. Consolidated user guidance, end-to-end examples and a scoped research release.
+46. **Opt-in matched neural baseline:** Complete continuous individual morphology/ecology with strict ID alignment, view-balanced reconstruction, frozen numeric transforms and matched native subsampling. The [paired pilot](matched-neural-results.md) retains seed differences, uninformative-view losses and weak moons recovery; no species/significance claim or default change.
+47. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
+48. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The [tabular neural workflow](tabular-neural.md) reuses typed ingestion and a
 shared density-assignment helper. Raw-feature and latent standardization are
@@ -487,3 +488,29 @@ baseline workflows; production source and schema behavior remain intact.
 The entry point is a benchmark module, not a new `cluster-*` command. The
 [feasibility study](gaussian-reference-spectral-results.md) does not support
 promotion: fewer Gaussian splits coexist with missed nonlinear groups.
+
+### Matched neural integration
+
+The separate `models.matched_*` modules own strict paired identity alignment,
+post-standardization view weights and frozen paired transforms. The new workflow
+uses the unchanged ordinary CPU trainer, latent density fitter and native
+inclusion-conditional support accumulator. Whole-individual draws select both
+measurements together and refit every learned transformation. Other modalities
+can remain unselected; population/locality ecology is not broadcast to individuals.
+The [input and output contract](matched-neural.md) deliberately excludes grouped,
+unmatched and incomplete neural inputs. Numeric encoder/decoder reloads need no
+PyTorch and do not predict HDBSCAN memberships for new individuals.
+
+The `benchmarking.matched_*` modules isolate synthetic laws, three-seed
+comparisons, retained read-only training traces and independent NumPy optimizer
+audits. Generating labels are evaluation-only. Loss balance does not establish
+equal biological influence, and native five-draw pilot summaries do not validate
+species supports. No existing trainer, model configuration or p-value changes.
+
+The approved [numerical-audit amendment](matched-neural-audit-amendment.md)
+isolates read-only optimizer observers from user fitting. Independent NumPy
+gradients, moments and updates check each actual training step, with exact
+original-weight/loss replay and retained source/input hashes. The original
+serial-rollout guard failures remain evidence; the auditor does not select
+candidates or alter training. [Results and limits](matched-neural-results.md)
+keep computational verification separate from group recovery.
