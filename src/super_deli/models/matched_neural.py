@@ -72,7 +72,15 @@ def fit_matched_point(x, *, config):
         raise ValueError("Complete matched rows in declared joint feature order required")
     if 64 * len(x) ** 2 + 160 * x.size > config.max_working_bytes or not np.isfinite(x).all():
         raise ValueError("Invalid or excessive matched input workspace")
-    weighted, preprocessing = prepare_views(x, len(config.morphology_features))
+    weighted, preprocessing = prepare_views(
+        x,
+        len(config.morphology_features),
+        fractions=config.loss_fractions() if config.schema_version == 2 else None,
+    )
+    if config.schema_version == 2:
+        preprocessing["declared_view_loss_weights"] = np.asarray(
+            config.view_loss_weights, dtype=float
+        )
     with FIT_LOCK, threadpool_limits(limits=1):
         weights, losses = _train(weighted, config.random_seed)
         a = {**preprocessing, **weights}
@@ -109,6 +117,9 @@ def fit_matched_point(x, *, config):
         "retained_view_counts": counts.tolist(),
         "species_significance": "not_computed",
     }
+    if config.schema_version == 2:
+        diagnostics["declared_view_loss_weights"] = list(config.view_loss_weights)
+        diagnostics["normalized_view_loss_weights"] = list(config.loss_fractions())
     return NeuralPoint(MatchedNeuralModel(config, a), scores, labels, strength, losses, diagnostics)
 
 

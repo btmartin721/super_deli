@@ -1529,3 +1529,33 @@ include docs/figures/matched-view-signal/all-spaces-recovery.pdf
 include docs/figures/matched-view-signal/all-spaces-recovery.png
 include docs/figures/matched-view-signal/all-spaces-recovery.svg
 include docs/figures/matched-view-signal/figure-data.json
+
+include docs/matched-view-weights.md
+include examples/matched-view-weights/model.json
+include examples/matched-view-weights/smoke.py
+include src/super_deli/benchmarking/view_weight_archive.py
+include src/super_deli/benchmarking/view_weight_audit.py
+include src/super_deli/benchmarking/view_weight_cli.py
+include src/super_deli/benchmarking/view_weight_config.py
+include src/super_deli/benchmarking/view_weight_data.py
+include src/super_deli/benchmarking/view_weight_observer.py
+include src/super_deli/benchmarking/view_weight_report.py
+include src/super_deli/benchmarking/view_weight_run.py
+include src/super_deli/benchmarking/view_weight_study.py
+include tests/test_foundation_view_weight_study.py
+include tests/test_foundation_view_weights.py
+include tests/test_neural_view_weight_study.py
+include tests/test_neural_view_weights.py
+
+include docs/figures/matched-view-weights/figure-data.json
+include docs/figures/matched-view-weights/weight-sensitivity.pdf
+include docs/figures/matched-view-weights/weight-sensitivity.png
+include docs/figures/matched-view-weights/weight-sensitivity.svg
+include docs/matched-view-weights-results.md
+include examples/matched-view-weights/report.py
+include examples/matched-view-weights/results/all-groups.json
+include examples/matched-view-weights/results/independent-audit.json
+include examples/matched-view-weights/results/native-stability.json
+include examples/matched-view-weights/results/paired-comparisons.json
+include examples/matched-view-weights/results/primary-rates.json
+include examples/matched-view-weights/results/summary.json

@@ -70,7 +70,25 @@ def align_tables(tables, config, *, minimum=10):
     return x, manifest
 
 
-def prepare_views(x, split):
+def effective_view_scales(counts, fractions=(0.5, 0.5)):
+    """Fractions weight average per-view error; equal weights preserve legacy bits."""
+    fractions = np.asarray(fractions, dtype=float)
+    if (
+        fractions.shape != (2,)
+        or not np.isfinite(fractions).all()
+        or np.any(fractions <= 0)
+        or not np.isclose(fractions.sum(), 1, rtol=0, atol=1e-12)
+    ):
+        raise ValueError("Invalid view-loss fractions")
+    if np.array_equal(fractions, [0.5, 0.5]):
+        return np.sqrt(sum(counts) / (2 * counts))
+    scales = np.sqrt(sum(counts) * fractions / counts)
+    if not np.isfinite(scales).all() or np.any(scales <= 0):
+        raise ValueError("Numerically inadmissible view scaling")
+    return scales
+
+
+def prepare_views(x, split, *, fractions=None):
     with np.errstate(over="raise", invalid="raise", divide="raise"):
         means, scales = x.mean(0), x.std(0)
         kept = np.flatnonzero(scales > 0)
@@ -78,14 +96,14 @@ def prepare_views(x, split):
         counts = np.array([sum(~view[kept]), sum(view[kept])])
         if np.any(counts < 3) or np.any(counts > 32):
             raise ValueError("Each fitted view must retain 3–32 nonconstant traits")
-        weights = np.sqrt(len(kept) / (2 * counts))
+        weights = effective_view_scales(counts, (0.5, 0.5) if fractions is None else fractions)
         column_weights = weights[view[kept].astype(int)]
         scales[scales == 0] = 1
         standardized = (x[:, kept] - means[kept]) / scales[kept]
         weighted = standardized * column_weights
     if not np.isfinite(weighted).all():
         raise ValueError("Nonfinite view-balanced inputs")
-    return weighted, {
+    parameters = {
         "means": means,
         "scales": scales,
         "kept_indices": kept,
@@ -94,3 +112,6 @@ def prepare_views(x, split):
         "retained_view_counts": counts,
         "selected_view_counts": np.array([split, x.shape[1] - split]),
     }
+    if fractions is not None:
+        parameters["normalized_view_loss_weights"] = np.asarray(fractions, dtype=float)
+    return weighted, parameters

@@ -4,7 +4,16 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: matched-view signal diagnosis.**
+**Current checkpoint: prespecified matched neural view weights.**
+The opt-in [schema-2 CLI/API](docs/matched-view-weights.md) supports declared
+morphology/ecology reconstruction fractions while preserving the legacy schema,
+default, trainer and p-values. The [frozen study](docs/matched-view-weights-results.md)
+completed 1,080 main workflows and a 300-workflow preflight, including twelve exact
+legacy replays. Favoring a signal-bearing view improved recovery when its partner
+was uninformative, but both unequal weights lost complementary four-group recovery.
+No universal weight, seed or new default is selected. Detailed evidence stays local.
+
+**Previous checkpoint: matched-view signal diagnosis.**
 The [completed archival diagnostic](docs/matched-view-signal-results.md) traces
 60 saved datasets through 21 fixed representations without neural retraining.
 Uninformative ecology changes useful morphology distance structure before
@@ -12,8 +21,8 @@ compression; joint PCA and neural compression add further losses. Latent
 standardization alone does not explain the failure. All 1,260 main fits and
 660 native replays passed independent checks. A separate
 [diagnostic CLI/API](docs/matched-view-signal-study.md) retains all seeds,
-noise and failures. No repair, default or p-value changed. The proposed next
-checkpoint is a frozen, opt-in view-weight sensitivity study on fresh simulations.
+noise and failures. No repair, default or p-value changed. The subsequent
+view-weight study above tests this diagnosis on fresh simulations.
 
 **Previous checkpoint: matched morphology–ecology neural integration.**
 The separate opt-in [CLI/API](docs/matched-neural.md) aligns complete continuous

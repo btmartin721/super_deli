@@ -107,12 +107,27 @@ def run_matched_neural(dataset, *, model_config, base_dir, output_dir):
                 for n in ("super-deli", "numpy", "scipy", "scikit-learn", "torch", "threadpoolctl")
             },
         }
+        if config.schema_version == 2:
+            summary["view_loss_weights"] = {
+                "declared": list(config.view_loss_weights),
+                "normalized": list(config.loss_fractions()),
+            }
+            summary["interpretation"][2] = (
+                "prespecified loss fractions are not biological importance"
+            )
         if before != {name: fingerprint_file(path).sha256 for name, path in source.items()}:
             raise ValueError("Source changed during paired analysis")
         detail = (
             "<p>Both views are aligned by specimen ID. "
             "Individually measured ecology and independent sampling are assumptions.</p>"
         )
+        if config.schema_version == 2:
+            fractions = config.loss_fractions()
+            detail += (
+                f"<p>Prespecified reconstruction emphasis: {html.escape(config.morphology)} "
+                f"{fractions[0]:.0%}; {html.escape(config.ecology)} {fractions[1]:.0%}. "
+                "These fractions weight each view's average error.</p>"
+            )
         detail += (
             "<ul>"
             + "".join(
@@ -202,7 +217,18 @@ def load_matched_neural_model(directory):
             or not np.array_equal(count, a["retained_view_counts"])
         ):
             raise ValueError("Invalid per-view fitted counts")
-        weights = np.sqrt(len(kept) / (2 * count))
+        from super_deli.models.matched_preprocessing import effective_view_scales
+
+        weights = effective_view_scales(count, config.loss_fractions())
+        if config.schema_version == 2 and (
+            not np.array_equal(a["declared_view_loss_weights"], config.view_loss_weights)
+            or not np.array_equal(a["normalized_view_loss_weights"], config.loss_fractions())
+        ):
+            raise ValueError("Fitted view-loss weights differ from configuration")
+        if config.schema_version == 1 and (
+            "declared_view_loss_weights" in a or "normalized_view_loss_weights" in a
+        ):
+            raise ValueError("Unexpected view-loss fractions in a legacy model")
         if not np.array_equal(weights, a["view_weights"]) or not np.array_equal(
             a["column_weights"], weights[(kept >= len(config.morphology_features)).astype(int)]
         ):

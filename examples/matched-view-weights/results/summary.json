@@ -1,0 +1,5876 @@
+{
+  "counts": {
+    "main": {
+      "gmm_searches": 60,
+      "legacy_replays": 12,
+      "neural_fits": 1020,
+      "observations": 60,
+      "point_workflows": 960,
+      "subsample_refits": 108,
+      "workflows": 1080
+    },
+    "preflight": {
+      "gmm_searches": 12,
+      "legacy_replays": 0,
+      "neural_fits": 288,
+      "observations": 12,
+      "point_workflows": 192,
+      "subsample_refits": 108,
+      "workflows": 300
+    }
+  },
+  "defaults_changed": false,
+  "failed_points": 0,
+  "historical_pvalues_changed": false,
+  "interpretation": "Prespecified sensitivity, five independent datasets/cell. Weights/seeds/subsamples are repeated measurements. No winning weight, species support or calibrated control error guarantee. Different weighted training losses are not ranked.",
+  "main_audit": {
+    "audit_boundary": "Actual-path NumPy gradient/Adam checks, independent losses, raw laws, identities, transforms, graph hierarchy, GMM likelihood and denominators. Failed endpoints retain partial evidence and are not claimed as verified fits.",
+    "execution_sha256": "8512d146fb984570736da4b608386aecf3c9f91d04f39a136f2f36ec965bc692",
+    "failed_points": 0,
+    "freeze_sha256": "9898a6195aca8e44123fdc3a27ed6cfb72cd26d8892e8fb2a4fa8d93b37a0b18",
+    "native_draws": 108,
+    "neural_fits": 1020,
+    "passed": true,
+    "phase": "main",
+    "records": [
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 3,
+        "failed": 0,
+        "neural_fits": 4,
+        "verified_updates": 2000
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 0,
+        "verified_updates": 0
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      },
+      {
+        "draws": 0,
+        "failed": 0,
+        "neural_fits": 1,
+        "verified_updates": 500
+      }
+    ],
+    "seconds": 22.493251791922376,
+    "verified_optimizer_updates": 510000
+  },
+  "observations": 60,
+  "paired_comparisons": 72,
+  "primary_rates": 108,
+  "schema_version": 1
+}

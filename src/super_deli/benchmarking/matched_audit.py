@@ -52,9 +52,9 @@ def synthetic_tables(data, indices=None):
     return tuple(result)
 
 
-def audit_sources(folder, task):
+def audit_sources(folder, task, *, reference_function=reference_data):
     data = arrays(folder / "generating-reference.npz")
-    ref = reference_data(task)
+    ref = reference_function(task)
     require(set(data) == set(ref), "Generating reference schema")
     for key in data:
         np.testing.assert_allclose(data[key], ref[key], atol=1e-11)

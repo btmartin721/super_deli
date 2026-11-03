@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "model_family": "matched_morphology_ecology_autoencoder_hdbscan",
+  "morphology": "morphology",
+  "ecology": "ecology",
+  "morphology_features": ["m1", "m2", "m3", "m4"],
+  "ecology_features": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8"],
+  "ecology_measurement_scope": "individual",
+  "assume_independent_units": true,
+  "view_loss_weights": [0.8, 0.2],
+  "random_seed": 0,
+  "n_subsamples": 0
+}

@@ -1,0 +1,942 @@
+[
+  {
+    "arm": "joint_equal_0",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.00029062639069268983,
+      0.06362748281383478,
+      -0.0027233947949811725
+    ],
+    "key": "morphology_only_n64_0000",
+    "mean_coassignment": 0.6646722164412071,
+    "n": 64,
+    "own_point_ari": [
+      0.35165265010756896,
+      0.6135366410546588,
+      0.07658297805147639
+    ],
+    "pair_coverage": 0.9533730158730159,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "joint_equal_101",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.002106343622697189,
+      0.027802960118623314,
+      0.003829621509346873
+    ],
+    "key": "morphology_only_n64_0000",
+    "mean_coassignment": 0.40704127644814425,
+    "n": 64,
+    "own_point_ari": [
+      0.48721721537612656,
+      0.04023814411825087,
+      0.5067539758169474
+    ],
+    "pair_coverage": 0.9533730158730159,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "joint_equal_202",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.013012285222449132,
+      0.08349340504546036,
+      0.01335024971900047
+    ],
+    "key": "morphology_only_n64_0000",
+    "mean_coassignment": 0.4954908081859174,
+    "n": 64,
+    "own_point_ari": [
+      0.28250021145225407,
+      0.5237515225334958,
+      0.3376939023518479
+    ],
+    "pair_coverage": 0.9533730158730159,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "joint_morphology_0",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "key": "morphology_only_n64_0000",
+    "mean_coassignment": 1.0,
+    "n": 64,
+    "own_point_ari": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pair_coverage": 0.9533730158730159,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "joint_morphology_101",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "key": "morphology_only_n64_0000",
+    "mean_coassignment": 1.0,
+    "n": 64,
+    "own_point_ari": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "pair_coverage": 0.9533730158730159,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "joint_morphology_202",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      -0.00033139330171288913,
+      0.0,
+      0.0038938712951264473
+    ],
+    "key": "morphology_only_n64_0000",
+    "mean_coassignment": 0.9734651404786681,
+    "n": 64,
+    "own_point_ari": [
+      0.007570128181311537,
+      0.0,
+      -0.011297858985982286
+    ],
+    "pair_coverage": 0.9533730158730159,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "joint_ecology_0",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.0031417443136579804,
+      0.018091286307053943,
+      -0.004679561242790914
+    ],
+    "key": "morphology_only_n64_0000",
+    "mean_coassignment": 0.30558446063128686,
+    "n": 64,
+    "own_point_ari": [
+      0.7035589730660952,
+      0.6481222707423581,
+      0.9476923076923077
+    ],
+    "pair_coverage": 0.9533730158730159,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "joint_ecology_101",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.0027987921002514704,
+      0.025847584925394722,
+      -0.008823373721558062
+    ],
+    "key": "morphology_only_n64_0000",
+    "mean_coassignment": 0.27896288588276097,
+    "n": 64,
+    "own_point_ari": [
+      0.016928903688264153,
+      -0.004667232391805067,
+      0.014742200732378906
+    ],
+    "pair_coverage": 0.9533730158730159,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "joint_ecology_202",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      -0.016158764730575717,
+      -0.01827634085698602,
+      0.014719196685780131
+    ],
+    "key": "morphology_only_n64_0000",
+    "mean_coassignment": 0.1643253555324315,
+    "n": 64,
+    "own_point_ari": [
+      0.03327716933445661,
+      0.08705483323911814,
+      0.21637744034707157
+    ],
+    "pair_coverage": 0.9533730158730159,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 1.0
+  },
+  {
+    "arm": "joint_equal_0",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.024054268842528148,
+      0.02769141894964886,
+      0.0022511232264231427
+    ],
+    "key": "morphology_only_n256_0000",
+    "mean_coassignment": 0.5015774551810877,
+    "n": 256,
+    "own_point_ari": [
+      0.5460547296261042,
+      0.4907354354739464,
+      0.7134659486982613
+    ],
+    "pair_coverage": 0.9581495098039216,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.99609375
+  },
+  {
+    "arm": "joint_equal_101",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.002256091691695602,
+      0.004351370001498615,
+      0.00044244810898756996
+    ],
+    "key": "morphology_only_n256_0000",
+    "mean_coassignment": 0.649090831574684,
+    "n": 256,
+    "own_point_ari": [
+      0.37980453880650505,
+      0.6532919677603836,
+      0.20230020096659773
+    ],
+    "pair_coverage": 0.9581495098039216,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.99609375
+  },
+  {
+    "arm": "joint_equal_202",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.0006773096420442789,
+      0.0001395587397818856,
+      -0.0017802453237489876
+    ],
+    "key": "morphology_only_n256_0000",
+    "mean_coassignment": 0.5489703907399117,
+    "n": 256,
+    "own_point_ari": [
+      0.6116910823495947,
+      0.6722844524310522,
+      0.5402348483246325
+    ],
+    "pair_coverage": 0.9581495098039216,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.99609375
+  },
+  {
+    "arm": "joint_morphology_0",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.9804677300412009,
+      0.993757116762396,
+      0.9802177998543767
+    ],
+    "key": "morphology_only_n256_0000",
+    "mean_coassignment": 0.2438553857304257,
+    "n": 256,
+    "own_point_ari": [
+      0.9733404909669084,
+      1.0,
+      0.9870700553754458
+    ],
+    "pair_coverage": 0.9581495098039216,
+    "requested": 3,
+    "selected_k_counts": {
+      "4": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.99609375
+  },
+  {
+    "arm": "joint_morphology_101",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "key": "morphology_only_n256_0000",
+    "mean_coassignment": 0.24662659077828228,
+    "n": 256,
+    "own_point_ari": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "pair_coverage": 0.9581495098039216,
+    "requested": 3,
+    "selected_k_counts": {
+      "4": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.99609375
+  },
+  {
+    "arm": "joint_morphology_202",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.9345676819822238,
+      0.9876060356647418,
+      1.0
+    ],
+    "key": "morphology_only_n256_0000",
+    "mean_coassignment": 0.23971456588007076,
+    "n": 256,
+    "own_point_ari": [
+      0.955241002518849,
+      0.9939414103011877,
+      0.9795492020985459
+    ],
+    "pair_coverage": 0.9581495098039216,
+    "requested": 3,
+    "selected_k_counts": {
+      "4": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.99609375
+  },
+  {
+    "arm": "joint_ecology_0",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.00038763817660873213,
+      -0.002401009985079766,
+      0.0017189196945810862
+    ],
+    "key": "morphology_only_n256_0000",
+    "mean_coassignment": 0.7498401227857006,
+    "n": 256,
+    "own_point_ari": [
+      0.6602709675540381,
+      0.7554592914935779,
+      0.8173970974925969
+    ],
+    "pair_coverage": 0.9581495098039216,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.99609375
+  },
+  {
+    "arm": "joint_ecology_101",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      -0.0011557889197367072,
+      -0.002818053367948914,
+      0.002720397214907649
+    ],
+    "key": "morphology_only_n256_0000",
+    "mean_coassignment": 0.5931764404937009,
+    "n": 256,
+    "own_point_ari": [
+      0.6910534940616508,
+      0.7661775923380055,
+      0.48124614862518306
+    ],
+    "pair_coverage": 0.9581495098039216,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.99609375
+  },
+  {
+    "arm": "joint_ecology_202",
+    "case": "morphology_only",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      -0.0005118455137434442,
+      -0.004055480991024825,
+      0.00320181839119953
+    ],
+    "key": "morphology_only_n256_0000",
+    "mean_coassignment": 0.654286841039415,
+    "n": 256,
+    "own_point_ari": [
+      0.6605672315941546,
+      0.7966962328064708,
+      0.7240421783544063
+    ],
+    "pair_coverage": 0.9581495098039216,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.99609375
+  },
+  {
+    "arm": "joint_equal_0",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.9713715242094136,
+      0.9263327082775248,
+      0.9253849516852501
+    ],
+    "key": "four_complementary_n64_0000",
+    "mean_coassignment": 0.22524665257223395,
+    "n": 64,
+    "own_point_ari": [
+      0.9773509693785106,
+      0.979274021815108,
+      0.9208365338730936
+    ],
+    "pair_coverage": 0.9384920634920635,
+    "requested": 3,
+    "selected_k_counts": {
+      "4": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.984375
+  },
+  {
+    "arm": "joint_equal_101",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.7606019151846786,
+      0.8861359081799963,
+      0.897631473303894
+    ],
+    "key": "four_complementary_n64_0000",
+    "mean_coassignment": 0.19538407329105,
+    "n": 64,
+    "own_point_ari": [
+      0.7877758913412564,
+      0.9120245786440345,
+      0.9231859661557544
+    ],
+    "pair_coverage": 0.9384920634920635,
+    "requested": 3,
+    "selected_k_counts": {
+      "4": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.984375
+  },
+  {
+    "arm": "joint_equal_202",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.8116173508415266,
+      0.9257382491700157,
+      0.8621516571045733
+    ],
+    "key": "four_complementary_n64_0000",
+    "mean_coassignment": 0.20569062720225512,
+    "n": 64,
+    "own_point_ari": [
+      0.8597121222730137,
+      0.9115575724607258,
+      0.836785012606375
+    ],
+    "pair_coverage": 0.9384920634920635,
+    "requested": 3,
+    "selected_k_counts": {
+      "4": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.984375
+  },
+  {
+    "arm": "joint_morphology_0",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      -0.00011167136917203785,
+      -0.008335574079053509,
+      0.8922512608895002
+    ],
+    "key": "four_complementary_n64_0000",
+    "mean_coassignment": 0.6225334742776603,
+    "n": 64,
+    "own_point_ari": [
+      0.7203334064487826,
+      0.2270456585102412,
+      0.0639269406392694
+    ],
+    "pair_coverage": 0.9384920634920635,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 2,
+      "4": 1
+    },
+    "successful": 3,
+    "unit_coverage": 0.984375
+  },
+  {
+    "arm": "joint_morphology_101",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      -0.007681777889344744,
+      -0.0006313131313131314,
+      0.007559314422573161
+    ],
+    "key": "four_complementary_n64_0000",
+    "mean_coassignment": 0.6141649048625792,
+    "n": 64,
+    "own_point_ari": [
+      0.48286942488681966,
+      0.5494202098288239,
+      0.7300321629589922
+    ],
+    "pair_coverage": 0.9384920634920635,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.984375
+  },
+  {
+    "arm": "joint_morphology_202",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      -0.0077837015894580384,
+      -0.008335574079053509,
+      0.895283429356288
+    ],
+    "key": "four_complementary_n64_0000",
+    "mean_coassignment": 0.5749647639182524,
+    "n": 64,
+    "own_point_ari": [
+      0.47407941370817563,
+      0.13251381785656952,
+      0.02257215717310281
+    ],
+    "pair_coverage": 0.9384920634920635,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 2,
+      "4": 1
+    },
+    "successful": 3,
+    "unit_coverage": 0.984375
+  },
+  {
+    "arm": "joint_ecology_0",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.4740831091665043,
+      0.4844864135671613,
+      0.4721098011613584
+    ],
+    "key": "four_complementary_n64_0000",
+    "mean_coassignment": 0.4673185341789993,
+    "n": 64,
+    "own_point_ari": [
+      1.0,
+      1.0,
+      0.9637277372416259
+    ],
+    "pair_coverage": 0.9384920634920635,
+    "requested": 3,
+    "selected_k_counts": {
+      "2": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.984375
+  },
+  {
+    "arm": "joint_ecology_101",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.4319775596072931,
+      0.4709516298633018,
+      0.00672511775903514
+    ],
+    "key": "four_complementary_n64_0000",
+    "mean_coassignment": 0.5614869626497534,
+    "n": 64,
+    "own_point_ari": [
+      0.9259497746297489,
+      1.0,
+      0.17703610268298503
+    ],
+    "pair_coverage": 0.9384920634920635,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 1,
+      "2": 2
+    },
+    "successful": 3,
+    "unit_coverage": 0.984375
+  },
+  {
+    "arm": "joint_ecology_202",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.4740831091665043,
+      0.4844864135671613,
+      0.4775922498576088
+    ],
+    "key": "four_complementary_n64_0000",
+    "mean_coassignment": 0.4725158562367865,
+    "n": 64,
+    "own_point_ari": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "pair_coverage": 0.9384920634920635,
+    "requested": 3,
+    "selected_k_counts": {
+      "2": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.984375
+  },
+  {
+    "arm": "joint_equal_0",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.9410076498763352,
+      0.971654985172296,
+      0.9174113169485131
+    ],
+    "key": "four_complementary_n256_0000",
+    "mean_coassignment": 0.22908585150655755,
+    "n": 256,
+    "own_point_ari": [
+      0.9542468073043442,
+      0.9527461887529104,
+      0.9673313687828203
+    ],
+    "pair_coverage": 0.9398590686274509,
+    "requested": 3,
+    "selected_k_counts": {
+      "4": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.98828125
+  },
+  {
+    "arm": "joint_equal_101",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.7998576393759866,
+      0.9099040566242325,
+      0.893140687192212
+    ],
+    "key": "four_complementary_n256_0000",
+    "mean_coassignment": 0.215568667079571,
+    "n": 256,
+    "own_point_ari": [
+      0.8856624012903882,
+      0.9664323304831524,
+      0.9671906164159775
+    ],
+    "pair_coverage": 0.9398590686274509,
+    "requested": 3,
+    "selected_k_counts": {
+      "4": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.98828125
+  },
+  {
+    "arm": "joint_equal_202",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.8940732877007583,
+      0.9042691346858427,
+      0.913480004887672
+    ],
+    "key": "four_complementary_n256_0000",
+    "mean_coassignment": 0.2192033119275027,
+    "n": 256,
+    "own_point_ari": [
+      0.9271292496356183,
+      0.9797635223492335,
+      0.9364373988861893
+    ],
+    "pair_coverage": 0.9398590686274509,
+    "requested": 3,
+    "selected_k_counts": {
+      "4": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.98828125
+  },
+  {
+    "arm": "joint_morphology_0",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.002337299627794857,
+      0.0077815176990444586,
+      -0.0003123234076754441
+    ],
+    "key": "four_complementary_n256_0000",
+    "mean_coassignment": 0.8681368234616595,
+    "n": 256,
+    "own_point_ari": [
+      0.7148620462046205,
+      0.7148620462046205,
+      0.7639012563697724
+    ],
+    "pair_coverage": 0.9398590686274509,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.98828125
+  },
+  {
+    "arm": "joint_morphology_101",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.0034271235733741466,
+      0.006994840294803445,
+      -0.0005939428680942717
+    ],
+    "key": "four_complementary_n256_0000",
+    "mean_coassignment": 0.8321706816181504,
+    "n": 256,
+    "own_point_ari": [
+      0.7637837946178203,
+      0.8784232860137358,
+      0.8194840691897931
+    ],
+    "pair_coverage": 0.9398590686274509,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.98828125
+  },
+  {
+    "arm": "joint_morphology_202",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.003347921838901684,
+      0.006886968625156368,
+      0.0009609799103975795
+    ],
+    "key": "four_complementary_n256_0000",
+    "mean_coassignment": 0.7582336386652323,
+    "n": 256,
+    "own_point_ari": [
+      0.8514150274799349,
+      0.8136344426825558,
+      0.799662645293247
+    ],
+    "pair_coverage": 0.9398590686274509,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.98828125
+  },
+  {
+    "arm": "joint_ecology_0",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      -0.0006534674099431883,
+      0.0006012261781324736,
+      0.00012080808238264037
+    ],
+    "key": "four_complementary_n256_0000",
+    "mean_coassignment": 0.9614423400810597,
+    "n": 256,
+    "own_point_ari": [
+      0.5622627628437065,
+      0.5622627628437065,
+      0.39126531227996647
+    ],
+    "pair_coverage": 0.9398590686274509,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.98828125
+  },
+  {
+    "arm": "joint_ecology_101",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.48704190706719225,
+      0.4867569616911882,
+      0.48208152408336474
+    ],
+    "key": "four_complementary_n256_0000",
+    "mean_coassignment": 0.4852332366267888,
+    "n": 256,
+    "own_point_ari": [
+      0.9607765224290647,
+      0.9699627603617059,
+      0.9613594577313271
+    ],
+    "pair_coverage": 0.9398590686274509,
+    "requested": 3,
+    "selected_k_counts": {
+      "2": 3
+    },
+    "successful": 3,
+    "unit_coverage": 0.98828125
+  },
+  {
+    "arm": "joint_ecology_202",
+    "case": "four_complementary",
+    "denominator": "Successful unit/pair inclusions; three repeated native draws, one dataset",
+    "failed": 0,
+    "included_truth_ari": [
+      0.4941179688713728,
+      0.49214222357891124,
+      0.0005106245314733294
+    ],
+    "key": "four_complementary_n256_0000",
+    "mean_coassignment": 0.6572187632428204,
+    "n": 256,
+    "own_point_ari": [
+      0.9904369421014233,
+      1.0,
+      0.01895922236097221
+    ],
+    "pair_coverage": 0.9398590686274509,
+    "requested": 3,
+    "selected_k_counts": {
+      "1": 1,
+      "2": 2
+    },
+    "successful": 3,
+    "unit_coverage": 0.98828125
+  }
+]
