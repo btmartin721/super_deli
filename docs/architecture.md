@@ -542,3 +542,20 @@ rate summaries and explicit per-arm resource accounting avoid duplicated study
 logic. Benchmark-only joint-four and per-view PCA controls cannot be selected
 through the public clustering adapter. See the [input contract](separate-neural.md)
 and [prespecified comparison](separate-neural-study.md).
+
+
+### Frozen-coordinate clustering diagnosis
+
+The `benchmarking.coordinate_*` modules bind the completed separate-encoder
+archive, reconstruct its exact frozen representations without Torch/SNPio,
+and compare existing HDBSCAN and GMM algorithms on the same two/four dimensions.
+The shared experiment lifecycle accepts explicit archival metadata/audit callbacks
+while preserving legacy defaults. New numerical work stays in diagnostics; all
+production model and sampling code remains byte-identical to the source checkpoint.
+
+A read-only observer captures each attempted GMM candidate without changing
+optimization or winning-start eligibility. Dense independent likelihood/BIC and
+hierarchy audits distinguish fitting, admissibility and model selection.
+Counterfactual tree policies and reference-label geometry are evaluation-only.
+Public exports contain aggregate counts and hashes; per-fit records stay local.
+See the [bounded protocol](coordinate-diagnosis.md).

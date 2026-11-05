@@ -1,0 +1,2810 @@
+[
+  {
+    "arm": "separate_0__hdbscan",
+    "case": "ecology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_full",
+    "case": "ecology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_shared",
+    "case": "ecology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__hdbscan",
+    "case": "ecology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_full",
+    "case": "ecology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_shared",
+    "case": "ecology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__hdbscan",
+    "case": "ecology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_full",
+    "case": "ecology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_shared",
+    "case": "ecology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__hdbscan",
+    "case": "ecology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_full",
+    "case": "ecology_only",
+    "count": 4,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      0.2835820638819105,
+      0.9949492366205319
+    ],
+    "n": 256,
+    "rate": 0.8,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.08393308717565942,
+      0.9999536994164141
+    ],
+    "simultaneous_failure_interval": [
+      0.08393308717565942,
+      0.9999536994164141
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_shared",
+    "case": "ecology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__hdbscan",
+    "case": "ecology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_full",
+    "case": "ecology_only",
+    "count": 4,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      0.2835820638819105,
+      0.9949492366205319
+    ],
+    "n": 256,
+    "rate": 0.8,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.08393308717565942,
+      0.9999536994164141
+    ],
+    "simultaneous_failure_interval": [
+      0.08393308717565942,
+      0.9999536994164141
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_shared",
+    "case": "ecology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__hdbscan",
+    "case": "ecology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_full",
+    "case": "ecology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_shared",
+    "case": "ecology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__hdbscan",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_full",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_shared",
+    "case": "four_complementary",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__hdbscan",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_full",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_shared",
+    "case": "four_complementary",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__hdbscan",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_full",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_shared",
+    "case": "four_complementary",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__hdbscan",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_full",
+    "case": "four_complementary",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_shared",
+    "case": "four_complementary",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__hdbscan",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_full",
+    "case": "four_complementary",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_shared",
+    "case": "four_complementary",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__hdbscan",
+    "case": "four_complementary",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_full",
+    "case": "four_complementary",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_shared",
+    "case": "four_complementary",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__hdbscan",
+    "case": "four_redundant",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_full",
+    "case": "four_redundant",
+    "count": 3,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.6,
+      0.6
+    ],
+    "marginal_95_interval": [
+      0.14663279963467313,
+      0.9472550494736831
+    ],
+    "n": 64,
+    "rate": 0.6,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.02891896750039462,
+      0.9951654027032578
+    ],
+    "simultaneous_failure_interval": [
+      0.02891896750039462,
+      0.9951654027032578
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_shared",
+    "case": "four_redundant",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__hdbscan",
+    "case": "four_redundant",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_full",
+    "case": "four_redundant",
+    "count": 3,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.6,
+      0.6
+    ],
+    "marginal_95_interval": [
+      0.14663279963467313,
+      0.9472550494736831
+    ],
+    "n": 64,
+    "rate": 0.6,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.02891896750039462,
+      0.9951654027032578
+    ],
+    "simultaneous_failure_interval": [
+      0.02891896750039462,
+      0.9951654027032578
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_shared",
+    "case": "four_redundant",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__hdbscan",
+    "case": "four_redundant",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_full",
+    "case": "four_redundant",
+    "count": 4,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      0.2835820638819105,
+      0.9949492366205319
+    ],
+    "n": 64,
+    "rate": 0.8,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.08393308717565942,
+      0.9999536994164141
+    ],
+    "simultaneous_failure_interval": [
+      0.08393308717565942,
+      0.9999536994164141
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_shared",
+    "case": "four_redundant",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__hdbscan",
+    "case": "four_redundant",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_full",
+    "case": "four_redundant",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_shared",
+    "case": "four_redundant",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__hdbscan",
+    "case": "four_redundant",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_full",
+    "case": "four_redundant",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_shared",
+    "case": "four_redundant",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__hdbscan",
+    "case": "four_redundant",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_full",
+    "case": "four_redundant",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_shared",
+    "case": "four_redundant",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__hdbscan",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_full",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_shared",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__hdbscan",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_full",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_shared",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__hdbscan",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_full",
+    "case": "gaussian_correlated",
+    "count": 1,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.2,
+      0.2
+    ],
+    "marginal_95_interval": [
+      0.0050507633794680575,
+      0.7164179361180895
+    ],
+    "n": 64,
+    "rate": 0.2,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      4.630058358586848e-05,
+      0.916066912824344
+    ],
+    "simultaneous_failure_interval": [
+      4.630058358586848e-05,
+      0.916066912824344
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_shared",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__hdbscan",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_full",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_shared",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__hdbscan",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_full",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_shared",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__hdbscan",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_full",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_shared",
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__hdbscan",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_full",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_shared",
+    "case": "gaussian_independent",
+    "count": 1,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.2,
+      0.2
+    ],
+    "marginal_95_interval": [
+      0.0050507633794680575,
+      0.7164179361180895
+    ],
+    "n": 64,
+    "rate": 0.2,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      4.630058358586848e-05,
+      0.916066912824344
+    ],
+    "simultaneous_failure_interval": [
+      4.630058358586848e-05,
+      0.916066912824344
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__hdbscan",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_full",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_shared",
+    "case": "gaussian_independent",
+    "count": 1,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.2,
+      0.2
+    ],
+    "marginal_95_interval": [
+      0.0050507633794680575,
+      0.7164179361180895
+    ],
+    "n": 64,
+    "rate": 0.2,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      4.630058358586848e-05,
+      0.916066912824344
+    ],
+    "simultaneous_failure_interval": [
+      4.630058358586848e-05,
+      0.916066912824344
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__hdbscan",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_full",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_shared",
+    "case": "gaussian_independent",
+    "count": 1,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.2,
+      0.2
+    ],
+    "marginal_95_interval": [
+      0.0050507633794680575,
+      0.7164179361180895
+    ],
+    "n": 64,
+    "rate": 0.2,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      4.630058358586848e-05,
+      0.916066912824344
+    ],
+    "simultaneous_failure_interval": [
+      4.630058358586848e-05,
+      0.916066912824344
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__hdbscan",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_full",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_shared",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__hdbscan",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_full",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_shared",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__hdbscan",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_full",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_shared",
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "nontrivial_return",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__hdbscan",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_full",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_shared",
+    "case": "morphology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__hdbscan",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_full",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_shared",
+    "case": "morphology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__hdbscan",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_full",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 64,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_shared",
+    "case": "morphology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 64,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__hdbscan",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_full",
+    "case": "morphology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_0__gmm_shared",
+    "case": "morphology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__hdbscan",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_full",
+    "case": "morphology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_101__gmm_shared",
+    "case": "morphology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__hdbscan",
+    "case": "morphology_only",
+    "count": 0,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "n": 256,
+    "rate": 0.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.8125423144763236
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_full",
+    "case": "morphology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "arm": "separate_202__gmm_shared",
+    "case": "morphology_only",
+    "count": 5,
+    "endpoint": "k4_full_ari_ge_0_8",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "n": 256,
+    "rate": 1.0,
+    "requested": 5,
+    "simultaneous_95_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.18745768552368244,
+      1.0
+    ],
+    "unavailable": 0
+  }
+]

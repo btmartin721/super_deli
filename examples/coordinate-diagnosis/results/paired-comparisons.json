@@ -1,0 +1,2162 @@
+[
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_0__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_0__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_101__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_101__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_202__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_202__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_0__gmm_full",
+    "density_only": 0,
+    "gmm_only": 4,
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      -0.3481320873844369,
+      0.9974874054218158
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.8,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.7450138823503147,
+      0.9999652753662611
+    ],
+    "simultaneous_failure_interval": [
+      -0.7450138823503147,
+      0.9999652753662611
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_0__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_101__gmm_full",
+    "density_only": 0,
+    "gmm_only": 4,
+    "identification_bounds": [
+      0.8,
+      0.8
+    ],
+    "marginal_95_interval": [
+      -0.3481320873844369,
+      0.9974874054218158
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.8,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.7450138823503147,
+      0.9999652753662611
+    ],
+    "simultaneous_failure_interval": [
+      -0.7450138823503147,
+      0.9999652753662611
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_101__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_202__gmm_full",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_202__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_0__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_0__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_101__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_101__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_202__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_202__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_0__gmm_full",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_0__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_101__gmm_full",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_101__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_202__gmm_full",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_202__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_0__gmm_full",
+    "density_only": 2,
+    "gmm_only": 0,
+    "identification_bounds": [
+      -0.4,
+      -0.4
+    ],
+    "marginal_95_interval": [
+      -0.8856660255367991,
+      0.5470344142861562
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": -0.4,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.9737612526938397,
+      0.8188393847054788
+    ],
+    "simultaneous_failure_interval": [
+      -0.9737612526938397,
+      0.8188393847054788
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_0__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_101__gmm_full",
+    "density_only": 2,
+    "gmm_only": 0,
+    "identification_bounds": [
+      -0.4,
+      -0.4
+    ],
+    "marginal_95_interval": [
+      -0.8856660255367991,
+      0.5470344142861562
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": -0.4,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.9737612526938397,
+      0.8188393847054788
+    ],
+    "simultaneous_failure_interval": [
+      -0.9737612526938397,
+      0.8188393847054788
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_101__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_202__gmm_full",
+    "density_only": 1,
+    "gmm_only": 0,
+    "identification_bounds": [
+      -0.2,
+      -0.2
+    ],
+    "marginal_95_interval": [
+      -0.7644086910853735,
+      0.5812108017208795
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": -0.2,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.9219903421494731,
+      0.8229888155670998
+    ],
+    "simultaneous_failure_interval": [
+      -0.9219903421494731,
+      0.8229888155670998
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_202__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_0__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_0__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_101__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_101__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_202__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_202__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_0__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_0__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_101__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_101__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_202__gmm_full",
+    "density_only": 0,
+    "gmm_only": 1,
+    "identification_bounds": [
+      0.2,
+      0.2
+    ],
+    "marginal_95_interval": [
+      -0.5812108017208795,
+      0.7644086910853735
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.2,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8229888155670998,
+      0.9219903421494731
+    ],
+    "simultaneous_failure_interval": [
+      -0.8229888155670998,
+      0.9219903421494731
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_202__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_0__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_0__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_101__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_101__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_202__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_202__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_0__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_0__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 1,
+    "identification_bounds": [
+      0.2,
+      0.2
+    ],
+    "marginal_95_interval": [
+      -0.5812108017208795,
+      0.7644086910853735
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.2,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8229888155670998,
+      0.9219903421494731
+    ],
+    "simultaneous_failure_interval": [
+      -0.8229888155670998,
+      0.9219903421494731
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_101__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_101__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 1,
+    "identification_bounds": [
+      0.2,
+      0.2
+    ],
+    "marginal_95_interval": [
+      -0.5812108017208795,
+      0.7644086910853735
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.2,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8229888155670998,
+      0.9219903421494731
+    ],
+    "simultaneous_failure_interval": [
+      -0.8229888155670998,
+      0.9219903421494731
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_202__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_202__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 1,
+    "identification_bounds": [
+      0.2,
+      0.2
+    ],
+    "marginal_95_interval": [
+      -0.5812108017208795,
+      0.7644086910853735
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.2,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8229888155670998,
+      0.9219903421494731
+    ],
+    "simultaneous_failure_interval": [
+      -0.8229888155670998,
+      0.9219903421494731
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_0__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_0__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_101__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_101__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_202__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_202__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_0__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_0__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 64,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_101__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_101__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 64,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_202__gmm_full",
+    "density_only": 0,
+    "gmm_only": 0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.5837233962990637,
+      0.5837233962990637
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "simultaneous_failure_interval": [
+      -0.8230235402008387,
+      0.8230235402008387
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_202__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 64,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_0__gmm_full",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_0__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 0,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_101__gmm_full",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_101__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 101,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_101__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison": "gmm_full",
+    "comparison_arm": "separate_202__gmm_full",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 5,
+    "comparison": "gmm_shared",
+    "comparison_arm": "separate_202__gmm_shared",
+    "density_only": 0,
+    "gmm_only": 5,
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      -0.16744679259812711,
+      1.0
+    ],
+    "n": 256,
+    "neural_seed": 202,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__hdbscan",
+    "requested": 5,
+    "simultaneous_95_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.6460470804016829,
+      1.0
+    ],
+    "unknown_pairs": 0
+  }
+]

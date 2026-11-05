@@ -1,0 +1,72 @@
+{
+  "audits": {
+    "main": {
+      "audit_boundary": "Frozen raw-to-score transforms, source density replay, independent geometry/hierarchy, Gaussian densities, convergence, eligibility, BIC and accounting; no neural optimization is run or re-audited",
+      "candidate_densities_checked": 6400,
+      "density_replays": 800,
+      "execution_sha256": "4f71aa3d7f246a14f08066f1e54a54d5cb90866764dd886aa82afb8c5e128420",
+      "failed_points": 0,
+      "freeze_sha256": "a23c969a342d9c46cfdb4ec80ade933d954adc5b83af6257363ff7f2e8a73fc1",
+      "native_draws": 0,
+      "neural_fits": 0,
+      "passed": true,
+      "phase": "main",
+      "seconds": 31.904060459000902,
+      "verified_optimizer_updates": 0
+    },
+    "preflight": {
+      "audit_boundary": "Frozen raw-to-score transforms, source density replay, independent geometry/hierarchy, Gaussian densities, convergence, eligibility, BIC and accounting; no neural optimization is run or re-audited",
+      "candidate_densities_checked": 1280,
+      "density_replays": 160,
+      "execution_sha256": "40eb1e34e849f2b99500d46ea68b8946827c147e703d6210a2516439a11ec9a8",
+      "failed_points": 0,
+      "freeze_sha256": "a23c969a342d9c46cfdb4ec80ade933d954adc5b83af6257363ff7f2e8a73fc1",
+      "native_draws": 0,
+      "neural_fits": 0,
+      "passed": true,
+      "phase": "preflight",
+      "seconds": 6.437955665998743,
+      "verified_optimizer_updates": 0
+    }
+  },
+  "counts": {
+    "main": {
+      "density_fits": 800,
+      "derived_hierarchy_counterfactuals": 1600,
+      "gmm_searches": 1600,
+      "legacy_replays": 0,
+      "maximum_em_starts": 64000,
+      "maximum_gmm_candidates": 6400,
+      "neural_fits": 0,
+      "observations": 80,
+      "point_workflows": 2400,
+      "subsample_refits": 0,
+      "workflows": 2400
+    },
+    "preflight": {
+      "density_fits": 160,
+      "derived_hierarchy_counterfactuals": 320,
+      "gmm_searches": 320,
+      "legacy_replays": 0,
+      "maximum_em_starts": 12800,
+      "maximum_gmm_candidates": 1280,
+      "neural_fits": 0,
+      "observations": 16,
+      "point_workflows": 480,
+      "subsample_refits": 0,
+      "workflows": 480
+    }
+  },
+  "defaults_changed": false,
+  "failed_searches": 0,
+  "fixture": false,
+  "historical_pvalues_changed": false,
+  "interpretation": "Retrospective diagnosis on previously examined observations; seeds/models/policies repeat the same data. No fresh confirmation, selected winning family, general size or species guarantee",
+  "neural_training": 0,
+  "new_datasets": 0,
+  "new_pvalues": 0,
+  "observations": 80,
+  "paired_comparisons": 72,
+  "primary_rates": 108,
+  "schema_version": 1
+}

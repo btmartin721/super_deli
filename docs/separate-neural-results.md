@@ -122,8 +122,6 @@ labels does not establish empirical species boundaries. Missing, grouped, unmatc
 genomic and shape neural adapters remain outside this checkpoint. Existing empirical
 sampling/reference-evidence gates remain closed.
 
-The [prespecified design](separate-neural-study.md), [API/input contract](separate-
-neural.md) and [small aggregate exports](../examples/separate-
-neural/results/summary.json) provide the configuration and audit context. Full inputs,
+The [prespecified design](separate-neural-study.md), [API/input contract](separate-neural.md) and [small aggregate exports](../examples/separate-neural/results/summary.json) provide the configuration and audit context. Full inputs,
 weights, optimizer traces and individual assignments were kept local and were not sent
 to GitHub.

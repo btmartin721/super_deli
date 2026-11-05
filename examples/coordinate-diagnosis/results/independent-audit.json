@@ -1,0 +1,30 @@
+{
+  "main": {
+    "audit_boundary": "Frozen raw-to-score transforms, source density replay, independent geometry/hierarchy, Gaussian densities, convergence, eligibility, BIC and accounting; no neural optimization is run or re-audited",
+    "candidate_densities_checked": 6400,
+    "density_replays": 800,
+    "execution_sha256": "4f71aa3d7f246a14f08066f1e54a54d5cb90866764dd886aa82afb8c5e128420",
+    "failed_points": 0,
+    "freeze_sha256": "a23c969a342d9c46cfdb4ec80ade933d954adc5b83af6257363ff7f2e8a73fc1",
+    "native_draws": 0,
+    "neural_fits": 0,
+    "passed": true,
+    "phase": "main",
+    "seconds": 31.904060459000902,
+    "verified_optimizer_updates": 0
+  },
+  "preflight": {
+    "audit_boundary": "Frozen raw-to-score transforms, source density replay, independent geometry/hierarchy, Gaussian densities, convergence, eligibility, BIC and accounting; no neural optimization is run or re-audited",
+    "candidate_densities_checked": 1280,
+    "density_replays": 160,
+    "execution_sha256": "40eb1e34e849f2b99500d46ea68b8946827c147e703d6210a2516439a11ec9a8",
+    "failed_points": 0,
+    "freeze_sha256": "a23c969a342d9c46cfdb4ec80ade933d954adc5b83af6257363ff7f2e8a73fc1",
+    "native_draws": 0,
+    "neural_fits": 0,
+    "passed": true,
+    "phase": "preflight",
+    "seconds": 6.437955665998743,
+    "verified_optimizer_updates": 0
+  }
+}

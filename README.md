@@ -4,7 +4,19 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: separate encoders for matched morphology/ecology.**
+**Current checkpoint: frozen neural coordinate diagnosis.**
+The [archival CLI/API](docs/coordinate-diagnosis.md) compares unchanged density
+and full/shared Gaussian-mixture clustering on exactly the same saved coordinates,
+without neural retraining. The [audited findings](docs/coordinate-diagnosis-results.md)
+show recoverable complementary-group signal: shared GMMs recover all five archived
+datasets per sample size and seed, while HDBSCAN merges them. Full GMMs lose
+small-sample groups to BIC costs. Shared GMMs also split one small Gaussian control;
+curved-moons recovery remains weak. This retrospective diagnosis nominates fresh
+validation, not a new default or species decision. All 2,400 main evaluations and
+480 preflight evaluations passed; detailed evidence stays local. Defaults and
+historical p-values remain unchanged.
+
+**Previous checkpoint: separate encoders for matched morphology/ecology.**
 The opt-in [CLI/API](docs/separate-neural.md) fits one unchanged two-coordinate
 autoencoder per view and applies HDBSCAN to their four concatenated coordinates.
 It supports frozen transforms and matched whole-individual subsampling. The

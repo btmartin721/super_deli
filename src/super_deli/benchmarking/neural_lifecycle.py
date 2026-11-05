@@ -18,7 +18,7 @@ from super_deli.io.config import read_json, write_json
 
 
 def declaration(root, config, design):
-    value = legacy_declaration(root, config)
+    value = design.get("declaration_base", legacy_declaration)(root, config)
     value.update(
         settings=design["settings"],
         counts={p: design["counts"](config, p) for p in ("preflight", "main")},
@@ -100,6 +100,9 @@ def run_phase(root, source, phase, *, workers=1, design):
         ("fresh", {"phase_root": str(out), "task": t, "stop_file": str(root / "STOP.json")})
         for t in design["tasks"](config, phase)
     ]
+    if design.get("archival"):
+        for _, job in jobs:
+            job["archive_root"] = str(source)
     if phase == "main":
         jobs += [
             (
@@ -129,6 +132,11 @@ def run_phase(root, source, phase, *, workers=1, design):
                 for (kind, _), future in zip(batch, pending, strict=True):
                     records.append({"kind": kind, **future.result()})
                 print({"phase": phase, "jobs": len(records), "total": len(jobs)}, flush=True)
+                if design.get("serial_runtime_guard"):
+                    require(
+                        sum(r["seconds"] for r in records) < config.max_projected_seconds,
+                        "Summed serial execution runtime guard",
+                    )
                 require(
                     time.monotonic() - start < config.max_projected_seconds,
                     "Execution runtime guard",
@@ -191,7 +199,8 @@ def audit_phase(root, source, phase, design):
             for task in design["tasks"](config, phase):
                 folder = root / phase / task["key"]
                 require(read_json(folder / "task.json") == task, "Frozen fresh task")
-                records.extend(audit_dataset(folder, task, cache=cache))
+                kwargs = {"source": source} if design.get("archival") else {}
+                records.extend(audit_dataset(folder, task, cache=cache, **kwargs))
             if phase == "main":
                 for entry in binding["replays"]:
                     records.extend(
@@ -203,7 +212,10 @@ def audit_phase(root, source, phase, design):
         )
         guard(root, config)
         require(
-            execution["seconds"] + time.monotonic() - start < config.max_projected_seconds,
+            execution["serial_job_seconds" if design.get("serial_runtime_guard") else "seconds"]
+            + time.monotonic()
+            - start
+            < config.max_projected_seconds,
             "Execution plus independent audit runtime guard",
         )
         result = {
@@ -214,10 +226,13 @@ def audit_phase(root, source, phase, design):
             "verified_optimizer_updates": sum(r["verified_updates"] for r in records),
             "failed_points": execution["failed_points"],
             "native_draws": sum(r["draws"] for r in records),
-            "audit_boundary": (
-                "Actual-path NumPy gradient/Adam checks, independent losses, raw laws, "
-                "identities, transforms, graph hierarchy, GMM likelihood and denominators. "
-                "Failed endpoints retain partial evidence and are not claimed as verified fits."
+            "audit_boundary": design.get(
+                "audit_boundary",
+                (
+                    "Actual-path NumPy gradient/Adam checks, independent losses, raw laws, "
+                    "identities, transforms, graph hierarchy, GMM likelihood and denominators. "
+                    "Failed endpoints retain partial evidence and are not claimed as verified fits."
+                ),
             ),
             "seconds": time.monotonic() - start,
             "freeze_sha256": fingerprint_file(root / "frozen.json").sha256,
