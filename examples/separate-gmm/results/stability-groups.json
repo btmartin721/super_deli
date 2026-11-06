@@ -1,0 +1,3627 @@
+[
+  {
+    "case": "four_complementary",
+    "n": 64,
+    "arm": "separate_0__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "2": 5,
+      "3": 5
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.8499182355092586,
+      "min": 0.7130828294818057,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.9995039682539683,
+      "min": 0.9995039682539683,
+      "max": 0.9995039682539683
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.43890090802645765,
+      "min": 0.43890090802645765,
+      "max": 0.43890090802645765
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.43890090802645765,
+      "min": 0.43890090802645765,
+      "max": 0.43890090802645765
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.43890090802645765,
+      "min": 0.43890090802645765,
+      "max": 0.43890090802645765
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 64,
+    "arm": "separate_0__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.9995039682539683,
+      "min": 0.9995039682539683,
+      "max": 0.9995039682539683
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.24963361016121152,
+      "min": 0.24963361016121152,
+      "max": 0.24963361016121152
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.24963361016121152,
+      "min": 0.24963361016121152,
+      "max": 0.24963361016121152
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.24963361016121152,
+      "min": 0.24963361016121152,
+      "max": 0.24963361016121152
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 64,
+    "arm": "separate_0__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.7680172749902529,
+      "min": 0.27875654010864787,
+      "max": 0.8725637181409296
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.9995039682539683,
+      "min": 0.9995039682539683,
+      "max": 0.9995039682539683
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.8375859756050279,
+      "min": 0.8375859756050279,
+      "max": 0.8375859756050279
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.8375859756050279,
+      "min": 0.8375859756050279,
+      "max": 0.8375859756050279
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.8375859756050279,
+      "min": 0.8375859756050279,
+      "max": 0.8375859756050279
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 64,
+    "arm": "separate_101__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "2": 4,
+      "3": 6
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 0.7130828294818057,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.9995039682539683,
+      "min": 0.9995039682539683,
+      "max": 0.9995039682539683
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.4256998239777917,
+      "min": 0.4256998239777917,
+      "max": 0.4256998239777917
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.4256998239777917,
+      "min": 0.4256998239777917,
+      "max": 0.4256998239777917
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.4256998239777917,
+      "min": 0.4256998239777917,
+      "max": 0.4256998239777917
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 64,
+    "arm": "separate_101__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "2": 1,
+      "4": 9
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 0.48644952759820986,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.9995039682539683,
+      "min": 0.9995039682539683,
+      "max": 0.9995039682539683
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.2746239173083335,
+      "min": 0.2746239173083335,
+      "max": 0.2746239173083335
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.2746239173083335,
+      "min": 0.2746239173083335,
+      "max": 0.2746239173083335
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.2746239173083335,
+      "min": 0.2746239173083335,
+      "max": 0.2746239173083335
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 64,
+    "arm": "separate_101__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.7441753407195177,
+      "min": 0.1411902744280034,
+      "max": 0.8725637181409296
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.9995039682539683,
+      "min": 0.9995039682539683,
+      "max": 0.9995039682539683
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.8637529950915394,
+      "min": 0.8637529950915394,
+      "max": 0.8637529950915394
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.8637529950915394,
+      "min": 0.8637529950915394,
+      "max": 0.8637529950915394
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.8637529950915394,
+      "min": 0.8637529950915394,
+      "max": 0.8637529950915394
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 64,
+    "arm": "separate_202__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "2": 8,
+      "3": 2
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 0.22053090774085762,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.9995039682539683,
+      "min": 0.9995039682539683,
+      "max": 0.9995039682539683
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.4735518877800265,
+      "min": 0.4735518877800265,
+      "max": 0.4735518877800265
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.4735518877800265,
+      "min": 0.4735518877800265,
+      "max": 0.4735518877800265
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.4735518877800265,
+      "min": 0.4735518877800265,
+      "max": 0.4735518877800265
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 64,
+    "arm": "separate_202__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.9995039682539683,
+      "min": 0.9995039682539683,
+      "max": 0.9995039682539683
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.24963361016121152,
+      "min": 0.24963361016121152,
+      "max": 0.24963361016121152
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.24963361016121152,
+      "min": 0.24963361016121152,
+      "max": 0.24963361016121152
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.24963361016121152,
+      "min": 0.24963361016121152,
+      "max": 0.24963361016121152
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 64,
+    "arm": "separate_202__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.6309250746587229,
+      "min": 0.3705862187178608,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.9995039682539683,
+      "min": 0.9995039682539683,
+      "max": 0.9995039682539683
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.8586209202782237,
+      "min": 0.8586209202782237,
+      "max": 0.8586209202782237
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.8586209202782237,
+      "min": 0.8586209202782237,
+      "max": 0.8586209202782237
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.8586209202782237,
+      "min": 0.8586209202782237,
+      "max": 0.8586209202782237
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 256,
+    "arm": "separate_0__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 0.9858873878135453,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.2500112987699963,
+      "min": 0.2500112987699963,
+      "max": 0.2500112987699963
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.2500112987699963,
+      "min": 0.2500112987699963,
+      "max": 0.2500112987699963
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.2500112987699963,
+      "min": 0.2500112987699963,
+      "max": 0.2500112987699963
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 256,
+    "arm": "separate_0__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.25006103515625,
+      "min": 0.25006103515625,
+      "max": 0.25006103515625
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.25006103515625,
+      "min": 0.25006103515625,
+      "max": 0.25006103515625
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.25006103515625,
+      "min": 0.25006103515625,
+      "max": 0.25006103515625
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 256,
+    "arm": "separate_0__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.7147408157469066,
+      "min": 0.575915644495681,
+      "max": 0.8496278214655
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.7517154996357267,
+      "min": 0.7517154996357267,
+      "max": 0.7517154996357267
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.7517154996357267,
+      "min": 0.7517154996357267,
+      "max": 0.7517154996357267
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.7517154996357267,
+      "min": 0.7517154996357267,
+      "max": 0.7517154996357267
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 256,
+    "arm": "separate_101__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 0.986754726995967,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.25004043579101565,
+      "min": 0.25004043579101565,
+      "max": 0.25004043579101565
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.25004043579101565,
+      "min": 0.25004043579101565,
+      "max": 0.25004043579101565
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.25004043579101565,
+      "min": 0.25004043579101565,
+      "max": 0.25004043579101565
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 256,
+    "arm": "separate_101__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.250030517578125,
+      "min": 0.250030517578125,
+      "max": 0.250030517578125
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.250030517578125,
+      "min": 0.250030517578125,
+      "max": 0.250030517578125
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.250030517578125,
+      "min": 0.250030517578125,
+      "max": 0.250030517578125
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 256,
+    "arm": "separate_101__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.7255296913760758,
+      "min": 0.49899331038513994,
+      "max": 0.8803202774377805
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.7805068000914559,
+      "min": 0.7805068000914559,
+      "max": 0.7805068000914559
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.7805068000914559,
+      "min": 0.7805068000914559,
+      "max": 0.7805068000914559
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.7805068000914559,
+      "min": 0.7805068000914559,
+      "max": 0.7805068000914559
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 256,
+    "arm": "separate_202__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.250030517578125,
+      "min": 0.250030517578125,
+      "max": 0.250030517578125
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.250030517578125,
+      "min": 0.250030517578125,
+      "max": 0.250030517578125
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.250030517578125,
+      "min": 0.250030517578125,
+      "max": 0.250030517578125
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 256,
+    "arm": "separate_202__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.250030517578125,
+      "min": 0.250030517578125,
+      "max": 0.250030517578125
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.250030517578125,
+      "min": 0.250030517578125,
+      "max": 0.250030517578125
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.250030517578125,
+      "min": 0.250030517578125,
+      "max": 0.250030517578125
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "four_complementary",
+    "n": 256,
+    "arm": "separate_202__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.6877192798280087,
+      "min": 0.48023270756676506,
+      "max": 0.8298529364849422
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.7772149524991474,
+      "min": 0.7772149524991474,
+      "max": 0.7772149524991474
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.7772149524991474,
+      "min": 0.7772149524991474,
+      "max": 0.7772149524991474
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.7772149524991474,
+      "min": 0.7772149524991474,
+      "max": 0.7772149524991474
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 64,
+    "arm": "separate_0__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 64,
+    "arm": "separate_0__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 64,
+    "arm": "separate_0__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.30910038550662844,
+      "min": -0.0014280614066404856,
+      "max": 0.7485207100591716
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.023214576357886905,
+      "min": 0.023214576357886905,
+      "max": 0.023214576357886905
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.023214576357886905,
+      "min": 0.023214576357886905,
+      "max": 0.023214576357886905
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.023214576357886905,
+      "min": 0.023214576357886905,
+      "max": 0.023214576357886905
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 64,
+    "arm": "separate_101__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 64,
+    "arm": "separate_101__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 64,
+    "arm": "separate_101__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.23118898243422292,
+      "min": 0.1414141414141414,
+      "max": 0.7002696535988384
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.0317809089781746,
+      "min": 0.0317809089781746,
+      "max": 0.0317809089781746
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.0317809089781746,
+      "min": 0.0317809089781746,
+      "max": 0.0317809089781746
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.0317809089781746,
+      "min": 0.0317809089781746,
+      "max": 0.0317809089781746
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 64,
+    "arm": "separate_202__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 64,
+    "arm": "separate_202__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 64,
+    "arm": "separate_202__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.18357473288924878,
+      "min": -0.0014280614066404856,
+      "max": 0.7485207100591716
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.02544371589781746,
+      "min": 0.02544371589781746,
+      "max": 0.02544371589781746
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.02544371589781746,
+      "min": 0.02544371589781746,
+      "max": 0.02544371589781746
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.02544371589781746,
+      "min": 0.02544371589781746,
+      "max": 0.02544371589781746
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 256,
+    "arm": "separate_0__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 256,
+    "arm": "separate_0__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 256,
+    "arm": "separate_0__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.6264891670711765,
+      "min": 0.11790204416241143,
+      "max": 0.7775196907721361
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.09044338407970609,
+      "min": 0.09044338407970609,
+      "max": 0.09044338407970609
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.09044338407970609,
+      "min": 0.09044338407970609,
+      "max": 0.09044338407970609
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.09044338407970609,
+      "min": 0.09044338407970609,
+      "max": 0.09044338407970609
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 256,
+    "arm": "separate_101__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 256,
+    "arm": "separate_101__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 256,
+    "arm": "separate_101__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.537655119434115,
+      "min": 0.0080511396900814,
+      "max": 0.716518338684506
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.08984421018570188,
+      "min": 0.08984421018570188,
+      "max": 0.08984421018570188
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.08984421018570188,
+      "min": 0.08984421018570188,
+      "max": 0.08984421018570188
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.08984421018570188,
+      "min": 0.08984421018570188,
+      "max": 0.08984421018570188
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 256,
+    "arm": "separate_202__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 256,
+    "arm": "separate_202__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "gaussian_independent",
+    "n": 256,
+    "arm": "separate_202__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.30401112808817865,
+      "min": 0.08915981572450304,
+      "max": 0.5554193306516166
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.05315780034140935,
+      "min": 0.05315780034140935,
+      "max": 0.05315780034140935
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.05315780034140935,
+      "min": 0.05315780034140935,
+      "max": 0.05315780034140935
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.05315780034140935,
+      "min": 0.05315780034140935,
+      "max": 0.05315780034140935
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 64,
+    "arm": "separate_0__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "2": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.4948009598228019,
+      "min": -0.019884517691535236,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.49765625,
+      "min": 0.49765625,
+      "max": 0.49765625
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.49765625,
+      "min": 0.49765625,
+      "max": 0.49765625
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.49765625,
+      "min": 0.49765625,
+      "max": 0.49765625
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 64,
+    "arm": "separate_0__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "2": 2,
+      "3": 1,
+      "4": 7
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 0.43848230135120897,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.3176779126364087,
+      "min": 0.3176779126364087,
+      "max": 0.3176779126364087
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.3176779126364087,
+      "min": 0.3176779126364087,
+      "max": 0.3176779126364087
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.3176779126364087,
+      "min": 0.3176779126364087,
+      "max": 0.3176779126364087
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 64,
+    "arm": "separate_0__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.6205393098524091,
+      "min": 0.30850430572641774,
+      "max": 0.8329462211899231
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.22657325381324406,
+      "min": 0.22657325381324406,
+      "max": 0.22657325381324406
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.22657325381324406,
+      "min": 0.22657325381324406,
+      "max": 0.22657325381324406
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.22657325381324406,
+      "min": 0.22657325381324406,
+      "max": 0.22657325381324406
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 64,
+    "arm": "separate_101__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "2": 9,
+      "3": 1
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.21919983176745614,
+      "min": -0.019884517691535236,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.48170340401785716,
+      "min": 0.48170340401785716,
+      "max": 0.48170340401785716
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.48170340401785716,
+      "min": 0.48170340401785716,
+      "max": 0.48170340401785716
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.48170340401785716,
+      "min": 0.48170340401785716,
+      "max": 0.48170340401785716
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 64,
+    "arm": "separate_101__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "2": 2,
+      "4": 8
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 0.48214237361566165,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.30151270306299605,
+      "min": 0.30151270306299605,
+      "max": 0.30151270306299605
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.30151270306299605,
+      "min": 0.30151270306299605,
+      "max": 0.30151270306299605
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.30151270306299605,
+      "min": 0.30151270306299605,
+      "max": 0.30151270306299605
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 64,
+    "arm": "separate_101__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.6303853278940962,
+      "min": 0.25630468347915597,
+      "max": 0.8988135391452721
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.26439635261656746,
+      "min": 0.26439635261656746,
+      "max": 0.26439635261656746
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.26439635261656746,
+      "min": 0.26439635261656746,
+      "max": 0.26439635261656746
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.26439635261656746,
+      "min": 0.26439635261656746,
+      "max": 0.26439635261656746
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 64,
+    "arm": "separate_202__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "2": 9,
+      "3": 1
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.6115394103860861,
+      "min": -0.019811727065772472,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.48680032397073414,
+      "min": 0.48680032397073414,
+      "max": 0.48680032397073414
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.48680032397073414,
+      "min": 0.48680032397073414,
+      "max": 0.48680032397073414
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.48680032397073414,
+      "min": 0.48680032397073414,
+      "max": 0.48680032397073414
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 64,
+    "arm": "separate_202__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.25,
+      "min": 0.25,
+      "max": 0.25
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.25,
+      "min": 0.25,
+      "max": 0.25
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.25,
+      "min": 0.25,
+      "max": 0.25
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 64,
+    "arm": "separate_202__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.6968464686201936,
+      "min": 0.4824120603015075,
+      "max": 0.7528770442156268
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.26549295092385916,
+      "min": 0.26549295092385916,
+      "max": 0.26549295092385916
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.26549295092385916,
+      "min": 0.26549295092385916,
+      "max": 0.26549295092385916
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.26549295092385916,
+      "min": 0.26549295092385916,
+      "max": 0.26549295092385916
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 256,
+    "arm": "separate_0__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 0.9875518424303485,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.999938725490196,
+      "min": 0.999938725490196,
+      "max": 0.999938725490196
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.25008632641850004,
+      "min": 0.25008632641850004,
+      "max": 0.25008632641850004
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.25008632641850004,
+      "min": 0.25008632641850004,
+      "max": 0.25008632641850004
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.25008632641850004,
+      "min": 0.25008632641850004,
+      "max": 0.25008632641850004
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 256,
+    "arm": "separate_0__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.999938725490196,
+      "min": 0.999938725490196,
+      "max": 0.999938725490196
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.25004577916132575,
+      "min": 0.25004577916132575,
+      "max": 0.25004577916132575
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.25004577916132575,
+      "min": 0.25004577916132575,
+      "max": 0.25004577916132575
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.25004577916132575,
+      "min": 0.25004577916132575,
+      "max": 0.25004577916132575
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 256,
+    "arm": "separate_0__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.7721680496908936,
+      "min": 0.7255857274330003,
+      "max": 0.8165323807139743
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.999938725490196,
+      "min": 0.999938725490196,
+      "max": 0.999938725490196
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.636447085344952,
+      "min": 0.636447085344952,
+      "max": 0.636447085344952
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.636447085344952,
+      "min": 0.636447085344952,
+      "max": 0.636447085344952
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.636447085344952,
+      "min": 0.636447085344952,
+      "max": 0.636447085344952
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 256,
+    "arm": "separate_101__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 0.9875518424303485,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.999938725490196,
+      "min": 0.999938725490196,
+      "max": 0.999938725490196
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.25008632641850004,
+      "min": 0.25008632641850004,
+      "max": 0.25008632641850004
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.25008632641850004,
+      "min": 0.25008632641850004,
+      "max": 0.25008632641850004
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.25008632641850004,
+      "min": 0.25008632641850004,
+      "max": 0.25008632641850004
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 256,
+    "arm": "separate_101__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.999938725490196,
+      "min": 0.999938725490196,
+      "max": 0.999938725490196
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.25004577916132575,
+      "min": 0.25004577916132575,
+      "max": 0.25004577916132575
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.25004577916132575,
+      "min": 0.25004577916132575,
+      "max": 0.25004577916132575
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.25004577916132575,
+      "min": 0.25004577916132575,
+      "max": 0.25004577916132575
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 256,
+    "arm": "separate_101__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.7092534484508402,
+      "min": 0.6589867443978509,
+      "max": 0.7652570662105128
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.999938725490196,
+      "min": 0.999938725490196,
+      "max": 0.999938725490196
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.6614481571586497,
+      "min": 0.6614481571586497,
+      "max": 0.6614481571586497
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.6614481571586497,
+      "min": 0.6614481571586497,
+      "max": 0.6614481571586497
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.6614481571586497,
+      "min": 0.6614481571586497,
+      "max": 0.6614481571586497
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 256,
+    "arm": "separate_202__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "3": 1,
+      "4": 9
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 0.6846319566480151,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.999938725490196,
+      "min": 0.999938725490196,
+      "max": 0.999938725490196
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.26394530141096706,
+      "min": 0.26394530141096706,
+      "max": 0.26394530141096706
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.26394530141096706,
+      "min": 0.26394530141096706,
+      "max": 0.26394530141096706
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.26394530141096706,
+      "min": 0.26394530141096706,
+      "max": 0.26394530141096706
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 256,
+    "arm": "separate_202__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.999938725490196,
+      "min": 0.999938725490196,
+      "max": 0.999938725490196
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.25004577916132575,
+      "min": 0.25004577916132575,
+      "max": 0.25004577916132575
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.25004577916132575,
+      "min": 0.25004577916132575,
+      "max": 0.25004577916132575
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.25004577916132575,
+      "min": 0.25004577916132575,
+      "max": 0.25004577916132575
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "morphology_only",
+    "n": 256,
+    "arm": "separate_202__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.8047529973932525,
+      "min": 0.6778975971253011,
+      "max": 0.8589420606542089
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 0.999938725490196,
+      "min": 0.999938725490196,
+      "max": 0.999938725490196
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.6318287006759814,
+      "min": 0.6318287006759814,
+      "max": 0.6318287006759814
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.6318287006759814,
+      "min": 0.6318287006759814,
+      "max": 0.6318287006759814
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.6318287006759814,
+      "min": 0.6318287006759814,
+      "max": 0.6318287006759814
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 64,
+    "arm": "separate_0__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "2": 3,
+      "3": 7
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.9047521179509761,
+      "min": 0.30846387220605537,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.39636540488591265,
+      "min": 0.39636540488591265,
+      "max": 0.39636540488591265
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.39636540488591265,
+      "min": 0.39636540488591265,
+      "max": 0.39636540488591265
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.39636540488591265,
+      "min": 0.39636540488591265,
+      "max": 0.39636540488591265
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 64,
+    "arm": "separate_0__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "2": 4,
+      "3": 4,
+      "4": 2
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.8703262598895629,
+      "min": -0.013557233091973502,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.41901002914186514,
+      "min": 0.41901002914186514,
+      "max": 0.41901002914186514
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.41901002914186514,
+      "min": 0.41901002914186514,
+      "max": 0.41901002914186514
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.41901002914186514,
+      "min": 0.41901002914186514,
+      "max": 0.41901002914186514
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 64,
+    "arm": "separate_0__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.7961205728296705,
+      "min": 0.6065773447015834,
+      "max": 0.9478143418467584
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.34356175982762893,
+      "min": 0.34356175982762893,
+      "max": 0.34356175982762893
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.34356175982762893,
+      "min": 0.34356175982762893,
+      "max": 0.34356175982762893
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.34356175982762893,
+      "min": 0.34356175982762893,
+      "max": 0.34356175982762893
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 64,
+    "arm": "separate_101__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "2": 6,
+      "3": 3,
+      "4": 1
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.8133314275424317,
+      "min": 0.034055154543771976,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.44097105964781746,
+      "min": 0.44097105964781746,
+      "max": 0.44097105964781746
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.44097105964781746,
+      "min": 0.44097105964781746,
+      "max": 0.44097105964781746
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.44097105964781746,
+      "min": 0.44097105964781746,
+      "max": 0.44097105964781746
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 64,
+    "arm": "separate_101__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "2": 6,
+      "3": 3,
+      "4": 1
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.9081820266808283,
+      "min": 0.589194092084422,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.4512848384796627,
+      "min": 0.4512848384796627,
+      "max": 0.4512848384796627
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.4512848384796627,
+      "min": 0.4512848384796627,
+      "max": 0.4512848384796627
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.4512848384796627,
+      "min": 0.4512848384796627,
+      "max": 0.4512848384796627
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 64,
+    "arm": "separate_101__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.9206533469512347,
+      "min": 0.5515300738656349,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.25967959449404765,
+      "min": 0.25967959449404765,
+      "max": 0.25967959449404765
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.25967959449404765,
+      "min": 0.25967959449404765,
+      "max": 0.25967959449404765
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.25967959449404765,
+      "min": 0.25967959449404765,
+      "max": 0.25967959449404765
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 64,
+    "arm": "separate_202__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "2": 3,
+      "3": 6,
+      "4": 1
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.6266002484745055,
+      "min": 0.2966311225450713,
+      "max": 0.9300473309594255
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.38826981801835314,
+      "min": 0.38826981801835314,
+      "max": 0.38826981801835314
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.38826981801835314,
+      "min": 0.38826981801835314,
+      "max": 0.38826981801835314
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.38826981801835314,
+      "min": 0.38826981801835314,
+      "max": 0.38826981801835314
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 64,
+    "arm": "separate_202__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "2": 5,
+      "3": 4,
+      "4": 1
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.6659866733383946,
+      "min": -0.01767586112457855,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.44724934895833335,
+      "min": 0.44724934895833335,
+      "max": 0.44724934895833335
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.44724934895833335,
+      "min": 0.44724934895833335,
+      "max": 0.44724934895833335
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.44724934895833335,
+      "min": 0.44724934895833335,
+      "max": 0.44724934895833335
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 64,
+    "arm": "separate_202__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.8973661052329984,
+      "min": 0.518773495176412,
+      "max": 0.9484598593257337
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.30669449094742063,
+      "min": 0.30669449094742063,
+      "max": 0.30669449094742063
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.30669449094742063,
+      "min": 0.30669449094742063,
+      "max": 0.30669449094742063
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.30669449094742063,
+      "min": 0.30669449094742063,
+      "max": 0.30669449094742063
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 256,
+    "arm": "separate_0__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "3": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.373077392578125,
+      "min": 0.373077392578125,
+      "max": 0.373077392578125
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.373077392578125,
+      "min": 0.373077392578125,
+      "max": 0.373077392578125
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.373077392578125,
+      "min": 0.373077392578125,
+      "max": 0.373077392578125
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 256,
+    "arm": "separate_0__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.9690094853777445,
+      "min": 0.9480802102714418,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.25274082970997647,
+      "min": 0.25274082970997647,
+      "max": 0.25274082970997647
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.25274082970997647,
+      "min": 0.25274082970997647,
+      "max": 0.25274082970997647
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.25274082970997647,
+      "min": 0.25274082970997647,
+      "max": 0.25274082970997647
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 256,
+    "arm": "separate_0__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.879241638488849,
+      "min": 0.7442793026074513,
+      "max": 0.9571658616403038
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.5852904910132999,
+      "min": 0.5852904910132999,
+      "max": 0.5852904910132999
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.5852904910132999,
+      "min": 0.5852904910132999,
+      "max": 0.5852904910132999
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.5852904910132999,
+      "min": 0.5852904910132999,
+      "max": 0.5852904910132999
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 256,
+    "arm": "separate_101__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "3": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.373077392578125,
+      "min": 0.373077392578125,
+      "max": 0.373077392578125
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.373077392578125,
+      "min": 0.373077392578125,
+      "max": 0.373077392578125
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.373077392578125,
+      "min": 0.373077392578125,
+      "max": 0.373077392578125
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 256,
+    "arm": "separate_101__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "4": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.9761873263913159,
+      "min": 0.8517657640701087,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.2530675131177145,
+      "min": 0.2530675131177145,
+      "max": 0.2530675131177145
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.2530675131177145,
+      "min": 0.2530675131177145,
+      "max": 0.2530675131177145
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.2530675131177145,
+      "min": 0.2530675131177145,
+      "max": 0.2530675131177145
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 256,
+    "arm": "separate_101__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 5,
+      "3": 2,
+      "4": 2,
+      "5": 1
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.5291262846643583,
+      "min": 0.2897180804301423,
+      "max": 0.8589633925924121
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.33873565916031123,
+      "min": 0.33873565916031123,
+      "max": 0.33873565916031123
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.33873565916031123,
+      "min": 0.33873565916031123,
+      "max": 0.33873565916031123
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.33873565916031123,
+      "min": 0.33873565916031123,
+      "max": 0.33873565916031123
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 256,
+    "arm": "separate_202__gmm_full",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "3": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 1.0,
+      "min": 0.9841007703514479,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.3735701909140935,
+      "min": 0.3735701909140935,
+      "max": 0.3735701909140935
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.3735701909140935,
+      "min": 0.3735701909140935,
+      "max": 0.3735701909140935
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.3735701909140935,
+      "min": 0.3735701909140935,
+      "max": 0.3735701909140935
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 256,
+    "arm": "separate_202__gmm_shared",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "3": 1,
+      "4": 9
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.9384344384612371,
+      "min": 0.40088857203634815,
+      "max": 1.0
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.30264915587410096,
+      "min": 0.30264915587410096,
+      "max": 0.30264915587410096
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.30264915587410096,
+      "min": 0.30264915587410096,
+      "max": 0.30264915587410096
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.30264915587410096,
+      "min": 0.30264915587410096,
+      "max": 0.30264915587410096
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  },
+  {
+    "case": "unequal_complementary",
+    "n": 256,
+    "arm": "separate_202__hdbscan",
+    "independent_datasets": 1,
+    "requested_draws": 10,
+    "attempted_pipelines": 10,
+    "successful_draws": 10,
+    "failed_draws": 0,
+    "selected_k_frequencies": {
+      "1": 10
+    },
+    "within_dataset_point_ari": {
+      "available": 10,
+      "median": 0.828761653905447,
+      "min": 0.73468213430429,
+      "max": 0.9275970602231269
+    },
+    "unit_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pair_coverage": {
+      "available": 1,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "coassignment": {
+      "available": 1,
+      "median": 0.5320004417782739,
+      "min": 0.5320004417782739,
+      "max": 0.5320004417782739
+    },
+    "coassignment_lower": {
+      "available": 1,
+      "median": 0.5320004417782739,
+      "min": 0.5320004417782739,
+      "max": 0.5320004417782739
+    },
+    "coassignment_upper": {
+      "available": 1,
+      "median": 0.5320004417782739,
+      "min": 0.5320004417782739,
+      "max": 0.5320004417782739
+    },
+    "interpretation": "One dataset per cell; fixed-seed 80% matched subsampling is conditional sensitivity, not independent replicates or species support"
+  }
+]

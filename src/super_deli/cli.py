@@ -26,6 +26,12 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.benchmarking.coordinate_cli import register as register_coordinates
 
     register_coordinates(commands)
+    from super_deli.workflows.separate_gmm_cli import register as register_separate_gmm
+
+    register_separate_gmm(commands)
+    from super_deli.benchmarking.separate_gmm_cli import register as register_shared_encoder_study
+
+    register_shared_encoder_study(commands)
     from super_deli.workflows.separate_cli import register as register_separate_neural
 
     register_separate_neural(commands)
@@ -518,6 +524,20 @@ def main(argv: list[str] | None = None) -> int:
     power_budget.add_argument("--output-file", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
+        if args.command == "benchmark-separate-gmm":
+            from super_deli.benchmarking.separate_gmm_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "cluster-matched-separate-gmm":
+            from super_deli.workflows.separate_gmm_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "diagnose-neural-coordinates":
             from super_deli.benchmarking.coordinate_cli import dispatch
 

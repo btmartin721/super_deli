@@ -1,0 +1,2018 @@
+[
+  {
+    "case": "ecology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_101__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.9,
+      0.9
+    ],
+    "marginal_95_interval": [
+      0.15455890619276375,
+      0.9987429125765127
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.9,
+    "reference_arm": "separate_101__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 9,
+    "simultaneous_95_interval": [
+      -0.27266075636575315,
+      0.9999826375324029
+    ],
+    "simultaneous_failure_interval": [
+      -0.27266075636575315,
+      0.9999826375324029
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.9,
+      0.9
+    ],
+    "marginal_95_interval": [
+      0.15455890619276375,
+      0.9987429125765127
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.9,
+    "reference_arm": "separate_202__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 9,
+    "simultaneous_95_interval": [
+      -0.27266075636575315,
+      0.9999826375324029
+    ],
+    "simultaneous_failure_interval": [
+      -0.27266075636575315,
+      0.9999826375324029
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_101__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "ecology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_101__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.9,
+      0.9
+    ],
+    "marginal_95_interval": [
+      0.15455890619276375,
+      0.9987429125765127
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.9,
+    "reference_arm": "separate_101__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 9,
+    "simultaneous_95_interval": [
+      -0.27266075636575315,
+      0.9999826375324029
+    ],
+    "simultaneous_failure_interval": [
+      -0.27266075636575315,
+      0.9999826375324029
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_101__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      -0.353547900428297,
+      0.4906361059554523
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.1,
+    "reference_arm": "separate_101__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 1,
+    "simultaneous_95_interval": [
+      -0.5792969356133083,
+      0.6933464582848422
+    ],
+    "simultaneous_failure_interval": [
+      -0.5792969356133083,
+      0.6933464582848422
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      -0.353547900428297,
+      0.4906361059554523
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.1,
+    "reference_arm": "separate_202__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 1,
+    "simultaneous_95_interval": [
+      -0.5792969356133083,
+      0.6933464582848422
+    ],
+    "simultaneous_failure_interval": [
+      -0.5792969356133083,
+      0.6933464582848422
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_redundant",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 100,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.03,
+      0.03
+    ],
+    "marginal_95_interval": [
+      -0.03809642058177968,
+      0.09416146333706507
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.03,
+    "reference_arm": "separate_0__hdbscan",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 3,
+    "simultaneous_95_interval": [
+      -0.08189383868464777,
+      0.14339237778680955
+    ],
+    "simultaneous_failure_interval": [
+      -0.08189383868464777,
+      0.14339237778680955
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 100,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.03,
+      0.03
+    ],
+    "marginal_95_interval": [
+      -0.03809642058177968,
+      0.09416146333706507
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.03,
+    "reference_arm": "separate_0__gmm_full",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 3,
+    "simultaneous_95_interval": [
+      -0.08189383868464777,
+      0.14339237778680955
+    ],
+    "simultaneous_failure_interval": [
+      -0.08189383868464777,
+      0.14339237778680955
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 100,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.04,
+      0.04
+    ],
+    "marginal_95_interval": [
+      -0.03397779183420352,
+      0.10874761011383784
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.04,
+    "reference_arm": "separate_101__hdbscan",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 4,
+    "simultaneous_95_interval": [
+      -0.08022697274663182,
+      0.1599959311865215
+    ],
+    "simultaneous_failure_interval": [
+      -0.08022697274663182,
+      0.1599959311865215
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 100,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.04,
+      0.04
+    ],
+    "marginal_95_interval": [
+      -0.03397779183420352,
+      0.10874761011383784
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.04,
+    "reference_arm": "separate_101__gmm_full",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 4,
+    "simultaneous_95_interval": [
+      -0.08022697274663182,
+      0.1599959311865215
+    ],
+    "simultaneous_failure_interval": [
+      -0.08022697274663182,
+      0.1599959311865215
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 100,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.04,
+      0.04
+    ],
+    "marginal_95_interval": [
+      -0.03397779183420352,
+      0.10874761011383784
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.04,
+    "reference_arm": "separate_202__hdbscan",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 4,
+    "simultaneous_95_interval": [
+      -0.08022697274663182,
+      0.1599959311865215
+    ],
+    "simultaneous_failure_interval": [
+      -0.08022697274663182,
+      0.1599959311865215
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 100,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.04,
+      0.04
+    ],
+    "marginal_95_interval": [
+      -0.03397779183420352,
+      0.10874761011383784
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.04,
+    "reference_arm": "separate_202__gmm_full",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 4,
+    "simultaneous_95_interval": [
+      -0.08022697274663182,
+      0.1599959311865215
+    ],
+    "simultaneous_failure_interval": [
+      -0.08022697274663182,
+      0.1599959311865215
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 100,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.02,
+      0.02
+    ],
+    "marginal_95_interval": [
+      -0.041195962724905305,
+      0.07877547354578354
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.02,
+    "reference_arm": "separate_0__hdbscan",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 2,
+    "simultaneous_95_interval": [
+      -0.08275573881547087,
+      0.12563457693374724
+    ],
+    "simultaneous_failure_interval": [
+      -0.08275573881547087,
+      0.12563457693374724
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 100,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.02,
+      0.02
+    ],
+    "marginal_95_interval": [
+      -0.041195962724905305,
+      0.07877547354578354
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.02,
+    "reference_arm": "separate_0__gmm_full",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 2,
+    "simultaneous_95_interval": [
+      -0.08275573881547087,
+      0.12563457693374724
+    ],
+    "simultaneous_failure_interval": [
+      -0.08275573881547087,
+      0.12563457693374724
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 100,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.042874030238438526,
+      0.042874030238438526
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "simultaneous_failure_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 100,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.042874030238438526,
+      0.042874030238438526
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__gmm_full",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "simultaneous_failure_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 100,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.01,
+      0.01
+    ],
+    "marginal_95_interval": [
+      -0.04274825032732631,
+      0.062119220210932954
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.01,
+    "reference_arm": "separate_202__hdbscan",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 1,
+    "simultaneous_95_interval": [
+      -0.08294243582420668,
+      0.10607457998622727
+    ],
+    "simultaneous_failure_interval": [
+      -0.08294243582420668,
+      0.10607457998622727
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 100,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.01,
+      0.01
+    ],
+    "marginal_95_interval": [
+      -0.04274825032732631,
+      0.062119220210932954
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.01,
+    "reference_arm": "separate_202__gmm_full",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 1,
+    "simultaneous_95_interval": [
+      -0.08294243582420668,
+      0.10607457998622727
+    ],
+    "simultaneous_failure_interval": [
+      -0.08294243582420668,
+      0.10607457998622727
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 100,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.06,
+      0.06
+    ],
+    "marginal_95_interval": [
+      -0.023810848939653954,
+      0.13635319241177854
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.06,
+    "reference_arm": "separate_0__hdbscan",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 6,
+    "simultaneous_95_interval": [
+      -0.07486233328133987,
+      0.19091058728553084
+    ],
+    "simultaneous_failure_interval": [
+      -0.07486233328133987,
+      0.19091058728553084
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 100,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.06,
+      0.06
+    ],
+    "marginal_95_interval": [
+      -0.023810848939653954,
+      0.13635319241177854
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.06,
+    "reference_arm": "separate_0__gmm_full",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 6,
+    "simultaneous_95_interval": [
+      -0.07486233328133987,
+      0.19091058728553084
+    ],
+    "simultaneous_failure_interval": [
+      -0.07486233328133987,
+      0.19091058728553084
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 100,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.07,
+      0.07
+    ],
+    "marginal_95_interval": [
+      -0.018060429592530455,
+      0.1495950624430721
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.07,
+    "reference_arm": "separate_101__hdbscan",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 7,
+    "simultaneous_95_interval": [
+      -0.0713757554524439,
+      0.20553887577890478
+    ],
+    "simultaneous_failure_interval": [
+      -0.0713757554524439,
+      0.20553887577890478
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 100,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.07,
+      0.07
+    ],
+    "marginal_95_interval": [
+      -0.018060429592530455,
+      0.1495950624430721
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.07,
+    "reference_arm": "separate_101__gmm_full",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 7,
+    "simultaneous_95_interval": [
+      -0.0713757554524439,
+      0.20553887577890478
+    ],
+    "simultaneous_failure_interval": [
+      -0.0713757554524439,
+      0.20553887577890478
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 100,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.02,
+      0.02
+    ],
+    "marginal_95_interval": [
+      -0.041195962724905305,
+      0.07877547354578354
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.02,
+    "reference_arm": "separate_202__hdbscan",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 2,
+    "simultaneous_95_interval": [
+      -0.08275573881547087,
+      0.12563457693374724
+    ],
+    "simultaneous_failure_interval": [
+      -0.08275573881547087,
+      0.12563457693374724
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 100,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.02,
+      0.02
+    ],
+    "marginal_95_interval": [
+      -0.041195962724905305,
+      0.07877547354578354
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.02,
+    "reference_arm": "separate_202__gmm_full",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 2,
+    "simultaneous_95_interval": [
+      -0.08275573881547087,
+      0.12563457693374724
+    ],
+    "simultaneous_failure_interval": [
+      -0.08275573881547087,
+      0.12563457693374724
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 100,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.042874030238438526,
+      0.042874030238438526
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__hdbscan",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "simultaneous_failure_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 100,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.042874030238438526,
+      0.042874030238438526
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__gmm_full",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "simultaneous_failure_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 100,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.042874030238438526,
+      0.042874030238438526
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__hdbscan",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "simultaneous_failure_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 100,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.042874030238438526,
+      0.042874030238438526
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__gmm_full",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "simultaneous_failure_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 100,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.042874030238438526,
+      0.042874030238438526
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__hdbscan",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "simultaneous_failure_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 100,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.042874030238438526,
+      0.042874030238438526
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__gmm_full",
+    "reference_only": 0,
+    "requested": 100,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "simultaneous_failure_interval": [
+      -0.08294417208453203,
+      0.08294417208453203
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.9,
+      0.9
+    ],
+    "marginal_95_interval": [
+      0.15455890619276375,
+      0.9987429125765127
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 0.9,
+    "reference_arm": "separate_0__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 9,
+    "simultaneous_95_interval": [
+      -0.27266075636575315,
+      0.9999826375324029
+    ],
+    "simultaneous_failure_interval": [
+      -0.27266075636575315,
+      0.9999826375324029
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_101__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_101__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 64,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_0__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_0__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_0__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_101__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_101__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_101__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.29039002429643174,
+      1.0
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 1.0,
+    "reference_arm": "separate_202__hdbscan",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 10,
+    "simultaneous_95_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      -0.1586285961618174,
+      1.0
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "morphology_only",
+    "common_available": 10,
+    "comparison_arm": "separate_202__gmm_shared",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "n": 256,
+    "rate_difference_known_contribution": 0.0,
+    "reference_arm": "separate_202__gmm_full",
+    "reference_only": 0,
+    "requested": 10,
+    "shared_only": 0,
+    "simultaneous_95_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "simultaneous_failure_interval": [
+      -0.5793142980809054,
+      0.5793142980809054
+    ],
+    "unknown_pairs": 0
+  }
+]

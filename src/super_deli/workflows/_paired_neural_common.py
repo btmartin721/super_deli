@@ -13,7 +13,16 @@ from super_deli.io.tabular import ingest_tabular
 
 
 def run_paired_neural(
-    dataset, *, model_config, base_dir, output_dir, config_type, fit_function, training, render
+    dataset,
+    *,
+    model_config,
+    base_dir,
+    output_dir,
+    config_type,
+    fit_function,
+    training,
+    render,
+    assignment_factory=None,
 ):
     import numpy as np
 
@@ -46,27 +55,32 @@ def run_paired_neural(
         write_json(point.diagnostics, out / "training.json")
         with (out / "assignments.csv").open("x", newline="", encoding="utf-8") as f:
             writer = csv.writer(f, lineterminator="\n")
-            writer.writerow(
-                [
-                    "unit_id",
-                    "morphology_observation_id",
-                    "ecology_observation_id",
-                    "cluster",
-                    "density_membership_strength",
-                    *[f"latent_{i + 1}" for i in range(point.scores.shape[1])],
-                ]
-            )
-            writer.writerows(
-                zip(
-                    alignment["unit_ids"],
-                    alignment["views"][0]["observation_ids"],
-                    alignment["views"][1]["observation_ids"],
-                    point.labels,
-                    point.strength,
-                    *point.scores.T,
-                    strict=True,
+            if assignment_factory is not None:
+                header, rows = assignment_factory(point, alignment)
+                writer.writerow(header)
+                writer.writerows(rows)
+            else:
+                writer.writerow(
+                    [
+                        "unit_id",
+                        "morphology_observation_id",
+                        "ecology_observation_id",
+                        "cluster",
+                        "density_membership_strength",
+                        *[f"latent_{i + 1}" for i in range(point.scores.shape[1])],
+                    ]
                 )
-            )
+                writer.writerows(
+                    zip(
+                        alignment["unit_ids"],
+                        alignment["views"][0]["observation_ids"],
+                        alignment["views"][1]["observation_ids"],
+                        point.labels,
+                        point.strength,
+                        *point.scores.T,
+                        strict=True,
+                    )
+                )
         configuration = {
             "dataset": dataset.to_dict(),
             "model": config.to_dict(),

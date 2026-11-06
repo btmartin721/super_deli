@@ -271,8 +271,10 @@ reference labels need independent evidence and documented uncertainty.
 44. **Benchmark-only feasibility completed:** A frozen Gaussian-reference graph-count rule reduced the tested Gaussian oversplitting but still missed moons groups, often returning K=1. No public model adapter, default or historical p-value changed; no-supported-split is not evidence of one population. See [results](gaussian-reference-spectral-results.md).
 45. **Unresolved:** A defensible group-count criterion before spectral resampling or user-facing reference-rule promotion; any follow-up requires a separately approved checkpoint.
 46. **Opt-in matched neural baseline:** Complete continuous individual morphology/ecology with strict ID alignment, view-balanced reconstruction, frozen numeric transforms and matched native subsampling. The [paired pilot](matched-neural-results.md) retains seed differences, uninformative-view losses and weak moons recovery; no species/significance claim or default change.
-47. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
-48. Consolidated user guidance, end-to-end examples and a scoped research release.
+47. **Completed:** Separate matched-view encoders, prespecified weights and frozen-coordinate diagnosis, with legacy parity and independent numerical audits.
+48. **Opt-in model and fresh validation completed:** Separate encoders with a shared-covariance BIC GMM, frozen transforms, conditional memberships and matched subsampling. Standard four-group recovery improved, while Gaussian splitting and small-sample unequal-spread/curved-group limitations remain explicit. PCA controls preclude claiming a neural advantage; no default or significance change.
+49. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
+50. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The [tabular neural workflow](tabular-neural.md) reuses typed ingestion and a
 shared density-assignment helper. Raw-feature and latent standardization are
@@ -559,3 +561,22 @@ hierarchy audits distinguish fitting, admissibility and model selection.
 Counterfactual tree policies and reference-label geometry are evaluation-only.
 Public exports contain aggregate counts and hashes; per-fit records stay local.
 See the [bounded protocol](coordinate-diagnosis.md).
+
+### Separate encoders with a shared GMM
+
+`models.separate_gmm` reuses both unchanged native branch trainers and fusion,
+then uses the established tied-covariance BIC search. Its distinct configuration
+and paired workflow reuse identity validation, numeric exports and native
+matched subsampling. Frozen prediction requires numerical libraries without
+Torch or SNPio; inference validates component weights, positive-definite shared
+covariance and stored shapes/hashes. Numerical failures retain partial evidence
+and withhold assignments. Existing models and serialization remain compatible.
+
+The `benchmarking.separate_gmm_*` modules bind archived replays, freeze fresh
+data/settings and reuse the shared experiment lifecycle with a measured resource
+gate. A read-only observer audits every actual Adam update and every candidate
+density. Heads share exact coordinates, while every subsample refits both
+branches. Independent reporting checks identities, likelihoods, BIC, intervals
+and coassignment denominators. Public exports contain cell aggregates; fits,
+weights and trajectories remain local. See the [model contract](separate-gmm.md),
+[protocol](separate-gmm-study.md) and [results](separate-gmm-results.md).

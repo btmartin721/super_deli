@@ -266,6 +266,10 @@ def gate(root, *, staging_bytes, design):
         and audit["execution_sha256"] == fingerprint_file(root / "preflight-execution.json").sha256,
         "Audited unchanged preflight required",
     )
+    if "resource_gate" in design:
+        return design["resource_gate"](
+            root, frozen, config, audit, execution, design, staging_bytes
+        )
     if "training_counts" in design:
         from super_deli.benchmarking.neural_budget import project_gate
 

@@ -1,0 +1,30 @@
+{
+  "main": {
+    "audit_boundary": "Actual-path NumPy gradient/Adam checks, independent losses, raw laws, identities, transforms, graph hierarchy, GMM likelihood and denominators. Failed endpoints retain partial evidence and are not claimed as verified fits.",
+    "candidate_densities_checked": 20736,
+    "density_fits": 2332,
+    "execution_sha256": "1ffa4f038eb4c00a56fed5bd2f693de650e4b281f8c3a9ce6d3d145fd594380e",
+    "failed_points": 0,
+    "freeze_sha256": "f02dd33f23f6b96edf87b666c3d9efeb449a2cb60154c781b2548a5c3b36ea7e",
+    "native_draws": 240,
+    "neural_fits": 3624,
+    "passed": true,
+    "phase": "main",
+    "seconds": 72.82030462499824,
+    "verified_optimizer_updates": 1812000
+  },
+  "preflight": {
+    "audit_boundary": "Actual-path NumPy gradient/Adam checks, independent losses, raw laws, identities, transforms, graph hierarchy, GMM likelihood and denominators. Failed endpoints retain partial evidence and are not claimed as verified fits.",
+    "candidate_densities_checked": 1536,
+    "density_fits": 184,
+    "execution_sha256": "c8ea7d4d92ac55a7902a8acb9b4b3b50f691e0a9649fe64847e600d6a16ee043",
+    "failed_points": 0,
+    "freeze_sha256": "f02dd33f23f6b96edf87b666c3d9efeb449a2cb60154c781b2548a5c3b36ea7e",
+    "native_draws": 120,
+    "neural_fits": 336,
+    "passed": true,
+    "phase": "preflight",
+    "seconds": 6.030788832998951,
+    "verified_optimizer_updates": 168000
+  }
+}

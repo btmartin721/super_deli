@@ -9,7 +9,16 @@ from super_deli.io.config import read_json
 from super_deli.models.separate_config import SeparateNeuralConfig
 
 
-def _render(out, summary, point, units, **kwargs):
+def _render(
+    out,
+    summary,
+    point,
+    units,
+    *,
+    report_options=None,
+    cluster_title="Separate encoders and four-coordinate HDBSCAN",
+    **kwargs,
+):
     from super_deli.models.separate_neural import ROLES, unpack_branch
     from super_deli.models.tabular_neural import NeuralModel, NeuralPoint
     from super_deli.workflows._neural_common import _report
@@ -59,8 +68,9 @@ def _render(out, summary, point, units, **kwargs):
             summary,
             proxy,
             units,
-            title="Separate encoders and four-coordinate HDBSCAN",
+            title=cluster_title,
             view_details=detail,
+            **(report_options or {}),
         )
 
 

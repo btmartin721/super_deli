@@ -14,7 +14,22 @@ from super_deli.io.config import read_json, write_json
 from super_deli.io.tabular import ingest_tabular
 
 
-def _report(out, summary, point, units, *, title=None, view_details=""):
+def _report(
+    out,
+    summary,
+    point,
+    units,
+    *,
+    title=None,
+    view_details="",
+    group_label="density groups",
+    strength_label="Density strength",
+    support_explanation=(
+        "Conditional density strengths and subsampling sensitivity are distinct. "
+        "Neither is a species probability or a significance level. P-values are not computed."
+    ),
+    plot_label="Neural representation colored by density group",
+):
     colors = ("#1565c0", "#d84315", "#2e7d32", "#6a1b9a", "#00796b", "#ad1457")
     low, high = point.scores.min(axis=0), point.scores.max(axis=0)
     span = high - low
@@ -43,20 +58,21 @@ def _report(out, summary, point, units, *, title=None, view_details=""):
             else "<h1>Tabular autoencoder and HDBSCAN</h1>"
         )
         + view_details
-        + f"<p>{len(units)} units; {summary['selected_k']} density groups; "
+        + f"<p>{len(units)} units; {summary['selected_k']} {html.escape(group_label)}; "
         f"{summary['noise_count']} noise/unassigned units.</p>"
         "<p>Two-dimensional latent representation. Colors identify local clusters. "
         "Gray observations are unassigned. Axes have no anatomical interpretation.</p>"
-        '<svg role="img" aria-label="Neural representation colored by density group" '
+        f'<svg role="img" aria-label="{html.escape(plot_label)}" '
         'viewBox="0 0 600 600">' + "".join(dots) + "</svg>"
         f"<p>Initial/final training MSE: {point.losses[0]:.6g} / {point.losses[-1]:.6g}. "
         "This is transductive training reconstruction, not external validation.</p>"
         f"<p>Subsampling: {html.escape(summary['stability']['status'])}. "
         "Read summary.json and subsamples.json for inclusion denominators and failures.</p>"
-        "<p>Conditional density strengths and subsampling sensitivity are distinct. "
-        "Neither is a species probability or a significance level. P-values are not computed.</p>"
+        f"<p>{html.escape(support_explanation)}</p>"
         "<table><caption>Point assignments</caption><thead><tr><th>Unit</th><th>Group</th>"
-        "<th>Density strength</th></tr></thead><tbody>" + "".join(rows) + "</tbody></table></html>"
+        f"<th>{html.escape(strength_label)}</th></tr></thead><tbody>"
+        + "".join(rows)
+        + "</tbody></table></html>"
     )
     with (out / "report.html").open("x", encoding="utf-8") as f:
         f.write(content)
