@@ -1,0 +1,58 @@
+{
+  "audits": {
+    "main": {
+      "audit_boundary": "Actual-path NumPy gradient/Adam checks, independent losses, raw laws, identities, transforms, graph hierarchy, GMM likelihood and denominators. Failed endpoints retain partial evidence and are not claimed as verified fits.",
+      "execution_sha256": "569bbe089ae3200e3e7d39394ceeefdda10ef777ee654f4716655555269e7888",
+      "failed_points": 0,
+      "freeze_sha256": "e331d0cc867756e9a2e9489387a29f45f82f5fdba16db1832e1467d6c6ffb8d3",
+      "native_draws": 0,
+      "neural_fits": 8008,
+      "passed": true,
+      "phase": "main",
+      "seconds": 66.61420216700935,
+      "verified_optimizer_updates": 4004000
+    },
+    "preflight": {
+      "audit_boundary": "Actual-path NumPy gradient/Adam checks, independent losses, raw laws, identities, transforms, graph hierarchy, GMM likelihood and denominators. Failed endpoints retain partial evidence and are not claimed as verified fits.",
+      "execution_sha256": "f2ee9f73927c807db251e792c61c2ca5743f413ec61aef3f43d2090b56af32ec",
+      "failed_points": 0,
+      "freeze_sha256": "e331d0cc867756e9a2e9489387a29f45f82f5fdba16db1832e1467d6c6ffb8d3",
+      "native_draws": 0,
+      "neural_fits": 800,
+      "passed": true,
+      "phase": "preflight",
+      "seconds": 6.960165500000585,
+      "verified_optimizer_updates": 400000
+    }
+  },
+  "author_contact": false,
+  "calibration_scope": "Approximate fitted joint raw-Gaussian departure test with full neural/PCA refits; not species/selected-K significance",
+  "counts": {
+    "main": {
+      "candidate_searches": 8008,
+      "legacy_replays": 4,
+      "neural_fits": 8008,
+      "observations": 40,
+      "raw_inputs": 4000,
+      "verified_updates": 4004000,
+      "workflows": 8008
+    },
+    "preflight": {
+      "candidate_searches": 800,
+      "legacy_replays": 0,
+      "neural_fits": 800,
+      "observations": 4,
+      "raw_inputs": 400,
+      "verified_updates": 400000,
+      "workflows": 800
+    }
+  },
+  "defaults_changed": false,
+  "fixture": false,
+  "historical_pvalues_changed": false,
+  "interpretation": "Ten independent datasets per law: initial pilot with wide uncertainty, not general size/power validation",
+  "observations": 40,
+  "primary_rates": 16,
+  "schema_version": 1,
+  "secondary_paired_comparisons": 8
+}

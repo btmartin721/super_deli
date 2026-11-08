@@ -1,0 +1,194 @@
+[
+  {
+    "case": "gaussian_independent",
+    "arm": "neural",
+    "endpoint": "ordinary_split",
+    "count": 1,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ]
+  },
+  {
+    "case": "gaussian_independent",
+    "arm": "neural",
+    "endpoint": "global_rejection",
+    "count": 1,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ]
+  },
+  {
+    "case": "gaussian_independent",
+    "arm": "pca4",
+    "endpoint": "ordinary_split",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.0,
+      0.47593880526552035
+    ]
+  },
+  {
+    "case": "gaussian_independent",
+    "arm": "pca4",
+    "endpoint": "global_rejection",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.0,
+      0.47593880526552035
+    ]
+  },
+  {
+    "case": "gaussian_correlated",
+    "arm": "neural",
+    "endpoint": "ordinary_split",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.0,
+      0.47593880526552035
+    ]
+  },
+  {
+    "case": "gaussian_correlated",
+    "arm": "neural",
+    "endpoint": "global_rejection",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.0,
+      0.47593880526552035
+    ]
+  },
+  {
+    "case": "gaussian_correlated",
+    "arm": "pca4",
+    "endpoint": "ordinary_split",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.0,
+      0.47593880526552035
+    ]
+  },
+  {
+    "case": "gaussian_correlated",
+    "arm": "pca4",
+    "endpoint": "global_rejection",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.0,
+      0.47593880526552035
+    ]
+  },
+  {
+    "case": "four_complementary",
+    "arm": "neural",
+    "endpoint": "ordinary_split",
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.5240611947344789,
+      1.0
+    ]
+  },
+  {
+    "case": "four_complementary",
+    "arm": "neural",
+    "endpoint": "global_rejection",
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.5240611947344789,
+      1.0
+    ]
+  },
+  {
+    "case": "four_complementary",
+    "arm": "pca4",
+    "endpoint": "ordinary_split",
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.5240611947344789,
+      1.0
+    ]
+  },
+  {
+    "case": "four_complementary",
+    "arm": "pca4",
+    "endpoint": "global_rejection",
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.5240611947344789,
+      1.0
+    ]
+  },
+  {
+    "case": "heavy_tail",
+    "arm": "neural",
+    "endpoint": "ordinary_split",
+    "count": 1,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ]
+  },
+  {
+    "case": "heavy_tail",
+    "arm": "neural",
+    "endpoint": "global_rejection",
+    "count": 1,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ]
+  },
+  {
+    "case": "heavy_tail",
+    "arm": "pca4",
+    "endpoint": "ordinary_split",
+    "count": 1,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ]
+  },
+  {
+    "case": "heavy_tail",
+    "arm": "pca4",
+    "endpoint": "global_rejection",
+    "count": 1,
+    "requested": 10,
+    "unavailable": 0,
+    "interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ]
+  }
+]

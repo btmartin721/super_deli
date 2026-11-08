@@ -4,7 +4,18 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: separate encoders with shared-GMM clustering.**
+**Current checkpoint: full-pipeline neural/shared-GMM calibration.**
+The separate opt-in [CLI/API](docs/neural-calibration.md) fits one joint Gaussian
+model to complete matched raw morphology/ecology and regenerates both views for
+99 full-pipeline refits, including neural training and the complete GMM search.
+The [initial validation](docs/neural-calibration-results.md) completed 8,008 main
+searches and an 800-search preflight without failures. Four-group recovery was
+strong, but one of ten independent Gaussian controls still split and rejected;
+ten datasets per law cannot establish a reliable false-positive rate. These are
+approximate Gaussian-model departure tests, not species or selected-K tests.
+Defaults and historical p-values are unchanged; detailed evidence stays local.
+
+**Previous checkpoint: separate encoders with shared-GMM clustering.**
 The opt-in [CLI/API](docs/separate-gmm.md) aligns complete individual morphology
 and ecology, fits the unchanged encoder for each view, and selects shared-GMM
 components by BIC on their four combined coordinates. Frozen transforms,

@@ -580,3 +580,18 @@ branches. Independent reporting checks identities, likelihoods, BIC, intervals
 and coassignment denominators. Public exports contain cell aggregates; fits,
 weights and trajectories remain local. See the [model contract](separate-gmm.md),
 [protocol](separate-gmm-study.md) and [results](separate-gmm-results.md).
+
+The opt-in [neural calibration adapter](neural-calibration.md) composes a strict
+dependency-free configuration, the unchanged raw-Gaussian estimator, compact
+native point fits and the existing lossless fitted-calibration engine. Both
+encoders and the full shared-GMM search are refitted for every generated raw
+table; point-array parity with the existing model is tested. Failed fits retain
+their evidence and withhold incomplete inference. Existing point workflows,
+default choices and historical p-values remain unchanged.
+
+The `benchmarking.neural_calibration_*` modules separate simulation, immutable
+source/seed freezing, paired neural/PCA fits, independent numerical auditing,
+resource gates and aggregate reporting. The [initial pilot](neural-calibration-results.md)
+completed with strong standard four-group recovery but an unresolved Gaussian
+false split. Broader false-split validation remains necessary; empirical species
+claims, related sampling and calibration after seed/model selection are excluded.

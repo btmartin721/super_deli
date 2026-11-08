@@ -29,6 +29,14 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.workflows.separate_gmm_cli import register as register_separate_gmm
 
     register_separate_gmm(commands)
+    from super_deli.workflows.neural_calibration_cli import register as register_neural_calibration
+
+    register_neural_calibration(commands)
+    from super_deli.benchmarking.neural_calibration_cli import (
+        register as register_calibration_study,
+    )
+
+    register_calibration_study(commands)
     from super_deli.benchmarking.separate_gmm_cli import register as register_shared_encoder_study
 
     register_shared_encoder_study(commands)
@@ -524,6 +532,20 @@ def main(argv: list[str] | None = None) -> int:
     power_budget.add_argument("--output-file", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
+        if args.command == "benchmark-neural-calibration":
+            from super_deli.benchmarking.neural_calibration_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "calibrate-matched-separate-gmm":
+            from super_deli.workflows.neural_calibration_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "benchmark-separate-gmm":
             from super_deli.benchmarking.separate_gmm_cli import dispatch
 

@@ -1,0 +1,702 @@
+[
+  {
+    "ari": {
+      "available": 10,
+      "max": 1.0,
+      "median": 1.0,
+      "min": 0.9182030641391846
+    },
+    "arm": "neural",
+    "case": "four_complementary",
+    "failed_draws": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "global_rejection": {
+      "all_request_known_rate": 1.0,
+      "available": 10,
+      "available_only_rate": 1.0,
+      "count": 10,
+      "identification_bounds": [
+        1.0,
+        1.0
+      ],
+      "marginal_95_interval": [
+        0.6915028921812392,
+        1.0
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.5240611947344789,
+        1.0
+      ],
+      "simultaneous_failure_interval": [
+        0.5240611947344789,
+        1.0
+      ],
+      "unavailable": 0
+    },
+    "joint_rejection_recovery": {
+      "all_request_known_rate": 1.0,
+      "available": 10,
+      "available_only_rate": 1.0,
+      "count": 10,
+      "identification_bounds": [
+        1.0,
+        1.0
+      ],
+      "marginal_95_interval": [
+        0.6915028921812392,
+        1.0
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.6915028921812392,
+        1.0
+      ],
+      "simultaneous_failure_interval": [
+        0.6915028921812392,
+        1.0
+      ],
+      "unavailable": 0
+    },
+    "n": 64,
+    "ordinary_split": {
+      "all_request_known_rate": 1.0,
+      "available": 10,
+      "available_only_rate": 1.0,
+      "count": 10,
+      "identification_bounds": [
+        1.0,
+        1.0
+      ],
+      "marginal_95_interval": [
+        0.6915028921812392,
+        1.0
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.5240611947344789,
+        1.0
+      ],
+      "simultaneous_failure_interval": [
+        0.5240611947344789,
+        1.0
+      ],
+      "unavailable": 0
+    },
+    "p_value": {
+      "available": 10,
+      "max": 0.01,
+      "median": 0.01,
+      "min": 0.01
+    },
+    "recovered": {
+      "all_request_known_rate": 1.0,
+      "available": 10,
+      "available_only_rate": 1.0,
+      "count": 10,
+      "identification_bounds": [
+        1.0,
+        1.0
+      ],
+      "marginal_95_interval": [
+        0.6915028921812392,
+        1.0
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.6915028921812392,
+        1.0
+      ],
+      "simultaneous_failure_interval": [
+        0.6915028921812392,
+        1.0
+      ],
+      "unavailable": 0
+    },
+    "requested": 10,
+    "selected_k_counts": {
+      "4": 10
+    }
+  },
+  {
+    "ari": {
+      "available": 10,
+      "max": 1.0,
+      "median": 1.0,
+      "min": 0.4878048780487805
+    },
+    "arm": "pca4",
+    "case": "four_complementary",
+    "failed_draws": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "global_rejection": {
+      "all_request_known_rate": 1.0,
+      "available": 10,
+      "available_only_rate": 1.0,
+      "count": 10,
+      "identification_bounds": [
+        1.0,
+        1.0
+      ],
+      "marginal_95_interval": [
+        0.6915028921812392,
+        1.0
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.5240611947344789,
+        1.0
+      ],
+      "simultaneous_failure_interval": [
+        0.5240611947344789,
+        1.0
+      ],
+      "unavailable": 0
+    },
+    "joint_rejection_recovery": {
+      "all_request_known_rate": 0.9,
+      "available": 10,
+      "available_only_rate": 0.9,
+      "count": 9,
+      "identification_bounds": [
+        0.9,
+        0.9
+      ],
+      "marginal_95_interval": [
+        0.5549838829718047,
+        0.9974714214555382
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.5549838829718047,
+        0.9974714214555382
+      ],
+      "simultaneous_failure_interval": [
+        0.5549838829718047,
+        0.9974714214555382
+      ],
+      "unavailable": 0
+    },
+    "n": 64,
+    "ordinary_split": {
+      "all_request_known_rate": 1.0,
+      "available": 10,
+      "available_only_rate": 1.0,
+      "count": 10,
+      "identification_bounds": [
+        1.0,
+        1.0
+      ],
+      "marginal_95_interval": [
+        0.6915028921812392,
+        1.0
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.5240611947344789,
+        1.0
+      ],
+      "simultaneous_failure_interval": [
+        0.5240611947344789,
+        1.0
+      ],
+      "unavailable": 0
+    },
+    "p_value": {
+      "available": 10,
+      "max": 0.01,
+      "median": 0.01,
+      "min": 0.01
+    },
+    "recovered": {
+      "all_request_known_rate": 0.9,
+      "available": 10,
+      "available_only_rate": 0.9,
+      "count": 9,
+      "identification_bounds": [
+        0.9,
+        0.9
+      ],
+      "marginal_95_interval": [
+        0.5549838829718047,
+        0.9974714214555382
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.5549838829718047,
+        0.9974714214555382
+      ],
+      "simultaneous_failure_interval": [
+        0.5549838829718047,
+        0.9974714214555382
+      ],
+      "unavailable": 0
+    },
+    "requested": 10,
+    "selected_k_counts": {
+      "2": 1,
+      "4": 9
+    }
+  },
+  {
+    "ari": {
+      "available": 10,
+      "max": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "arm": "neural",
+    "case": "gaussian_correlated",
+    "failed_draws": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "global_rejection": {
+      "all_request_known_rate": 0.0,
+      "available": 10,
+      "available_only_rate": 0.0,
+      "count": 0,
+      "identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "marginal_95_interval": [
+        0.0,
+        0.3084971078187608
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.0,
+        0.47593880526552035
+      ],
+      "simultaneous_failure_interval": [
+        0.0,
+        0.47593880526552035
+      ],
+      "unavailable": 0
+    },
+    "n": 64,
+    "ordinary_split": {
+      "all_request_known_rate": 0.0,
+      "available": 10,
+      "available_only_rate": 0.0,
+      "count": 0,
+      "identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "marginal_95_interval": [
+        0.0,
+        0.3084971078187608
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.0,
+        0.47593880526552035
+      ],
+      "simultaneous_failure_interval": [
+        0.0,
+        0.47593880526552035
+      ],
+      "unavailable": 0
+    },
+    "p_value": {
+      "available": 10,
+      "max": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    }
+  },
+  {
+    "ari": {
+      "available": 10,
+      "max": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "arm": "pca4",
+    "case": "gaussian_correlated",
+    "failed_draws": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "global_rejection": {
+      "all_request_known_rate": 0.0,
+      "available": 10,
+      "available_only_rate": 0.0,
+      "count": 0,
+      "identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "marginal_95_interval": [
+        0.0,
+        0.3084971078187608
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.0,
+        0.47593880526552035
+      ],
+      "simultaneous_failure_interval": [
+        0.0,
+        0.47593880526552035
+      ],
+      "unavailable": 0
+    },
+    "n": 64,
+    "ordinary_split": {
+      "all_request_known_rate": 0.0,
+      "available": 10,
+      "available_only_rate": 0.0,
+      "count": 0,
+      "identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "marginal_95_interval": [
+        0.0,
+        0.3084971078187608
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.0,
+        0.47593880526552035
+      ],
+      "simultaneous_failure_interval": [
+        0.0,
+        0.47593880526552035
+      ],
+      "unavailable": 0
+    },
+    "p_value": {
+      "available": 10,
+      "max": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    }
+  },
+  {
+    "ari": {
+      "available": 10,
+      "max": 1.0,
+      "median": 1.0,
+      "min": 0.0
+    },
+    "arm": "neural",
+    "case": "gaussian_independent",
+    "failed_draws": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "global_rejection": {
+      "all_request_known_rate": 0.1,
+      "available": 10,
+      "available_only_rate": 0.1,
+      "count": 1,
+      "identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "marginal_95_interval": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.00015635997212343046,
+        0.6033573764685101
+      ],
+      "simultaneous_failure_interval": [
+        0.00015635997212343046,
+        0.6033573764685101
+      ],
+      "unavailable": 0
+    },
+    "n": 64,
+    "ordinary_split": {
+      "all_request_known_rate": 0.1,
+      "available": 10,
+      "available_only_rate": 0.1,
+      "count": 1,
+      "identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "marginal_95_interval": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.00015635997212343046,
+        0.6033573764685101
+      ],
+      "simultaneous_failure_interval": [
+        0.00015635997212343046,
+        0.6033573764685101
+      ],
+      "unavailable": 0
+    },
+    "p_value": {
+      "available": 10,
+      "max": 1.0,
+      "median": 1.0,
+      "min": 0.05
+    },
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    }
+  },
+  {
+    "ari": {
+      "available": 10,
+      "max": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "arm": "pca4",
+    "case": "gaussian_independent",
+    "failed_draws": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "global_rejection": {
+      "all_request_known_rate": 0.0,
+      "available": 10,
+      "available_only_rate": 0.0,
+      "count": 0,
+      "identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "marginal_95_interval": [
+        0.0,
+        0.3084971078187608
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.0,
+        0.47593880526552035
+      ],
+      "simultaneous_failure_interval": [
+        0.0,
+        0.47593880526552035
+      ],
+      "unavailable": 0
+    },
+    "n": 64,
+    "ordinary_split": {
+      "all_request_known_rate": 0.0,
+      "available": 10,
+      "available_only_rate": 0.0,
+      "count": 0,
+      "identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "marginal_95_interval": [
+        0.0,
+        0.3084971078187608
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.0,
+        0.47593880526552035
+      ],
+      "simultaneous_failure_interval": [
+        0.0,
+        0.47593880526552035
+      ],
+      "unavailable": 0
+    },
+    "p_value": {
+      "available": 10,
+      "max": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 10
+    }
+  },
+  {
+    "ari": {
+      "available": 10,
+      "max": 1.0,
+      "median": 1.0,
+      "min": 0.0
+    },
+    "arm": "neural",
+    "case": "heavy_tail",
+    "failed_draws": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "global_rejection": {
+      "all_request_known_rate": 0.1,
+      "available": 10,
+      "available_only_rate": 0.1,
+      "count": 1,
+      "identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "marginal_95_interval": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.00015635997212343046,
+        0.6033573764685101
+      ],
+      "simultaneous_failure_interval": [
+        0.00015635997212343046,
+        0.6033573764685101
+      ],
+      "unavailable": 0
+    },
+    "n": 64,
+    "ordinary_split": {
+      "all_request_known_rate": 0.1,
+      "available": 10,
+      "available_only_rate": 0.1,
+      "count": 1,
+      "identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "marginal_95_interval": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.00015635997212343046,
+        0.6033573764685101
+      ],
+      "simultaneous_failure_interval": [
+        0.00015635997212343046,
+        0.6033573764685101
+      ],
+      "unavailable": 0
+    },
+    "p_value": {
+      "available": 10,
+      "max": 1.0,
+      "median": 1.0,
+      "min": 0.01
+    },
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    }
+  },
+  {
+    "ari": {
+      "available": 10,
+      "max": 1.0,
+      "median": 1.0,
+      "min": 0.0
+    },
+    "arm": "pca4",
+    "case": "heavy_tail",
+    "failed_draws": {
+      "available": 10,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "global_rejection": {
+      "all_request_known_rate": 0.1,
+      "available": 10,
+      "available_only_rate": 0.1,
+      "count": 1,
+      "identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "marginal_95_interval": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.00015635997212343046,
+        0.6033573764685101
+      ],
+      "simultaneous_failure_interval": [
+        0.00015635997212343046,
+        0.6033573764685101
+      ],
+      "unavailable": 0
+    },
+    "n": 64,
+    "ordinary_split": {
+      "all_request_known_rate": 0.1,
+      "available": 10,
+      "available_only_rate": 0.1,
+      "count": 1,
+      "identification_bounds": [
+        0.1,
+        0.1
+      ],
+      "marginal_95_interval": [
+        0.0025285785444617848,
+        0.4450161170281954
+      ],
+      "requested": 10,
+      "simultaneous_95_interval": [
+        0.00015635997212343046,
+        0.6033573764685101
+      ],
+      "simultaneous_failure_interval": [
+        0.00015635997212343046,
+        0.6033573764685101
+      ],
+      "unavailable": 0
+    },
+    "p_value": {
+      "available": 10,
+      "max": 1.0,
+      "median": 1.0,
+      "min": 0.01
+    },
+    "requested": 10,
+    "selected_k_counts": {
+      "1": 9,
+      "2": 1
+    }
+  }
+]

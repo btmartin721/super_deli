@@ -1,0 +1,450 @@
+[
+  {
+    "all_request_known_rate": 1.0,
+    "arm": "neural",
+    "available": 10,
+    "available_only_rate": 1.0,
+    "case": "four_complementary",
+    "count": 10,
+    "endpoint": "global_rejection",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.5240611947344789,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.5240611947344789,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "all_request_known_rate": 1.0,
+    "arm": "neural",
+    "available": 10,
+    "available_only_rate": 1.0,
+    "case": "four_complementary",
+    "count": 10,
+    "endpoint": "ordinary_split",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.5240611947344789,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.5240611947344789,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "all_request_known_rate": 1.0,
+    "arm": "pca4",
+    "available": 10,
+    "available_only_rate": 1.0,
+    "case": "four_complementary",
+    "count": 10,
+    "endpoint": "global_rejection",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.5240611947344789,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.5240611947344789,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "all_request_known_rate": 1.0,
+    "arm": "pca4",
+    "available": 10,
+    "available_only_rate": 1.0,
+    "case": "four_complementary",
+    "count": 10,
+    "endpoint": "ordinary_split",
+    "identification_bounds": [
+      1.0,
+      1.0
+    ],
+    "marginal_95_interval": [
+      0.6915028921812392,
+      1.0
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.5240611947344789,
+      1.0
+    ],
+    "simultaneous_failure_interval": [
+      0.5240611947344789,
+      1.0
+    ],
+    "unavailable": 0
+  },
+  {
+    "all_request_known_rate": 0.0,
+    "arm": "neural",
+    "available": 10,
+    "available_only_rate": 0.0,
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "global_rejection",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.47593880526552035
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.47593880526552035
+    ],
+    "unavailable": 0
+  },
+  {
+    "all_request_known_rate": 0.0,
+    "arm": "neural",
+    "available": 10,
+    "available_only_rate": 0.0,
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "ordinary_split",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.47593880526552035
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.47593880526552035
+    ],
+    "unavailable": 0
+  },
+  {
+    "all_request_known_rate": 0.0,
+    "arm": "pca4",
+    "available": 10,
+    "available_only_rate": 0.0,
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "global_rejection",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.47593880526552035
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.47593880526552035
+    ],
+    "unavailable": 0
+  },
+  {
+    "all_request_known_rate": 0.0,
+    "arm": "pca4",
+    "available": 10,
+    "available_only_rate": 0.0,
+    "case": "gaussian_correlated",
+    "count": 0,
+    "endpoint": "ordinary_split",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.47593880526552035
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.47593880526552035
+    ],
+    "unavailable": 0
+  },
+  {
+    "all_request_known_rate": 0.1,
+    "arm": "neural",
+    "available": 10,
+    "available_only_rate": 0.1,
+    "case": "gaussian_independent",
+    "count": 1,
+    "endpoint": "global_rejection",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      0.0025285785444617848,
+      0.4450161170281954
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ],
+    "simultaneous_failure_interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ],
+    "unavailable": 0
+  },
+  {
+    "all_request_known_rate": 0.1,
+    "arm": "neural",
+    "available": 10,
+    "available_only_rate": 0.1,
+    "case": "gaussian_independent",
+    "count": 1,
+    "endpoint": "ordinary_split",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      0.0025285785444617848,
+      0.4450161170281954
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ],
+    "simultaneous_failure_interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ],
+    "unavailable": 0
+  },
+  {
+    "all_request_known_rate": 0.0,
+    "arm": "pca4",
+    "available": 10,
+    "available_only_rate": 0.0,
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "global_rejection",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.47593880526552035
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.47593880526552035
+    ],
+    "unavailable": 0
+  },
+  {
+    "all_request_known_rate": 0.0,
+    "arm": "pca4",
+    "available": 10,
+    "available_only_rate": 0.0,
+    "case": "gaussian_independent",
+    "count": 0,
+    "endpoint": "ordinary_split",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.0,
+      0.47593880526552035
+    ],
+    "simultaneous_failure_interval": [
+      0.0,
+      0.47593880526552035
+    ],
+    "unavailable": 0
+  },
+  {
+    "all_request_known_rate": 0.1,
+    "arm": "neural",
+    "available": 10,
+    "available_only_rate": 0.1,
+    "case": "heavy_tail",
+    "count": 1,
+    "endpoint": "global_rejection",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      0.0025285785444617848,
+      0.4450161170281954
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ],
+    "simultaneous_failure_interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ],
+    "unavailable": 0
+  },
+  {
+    "all_request_known_rate": 0.1,
+    "arm": "neural",
+    "available": 10,
+    "available_only_rate": 0.1,
+    "case": "heavy_tail",
+    "count": 1,
+    "endpoint": "ordinary_split",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      0.0025285785444617848,
+      0.4450161170281954
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ],
+    "simultaneous_failure_interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ],
+    "unavailable": 0
+  },
+  {
+    "all_request_known_rate": 0.1,
+    "arm": "pca4",
+    "available": 10,
+    "available_only_rate": 0.1,
+    "case": "heavy_tail",
+    "count": 1,
+    "endpoint": "global_rejection",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      0.0025285785444617848,
+      0.4450161170281954
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ],
+    "simultaneous_failure_interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ],
+    "unavailable": 0
+  },
+  {
+    "all_request_known_rate": 0.1,
+    "arm": "pca4",
+    "available": 10,
+    "available_only_rate": 0.1,
+    "case": "heavy_tail",
+    "count": 1,
+    "endpoint": "ordinary_split",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      0.0025285785444617848,
+      0.4450161170281954
+    ],
+    "n": 64,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ],
+    "simultaneous_failure_interval": [
+      0.00015635997212343046,
+      0.6033573764685101
+    ],
+    "unavailable": 0
+  }
+]

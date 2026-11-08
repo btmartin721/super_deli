@@ -1,0 +1,198 @@
+{
+  "configuration": {
+    "artifact_cap_bytes": 4294967296,
+    "fixture": false,
+    "max_projected_seconds": 14400,
+    "max_workers": 2,
+    "min_free_bytes": 8589934592,
+    "schema_version": 1
+  },
+  "settings": {
+    "alpha": 0.05,
+    "cases": [
+      "gaussian_independent",
+      "gaussian_correlated",
+      "four_complementary",
+      "heavy_tail"
+    ],
+    "family": "tied",
+    "interpretation": "Initial N=64 pilot; ten independent datasets per law",
+    "missingness": "error",
+    "mixture_seed": 71323,
+    "n": 64,
+    "n_simulations": 99,
+    "neural_seed": 0,
+    "primary_rates": 16,
+    "raw_features": [
+      4,
+      8
+    ],
+    "raw_null": "Joint raw full Gaussian mean/covariance ML, before any learning",
+    "rng_roots": {
+      "main": [
+        110017,
+        110023,
+        110039,
+        110051
+      ],
+      "preflight": [
+        110059,
+        110063,
+        110069,
+        110083
+      ]
+    },
+    "stability": "disabled",
+    "statistic": "Maximum eligible BIC improvement over K=1"
+  },
+  "arms": {
+    "neural": {
+      "alpha": 0.05,
+      "assume_iid_gaussian_raw_views": true,
+      "max_archive_bytes": 2147483648,
+      "model": {
+        "assume_independent_units": true,
+        "ecology": "ecology",
+        "ecology_features": [
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8"
+        ],
+        "ecology_measurement_scope": "individual",
+        "max_iter": 500,
+        "max_k": 4,
+        "max_pairwise_bytes": 268435456,
+        "max_working_bytes": 268435456,
+        "min_cluster_size": 5,
+        "mixture_seed": 71323,
+        "model_family": "matched_separate_autoencoders_shared_gmm",
+        "morphology": "morphology",
+        "morphology_features": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ],
+        "n_init": 10,
+        "n_subsamples": 0,
+        "random_seed": 0,
+        "reg_covar": 1e-06,
+        "schema_version": 1,
+        "subsampling_seed": 0,
+        "tol": 0.001
+      },
+      "n_simulations": 99,
+      "random_seed": 0,
+      "rank_tol": 1e-12,
+      "schema_version": 1
+    },
+    "pca4": {
+      "alpha": 0.05,
+      "assume_iid_gaussian_raw_views": true,
+      "max_archive_bytes": 2147483648,
+      "model": {
+        "assume_independent_units": true,
+        "ecology": "ecology",
+        "ecology_features": [
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8"
+        ],
+        "ecology_measurement_scope": "individual",
+        "max_iter": 500,
+        "max_k": 4,
+        "max_pairwise_bytes": 268435456,
+        "max_working_bytes": 268435456,
+        "min_cluster_size": 5,
+        "mixture_seed": 71323,
+        "model_family": "matched_separate_autoencoders_shared_gmm",
+        "morphology": "morphology",
+        "morphology_features": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ],
+        "n_init": 10,
+        "n_subsamples": 0,
+        "random_seed": 0,
+        "reg_covar": 1e-06,
+        "schema_version": 1,
+        "subsampling_seed": 0,
+        "tol": 0.001
+      },
+      "n_simulations": 99,
+      "random_seed": 0,
+      "rank_tol": 1e-12,
+      "schema_version": 1
+    }
+  },
+  "training": {
+    "branches": 2,
+    "fusion": "concatenate two standardized coordinates per view; equal view influence; no joint reduction",
+    "per_view": {
+      "batch": "all fit units",
+      "bottleneck_and_output": "linear",
+      "decoder_hidden_widths": [
+        8,
+        16
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "encoder_widths": [
+        16,
+        8,
+        2
+      ],
+      "fit_scope": "transductive unsupervised; no held-out performance claim",
+      "hidden_activation": "tanh",
+      "latent_scaling": "fit-unit mean and population SD",
+      "learning_rate": 0.001,
+      "optimizer": "Adam",
+      "updates": 500,
+      "weight_decay": 0.0001
+    },
+    "total_updates": 1000,
+    "updates_per_view": 500
+  },
+  "counts": {
+    "main": {
+      "candidate_searches": 8008,
+      "legacy_replays": 4,
+      "neural_fits": 8008,
+      "observations": 40,
+      "raw_inputs": 4000,
+      "verified_updates": 4004000,
+      "workflows": 8008
+    },
+    "preflight": {
+      "candidate_searches": 800,
+      "legacy_replays": 0,
+      "neural_fits": 800,
+      "observations": 4,
+      "raw_inputs": 400,
+      "verified_updates": 400000,
+      "workflows": 800
+    }
+  },
+  "python": "3.12.10 | packaged by conda-forge | (main, Apr 10 2025, 22:19:24) [Clang 18.1.8 ]",
+  "platform": "macOS-26.7.1-arm64-arm-64bit",
+  "package_version": "0.68.0.dev0",
+  "software": {
+    "numpy": "2.2.6",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0",
+    "torch": "2.15.0"
+  }
+}

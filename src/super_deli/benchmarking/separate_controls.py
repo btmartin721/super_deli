@@ -128,7 +128,7 @@ class PCAViewsModel:
         return {"unit_ids": alignment["unit_ids"], "scores": np.column_stack(scores)}
 
 
-def fit_pca_four(x, *, config):
+def fit_pca_four(x, *, config, clusterer=None):
     split = len(config.morphology_features)
     saved = {}
     parts = []
@@ -161,7 +161,7 @@ def fit_pca_four(x, *, config):
     scores = np.column_stack(parts)
     singular, rank = fusion_spectrum(scores)
     saved.update(fusion_singular_values=singular, fusion_rank=np.asarray(rank))
-    labels, strength = fit_density_scores(scores, config.density_config())
+    labels, strength = (clusterer or fit_density_scores)(scores, config.density_config())
     diagnostics = {
         "benchmark_control": PCA4,
         "fusion_rank": rank,

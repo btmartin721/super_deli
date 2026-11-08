@@ -1,0 +1,186 @@
+[
+  {
+    "case": "four_complementary",
+    "common_available": 10,
+    "difference_known_contribution": 0.0,
+    "endpoint": "global_rejection",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "interpretation": "Secondary paired neural-minus-PCA event difference; repeated heads are not independent datasets",
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "neural_only": 0,
+    "pca_only": 0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      -0.47593880526552035,
+      0.47593880526552035
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "four_complementary",
+    "common_available": 10,
+    "difference_known_contribution": 0.0,
+    "endpoint": "ordinary_split",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "interpretation": "Secondary paired neural-minus-PCA event difference; repeated heads are not independent datasets",
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "neural_only": 0,
+    "pca_only": 0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      -0.47593880526552035,
+      0.47593880526552035
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 10,
+    "difference_known_contribution": 0.0,
+    "endpoint": "global_rejection",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "interpretation": "Secondary paired neural-minus-PCA event difference; repeated heads are not independent datasets",
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "neural_only": 0,
+    "pca_only": 0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      -0.47593880526552035,
+      0.47593880526552035
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_correlated",
+    "common_available": 10,
+    "difference_known_contribution": 0.0,
+    "endpoint": "ordinary_split",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "interpretation": "Secondary paired neural-minus-PCA event difference; repeated heads are not independent datasets",
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "neural_only": 0,
+    "pca_only": 0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      -0.47593880526552035,
+      0.47593880526552035
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 10,
+    "difference_known_contribution": 0.1,
+    "endpoint": "global_rejection",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "interpretation": "Secondary paired neural-minus-PCA event difference; repeated heads are not independent datasets",
+    "marginal_95_interval": [
+      -0.353547900428297,
+      0.4906361059554523
+    ],
+    "neural_only": 1,
+    "pca_only": 0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      -0.4757824452933969,
+      0.6033573764685101
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "gaussian_independent",
+    "common_available": 10,
+    "difference_known_contribution": 0.1,
+    "endpoint": "ordinary_split",
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "interpretation": "Secondary paired neural-minus-PCA event difference; repeated heads are not independent datasets",
+    "marginal_95_interval": [
+      -0.353547900428297,
+      0.4906361059554523
+    ],
+    "neural_only": 1,
+    "pca_only": 0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      -0.4757824452933969,
+      0.6033573764685101
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "heavy_tail",
+    "common_available": 10,
+    "difference_known_contribution": 0.0,
+    "endpoint": "global_rejection",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "interpretation": "Secondary paired neural-minus-PCA event difference; repeated heads are not independent datasets",
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "neural_only": 0,
+    "pca_only": 0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      -0.47593880526552035,
+      0.47593880526552035
+    ],
+    "unknown_pairs": 0
+  },
+  {
+    "case": "heavy_tail",
+    "common_available": 10,
+    "difference_known_contribution": 0.0,
+    "endpoint": "ordinary_split",
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "interpretation": "Secondary paired neural-minus-PCA event difference; repeated heads are not independent datasets",
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "neural_only": 0,
+    "pca_only": 0,
+    "requested": 10,
+    "simultaneous_95_interval": [
+      -0.47593880526552035,
+      0.47593880526552035
+    ],
+    "unknown_pairs": 0
+  }
+]
