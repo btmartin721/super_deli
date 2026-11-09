@@ -37,6 +37,9 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     register_calibration_study(commands)
+    from super_deli.benchmarking.neural_false_split_cli import register as register_false_splits
+
+    register_false_splits(commands)
     from super_deli.benchmarking.separate_gmm_cli import register as register_shared_encoder_study
 
     register_shared_encoder_study(commands)
@@ -532,6 +535,13 @@ def main(argv: list[str] | None = None) -> int:
     power_budget.add_argument("--output-file", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
+        if args.command == "benchmark-neural-false-splits":
+            from super_deli.benchmarking.neural_false_split_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "benchmark-neural-calibration":
             from super_deli.benchmarking.neural_calibration_cli import dispatch
 

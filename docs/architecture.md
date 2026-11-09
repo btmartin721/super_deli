@@ -593,5 +593,17 @@ The `benchmarking.neural_calibration_*` modules separate simulation, immutable
 source/seed freezing, paired neural/PCA fits, independent numerical auditing,
 resource gates and aggregate reporting. The [initial pilot](neural-calibration-results.md)
 completed with strong standard four-group recovery but an unresolved Gaussian
-false split. Broader false-split validation remains necessary; empirical species
-claims, related sampling and calibration after seed/model selection are excluded.
+false split. The [larger follow-up](neural-false-splits-results.md) assesses two
+Gaussian laws at N=64; empirical species claims, related sampling and calibration
+after seed/model selection remain excluded.
+
+The additive `benchmarking.neural_false_split_*` study layer reuses the unchanged
+raw simulator, calibration engine and numerical auditors. It owns a separately
+versioned design, disjoint seed registry, fixed balanced batches, per-unit evidence
+seals and cumulative runtime/storage gates. Completed units are verified and
+skipped; interrupted units retain unavailable inference and are not replaced.
+Archive binding checks source and runtime hashes, and full calibration replays
+compare scientific results independently of timing metadata. Aggregate reporting
+keeps ordinary splits, global Gaussian rejection and the selected archived
+precision diagnostic separate, with requested denominators and failure bounds.
+See the [batched protocol](neural-false-splits.md).

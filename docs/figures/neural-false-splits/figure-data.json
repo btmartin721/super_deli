@@ -1,0 +1,98 @@
+[
+  {
+    "case": "gaussian_independent",
+    "arm": "neural",
+    "endpoint": "ordinary_split",
+    "count": 10,
+    "requested": 200,
+    "unavailable": 0,
+    "interval": [
+      0.017597036459322344,
+      0.10773040004664505
+    ]
+  },
+  {
+    "case": "gaussian_independent",
+    "arm": "pca4",
+    "endpoint": "ordinary_split",
+    "count": 7,
+    "requested": 200,
+    "unavailable": 0,
+    "interval": [
+      0.009427485087937544,
+      0.08698938678779837
+    ]
+  },
+  {
+    "case": "gaussian_independent",
+    "arm": "neural",
+    "endpoint": "global_rejection",
+    "count": 9,
+    "requested": 200,
+    "unavailable": 0,
+    "interval": [
+      0.014737675188848534,
+      0.10094006974183571
+    ]
+  },
+  {
+    "case": "gaussian_independent",
+    "arm": "pca4",
+    "endpoint": "global_rejection",
+    "count": 7,
+    "requested": 200,
+    "unavailable": 0,
+    "interval": [
+      0.009427485087937544,
+      0.08698938678779837
+    ]
+  },
+  {
+    "case": "gaussian_correlated",
+    "arm": "neural",
+    "endpoint": "ordinary_split",
+    "count": 8,
+    "requested": 200,
+    "unavailable": 0,
+    "interval": [
+      0.012007030840666452,
+      0.09403284505573195
+    ]
+  },
+  {
+    "case": "gaussian_correlated",
+    "arm": "pca4",
+    "endpoint": "ordinary_split",
+    "count": 4,
+    "requested": 200,
+    "unavailable": 0,
+    "interval": [
+      0.0029574512163234807,
+      0.06472982687884216
+    ]
+  },
+  {
+    "case": "gaussian_correlated",
+    "arm": "neural",
+    "endpoint": "global_rejection",
+    "count": 6,
+    "requested": 200,
+    "unavailable": 0,
+    "interval": [
+      0.007028905180803189,
+      0.07978400667793899
+    ]
+  },
+  {
+    "case": "gaussian_correlated",
+    "arm": "pca4",
+    "endpoint": "global_rejection",
+    "count": 3,
+    "requested": 200,
+    "unavailable": 0,
+    "interval": [
+      0.001431886973505136,
+      0.05675001138135566
+    ]
+  }
+]

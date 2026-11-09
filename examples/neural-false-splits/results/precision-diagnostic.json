@@ -1,0 +1,62 @@
+{
+  "source_case": "main/gaussian_independent_0009",
+  "arms": [
+    {
+      "arm": "neural",
+      "original": {
+        "requested": 99,
+        "successful": 99,
+        "failed": 0,
+        "p_value": 0.05,
+        "exceedances": 4,
+        "conditional_null_tail_interval_95": [
+          0.01111674879857596,
+          0.10022790656874936
+        ],
+        "status": "available"
+      },
+      "sensitivity": {
+        "requested": 999,
+        "successful": 999,
+        "failed": 0,
+        "p_value": 0.047,
+        "exceedances": 46,
+        "conditional_null_tail_interval_95": [
+          0.03390560120485019,
+          0.06094401932031201
+        ],
+        "status": "available"
+      }
+    },
+    {
+      "arm": "pca4",
+      "original": {
+        "requested": 99,
+        "successful": 99,
+        "failed": 0,
+        "p_value": 1.0,
+        "exceedances": 99,
+        "conditional_null_tail_interval_95": [
+          0.9634242550165211,
+          1.0
+        ],
+        "status": "available"
+      },
+      "sensitivity": {
+        "requested": 999,
+        "successful": 999,
+        "failed": 0,
+        "p_value": 1.0,
+        "exceedances": 999,
+        "conditional_null_tail_interval_95": [
+          0.9963142371342606,
+          1.0
+        ],
+        "status": "available"
+      }
+    }
+  ],
+  "excluded_from_fresh_rates": true,
+  "historical_pvalues_unchanged": true,
+  "interpretation": "One selected archived case; Monte Carlo precision sensitivity only"
+}

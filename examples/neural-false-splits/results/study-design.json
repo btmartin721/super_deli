@@ -1,0 +1,201 @@
+{
+  "configuration": {
+    "artifact_cap_bytes": 25769803776,
+    "fixture": false,
+    "max_projected_seconds": 144000,
+    "max_workers": 2,
+    "min_free_bytes": 8589934592,
+    "preflight_max_seconds": 7200,
+    "schema_version": 1
+  },
+  "settings": {
+    "alpha": 0.05,
+    "batches": 8,
+    "cases": [
+      "gaussian_independent",
+      "gaussian_correlated"
+    ],
+    "diagnostic_draws": 999,
+    "family": "tied",
+    "interpretation": "N=64 Gaussian false-split validation; no species/selected-K guarantee",
+    "missingness": "error",
+    "mixture_seed": 71323,
+    "n": 64,
+    "n_simulations": 99,
+    "neural_seed": 0,
+    "observations_per_law": 200,
+    "paired_comparisons": 4,
+    "primary_rates": 8,
+    "raw_features": [
+      4,
+      8
+    ],
+    "raw_null": "Joint raw full Gaussian mean/covariance ML, before learning",
+    "rng_namespace": [
+      20261108,
+      690
+    ],
+    "stability": "disabled",
+    "statistic": "Maximum eligible BIC improvement over K=1"
+  },
+  "arms": {
+    "neural": {
+      "alpha": 0.05,
+      "assume_iid_gaussian_raw_views": true,
+      "max_archive_bytes": 2147483648,
+      "model": {
+        "assume_independent_units": true,
+        "ecology": "ecology",
+        "ecology_features": [
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8"
+        ],
+        "ecology_measurement_scope": "individual",
+        "max_iter": 500,
+        "max_k": 4,
+        "max_pairwise_bytes": 268435456,
+        "max_working_bytes": 268435456,
+        "min_cluster_size": 5,
+        "mixture_seed": 71323,
+        "model_family": "matched_separate_autoencoders_shared_gmm",
+        "morphology": "morphology",
+        "morphology_features": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ],
+        "n_init": 10,
+        "n_subsamples": 0,
+        "random_seed": 0,
+        "reg_covar": 1e-06,
+        "schema_version": 1,
+        "subsampling_seed": 0,
+        "tol": 0.001
+      },
+      "n_simulations": 99,
+      "random_seed": 0,
+      "rank_tol": 1e-12,
+      "schema_version": 1
+    },
+    "pca4": {
+      "alpha": 0.05,
+      "assume_iid_gaussian_raw_views": true,
+      "max_archive_bytes": 2147483648,
+      "model": {
+        "assume_independent_units": true,
+        "ecology": "ecology",
+        "ecology_features": [
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8"
+        ],
+        "ecology_measurement_scope": "individual",
+        "max_iter": 500,
+        "max_k": 4,
+        "max_pairwise_bytes": 268435456,
+        "max_working_bytes": 268435456,
+        "min_cluster_size": 5,
+        "mixture_seed": 71323,
+        "model_family": "matched_separate_autoencoders_shared_gmm",
+        "morphology": "morphology",
+        "morphology_features": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ],
+        "n_init": 10,
+        "n_subsamples": 0,
+        "random_seed": 0,
+        "reg_covar": 1e-06,
+        "schema_version": 1,
+        "subsampling_seed": 0,
+        "tol": 0.001
+      },
+      "n_simulations": 99,
+      "random_seed": 0,
+      "rank_tol": 1e-12,
+      "schema_version": 1
+    }
+  },
+  "training": {
+    "branches": 2,
+    "fusion": "concatenate two standardized coordinates per view; equal view influence; no joint reduction",
+    "per_view": {
+      "batch": "all fit units",
+      "bottleneck_and_output": "linear",
+      "decoder_hidden_widths": [
+        8,
+        16
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "encoder_widths": [
+        16,
+        8,
+        2
+      ],
+      "fit_scope": "transductive unsupervised; no held-out performance claim",
+      "hidden_activation": "tanh",
+      "latent_scaling": "fit-unit mean and population SD",
+      "learning_rate": 0.001,
+      "optimizer": "Adam",
+      "updates": 500,
+      "weight_decay": 0.0001
+    },
+    "total_updates": 1000,
+    "updates_per_view": 500
+  },
+  "counts": {
+    "main": {
+      "candidate_searches": 82400,
+      "legacy_replays": 2,
+      "neural_fits": 82400,
+      "observations": 400,
+      "raw_inputs": 41200,
+      "sensitivity_tests": 1,
+      "verified_updates": 41200000,
+      "workflows": 82400
+    },
+    "preflight": {
+      "candidate_searches": 2800,
+      "legacy_replays": 0,
+      "neural_fits": 2800,
+      "observations": 5,
+      "raw_inputs": 1400,
+      "sensitivity_tests": 0,
+      "verified_updates": 1400000,
+      "workflows": 2800
+    }
+  },
+  "python": "3.12.10 | packaged by conda-forge | (main, Apr 10 2025, 22:19:24) [Clang 18.1.8 ]",
+  "platform": "macOS-26.7.1-arm64-arm-64bit",
+  "package_version": "0.69.0.dev0",
+  "software": {
+    "numpy": "2.2.6",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0",
+    "torch": "2.15.0"
+  },
+  "plan_sha256": "e16f6ce6761715c1f2ddef9485c8e963c635cb0ceb3bf3a3d391e327b07ed066",
+  "archived_pilot": {
+    "study": "neural-calibration-20261107",
+    "published_head": "54dd00c5710bb26a5d73115696a8b55b92820695",
+    "selected_case": "main/gaussian_independent_0009",
+    "role": "Archived precision diagnostic; excluded from fresh rates"
+  },
+  "source_map_sha256": "7b1af6fc4efc8987d9a2bd136e49a45587dd1a4ba8af2b3e306a575dd341047b"
+}

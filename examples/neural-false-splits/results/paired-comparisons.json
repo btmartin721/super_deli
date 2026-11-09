@@ -1,0 +1,106 @@
+[
+  {
+    "case": "gaussian_independent",
+    "endpoint": "ordinary_split",
+    "requested": 200,
+    "common_available": 200,
+    "unknown_pairs": 0,
+    "neural_only": 4,
+    "pca_only": 1,
+    "difference_known_contribution": 0.015,
+    "identification_bounds": [
+      0.015,
+      0.015
+    ],
+    "marginal_95_interval": [
+      -0.02705460654876949,
+      0.05531418685470075
+    ],
+    "simultaneous_95_interval": [
+      -0.03616314113149412,
+      0.06471417753624975
+    ],
+    "simultaneous_failure_interval": [
+      -0.03616314113149412,
+      0.06471417753624975
+    ]
+  },
+  {
+    "case": "gaussian_independent",
+    "endpoint": "global_rejection",
+    "requested": 200,
+    "common_available": 200,
+    "unknown_pairs": 0,
+    "neural_only": 3,
+    "pca_only": 1,
+    "difference_known_contribution": 0.01,
+    "identification_bounds": [
+      0.01,
+      0.01
+    ],
+    "marginal_95_interval": [
+      -0.029099204608459557,
+      0.04781922155014817
+    ],
+    "simultaneous_95_interval": [
+      -0.03768870537431246,
+      0.05673436203876326
+    ],
+    "simultaneous_failure_interval": [
+      -0.03768870537431246,
+      0.05673436203876326
+    ]
+  },
+  {
+    "case": "gaussian_correlated",
+    "endpoint": "ordinary_split",
+    "requested": 200,
+    "common_available": 200,
+    "unknown_pairs": 0,
+    "neural_only": 5,
+    "pca_only": 1,
+    "difference_known_contribution": 0.02,
+    "identification_bounds": [
+      0.02,
+      0.02
+    ],
+    "marginal_95_interval": [
+      -0.024665504002149216,
+      0.06253298408683998
+    ],
+    "simultaneous_95_interval": [
+      -0.03426808025668204,
+      0.07236562212856774
+    ],
+    "simultaneous_failure_interval": [
+      -0.03426808025668204,
+      0.07236562212856774
+    ]
+  },
+  {
+    "case": "gaussian_correlated",
+    "endpoint": "global_rejection",
+    "requested": 200,
+    "common_available": 200,
+    "unknown_pairs": 0,
+    "neural_only": 5,
+    "pca_only": 2,
+    "difference_known_contribution": 0.015,
+    "identification_bounds": [
+      0.015,
+      0.015
+    ],
+    "marginal_95_interval": [
+      -0.03318135302779479,
+      0.06175860120313326
+    ],
+    "simultaneous_95_interval": [
+      -0.043452797347470734,
+      0.07197424014617908
+    ],
+    "simultaneous_failure_interval": [
+      -0.043452797347470734,
+      0.07197424014617908
+    ]
+  }
+]

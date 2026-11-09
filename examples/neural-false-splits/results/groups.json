@@ -1,0 +1,244 @@
+[
+  {
+    "case": "gaussian_independent",
+    "arm": "neural",
+    "n": 64,
+    "requested": 200,
+    "selected_k_counts": {
+      "1": 190,
+      "2": 10
+    },
+    "ordinary_split": {
+      "requested": 200,
+      "available": 200,
+      "unavailable": 0,
+      "count": 10,
+      "all_request_known_rate": 0.05,
+      "available_only_rate": 0.05,
+      "identification_bounds": [
+        0.05,
+        0.05
+      ],
+      "marginal_95_interval": [
+        0.02423416547210855,
+        0.09002753770135137
+      ],
+      "simultaneous_95_interval": [
+        0.017597036459322344,
+        0.10773040004664505
+      ],
+      "simultaneous_failure_interval": [
+        0.017597036459322344,
+        0.10773040004664505
+      ],
+      "monte_carlo_standard_error": 0.015411035007422441
+    },
+    "global_rejection": {
+      "requested": 200,
+      "available": 200,
+      "unavailable": 0,
+      "count": 9,
+      "all_request_known_rate": 0.045,
+      "available_only_rate": 0.045,
+      "identification_bounds": [
+        0.045,
+        0.045
+      ],
+      "marginal_95_interval": [
+        0.020780422227004353,
+        0.08370268807585404
+      ],
+      "simultaneous_95_interval": [
+        0.014737675188848534,
+        0.10094006974183571
+      ],
+      "simultaneous_failure_interval": [
+        0.014737675188848534,
+        0.10094006974183571
+      ],
+      "monte_carlo_standard_error": 0.014658615214269049
+    }
+  },
+  {
+    "case": "gaussian_independent",
+    "arm": "pca4",
+    "n": 64,
+    "requested": 200,
+    "selected_k_counts": {
+      "1": 193,
+      "2": 7
+    },
+    "ordinary_split": {
+      "requested": 200,
+      "available": 200,
+      "unavailable": 0,
+      "count": 7,
+      "all_request_known_rate": 0.035,
+      "available_only_rate": 0.035,
+      "identification_bounds": [
+        0.035,
+        0.035
+      ],
+      "marginal_95_interval": [
+        0.014185525898419244,
+        0.0707809983509772
+      ],
+      "simultaneous_95_interval": [
+        0.009427485087937544,
+        0.08698938678779837
+      ],
+      "simultaneous_failure_interval": [
+        0.009427485087937544,
+        0.08698938678779837
+      ],
+      "monte_carlo_standard_error": 0.012995191418367026
+    },
+    "global_rejection": {
+      "requested": 200,
+      "available": 200,
+      "unavailable": 0,
+      "count": 7,
+      "all_request_known_rate": 0.035,
+      "available_only_rate": 0.035,
+      "identification_bounds": [
+        0.035,
+        0.035
+      ],
+      "marginal_95_interval": [
+        0.014185525898419244,
+        0.0707809983509772
+      ],
+      "simultaneous_95_interval": [
+        0.009427485087937544,
+        0.08698938678779837
+      ],
+      "simultaneous_failure_interval": [
+        0.009427485087937544,
+        0.08698938678779837
+      ],
+      "monte_carlo_standard_error": 0.012995191418367026
+    }
+  },
+  {
+    "case": "gaussian_correlated",
+    "arm": "neural",
+    "n": 64,
+    "requested": 200,
+    "selected_k_counts": {
+      "1": 192,
+      "2": 7,
+      "3": 1
+    },
+    "ordinary_split": {
+      "requested": 200,
+      "available": 200,
+      "unavailable": 0,
+      "count": 8,
+      "all_request_known_rate": 0.04,
+      "available_only_rate": 0.04,
+      "identification_bounds": [
+        0.04,
+        0.04
+      ],
+      "marginal_95_interval": [
+        0.017424808994480602,
+        0.07729196822601608
+      ],
+      "simultaneous_95_interval": [
+        0.012007030840666452,
+        0.09403284505573195
+      ],
+      "simultaneous_failure_interval": [
+        0.012007030840666452,
+        0.09403284505573195
+      ],
+      "monte_carlo_standard_error": 0.013856406460551017
+    },
+    "global_rejection": {
+      "requested": 200,
+      "available": 200,
+      "unavailable": 0,
+      "count": 6,
+      "all_request_known_rate": 0.03,
+      "available_only_rate": 0.03,
+      "identification_bounds": [
+        0.03,
+        0.03
+      ],
+      "marginal_95_interval": [
+        0.011087455672254774,
+        0.064150626705027
+      ],
+      "simultaneous_95_interval": [
+        0.007028905180803189,
+        0.07978400667793899
+      ],
+      "simultaneous_failure_interval": [
+        0.007028905180803189,
+        0.07978400667793899
+      ],
+      "monte_carlo_standard_error": 0.012062338081814818
+    }
+  },
+  {
+    "case": "gaussian_correlated",
+    "arm": "pca4",
+    "n": 64,
+    "requested": 200,
+    "selected_k_counts": {
+      "1": 196,
+      "2": 3,
+      "3": 1
+    },
+    "ordinary_split": {
+      "requested": 200,
+      "available": 200,
+      "unavailable": 0,
+      "count": 4,
+      "all_request_known_rate": 0.02,
+      "available_only_rate": 0.02,
+      "identification_bounds": [
+        0.02,
+        0.02
+      ],
+      "marginal_95_interval": [
+        0.005475565879556448,
+        0.0504136090898963
+      ],
+      "simultaneous_95_interval": [
+        0.0029574512163234807,
+        0.06472982687884216
+      ],
+      "simultaneous_failure_interval": [
+        0.0029574512163234807,
+        0.06472982687884216
+      ],
+      "monte_carlo_standard_error": 0.009899494936611665
+    },
+    "global_rejection": {
+      "requested": 200,
+      "available": 200,
+      "unavailable": 0,
+      "count": 3,
+      "all_request_known_rate": 0.015,
+      "available_only_rate": 0.015,
+      "identification_bounds": [
+        0.015,
+        0.015
+      ],
+      "marginal_95_interval": [
+        0.003104107621553509,
+        0.0432082819177126
+      ],
+      "simultaneous_95_interval": [
+        0.001431886973505136,
+        0.05675001138135566
+      ],
+      "simultaneous_failure_interval": [
+        0.001431886973505136,
+        0.05675001138135566
+      ],
+      "monte_carlo_standard_error": 0.008595056718835542
+    }
+  }
+]

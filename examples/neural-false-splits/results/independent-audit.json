@@ -1,0 +1,20 @@
+{
+  "preflight": {
+    "passed": true,
+    "phase": "preflight",
+    "seconds": 43.81953149999026,
+    "neural_fits": 2800,
+    "verified_optimizer_updates": 1400000,
+    "freeze_sha256": "f349f21320483aec957662eecb431d35dd8dd33fa9dafde75a8076c9e830a787",
+    "execution_sha256": "dacdec55314290cdcb40b4ee035f1a226fecfa3275c9e3258b9d3b6525594dba"
+  },
+  "main": {
+    "passed": true,
+    "phase": "main",
+    "seconds": 697.9975792510668,
+    "neural_fits": 82400,
+    "verified_optimizer_updates": 41200000,
+    "freeze_sha256": "f349f21320483aec957662eecb431d35dd8dd33fa9dafde75a8076c9e830a787",
+    "execution_sha256": "47d01763fe0eac639a0413ba207e6e092dc4a9ab067bffdc28c3bfe28b0ef6a2"
+  }
+}

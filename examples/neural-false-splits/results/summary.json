@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "fixture": false,
+  "observations": 400,
+  "observations_per_law": 200,
+  "n": 64,
+  "primary_rates": 8,
+  "secondary_paired_comparisons": 4,
+  "counts": {
+    "main": {
+      "candidate_searches": 82400,
+      "legacy_replays": 2,
+      "neural_fits": 82400,
+      "observations": 400,
+      "raw_inputs": 41200,
+      "sensitivity_tests": 1,
+      "verified_updates": 41200000,
+      "workflows": 82400
+    },
+    "preflight": {
+      "candidate_searches": 2800,
+      "legacy_replays": 0,
+      "neural_fits": 2800,
+      "observations": 5,
+      "raw_inputs": 1400,
+      "sensitivity_tests": 0,
+      "verified_updates": 1400000,
+      "workflows": 2800
+    }
+  },
+  "main_units": 403,
+  "audits": {
+    "preflight": {
+      "passed": true,
+      "phase": "preflight",
+      "seconds": 43.81953149999026,
+      "neural_fits": 2800,
+      "verified_optimizer_updates": 1400000,
+      "freeze_sha256": "f349f21320483aec957662eecb431d35dd8dd33fa9dafde75a8076c9e830a787",
+      "execution_sha256": "dacdec55314290cdcb40b4ee035f1a226fecfa3275c9e3258b9d3b6525594dba"
+    },
+    "main": {
+      "passed": true,
+      "phase": "main",
+      "seconds": 697.9975792510668,
+      "neural_fits": 82400,
+      "verified_optimizer_updates": 41200000,
+      "freeze_sha256": "f349f21320483aec957662eecb431d35dd8dd33fa9dafde75a8076c9e830a787",
+      "execution_sha256": "47d01763fe0eac639a0413ba207e6e092dc4a9ab067bffdc28c3bfe28b0ef6a2"
+    }
+  },
+  "defaults_changed": false,
+  "historical_pvalues_changed": false,
+  "author_contact": false,
+  "calibration_scope": "Approximate fitted raw-Gaussian departure; not selected-K/species significance",
+  "interpretation": "Tested Gaussian laws, N=64, one fixed initialization; no general size guarantee"
+}
