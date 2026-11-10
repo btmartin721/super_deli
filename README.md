@@ -4,7 +4,18 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: larger Gaussian false-split validation.**
+**Current checkpoint: calibrated neural power and group recovery.**
+The [completed paired study](docs/neural-power-results.md) tested 100 fresh
+matched morphology/ecology datasets. Standard and strong four-group signals
+were recovered well, while weak signals often rejected a Gaussian reference
+without recovering all four groups. The PCA/shared-GMM control performed
+similarly; the small cells establish no neural advantage. All 20,400 main
+searches and a 2,200-search preflight passed numerical audits without failed
+pipeline points. The [bounded study interface](docs/neural-power.md) preserves
+completed work and records its approved, exact-parity runtime repair. Defaults,
+historical p-values and empirical gates are unchanged; detailed evidence stays local.
+
+**Previous checkpoint: larger Gaussian false-split validation.**
 The [completed follow-up](docs/neural-false-splits-results.md) tested 400 fresh
 N=64 Gaussian datasets with paired neural/PCA full-pipeline calibration. Neural
 global rejection was 4.5% for independent views and 3.0% for correlated views,

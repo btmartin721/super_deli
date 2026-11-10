@@ -1,0 +1,506 @@
+[
+  {
+    "cell": 0,
+    "n": 64,
+    "arm": "neural",
+    "endpoint": "global_rejection",
+    "signal_multiplier": 0.5,
+    "count": 5,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.08299141409848235,
+      0.9170085859015177
+    ]
+  },
+  {
+    "cell": 1,
+    "n": 64,
+    "arm": "neural",
+    "endpoint": "global_rejection",
+    "signal_multiplier": 1.0,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 2,
+    "n": 64,
+    "arm": "neural",
+    "endpoint": "global_rejection",
+    "signal_multiplier": 1.5,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 0,
+    "n": 64,
+    "arm": "pca4",
+    "endpoint": "global_rejection",
+    "signal_multiplier": 0.5,
+    "count": 3,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.01854844998891023,
+      0.8067431737105883
+    ]
+  },
+  {
+    "cell": 1,
+    "n": 64,
+    "arm": "pca4",
+    "endpoint": "global_rejection",
+    "signal_multiplier": 1.0,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 2,
+    "n": 64,
+    "arm": "pca4",
+    "endpoint": "global_rejection",
+    "signal_multiplier": 1.5,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 0,
+    "n": 64,
+    "arm": "neural",
+    "endpoint": "recovered",
+    "signal_multiplier": 0.5,
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 1,
+    "n": 64,
+    "arm": "neural",
+    "endpoint": "recovered",
+    "signal_multiplier": 1.0,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 2,
+    "n": 64,
+    "arm": "neural",
+    "endpoint": "recovered",
+    "signal_multiplier": 1.5,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 0,
+    "n": 64,
+    "arm": "pca4",
+    "endpoint": "recovered",
+    "signal_multiplier": 0.5,
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 1,
+    "n": 64,
+    "arm": "pca4",
+    "endpoint": "recovered",
+    "signal_multiplier": 1.0,
+    "count": 9,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.36048368935593955,
+      0.9999305338446173
+    ]
+  },
+  {
+    "cell": 2,
+    "n": 64,
+    "arm": "pca4",
+    "endpoint": "recovered",
+    "signal_multiplier": 1.5,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 0,
+    "n": 64,
+    "arm": "neural",
+    "endpoint": "joint_rejection_recovery",
+    "signal_multiplier": 0.5,
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 1,
+    "n": 64,
+    "arm": "neural",
+    "endpoint": "joint_rejection_recovery",
+    "signal_multiplier": 1.0,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 2,
+    "n": 64,
+    "arm": "neural",
+    "endpoint": "joint_rejection_recovery",
+    "signal_multiplier": 1.5,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 0,
+    "n": 64,
+    "arm": "pca4",
+    "endpoint": "joint_rejection_recovery",
+    "signal_multiplier": 0.5,
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 1,
+    "n": 64,
+    "arm": "pca4",
+    "endpoint": "joint_rejection_recovery",
+    "signal_multiplier": 1.0,
+    "count": 9,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.36048368935593955,
+      0.9999305338446173
+    ]
+  },
+  {
+    "cell": 2,
+    "n": 64,
+    "arm": "pca4",
+    "endpoint": "joint_rejection_recovery",
+    "signal_multiplier": 1.5,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 3,
+    "n": 256,
+    "arm": "neural",
+    "endpoint": "global_rejection",
+    "signal_multiplier": 0.5,
+    "count": 9,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.36048368935593955,
+      0.9999305338446173
+    ]
+  },
+  {
+    "cell": 4,
+    "n": 256,
+    "arm": "neural",
+    "endpoint": "global_rejection",
+    "signal_multiplier": 1.0,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 5,
+    "n": 256,
+    "arm": "neural",
+    "endpoint": "global_rejection",
+    "signal_multiplier": 1.5,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 3,
+    "n": 256,
+    "arm": "pca4",
+    "endpoint": "global_rejection",
+    "signal_multiplier": 0.5,
+    "count": 9,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.36048368935593955,
+      0.9999305338446173
+    ]
+  },
+  {
+    "cell": 4,
+    "n": 256,
+    "arm": "pca4",
+    "endpoint": "global_rejection",
+    "signal_multiplier": 1.0,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 5,
+    "n": 256,
+    "arm": "pca4",
+    "endpoint": "global_rejection",
+    "signal_multiplier": 1.5,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 3,
+    "n": 256,
+    "arm": "neural",
+    "endpoint": "recovered",
+    "signal_multiplier": 0.5,
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 4,
+    "n": 256,
+    "arm": "neural",
+    "endpoint": "recovered",
+    "signal_multiplier": 1.0,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 5,
+    "n": 256,
+    "arm": "neural",
+    "endpoint": "recovered",
+    "signal_multiplier": 1.5,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 3,
+    "n": 256,
+    "arm": "pca4",
+    "endpoint": "recovered",
+    "signal_multiplier": 0.5,
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 4,
+    "n": 256,
+    "arm": "pca4",
+    "endpoint": "recovered",
+    "signal_multiplier": 1.0,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 5,
+    "n": 256,
+    "arm": "pca4",
+    "endpoint": "recovered",
+    "signal_multiplier": 1.5,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 3,
+    "n": 256,
+    "arm": "neural",
+    "endpoint": "joint_rejection_recovery",
+    "signal_multiplier": 0.5,
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 4,
+    "n": 256,
+    "arm": "neural",
+    "endpoint": "joint_rejection_recovery",
+    "signal_multiplier": 1.0,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 5,
+    "n": 256,
+    "arm": "neural",
+    "endpoint": "joint_rejection_recovery",
+    "signal_multiplier": 1.5,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 3,
+    "n": 256,
+    "arm": "pca4",
+    "endpoint": "joint_rejection_recovery",
+    "signal_multiplier": 0.5,
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.0,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 4,
+    "n": 256,
+    "arm": "pca4",
+    "endpoint": "joint_rejection_recovery",
+    "signal_multiplier": 1.0,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  },
+  {
+    "cell": 5,
+    "n": 256,
+    "arm": "pca4",
+    "endpoint": "joint_rejection_recovery",
+    "signal_multiplier": 1.5,
+    "count": 10,
+    "requested": 10,
+    "unavailable": 0,
+    "simultaneous_failure_interval": [
+      0.48324097376522934,
+      1.0
+    ]
+  }
+]

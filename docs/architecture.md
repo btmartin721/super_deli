@@ -273,8 +273,10 @@ reference labels need independent evidence and documented uncertainty.
 46. **Opt-in matched neural baseline:** Complete continuous individual morphology/ecology with strict ID alignment, view-balanced reconstruction, frozen numeric transforms and matched native subsampling. The [paired pilot](matched-neural-results.md) retains seed differences, uninformative-view losses and weak moons recovery; no species/significance claim or default change.
 47. **Completed:** Separate matched-view encoders, prespecified weights and frozen-coordinate diagnosis, with legacy parity and independent numerical audits.
 48. **Opt-in model and fresh validation completed:** Separate encoders with a shared-covariance BIC GMM, frozen transforms, conditional memberships and matched subsampling. Standard four-group recovery improved, while Gaussian splitting and small-sample unequal-spread/curved-group limitations remain explicit. PCA controls preclude claiming a neural advantage; no default or significance change.
-49. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
-50. Consolidated user guidance, end-to-end examples and a scoped research release.
+49. **Completed:** Full-pipeline separate-encoder/shared-GMM Gaussian calibration and larger false-split validation, with approximate departure-test interpretation and preserved defaults.
+50. **Completed:** Frozen paired neural/PCA power and group-recovery validation, exact archived replays, approved runtime restoration and separate detection/recovery uncertainty. Weak signals remain unresolved; no neural advantage or default promotion is established. See [results](neural-power-results.md).
+51. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
+52. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The [tabular neural workflow](tabular-neural.md) reuses typed ingestion and a
 shared density-assignment helper. Raw-feature and latent standardization are
@@ -607,3 +609,20 @@ compare scientific results independently of timing metadata. Aggregate reporting
 keeps ordinary splits, global Gaussian rejection and the selected archived
 precision diagnostic separate, with requested denominators and failure bounds.
 See the [batched protocol](neural-false-splits.md).
+
+### Paired calibrated power and group recovery
+
+The additive `benchmarking.neural_power_*` layer specifies independent raw signal,
+Gaussian-control and stress laws around the unchanged neural/PCA calibration
+adapters. The reusable `SealedCalibrationStudy` receives explicit design,
+job, worker and auditor dependencies; existing study engines remain unchanged.
+It verifies sealed whole work units before continuation, retains failed guards
+and interruptions, and charges cumulative serial execution and audit time.
+
+Source-bound archival replay binding, disjoint seed accounting and a separately
+measured preflight precede the main experiment. Reporting separates global
+Gaussian departure, generating-partition recovery and their joint event, with
+requested denominators, failure bounds and simultaneous uncertainty. Public
+exports contain cell aggregates only. This layer adds an operating-range study,
+not a new production model, adaptive configuration choice or species test. See
+the [frozen protocol](neural-power.md).

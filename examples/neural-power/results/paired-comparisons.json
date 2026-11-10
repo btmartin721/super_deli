@@ -1,0 +1,524 @@
+[
+  {
+    "cell": 0,
+    "case": "four_complementary",
+    "n": 64,
+    "signal_multiplier": 0.5,
+    "endpoint": "global_rejection",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 2,
+    "pca_only": 0,
+    "difference_known_contribution": 0.2,
+    "identification_bounds": [
+      0.2,
+      0.2
+    ],
+    "marginal_95_interval": [
+      -0.33734338655555657,
+      0.5990390134542306
+    ],
+    "simultaneous_95_interval": [
+      -0.5127888372112661,
+      0.732070292719883
+    ],
+    "simultaneous_failure_interval": [
+      -0.5127888372112661,
+      0.732070292719883
+    ]
+  },
+  {
+    "cell": 0,
+    "case": "four_complementary",
+    "n": 64,
+    "signal_multiplier": 0.5,
+    "endpoint": "recovered",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 0,
+    "pca_only": 0,
+    "difference_known_contribution": 0.0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "simultaneous_95_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ],
+    "simultaneous_failure_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 0,
+    "case": "four_complementary",
+    "n": 64,
+    "signal_multiplier": 0.5,
+    "endpoint": "joint_rejection_recovery",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 0,
+    "pca_only": 0,
+    "difference_known_contribution": 0.0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "simultaneous_95_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ],
+    "simultaneous_failure_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 1,
+    "case": "four_complementary",
+    "n": 64,
+    "signal_multiplier": 1.0,
+    "endpoint": "global_rejection",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 0,
+    "pca_only": 0,
+    "difference_known_contribution": 0.0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "simultaneous_95_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ],
+    "simultaneous_failure_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 1,
+    "case": "four_complementary",
+    "n": 64,
+    "signal_multiplier": 1.0,
+    "endpoint": "recovered",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 1,
+    "pca_only": 0,
+    "difference_known_contribution": 0.1,
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      -0.353547900428297,
+      0.4906361059554523
+    ],
+    "simultaneous_95_interval": [
+      -0.516689560079388,
+      0.6395163106440606
+    ],
+    "simultaneous_failure_interval": [
+      -0.516689560079388,
+      0.6395163106440606
+    ]
+  },
+  {
+    "cell": 1,
+    "case": "four_complementary",
+    "n": 64,
+    "signal_multiplier": 1.0,
+    "endpoint": "joint_rejection_recovery",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 1,
+    "pca_only": 0,
+    "difference_known_contribution": 0.1,
+    "identification_bounds": [
+      0.1,
+      0.1
+    ],
+    "marginal_95_interval": [
+      -0.353547900428297,
+      0.4906361059554523
+    ],
+    "simultaneous_95_interval": [
+      -0.516689560079388,
+      0.6395163106440606
+    ],
+    "simultaneous_failure_interval": [
+      -0.516689560079388,
+      0.6395163106440606
+    ]
+  },
+  {
+    "cell": 2,
+    "case": "four_complementary",
+    "n": 64,
+    "signal_multiplier": 1.5,
+    "endpoint": "global_rejection",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 0,
+    "pca_only": 0,
+    "difference_known_contribution": 0.0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "simultaneous_95_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ],
+    "simultaneous_failure_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 2,
+    "case": "four_complementary",
+    "n": 64,
+    "signal_multiplier": 1.5,
+    "endpoint": "recovered",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 0,
+    "pca_only": 0,
+    "difference_known_contribution": 0.0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "simultaneous_95_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ],
+    "simultaneous_failure_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 2,
+    "case": "four_complementary",
+    "n": 64,
+    "signal_multiplier": 1.5,
+    "endpoint": "joint_rejection_recovery",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 0,
+    "pca_only": 0,
+    "difference_known_contribution": 0.0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "simultaneous_95_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ],
+    "simultaneous_failure_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 3,
+    "case": "four_complementary",
+    "n": 256,
+    "signal_multiplier": 0.5,
+    "endpoint": "global_rejection",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 0,
+    "pca_only": 0,
+    "difference_known_contribution": 0.0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "simultaneous_95_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ],
+    "simultaneous_failure_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 3,
+    "case": "four_complementary",
+    "n": 256,
+    "signal_multiplier": 0.5,
+    "endpoint": "recovered",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 0,
+    "pca_only": 0,
+    "difference_known_contribution": 0.0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "simultaneous_95_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ],
+    "simultaneous_failure_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 3,
+    "case": "four_complementary",
+    "n": 256,
+    "signal_multiplier": 0.5,
+    "endpoint": "joint_rejection_recovery",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 0,
+    "pca_only": 0,
+    "difference_known_contribution": 0.0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "simultaneous_95_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ],
+    "simultaneous_failure_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 4,
+    "case": "four_complementary",
+    "n": 256,
+    "signal_multiplier": 1.0,
+    "endpoint": "global_rejection",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 0,
+    "pca_only": 0,
+    "difference_known_contribution": 0.0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "simultaneous_95_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ],
+    "simultaneous_failure_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 4,
+    "case": "four_complementary",
+    "n": 256,
+    "signal_multiplier": 1.0,
+    "endpoint": "recovered",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 0,
+    "pca_only": 0,
+    "difference_known_contribution": 0.0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "simultaneous_95_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ],
+    "simultaneous_failure_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 4,
+    "case": "four_complementary",
+    "n": 256,
+    "signal_multiplier": 1.0,
+    "endpoint": "joint_rejection_recovery",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 0,
+    "pca_only": 0,
+    "difference_known_contribution": 0.0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "simultaneous_95_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ],
+    "simultaneous_failure_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 5,
+    "case": "four_complementary",
+    "n": 256,
+    "signal_multiplier": 1.5,
+    "endpoint": "global_rejection",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 0,
+    "pca_only": 0,
+    "difference_known_contribution": 0.0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "simultaneous_95_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ],
+    "simultaneous_failure_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 5,
+    "case": "four_complementary",
+    "n": 256,
+    "signal_multiplier": 1.5,
+    "endpoint": "recovered",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 0,
+    "pca_only": 0,
+    "difference_known_contribution": 0.0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "simultaneous_95_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ],
+    "simultaneous_failure_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ]
+  },
+  {
+    "cell": 5,
+    "case": "four_complementary",
+    "n": 256,
+    "signal_multiplier": 1.5,
+    "endpoint": "joint_rejection_recovery",
+    "requested": 10,
+    "common_available": 10,
+    "unknown_pairs": 0,
+    "neural_only": 0,
+    "pca_only": 0,
+    "difference_known_contribution": 0.0,
+    "identification_bounds": [
+      0.0,
+      0.0
+    ],
+    "marginal_95_interval": [
+      -0.3548049878517842,
+      0.3548049878517842
+    ],
+    "simultaneous_95_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ],
+    "simultaneous_failure_interval": [
+      -0.5167590262347708,
+      0.5167590262347708
+    ]
+  }
+]
