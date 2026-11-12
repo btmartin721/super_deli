@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "observations": 80,
+  "primary_rates": 40,
+  "independently_recomputed_external_metrics": 1136,
+  "main_workflows": 580,
+  "total_neural_trainings": 816,
+  "total_verified_optimizer_updates": 408000,
+  "independent_binomial_inversion": true,
+  "manual_contingency_ari": true,
+  "defaults_changed": false,
+  "pvalues_changed": false
+}

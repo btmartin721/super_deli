@@ -1,0 +1,842 @@
+[
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "pca4",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "neural_0",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "residual_0_vs_logistic",
+    "metric": "five_percentage_point_gain",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "pca4",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "neural_0",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "residual_0_vs_logistic",
+    "metric": "five_percentage_point_gain",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "pca4",
+    "metric": "four_group_recovery",
+    "count": 5,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      1.0,
+      1.0
+    ],
+    "descriptive_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "simultaneous_95_interval": [
+      0.22865252596366314,
+      1.0
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "neural_0",
+    "metric": "four_group_recovery",
+    "count": 5,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      1.0,
+      1.0
+    ],
+    "descriptive_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "simultaneous_95_interval": [
+      0.22865252596366314,
+      1.0
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "residual_0_vs_logistic",
+    "metric": "five_percentage_point_gain",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "pca4",
+    "metric": "four_group_recovery",
+    "count": 5,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      1.0,
+      1.0
+    ],
+    "descriptive_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "simultaneous_95_interval": [
+      0.22865252596366314,
+      1.0
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "neural_0",
+    "metric": "four_group_recovery",
+    "count": 5,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      1.0,
+      1.0
+    ],
+    "descriptive_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "simultaneous_95_interval": [
+      0.22865252596366314,
+      1.0
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "residual_0_vs_logistic",
+    "metric": "five_percentage_point_gain",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "allometric",
+    "n": 64,
+    "arm": "pca4",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "allometric",
+    "n": 64,
+    "arm": "neural_0",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "allometric",
+    "n": 64,
+    "arm": "residual_0_vs_logistic",
+    "metric": "five_percentage_point_gain",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "allometric",
+    "n": 256,
+    "arm": "pca4",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "allometric",
+    "n": 256,
+    "arm": "neural_0",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "allometric",
+    "n": 256,
+    "arm": "residual_0_vs_logistic",
+    "metric": "five_percentage_point_gain",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "saturating",
+    "n": 64,
+    "arm": "pca4",
+    "metric": "four_group_recovery",
+    "count": 5,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      1.0,
+      1.0
+    ],
+    "descriptive_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "simultaneous_95_interval": [
+      0.22865252596366314,
+      1.0
+    ]
+  },
+  {
+    "case": "saturating",
+    "n": 64,
+    "arm": "neural_0",
+    "metric": "four_group_recovery",
+    "count": 5,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      1.0,
+      1.0
+    ],
+    "descriptive_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "simultaneous_95_interval": [
+      0.22865252596366314,
+      1.0
+    ]
+  },
+  {
+    "case": "saturating",
+    "n": 64,
+    "arm": "residual_0_vs_logistic",
+    "metric": "five_percentage_point_gain",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "saturating",
+    "n": 256,
+    "arm": "pca4",
+    "metric": "four_group_recovery",
+    "count": 5,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      1.0,
+      1.0
+    ],
+    "descriptive_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "simultaneous_95_interval": [
+      0.22865252596366314,
+      1.0
+    ]
+  },
+  {
+    "case": "saturating",
+    "n": 256,
+    "arm": "neural_0",
+    "metric": "four_group_recovery",
+    "count": 5,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      1.0,
+      1.0
+    ],
+    "descriptive_95_interval": [
+      0.4781762498950185,
+      1.0
+    ],
+    "simultaneous_95_interval": [
+      0.22865252596366314,
+      1.0
+    ]
+  },
+  {
+    "case": "saturating",
+    "n": 256,
+    "arm": "residual_0_vs_logistic",
+    "metric": "five_percentage_point_gain",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "pca4",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "neural_0",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "residual_0_vs_logistic",
+    "metric": "five_percentage_point_gain",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "pca4",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "neural_0",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "residual_0_vs_logistic",
+    "metric": "five_percentage_point_gain",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "pca4",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "neural_0",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "residual_0_vs_logistic",
+    "metric": "five_percentage_point_gain",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "pca4",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "neural_0",
+    "metric": "four_group_recovery",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "residual_0_vs_logistic",
+    "metric": "five_percentage_point_gain",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "gaussian",
+    "n": 64,
+    "arm": "pca4",
+    "metric": "gaussian_split",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "gaussian",
+    "n": 64,
+    "arm": "neural_0",
+    "metric": "gaussian_split",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "gaussian",
+    "n": 256,
+    "arm": "pca4",
+    "metric": "gaussian_split",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  },
+  {
+    "case": "gaussian",
+    "n": 256,
+    "arm": "neural_0",
+    "metric": "gaussian_split",
+    "count": 0,
+    "requested": 5,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.5218237501049814
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.7713474740363377
+    ]
+  }
+]

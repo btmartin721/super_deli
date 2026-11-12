@@ -1,0 +1,94 @@
+{
+  "version": "0.72.0.dev0",
+  "settings": {
+    "cases": [
+      "linear_weak",
+      "linear_standard",
+      "allometric",
+      "saturating",
+      "combined",
+      "confounded_size",
+      "gaussian",
+      "gradient"
+    ],
+    "inference": "Reference assignment and discovery are separate",
+    "known_class_evaluation": 2048,
+    "logistic": {
+      "C": 1,
+      "max_iter": 2000,
+      "solver": "lbfgs",
+      "tol": 1e-09
+    },
+    "primary_rates": 40,
+    "primary_seed": 0,
+    "rng_namespace": [
+      20261112,
+      720
+    ],
+    "seeds": [
+      0,
+      101,
+      202
+    ],
+    "significance": "disabled",
+    "stability": "disabled",
+    "unfamiliar_class_evaluation": 512
+  },
+  "counts": {
+    "main": {
+      "candidate_component_fits": 1328,
+      "candidate_searches": 332,
+      "legacy_replays": 12,
+      "logistic_fits": 62,
+      "neural_fits": 678,
+      "observations": 80,
+      "verified_updates": 339000,
+      "workflows": 580
+    },
+    "preflight": {
+      "candidate_component_fits": 256,
+      "candidate_searches": 64,
+      "legacy_replays": 0,
+      "logistic_fits": 14,
+      "neural_fits": 138,
+      "observations": 16,
+      "verified_updates": 69000,
+      "workflows": 120
+    }
+  },
+  "training": {
+    "activation": "relu",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "coupled_weight_decay": 0.0001,
+    "device": "cpu",
+    "dtype": "float64",
+    "epsilon": 1e-08,
+    "learning_rate": 0.001,
+    "loss": "mean_multiclass_cross_entropy",
+    "optimizer": "Adam",
+    "residual_blocks": 2,
+    "scope": "Reference classes only; novelty is unassessed",
+    "updates": 500,
+    "width": 32
+  },
+  "independent_datasets_per_cell": 5,
+  "known_class_evaluation_units": 2048,
+  "shifted_evaluation_units": 2048,
+  "unfamiliar_class_units": 512,
+  "network_parameters": {
+    "residual": 4772,
+    "separate_autoencoders": 1072
+  },
+  "parameter_note": "Neural weights/biases only; labels, objectives and training differ. PCA/GMM estimated parameters are retained in native local evidence.",
+  "software": {
+    "numpy": "2.2.6",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0",
+    "torch": "2.15.0"
+  },
+  "source_scope": "Independent matched invented continuous measurements"
+}

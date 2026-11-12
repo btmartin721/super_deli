@@ -23,6 +23,12 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     commands = parser.add_subparsers(dest="command", required=True)
+    from super_deli.workflows.residual_cli import register as register_residual
+
+    register_residual(commands)
+    from super_deli.benchmarking.residual_cli import register as register_residual_study
+
+    register_residual_study(commands)
     from super_deli.benchmarking.coordinate_cli import register as register_coordinates
 
     register_coordinates(commands)
@@ -541,6 +547,20 @@ def main(argv: list[str] | None = None) -> int:
     power_budget.add_argument("--output-file", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
+        if args.command == "benchmark-residual-nonlinear":
+            from super_deli.benchmarking.residual_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command in ("train-matched-residual", "predict-matched-residual"):
+            from super_deli.workflows.residual_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "diagnose-weak-signal":
             from super_deli.benchmarking.weak_signal_cli import dispatch
 

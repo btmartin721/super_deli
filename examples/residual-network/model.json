@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "morphology": "morphology",
+  "ecology": "ecology",
+  "morphology_features": ["m1", "m2", "m3", "m4"],
+  "ecology_features": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8"],
+  "assume_independent_units": true,
+  "ecology_measurement_scope": "individual",
+  "random_seed": 0
+}

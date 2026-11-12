@@ -276,8 +276,9 @@ reference labels need independent evidence and documented uncertainty.
 49. **Completed:** Full-pipeline separate-encoder/shared-GMM Gaussian calibration and larger false-split validation, with approximate departure-test interpretation and preserved defaults.
 50. **Completed:** Frozen paired neural/PCA power and group-recovery validation, exact archived replays, approved runtime restoration and separate detection/recovery uncertainty. Weak signals remain unresolved; no neural advantage or default promotion is established. See [results](neural-power-results.md).
 51. **Diagnostic completed:** Source-bound weak-signal overlap, affine retention, GMM eligibility/BIC and isolated truth-start diagnosis. Known-law reference agreement is not a formal ARI ceiling; PCA retains nearly the same known-law accuracy and no neural advantage is established. See [results](weak-signal-results.md).
-52. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
-53. Consolidated user guidance, end-to-end examples and a scoped research release.
+52. **Opt-in supervised reference model completed:** Complete matched continuous morphology/ecology with a fixed residual classifier, separate ID-bound labels and frozen numeric prediction. The nonlinear pilot separates known-class assignment from discovery, retains nuisance-shift/unfamiliar-class limits and establishes no consistent residual advantage. See [results](residual-nonlinear-results.md).
+53. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
+54. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The [tabular neural workflow](tabular-neural.md) reuses typed ingestion and a
 shared density-assignment helper. Raw-feature and latent standardization are
@@ -640,3 +641,23 @@ have separate roles. Scientific execution blocks Torch/SNPio imports, with no
 representation retraining or historical calibration changes. Reporting preserves
 paired dataset accounting and exports cell aggregates only. See the
 [fixed diagnostic protocol](weak-signal.md).
+
+### Supervised reference assignment and nonlinear measurement pilot
+
+`models.residual_config` owns a separate dependency-free contract;
+`models.residual_network` owns fixed CPU training and NumPy frozen prediction.
+`io.reference_labels` validates a separate ID-bound label source. The workflow
+uses established table ingestion/alignment and training-only equal-view scaling,
+then exports reference predictions with novelty explicitly unassessed. Numeric
+reload checks hashes, shapes, classes and fitted preprocessing without pickle.
+It does not reuse the delimitation-result contract for supervised assignments.
+
+The additive `benchmarking.residual_*` layer reuses `SealedCalibrationStudy`,
+the unchanged native point-only PCA/neural/shared-GMM adapters and existing
+actual-path autoencoder audits. Independent residual derivatives/Adam checks,
+nonlinear measurement equations and external-cohort metrics are separate from
+fitting. Allometry, saturation, nuisance shifts and an unfamiliar reference class
+have frozen seeds/settings. Supervised and discovery tasks stay distinct; all
+three seeds are retained and no model ranking changes defaults or p-values.
+See the [reference interface](residual-reference.md) and
+[bounded protocol](residual-nonlinear.md).

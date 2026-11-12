@@ -4,7 +4,18 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: weak-signal recovery diagnosis.**
+**Current checkpoint: supervised residual reference assignment and nonlinear benchmark.**
+The [opt-in classifier](docs/residual-reference.md) trains on separately declared
+reference labels and predicts complete matched morphology/ecology with frozen
+numeric weights. It assigns known reference classes; novelty remains unassessed.
+The [bounded nonlinear pilot](docs/residual-nonlinear-results.md) found no consistent
+advantage over logistic regression, and both existing discovery pipelines remained
+weak on allometric group recovery despite strong label-informed prediction.
+Nuisance shifts reduced accuracy; unfamiliar classes often received high reference
+confidence. All 700 main/preflight workflows and numerical audits completed.
+Defaults, p-values and empirical gates remain unchanged; detailed evidence stays local.
+
+**Previous checkpoint: weak-signal recovery diagnosis.**
 The [archival diagnostic](docs/weak-signal-results.md) finds substantial generating
 group overlap: the true-parameter raw-data classifier has about 86.9% expected
 individual accuracy, and none of twenty weak datasets reaches the strict

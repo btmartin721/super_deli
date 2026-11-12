@@ -1,0 +1,26 @@
+{
+  "observations": 80,
+  "groups": 16,
+  "primary_rates": 40,
+  "workflows": 580,
+  "neural_trainings": 678,
+  "failed_workflows": 0,
+  "verified_optimizer_updates": 339000,
+  "independent_datasets_per_cell": 5,
+  "neural_seeds": [
+    0,
+    101,
+    202
+  ],
+  "primary_seed": 0,
+  "default_changes": false,
+  "pvalue_changes": false,
+  "species_significance": "not_computed",
+  "author_contact": false,
+  "interpretation": [
+    "Supervised reference assignment and unsupervised discovery are separate tasks",
+    "Allometry and saturation are illustrative measurement laws, not empirical biology",
+    "Unfamiliar-class confidence does not implement unknown-class rejection",
+    "Five datasets/cell support a descriptive pilot; no automatic model promotion"
+  ]
+}
