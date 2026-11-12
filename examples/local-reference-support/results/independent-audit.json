@@ -1,0 +1,16 @@
+{
+  "preflight": {
+    "passed": true,
+    "neural_fits": 24,
+    "verified_optimizer_updates": 12000,
+    "policy_evaluations": 1088,
+    "oracle_evaluations": 1292
+  },
+  "main": {
+    "passed": true,
+    "neural_fits": 240,
+    "verified_optimizer_updates": 120000,
+    "policy_evaluations": 10336,
+    "oracle_evaluations": 12274
+  }
+}

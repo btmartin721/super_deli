@@ -1,0 +1,131 @@
+{
+  "settings": {
+    "arms": [
+      "logistic",
+      "residual_0",
+      "residual_101",
+      "residual_202"
+    ],
+    "benefit": {
+      "max_accuracy_loss": 0.01,
+      "max_unfamiliar_increase": 0.02,
+      "min_accuracy": 0.9,
+      "min_coverage_gain": 0.1
+    },
+    "calibration_n": 160,
+    "cases": [
+      "linear_weak",
+      "linear_standard",
+      "combined",
+      "confounded_size"
+    ],
+    "exclusion_level": 0.05,
+    "known_evaluation_n": 2048,
+    "namespace": [
+      20261112,
+      740
+    ],
+    "neighbors": 5,
+    "oracle_withholding": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "policies": [
+      "unscreened",
+      "probability",
+      "distance",
+      "local"
+    ],
+    "primary_rates": 64,
+    "primary_seed": 0,
+    "reference_model": {
+      "assume_independent_units": true,
+      "ecology": "ecology",
+      "ecology_features": [
+        "e1",
+        "e2",
+        "e3",
+        "e4",
+        "e5",
+        "e6",
+        "e7",
+        "e8"
+      ],
+      "ecology_measurement_scope": "individual",
+      "max_working_bytes": 268435456,
+      "model_family": "matched_residual_reference_classifier",
+      "morphology": "morphology",
+      "morphology_features": [
+        "m1",
+        "m2",
+        "m3",
+        "m4"
+      ],
+      "random_seed": 0,
+      "schema_version": 1
+    },
+    "seeds": [
+      0,
+      101,
+      202
+    ],
+    "shrinkage": 0.1,
+    "significance": "disabled",
+    "stability": "disabled",
+    "target": {
+      "accepted_known_accuracy": 0.9,
+      "far_acceptance": 0.1,
+      "known_acceptance": 0.8,
+      "near_acceptance": 0.1
+    },
+    "unfamiliar_n": 512
+  },
+  "counts": {
+    "main": {
+      "archived_observations": 72,
+      "classifier_trainings": 320,
+      "external_cohorts": 2584,
+      "legacy_replays": 8,
+      "logistic_fits": 80,
+      "neural_fits": 240,
+      "observations": 80,
+      "oracle_evaluations": 12274,
+      "policy_evaluations": 10336,
+      "support_fits": 152,
+      "verified_updates": 120000,
+      "workflows": 616
+    },
+    "preflight": {
+      "archived_observations": 8,
+      "classifier_trainings": 32,
+      "external_cohorts": 272,
+      "legacy_replays": 0,
+      "logistic_fits": 8,
+      "neural_fits": 24,
+      "observations": 8,
+      "oracle_evaluations": 1292,
+      "policy_evaluations": 1088,
+      "support_fits": 16,
+      "verified_updates": 12000,
+      "workflows": 64
+    }
+  },
+  "fixture": false
+}

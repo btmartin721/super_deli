@@ -4,7 +4,17 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: opt-in reference-assignment abstention.**
+**Current checkpoint: opt-in class-local reference support.**
+The [new interface](docs/local-reference-support.md) uses fifth-nearest training
+references while preserving original classifier predictions. The
+[80-fresh/80-archived validation](docs/local-reference-results.md) found no successful
+primary joint-target or bounded-benefit datasets: local support did not resolve
+the coverage/error/unfamiliar-acceptance tradeoff. The ten datasets per cell give
+wide uncertainty; known-class inclusion is distinct from unique assignment.
+This remains experimental supervised reference assignment. Defaults and historical
+p-values are unchanged; detailed evidence stays local and empirical gates stay closed.
+
+**Previous checkpoint: opt-in reference-assignment abstention.**
 The [new interface](docs/reference-abstention.md) preserves original predictions and
 separately withholds unsupported, ambiguous or conflicting reference assignments.
 The [80-dataset validation](docs/reference-abstention-results.md) found that distance

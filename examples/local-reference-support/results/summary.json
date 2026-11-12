@@ -1,0 +1,20 @@
+{
+  "completed": true,
+  "observations": 80,
+  "archived_observations": 80,
+  "main_model_workflows": 616,
+  "main_classifier_trainings": 320,
+  "preflight_classifier_trainings": 32,
+  "main_neural_fits": 240,
+  "preflight_neural_fits": 24,
+  "verified_optimizer_updates": 132000,
+  "failed_workflows": 0,
+  "primary_rates": 64,
+  "paired_comparisons": 32,
+  "fresh_policy_evaluations": 5440,
+  "default_changes": false,
+  "pvalue_changes": false,
+  "author_contact": false,
+  "uncertainty": "Independent training datasets; marginal exact and separate Bonferroni-64 intervals; descriptive pilot",
+  "scope": "Reference support, not species discovery or guaranteed unfamiliar detection"
+}

@@ -278,8 +278,9 @@ reference labels need independent evidence and documented uncertainty.
 51. **Diagnostic completed:** Source-bound weak-signal overlap, affine retention, GMM eligibility/BIC and isolated truth-start diagnosis. Known-law reference agreement is not a formal ARI ceiling; PCA retains nearly the same known-law accuracy and no neural advantage is established. See [results](weak-signal-results.md).
 52. **Opt-in supervised reference model completed:** Complete matched continuous morphology/ecology with a fixed residual classifier, separate ID-bound labels and frozen numeric prediction. The nonlinear pilot separates known-class assignment from discovery, retains nuisance-shift/unfamiliar-class limits and establishes no consistent residual advantage. See [results](residual-nonlinear-results.md).
 53. **Opt-in reference-abstention layer completed:** Separately calibrated raw-distance/probability compatibility sets preserve original residual predictions and distinguish accepted, outside-support, ambiguous and classifier-conflict outcomes. The fresh pilot missed every joint operating target; coverage costs, nearby/overlapping groups and nuisance shifts preclude general novelty or safer-assignment claims. No default or p-value changed. See [results](reference-abstention-results.md).
-54. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
-55. Consolidated user guidance, end-to-end examples and a scoped research release.
+54. **Opt-in class-local reference support completed:** Fifth-nearest original training neighbors, independent classwise calibration and frozen residual prediction preserve existing decision meanings. The 80-fresh/80-archived pilot met no primary joint or benefit target; ambiguity, unfamiliar acceptance and shifted conditions remain limiting. No policy/default or p-value change. See [results](local-reference-results.md).
+55. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
+56. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The [tabular neural workflow](tabular-neural.md) reuses typed ingestion and a
 shared density-assignment helper. Raw-feature and latent standardization are
@@ -684,3 +685,21 @@ from unfamiliar-group acceptance. Classwise and nuisance-shift evidence stays
 explicit; neither a compatible set nor withholding certifies species status.
 See the [interface](reference-abstention.md), [protocol](reference-abstention-validation.md)
 and [results](reference-abstention-results.md).
+
+
+### Opt-in class-local reference support
+
+`models.local_reference_config` defines a separate versioned contract;
+`models.local_reference` reuses the frozen pooled support metric and calculates
+fifth-neighbor scores in bounded chunks. Original training IDs order neighbor
+provenance; calibration IDs only set independent classwise ranks. The additive
+workflow binds classifier, feature, label and source hashes and loads numeric
+artifacts without Torch or pickle. Old policies and model probabilities stay intact.
+
+`benchmarking.local_reference_*` binds sealed predecessor observations and reuses
+the unchanged lifecycle and actual-update residual auditor. Independent direct
+quadratic distances, neighbor/rank audits and analytical known-law density curves
+are distinct from fitting. Reporting retains all neural seeds, classwise ambiguity,
+nuisance/overlap controls and requested denominators. No evaluation label selects
+a rule or default. See the [interface](local-reference-support.md),
+[protocol](local-reference-validation.md) and [negative results](local-reference-results.md).

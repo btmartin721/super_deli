@@ -1,0 +1,1410 @@
+[
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "logistic",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "residual_0",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "logistic",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "joint_target",
+    "policy": "local",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "residual_0",
+    "measure": "bounded_coverage_benefit",
+    "policy": "local_vs_distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5437782317222621
+    ]
+  }
+]

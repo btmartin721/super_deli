@@ -1,0 +1,5098 @@
+{
+  "scope": "Fresh dataset aggregates only; no individual specimens",
+  "ranges": "Observed dataset minima\u2013maxima, not confidence intervals",
+  "coverage_error": [
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.272705078125,
+      "x_mean": 0.272705078125,
+      "y_mean": 0.03471006346859816,
+      "x_range": [
+        0.13720703125,
+        0.3896484375
+      ],
+      "y_range": [
+        0.011261261261261257,
+        0.056710775047258966
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.58251953125,
+      "x_mean": 0.58251953125,
+      "y_mean": 0.059646846379656136,
+      "x_range": [
+        0.4052734375,
+        0.7314453125
+      ],
+      "y_range": [
+        0.035776614310645716,
+        0.09318497913769119
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.24951171875,
+      "x_mean": 0.24951171875,
+      "y_mean": 0.03679375822134261,
+      "x_range": [
+        0.142578125,
+        0.38134765625
+      ],
+      "y_range": [
+        0.01848428835489835,
+        0.0539906103286385
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.2619140625,
+      "x_mean": 0.2619140625,
+      "y_mean": 0.033482917192789084,
+      "x_range": [
+        0.13134765625,
+        0.37451171875
+      ],
+      "y_range": [
+        0.009324009324009341,
+        0.048417132216014847
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.355615234375,
+      "x_mean": 0.355615234375,
+      "y_mean": 0.0577329043759896,
+      "x_range": [
+        0.16845703125,
+        0.615234375
+      ],
+      "y_range": [
+        0.01937046004842613,
+        0.10793650793650789
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.240673828125,
+      "x_mean": 0.240673828125,
+      "y_mean": 0.03589695411864807,
+      "x_range": [
+        0.1376953125,
+        0.365234375
+      ],
+      "y_range": [
+        0.01912568306010931,
+        0.060810810810810856
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.336376953125,
+      "x_mean": 0.336376953125,
+      "y_mean": 0.025364765499899335,
+      "x_range": [
+        0.26904296875,
+        0.470703125
+      ],
+      "y_range": [
+        0.012718600953895098,
+        0.049792531120331995
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.606884765625,
+      "x_mean": 0.606884765625,
+      "y_mean": 0.04137623339117711,
+      "x_range": [
+        0.4931640625,
+        0.65966796875
+      ],
+      "y_range": [
+        0.026732673267326756,
+        0.0558176100628931
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.306591796875,
+      "x_mean": 0.306591796875,
+      "y_mean": 0.02984518333858105,
+      "x_range": [
+        0.23681640625,
+        0.400390625
+      ],
+      "y_range": [
+        0.012612612612612595,
+        0.05731707317073176
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.3275390625,
+      "x_mean": 0.3275390625,
+      "y_mean": 0.022763774686968885,
+      "x_range": [
+        0.26513671875,
+        0.44873046875
+      ],
+      "y_range": [
+        0.008183306055646433,
+        0.04678998911860721
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.44853515625,
+      "x_mean": 0.44853515625,
+      "y_mean": 0.051847085821845426,
+      "x_range": [
+        0.3115234375,
+        0.6787109375
+      ],
+      "y_range": [
+        0.039184952978056464,
+        0.08057553956834529
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.301025390625,
+      "x_mean": 0.301025390625,
+      "y_mean": 0.02963505103533498,
+      "x_range": [
+        0.23291015625,
+        0.3896484375
+      ],
+      "y_range": [
+        0.0146520146520146,
+        0.06015037593984962
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.9435546875,
+      "x_mean": 0.9435546875,
+      "y_mean": 0.0013034565549081556,
+      "x_range": [
+        0.9091796875,
+        0.97509765625
+      ],
+      "y_range": [
+        0.0005083884087442314,
+        0.002673796791443861
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.94482421875,
+      "x_mean": 0.94482421875,
+      "y_mean": 0.0002062536489189637,
+      "x_range": [
+        0.9189453125,
+        0.95947265625
+      ],
+      "y_range": [
+        0.0,
+        0.0010224948875255935
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.936279296875,
+      "x_mean": 0.936279296875,
+      "y_mean": 0.0014656941905205056,
+      "x_range": [
+        0.91552734375,
+        0.96240234375
+      ],
+      "y_range": [
+        0.0,
+        0.0026624068157614644
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.939453125,
+      "x_mean": 0.939453125,
+      "y_mean": 0.0014121994278849304,
+      "x_range": [
+        0.9072265625,
+        0.9716796875
+      ],
+      "y_range": [
+        0.0005133470225873182,
+        0.0032137118371718953
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.951220703125,
+      "x_mean": 0.951220703125,
+      "y_mean": 0.0034717522450488426,
+      "x_range": [
+        0.9267578125,
+        0.96435546875
+      ],
+      "y_range": [
+        0.0005076142131980044,
+        0.011734693877550995
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.931982421875,
+      "x_mean": 0.931982421875,
+      "y_mean": 0.0013117498131767769,
+      "x_range": [
+        0.91357421875,
+        0.958984375
+      ],
+      "y_range": [
+        0.0,
+        0.002137894174238375
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.946875,
+      "x_mean": 0.946875,
+      "y_mean": 0.001247012077108156,
+      "x_range": [
+        0.92041015625,
+        0.96435546875
+      ],
+      "y_range": [
+        0.0,
+        0.004774535809018543
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.95078125,
+      "x_mean": 0.95078125,
+      "y_mean": 0.0004097368999254725,
+      "x_range": [
+        0.93115234375,
+        0.9677734375
+      ],
+      "y_range": [
+        0.0,
+        0.0010303967027305294
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.950537109375,
+      "x_mean": 0.950537109375,
+      "y_mean": 0.0010759624385421663,
+      "x_range": [
+        0.93603515625,
+        0.97265625
+      ],
+      "y_range": [
+        0.0,
+        0.0025974025974025983
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.94423828125,
+      "x_mean": 0.94423828125,
+      "y_mean": 0.0011977775811874314,
+      "x_range": [
+        0.91650390625,
+        0.9580078125
+      ],
+      "y_range": [
+        0.0,
+        0.004262120404901482
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.95361328125,
+      "x_mean": 0.95361328125,
+      "y_mean": 0.0011302591917910388,
+      "x_range": [
+        0.93896484375,
+        0.97119140625
+      ],
+      "y_range": [
+        0.0,
+        0.002589331952356333
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.9482421875,
+      "x_mean": 0.9482421875,
+      "y_mean": 0.0011323547677121403,
+      "x_range": [
+        0.93359375,
+        0.96728515625
+      ],
+      "y_range": [
+        0.0,
+        0.0031282586027111536
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.125439453125,
+      "x_mean": 0.125439453125,
+      "y_mean": 0.009513844088709988,
+      "x_range": [
+        0.01611328125,
+        0.234375
+      ],
+      "y_range": [
+        0.0,
+        0.030303030303030276
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.95234375,
+      "x_mean": 0.95234375,
+      "y_mean": 0.012953487117871632,
+      "x_range": [
+        0.9287109375,
+        0.9755859375
+      ],
+      "y_range": [
+        0.0036250647332988217,
+        0.031011692933401114
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.123583984375,
+      "x_mean": 0.123583984375,
+      "y_mean": 0.010684046521120516,
+      "x_range": [
+        0.01611328125,
+        0.24169921875
+      ],
+      "y_range": [
+        0.0,
+        0.030303030303030276
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.123779296875,
+      "x_mean": 0.123779296875,
+      "y_mean": 0.010291685847475685,
+      "x_range": [
+        0.01611328125,
+        0.23388671875
+      ],
+      "y_range": [
+        0.0,
+        0.030303030303030276
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.94111328125,
+      "x_mean": 0.94111328125,
+      "y_mean": 0.020511361424160112,
+      "x_range": [
+        0.876953125,
+        0.9619140625
+      ],
+      "y_range": [
+        0.004746835443038,
+        0.03950743971267312
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.121826171875,
+      "x_mean": 0.121826171875,
+      "y_mean": 0.01242463722763969,
+      "x_range": [
+        0.01611328125,
+        0.23974609375
+      ],
+      "y_range": [
+        0.00439560439560438,
+        0.030303030303030276
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.13740234375,
+      "x_mean": 0.13740234375,
+      "y_mean": 0.007185736860996617,
+      "x_range": [
+        0.0380859375,
+        0.2255859375
+      ],
+      "y_range": [
+        0.0,
+        0.022026431718061623
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.948193359375,
+      "x_mean": 0.948193359375,
+      "y_mean": 0.003219298466015075,
+      "x_range": [
+        0.91015625,
+        0.97607421875
+      ],
+      "y_range": [
+        0.0,
+        0.006039255158530432
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.20693359375,
+      "x_mean": 0.20693359375,
+      "y_mean": 0.003770500491877926,
+      "x_range": [
+        0.052734375,
+        0.26611328125
+      ],
+      "y_range": [
+        0.0,
+        0.0092592592592593
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.1359375,
+      "x_mean": 0.1359375,
+      "y_mean": 0.008721986001943604,
+      "x_range": [
+        0.03759765625,
+        0.22509765625
+      ],
+      "y_range": [
+        0.0,
+        0.025974025974025983
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.954052734375,
+      "x_mean": 0.954052734375,
+      "y_mean": 0.007341087930615031,
+      "x_range": [
+        0.9248046875,
+        0.9755859375
+      ],
+      "y_range": [
+        0.0025826446280992066,
+        0.01310483870967738
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.20576171875,
+      "x_mean": 0.20576171875,
+      "y_mean": 0.005575736135995868,
+      "x_range": [
+        0.0517578125,
+        0.26123046875
+      ],
+      "y_range": [
+        0.0,
+        0.018867924528301883
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.04921875,
+      "x_mean": 0.04921875,
+      "y_mean": 0.042727462988755446,
+      "x_range": [
+        0.00341796875,
+        0.158203125
+      ],
+      "y_range": [
+        0.0,
+        0.1428571428571429
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.7125,
+      "x_mean": 0.7125,
+      "y_mean": 0.051377178438481684,
+      "x_range": [
+        0.50244140625,
+        0.85107421875
+      ],
+      "y_range": [
+        0.03232323232323231,
+        0.06712564543889843
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.042529296875,
+      "x_mean": 0.042529296875,
+      "y_mean": 0.040429624126916995,
+      "x_range": [
+        0.00341796875,
+        0.1142578125
+      ],
+      "y_range": [
+        0.0,
+        0.1428571428571429
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.051513671875,
+      "x_mean": 0.051513671875,
+      "y_mean": 0.11418600193644483,
+      "x_range": [
+        0.005859375,
+        0.15771484375
+      ],
+      "y_range": [
+        0.021505376344086002,
+        0.41666666666666663
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.625146484375,
+      "x_mean": 0.625146484375,
+      "y_mean": 0.060159977166257,
+      "x_range": [
+        0.2685546875,
+        0.84716796875
+      ],
+      "y_range": [
+        0.03862300587741396,
+        0.07595870206489674
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.044482421875,
+      "x_mean": 0.044482421875,
+      "y_mean": 0.10805225208173823,
+      "x_range": [
+        0.005859375,
+        0.1162109375
+      ],
+      "y_range": [
+        0.016260162601625994,
+        0.41666666666666663
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.042041015625,
+      "x_mean": 0.042041015625,
+      "y_mean": 0.039773410975391596,
+      "x_range": [
+        0.009765625,
+        0.0908203125
+      ],
+      "y_range": [
+        0.0,
+        0.09999999999999998
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.79072265625,
+      "x_mean": 0.79072265625,
+      "y_mean": 0.048710269997358224,
+      "x_range": [
+        0.4443359375,
+        0.91455078125
+      ],
+      "y_range": [
+        0.01758241758241763,
+        0.0704751735184197
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.045068359375,
+      "x_mean": 0.045068359375,
+      "y_mean": 0.03734521892492907,
+      "x_range": [
+        0.01416015625,
+        0.1171875
+      ],
+      "y_range": [
+        0.0,
+        0.08999999999999997
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "distance",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.04296875,
+      "x_mean": 0.04296875,
+      "y_mean": 0.0643935723563396,
+      "x_range": [
+        0.009765625,
+        0.0927734375
+      ],
+      "y_range": [
+        0.0,
+        0.15037593984962405
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "probability",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.59208984375,
+      "x_mean": 0.59208984375,
+      "y_mean": 0.052743862069260364,
+      "x_range": [
+        0.2529296875,
+        0.8544921875
+      ],
+      "y_range": [
+        0.032660902977905915,
+        0.08857142857142852
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "local",
+      "requested": 10,
+      "available": 10,
+      "defined_pairs": 10,
+      "zero_acceptance": 0,
+      "overall_mean_coverage": 0.0455078125,
+      "x_mean": 0.0455078125,
+      "y_mean": 0.06463508997081743,
+      "x_range": [
+        0.01416015625,
+        0.119140625
+      ],
+      "y_range": [
+        0.0,
+        0.15254237288135597
+      ]
+    }
+  ],
+  "unfamiliar_acceptance": [
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.108984375,
+      "range": [
+        0.03125,
+        0.1640625
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0029296875,
+      "range": [
+        0.0,
+        0.01953125
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.346875,
+      "range": [
+        0.13671875,
+        0.59765625
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.9998046875,
+      "range": [
+        0.998046875,
+        1.0
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.086328125,
+      "range": [
+        0.04296875,
+        0.119140625
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0037109375,
+      "range": [
+        0.0,
+        0.01171875
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.1001953125,
+      "range": [
+        0.02734375,
+        0.15625
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0029296875,
+      "range": [
+        0.0,
+        0.01953125
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.234375,
+      "range": [
+        0.080078125,
+        0.416015625
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.9779296875,
+      "range": [
+        0.7890625,
+        1.0
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0791015625,
+      "range": [
+        0.0390625,
+        0.107421875
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0037109375,
+      "range": [
+        0.0,
+        0.01171875
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.1490234375,
+      "range": [
+        0.091796875,
+        0.32421875
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0005859375,
+      "range": [
+        0.0,
+        0.001953125
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.3701171875,
+      "range": [
+        0.234375,
+        0.462890625
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 1.0,
+      "range": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.1482421875,
+      "range": [
+        0.072265625,
+        0.3203125
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0013671875,
+      "range": [
+        0.0,
+        0.005859375
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.13984375,
+      "range": [
+        0.08203125,
+        0.31640625
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0005859375,
+      "range": [
+        0.0,
+        0.001953125
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.3162109375,
+      "range": [
+        0.1640625,
+        0.587890625
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.9970703125,
+      "range": [
+        0.98046875,
+        1.0
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.143359375,
+      "range": [
+        0.0703125,
+        0.31640625
+      ]
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0013671875,
+      "range": [
+        0.0,
+        0.005859375
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.6513671875,
+      "range": [
+        0.53125,
+        0.755859375
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.1015625,
+      "range": [
+        0.021484375,
+        0.189453125
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.38203125,
+      "range": [
+        0.193359375,
+        0.548828125
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 1.0,
+      "range": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.6376953125,
+      "range": [
+        0.533203125,
+        0.740234375
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.123046875,
+      "range": [
+        0.021484375,
+        0.18359375
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.597265625,
+      "range": [
+        0.47265625,
+        0.7265625
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.1015625,
+      "range": [
+        0.021484375,
+        0.189453125
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.533984375,
+      "range": [
+        0.2578125,
+        0.8984375
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 1.0,
+      "range": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.58203125,
+      "range": [
+        0.49609375,
+        0.66796875
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.123046875,
+      "range": [
+        0.021484375,
+        0.18359375
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.6919921875,
+      "range": [
+        0.638671875,
+        0.73828125
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.1107421875,
+      "range": [
+        0.04296875,
+        0.30078125
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.4208984375,
+      "range": [
+        0.294921875,
+        0.626953125
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 1.0,
+      "range": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.678515625,
+      "range": [
+        0.576171875,
+        0.73828125
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.149609375,
+      "range": [
+        0.068359375,
+        0.341796875
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.66875,
+      "range": [
+        0.54296875,
+        0.748046875
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.1107421875,
+      "range": [
+        0.04296875,
+        0.30078125
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.4798828125,
+      "range": [
+        0.337890625,
+        0.638671875
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 1.0,
+      "range": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.6462890625,
+      "range": [
+        0.5234375,
+        0.716796875
+      ]
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.149609375,
+      "range": [
+        0.068359375,
+        0.341796875
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.23125,
+      "range": [
+        0.0078125,
+        0.537109375
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.381640625,
+      "range": [
+        0.0859375,
+        0.673828125
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.7455078125,
+      "range": [
+        0.3984375,
+        0.876953125
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.998828125,
+      "range": [
+        0.99609375,
+        1.0
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.2568359375,
+      "range": [
+        0.0078125,
+        0.6015625
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.3998046875,
+      "range": [
+        0.11328125,
+        0.666015625
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.203515625,
+      "range": [
+        0.009765625,
+        0.494140625
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.3814453125,
+      "range": [
+        0.0859375,
+        0.673828125
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.6923828125,
+      "range": [
+        0.5390625,
+        0.81640625
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.9837890625,
+      "range": [
+        0.94921875,
+        0.998046875
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.223046875,
+      "range": [
+        0.009765625,
+        0.552734375
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.399609375,
+      "range": [
+        0.11328125,
+        0.666015625
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.44140625,
+      "range": [
+        0.271484375,
+        0.5546875
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.45078125,
+      "range": [
+        0.228515625,
+        0.697265625
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.8296875,
+      "range": [
+        0.638671875,
+        0.943359375
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 1.0,
+      "range": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.5091796875,
+      "range": [
+        0.322265625,
+        0.6875
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.4533203125,
+      "range": [
+        0.255859375,
+        0.80859375
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.3822265625,
+      "range": [
+        0.171875,
+        0.486328125
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.45078125,
+      "range": [
+        0.228515625,
+        0.697265625
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.739453125,
+      "range": [
+        0.4921875,
+        0.8984375
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.999609375,
+      "range": [
+        0.998046875,
+        1.0
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.4533203125,
+      "range": [
+        0.21875,
+        0.6015625
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.4533203125,
+      "range": [
+        0.255859375,
+        0.80859375
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0392578125,
+      "range": [
+        0.009765625,
+        0.09765625
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.071875,
+      "range": [
+        0.0,
+        0.220703125
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.5357421875,
+      "range": [
+        0.33984375,
+        0.796875
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.996875,
+      "range": [
+        0.98828125,
+        1.0
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.03046875,
+      "range": [
+        0.0078125,
+        0.05859375
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0763671875,
+      "range": [
+        0.0,
+        0.279296875
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.04140625,
+      "range": [
+        0.01171875,
+        0.095703125
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0720703125,
+      "range": [
+        0.0,
+        0.220703125
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.4583984375,
+      "range": [
+        0.3046875,
+        0.70703125
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.994921875,
+      "range": [
+        0.974609375,
+        1.0
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0326171875,
+      "range": [
+        0.009765625,
+        0.05859375
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0765625,
+      "range": [
+        0.0,
+        0.279296875
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.031640625,
+      "range": [
+        0.005859375,
+        0.0625
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0296875,
+      "range": [
+        0.0,
+        0.0859375
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.5640625,
+      "range": [
+        0.2265625,
+        0.798828125
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.997265625,
+      "range": [
+        0.990234375,
+        1.0
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0349609375,
+      "range": [
+        0.009765625,
+        0.05859375
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "logistic",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.02734375,
+      "range": [
+        0.0,
+        0.072265625
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0326171875,
+      "range": [
+        0.00390625,
+        0.0703125
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "distance",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0296875,
+      "range": [
+        0.0,
+        0.0859375
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.4875,
+      "range": [
+        0.228515625,
+        0.71875
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "probability",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.980859375,
+      "range": [
+        0.953125,
+        1.0
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "near",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.0359375,
+      "range": [
+        0.00390625,
+        0.06640625
+      ]
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "arm": "residual_0",
+      "policy": "local",
+      "cohort": "far",
+      "requested": 10,
+      "available": 10,
+      "mean": 0.02734375,
+      "range": [
+        0.0,
+        0.072265625
+      ]
+    }
+  ],
+  "known_law": [
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.957470703125,
+      "y_mean": 0.758203125,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.903857421875,
+      "y_mean": 0.5294921875,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.849169921875,
+      "y_mean": 0.3615234375,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.80244140625,
+      "y_mean": 0.2583984375,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.7482421875,
+      "y_mean": 0.17265625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.69794921875,
+      "y_mean": 0.1232421875,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.649755859375,
+      "y_mean": 0.083203125,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.58623046875,
+      "y_mean": 0.051171875,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.54033203125,
+      "y_mean": 0.035546875,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.4943359375,
+      "y_mean": 0.025,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.446337890625,
+      "y_mean": 0.0134765625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.404833984375,
+      "y_mean": 0.0099609375,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.357470703125,
+      "y_mean": 0.00546875,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.29423828125,
+      "y_mean": 0.0021484375,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.238037109375,
+      "y_mean": 0.0005859375,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.18701171875,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.150341796875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.100732421875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.05322265625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.957470703125,
+      "y_mean": 0.0009765625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.903857421875,
+      "y_mean": 0.00078125,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.849169921875,
+      "y_mean": 0.00078125,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.80244140625,
+      "y_mean": 0.000390625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.7482421875,
+      "y_mean": 0.000390625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.69794921875,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.649755859375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.58623046875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.54033203125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.4943359375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.446337890625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.404833984375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.357470703125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.29423828125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.238037109375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.18701171875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.150341796875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.100732421875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.05322265625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.951806640625,
+      "y_mean": 0.7302734375,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.90595703125,
+      "y_mean": 0.5318359375,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.858203125,
+      "y_mean": 0.3814453125,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.805322265625,
+      "y_mean": 0.2634765625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.753369140625,
+      "y_mean": 0.1861328125,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.70107421875,
+      "y_mean": 0.122265625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.649267578125,
+      "y_mean": 0.083203125,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.6078125,
+      "y_mean": 0.0609375,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.559130859375,
+      "y_mean": 0.0400390625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.518310546875,
+      "y_mean": 0.0265625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.465673828125,
+      "y_mean": 0.0166015625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.41650390625,
+      "y_mean": 0.008984375,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.3572265625,
+      "y_mean": 0.004296875,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.302001953125,
+      "y_mean": 0.0015625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.242822265625,
+      "y_mean": 0.000390625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.18837890625,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.141943359375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.100927734375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.0572265625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.951806640625,
+      "y_mean": 0.0005859375,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.90595703125,
+      "y_mean": 0.0005859375,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.858203125,
+      "y_mean": 0.000390625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.805322265625,
+      "y_mean": 0.000390625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.753369140625,
+      "y_mean": 0.000390625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.70107421875,
+      "y_mean": 0.000390625,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.649267578125,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.6078125,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.559130859375,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.518310546875,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.465673828125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.41650390625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.3572265625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.302001953125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.242822265625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.18837890625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.141943359375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.100927734375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_weak",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.0572265625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.94248046875,
+      "y_mean": 0.0892578125,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.897900390625,
+      "y_mean": 0.0421875,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.8505859375,
+      "y_mean": 0.0169921875,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.806396484375,
+      "y_mean": 0.009375,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.7515625,
+      "y_mean": 0.0041015625,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.694482421875,
+      "y_mean": 0.0017578125,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.640966796875,
+      "y_mean": 0.00078125,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.595361328125,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.5427734375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.496435546875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.447412109375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.40400390625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.34638671875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.297607421875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.245751953125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.20029296875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.15048828125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.104638671875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.04833984375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.94248046875,
+      "y_mean": 0.0115234375,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.897900390625,
+      "y_mean": 0.0060546875,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.8505859375,
+      "y_mean": 0.0037109375,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.806396484375,
+      "y_mean": 0.002734375,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.7515625,
+      "y_mean": 0.001171875,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.694482421875,
+      "y_mean": 0.00078125,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.640966796875,
+      "y_mean": 0.0005859375,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.595361328125,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.5427734375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.496435546875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.447412109375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.40400390625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.34638671875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.297607421875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.245751953125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.20029296875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.15048828125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.104638671875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.04833984375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.954638671875,
+      "y_mean": 0.1111328125,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.90322265625,
+      "y_mean": 0.03828125,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.848828125,
+      "y_mean": 0.01640625,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.79931640625,
+      "y_mean": 0.0080078125,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.760302734375,
+      "y_mean": 0.0052734375,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.7126953125,
+      "y_mean": 0.0029296875,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.662841796875,
+      "y_mean": 0.0009765625,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.6205078125,
+      "y_mean": 0.0005859375,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.557373046875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.5056640625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.454443359375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.411376953125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.366259765625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.31689453125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.265185546875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.2134765625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.154736328125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.109765625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.05439453125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.954638671875,
+      "y_mean": 0.01328125,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.90322265625,
+      "y_mean": 0.0041015625,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.848828125,
+      "y_mean": 0.00234375,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.79931640625,
+      "y_mean": 0.001953125,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.760302734375,
+      "y_mean": 0.0013671875,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.7126953125,
+      "y_mean": 0.0005859375,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.662841796875,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.6205078125,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.557373046875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.5056640625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.454443359375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.411376953125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.366259765625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.31689453125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.265185546875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.2134765625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.154736328125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.109765625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "linear_standard",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.05439453125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.949072265625,
+      "y_mean": 0.11328125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.896435546875,
+      "y_mean": 0.0392578125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.8455078125,
+      "y_mean": 0.0162109375,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.7919921875,
+      "y_mean": 0.00703125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.743212890625,
+      "y_mean": 0.0033203125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.698095703125,
+      "y_mean": 0.0015625,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.653857421875,
+      "y_mean": 0.00078125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.598388671875,
+      "y_mean": 0.0005859375,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.553271484375,
+      "y_mean": 0.000390625,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.50068359375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.458984375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.41806640625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.36484375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.313330078125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.265966796875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.217919921875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.16630859375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.1068359375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.05859375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.949072265625,
+      "y_mean": 0.0142578125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.896435546875,
+      "y_mean": 0.0072265625,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.8455078125,
+      "y_mean": 0.003515625,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.7919921875,
+      "y_mean": 0.001953125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.743212890625,
+      "y_mean": 0.001171875,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.698095703125,
+      "y_mean": 0.0005859375,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.653857421875,
+      "y_mean": 0.0005859375,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.598388671875,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.553271484375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.50068359375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.458984375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.41806640625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.36484375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.313330078125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.265966796875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.217919921875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.16630859375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.1068359375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.05859375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.94658203125,
+      "y_mean": 0.1064453125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.894140625,
+      "y_mean": 0.03671875,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.839599609375,
+      "y_mean": 0.014453125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.79287109375,
+      "y_mean": 0.0080078125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.753564453125,
+      "y_mean": 0.0052734375,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.70126953125,
+      "y_mean": 0.0021484375,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.6576171875,
+      "y_mean": 0.0005859375,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.60283203125,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.55771484375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.502099609375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.43662109375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.388720703125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.34326171875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.294970703125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.2466796875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.200830078125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.15380859375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.10546875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.058740234375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.94658203125,
+      "y_mean": 0.0150390625,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.894140625,
+      "y_mean": 0.00703125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.839599609375,
+      "y_mean": 0.0033203125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.79287109375,
+      "y_mean": 0.00234375,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.753564453125,
+      "y_mean": 0.0017578125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.70126953125,
+      "y_mean": 0.0013671875,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.6576171875,
+      "y_mean": 0.00078125,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.60283203125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.55771484375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.502099609375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.43662109375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.388720703125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.34326171875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.294970703125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.2466796875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.200830078125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.15380859375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.10546875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "combined",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.058740234375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.94697265625,
+      "y_mean": 0.68828125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.89326171875,
+      "y_mean": 0.4630859375,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.850634765625,
+      "y_mean": 0.340234375,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.800537109375,
+      "y_mean": 0.2330078125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.75146484375,
+      "y_mean": 0.1560546875,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.702978515625,
+      "y_mean": 0.1015625,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.641845703125,
+      "y_mean": 0.05390625,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.596533203125,
+      "y_mean": 0.03125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.55068359375,
+      "y_mean": 0.0158203125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.50400390625,
+      "y_mean": 0.0060546875,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.44326171875,
+      "y_mean": 0.0015625,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.40078125,
+      "y_mean": 0.00078125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.35224609375,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.303125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.253564453125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.204833984375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.162451171875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.116552734375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "near",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.066650390625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.94697265625,
+      "y_mean": 0.001171875,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.89326171875,
+      "y_mean": 0.00078125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.850634765625,
+      "y_mean": 0.00078125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.800537109375,
+      "y_mean": 0.000390625,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.75146484375,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.702978515625,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.641845703125,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.596533203125,
+      "y_mean": 0.0001953125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.55068359375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.50400390625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.44326171875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.40078125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.35224609375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.303125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.253564453125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.204833984375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.162451171875,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.116552734375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 64,
+      "cohort": "far",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.066650390625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.9548828125,
+      "y_mean": 0.7359375,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.916650390625,
+      "y_mean": 0.5513671875,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.86328125,
+      "y_mean": 0.3560546875,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.809130859375,
+      "y_mean": 0.2333984375,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.757763671875,
+      "y_mean": 0.1509765625,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.7091796875,
+      "y_mean": 0.092578125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.656689453125,
+      "y_mean": 0.0552734375,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.600732421875,
+      "y_mean": 0.0265625,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.548779296875,
+      "y_mean": 0.0111328125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.498974609375,
+      "y_mean": 0.0037109375,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.4458984375,
+      "y_mean": 0.000390625,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.3923828125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.341162109375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.291259765625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.2505859375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.19931640625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.15634765625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.1080078125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "near",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.06083984375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.05,
+      "x_mean": 0.9548828125,
+      "y_mean": 0.0009765625,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.1,
+      "x_mean": 0.916650390625,
+      "y_mean": 0.00078125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.15,
+      "x_mean": 0.86328125,
+      "y_mean": 0.00078125,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.2,
+      "x_mean": 0.809130859375,
+      "y_mean": 0.0005859375,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.25,
+      "x_mean": 0.757763671875,
+      "y_mean": 0.0005859375,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.3,
+      "x_mean": 0.7091796875,
+      "y_mean": 0.0005859375,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.35,
+      "x_mean": 0.656689453125,
+      "y_mean": 0.0005859375,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.4,
+      "x_mean": 0.600732421875,
+      "y_mean": 0.000390625,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.45,
+      "x_mean": 0.548779296875,
+      "y_mean": 0.000390625,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.5,
+      "x_mean": 0.498974609375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.55,
+      "x_mean": 0.4458984375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.6,
+      "x_mean": 0.3923828125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.65,
+      "x_mean": 0.341162109375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.7,
+      "x_mean": 0.291259765625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.75,
+      "x_mean": 0.2505859375,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.8,
+      "x_mean": 0.19931640625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.85,
+      "x_mean": 0.15634765625,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.9,
+      "x_mean": 0.1080078125,
+      "y_mean": 0.0,
+      "available": 10
+    },
+    {
+      "case": "confounded_size",
+      "n": 256,
+      "cohort": "far",
+      "nominal_withholding": 0.95,
+      "x_mean": 0.06083984375,
+      "y_mean": 0.0,
+      "available": 10
+    }
+  ]
+}
