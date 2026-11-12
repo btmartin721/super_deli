@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "fixture": false,
+  "observations": 80,
+  "groups": 8,
+  "reference_evaluations": 240,
+  "archived_candidate_densities": 640,
+  "component_fits": 200,
+  "failed_diagnostics": 0,
+  "neural_training": 0,
+  "new_datasets": 0,
+  "calibration_draws": 0,
+  "defaults_changed": false,
+  "pvalues_changed": false,
+  "author_contact": false,
+  "interpretation": "Diagnostic references and truth starts; no ARI/species guarantee"
+}

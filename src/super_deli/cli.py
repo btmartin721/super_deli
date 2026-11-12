@@ -43,6 +43,9 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.benchmarking.neural_power_cli import register as register_power_study
 
     register_power_study(commands)
+    from super_deli.benchmarking.weak_signal_cli import register as register_weak_signal
+
+    register_weak_signal(commands)
     from super_deli.benchmarking.separate_gmm_cli import register as register_shared_encoder_study
 
     register_shared_encoder_study(commands)
@@ -538,6 +541,13 @@ def main(argv: list[str] | None = None) -> int:
     power_budget.add_argument("--output-file", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
+        if args.command == "diagnose-weak-signal":
+            from super_deli.benchmarking.weak_signal_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "benchmark-neural-power":
             from super_deli.benchmarking.neural_power_cli import dispatch
 

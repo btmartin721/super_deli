@@ -1,0 +1,88 @@
+{
+  "configuration": {
+    "artifact_cap_bytes": 1073741824,
+    "fixture": false,
+    "max_projected_seconds": 1800,
+    "max_workers": 2,
+    "min_free_bytes": 8589934592,
+    "preflight_max_seconds": 600,
+    "schema_version": 1
+  },
+  "settings": {
+    "interpretation": "Diagnostic references are not ARI ceilings",
+    "known_prior": "Equal marginal; no fixed-capacity assignment",
+    "maximum_k": 4,
+    "neural_training": false,
+    "new_pvalues": false,
+    "recovery": "K=4 AND ARI>=0.8",
+    "reference_noise_sd": 0.15,
+    "signal_multipliers": [
+      0.5,
+      1.0,
+      1.5
+    ],
+    "truth_starts": 1
+  },
+  "arms": {
+    "neural": {
+      "covariance_type": "tied",
+      "max_iter": 500,
+      "max_k": 4,
+      "max_working_bytes": 268435456,
+      "min_cluster_size": 5,
+      "n_init": 10,
+      "random_seed": 71323,
+      "reg_covar": 1e-06,
+      "selection_criterion": "bic",
+      "tol": 0.001
+    },
+    "pca4": {
+      "covariance_type": "tied",
+      "max_iter": 500,
+      "max_k": 4,
+      "max_working_bytes": 268435456,
+      "min_cluster_size": 5,
+      "n_init": 10,
+      "random_seed": 71323,
+      "reg_covar": 1e-06,
+      "selection_criterion": "bic",
+      "tol": 0.001
+    }
+  },
+  "counts": {
+    "main": {
+      "gmm_searches": 20,
+      "legacy_replays": 0,
+      "maximum_component_fits": 200,
+      "maximum_em_starts": 920,
+      "neural_fits": 0,
+      "observations": 80,
+      "reference_evaluations": 240,
+      "truth_diagnostics": 120,
+      "verified_updates": 0,
+      "workflows": 200
+    },
+    "preflight": {
+      "gmm_searches": 4,
+      "legacy_replays": 0,
+      "maximum_component_fits": 28,
+      "maximum_em_starts": 172,
+      "neural_fits": 0,
+      "observations": 8,
+      "reference_evaluations": 24,
+      "truth_diagnostics": 12,
+      "verified_updates": 0,
+      "workflows": 28
+    }
+  },
+  "software": {
+    "numpy": "2.2.6",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "package_version": "0.71.0.dev0",
+  "plan_sha256": "f900d9e3388d04cf1bbee003ff2792a9036a30b8cf3bdaaacf2f075ea3133b2e",
+  "source_map_sha256": "820d7853d8e0dcd6c2aed3574a9a66bba6301e876de6448185db1a8807c4eaa6",
+  "source_head": "cf6082d383f15a5b058c49585f5b4bbbfa4e0aa6"
+}

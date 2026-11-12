@@ -275,8 +275,9 @@ reference labels need independent evidence and documented uncertainty.
 48. **Opt-in model and fresh validation completed:** Separate encoders with a shared-covariance BIC GMM, frozen transforms, conditional memberships and matched subsampling. Standard four-group recovery improved, while Gaussian splitting and small-sample unequal-spread/curved-group limitations remain explicit. PCA controls preclude claiming a neural advantage; no default or significance change.
 49. **Completed:** Full-pipeline separate-encoder/shared-GMM Gaussian calibration and larger false-split validation, with approximate departure-test interpretation and preserved defaults.
 50. **Completed:** Frozen paired neural/PCA power and group-recovery validation, exact archived replays, approved runtime restoration and separate detection/recovery uncertainty. Weak signals remain unresolved; no neural advantage or default promotion is established. See [results](neural-power-results.md).
-51. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
-52. Consolidated user guidance, end-to-end examples and a scoped research release.
+51. **Diagnostic completed:** Source-bound weak-signal overlap, affine retention, GMM eligibility/BIC and isolated truth-start diagnosis. Known-law reference agreement is not a formal ARI ceiling; PCA retains nearly the same known-law accuracy and no neural advantage is established. See [results](weak-signal-results.md).
+52. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
+53. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The [tabular neural workflow](tabular-neural.md) reuses typed ingestion and a
 shared density-assignment helper. Raw-feature and latent standardization are
@@ -626,3 +627,16 @@ requested denominators, failure bounds and simultaneous uncertainty. Public
 exports contain cell aggregates only. This layer adds an operating-range study,
 not a new production model, adaptive configuration choice or species test. See
 the [frozen protocol](neural-power.md).
+
+
+### Archival weak-signal diagnosis
+
+`benchmarking.weak_signal_*` binds original complete unit inventories and extracts
+only observed raw/coordinate evidence. Its dependency-free contract and explicit
+source-lifecycle dependencies reuse `SealedCalibrationStudy`; existing kernels
+and study engines remain unchanged. Known Gaussian references, independent dense
+and affine audits, exact native-head replays and isolated supervised truth starts
+have separate roles. Scientific execution blocks Torch/SNPio imports, with no
+representation retraining or historical calibration changes. Reporting preserves
+paired dataset accounting and exports cell aggregates only. See the
+[fixed diagnostic protocol](weak-signal.md).

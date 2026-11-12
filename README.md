@@ -4,7 +4,20 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: calibrated neural power and group recovery.**
+**Current checkpoint: weak-signal recovery diagnosis.**
+The [archival diagnostic](docs/weak-signal-results.md) finds substantial generating
+group overlap: the true-parameter raw-data classifier has about 86.9% expected
+individual accuracy, and none of twenty weak datasets reaches the strict
+four-group/ARI criterion under that reference. PCA preserves nearly the same
+known-law accuracy. BIC favors fewer components; fixed-K and truth-informed
+fits do not restore weak recovery. One isolated standard-signal PCA case shows
+an optimization limitation. These are diagnostic findings, not formal ARI
+ceilings or species guarantees. The [opt-in interface](docs/weak-signal.md)
+reuses frozen data/coordinates; all 228 component fits and audits passed without
+new neural training or calibration draws. Defaults and p-values remain unchanged;
+detailed evidence stays local.
+
+**Previous checkpoint: calibrated neural power and group recovery.**
 The [completed paired study](docs/neural-power-results.md) tested 100 fresh
 matched morphology/ecology datasets. Standard and strong four-group signals
 were recovered well, while weak signals often rejected a Gaussian reference

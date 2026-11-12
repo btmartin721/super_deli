@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "observations_checked": 80,
+  "groups_checked": 8,
+  "main_component_fits_checked": 200,
+  "preflight_component_fits_checked": 28,
+  "source_heads_checked": 160,
+  "known_references_checked": 240,
+  "independent_ari_and_interval_checks": true,
+  "seconds": 0.3370809580083005,
+  "audits": {
+    "preflight": {
+      "passed": true,
+      "phase": "preflight",
+      "seconds": 0.15850875002797693,
+      "neural_fits": 0,
+      "verified_optimizer_updates": 0,
+      "freeze_sha256": "37459aa47de6e8810c0a62151a3a990b2df6aa13783e55ee04fe4bd569be14e4",
+      "execution_sha256": "eb0ae3ff1cc2cc4f48b3a28489182fa75eec8e69c4ea4a7e799e738b9e1a883f"
+    },
+    "main": {
+      "passed": true,
+      "phase": "main",
+      "seconds": 1.2254422499681823,
+      "neural_fits": 0,
+      "verified_optimizer_updates": 0,
+      "freeze_sha256": "37459aa47de6e8810c0a62151a3a990b2df6aa13783e55ee04fe4bd569be14e4",
+      "execution_sha256": "93305d2bb3fea7fef28d2acf51f27cb82c29b5976c9d5f7d15f03e863b1ab73c"
+    }
+  }
+}

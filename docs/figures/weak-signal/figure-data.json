@@ -1,0 +1,202 @@
+[
+  {
+    "panel": "ari",
+    "n": 64,
+    "method": "Known raw\nparameters",
+    "available": 10,
+    "median": 0.6604992980513578,
+    "minimum": 0.5587144622991347,
+    "maximum": 0.7991672630277796
+  },
+  {
+    "panel": "ari",
+    "n": 64,
+    "method": "Known PCA\nparameters",
+    "available": 10,
+    "median": 0.6604992980513578,
+    "minimum": 0.5587144622991347,
+    "maximum": 0.7991672630277796
+  },
+  {
+    "panel": "ari",
+    "n": 64,
+    "method": "PCA\nselected K",
+    "available": 10,
+    "median": 0.0,
+    "minimum": 0.0,
+    "maximum": 0.34109412941008427
+  },
+  {
+    "panel": "ari",
+    "n": 64,
+    "method": "Neural\nselected K",
+    "available": 10,
+    "median": 0.0,
+    "minimum": -0.0037629350893697085,
+    "maximum": 0.34532374100719426
+  },
+  {
+    "panel": "ari",
+    "n": 64,
+    "method": "PCA\nstored K=4",
+    "available": 10,
+    "median": 0.2871110149395094,
+    "minimum": 0.11507912447705088,
+    "maximum": 0.5282103650753127
+  },
+  {
+    "panel": "ari",
+    "n": 64,
+    "method": "Neural\nstored K=4",
+    "available": 10,
+    "median": 0.31719536619354327,
+    "minimum": 0.14213197969543148,
+    "maximum": 0.5245033112582781
+  },
+  {
+    "panel": "ari",
+    "n": 64,
+    "method": "PCA\ntruth start",
+    "available": 10,
+    "median": 0.5255036338363572,
+    "minimum": 0.3553133514986376,
+    "maximum": 0.6667098529507028
+  },
+  {
+    "panel": "ari",
+    "n": 64,
+    "method": "Neural\ntruth start",
+    "available": 10,
+    "median": 0.5253204784948781,
+    "minimum": 0.3553133514986376,
+    "maximum": 0.6155637492722685
+  },
+  {
+    "panel": "ari",
+    "n": 256,
+    "method": "Known raw\nparameters",
+    "available": 10,
+    "median": 0.6964228297386397,
+    "minimum": 0.6536755279262717,
+    "maximum": 0.7474359730539067
+  },
+  {
+    "panel": "ari",
+    "n": 256,
+    "method": "Known PCA\nparameters",
+    "available": 10,
+    "median": 0.6949194735805093,
+    "minimum": 0.6608282273604015,
+    "maximum": 0.7475163681278769
+  },
+  {
+    "panel": "ari",
+    "n": 256,
+    "method": "PCA\nselected K",
+    "available": 10,
+    "median": 0.3771851726224065,
+    "minimum": 0.0,
+    "maximum": 0.41430420137377727
+  },
+  {
+    "panel": "ari",
+    "n": 256,
+    "method": "Neural\nselected K",
+    "available": 10,
+    "median": 0.37871177666257205,
+    "minimum": 0.0,
+    "maximum": 0.4341533594950184
+  },
+  {
+    "panel": "ari",
+    "n": 256,
+    "method": "PCA\nstored K=4",
+    "available": 10,
+    "median": 0.630449218108748,
+    "minimum": 0.3019871890649174,
+    "maximum": 0.721700718369542
+  },
+  {
+    "panel": "ari",
+    "n": 256,
+    "method": "Neural\nstored K=4",
+    "available": 10,
+    "median": 0.6344351921147816,
+    "minimum": 0.551626954854293,
+    "maximum": 0.7411387976809474
+  },
+  {
+    "panel": "ari",
+    "n": 256,
+    "method": "PCA\ntruth start",
+    "available": 10,
+    "median": 0.6688570297208782,
+    "minimum": 0.6023711919877356,
+    "maximum": 0.7303931289255096
+  },
+  {
+    "panel": "ari",
+    "n": 256,
+    "method": "Neural\ntruth start",
+    "available": 10,
+    "median": 0.6749492079547047,
+    "minimum": 0.5739047349899405,
+    "maximum": 0.7155966314821807
+  },
+  {
+    "panel": "cost",
+    "n": 64,
+    "arm": "pca4",
+    "measure": "twice_ll_gain",
+    "value": 32.74761939266676
+  },
+  {
+    "panel": "cost",
+    "n": 64,
+    "arm": "pca4",
+    "measure": "bic_penalty",
+    "value": 62.383246250395075
+  },
+  {
+    "panel": "cost",
+    "n": 64,
+    "arm": "neural",
+    "measure": "twice_ll_gain",
+    "value": 26.93417717806517
+  },
+  {
+    "panel": "cost",
+    "n": 64,
+    "arm": "neural",
+    "measure": "bic_penalty",
+    "value": 51.986038541995896
+  },
+  {
+    "panel": "cost",
+    "n": 256,
+    "arm": "pca4",
+    "measure": "twice_ll_gain",
+    "value": 36.18108028492156
+  },
+  {
+    "panel": "cost",
+    "n": 256,
+    "arm": "pca4",
+    "measure": "bic_penalty",
+    "value": 55.451774444795625
+  },
+  {
+    "panel": "cost",
+    "n": 256,
+    "arm": "neural",
+    "measure": "twice_ll_gain",
+    "value": 31.807023779866313
+  },
+  {
+    "panel": "cost",
+    "n": 256,
+    "arm": "neural",
+    "measure": "bic_penalty",
+    "value": 55.451774444795625
+  }
+]
