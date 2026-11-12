@@ -4,7 +4,19 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: supervised residual reference assignment and nonlinear benchmark.**
+**Current checkpoint: opt-in reference-assignment abstention.**
+The [new interface](docs/reference-abstention.md) preserves original predictions and
+separately withholds unsupported, ambiguous or conflicting reference assignments.
+The [80-dataset validation](docs/reference-abstention-results.md) found that distance
+support reduced distant-unfamiliar acceptance but often withheld most known
+specimens; probability support continued accepting distant unfamiliar groups.
+No tested model/policy met the joint coverage/error target. Changed conditions
+could also reduce accuracy among accepted specimens. The layer remains experimental;
+abstention is not species discovery. All 360 main/preflight workflows and 132,000
+optimizer-update checks completed, with no defaults or p-values changed. Detailed
+evidence stays local and empirical gates remain closed.
+
+**Previous checkpoint: supervised residual reference assignment and nonlinear benchmark.**
 The [opt-in classifier](docs/residual-reference.md) trains on separately declared
 reference labels and predicts complete matched morphology/ecology with frozen
 numeric weights. It assigns known reference classes; novelty remains unassessed.
@@ -15,7 +27,7 @@ Nuisance shifts reduced accuracy; unfamiliar classes often received high referen
 confidence. All 700 main/preflight workflows and numerical audits completed.
 Defaults, p-values and empirical gates remain unchanged; detailed evidence stays local.
 
-**Previous checkpoint: weak-signal recovery diagnosis.**
+**Earlier checkpoint: weak-signal recovery diagnosis.**
 The [archival diagnostic](docs/weak-signal-results.md) finds substantial generating
 group overlap: the true-parameter raw-data classifier has about 86.9% expected
 individual accuracy, and none of twenty weak datasets reaches the strict

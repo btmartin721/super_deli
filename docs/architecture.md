@@ -277,8 +277,9 @@ reference labels need independent evidence and documented uncertainty.
 50. **Completed:** Frozen paired neural/PCA power and group-recovery validation, exact archived replays, approved runtime restoration and separate detection/recovery uncertainty. Weak signals remain unresolved; no neural advantage or default promotion is established. See [results](neural-power-results.md).
 51. **Diagnostic completed:** Source-bound weak-signal overlap, affine retention, GMM eligibility/BIC and isolated truth-start diagnosis. Known-law reference agreement is not a formal ARI ceiling; PCA retains nearly the same known-law accuracy and no neural advantage is established. See [results](weak-signal-results.md).
 52. **Opt-in supervised reference model completed:** Complete matched continuous morphology/ecology with a fixed residual classifier, separate ID-bound labels and frozen numeric prediction. The nonlinear pilot separates known-class assignment from discovery, retains nuisance-shift/unfamiliar-class limits and establishes no consistent residual advantage. See [results](residual-nonlinear-results.md).
-53. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
-54. Consolidated user guidance, end-to-end examples and a scoped research release.
+53. **Opt-in reference-abstention layer completed:** Separately calibrated raw-distance/probability compatibility sets preserve original residual predictions and distinguish accepted, outside-support, ambiguous and classifier-conflict outcomes. The fresh pilot missed every joint operating target; coverage costs, nearby/overlapping groups and nuisance shifts preclude general novelty or safer-assignment claims. No default or p-value changed. See [results](reference-abstention-results.md).
+54. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
+55. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The [tabular neural workflow](tabular-neural.md) reuses typed ingestion and a
 shared density-assignment helper. Raw-feature and latent standardization are
@@ -661,3 +662,25 @@ have frozen seeds/settings. Supervised and discovery tasks stay distinct; all
 three seeds are retained and no model ranking changes defaults or p-values.
 See the [reference interface](residual-reference.md) and
 [bounded protocol](residual-nonlinear.md).
+
+### Opt-in reference support and abstention
+
+`models.reference_abstention_config` owns the dependency-free, separately versioned
+policy contract. `models.reference_abstention` separates training-only raw support,
+classwise held-out ranks and the four decision states. `reference_projection`
+reuses strict matched-table validation with linear-memory cohort projection.
+The numerical classifier trainers and original probabilities remain unchanged.
+
+The additive workflow binds original model/training identities and a separate
+labelled calibration cohort, validates numeric artifacts and copied labels, and
+writes completion only after required artifacts succeed. Frozen loading/inference
+needs NumPy, with no Torch or SNPio import. Legacy train/predict commands keep
+their existing schemas and behavior; the new commands are explicitly opt-in.
+
+`benchmarking.abstention_*` reuses the unchanged sealed lifecycle and residual
+actual-update auditor. Independent raw-law, inventory, quadratic-score, rank,
+decision and metric audits retain failures and separate known-class compatibility
+from unfamiliar-group acceptance. Classwise and nuisance-shift evidence stays
+explicit; neither a compatible set nor withholding certifies species status.
+See the [interface](reference-abstention.md), [protocol](reference-abstention-validation.md)
+and [results](reference-abstention-results.md).

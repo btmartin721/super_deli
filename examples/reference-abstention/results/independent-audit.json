@@ -1,0 +1,27 @@
+{
+  "preflight": {
+    "passed": true,
+    "neural_fits": 24,
+    "verified_optimizer_updates": 12000
+  },
+  "main": {
+    "passed": true,
+    "neural_fits": 240,
+    "verified_optimizer_updates": 120000
+  },
+  "report": {
+    "passed": true,
+    "observations": 80,
+    "independently_recomputed_policy_cohort_evaluations": 4080,
+    "primary_rates": 32,
+    "paired_policy_contrasts": 16,
+    "classwise_cohort_summaries": 120,
+    "classwise_reference_summaries": 480,
+    "independent_binomial_inversion": true,
+    "source_python_files": 473,
+    "defaults_changed": false,
+    "pvalues_changed": false,
+    "seconds": 4.750797583023086
+  },
+  "raw_individual_exports": 0
+}

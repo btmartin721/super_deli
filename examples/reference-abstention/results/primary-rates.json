@@ -1,0 +1,674 @@
+[
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "logistic",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "logistic",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "residual_0",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "residual_0",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "logistic",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "logistic",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "residual_0",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "residual_0",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "logistic",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "logistic",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "residual_0",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "residual_0",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "logistic",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "logistic",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "residual_0",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "residual_0",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "logistic",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "logistic",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "residual_0",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "residual_0",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "logistic",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "logistic",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "residual_0",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "residual_0",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "logistic",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "logistic",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "residual_0",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "residual_0",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "logistic",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "logistic",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "residual_0",
+    "policy": "probability",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "residual_0",
+    "policy": "distance",
+    "count": 0,
+    "requested": 10,
+    "unavailable": 0,
+    "failure_bounds": [
+      0.0,
+      0.0
+    ],
+    "descriptive_95_interval": [
+      0.0,
+      0.3084971078187608
+    ],
+    "simultaneous_95_interval": [
+      0.0,
+      0.5110336157285384
+    ]
+  }
+]

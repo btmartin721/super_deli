@@ -1,0 +1,124 @@
+{
+  "version": "0.73.0.dev0",
+  "settings": {
+    "arms": [
+      "logistic",
+      "residual_0",
+      "residual_101",
+      "residual_202"
+    ],
+    "calibration_n": 160,
+    "cases": [
+      "linear_weak",
+      "linear_standard",
+      "combined",
+      "confounded_size"
+    ],
+    "exclusion_level": 0.05,
+    "known_evaluation_n": 2048,
+    "policies": [
+      "unscreened",
+      "probability",
+      "distance"
+    ],
+    "primary_rates": 32,
+    "primary_seed": 0,
+    "reference_model": {
+      "assume_independent_units": true,
+      "ecology": "ecology",
+      "ecology_features": [
+        "e1",
+        "e2",
+        "e3",
+        "e4",
+        "e5",
+        "e6",
+        "e7",
+        "e8"
+      ],
+      "ecology_measurement_scope": "individual",
+      "max_working_bytes": 268435456,
+      "model_family": "matched_residual_reference_classifier",
+      "morphology": "morphology",
+      "morphology_features": [
+        "m1",
+        "m2",
+        "m3",
+        "m4"
+      ],
+      "random_seed": 0,
+      "schema_version": 1
+    },
+    "seeds": [
+      0,
+      101,
+      202
+    ],
+    "shrinkage": 0.1,
+    "significance": "disabled",
+    "stability": "disabled",
+    "target": {
+      "accepted_known_accuracy": 0.9,
+      "far_acceptance": 0.1,
+      "known_acceptance": 0.8,
+      "near_acceptance": 0.1
+    },
+    "unfamiliar_n": 512
+  },
+  "training": {
+    "activation": "relu",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "coupled_weight_decay": 0.0001,
+    "device": "cpu",
+    "dtype": "float64",
+    "epsilon": 1e-08,
+    "learning_rate": 0.001,
+    "loss": "mean_multiclass_cross_entropy",
+    "optimizer": "Adam",
+    "residual_blocks": 2,
+    "scope": "Reference classes only; novelty is unassessed",
+    "updates": 500,
+    "width": 32
+  },
+  "counts": {
+    "main": {
+      "calibration_bindings": 320,
+      "classifier_trainings": 320,
+      "external_cohorts": 1360,
+      "legacy_replays": 8,
+      "logistic_fits": 80,
+      "neural_fits": 240,
+      "observations": 80,
+      "policy_evaluations": 4080,
+      "support_fits": 80,
+      "verified_updates": 120000,
+      "workflows": 328
+    },
+    "preflight": {
+      "calibration_bindings": 32,
+      "classifier_trainings": 32,
+      "external_cohorts": 136,
+      "legacy_replays": 0,
+      "logistic_fits": 8,
+      "neural_fits": 24,
+      "observations": 8,
+      "policy_evaluations": 408,
+      "support_fits": 8,
+      "verified_updates": 12000,
+      "workflows": 32
+    }
+  },
+  "software": {
+    "numpy": "2.2.6",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0",
+    "torch": "2.15.0"
+  },
+  "independent_datasets_per_cell": 10,
+  "source_scope": "Invented matched continuous measurements",
+  "seed_interpretation": "Seeds, policies and evaluation rows repeat datasets; no selection"
+}

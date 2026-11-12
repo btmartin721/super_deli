@@ -1,0 +1,21 @@
+{
+  "observations": 80,
+  "groups": 8,
+  "primary_rates": 32,
+  "paired_contrasts": 16,
+  "workflows": 328,
+  "neural_trainings": 240,
+  "failed_workflows": 0,
+  "verified_optimizer_updates": 120000,
+  "independent_datasets_per_cell": 10,
+  "default_changes": false,
+  "pvalue_changes": false,
+  "author_contact": false,
+  "species_significance": "not_computed",
+  "interpretation": [
+    "Compatibility and abstention are not species discovery",
+    "Known-class inclusion assumptions do not guarantee unfamiliar rejection",
+    "Indistinguishable unfamiliar groups cannot be separated using these measurements",
+    "No policy, seed or default automatically selected"
+  ]
+}

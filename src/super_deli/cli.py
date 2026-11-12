@@ -23,6 +23,11 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     commands = parser.add_subparsers(dest="command", required=True)
+    from super_deli.benchmarking.abstention_cli import register as register_abstention_study
+    from super_deli.workflows.reference_abstention_cli import register as register_abstention
+
+    register_abstention(commands)
+    register_abstention_study(commands)
     from super_deli.workflows.residual_cli import register as register_residual
 
     register_residual(commands)
@@ -547,6 +552,19 @@ def main(argv: list[str] | None = None) -> int:
     power_budget.add_argument("--output-file", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
+        if args.command in (
+            "calibrate-reference-abstention",
+            "predict-reference-abstention",
+            "benchmark-reference-abstention",
+        ):
+            if args.command == "benchmark-reference-abstention":
+                from super_deli.benchmarking.abstention_cli import dispatch
+            else:
+                from super_deli.workflows.reference_abstention_cli import dispatch
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "benchmark-residual-nonlinear":
             from super_deli.benchmarking.residual_cli import dispatch
 

@@ -1,0 +1,162 @@
+[
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "logistic",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  },
+  {
+    "case": "linear_weak",
+    "n": 64,
+    "arm": "residual_0",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "logistic",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  },
+  {
+    "case": "linear_weak",
+    "n": 256,
+    "arm": "residual_0",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "logistic",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  },
+  {
+    "case": "linear_standard",
+    "n": 64,
+    "arm": "residual_0",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "logistic",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  },
+  {
+    "case": "linear_standard",
+    "n": 256,
+    "arm": "residual_0",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "logistic",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  },
+  {
+    "case": "combined",
+    "n": 64,
+    "arm": "residual_0",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "logistic",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  },
+  {
+    "case": "combined",
+    "n": 256,
+    "arm": "residual_0",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "logistic",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  },
+  {
+    "case": "confounded_size",
+    "n": 64,
+    "arm": "residual_0",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "logistic",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  },
+  {
+    "case": "confounded_size",
+    "n": 256,
+    "arm": "residual_0",
+    "requested": 10,
+    "available": 10,
+    "distance_only": 0,
+    "probability_only": 0,
+    "both": 0
+  }
+]
