@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "assume_independent_calibration": true,
+  "exclusion_level": 0.05,
+  "covariance_shrinkage": 0.1
+}

@@ -4,7 +4,18 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: observed-feature feasibility diagnostic.**
+**Current checkpoint: known-only support and held-out-group validation.**
+The [new opt-in support layer](docs/reference-density.md) fits one covariance per
+known reference and calibrates compatibility from independent known specimens.
+The [80-parent held-out validation](docs/known-reference-results.md) excluded each
+entire group before every fitting stage. All primary joint-success rates were
+0/10: high selected-known accuracy did not ensure adequate coverage and reliable
+unfamiliar rejection. The small cells establish no neural advantage or universal
+impossibility. The prespecified decision closes this reference-support tuning
+cycle without promoting a default. Historical p-values, prior workflows and
+empirical gates are unchanged; detailed evidence stays local.
+
+**Previous checkpoint: observed-feature feasibility diagnostic.**
 The [benchmark-only study](docs/observed-feature-feasibility-results.md) used extra
 labelled examples of specified unfamiliar groups to ask whether measured traits
 contain useful reference-support information. The focal pilot qualified on all

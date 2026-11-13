@@ -280,8 +280,9 @@ reference labels need independent evidence and documented uncertainty.
 53. **Opt-in reference-abstention layer completed:** Separately calibrated raw-distance/probability compatibility sets preserve original residual predictions and distinguish accepted, outside-support, ambiguous and classifier-conflict outcomes. The fresh pilot missed every joint operating target; coverage costs, nearby/overlapping groups and nuisance shifts preclude general novelty or safer-assignment claims. No default or p-value changed. See [results](reference-abstention-results.md).
 54. **Opt-in class-local reference support completed:** Fifth-nearest original training neighbors, independent classwise calibration and frozen residual prediction preserve existing decision meanings. The 80-fresh/80-archived pilot met no primary joint or benefit target; ambiguity, unfamiliar acceptance and shifted conditions remain limiting. No policy/default or p-value change. See [results](local-reference-results.md).
 55. **Observed-feature feasibility diagnostic completed:** Frozen reference heads plus a benchmark-only measured-trait detector with explicit unfamiliar training examples met the focal external target on 7/10 datasets. Weak/confounded cells supplied no qualifying threshold; logistic and neural success counts matched. This is not a deployable unknown-group model. Defaults, schemas and historical p-values are unchanged. See [results](observed-feature-feasibility-results.md).
-56. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
-57. Consolidated user guidance, end-to-end examples and a scoped research release.
+56. **Known-only held-out reference support completed:** Class-specific Gaussian level sets reuse known-only calibration and frozen reference predictions. The 80-parent, four-exclusion pilot had zero primary joint successes with either classifier; known-reference inclusion did not provide sufficient unique coverage and unfamiliar rejection. The prespecified decision closes this support-rule tuning cycle. Defaults and historical p-values remain unchanged. See [results](known-reference-results.md).
+57. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
+58. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The [tabular neural workflow](tabular-neural.md) reuses typed ingestion and a
 shared density-assignment helper. Raw-feature and latent standardization are
@@ -717,3 +718,17 @@ independently. No production estimator, old schema or inference contract changes
 from numerical unavailability. Detailed numeric artifacts remain local; public
 exports contain aggregates only. See the [interface](observed-feature-feasibility.md)
 and [completed results](observed-feature-feasibility-results.md).
+
+
+### Known-only class-specific reference support and excluded groups
+
+`models.reference_density` fits one regularized covariance per known class and
+reuses the unchanged classwise rank/decision functions. Its separately versioned
+workflow composes predecessor source binding, checks numeric artifact schemas,
+and preserves original residual predictions with explicit withheld states.
+`benchmarking.known_reference_*` adds whole-group exclusion before preprocessing,
+paired fixed classifiers, independent raw-law/dense-likelihood/optimizer audits,
+parent-level uncertainty and a frozen stopping decision. Secondary fold rates
+remain outside the primary simultaneous-interval family. Full evidence stays
+local. See the [interface](reference-density.md), [protocol](known-reference-validation.md)
+and [completed negative joint result](known-reference-results.md).
