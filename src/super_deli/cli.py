@@ -25,9 +25,13 @@ def main(argv: list[str] | None = None) -> int:
     commands = parser.add_subparsers(dest="command", required=True)
     from super_deli.benchmarking.abstention_cli import register as register_abstention_study
     from super_deli.benchmarking.local_reference_cli import register as register_local_study
+    from super_deli.benchmarking.observed_feasibility_cli import (
+        register as register_observed_feasibility,
+    )
     from super_deli.workflows.local_reference_cli import register as register_local_reference
     from super_deli.workflows.reference_abstention_cli import register as register_abstention
 
+    register_observed_feasibility(commands)
     register_local_reference(commands)
     register_local_study(commands)
     register_abstention(commands)
@@ -556,6 +560,13 @@ def main(argv: list[str] | None = None) -> int:
     power_budget.add_argument("--output-file", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
+        if args.command == "benchmark-observed-feasibility":
+            from super_deli.benchmarking.observed_feasibility_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "benchmark-local-reference-support":
             from super_deli.benchmarking.local_reference_cli import dispatch
 

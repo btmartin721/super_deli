@@ -4,7 +4,19 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: opt-in class-local reference support.**
+**Current checkpoint: observed-feature feasibility diagnostic.**
+The [benchmark-only study](docs/observed-feature-feasibility-results.md) used extra
+labelled examples of specified unfamiliar groups to ask whether measured traits
+contain useful reference-support information. The focal pilot qualified on all
+ten calibration datasets and met the external joint target on seven, versus zero
+for the prior class-local screen. Weak-signal and confounded-size cells supplied
+no qualifying point; logistic and residual heads had the same success counts.
+This favourable, small diagnostic establishes no deployable unknown-group detector
+or neural advantage. The [separate benchmark interface](docs/observed-feature-feasibility.md)
+adds no production model. Defaults, historical p-values and empirical gates are
+unchanged; detailed evidence stays local.
+
+**Previous checkpoint: opt-in class-local reference support.**
 The [new interface](docs/local-reference-support.md) uses fifth-nearest training
 references while preserving original classifier predictions. The
 [80-fresh/80-archived validation](docs/local-reference-results.md) found no successful

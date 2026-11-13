@@ -279,8 +279,9 @@ reference labels need independent evidence and documented uncertainty.
 52. **Opt-in supervised reference model completed:** Complete matched continuous morphology/ecology with a fixed residual classifier, separate ID-bound labels and frozen numeric prediction. The nonlinear pilot separates known-class assignment from discovery, retains nuisance-shift/unfamiliar-class limits and establishes no consistent residual advantage. See [results](residual-nonlinear-results.md).
 53. **Opt-in reference-abstention layer completed:** Separately calibrated raw-distance/probability compatibility sets preserve original residual predictions and distinguish accepted, outside-support, ambiguous and classifier-conflict outcomes. The fresh pilot missed every joint operating target; coverage costs, nearby/overlapping groups and nuisance shifts preclude general novelty or safer-assignment claims. No default or p-value changed. See [results](reference-abstention-results.md).
 54. **Opt-in class-local reference support completed:** Fifth-nearest original training neighbors, independent classwise calibration and frozen residual prediction preserve existing decision meanings. The 80-fresh/80-archived pilot met no primary joint or benefit target; ambiguity, unfamiliar acceptance and shifted conditions remain limiting. No policy/default or p-value change. See [results](local-reference-results.md).
-55. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
-56. Consolidated user guidance, end-to-end examples and a scoped research release.
+55. **Observed-feature feasibility diagnostic completed:** Frozen reference heads plus a benchmark-only measured-trait detector with explicit unfamiliar training examples met the focal external target on 7/10 datasets. Weak/confounded cells supplied no qualifying threshold; logistic and neural success counts matched. This is not a deployable unknown-group model. Defaults, schemas and historical p-values are unchanged. See [results](observed-feature-feasibility-results.md).
+56. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
+57. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The [tabular neural workflow](tabular-neural.md) reuses typed ingestion and a
 shared density-assignment helper. Raw-feature and latent standardization are
@@ -703,3 +704,16 @@ are distinct from fitting. Reporting retains all neural seeds, classwise ambigui
 nuisance/overlap controls and requested denominators. No evaluation label selects
 a rule or default. See the [interface](local-reference-support.md),
 [protocol](local-reference-validation.md) and [negative results](local-reference-results.md).
+
+
+### Benchmark-only measured-feature feasibility
+
+The separately versioned `observed_feasibility_*` modules bind sealed archived
+reference heads, predeclare independent diagnostic roles/seeds, and restrict the
+fixed binary detector to measured morphology/ecology columns. Native tree stages,
+frozen original predictions and calibration-only threshold selection are audited
+independently. No production estimator, old schema or inference contract changes.
+`available_no_operating_point` distinguishes a valid calibration failure to qualify
+from numerical unavailability. Detailed numeric artifacts remain local; public
+exports contain aggregates only. See the [interface](observed-feature-feasibility.md)
+and [completed results](observed-feature-feasibility-results.md).
