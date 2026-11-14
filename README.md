@@ -4,7 +4,15 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: unified matched morphology/ecology discovery comparison.**
+**Current checkpoint: SNPio-backed genomic neural baseline and PCA comparisons.**
+The [opt-in genomic CLI/API](docs/genomic-neural.md) compares the unchanged
+PCA/diagonal-GMM baseline, a PCA/shared-GMM control, and categorical-genotype
+autoencoder/shared-GMM arms on the same source snapshots and specimen subsets.
+It accepts complete diploid biallelic data through all four SNPio readers with
+optional popmaps. Detailed fitted artifacts remain local; no new p-values or
+species probabilities are computed. See the [bounded validation](docs/genomic-neural-results.md).
+
+**Previous checkpoint: unified matched morphology/ecology discovery comparison.**
 The [opt-in CLI/API](docs/matched-analysis.md) runs prespecified native PCA/shared-GMM
 and separate-encoder/shared-GMM arms on one immutable specimen cohort. One offline
 report retains assignments, partition agreement, distinct native resampling and

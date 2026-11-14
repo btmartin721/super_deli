@@ -746,3 +746,24 @@ Existing label-invariant comparison and tabular reporting helpers are reused.
 The additive renderer identifies native axes and keeps memberships, distinct
 resampling measures and uncomputed significance separate. No reference labels
 enter this coordinator. See [the interface](matched-analysis.md).
+
+
+### SNPio-backed genomic neural baseline
+
+`io.genomic_neural` freezes the selected raw source and optional popmap, then
+reuses the existing SNPio GenotypeData reader and isolated diploid encoder once.
+The separately versioned genomic configuration rejects missing/unsupported calls;
+`genomic_autoencoder` adds categorical reconstruction without modifying the old
+continuous autoencoder or genomic PCA baseline. `genomic_neural` composes
+training-only Patterson transforms, the two-coordinate representation and
+existing shared-GMM selection. Numeric checksummed model loading supports frozen
+projection under an explicit original-locus/allele-coding contract.
+
+The additive comparison workflow retains every prespecified neural seed, native
+diagonal PCA behavior, a shared-covariance PCA control and paired specimen
+subsampling. Existing partition-comparison and subsampling summaries preserve
+identity, inclusions, coassignment and failure bounds. A separate NumPy
+categorical derivative and actual-update Adam auditor checks every training
+update in the bounded study. No labels enter fitting and no genomic neural
+p-value is calculated. See [the interface](genomic-neural.md) and
+[the bounded results](genomic-neural-results.md).

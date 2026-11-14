@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "model": {
+    "schema_version": 1,
+    "ploidy": 2,
+    "missing_policy": "error",
+    "assume_independent_specimens": true,
+    "n_subsamples": 0
+  },
+  "neural_seeds": [
+    0,
+    1,
+    2
+  ]
+}

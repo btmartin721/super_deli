@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "dataset_id": "invented_genomic_neural",
+  "specimens": [
+    {
+      "specimen_id": "s000"
+    },
+    {
+      "specimen_id": "s001"
+    },
+    {
+      "specimen_id": "s002"
+    },
+    {
+      "specimen_id": "s003"
+    },
+    {
+      "specimen_id": "s004"
+    },
+    {
+      "specimen_id": "s005"
+    },
+    {
+      "specimen_id": "s006"
+    },
+    {
+      "specimen_id": "s007"
+    },
+    {
+      "specimen_id": "s008"
+    },
+    {
+      "specimen_id": "s009"
+    },
+    {
+      "specimen_id": "s010"
+    },
+    {
+      "specimen_id": "s011"
+    },
+    {
+      "specimen_id": "s012"
+    },
+    {
+      "specimen_id": "s013"
+    },
+    {
+      "specimen_id": "s014"
+    },
+    {
+      "specimen_id": "s015"
+    },
+    {
+      "specimen_id": "s016"
+    },
+    {
+      "specimen_id": "s017"
+    },
+    {
+      "specimen_id": "s018"
+    },
+    {
+      "specimen_id": "s019"
+    },
+    {
+      "specimen_id": "s020"
+    },
+    {
+      "specimen_id": "s021"
+    },
+    {
+      "specimen_id": "s022"
+    },
+    {
+      "specimen_id": "s023"
+    }
+  ],
+  "modalities": [
+    {
+      "name": "genomic",
+      "kind": "genomic",
+      "level": "specimen",
+      "format": "phylip",
+      "path": "invented.phy",
+      "popmapfile": null,
+      "observations": [
+        {
+          "observation_id": "s000",
+          "unit_id": "s000"
+        },
+        {
+          "observation_id": "s001",
+          "unit_id": "s001"
+        },
+        {
+          "observation_id": "s002",
+          "unit_id": "s002"
+        },
+        {
+          "observation_id": "s003",
+          "unit_id": "s003"
+        },
+        {
+          "observation_id": "s004",
+          "unit_id": "s004"
+        },
+        {
+          "observation_id": "s005",
+          "unit_id": "s005"
+        },
+        {
+          "observation_id": "s006",
+          "unit_id": "s006"
+        },
+        {
+          "observation_id": "s007",
+          "unit_id": "s007"
+        },
+        {
+          "observation_id": "s008",
+          "unit_id": "s008"
+        },
+        {
+          "observation_id": "s009",
+          "unit_id": "s009"
+        },
+        {
+          "observation_id": "s010",
+          "unit_id": "s010"
+        },
+        {
+          "observation_id": "s011",
+          "unit_id": "s011"
+        },
+        {
+          "observation_id": "s012",
+          "unit_id": "s012"
+        },
+        {
+          "observation_id": "s013",
+          "unit_id": "s013"
+        },
+        {
+          "observation_id": "s014",
+          "unit_id": "s014"
+        },
+        {
+          "observation_id": "s015",
+          "unit_id": "s015"
+        },
+        {
+          "observation_id": "s016",
+          "unit_id": "s016"
+        },
+        {
+          "observation_id": "s017",
+          "unit_id": "s017"
+        },
+        {
+          "observation_id": "s018",
+          "unit_id": "s018"
+        },
+        {
+          "observation_id": "s019",
+          "unit_id": "s019"
+        },
+        {
+          "observation_id": "s020",
+          "unit_id": "s020"
+        },
+        {
+          "observation_id": "s021",
+          "unit_id": "s021"
+        },
+        {
+          "observation_id": "s022",
+          "unit_id": "s022"
+        },
+        {
+          "observation_id": "s023",
+          "unit_id": "s023"
+        }
+      ]
+    }
+  ]
+}
