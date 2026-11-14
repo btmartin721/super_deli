@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "ecology_measurement_scope": "individual",
+  "arms": [
+    {
+      "name": "pca",
+      "family": "pca_gmm",
+      "model": {
+        "schema_version": 1,
+        "assume_independent_units": true,
+        "target_level": "specimen",
+        "missing_views": "error",
+        "covariance_type": "tied",
+        "n_pcs": 4,
+        "max_k": 4,
+        "min_cluster_size": 5,
+        "n_bootstrap": 0,
+        "n_init": 10,
+        "random_seed": 71323,
+        "views": [
+          {
+            "modality": "morphology",
+            "kind": "morphological",
+            "n_pcs": 2,
+            "weight": 1,
+            "feature_names": [
+              "m1",
+              "m2",
+              "m3",
+              "m4"
+            ]
+          },
+          {
+            "modality": "ecology",
+            "kind": "ecological",
+            "n_pcs": 2,
+            "weight": 1,
+            "feature_names": [
+              "e1",
+              "e2",
+              "e3",
+              "e4",
+              "e5",
+              "e6",
+              "e7",
+              "e8"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "neural",
+      "family": "separate_gmm",
+      "model": {
+        "morphology": "morphology",
+        "ecology": "ecology",
+        "morphology_features": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ],
+        "ecology_features": [
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8"
+        ],
+        "assume_independent_units": true,
+        "ecology_measurement_scope": "individual",
+        "schema_version": 1,
+        "model_family": "matched_separate_autoencoders_shared_gmm",
+        "random_seed": 0,
+        "subsampling_seed": 0,
+        "n_subsamples": 0,
+        "max_working_bytes": 268435456,
+        "max_pairwise_bytes": 268435456,
+        "max_k": 4,
+        "min_cluster_size": 5,
+        "n_init": 10,
+        "max_iter": 500,
+        "tol": 0.001,
+        "reg_covar": 1e-06,
+        "mixture_seed": 71323
+      }
+    }
+  ]
+}

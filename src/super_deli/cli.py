@@ -30,9 +30,11 @@ def main(argv: list[str] | None = None) -> int:
         register as register_observed_feasibility,
     )
     from super_deli.workflows.local_reference_cli import register as register_local_reference
+    from super_deli.workflows.matched_analysis_cli import register as register_matched_analysis
     from super_deli.workflows.reference_abstention_cli import register as register_abstention
     from super_deli.workflows.reference_density_cli import register as register_density
 
+    register_matched_analysis(commands)
     register_known(commands)
     register_density(commands)
     register_observed_feasibility(commands)
@@ -564,6 +566,13 @@ def main(argv: list[str] | None = None) -> int:
     power_budget.add_argument("--output-file", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
+        if args.command == "analyze-matched-tabular":
+            from super_deli.workflows.matched_analysis_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0 if summary["status"] == "complete" else 1
         if args.command == "benchmark-known-reference":
             from super_deli.benchmarking.known_reference_cli import dispatch
 

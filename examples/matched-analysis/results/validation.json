@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "purpose": "Bounded software integration and native parity; not a comparative power study",
+  "main_observations": 18,
+  "separate_preflight_observations": 6,
+  "main_pipeline_fits": 192,
+  "preflight_pipeline_fits": 48,
+  "branch_trainings": 240,
+  "verified_optimizer_updates": 120000,
+  "main_seconds": 215.03723650000757,
+  "preflight_seconds": 57.787019833980594,
+  "exact_native_parity": true,
+  "failed_scientific_workflows": 0,
+  "cells": [
+    {
+      "case": "gaussian_independent",
+      "n": 64,
+      "observations": 3,
+      "pca_selected_k_counts": {
+        "1": 3
+      },
+      "neural_selected_k_counts": {
+        "1": 3
+      },
+      "partition_agreement_range": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "case": "gaussian_independent",
+      "n": 128,
+      "observations": 3,
+      "pca_selected_k_counts": {
+        "1": 3
+      },
+      "neural_selected_k_counts": {
+        "1": 3
+      },
+      "partition_agreement_range": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "case": "four_complementary",
+      "n": 64,
+      "observations": 3,
+      "pca_selected_k_counts": {
+        "4": 3
+      },
+      "neural_selected_k_counts": {
+        "4": 3
+      },
+      "partition_agreement_range": [
+        0.9182030641391846,
+        1.0
+      ]
+    },
+    {
+      "case": "four_complementary",
+      "n": 128,
+      "observations": 3,
+      "pca_selected_k_counts": {
+        "4": 3
+      },
+      "neural_selected_k_counts": {
+        "4": 3
+      },
+      "partition_agreement_range": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "case": "moons",
+      "n": 64,
+      "observations": 3,
+      "pca_selected_k_counts": {
+        "2": 3
+      },
+      "neural_selected_k_counts": {
+        "2": 2,
+        "1": 1
+      },
+      "partition_agreement_range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "case": "moons",
+      "n": 128,
+      "observations": 3,
+      "pca_selected_k_counts": {
+        "2": 2,
+        "3": 1
+      },
+      "neural_selected_k_counts": {
+        "4": 1,
+        "2": 1,
+        "3": 1
+      },
+      "partition_agreement_range": [
+        0.5901157121063557,
+        1.0
+      ]
+    }
+  ],
+  "freeze_sha256": "c3113633ca9ca5960188fff09ae91e338564f64bb834bce394fbabba900ff8aa",
+  "main_summary_sha256": "654011f7e88c24fe3135dd27d7b3d1b057e212fb5550a2e9e8759d7f4c848886",
+  "defaults_changed": false,
+  "pvalues_changed": false,
+  "author_contact": false,
+  "individual_records": 0
+}

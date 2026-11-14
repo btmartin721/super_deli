@@ -281,8 +281,9 @@ reference labels need independent evidence and documented uncertainty.
 54. **Opt-in class-local reference support completed:** Fifth-nearest original training neighbors, independent classwise calibration and frozen residual prediction preserve existing decision meanings. The 80-fresh/80-archived pilot met no primary joint or benefit target; ambiguity, unfamiliar acceptance and shifted conditions remain limiting. No policy/default or p-value change. See [results](local-reference-results.md).
 55. **Observed-feature feasibility diagnostic completed:** Frozen reference heads plus a benchmark-only measured-trait detector with explicit unfamiliar training examples met the focal external target on 7/10 datasets. Weak/confounded cells supplied no qualifying threshold; logistic and neural success counts matched. This is not a deployable unknown-group model. Defaults, schemas and historical p-values are unchanged. See [results](observed-feature-feasibility-results.md).
 56. **Known-only held-out reference support completed:** Class-specific Gaussian level sets reuse known-only calibration and frozen reference predictions. The 80-parent, four-exclusion pilot had zero primary joint successes with either classifier; known-reference inclusion did not provide sufficient unique coverage and unfamiliar rejection. The prespecified decision closes this support-rule tuning cycle. Defaults and historical p-values remain unchanged. See [results](known-reference-results.md).
-57. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
-58. Consolidated user guidance, end-to-end examples and a scoped research release.
+57. **Unified matched discovery comparison completed:** One frozen complete specimen cohort, prespecified native PCA/shared-GMM and separate-encoder/shared-GMM arms, ID-bound assignments and an offline evidence-separated report. No winner or new p-value. See [the interface](matched-analysis.md).
+58. Grouped/unmatched, missing-data, genomic and shape neural adapters, anatomical landmark learning, semilandmark sliding and further model families.
+59. Consolidated user guidance, end-to-end examples and a scoped research release.
 
 The [tabular neural workflow](tabular-neural.md) reuses typed ingestion and a
 shared density-assignment helper. Raw-feature and latent standardization are
@@ -732,3 +733,16 @@ parent-level uncertainty and a frozen stopping decision. Secondary fold rates
 remain outside the primary simultaneous-interval family. Full evidence stays
 local. See the [interface](reference-density.md), [protocol](known-reference-validation.md)
 and [completed negative joint result](known-reference-results.md).
+
+
+### Unified matched discovery orchestration
+
+`models.matched_analysis_config` owns a dependency-free versioned native-arm
+contract. `io.matched_analysis` stages immutable sources and reuses existing
+fit-free matched validation. The workflow adapters invoke unchanged native
+PCA/shared-GMM and separate-encoder/shared-GMM estimators; extraction checks
+configuration fingerprints, complete specimen/observation maps and model hashes.
+Existing label-invariant comparison and tabular reporting helpers are reused.
+The additive renderer identifies native axes and keeps memberships, distinct
+resampling measures and uncomputed significance separate. No reference labels
+enter this coordinator. See [the interface](matched-analysis.md).

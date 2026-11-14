@@ -1,0 +1,535 @@
+{
+  "dataset_id": "invented_matched_neural",
+  "localities": [],
+  "modalities": [
+    {
+      "features": [
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "m1",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "m2",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "m3",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "m4",
+          "role": "feature",
+          "unit": null
+        }
+      ],
+      "format": "tsv",
+      "kind": "morphological",
+      "level": "specimen",
+      "name": "morphology",
+      "observations": [
+        {
+          "observation_id": "morphology_0000",
+          "unit_id": "unit_0000"
+        },
+        {
+          "observation_id": "morphology_0001",
+          "unit_id": "unit_0001"
+        },
+        {
+          "observation_id": "morphology_0002",
+          "unit_id": "unit_0002"
+        },
+        {
+          "observation_id": "morphology_0003",
+          "unit_id": "unit_0003"
+        },
+        {
+          "observation_id": "morphology_0004",
+          "unit_id": "unit_0004"
+        },
+        {
+          "observation_id": "morphology_0005",
+          "unit_id": "unit_0005"
+        },
+        {
+          "observation_id": "morphology_0006",
+          "unit_id": "unit_0006"
+        },
+        {
+          "observation_id": "morphology_0007",
+          "unit_id": "unit_0007"
+        },
+        {
+          "observation_id": "morphology_0008",
+          "unit_id": "unit_0008"
+        },
+        {
+          "observation_id": "morphology_0009",
+          "unit_id": "unit_0009"
+        },
+        {
+          "observation_id": "morphology_0010",
+          "unit_id": "unit_0010"
+        },
+        {
+          "observation_id": "morphology_0011",
+          "unit_id": "unit_0011"
+        },
+        {
+          "observation_id": "morphology_0012",
+          "unit_id": "unit_0012"
+        },
+        {
+          "observation_id": "morphology_0013",
+          "unit_id": "unit_0013"
+        },
+        {
+          "observation_id": "morphology_0014",
+          "unit_id": "unit_0014"
+        },
+        {
+          "observation_id": "morphology_0015",
+          "unit_id": "unit_0015"
+        },
+        {
+          "observation_id": "morphology_0016",
+          "unit_id": "unit_0016"
+        },
+        {
+          "observation_id": "morphology_0017",
+          "unit_id": "unit_0017"
+        },
+        {
+          "observation_id": "morphology_0018",
+          "unit_id": "unit_0018"
+        },
+        {
+          "observation_id": "morphology_0019",
+          "unit_id": "unit_0019"
+        },
+        {
+          "observation_id": "morphology_0020",
+          "unit_id": "unit_0020"
+        },
+        {
+          "observation_id": "morphology_0021",
+          "unit_id": "unit_0021"
+        },
+        {
+          "observation_id": "morphology_0022",
+          "unit_id": "unit_0022"
+        },
+        {
+          "observation_id": "morphology_0023",
+          "unit_id": "unit_0023"
+        },
+        {
+          "observation_id": "morphology_0024",
+          "unit_id": "unit_0024"
+        },
+        {
+          "observation_id": "morphology_0025",
+          "unit_id": "unit_0025"
+        },
+        {
+          "observation_id": "morphology_0026",
+          "unit_id": "unit_0026"
+        },
+        {
+          "observation_id": "morphology_0027",
+          "unit_id": "unit_0027"
+        },
+        {
+          "observation_id": "morphology_0028",
+          "unit_id": "unit_0028"
+        },
+        {
+          "observation_id": "morphology_0029",
+          "unit_id": "unit_0029"
+        },
+        {
+          "observation_id": "morphology_0030",
+          "unit_id": "unit_0030"
+        },
+        {
+          "observation_id": "morphology_0031",
+          "unit_id": "unit_0031"
+        }
+      ],
+      "path": "morphology.tsv",
+      "popmapfile": null
+    },
+    {
+      "features": [
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "e1",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "e2",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "e3",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "e4",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "e5",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "e6",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "e7",
+          "role": "feature",
+          "unit": null
+        },
+        {
+          "categories": [],
+          "dtype": "continuous",
+          "name": "e8",
+          "role": "feature",
+          "unit": null
+        }
+      ],
+      "format": "tsv",
+      "kind": "ecological",
+      "level": "specimen",
+      "name": "ecology",
+      "observations": [
+        {
+          "observation_id": "ecology_0000",
+          "unit_id": "unit_0000"
+        },
+        {
+          "observation_id": "ecology_0001",
+          "unit_id": "unit_0001"
+        },
+        {
+          "observation_id": "ecology_0002",
+          "unit_id": "unit_0002"
+        },
+        {
+          "observation_id": "ecology_0003",
+          "unit_id": "unit_0003"
+        },
+        {
+          "observation_id": "ecology_0004",
+          "unit_id": "unit_0004"
+        },
+        {
+          "observation_id": "ecology_0005",
+          "unit_id": "unit_0005"
+        },
+        {
+          "observation_id": "ecology_0006",
+          "unit_id": "unit_0006"
+        },
+        {
+          "observation_id": "ecology_0007",
+          "unit_id": "unit_0007"
+        },
+        {
+          "observation_id": "ecology_0008",
+          "unit_id": "unit_0008"
+        },
+        {
+          "observation_id": "ecology_0009",
+          "unit_id": "unit_0009"
+        },
+        {
+          "observation_id": "ecology_0010",
+          "unit_id": "unit_0010"
+        },
+        {
+          "observation_id": "ecology_0011",
+          "unit_id": "unit_0011"
+        },
+        {
+          "observation_id": "ecology_0012",
+          "unit_id": "unit_0012"
+        },
+        {
+          "observation_id": "ecology_0013",
+          "unit_id": "unit_0013"
+        },
+        {
+          "observation_id": "ecology_0014",
+          "unit_id": "unit_0014"
+        },
+        {
+          "observation_id": "ecology_0015",
+          "unit_id": "unit_0015"
+        },
+        {
+          "observation_id": "ecology_0016",
+          "unit_id": "unit_0016"
+        },
+        {
+          "observation_id": "ecology_0017",
+          "unit_id": "unit_0017"
+        },
+        {
+          "observation_id": "ecology_0018",
+          "unit_id": "unit_0018"
+        },
+        {
+          "observation_id": "ecology_0019",
+          "unit_id": "unit_0019"
+        },
+        {
+          "observation_id": "ecology_0020",
+          "unit_id": "unit_0020"
+        },
+        {
+          "observation_id": "ecology_0021",
+          "unit_id": "unit_0021"
+        },
+        {
+          "observation_id": "ecology_0022",
+          "unit_id": "unit_0022"
+        },
+        {
+          "observation_id": "ecology_0023",
+          "unit_id": "unit_0023"
+        },
+        {
+          "observation_id": "ecology_0024",
+          "unit_id": "unit_0024"
+        },
+        {
+          "observation_id": "ecology_0025",
+          "unit_id": "unit_0025"
+        },
+        {
+          "observation_id": "ecology_0026",
+          "unit_id": "unit_0026"
+        },
+        {
+          "observation_id": "ecology_0027",
+          "unit_id": "unit_0027"
+        },
+        {
+          "observation_id": "ecology_0028",
+          "unit_id": "unit_0028"
+        },
+        {
+          "observation_id": "ecology_0029",
+          "unit_id": "unit_0029"
+        },
+        {
+          "observation_id": "ecology_0030",
+          "unit_id": "unit_0030"
+        },
+        {
+          "observation_id": "ecology_0031",
+          "unit_id": "unit_0031"
+        }
+      ],
+      "path": "ecology.tsv",
+      "popmapfile": null
+    }
+  ],
+  "populations": [],
+  "random_seed": 0,
+  "schema_version": 1,
+  "specimens": [
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0000"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0001"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0002"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0003"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0004"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0005"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0006"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0007"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0008"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0009"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0010"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0011"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0012"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0013"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0014"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0015"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0016"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0017"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0018"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0019"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0020"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0021"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0022"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0023"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0024"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0025"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0026"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0027"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0028"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0029"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0030"
+    },
+    {
+      "locality_id": null,
+      "population_id": null,
+      "specimen_id": "unit_0031"
+    }
+  ]
+}

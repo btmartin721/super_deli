@@ -4,7 +4,16 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: known-only support and held-out-group validation.**
+**Current checkpoint: unified matched morphology/ecology discovery comparison.**
+The [opt-in CLI/API](docs/matched-analysis.md) runs prespecified native PCA/shared-GMM
+and separate-encoder/shared-GMM arms on one immutable specimen cohort. One offline
+report retains assignments, partition agreement, distinct native resampling and
+failures without selecting a winner or computing new p-values. The
+[bounded integration validation](docs/matched-analysis-results.md) passed all 18
+main and six preflight datasets with exact native replay checks. Existing models,
+defaults, historical p-values and empirical evidence gates remain unchanged.
+
+**Previous checkpoint: known-only support and held-out-group validation.**
 The [new opt-in support layer](docs/reference-density.md) fits one covariance per
 known reference and calibrates compatibility from independent known specimens.
 The [80-parent held-out validation](docs/known-reference-results.md) excluded each
