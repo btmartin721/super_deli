@@ -4,7 +4,16 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: SNPio-backed genomic neural baseline and PCA comparisons.**
+**Current checkpoint: fit-free genomic neural control diagnosis and stopping decision.**
+The [source-bound CLI/API](docs/genomic-control-diagnosis.md) audited all 600 saved
+point/subsample maps with zero new model fits or draws. Numerical and source
+checks passed, but neural control splits exceeded PCA/shared-GMM with no recovery
+gain on the tested strong groups. The [prespecified decision](docs/genomic-control-diagnosis-results.md)
+is no-go for promotion, unguided tuning or a large calibration campaign for this
+architecture; it remains experimental. Causal mechanisms remain partly unresolved.
+Defaults and historical p-values are unchanged; detailed evidence stays local.
+
+**Previous checkpoint: SNPio-backed genomic neural baseline and PCA comparisons.**
 The [opt-in genomic CLI/API](docs/genomic-neural.md) compares the unchanged
 PCA/diagonal-GMM baseline, a PCA/shared-GMM control, and categorical-genotype
 autoencoder/shared-GMM arms on the same source snapshots and specimen subsets.

@@ -1,0 +1,2851 @@
+{
+  "author_contact": false,
+  "cells": [
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_0",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.35280721272907556,
+          "radius_spearman_mean": -0.31214190565355154
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.07844036267065001,
+          "radius_spearman_mean": 0.28284713264476324
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.32760146829314746,
+          "radius_spearman_mean": 0.4300213675213675
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.07291666666666667,
+      "independent_datasets": 3,
+      "k_counts": {
+        "3": 1,
+        "4": 2
+      },
+      "law": "admixture",
+      "n": 64,
+      "parameter_cost_mean": 33.27106466687737,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 17.85833126409837,
+      "twice_likelihood_gain_mean": 51.12939593097574
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_1",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.16989349072877102,
+          "radius_spearman_mean": -0.38694483516879785
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.010485581480727119,
+          "radius_spearman_mean": 0.3248399451777546
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.1791156805890762,
+          "radius_spearman_mean": 0.5528998778998778
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.041666666666666664,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 2,
+        "3": 1
+      },
+      "law": "admixture",
+      "n": 64,
+      "parameter_cost_mean": 8.317766166719343,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 1.4483973398023788,
+      "twice_likelihood_gain_mean": 9.766163506521721
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_2",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.13449285444585088,
+          "radius_spearman_mean": -0.6452999553088383
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.02719328236826614,
+          "radius_spearman_mean": 0.28723861371077036
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.15014993841351276,
+          "radius_spearman_mean": 0.7530677655677654
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.044270833333333336,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 2,
+        "4": 1
+      },
+      "law": "admixture",
+      "n": 64,
+      "parameter_cost_mean": 12.476649250079014,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 3.4516461132092218,
+      "twice_likelihood_gain_mean": 15.928295363288235
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_diagonal",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.01615255236121382,
+          "radius_spearman_mean": -0.7817345690564218
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.01958214187722766,
+          "radius_spearman_mean": 0.1965315426329132
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0056915921333817775,
+          "radius_spearman_mean": 0.8259157509157508
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 2,
+        "2": 1
+      },
+      "law": "admixture",
+      "n": 64,
+      "parameter_cost_mean": 6.931471805599453,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 1.9166046485593142,
+      "twice_likelihood_gain_mean": 8.848076454158766
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_shared",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.04404858503152057,
+          "radius_spearman_mean": -0.5174748769353176
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.013957523644247944,
+          "radius_spearman_mean": 0.12009125102868233
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.010001710232988886,
+          "radius_spearman_mean": 0.561645299145299
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 1,
+        "2": 2
+      },
+      "law": "admixture",
+      "n": 64,
+      "parameter_cost_mean": 8.317766166719343,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 4.738822779630141,
+      "twice_likelihood_gain_mean": 13.056588946349484
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_0",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.26626596144309317,
+          "radius_spearman_mean": -0.4440577749075465
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.15701758840484223,
+          "radius_spearman_mean": 0.1771136235590299
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.35930369560764824,
+          "radius_spearman_mean": 0.5281141274491851
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.0224609375,
+      "independent_datasets": 3,
+      "k_counts": {
+        "2": 1,
+        "4": 2
+      },
+      "law": "admixture",
+      "n": 128,
+      "parameter_cost_mean": 33.96421184743732,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 15.079119155426307,
+      "twice_likelihood_gain_mean": 49.043331002863624
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_1",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.0032785018320978018,
+          "radius_spearman_mean": -0.4258424833415113
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.020221142380031785,
+          "radius_spearman_mean": 0.26989605099283104
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.031077248193120036,
+          "radius_spearman_mean": 0.5747955197460782
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.025716145833333332,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 2,
+        "2": 1
+      },
+      "law": "admixture",
+      "n": 128,
+      "parameter_cost_mean": 4.852030263919617,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 1.1696538351285806,
+      "twice_likelihood_gain_mean": 6.021684099048198
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_2",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.03424816795838983,
+          "radius_spearman_mean": -0.5920077055594575
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.1259104605643017,
+          "radius_spearman_mean": 0.21783790925148558
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.19937978024876699,
+          "radius_spearman_mean": 0.6933521027894769
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.026204427083333332,
+      "independent_datasets": 3,
+      "k_counts": {
+        "2": 1,
+        "3": 2
+      },
+      "law": "admixture",
+      "n": 128,
+      "parameter_cost_mean": 24.260151319598084,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 15.838991373385207,
+      "twice_likelihood_gain_mean": 40.09914269298329
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_diagonal",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.17868741633279658,
+          "radius_spearman_mean": -0.735798049697002
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.22003968394337858,
+          "radius_spearman_mean": 0.08507724466905875
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.2173888122406342,
+          "radius_spearman_mean": 0.7476194836110602
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "2": 2,
+        "3": 1
+      },
+      "law": "admixture",
+      "n": 128,
+      "parameter_cost_mean": 32.346868426130776,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 15.071197330264416,
+      "twice_likelihood_gain_mean": 47.41806575639519
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_shared",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.029686019852166706,
+          "radius_spearman_mean": -0.3836274501375101
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.19451382781352025,
+          "radius_spearman_mean": 0.09385720960810197
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.11990402356456198,
+          "radius_spearman_mean": 0.42284876091070006
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "2": 3
+      },
+      "law": "admixture",
+      "n": 128,
+      "parameter_cost_mean": 14.556090791758853,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 18.242501384165053,
+      "twice_likelihood_gain_mean": 32.7985921759239
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_0",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.5775250033137308,
+          "radius_spearman_mean": -0.6450133747683766
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.6085611568688248,
+          "radius_spearman_mean": 0.6516885248314847
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.678646664527785,
+          "radius_spearman_mean": 0.7429181929181929
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.08821614583333333,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "cline",
+      "n": 64,
+      "parameter_cost_mean": 37.42994775023704,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 52.3322225269045,
+      "twice_likelihood_gain_mean": 89.76217027714154
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_1",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.43162620913008237,
+          "radius_spearman_mean": -0.6430449928453813
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.36037064026251914,
+          "radius_spearman_mean": 0.5100115328323493
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.45676829481073417,
+          "radius_spearman_mean": 0.6550824175824176
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.13216145833333334,
+      "independent_datasets": 3,
+      "k_counts": {
+        "2": 1,
+        "4": 2
+      },
+      "law": "cline",
+      "n": 64,
+      "parameter_cost_mean": 29.112181583517696,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 23.2674926551954,
+      "twice_likelihood_gain_mean": 52.3796742387131
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_2",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.035174966454452096,
+          "radius_spearman_mean": -0.5505445129471391
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.14892900493296404,
+          "radius_spearman_mean": 0.6446950503732612
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.1169112240974846,
+          "radius_spearman_mean": 0.6365537240537241
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.10904947916666667,
+      "independent_datasets": 3,
+      "k_counts": {
+        "3": 3
+      },
+      "law": "cline",
+      "n": 64,
+      "parameter_cost_mean": 24.953298500158027,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 14.797776854887786,
+      "twice_likelihood_gain_mean": 39.75107535504581
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_diagonal",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.6650644981055983,
+          "radius_spearman_mean": -0.8984256901110358
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.744521903273812,
+          "radius_spearman_mean": 0.7217779939440631
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.7575001313278541,
+          "radius_spearman_mean": 0.9320207570207569
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "3": 2,
+        "4": 1
+      },
+      "law": "cline",
+      "n": 64,
+      "parameter_cost_mean": 48.52030263919617,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 71.6800532875654,
+      "twice_likelihood_gain_mean": 120.20035592676157
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_shared",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.6581427562000425,
+          "radius_spearman_mean": -0.6497985466289168
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.8227906369499353,
+          "radius_spearman_mean": 0.4194601447273318
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.7849786710503909,
+          "radius_spearman_mean": 0.5778235653235653
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "cline",
+      "n": 64,
+      "parameter_cost_mean": 37.42994775023704,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 83.47866284485413,
+      "twice_likelihood_gain_mean": 120.90861059509116
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_0",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.6001440668023784,
+          "radius_spearman_mean": -0.7475502216090856
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.5672796292058323,
+          "radius_spearman_mean": 0.7081754650732021
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.6352221331936871,
+          "radius_spearman_mean": 0.7778718793871696
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.02587890625,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "cline",
+      "n": 128,
+      "parameter_cost_mean": 43.66827237527655,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 69.459560797782,
+      "twice_likelihood_gain_mean": 113.12783317305856
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_1",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.4161015984737218,
+          "radius_spearman_mean": -0.6790314427630285
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.351733423474842,
+          "radius_spearman_mean": 0.6524774628123701
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.4402465718386872,
+          "radius_spearman_mean": 0.7113490355856681
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.031087239583333332,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "cline",
+      "n": 128,
+      "parameter_cost_mean": 43.66827237527655,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 52.610456110659165,
+      "twice_likelihood_gain_mean": 96.27872848593573
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_2",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.3553680884741976,
+          "radius_spearman_mean": -0.647917668421086
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.3877160018013078,
+          "radius_spearman_mean": 0.5807379294704568
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.3646615961141661,
+          "radius_spearman_mean": 0.6678836293719099
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.040364583333333336,
+      "independent_datasets": 3,
+      "k_counts": {
+        "3": 2,
+        "4": 1
+      },
+      "law": "cline",
+      "n": 128,
+      "parameter_cost_mean": 33.96421184743732,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 44.87011807908326,
+      "twice_likelihood_gain_mean": 78.83432992652058
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_diagonal",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.6390316834152189,
+          "radius_spearman_mean": -0.9505517860306377
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.6928405926811334,
+          "radius_spearman_mean": 0.8340203454821026
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.7254659937106626,
+          "radius_spearman_mean": 0.9722635506317524
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "3": 2,
+        "4": 1
+      },
+      "law": "cline",
+      "n": 128,
+      "parameter_cost_mean": 56.60701974572887,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 153.20669688233156,
+      "twice_likelihood_gain_mean": 209.8137166280604
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_shared",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.5995929376734349,
+          "radius_spearman_mean": -0.6437310685759382
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.6873293310925437,
+          "radius_spearman_mean": 0.3859342166085388
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.6885225459857459,
+          "radius_spearman_mean": 0.5709214582188854
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "cline",
+      "n": 128,
+      "parameter_cost_mean": 43.66827237527655,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 154.64803656877677,
+      "twice_likelihood_gain_mean": 198.3163089440533
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_0",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.039080573206021714,
+          "radius_spearman_mean": -0.09868018170058251
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.045178632838157484,
+          "radius_spearman_mean": 0.16092166339556663
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0506383364657842,
+          "radius_spearman_mean": 0.3448565323565323
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": 0.03436295320353291,
+          "radius_spearman_mean": 0.16910088289275307
+        }
+      },
+      "first_hidden_saturation_mean": 0.007161458333333333,
+      "independent_datasets": 3,
+      "k_counts": {
+        "2": 1,
+        "3": 1,
+        "4": 1
+      },
+      "law": "common_hwe",
+      "n": 64,
+      "parameter_cost_mean": 24.953298500158027,
+      "rare_sensitivity_share_mean": 0.0017070460607059622,
+      "selected_bic_improvement_mean": 13.518401849229614,
+      "twice_likelihood_gain_mean": 38.47170034938764
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_1",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.01961725514574316
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.5309988146061347
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.5529151404151403
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.20316437009417096
+        }
+      },
+      "first_hidden_saturation_mean": 0.004231770833333333,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 3
+      },
+      "law": "common_hwe",
+      "n": 64,
+      "parameter_cost_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.004694329548315373,
+      "selected_bic_improvement_mean": 0.0,
+      "twice_likelihood_gain_mean": 0.0
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_2",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.11364758366334882,
+          "radius_spearman_mean": -0.2623275520052633
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.17239446179611317,
+          "radius_spearman_mean": 0.0855316758447998
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.12906073321751896,
+          "radius_spearman_mean": 0.3483821733821733
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": 0.03680677319121255,
+          "radius_spearman_mean": -0.04744557145911777
+        }
+      },
+      "first_hidden_saturation_mean": 0.021484375,
+      "independent_datasets": 3,
+      "k_counts": {
+        "3": 1,
+        "4": 2
+      },
+      "law": "common_hwe",
+      "n": 64,
+      "parameter_cost_mean": 33.27106466687737,
+      "rare_sensitivity_share_mean": 0.0049297240078365785,
+      "selected_bic_improvement_mean": 18.87600115755248,
+      "twice_likelihood_gain_mean": 52.14706582442985
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_diagonal",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": -0.23072862827231708
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.192014406157995
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.3441544566544566
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.08637527111788108
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 3
+      },
+      "law": "common_hwe",
+      "n": 64,
+      "parameter_cost_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.002894170169753092,
+      "selected_bic_improvement_mean": 0.0,
+      "twice_likelihood_gain_mean": 0.0
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_shared",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": -0.23046036710870377
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.1919305803564013
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.34090354090354086
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.08150905866053566
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 3
+      },
+      "law": "common_hwe",
+      "n": 64,
+      "parameter_cost_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0029216316237429996,
+      "selected_bic_improvement_mean": 0.0,
+      "twice_likelihood_gain_mean": 0.0
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_0",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.07700359551498766,
+          "radius_spearman_mean": -0.007795360005856529
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.04587770453209989,
+          "radius_spearman_mean": 0.24350768040481008
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.052132824248073785,
+          "radius_spearman_mean": 0.2769810932063725
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.012044270833333334,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "common_hwe",
+      "n": 128,
+      "parameter_cost_mean": 43.66827237527655,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 36.88760230012656,
+      "twice_likelihood_gain_mean": 80.55587467540312
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_1",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.059329266201966456,
+          "radius_spearman_mean": -0.12125220246721709
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.03996462014743695,
+          "radius_spearman_mean": 0.32747202037631895
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.04973045462952413,
+          "radius_spearman_mean": 0.5298689953000061
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.012858072916666666,
+      "independent_datasets": 3,
+      "k_counts": {
+        "2": 2,
+        "4": 1
+      },
+      "law": "common_hwe",
+      "n": 128,
+      "parameter_cost_mean": 24.260151319598084,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 20.56602385745801,
+      "twice_likelihood_gain_mean": 44.82617517705609
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_2",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.013110030598201062,
+          "radius_spearman_mean": -0.006537230296136019
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.0986437933074669,
+          "radius_spearman_mean": 0.10428802585846092
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.10606257198766396,
+          "radius_spearman_mean": 0.16285555148629677
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.011555989583333334,
+      "independent_datasets": 3,
+      "k_counts": {
+        "3": 1,
+        "4": 2
+      },
+      "law": "common_hwe",
+      "n": 128,
+      "parameter_cost_mean": 38.816242111356935,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 85.46458744104291,
+      "twice_likelihood_gain_mean": 124.28082955239984
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_diagonal",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": -0.08091984691744075
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.1233245991137447
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.18701359641091375
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 3
+      },
+      "law": "common_hwe",
+      "n": 128,
+      "parameter_cost_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 0.0,
+      "twice_likelihood_gain_mean": 0.0
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_shared",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": -0.07905375389148196
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.12461595895817801
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.18763924494903253
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 3
+      },
+      "law": "common_hwe",
+      "n": 128,
+      "parameter_cost_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 0.0,
+      "twice_likelihood_gain_mean": 0.0
+    },
+    {
+      "ari_mean": 1.0,
+      "arm": "neural_seed_0",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.7940679159052092,
+          "radius_spearman_mean": -0.0668895517053126
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.9930284322746682,
+          "radius_spearman_mean": 0.06921949356916975
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.6697564009447211,
+          "radius_spearman_mean": 0.06854395604395601
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.5836588541666666,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "four_groups",
+      "n": 64,
+      "parameter_cost_mean": 37.42994775023704,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 420.38703082831734,
+      "twice_likelihood_gain_mean": 457.81697857855426
+    },
+    {
+      "ari_mean": 1.0,
+      "arm": "neural_seed_1",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.7940679159052092,
+          "radius_spearman_mean": 0.1378545532365723
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.9930284322746682,
+          "radius_spearman_mean": 0.25444107842286506
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.6697564009447211,
+          "radius_spearman_mean": 0.23365384615384613
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.458984375,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "four_groups",
+      "n": 64,
+      "parameter_cost_mean": 37.42994775023704,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 286.12722452465863,
+      "twice_likelihood_gain_mean": 323.55717227489566
+    },
+    {
+      "ari_mean": 1.0,
+      "arm": "neural_seed_2",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.7940679159052092,
+          "radius_spearman_mean": -0.014449348893624878
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.9930284322746682,
+          "radius_spearman_mean": 0.2044326066482248
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.6697564009447211,
+          "radius_spearman_mean": 0.265995115995116
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.458984375,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "four_groups",
+      "n": 64,
+      "parameter_cost_mean": 37.42994775023704,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 212.99610886208998,
+      "twice_likelihood_gain_mean": 250.42605661232702
+    },
+    {
+      "ari_mean": 1.0,
+      "arm": "pca_diagonal",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.7940679159052092,
+          "radius_spearman_mean": -0.3895036152665911
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.9930284322746682,
+          "radius_spearman_mean": 0.08939732320410215
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.6697564009447211,
+          "radius_spearman_mean": 0.4046550671550671
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "four_groups",
+      "n": 64,
+      "parameter_cost_mean": 62.383246250395075,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 511.9749033862454,
+      "twice_likelihood_gain_mean": 574.3581496366405
+    },
+    {
+      "ari_mean": 1.0,
+      "arm": "pca_shared",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.7940679159052092,
+          "radius_spearman_mean": -0.38294874048271027
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.9930284322746682,
+          "radius_spearman_mean": 0.09572081618329496
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.6697564009447211,
+          "radius_spearman_mean": 0.4111568986568986
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "four_groups",
+      "n": 64,
+      "parameter_cost_mean": 37.42994775023704,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 510.6252546492519,
+      "twice_likelihood_gain_mean": 548.0552023994888
+    },
+    {
+      "ari_mean": 1.0,
+      "arm": "neural_seed_0",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.8090591529075959,
+          "radius_spearman_mean": -0.21786973779130756
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.9947052805287843,
+          "radius_spearman_mean": -0.14326293194805775
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.7716981815438183,
+          "radius_spearman_mean": -0.1104384117682964
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.5763346354166666,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "four_groups",
+      "n": 128,
+      "parameter_cost_mean": 43.66827237527655,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 783.7204685894616,
+      "twice_likelihood_gain_mean": 827.3887409647381
+    },
+    {
+      "ari_mean": 1.0,
+      "arm": "neural_seed_1",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.8090591529075959,
+          "radius_spearman_mean": 0.05063905042286676
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.9947052805287843,
+          "radius_spearman_mean": 0.13735399274531135
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.7716981815438183,
+          "radius_spearman_mean": 0.1737872337178783
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.4855143229166667,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "four_groups",
+      "n": 128,
+      "parameter_cost_mean": 43.66827237527655,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 675.4557802070414,
+      "twice_likelihood_gain_mean": 719.1240525823179
+    },
+    {
+      "ari_mean": 1.0,
+      "arm": "neural_seed_2",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.8090591529075959,
+          "radius_spearman_mean": -0.0790410821582742
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.9947052805287843,
+          "radius_spearman_mean": -0.03443550095633685
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.7716981815438183,
+          "radius_spearman_mean": -0.03151895257278886
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.5232747395833334,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "four_groups",
+      "n": 128,
+      "parameter_cost_mean": 43.66827237527655,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 644.0480667045255,
+      "twice_likelihood_gain_mean": 687.716339079802
+    },
+    {
+      "ari_mean": 1.0,
+      "arm": "pca_diagonal",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.8090591529075959,
+          "radius_spearman_mean": -0.3075278858520492
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.9947052805287843,
+          "radius_spearman_mean": 0.18200667553042973
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.7716981815438183,
+          "radius_spearman_mean": 0.4136471494842214
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "four_groups",
+      "n": 128,
+      "parameter_cost_mean": 72.78045395879425,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 1022.2422511635755,
+      "twice_likelihood_gain_mean": 1095.0227051223699
+    },
+    {
+      "ari_mean": 1.0,
+      "arm": "pca_shared",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.8090591529075959,
+          "radius_spearman_mean": -0.30677362151034154
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.9947052805287843,
+          "radius_spearman_mean": 0.18883439334952445
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.7716981815438183,
+          "radius_spearman_mean": 0.41963658975767565
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "four_groups",
+      "n": 128,
+      "parameter_cost_mean": 43.66827237527655,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 1017.4799615228926,
+      "twice_likelihood_gain_mean": 1061.148233898169
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_0",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.013400462106260851,
+          "radius_spearman_mean": -0.08026600421297952
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.02047083244777832,
+          "radius_spearman_mean": 0.252049590708969
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0052717660231788805,
+          "radius_spearman_mean": 0.3484584859584859
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.3977864583333333,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 1,
+        "2": 2
+      },
+      "law": "perfect_ld",
+      "n": 64,
+      "parameter_cost_mean": 8.317766166719343,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 4.31596652823265,
+      "twice_likelihood_gain_mean": 12.633732694951993
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_1",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.000714480598400533,
+          "radius_spearman_mean": -0.02201723273968145
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.00016682794571099222,
+          "radius_spearman_mean": 0.4122647812198475
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0021482639320268217,
+          "radius_spearman_mean": 0.602640415140415
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.4231770833333333,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 2,
+        "2": 1
+      },
+      "law": "perfect_ld",
+      "n": 64,
+      "parameter_cost_mean": 4.1588830833596715,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 0.8217295464945096,
+      "twice_likelihood_gain_mean": 4.980612629854181
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_2",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.06559535498565779,
+          "radius_spearman_mean": -0.16795766540211518
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.18437085035391132,
+          "radius_spearman_mean": 0.09545720190357954
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.13897268977433463,
+          "radius_spearman_mean": 0.3465506715506715
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.4147135416666667,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 1,
+        "2": 1,
+        "4": 1
+      },
+      "law": "perfect_ld",
+      "n": 64,
+      "parameter_cost_mean": 16.635532333438686,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 10.797522851147827,
+      "twice_likelihood_gain_mean": 27.43305518458651
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_diagonal",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": -0.08969082310085053
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.250415926830762
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.4290140415140415
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 3
+      },
+      "law": "perfect_ld",
+      "n": 64,
+      "parameter_cost_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 0.0,
+      "twice_likelihood_gain_mean": 0.0
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_shared",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": -0.09280494996299694
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.2529475031014969
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.4355616605616605
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 3
+      },
+      "law": "perfect_ld",
+      "n": 64,
+      "parameter_cost_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 0.0,
+      "twice_likelihood_gain_mean": 0.0
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_0",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.08241183821224156,
+          "radius_spearman_mean": -0.01210670137631815
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.05997621428302007,
+          "radius_spearman_mean": 0.303663419975935
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.05324896724145512,
+          "radius_spearman_mean": 0.31197353964475366
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.5179036458333334,
+      "independent_datasets": 3,
+      "k_counts": {
+        "2": 1,
+        "3": 2
+      },
+      "law": "perfect_ld",
+      "n": 128,
+      "parameter_cost_mean": 24.260151319598084,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 25.010942292389473,
+      "twice_likelihood_gain_mean": 49.27109361198756
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_1",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.10409184787064422
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.5744709444339
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.6222761399011169
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.5130208333333334,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 3
+      },
+      "law": "perfect_ld",
+      "n": 128,
+      "parameter_cost_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 0.0,
+      "twice_likelihood_gain_mean": 0.0
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_2",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.12511470027899987,
+          "radius_spearman_mean": -0.12852390538663705
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.21700260928752943,
+          "radius_spearman_mean": 0.1686638238623014
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.10358883879270492,
+          "radius_spearman_mean": 0.2943428401391686
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": 0.5060221354166666,
+      "independent_datasets": 3,
+      "k_counts": {
+        "2": 1,
+        "4": 2
+      },
+      "law": "perfect_ld",
+      "n": 128,
+      "parameter_cost_mean": 33.96421184743732,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 21.969389492708803,
+      "twice_likelihood_gain_mean": 55.93360134014612
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_diagonal",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": -0.09420475682939368
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.21647321378084605
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.42501945614356346
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 3
+      },
+      "law": "perfect_ld",
+      "n": 128,
+      "parameter_cost_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 0.0,
+      "twice_likelihood_gain_mean": 0.0
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_shared",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": -0.09616360874802458
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.21495898701801006
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.42643861014466217
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": null,
+          "radius_spearman_mean": null
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 3
+      },
+      "law": "perfect_ld",
+      "n": 128,
+      "parameter_cost_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0,
+      "selected_bic_improvement_mean": 0.0,
+      "twice_likelihood_gain_mean": 0.0
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_0",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.5157709019413524,
+          "radius_spearman_mean": 0.5772271455398915
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.5337242804317084,
+          "radius_spearman_mean": 0.5857665251683273
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.3396030920025855,
+          "radius_spearman_mean": 0.46510989010989007
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": 0.47788002322791917,
+          "radius_spearman_mean": 0.5769560145680449
+        }
+      },
+      "first_hidden_saturation_mean": 0.051106770833333336,
+      "independent_datasets": 3,
+      "k_counts": {
+        "3": 2,
+        "4": 1
+      },
+      "law": "rare_complete_hwe",
+      "n": 64,
+      "parameter_cost_mean": 29.112181583517696,
+      "rare_sensitivity_share_mean": 0.9096783954298311,
+      "selected_bic_improvement_mean": 78.48075270389789,
+      "twice_likelihood_gain_mean": 107.59293428741559
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_1",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.41028120552768405,
+          "radius_spearman_mean": 0.564327400331651
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.4655220253213998,
+          "radius_spearman_mean": 0.5527374028842548
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.4094770195782056,
+          "radius_spearman_mean": 0.4589438339438339
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": 0.44815030149110185,
+          "radius_spearman_mean": 0.5203545433731472
+        }
+      },
+      "first_hidden_saturation_mean": 0.0693359375,
+      "independent_datasets": 3,
+      "k_counts": {
+        "3": 2,
+        "4": 1
+      },
+      "law": "rare_complete_hwe",
+      "n": 64,
+      "parameter_cost_mean": 29.112181583517696,
+      "rare_sensitivity_share_mean": 0.9117800262211176,
+      "selected_bic_improvement_mean": 71.76816212695992,
+      "twice_likelihood_gain_mean": 100.88034371047763
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_2",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.5705650570170872,
+          "radius_spearman_mean": 0.42039283550598955
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.6235431523436743,
+          "radius_spearman_mean": 0.40930550264368853
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.48486998637329076,
+          "radius_spearman_mean": 0.3606837606837607
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": 0.5502692069142051,
+          "radius_spearman_mean": 0.34259748864108713
+        }
+      },
+      "first_hidden_saturation_mean": 0.06705729166666667,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "rare_complete_hwe",
+      "n": 64,
+      "parameter_cost_mean": 37.42994775023704,
+      "rare_sensitivity_share_mean": 0.9064150645330066,
+      "selected_bic_improvement_mean": 89.18532761548578,
+      "twice_likelihood_gain_mean": 126.61527536572281
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_diagonal",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.00441606885026358,
+          "radius_spearman_mean": 0.45409681696734266
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.0084174829382751,
+          "radius_spearman_mean": 0.5372014353955964
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.027307595987300596,
+          "radius_spearman_mean": 0.6070970695970695
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": 0.018997976975743486,
+          "radius_spearman_mean": 0.5322031889898006
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 2,
+        "2": 1
+      },
+      "law": "rare_complete_hwe",
+      "n": 64,
+      "parameter_cost_mean": 6.931471805599453,
+      "rare_sensitivity_share_mean": 0.9186902955426482,
+      "selected_bic_improvement_mean": 2.9227989866464363,
+      "twice_likelihood_gain_mean": 9.85427079224589
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_shared",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.4522092205493602
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.5356343770893651
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.6057081807081807
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": 0.0,
+          "radius_spearman_mean": 0.5293914754054071
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 3
+      },
+      "law": "rare_complete_hwe",
+      "n": 64,
+      "parameter_cost_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.9187643015969552,
+      "selected_bic_improvement_mean": 0.0,
+      "twice_likelihood_gain_mean": 0.0
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_0",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.5106282491602233,
+          "radius_spearman_mean": 0.15860110196455288
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.6142929827174655,
+          "radius_spearman_mean": 0.21731748430863793
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.49243477531730884,
+          "radius_spearman_mean": 0.19126533601904408
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": 0.571248195213793,
+          "radius_spearman_mean": 0.22928574573654356
+        }
+      },
+      "first_hidden_saturation_mean": 0.048014322916666664,
+      "independent_datasets": 3,
+      "k_counts": {
+        "3": 1,
+        "4": 2
+      },
+      "law": "rare_complete_hwe",
+      "n": 128,
+      "parameter_cost_mean": 38.816242111356935,
+      "rare_sensitivity_share_mean": 0.9492359415119208,
+      "selected_bic_improvement_mean": 171.50562026687552,
+      "twice_likelihood_gain_mean": 210.32186237823245
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_1",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.5423778396438321,
+          "radius_spearman_mean": 0.08384710975416089
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.6248431071024108,
+          "radius_spearman_mean": 0.13421342492241484
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.5047421984803883,
+          "radius_spearman_mean": 0.12301432887749496
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": 0.585118470123334,
+          "radius_spearman_mean": 0.12274146989231922
+        }
+      },
+      "first_hidden_saturation_mean": 0.043619791666666664,
+      "independent_datasets": 3,
+      "k_counts": {
+        "4": 3
+      },
+      "law": "rare_complete_hwe",
+      "n": 128,
+      "parameter_cost_mean": 43.66827237527655,
+      "rare_sensitivity_share_mean": 0.9510430446424918,
+      "selected_bic_improvement_mean": 184.44640823650334,
+      "twice_likelihood_gain_mean": 228.1146806117799
+    },
+    {
+      "ari_mean": null,
+      "arm": "neural_seed_2",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.5216824537548331,
+          "radius_spearman_mean": 0.17177290090094463
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.6222759017724407,
+          "radius_spearman_mean": 0.23645752533597045
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.5077794892249299,
+          "radius_spearman_mean": 0.22981711225050358
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": 0.5588501032507104,
+          "radius_spearman_mean": 0.22150080481771162
+        }
+      },
+      "first_hidden_saturation_mean": 0.029622395833333332,
+      "independent_datasets": 3,
+      "k_counts": {
+        "3": 1,
+        "4": 2
+      },
+      "law": "rare_complete_hwe",
+      "n": 128,
+      "parameter_cost_mean": 38.816242111356935,
+      "rare_sensitivity_share_mean": 0.9438899540816318,
+      "selected_bic_improvement_mean": 155.75890351735586,
+      "twice_likelihood_gain_mean": 194.5751456287128
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_diagonal",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.018012816680904892,
+          "radius_spearman_mean": 0.37329051312210854
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.02836718599274997,
+          "radius_spearman_mean": 0.4790846885077386
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.08728448335729183,
+          "radius_spearman_mean": 0.5165625190746505
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": 0.03185924651080604,
+          "radius_spearman_mean": 0.46859774556085076
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 2,
+        "2": 1
+      },
+      "law": "rare_complete_hwe",
+      "n": 128,
+      "parameter_cost_mean": 8.086717106532694,
+      "rare_sensitivity_share_mean": 0.9455542357858501,
+      "selected_bic_improvement_mean": 13.164495922176608,
+      "twice_likelihood_gain_mean": 21.2512130287093
+    },
+    {
+      "ari_mean": null,
+      "arm": "pca_shared",
+      "associations": {
+        "heterozygous_fraction": {
+          "label_variance_fraction_mean": 0.023505668225904396,
+          "radius_spearman_mean": 0.3734457368894415
+        },
+        "minor_allele_dosage": {
+          "label_variance_fraction_mean": 0.02760045716797788,
+          "radius_spearman_mean": 0.47953257458086923
+        },
+        "patterson_energy": {
+          "label_variance_fraction_mean": 0.0894001276926365,
+          "radius_spearman_mean": 0.5164423487761703
+        },
+        "rare_minor_carriers": {
+          "label_variance_fraction_mean": 0.029979413525601836,
+          "radius_spearman_mean": 0.46854240066150393
+        }
+      },
+      "first_hidden_saturation_mean": null,
+      "independent_datasets": 3,
+      "k_counts": {
+        "1": 2,
+        "3": 1
+      },
+      "law": "rare_complete_hwe",
+      "n": 128,
+      "parameter_cost_mean": 9.704060527839234,
+      "rare_sensitivity_share_mean": 0.9456449100519819,
+      "selected_bic_improvement_mean": 13.844622276812364,
+      "twice_likelihood_gain_mean": 23.548682804651595
+    }
+  ],
+  "decision": {
+    "automatic_default_change": false,
+    "implementation_fault_detected": false,
+    "interpretation": "Integrity checks passed. Associations do not establish a causal mechanism. No numerical repair is justified by this audit; future development requires a prespecified independent benefit/control validation.",
+    "retained_as": "experimental",
+    "status": "no_go_for_promotion_unguided_tuning_or_large_calibration"
+  },
+  "defaults_changed": false,
+  "geometry_cells": [
+    {
+      "arm": "neural_seed_0",
+      "coordinate_excess_kurtosis_mean": -1.029309780240253,
+      "hidden_saturation_mean": [
+        0.07291666666666667,
+        0.193359375
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 8.47111732323047e-10,
+      "law": "admixture",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_1",
+      "coordinate_excess_kurtosis_mean": -0.606160619996227,
+      "hidden_saturation_mean": [
+        0.041666666666666664,
+        0.18359375
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 6.378035842524721e-10,
+      "law": "admixture",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_2",
+      "coordinate_excess_kurtosis_mean": -1.0811603985287233,
+      "hidden_saturation_mean": [
+        0.044270833333333336,
+        0.18619791666666666
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 6.341409411469989e-10,
+      "law": "admixture",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_diagonal",
+      "coordinate_excess_kurtosis_mean": -0.7532108651607706,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "admixture",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_shared",
+      "coordinate_excess_kurtosis_mean": -0.7532108651607693,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "admixture",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_0",
+      "coordinate_excess_kurtosis_mean": -0.875918058416909,
+      "hidden_saturation_mean": [
+        0.0224609375,
+        0.055338541666666664
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 6.002162343532458e-10,
+      "law": "admixture",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_1",
+      "coordinate_excess_kurtosis_mean": -0.7439198690062919,
+      "hidden_saturation_mean": [
+        0.025716145833333332,
+        0.0576171875
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 3.9681410934910843e-10,
+      "law": "admixture",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_2",
+      "coordinate_excess_kurtosis_mean": -0.9014921849335852,
+      "hidden_saturation_mean": [
+        0.026204427083333332,
+        0.060872395833333336
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 4.895809244120919e-10,
+      "law": "admixture",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_diagonal",
+      "coordinate_excess_kurtosis_mean": -0.5880216522980477,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "admixture",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_shared",
+      "coordinate_excess_kurtosis_mean": -0.5880216522980463,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "admixture",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_0",
+      "coordinate_excess_kurtosis_mean": -1.0519953159561575,
+      "hidden_saturation_mean": [
+        0.08821614583333333,
+        0.10026041666666667
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 4.71646964539385e-10,
+      "law": "cline",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_1",
+      "coordinate_excess_kurtosis_mean": -1.0405783278723975,
+      "hidden_saturation_mean": [
+        0.13216145833333334,
+        0.140625
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 4.705037158492242e-10,
+      "law": "cline",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_2",
+      "coordinate_excess_kurtosis_mean": -0.941082237250952,
+      "hidden_saturation_mean": [
+        0.10904947916666667,
+        0.11653645833333333
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 4.4585550182385525e-10,
+      "law": "cline",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_diagonal",
+      "coordinate_excess_kurtosis_mean": -1.0916684954796967,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "cline",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_shared",
+      "coordinate_excess_kurtosis_mean": -1.091668495479696,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "cline",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_0",
+      "coordinate_excess_kurtosis_mean": -1.006754360332706,
+      "hidden_saturation_mean": [
+        0.02587890625,
+        0.013346354166666666
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 4.789219819334445e-10,
+      "law": "cline",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_1",
+      "coordinate_excess_kurtosis_mean": -1.0949208480216583,
+      "hidden_saturation_mean": [
+        0.031087239583333332,
+        0.033854166666666664
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 4.627943167578863e-10,
+      "law": "cline",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_2",
+      "coordinate_excess_kurtosis_mean": -0.9231532932512503,
+      "hidden_saturation_mean": [
+        0.040364583333333336,
+        0.0341796875
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 4.2783116372541174e-10,
+      "law": "cline",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_diagonal",
+      "coordinate_excess_kurtosis_mean": -1.1286509820211188,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "cline",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_shared",
+      "coordinate_excess_kurtosis_mean": -1.12865098202112,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "cline",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_0",
+      "coordinate_excess_kurtosis_mean": -1.0037225398390486,
+      "hidden_saturation_mean": [
+        0.007161458333333333,
+        0.17903645833333334
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 6.701857003382772e-10,
+      "law": "common_hwe",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0026041666666666665,
+      "rare_sensitivity_share_mean": 0.0017070460607059622
+    },
+    {
+      "arm": "neural_seed_1",
+      "coordinate_excess_kurtosis_mean": -0.4115658867268464,
+      "hidden_saturation_mean": [
+        0.004231770833333333,
+        0.13541666666666666
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 5.462699737002197e-10,
+      "law": "common_hwe",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0026041666666666665,
+      "rare_sensitivity_share_mean": 0.004694329548315373
+    },
+    {
+      "arm": "neural_seed_2",
+      "coordinate_excess_kurtosis_mean": -0.9027864646058203,
+      "hidden_saturation_mean": [
+        0.021484375,
+        0.16666666666666666
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 6.666511752351223e-10,
+      "law": "common_hwe",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0026041666666666665,
+      "rare_sensitivity_share_mean": 0.0049297240078365785
+    },
+    {
+      "arm": "pca_diagonal",
+      "coordinate_excess_kurtosis_mean": -0.11099978170217122,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "common_hwe",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0026041666666666665,
+      "rare_sensitivity_share_mean": 0.002894170169753092
+    },
+    {
+      "arm": "pca_shared",
+      "coordinate_excess_kurtosis_mean": -0.11099978170217017,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "common_hwe",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0026041666666666665,
+      "rare_sensitivity_share_mean": 0.0029216316237429996
+    },
+    {
+      "arm": "neural_seed_0",
+      "coordinate_excess_kurtosis_mean": -1.0609508894071635,
+      "hidden_saturation_mean": [
+        0.012044270833333334,
+        0.068359375
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 5.934952043706865e-10,
+      "law": "common_hwe",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_1",
+      "coordinate_excess_kurtosis_mean": -0.5239696485396668,
+      "hidden_saturation_mean": [
+        0.012858072916666666,
+        0.039713541666666664
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 5.999750002372295e-10,
+      "law": "common_hwe",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_2",
+      "coordinate_excess_kurtosis_mean": -0.9222696676348178,
+      "hidden_saturation_mean": [
+        0.011555989583333334,
+        0.0576171875
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 4.533660408895246e-10,
+      "law": "common_hwe",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_diagonal",
+      "coordinate_excess_kurtosis_mean": -0.015655990290633765,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "common_hwe",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_shared",
+      "coordinate_excess_kurtosis_mean": -0.015655990290633543,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "common_hwe",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_0",
+      "coordinate_excess_kurtosis_mean": -1.489923462265573,
+      "hidden_saturation_mean": [
+        0.5836588541666666,
+        0.48828125
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 6.473001678392563e-10,
+      "law": "four_groups",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_1",
+      "coordinate_excess_kurtosis_mean": -1.089937742620497,
+      "hidden_saturation_mean": [
+        0.458984375,
+        0.2884114583333333
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 6.185052157936521e-10,
+      "law": "four_groups",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_2",
+      "coordinate_excess_kurtosis_mean": -1.4057149879963122,
+      "hidden_saturation_mean": [
+        0.458984375,
+        0.2975260416666667
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 4.544047152443831e-10,
+      "law": "four_groups",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_diagonal",
+      "coordinate_excess_kurtosis_mean": -1.832375555007773,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "four_groups",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_shared",
+      "coordinate_excess_kurtosis_mean": -1.8323755550077727,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "four_groups",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_0",
+      "coordinate_excess_kurtosis_mean": -1.6052548247199996,
+      "hidden_saturation_mean": [
+        0.5763346354166666,
+        0.44921875
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 7.293680364534039e-10,
+      "law": "four_groups",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_1",
+      "coordinate_excess_kurtosis_mean": -1.3067330036000888,
+      "hidden_saturation_mean": [
+        0.4855143229166667,
+        0.3238932291666667
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 4.441890622680633e-10,
+      "law": "four_groups",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_2",
+      "coordinate_excess_kurtosis_mean": -1.3457974589615749,
+      "hidden_saturation_mean": [
+        0.5232747395833334,
+        0.3313802083333333
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 4.690139093072032e-10,
+      "law": "four_groups",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_diagonal",
+      "coordinate_excess_kurtosis_mean": -1.543692526018652,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "four_groups",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_shared",
+      "coordinate_excess_kurtosis_mean": -1.5436925260186525,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "four_groups",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_0",
+      "coordinate_excess_kurtosis_mean": -0.40821635703018083,
+      "hidden_saturation_mean": [
+        0.3977864583333333,
+        0.09049479166666667
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 7.569772308979594e-10,
+      "law": "perfect_ld",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_1",
+      "coordinate_excess_kurtosis_mean": -0.2373594882515381,
+      "hidden_saturation_mean": [
+        0.4231770833333333,
+        0.07291666666666667
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 7.514464953062294e-10,
+      "law": "perfect_ld",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_2",
+      "coordinate_excess_kurtosis_mean": -0.8987432178332472,
+      "hidden_saturation_mean": [
+        0.4147135416666667,
+        0.1015625
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 6.525243158306271e-10,
+      "law": "perfect_ld",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_diagonal",
+      "coordinate_excess_kurtosis_mean": -0.2717374096492959,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "perfect_ld",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_shared",
+      "coordinate_excess_kurtosis_mean": -0.271737409649296,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "perfect_ld",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_0",
+      "coordinate_excess_kurtosis_mean": -0.3835018621418888,
+      "hidden_saturation_mean": [
+        0.5179036458333334,
+        0.035481770833333336
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 4.5580592425431554e-10,
+      "law": "perfect_ld",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_1",
+      "coordinate_excess_kurtosis_mean": 0.10664790558931984,
+      "hidden_saturation_mean": [
+        0.5130208333333334,
+        0.042643229166666664
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 6.688298109791546e-10,
+      "law": "perfect_ld",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_2",
+      "coordinate_excess_kurtosis_mean": -0.5755804393112938,
+      "hidden_saturation_mean": [
+        0.5060221354166666,
+        0.027018229166666668
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 4.744179857990583e-10,
+      "law": "perfect_ld",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_diagonal",
+      "coordinate_excess_kurtosis_mean": -0.19342729158601993,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "perfect_ld",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "pca_shared",
+      "coordinate_excess_kurtosis_mean": -0.19342729158602098,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "perfect_ld",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.0,
+      "rare_sensitivity_share_mean": 0.0
+    },
+    {
+      "arm": "neural_seed_0",
+      "coordinate_excess_kurtosis_mean": -0.9055807778462021,
+      "hidden_saturation_mean": [
+        0.051106770833333336,
+        0.030598958333333332
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 3.371213863623268e-10,
+      "law": "rare_complete_hwe",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.8771121351766513,
+      "rare_sensitivity_share_mean": 0.9096783954298311
+    },
+    {
+      "arm": "neural_seed_1",
+      "coordinate_excess_kurtosis_mean": -1.0666624296944112,
+      "hidden_saturation_mean": [
+        0.0693359375,
+        0.048177083333333336
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 4.3222527640329744e-10,
+      "law": "rare_complete_hwe",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.8771121351766513,
+      "rare_sensitivity_share_mean": 0.9117800262211178
+    },
+    {
+      "arm": "neural_seed_2",
+      "coordinate_excess_kurtosis_mean": -0.9416294889449963,
+      "hidden_saturation_mean": [
+        0.06705729166666667,
+        0.010416666666666666
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 3.88417013830189e-10,
+      "law": "rare_complete_hwe",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.8771121351766513,
+      "rare_sensitivity_share_mean": 0.9064150645330066
+    },
+    {
+      "arm": "pca_diagonal",
+      "coordinate_excess_kurtosis_mean": 4.453457399650575,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "rare_complete_hwe",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.8771121351766513,
+      "rare_sensitivity_share_mean": 0.9186902955426482
+    },
+    {
+      "arm": "pca_shared",
+      "coordinate_excess_kurtosis_mean": 4.453457399650573,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "rare_complete_hwe",
+      "n": 64,
+      "rare_retained_fraction_mean": 0.8771121351766513,
+      "rare_sensitivity_share_mean": 0.9187643015969551
+    },
+    {
+      "arm": "neural_seed_0",
+      "coordinate_excess_kurtosis_mean": -0.8944939830632377,
+      "hidden_saturation_mean": [
+        0.048014322916666664,
+        0.009440104166666666
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 6.219172329902101e-10,
+      "law": "rare_complete_hwe",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.908690124671916,
+      "rare_sensitivity_share_mean": 0.9492359415119208
+    },
+    {
+      "arm": "neural_seed_1",
+      "coordinate_excess_kurtosis_mean": -0.938312868767765,
+      "hidden_saturation_mean": [
+        0.043619791666666664,
+        0.025390625
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 6.482113699968206e-10,
+      "law": "rare_complete_hwe",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.908690124671916,
+      "rare_sensitivity_share_mean": 0.9510430446424918
+    },
+    {
+      "arm": "neural_seed_2",
+      "coordinate_excess_kurtosis_mean": -0.9407337547574495,
+      "hidden_saturation_mean": [
+        0.029622395833333332,
+        0.006184895833333333
+      ],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": 4.685276194793531e-10,
+      "law": "rare_complete_hwe",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.908690124671916,
+      "rare_sensitivity_share_mean": 0.9438899540816317
+    },
+    {
+      "arm": "pca_diagonal",
+      "coordinate_excess_kurtosis_mean": 1.9045886082961818,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "rare_complete_hwe",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.908690124671916,
+      "rare_sensitivity_share_mean": 0.9455542357858501
+    },
+    {
+      "arm": "pca_shared",
+      "coordinate_excess_kurtosis_mean": 1.9045886082961825,
+      "hidden_saturation_mean": [],
+      "independent_datasets": 3,
+      "jacobian_maximum_error": null,
+      "law": "rare_complete_hwe",
+      "n": 128,
+      "rare_retained_fraction_mean": 0.908690124671916,
+      "rare_sensitivity_share_mean": 0.945644910051982
+    }
+  ],
+  "historical_pvalues_changed": false,
+  "independent_source_map_checks": 840,
+  "individual_study_records": 0,
+  "interpretation": "Three independent main datasets per law/N cell; neural seeds and saved draws are repeated measurements. Coefficients, geometry and costs are descriptive; no causal rare-allele/saturation diagnosis or general false-positive estimate is established.",
+  "main_observations": 36,
+  "neural_maps": 360,
+  "new_model_fits": 0,
+  "new_random_draws": 0,
+  "new_significance_tests": 0,
+  "new_training_updates": 0,
+  "observations": 48,
+  "old_schemas_changed": false,
+  "original_audited_updates_bound_by_source_receipts": 180000,
+  "paired_main_comparisons": [
+    {
+      "alternative_datasets": 6,
+      "arm": "neural_seed_0",
+      "control_datasets": 12,
+      "neural_ari_better": 0,
+      "neural_control_splits": 12,
+      "neural_only_control_splits": 11,
+      "pca_ari_better": 0,
+      "pca_control_splits": 1,
+      "pca_only_control_splits": 0
+    },
+    {
+      "alternative_datasets": 6,
+      "arm": "neural_seed_1",
+      "control_datasets": 12,
+      "neural_ari_better": 0,
+      "neural_control_splits": 9,
+      "neural_only_control_splits": 8,
+      "pca_ari_better": 0,
+      "pca_control_splits": 1,
+      "pca_only_control_splits": 0
+    },
+    {
+      "alternative_datasets": 6,
+      "arm": "neural_seed_2",
+      "control_datasets": 12,
+      "neural_ari_better": 0,
+      "neural_control_splits": 12,
+      "neural_only_control_splits": 11,
+      "pca_ari_better": 0,
+      "pca_control_splits": 1,
+      "pca_only_control_splits": 0
+    }
+  ],
+  "passed": true,
+  "point_maps": 240,
+  "schema_version": 1,
+  "separate_archived_preflight_observations": 12,
+  "separate_diagnostic_preflight_observations": 8,
+  "separate_preflight_map_evaluations": 240,
+  "source_commit": "c12ea70a74f77bb405e0439b9b80ab17348b063d",
+  "source_version": "0.78.0.dev0",
+  "subsample_maps": 360
+}

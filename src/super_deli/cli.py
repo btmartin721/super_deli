@@ -24,6 +24,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     commands = parser.add_subparsers(dest="command", required=True)
     from super_deli.benchmarking.abstention_cli import register as register_abstention_study
+    from super_deli.benchmarking.genomic_diagnosis_cli import register as register_genomic_diagnosis
     from super_deli.benchmarking.known_reference_cli import register as register_known
     from super_deli.benchmarking.local_reference_cli import register as register_local_study
     from super_deli.benchmarking.observed_feasibility_cli import (
@@ -35,6 +36,7 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.workflows.reference_abstention_cli import register as register_abstention
     from super_deli.workflows.reference_density_cli import register as register_density
 
+    register_genomic_diagnosis(commands)
     register_genomic_neural(commands)
     register_matched_analysis(commands)
     register_known(commands)
@@ -568,6 +570,12 @@ def main(argv: list[str] | None = None) -> int:
     power_budget.add_argument("--output-file", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
+        if args.command == "diagnose-genomic-neural":
+            from super_deli.benchmarking.genomic_diagnosis_cli import dispatch
+
+            summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command in {"cluster-genomic-neural", "analyze-genomic-models"}:
             from super_deli.workflows.genomic_neural_cli import dispatch
 

@@ -2041,3 +2041,16 @@ include examples/genomic-neural/results/validation.json
 include examples/genomic-neural/plot_results.py
 include docs/figures/genomic-neural/operating-rates.png
 include docs/figures/genomic-neural/operating-rates.svg
+include examples/genomic-control-diagnosis/smoke.py
+include examples/genomic-control-diagnosis/synthetic.py
+include src/super_deli/benchmarking/genomic_diagnosis.py
+include src/super_deli/benchmarking/genomic_diagnosis_archive.py
+include src/super_deli/benchmarking/genomic_diagnosis_cli.py
+include src/super_deli/benchmarking/genomic_diagnosis_config.py
+include src/super_deli/benchmarking/genomic_diagnosis_math.py
+include src/super_deli/benchmarking/genomic_diagnosis_summary.py
+include tests/test_benchmark_genomic_diagnosis.py
+include tests/test_foundation_genomic_diagnosis.py
+include docs/genomic-control-diagnosis.md
+include docs/genomic-control-diagnosis-results.md
+include examples/genomic-control-diagnosis/results/diagnosis.json

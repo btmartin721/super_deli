@@ -767,3 +767,16 @@ categorical derivative and actual-update Adam auditor checks every training
 update in the bounded study. No labels enter fitting and no genomic neural
 p-value is calculated. See [the interface](genomic-neural.md) and
 [the bounded results](genomic-neural-results.md).
+
+
+### Fit-free genomic control diagnosis
+
+`benchmarking.genomic_diagnosis_config` owns a separately versioned source-seal
+contract. `genomic_diagnosis_archive` permits only manifested, regular, bounded
+source files. Pure array functions evaluate saved projections, Jacobians, burden
+associations, Gaussian densities and native BIC costs without importing trainers.
+The workflow links source point/draw identities and old optimizer-audit hashes;
+paired parent-level summaries implement a frozen development stopping decision.
+Invented contract fixtures cannot produce scientific decisions. Invalid archives
+withhold conclusions rather than assigning K=1. Existing trainers, source schemas,
+defaults and p-values remain byte-preserved. See [the interface](genomic-control-diagnosis.md).
