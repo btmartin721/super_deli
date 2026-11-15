@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "scope": "bounded integration checks; no general recovery or false-positive claim",
+  "main_observations": 24,
+  "preflight_observations": 2,
+  "main_point_pipelines": 240,
+  "preflight_point_pipelines": 20,
+  "geometry_point_checks": 8,
+  "main_bootstrap_refits": 90,
+  "preflight_bootstrap_refits": 30,
+  "main_exact_array_comparisons": 3192,
+  "preflight_exact_array_comparisons": 266,
+  "audited_observed_gpa_refits": 100,
+  "geometry_checks": [
+    {
+      "arm": "shape",
+      "passed": true,
+      "variant": "translation"
+    },
+    {
+      "arm": "combined",
+      "passed": true,
+      "variant": "translation"
+    },
+    {
+      "arm": "shape",
+      "passed": true,
+      "variant": "rotation"
+    },
+    {
+      "arm": "combined",
+      "passed": true,
+      "variant": "rotation"
+    },
+    {
+      "arm": "shape",
+      "passed": true,
+      "variant": "scale"
+    },
+    {
+      "arm": "combined",
+      "passed": true,
+      "variant": "scale"
+    },
+    {
+      "arm": "shape",
+      "passed": true,
+      "variant": "all"
+    },
+    {
+      "arm": "combined",
+      "passed": true,
+      "variant": "all"
+    }
+  ],
+  "selected_density_audits": 130,
+  "geometry_density_audits": 8,
+  "cells": [
+    {
+      "law": "continuous_control",
+      "arm": "genomic",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "continuous_control",
+      "arm": "morphology",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "continuous_control",
+      "arm": "ecology",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "continuous_control",
+      "arm": "shape",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "continuous_control",
+      "arm": "combined",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "redundant",
+      "arm": "genomic",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "redundant",
+      "arm": "morphology",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "redundant",
+      "arm": "ecology",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 3,
+        "2": 1
+      },
+      "failed": 0
+    },
+    {
+      "law": "redundant",
+      "arm": "shape",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "redundant",
+      "arm": "combined",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "complementary",
+      "arm": "genomic",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "complementary",
+      "arm": "morphology",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "complementary",
+      "arm": "ecology",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "complementary",
+      "arm": "shape",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "complementary",
+      "arm": "combined",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "conflicting",
+      "arm": "genomic",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "conflicting",
+      "arm": "morphology",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "conflicting",
+      "arm": "ecology",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "conflicting",
+      "arm": "shape",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "conflicting",
+      "arm": "combined",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "genomic_only",
+      "arm": "genomic",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "genomic_only",
+      "arm": "morphology",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "genomic_only",
+      "arm": "ecology",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "genomic_only",
+      "arm": "shape",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "genomic_only",
+      "arm": "combined",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "2": 2,
+        "1": 2
+      },
+      "failed": 0
+    },
+    {
+      "law": "shape_only",
+      "arm": "genomic",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "shape_only",
+      "arm": "morphology",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "shape_only",
+      "arm": "ecology",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "shape_only",
+      "arm": "shape",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "failed": 0
+    },
+    {
+      "law": "shape_only",
+      "arm": "combined",
+      "n_datasets": 4,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "failed": 0
+    }
+  ],
+  "individual_records_published": 0,
+  "p_values_computed": 0
+}

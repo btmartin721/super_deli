@@ -42,6 +42,11 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.workflows.genomic_analysis_cli import register as register_genomic_analysis
 
     register_genomic_analysis(commands)
+    from super_deli.workflows.multimodal_analysis_cli import (
+        register as register_multimodal_analysis,
+    )
+
+    register_multimodal_analysis(commands)
     register_known(commands)
     register_density(commands)
     register_observed_feasibility(commands)
@@ -583,6 +588,13 @@ def main(argv: list[str] | None = None) -> int:
             from super_deli.workflows.genomic_neural_cli import dispatch
 
             summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0 if summary["status"] == "complete" else 1
+        if args.command == "analyze-matched-multimodal":
+            from super_deli.workflows.multimodal_analysis_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
             return 0 if summary["status"] == "complete" else 1
         if args.command == "analyze-matched-genomic":

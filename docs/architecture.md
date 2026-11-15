@@ -794,3 +794,21 @@ order for reporting. The existing partition-comparison and plotting helpers are
 reused. Native covariance families, unit/locus-block resampling, OOB denominators
 and failures stay distinct. No trainer or inference API changes. See
 [the interface](matched-genomic.md) and [validation](matched-genomic-results.md).
+
+
+### Unified fixed-landmark multimodal comparisons
+
+`models.multimodal_analysis_config` adds an independent shape-capable schema,
+reusing native singleton validators and effective shape policy checks. The
+shared `io.multimodal_analysis` stages one complete explicitly matched cohort;
+the old genomic input entry point remains a compatibility adapter. Genomics
+is optional for new shape-capable analyses.
+
+`workflows.matched_comparison` owns common orchestration, failure accounting,
+ID-aligned exports and comparison. Legacy/new wrappers pass explicit native
+hooks and independent limitations; the renderer preserves legacy defaults.
+Native adapters add shape dispatch and checked model loading. New observation
+binding checks retain fixed-landmark/source identity. No numerical fitter or
+significance workflow changes. Read-only validation observers verify independent
+SVD alignment, tangent/PCA calculations and exact raw bootstrap multiplicities.
+See [the interface](matched-multimodal.md) and [completed validation](matched-multimodal-results.md).

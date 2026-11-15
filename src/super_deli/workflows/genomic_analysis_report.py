@@ -7,16 +7,17 @@ from super_deli.workflows.matched_analysis_report import _plot
 from super_deli.workflows.tabular_comparison_report import _escape, _table
 
 
-def write_genomic_report(summary, points, output):
+def write_genomic_report(summary, points, output, *, title="genomic–phenotypic"):
+    title = _escape(title)
     parts = [
         '<!doctype html><html lang="en"><meta charset="utf-8">',
         '<meta name="viewport" content="width=device-width,initial-scale=1">',
-        "<title>Super Deli genomic–phenotypic comparison</title>",
+        "<title>Super Deli " + title + " comparison</title>",
         "<style>body{font:16px system-ui;max-width:1100px;margin:2rem auto;padding:1rem}",
         "table{border-collapse:collapse;display:block;overflow-x:auto}th,t"
         "d{border:1px solid #aaa;padding:.5rem}",
         "pre{white-space:pre-wrap;overflow-wrap:anywhere}svg{max-width:420px}</style>",
-        "<body><h1>Matched genomic–phenotypic discovery</h1>",
+        "<body><h1>Matched " + title + " discovery</h1>",
         "<p>Dataset: "
         + _escape(summary["dataset_id"])
         + ". Status: "

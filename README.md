@@ -4,7 +4,17 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: unified matched genomic–phenotypic discovery comparison.**
+**Current checkpoint: unified matched multimodal analysis including landmark shape.**
+The [new opt-in CLI/API](docs/matched-multimodal.md) compares fixed-landmark shape
+with selected matched genomic, morphological and/or ecological views in one
+offline report. Genomics is optional. Native GPA/PCA/GMM fitters, source IDs,
+conditional memberships and distinct resampling evidence are retained. The
+[bounded validation](docs/matched-multimodal-results.md) passed native point parity,
+geometry and full-refit audits, while also demonstrating loss of informative
+single-view structure in some combined examples. No model winner, default change
+or new p-value is introduced; detailed evidence stays local.
+
+**Previous checkpoint: unified matched genomic–phenotypic discovery comparison.**
 The [opt-in CLI/API](docs/matched-genomic.md) freezes one explicitly matched
 specimen cohort and compares native genomic, morphology/ecology and combined
 PCA/GMM analyses. Its offline report retains ID-aligned assignments, conditional

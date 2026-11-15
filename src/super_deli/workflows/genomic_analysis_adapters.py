@@ -5,6 +5,16 @@ from super_deli.io.config import read_json
 
 
 def run_genomic_arm(arm, dataset, base_dir, directory):
+    if arm.family == "shape":
+        from super_deli.workflows.shape_gmm import run_shape_gmm
+
+        return run_shape_gmm(
+            dataset,
+            model_config=arm.model,
+            base_dir=base_dir,
+            output_dir=directory,
+            modality_name=arm.modalities[0],
+        )
     if arm.family == "genomic":
         from super_deli.workflows.genomic_baseline import run_genomic_baseline
 
@@ -84,8 +94,17 @@ def read_genomic_arm(arm, directory, cohort, frozen):
             else "specimen_row_bootstrap"
         )
         candidates = read_json(directory / "candidates.json")
-        preprocessing = s["views"] if arm.family == "integrative" else s["preprocessing"]
+        preprocessing = s["views"] if arm.family == "integrative" else s.get("preprocessing")
         covariance = s["covariance_type"]
+        if arm.family == "shape":
+            from super_deli.io.shape_model import read_shape_model
+
+            read_shape_model(directory / "shape")
+            shape_summary = read_json(directory / "shape" / "summary.json")
+            preprocessing = {
+                key: value for key, value in shape_summary.items() if key != "provenance"
+            }
+            evidence_type = "whole_specimen_bootstrap_refitting_gpa_and_shape_pca"
     labels, scores, membership = (arrays[k] for k in ("labels", "scores", "membership"))
     n, k = len(wanted), s["selected_k"]
     if (

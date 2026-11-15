@@ -2068,3 +2068,17 @@ include examples/matched-genomic/study.py
 include examples/matched-genomic/results/validation.json
 include docs/matched-genomic.md
 include docs/matched-genomic-results.md
+include src/super_deli/models/multimodal_analysis_config.py
+include src/super_deli/io/multimodal_analysis.py
+include src/super_deli/workflows/matched_comparison.py
+include src/super_deli/workflows/multimodal_analysis.py
+include src/super_deli/workflows/multimodal_analysis_cli.py
+include examples/multimodal/synthetic.py
+include examples/multimodal/smoke.py
+include tests/test_foundation_multimodal_analysis.py
+include tests/test_multimodal_analysis.py
+include src/super_deli/benchmarking/multimodal_validation.py
+include examples/multimodal/study.py
+include examples/multimodal/results/validation.json
+include docs/matched-multimodal.md
+include docs/matched-multimodal-results.md
