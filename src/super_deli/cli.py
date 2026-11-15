@@ -50,6 +50,12 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.benchmarking.signal_loss_cli import register as register_signal_loss
 
     register_signal_loss(commands)
+    from super_deli.workflows.full_retention_cli import register as register_full_retention
+
+    register_full_retention(commands)
+    from super_deli.benchmarking.full_retention_cli import register as register_retention_study
+
+    register_retention_study(commands)
     register_known(commands)
     register_density(commands)
     register_observed_feasibility(commands)
@@ -593,6 +599,18 @@ def main(argv: list[str] | None = None) -> int:
             summary = dispatch(args)
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
             return 0 if summary["status"] == "complete" else 1
+        if args.command == "benchmark-full-retention":
+            from super_deli.benchmarking.full_retention_cli import dispatch
+
+            with redirect_stdout(sys.stderr):
+                summary = dispatch(args)
+            print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "full-retention-config":
+            from super_deli.workflows.full_retention_cli import dispatch
+
+            print(json.dumps(dispatch(args), indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "diagnose-multimodal-signal":
             from super_deli.benchmarking.signal_loss_cli import dispatch
 

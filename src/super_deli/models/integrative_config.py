@@ -22,6 +22,7 @@ def configuration_dict(value):
                 (key == "covariance_type" and item == "full")
                 or (key == "pca_fit" and item == "source_rows")
                 or (key == "selection_criterion" and item == "bic")
+                or (key == "fusion_policy" and item == "joint_pca")
             )
         },
     )
@@ -160,6 +161,7 @@ class IntegrativeConfig(ClusterConfig):
     schema_version: int = 1
     covariance_type: str = "full"
     selection_criterion: str = "bic"
+    fusion_policy: str = "joint_pca"
 
     def __post_init__(self):
         super().__post_init__()
@@ -225,6 +227,32 @@ class IntegrativeConfig(ClusterConfig):
             and self.n_bootstrap
         ):
             raise ValueError("Shared-family AIC stability is not validated")
+        if not isinstance(self.fusion_policy, str) or self.fusion_policy not in {
+            "joint_pca",
+            "retain_all_v1",
+        }:
+            raise ValueError("Use joint_pca or retain_all_v1 fusion")
+        if self.fusion_policy == "retain_all_v1":
+            if (
+                self.target_level != "specimen"
+                or self.missing_views != "error"
+                or self.covariance_type != "tied"
+                or self.selection_criterion != "bic"
+                or any(
+                    v.aggregation != "none"
+                    or v.pca_fit != "source_rows"
+                    or v.missing_policy != "error"
+                    or v.count_transform != "identity"
+                    or (v.shape is not None and v.shape.missing_policy != "error")
+                    for v in self.views
+                )
+            ):
+                raise ValueError(
+                    "retain_all_v1 requires complete unaggregated specimen views, "
+                    "shared covariance and BIC"
+                )
+            if self.n_pcs != sum(v.n_pcs for v in self.views):
+                raise ValueError("retain_all_v1 requires n_pcs equal to all selected view PCs")
         if self.n_pcs > sum(v.n_pcs for v in self.views):
             raise ValueError("Joint n_pcs exceeds the declared score dimensions")
 
@@ -243,6 +271,8 @@ class IntegrativeConfig(ClusterConfig):
 
 def require_calibrated_pca(model):
     """Keep new grouped preprocessing outside unvalidated significance workflows."""
+    if model.fusion_policy != "joint_pca":
+        raise ValueError("Full-retention significance calibration is not yet supported")
     if model.selection_criterion != "bic":
         raise ValueError("AIC requires the separate grouped likelihood calibration workflow")
     if any(v.pca_fit != "source_rows" for v in model.views):

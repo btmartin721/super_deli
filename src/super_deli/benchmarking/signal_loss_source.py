@@ -14,6 +14,9 @@ def digest(path):
 
 
 class SealedStudy:
+    source_head = SOURCE_HEAD
+    source_version = SOURCE_VERSION
+
     def __init__(self, root, config):
         self.root = Path(root).resolve(strict=True)
         self.config = config
@@ -37,7 +40,9 @@ class SealedStudy:
             or (config.fixture and c.get("fixture") is not True)
             or (
                 not config.fixture
-                and (c.get("head_sha") != SOURCE_HEAD or c.get("version") != SOURCE_VERSION)
+                and (
+                    c.get("head_sha") != self.source_head or c.get("version") != self.source_version
+                )
             )
         ):
             raise ValueError(

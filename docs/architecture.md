@@ -824,3 +824,22 @@ likelihood, BIC, covariance, PCA and centroid-projection checks gate execution;
 preflight and main evidence remain distinct. The additive lazy CLI is diagnostic
 only and does not add uncertainty or change analysis defaults. See
 [scope](multimodal-signal.md) and [results](multimodal-signal-results.md).
+
+
+### Explicit full-retention policy
+
+The optional retain_all_v1 declaration extends IntegrativeConfig while omitting
+its ordinary joint_pca default from legacy serialization. The full_retention
+preset helper computes the sum of selected view dimensions and validates the
+caller's explicit minimum. Numerical view fitters, joint full-SVD PCA, GMM search
+and raw-array specimen resampling remain unchanged. The fit-free CLI replaces
+one named arm and preserves the source plan. Conditional metadata/report hooks
+identify full retention; significance validators reject the tagged policy.
+
+The full_retention benchmarking modules separate frozen source/grid contracts,
+read-only fit snapshots, independent transform/density/identity/denominator audits,
+raw-input workflow orchestration and aggregate reporting. Truth-initialized fits
+are stored separately and never enter native selection. Runtime source hashes
+bind preflight/main; measured resource gates and retained failures close the
+execution boundary. See [the interface](full-retention.md) and
+[completed validation](full-retention-results.md).

@@ -1,0 +1,1073 @@
+{
+  "schema_version": 1,
+  "phase": "main",
+  "fresh_datasets": 160,
+  "cells": [
+    {
+      "n": 64,
+      "law": "shape_only",
+      "arm": "legacy_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 1,
+        "1": 19
+      },
+      "event": "correct_recovery",
+      "event_count": 0,
+      "event_interval": [
+        0.0,
+        0.16843347098308528
+      ],
+      "correct_k_count": 0,
+      "event_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_ari": 0.0,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "1": 50,
+        "2": 15,
+        "3": 6,
+        "4": 4
+      },
+      "median_parent_cluster_recovery_lower": 0.64,
+      "median_parent_cluster_recovery_upper": 0.64,
+      "median_parent_oob_pair_coverage": 0.9697420634920635,
+      "median_parent_successful_oob_coverage": 0.9697420634920635
+    },
+    {
+      "n": 64,
+      "law": "shape_only",
+      "arm": "matched_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 1,
+        "1": 19
+      },
+      "event": "correct_recovery",
+      "event_count": 0,
+      "event_interval": [
+        0.0,
+        0.16843347098308528
+      ],
+      "correct_k_count": 0,
+      "event_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_ari": 0.0,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "1": 54,
+        "2": 16,
+        "3": 5
+      },
+      "median_parent_cluster_recovery_lower": 0.64,
+      "median_parent_cluster_recovery_upper": 0.64,
+      "median_parent_oob_pair_coverage": 0.9697420634920635,
+      "median_parent_successful_oob_coverage": 0.9697420634920635
+    },
+    {
+      "n": 64,
+      "law": "shape_only",
+      "arm": "retained_all",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 11,
+        "2": 8,
+        "3": 1
+      },
+      "event": "correct_recovery",
+      "event_count": 11,
+      "event_interval": [
+        0.31527813304054847,
+        0.7694221032240758
+      ],
+      "correct_k_count": 11,
+      "event_failure_bounds": [
+        0.55,
+        0.55
+      ],
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "3": 5,
+        "2": 65,
+        "4": 5
+      },
+      "median_parent_cluster_recovery_lower": 0.08,
+      "median_parent_cluster_recovery_upper": 0.08,
+      "median_parent_oob_pair_coverage": 0.9697420634920635,
+      "median_parent_successful_oob_coverage": 0.9697420634920635
+    },
+    {
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "legacy_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 19,
+        "3": 1
+      },
+      "event": "correct_recovery",
+      "event_count": 19,
+      "event_interval": [
+        0.7512672372279722,
+        0.9987349105020502
+      ],
+      "correct_k_count": 19,
+      "event_failure_bounds": [
+        0.95,
+        0.95
+      ],
+      "median_ari": 0.9072230553117007,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "1": 24,
+        "3": 10,
+        "2": 37,
+        "4": 4
+      },
+      "median_parent_cluster_recovery_lower": 0.0,
+      "median_parent_cluster_recovery_upper": 0.0,
+      "median_parent_oob_pair_coverage": 0.9697420634920635,
+      "median_parent_successful_oob_coverage": 0.9697420634920635
+    },
+    {
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "matched_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 20
+      },
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_ari": 0.9374852336625242,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "1": 31,
+        "2": 41,
+        "4": 1,
+        "3": 2
+      },
+      "median_parent_cluster_recovery_lower": 0.0,
+      "median_parent_cluster_recovery_upper": 0.0,
+      "median_parent_oob_pair_coverage": 0.9697420634920635,
+      "median_parent_successful_oob_coverage": 0.9697420634920635
+    },
+    {
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "retained_all",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 20
+      },
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "2": 68,
+        "4": 1,
+        "3": 4,
+        "1": 2
+      },
+      "median_parent_cluster_recovery_lower": 0.7,
+      "median_parent_cluster_recovery_upper": 0.7,
+      "median_parent_oob_pair_coverage": 0.9697420634920635,
+      "median_parent_successful_oob_coverage": 0.9697420634920635
+    },
+    {
+      "n": 64,
+      "law": "complementary",
+      "arm": "legacy_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_ari": 0.9576475180534774,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "4": 50,
+        "2": 21,
+        "3": 3,
+        "1": 1
+      },
+      "median_parent_cluster_recovery_lower": 0.11,
+      "median_parent_cluster_recovery_upper": 0.11,
+      "median_parent_oob_pair_coverage": 0.9697420634920635,
+      "median_parent_successful_oob_coverage": 0.9697420634920635
+    },
+    {
+      "n": 64,
+      "law": "complementary",
+      "arm": "matched_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_ari": 0.9576475180534774,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "2": 49,
+        "4": 23,
+        "3": 2,
+        "1": 1
+      },
+      "median_parent_cluster_recovery_lower": 0.08,
+      "median_parent_cluster_recovery_upper": 0.08,
+      "median_parent_oob_pair_coverage": 0.9697420634920635,
+      "median_parent_successful_oob_coverage": 0.9697420634920635
+    },
+    {
+      "n": 64,
+      "law": "complementary",
+      "arm": "retained_all",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "2": 49,
+        "4": 23,
+        "3": 3
+      },
+      "median_parent_cluster_recovery_lower": 0.28,
+      "median_parent_cluster_recovery_upper": 0.28,
+      "median_parent_oob_pair_coverage": 0.9697420634920635,
+      "median_parent_successful_oob_coverage": 0.9697420634920635
+    },
+    {
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "legacy_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 18,
+        "2": 2
+      },
+      "event": "control_split",
+      "event_count": 2,
+      "event_interval": [
+        0.012348527170294808,
+        0.31698271401908235
+      ],
+      "correct_k_count": null,
+      "event_failure_bounds": [
+        0.1,
+        0.1
+      ],
+      "median_ari": null,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "1": 69,
+        "3": 2,
+        "2": 4
+      },
+      "median_parent_cluster_recovery_lower": 0.92,
+      "median_parent_cluster_recovery_upper": 0.92,
+      "median_parent_oob_pair_coverage": 0.9697420634920635,
+      "median_parent_successful_oob_coverage": 0.9697420634920635
+    },
+    {
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "matched_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 19,
+        "2": 1
+      },
+      "event": "control_split",
+      "event_count": 1,
+      "event_interval": [
+        0.0012650894979498038,
+        0.24873276277202777
+      ],
+      "correct_k_count": null,
+      "event_failure_bounds": [
+        0.05,
+        0.05
+      ],
+      "median_ari": null,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "1": 72,
+        "2": 3
+      },
+      "median_parent_cluster_recovery_lower": 0.96,
+      "median_parent_cluster_recovery_upper": 0.96,
+      "median_parent_oob_pair_coverage": 0.9697420634920635,
+      "median_parent_successful_oob_coverage": 0.9697420634920635
+    },
+    {
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "retained_all",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 20
+      },
+      "event": "control_split",
+      "event_count": 0,
+      "event_interval": [
+        0.0,
+        0.16843347098308528
+      ],
+      "correct_k_count": null,
+      "event_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_ari": null,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "2": 37,
+        "1": 28,
+        "3": 10
+      },
+      "median_parent_cluster_recovery_lower": 0.44,
+      "median_parent_cluster_recovery_upper": 0.44,
+      "median_parent_oob_pair_coverage": 0.9697420634920635,
+      "median_parent_successful_oob_coverage": 0.9697420634920635
+    },
+    {
+      "n": 256,
+      "law": "shape_only",
+      "arm": "legacy_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 18,
+        "2": 2
+      },
+      "event": "correct_recovery",
+      "event_count": 0,
+      "event_interval": [
+        0.0,
+        0.16843347098308528
+      ],
+      "correct_k_count": 0,
+      "event_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_ari": 0.0,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "1": 62,
+        "3": 1,
+        "2": 11,
+        "4": 1
+      },
+      "median_parent_cluster_recovery_lower": 0.84,
+      "median_parent_cluster_recovery_upper": 0.84,
+      "median_parent_oob_pair_coverage": 0.9711090686274509,
+      "median_parent_successful_oob_coverage": 0.9711090686274509
+    },
+    {
+      "n": 256,
+      "law": "shape_only",
+      "arm": "matched_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 18,
+        "2": 2
+      },
+      "event": "correct_recovery",
+      "event_count": 0,
+      "event_interval": [
+        0.0,
+        0.16843347098308528
+      ],
+      "correct_k_count": 0,
+      "event_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_ari": 0.0,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "1": 63,
+        "3": 1,
+        "2": 10,
+        "4": 1
+      },
+      "median_parent_cluster_recovery_lower": 0.88,
+      "median_parent_cluster_recovery_upper": 0.88,
+      "median_parent_oob_pair_coverage": 0.9711090686274509,
+      "median_parent_successful_oob_coverage": 0.9711090686274509
+    },
+    {
+      "n": 256,
+      "law": "shape_only",
+      "arm": "retained_all",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 19,
+        "2": 1
+      },
+      "event": "correct_recovery",
+      "event_count": 19,
+      "event_interval": [
+        0.7512672372279722,
+        0.9987349105020502
+      ],
+      "correct_k_count": 19,
+      "event_failure_bounds": [
+        0.95,
+        0.95
+      ],
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "4": 65,
+        "3": 1,
+        "2": 9
+      },
+      "median_parent_cluster_recovery_lower": 0.84,
+      "median_parent_cluster_recovery_upper": 0.84,
+      "median_parent_oob_pair_coverage": 0.9711090686274509,
+      "median_parent_successful_oob_coverage": 0.9711090686274509
+    },
+    {
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "legacy_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 20
+      },
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "2": 64,
+        "3": 8,
+        "4": 3
+      },
+      "median_parent_cluster_recovery_lower": 0.30000000000000004,
+      "median_parent_cluster_recovery_upper": 0.30000000000000004,
+      "median_parent_oob_pair_coverage": 0.9711090686274509,
+      "median_parent_successful_oob_coverage": 0.9711090686274509
+    },
+    {
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "matched_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 20
+      },
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "2": 67,
+        "3": 6,
+        "4": 2
+      },
+      "median_parent_cluster_recovery_lower": 0.32,
+      "median_parent_cluster_recovery_upper": 0.32,
+      "median_parent_oob_pair_coverage": 0.9711090686274509,
+      "median_parent_successful_oob_coverage": 0.9711090686274509
+    },
+    {
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "retained_all",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 20
+      },
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "2": 54,
+        "3": 19,
+        "4": 2
+      },
+      "median_parent_cluster_recovery_lower": 0.9,
+      "median_parent_cluster_recovery_upper": 0.9,
+      "median_parent_oob_pair_coverage": 0.9711090686274509,
+      "median_parent_successful_oob_coverage": 0.9711090686274509
+    },
+    {
+      "n": 256,
+      "law": "complementary",
+      "arm": "legacy_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "4": 75
+      },
+      "median_parent_cluster_recovery_lower": 0.54,
+      "median_parent_cluster_recovery_upper": 0.54,
+      "median_parent_oob_pair_coverage": 0.9711090686274509,
+      "median_parent_successful_oob_coverage": 0.9711090686274509
+    },
+    {
+      "n": 256,
+      "law": "complementary",
+      "arm": "matched_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "4": 75
+      },
+      "median_parent_cluster_recovery_lower": 0.54,
+      "median_parent_cluster_recovery_upper": 0.54,
+      "median_parent_oob_pair_coverage": 0.9711090686274509,
+      "median_parent_successful_oob_coverage": 0.9711090686274509
+    },
+    {
+      "n": 256,
+      "law": "complementary",
+      "arm": "retained_all",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "4": 75
+      },
+      "median_parent_cluster_recovery_lower": 1.0,
+      "median_parent_cluster_recovery_upper": 1.0,
+      "median_parent_oob_pair_coverage": 0.9711090686274509,
+      "median_parent_successful_oob_coverage": 0.9711090686274509
+    },
+    {
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "legacy_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 20
+      },
+      "event": "control_split",
+      "event_count": 0,
+      "event_interval": [
+        0.0,
+        0.16843347098308528
+      ],
+      "correct_k_count": null,
+      "event_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_ari": null,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "1": 59,
+        "2": 14,
+        "4": 1,
+        "3": 1
+      },
+      "median_parent_cluster_recovery_lower": 0.76,
+      "median_parent_cluster_recovery_upper": 0.76,
+      "median_parent_oob_pair_coverage": 0.9711090686274509,
+      "median_parent_successful_oob_coverage": 0.9711090686274509
+    },
+    {
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "matched_two",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 20
+      },
+      "event": "control_split",
+      "event_count": 0,
+      "event_interval": [
+        0.0,
+        0.16843347098308528
+      ],
+      "correct_k_count": null,
+      "event_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_ari": null,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "1": 62,
+        "2": 11,
+        "4": 1,
+        "3": 1
+      },
+      "median_parent_cluster_recovery_lower": 0.8,
+      "median_parent_cluster_recovery_upper": 0.8,
+      "median_parent_oob_pair_coverage": 0.9711090686274509,
+      "median_parent_successful_oob_coverage": 0.9711090686274509
+    },
+    {
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "retained_all",
+      "datasets": 20,
+      "completed": 20,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 20
+      },
+      "event": "control_split",
+      "event_count": 0,
+      "event_interval": [
+        0.0,
+        0.16843347098308528
+      ],
+      "correct_k_count": null,
+      "event_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_ari": null,
+      "stability_parents": 3,
+      "planned_stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "unattempted_draws": 0,
+      "failed_draws": 0,
+      "stability_k_counts": {
+        "2": 16,
+        "1": 40,
+        "4": 6,
+        "3": 13
+      },
+      "median_parent_cluster_recovery_lower": 0.56,
+      "median_parent_cluster_recovery_upper": 0.56,
+      "median_parent_oob_pair_coverage": 0.9711090686274509,
+      "median_parent_successful_oob_coverage": 0.9711090686274509
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "n": 64,
+      "law": "shape_only",
+      "event": "correct_recovery",
+      "datasets": 20,
+      "outcomes": {
+        "two_False_all_True": 11,
+        "two_False_all_False": 9
+      }
+    },
+    {
+      "n": 64,
+      "law": "genomic_only",
+      "event": "correct_recovery",
+      "datasets": 20,
+      "outcomes": {
+        "two_True_all_True": 20
+      }
+    },
+    {
+      "n": 64,
+      "law": "complementary",
+      "event": "correct_recovery",
+      "datasets": 20,
+      "outcomes": {
+        "two_True_all_True": 20
+      }
+    },
+    {
+      "n": 64,
+      "law": "continuous_control",
+      "event": "control_split",
+      "datasets": 20,
+      "outcomes": {
+        "two_False_all_False": 19,
+        "two_True_all_False": 1
+      }
+    },
+    {
+      "n": 256,
+      "law": "shape_only",
+      "event": "correct_recovery",
+      "datasets": 20,
+      "outcomes": {
+        "two_False_all_True": 19,
+        "two_False_all_False": 1
+      }
+    },
+    {
+      "n": 256,
+      "law": "genomic_only",
+      "event": "correct_recovery",
+      "datasets": 20,
+      "outcomes": {
+        "two_True_all_True": 20
+      }
+    },
+    {
+      "n": 256,
+      "law": "complementary",
+      "event": "correct_recovery",
+      "datasets": 20,
+      "outcomes": {
+        "two_True_all_True": 20
+      }
+    },
+    {
+      "n": 256,
+      "law": "continuous_control",
+      "event": "control_split",
+      "datasets": 20,
+      "outcomes": {
+        "two_False_all_False": 20
+      }
+    }
+  ],
+  "optimization_diagnostics": [
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "shape_only",
+      "datasets": 20,
+      "counts": {
+        "baseline_correct": 11,
+        "hundred_start_correct": 19,
+        "hundred_start_withheld": 0,
+        "truth_withheld": 0,
+        "truth_eligible_and_better_bic": 11,
+        "high_only_correct": 8,
+        "baseline_only_correct": 0
+      }
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "shape_only",
+      "datasets": 2,
+      "counts": {
+        "baseline_correct": 0,
+        "hundred_start_correct": 2,
+        "hundred_start_withheld": 0,
+        "truth_withheld": 0,
+        "truth_eligible_and_better_bic": 2,
+        "high_only_correct": 2,
+        "baseline_only_correct": 0
+      }
+    }
+  ],
+  "candidate_searches": 2332,
+  "planned_truth_fits": 22,
+  "exact_parity_arrays": 3056,
+  "independent": {
+    "attempted_pipeline_refits": 2332,
+    "bootstrap_draws": 1800,
+    "completed_pipeline_refits": 2332,
+    "component_checks": 9304,
+    "density_checks": 9304,
+    "failed_component_attempts": 0,
+    "failed_draws": 0,
+    "observed_withheld": 0,
+    "passed": true,
+    "retained_space_checks": 800,
+    "runs": 532,
+    "seconds": 23.758978124940768,
+    "shape_refit_checks": 2332,
+    "truth_component_checks": 22
+  },
+  "individual_records_published": 0,
+  "new_p_values": 0,
+  "new_defaults": 0,
+  "uncertainty": "Unadjusted exact 95% intervals within independent fixed-N/law cells; withheld after any missing point outcome",
+  "stability_interpretation": "Three independent parent datasets/cell; draws are repeated conditional refits, not biological replication or species probabilities",
+  "limits": [
+    "Retaining view PCs does not preserve discarded raw-feature information.",
+    "No new calibration or empirical species-boundary inference.",
+    "No absolute BIC ranking across coordinate dimensions.",
+    "Hundred-start/truth-informed diagnostics never replace native ten-start selection.",
+    "No heavy-tail, spatial, missing-view or grouped-sampling generality guarantee."
+  ]
+}

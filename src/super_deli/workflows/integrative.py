@@ -321,6 +321,20 @@ def run_integrative(
                 },
             },
         }
+        if model_config.fusion_policy != "joint_pca":
+            summary.update(
+                fusion_policy=model_config.fusion_policy,
+                retained_view_dimensions=sum(v.n_pcs for v in model_config.views),
+                joint_dimension_reduction=False,
+                fusion=(
+                    "Center and normalize each view; concatenate all selected view PCs; "
+                    "full-rank joint PCA rotates all coordinates without discarding any"
+                ),
+            )
+            summary["interpretation"].append(
+                "Full retention preserves the selected view-PC space, not all raw information; "
+                "no full-retention significance calibration is supplied"
+            )
         if model_config.selection_criterion == "aic":
             summary["selection_criterion"] = "aic"
             summary["interpretation"].append(

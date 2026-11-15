@@ -829,3 +829,10 @@ neural and integrative GMM controls.
 The [bounded multimodal signal-loss diagnosis](docs/multimodal-signal.md)
 traces per-view and joint PCA, adds nonsignal views and separates covariance
 head effects without changing production models, defaults or p-values.
+
+
+The opt-in [full-retention fusion preset](docs/full-retention.md) keeps every
+selected per-view PC through the existing joint PCA/GMM pipeline, with explicit
+size/rank guards and native specimen-bootstrap uncertainty. See the
+[full-pipeline validation and N=64 audit](docs/full-retention-results.md)
+for recovery gains, optimizer sensitivity and conditional stability limitations.

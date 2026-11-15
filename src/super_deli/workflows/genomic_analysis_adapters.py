@@ -122,7 +122,7 @@ def read_genomic_arm(arm, directory, cohort, frozen):
         or not np.array_equal(labels, membership.argmax(1))
     ):
         raise ValueError("Malformed native comparison arrays")
-    return dict(
+    result = dict(
         point=dict(labels=labels.tolist(), scores=scores.tolist(), resolved=[True] * n),
         membership=membership.max(1).tolist(),
         selected_k=k,
@@ -133,3 +133,8 @@ def read_genomic_arm(arm, directory, cohort, frozen):
         preprocessing=preprocessing,
         covariance_type=covariance,
     )
+    if arm.family == "integrative" and arm.model.fusion_policy != "joint_pca":
+        if s.get("fusion_policy") != arm.model.fusion_policy:
+            raise ValueError("Native fusion policy differs from the declared arm")
+        result.update(fusion_policy=s["fusion_policy"], retained_dimensions=arm.model.n_pcs)
+    return result
