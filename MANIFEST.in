@@ -2054,3 +2054,17 @@ include tests/test_foundation_genomic_diagnosis.py
 include docs/genomic-control-diagnosis.md
 include docs/genomic-control-diagnosis-results.md
 include examples/genomic-control-diagnosis/results/diagnosis.json
+include examples/matched-genomic/smoke.py
+include tests/test_foundation_genomic_analysis.py
+include tests/test_genomic_analysis.py
+include src/super_deli/io/genomic_analysis.py
+include src/super_deli/workflows/genomic_analysis_cli.py
+include src/super_deli/workflows/genomic_analysis.py
+include src/super_deli/workflows/genomic_analysis_report.py
+include src/super_deli/workflows/genomic_analysis_adapters.py
+include src/super_deli/models/genomic_analysis_config.py
+include src/super_deli/benchmarking/genomic_analysis.py
+include examples/matched-genomic/study.py
+include examples/matched-genomic/results/validation.json
+include docs/matched-genomic.md
+include docs/matched-genomic-results.md

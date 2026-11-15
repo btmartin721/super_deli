@@ -4,7 +4,17 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: fit-free genomic neural control diagnosis and stopping decision.**
+**Current checkpoint: unified matched genomic–phenotypic discovery comparison.**
+The [opt-in CLI/API](docs/matched-genomic.md) freezes one explicitly matched
+specimen cohort and compares native genomic, morphology/ecology and combined
+PCA/GMM analyses. Its offline report retains ID-aligned assignments, conditional
+memberships, agreement and distinct native resampling evidence without choosing
+a winner or computing p-values. The [bounded validation](docs/matched-genomic-results.md)
+passed exact standalone parity and independent density/identity audits; it does
+not establish improved recovery or species boundaries. Defaults and historical
+p-values are unchanged; detailed evidence stays local.
+
+**Previous checkpoint: fit-free genomic neural control diagnosis and stopping decision.**
 The [source-bound CLI/API](docs/genomic-control-diagnosis.md) audited all 600 saved
 point/subsample maps with zero new model fits or draws. Numerical and source
 checks passed, but neural control splits exceeded PCA/shared-GMM with no recovery

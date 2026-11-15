@@ -780,3 +780,17 @@ paired parent-level summaries implement a frozen development stopping decision.
 Invented contract fixtures cannot produce scientific decisions. Invalid archives
 withhold conclusions rather than assigning K=1. Existing trainers, source schemas,
 defaults and p-values remain byte-preserved. See [the interface](genomic-control-diagnosis.md).
+
+
+### Unified matched genomic–phenotypic comparison
+
+`models.genomic_analysis_config` declares separately versioned native singleton
+and integrative arms, with consistent view preprocessing and no automatic model
+choice. `io.genomic_analysis` stages source/popmap snapshots, checks complete
+one-to-one specimen links, validates selected continuous traits and uses SNPio
+GenotypeData ingestion/encoding for all four genomic formats. The coordinator
+and adapters invoke unchanged native workflows and restore explicit specimen
+order for reporting. The existing partition-comparison and plotting helpers are
+reused. Native covariance families, unit/locus-block resampling, OOB denominators
+and failures stay distinct. No trainer or inference API changes. See
+[the interface](matched-genomic.md) and [validation](matched-genomic-results.md).
