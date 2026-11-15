@@ -824,3 +824,8 @@ combined coordinates with HDBSCAN. This adds no species p-values or automatic
 model selection. The [bounded comparison](docs/separate-neural-study.md) includes
 unchanged joint-two, dimension-matched joint-four, per-view PCA, single-view
 neural and integrative GMM controls.
+
+
+The [bounded multimodal signal-loss diagnosis](docs/multimodal-signal.md)
+traces per-view and joint PCA, adds nonsignal views and separates covariance
+head effects without changing production models, defaults or p-values.

@@ -1,0 +1,5346 @@
+{
+  "schema_version": 1,
+  "observations": 72,
+  "cells": [
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "complementary",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.8543476175427485
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "complementary",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.8543476175427485
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "complementary",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.9180193035197526
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "complementary",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.9999999999999996
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "complementary",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.9952239604126925
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "complementary",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 3,
+        "3": 1
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.9581129541547868
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "complementary",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.9629462811180465
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "complementary",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "complementary",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "complementary",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "complementary",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 3,
+        "3": 1
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "complementary",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "complementary",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.5713274636844763
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.5713274636844763
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.598142000255903
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.9999999999999998
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.998170480379725
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.7352973757609576
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.7079237771396085
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "3": 2,
+        "2": 2
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.3037723887095547
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.3037723887095547
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.5650364492178177
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 1.0
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.4976267949785897
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.482134007806835
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 3,
+        "2": 1
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 1,
+      "control_split_interval": [
+        0.006309463209709866,
+        0.8058795503167565
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.5780559489353057
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 3,
+        "2": 1
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 1,
+      "control_split_interval": [
+        0.006309463209709866,
+        0.8058795503167565
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 2,
+        "1": 2
+      },
+      "correct_recovery_count": 2,
+      "correct_recovery_interval": [
+        0.06758598648854294,
+        0.932414013511457
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.5,
+        0.5
+      ],
+      "median_shape_energy_retained": 0.1438160797542612
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 2,
+        "1": 2
+      },
+      "correct_recovery_count": 2,
+      "correct_recovery_interval": [
+        0.06758598648854294,
+        0.932414013511457
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.5,
+        0.5
+      ],
+      "median_shape_energy_retained": 0.1438160797542612
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.49005135956261836
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 1.0000000000000004
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.30715864745788485
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.34934700659564644
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.43874849849268105
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "redundant",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.31388216860132123
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "redundant",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.31388216860132123
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "redundant",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.37704965075480423
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "redundant",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.9999999999999998
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "redundant",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.6816163478718343
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "redundant",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 3,
+        "2": 1
+      },
+      "correct_recovery_count": 3,
+      "correct_recovery_interval": [
+        0.19412044968324338,
+        0.9936905367902902
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.75,
+        0.75
+      ],
+      "median_shape_energy_retained": 0.5018626115426967
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "redundant",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 3,
+        "2": 1
+      },
+      "correct_recovery_count": 3,
+      "correct_recovery_interval": [
+        0.19412044968324338,
+        0.9936905367902902
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.75,
+        0.75
+      ],
+      "median_shape_energy_retained": 0.5033719615867157
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "redundant",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "redundant",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "redundant",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "redundant",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "redundant",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "redundant",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.2271446041241868
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.2271446041241868
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.5173599774772619
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 2,
+        "3": 1,
+        "2": 1
+      },
+      "correct_recovery_count": 2,
+      "correct_recovery_interval": [
+        0.06758598648854294,
+        0.932414013511457
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.5,
+        0.5
+      ],
+      "median_shape_energy_retained": 0.9999999999999998
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 3,
+        "2": 1
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.5057148161956149
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 1,
+        "2": 1,
+        "1": 2
+      },
+      "correct_recovery_count": 1,
+      "correct_recovery_interval": [
+        0.006309463209709866,
+        0.8058795503167565
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.25,
+        0.25
+      ],
+      "median_shape_energy_retained": 0.47613597660065754
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 3,
+        "2": 1
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.4559366665104545
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 1,
+        "1": 3
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "archived",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "complementary",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 3,
+        "2": 1
+      },
+      "correct_recovery_count": 3,
+      "correct_recovery_interval": [
+        0.19412044968324338,
+        0.9936905367902902
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.75,
+        0.75
+      ],
+      "median_shape_energy_retained": 0.8641623092249697
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "complementary",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 3,
+        "2": 1
+      },
+      "correct_recovery_count": 3,
+      "correct_recovery_interval": [
+        0.19412044968324338,
+        0.9936905367902902
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.75,
+        0.75
+      ],
+      "median_shape_energy_retained": 0.8641623092249697
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "complementary",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 3,
+        "2": 1
+      },
+      "correct_recovery_count": 3,
+      "correct_recovery_interval": [
+        0.19412044968324338,
+        0.9936905367902902
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.75,
+        0.75
+      ],
+      "median_shape_energy_retained": 0.9307498382435928
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "complementary",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 3,
+        "2": 1
+      },
+      "correct_recovery_count": 3,
+      "correct_recovery_interval": [
+        0.19412044968324338,
+        0.9936905367902902
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.75,
+        0.75
+      ],
+      "median_shape_energy_retained": 1.0
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "complementary",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.9959098543677569
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "complementary",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.9744456771743245
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "complementary",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.9096538276474729
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "complementary",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "complementary",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 2,
+        "3": 2
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "complementary",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "complementary",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "complementary",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "complementary",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.5742459077014855
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.5742459077014855
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.589568151487935
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 1.0
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.9886699353757994
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.7084556448469832
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.7419786439112024
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 3,
+        "3": 1
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "conflicting",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.24045372905634121
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.24045372905634121
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.506614550970841
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.9999999999999998
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.5890090618244437
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.5760522918698279
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.5309291344562347
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 1,
+        "1": 3
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 1,
+      "control_split_interval": [
+        0.006309463209709866,
+        0.8058795503167565
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 1,
+        "3": 1,
+        "1": 2
+      },
+      "correct_recovery_count": 1,
+      "correct_recovery_interval": [
+        0.006309463209709866,
+        0.8058795503167565
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.25,
+        0.25
+      ],
+      "median_shape_energy_retained": 0.16514378691603226
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 2,
+        "1": 2
+      },
+      "correct_recovery_count": 2,
+      "correct_recovery_interval": [
+        0.06758598648854294,
+        0.932414013511457
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.5,
+        0.5
+      ],
+      "median_shape_energy_retained": 0.16514378691603226
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.4333092323347897
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 1.0000000000000004
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.2559875147782661
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.5342577078542227
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.3968871997998379
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "redundant",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.31225301243747655
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "redundant",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.31225301243747655
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "redundant",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.3784826483766688
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "redundant",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 1.0
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "redundant",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.679521496100372
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "redundant",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.5008803810245374
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "redundant",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.49967392597826177
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "redundant",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "redundant",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "redundant",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 3,
+        "3": 1
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "redundant",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 3,
+        "3": 1
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "redundant",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "redundant",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.2549243126581723
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.2549243126581723
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.4013499727339024
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 2,
+        "2": 2
+      },
+      "correct_recovery_count": 2,
+      "correct_recovery_interval": [
+        0.06758598648854294,
+        0.932414013511457
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.5,
+        0.5
+      ],
+      "median_shape_energy_retained": 0.9999999999999998
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 3,
+        "2": 1
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.5251031426861992
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 3,
+        "2": 1
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.4405136755390576
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 1,
+        "2": 2,
+        "4": 1
+      },
+      "correct_recovery_count": 1,
+      "correct_recovery_interval": [
+        0.006309463209709866,
+        0.8058795503167565
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.25,
+        0.25
+      ],
+      "median_shape_energy_retained": 0.5681839704192402
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 64,
+      "law": "shape_only",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "complementary",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.9768771057259908
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "complementary",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.9768771057259908
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "complementary",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.990448013828408
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "complementary",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 1.0000000000000009
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "complementary",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.9986897995099986
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "complementary",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.9974276891775412
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "complementary",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.9942096596488497
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "complementary",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "complementary",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "complementary",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "complementary",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "complementary",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "complementary",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "conflicting",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.576614478100012
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "conflicting",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.576614478100012
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "conflicting",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.5775209454300211
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "conflicting",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.9999999999999999
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "conflicting",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.9994331817677227
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "conflicting",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 3,
+        "4": 1
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.7149351730945377
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "conflicting",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.7113627145758934
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "conflicting",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "3": 3,
+        "2": 1
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "conflicting",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "conflicting",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "conflicting",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "conflicting",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "conflicting",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.21260651728278218
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.21260651728278218
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.5113131730632042
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 1.0
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.39434663656642377
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.5359029377224249
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": 0.6255308970487043
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": null,
+      "correct_recovery_interval": null,
+      "control_split_count": 0,
+      "control_split_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "recovery_failure_bounds": null,
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.15577328245524713
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.15577328245524713
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.6599935734267826
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 1.0
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.6980702745529214
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.5793696867440157
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.5519817917521613
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "redundant",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.31802306652505696
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "redundant",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.31802306652505696
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "redundant",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.37259091954873713
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "redundant",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 1.0000000000000004
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "redundant",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 0.6750757860744392
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "redundant",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 3,
+        "2": 1
+      },
+      "correct_recovery_count": 3,
+      "correct_recovery_interval": [
+        0.19412044968324338,
+        0.9936905367902902
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.75,
+        0.75
+      ],
+      "median_shape_energy_retained": 0.49964242975818496
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "redundant",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 3,
+        "2": 1
+      },
+      "correct_recovery_count": 3,
+      "correct_recovery_interval": [
+        0.19412044968324338,
+        0.9936905367902902
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.75,
+        0.75
+      ],
+      "median_shape_energy_retained": 0.4961106207346456
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "redundant",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "redundant",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 1,
+        "2": 3
+      },
+      "correct_recovery_count": 1,
+      "correct_recovery_interval": [
+        0.006309463209709866,
+        0.8058795503167565
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.25,
+        0.25
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "redundant",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "redundant",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "redundant",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "redundant",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "shape_only",
+      "arm": "baseline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 3,
+        "2": 1
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.28631237024084255
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "shape_only",
+      "arm": "all_pc2_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 3,
+        "2": 1
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.28631237024084255
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "shape_only",
+      "arm": "all_pc4_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 1,
+        "2": 3
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.4509086597956182
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "shape_only",
+      "arm": "all_pc8_min9",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": 1.0
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "shape_only",
+      "arm": "pair_snp_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.4958797575960986
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "shape_only",
+      "arm": "pair_traits_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "2": 2,
+        "1": 2
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.42055170280223164
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "shape_only",
+      "arm": "pair_habitat_outline",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 2,
+        "2": 2
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": 0.5137904477318231
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "shape_only",
+      "arm": "pair_snp_traits",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "shape_only",
+      "arm": "pair_snp_habitat",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "shape_only",
+      "arm": "genomic_diag_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "shape_only",
+      "arm": "genomic_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "1": 4
+      },
+      "correct_recovery_count": 0,
+      "correct_recovery_interval": [
+        0.0,
+        0.6023646356164746
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "shape_only",
+      "arm": "shape_full_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    },
+    {
+      "origin": "fresh",
+      "n": 256,
+      "law": "shape_only",
+      "arm": "shape_tied_common_order",
+      "datasets": 4,
+      "completed": 4,
+      "failed": 0,
+      "selected_k_counts": {
+        "4": 4
+      },
+      "correct_recovery_count": 4,
+      "correct_recovery_interval": [
+        0.3976353643835253,
+        1.0
+      ],
+      "control_split_count": null,
+      "control_split_interval": null,
+      "recovery_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "median_shape_energy_retained": null
+    }
+  ],
+  "decision": {
+    "status": "go_for_bounded_opt_in_followup",
+    "archived_shape_cases_below_half_energy": 4,
+    "archived_shape_cases": 4,
+    "full_retention_numerically_verified": true,
+    "fresh_shape_correct_recovery_gain": 6,
+    "fresh_control_split_delta": 0,
+    "fresh_complementary_recovery_delta": 0,
+    "fresh_additional_failures": 0,
+    "interpretation": "Frozen descriptive research gate; no general size guarantee or automatic default"
+  },
+  "searches": 1080,
+  "individual_records_published": 0,
+  "uncertainty": "Unadjusted exact 95% binomial intervals for tiny independent cells; descriptive, not simultaneous",
+  "limitations": [
+    "Cached-score arms hold training-view transforms fixed; they are not full-pipeline calibration.",
+    "BIC costs are compared within each score space; absolute BIC across dimensions is not ranked.",
+    "Native versus common-order head contrasts may differ through optimization row order.",
+    "Controls/conflicting laws have no privileged four-species truth.",
+    "In-sample linear recovery can saturate in high dimension; it is not a biological information bound.",
+    "Four fresh datasets per cell support only a bounded descriptive decision."
+  ],
+  "source_head": "5936eab934772e08e40d275d3d492389b9696e0f",
+  "fresh_seed_range": [
+    6200,
+    6247
+  ],
+  "preflight_searches": 72,
+  "preflight_observations": 4,
+  "audited_candidate_fits": 4608,
+  "exact_archived_point_arrays": 2828,
+  "retained_failures": 0
+}

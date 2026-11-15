@@ -812,3 +812,15 @@ binding checks retain fixed-landmark/source identity. No numerical fitter or
 significance workflow changes. Read-only validation observers verify independent
 SVD alignment, tangent/PCA calculations and exact raw bootstrap multiplicities.
 See [the interface](matched-multimodal.md) and [completed validation](matched-multimodal-results.md).
+
+
+### Source-bound multimodal signal diagnosis
+
+`benchmarking.signal_loss_*` owns a separate sealed-source contract, read-only
+transform tracing, retained-candidate observer and fixed point-study protocol.
+Native numerical fitters are unchanged. Shared helpers preserve explicit unit
+order, source-file checksums and post-fit truth evaluation. Independent dense
+likelihood, BIC, covariance, PCA and centroid-projection checks gate execution;
+preflight and main evidence remain distinct. The additive lazy CLI is diagnostic
+only and does not add uncertainty or change analysis defaults. See
+[scope](multimodal-signal.md) and [results](multimodal-signal-results.md).
