@@ -23,6 +23,7 @@ def configuration_dict(value):
                 or (key == "pca_fit" and item == "source_rows")
                 or (key == "selection_criterion" and item == "bic")
                 or (key == "fusion_policy" and item == "joint_pca")
+                or (key == "initialization_policy" and item == "legacy")
             )
         },
     )
@@ -162,6 +163,7 @@ class IntegrativeConfig(ClusterConfig):
     covariance_type: str = "full"
     selection_criterion: str = "bic"
     fusion_policy: str = "joint_pca"
+    initialization_policy: str = "legacy"
 
     def __post_init__(self):
         super().__post_init__()
@@ -253,6 +255,15 @@ class IntegrativeConfig(ClusterConfig):
                 )
             if self.n_pcs != sum(v.n_pcs for v in self.views):
                 raise ValueError("retain_all_v1 requires n_pcs equal to all selected view PCs")
+        if not isinstance(self.initialization_policy, str) or self.initialization_policy not in {
+            "legacy",
+            "diverse_v1",
+        }:
+            raise ValueError("Use legacy or diverse_v1 initialization")
+        if self.initialization_policy == "diverse_v1" and (
+            self.fusion_policy != "retain_all_v1" or self.n_init != 100
+        ):
+            raise ValueError("diverse_v1 requires retain_all_v1 and exactly 100 starts")
         if self.n_pcs > sum(v.n_pcs for v in self.views):
             raise ValueError("Joint n_pcs exceeds the declared score dimensions")
 

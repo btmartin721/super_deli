@@ -374,6 +374,12 @@ jobs:
           unset PYTHONPATH
           python "$GITHUB_WORKSPACE/examples/genomic-control-diagnosis/smoke.py" --output-dir "$RUNNER_TEMP/genomic-control-smoke"
 
+      - name: Check installed truth-free initialization
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/truth-free-init/smoke.py" --output-dir "$RUNNER_TEMP/truth-free-smoke"
+
       - name: Check installed full-retention fusion
         working-directory: ${{ runner.temp }}
         run: |

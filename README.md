@@ -4,7 +4,16 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: unified matched multimodal analysis including landmark shape.**
+**Current checkpoint: truth-free GMM initialization and paired validation.**
+The [opt-in fixed initialization bank](docs/truth-free-init.md) supports complete
+matched full-retention/shared-GMM analyses. The [200-dataset comparison](docs/truth-free-init-results.md)
+improves N=64 shape point recovery over ten starts, but does not outperform
+ordinary 100 starts or resolve single-population bootstrap splitting. Strict used-
+batch audits pass; unused-batch label ambiguity is recorded separately. The option
+remains experimental. Defaults, historical p-values and empirical gates stay fixed;
+detailed fitted evidence remains local.
+
+**Previous checkpoint: unified matched multimodal analysis including landmark shape.**
 The [new opt-in CLI/API](docs/matched-multimodal.md) compares fixed-landmark shape
 with selected matched genomic, morphological and/or ecological views in one
 offline report. Genomics is optional. Native GPA/PCA/GMM fitters, source IDs,
@@ -836,3 +845,10 @@ selected per-view PC through the existing joint PCA/GMM pipeline, with explicit
 size/rank guards and native specimen-bootstrap uncertainty. See the
 [full-pipeline validation and N=64 audit](docs/full-retention-results.md)
 for recovery gains, optimizer sensitivity and conditional stability limitations.
+
+
+The opt-in [truth-free initialization policy](docs/truth-free-init.md) compares
+fixed unsupervised starting batches within full-retention shared-GMM analyses.
+Its [paired fresh validation](docs/truth-free-init-results.md) evaluates recovery,
+single-population control splits and conditional bootstrap behavior together.
+Legacy initialization, model defaults and historical p-values are preserved.

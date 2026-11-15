@@ -43,6 +43,8 @@ def write_genomic_report(summary, points, output, *, title="genomic–phenotypic
                 + _escape(str(row["retained_dimensions"]))
                 + " selected view-PC coordinates enter clustering. The plot shows two axes.</p>"
             )
+        if row.get("initialization_policy") == "diverse_v1":
+            parts.append("<p>Fixed truth-free diverse initialization: 100 total starts per K.</p>")
         if name in points:
             parts.extend(
                 [

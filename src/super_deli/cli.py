@@ -53,6 +53,12 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.workflows.full_retention_cli import register as register_full_retention
 
     register_full_retention(commands)
+    from super_deli.workflows.initialization_cli import register as register_initialization
+
+    register_initialization(commands)
+    from super_deli.benchmarking.initialization_cli import register as register_initialization_study
+
+    register_initialization_study(commands)
     from super_deli.benchmarking.full_retention_cli import register as register_retention_study
 
     register_retention_study(commands)
@@ -605,6 +611,16 @@ def main(argv: list[str] | None = None) -> int:
             with redirect_stdout(sys.stderr):
                 summary = dispatch(args)
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "benchmark-truth-free-init":
+            from super_deli.benchmarking.initialization_cli import dispatch
+
+            print(json.dumps(dispatch(args), indent=2))
+            return 0
+        if args.command == "truth-free-init-config":
+            from super_deli.workflows.initialization_cli import dispatch
+
+            print(json.dumps(dispatch(args), indent=2))
             return 0
         if args.command == "full-retention-config":
             from super_deli.workflows.full_retention_cli import dispatch

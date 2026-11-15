@@ -335,6 +335,11 @@ def run_integrative(
                 "Full retention preserves the selected view-PC space, not all raw information; "
                 "no full-retention significance calibration is supplied"
             )
+        if model_config.initialization_policy != "legacy":
+            summary["initialization_policy"] = model_config.initialization_policy
+            summary["interpretation"].append(
+                "Fixed truth-free initialization batches; no new significance calibration"
+            )
         if model_config.selection_criterion == "aic":
             summary["selection_criterion"] = "aic"
             summary["interpretation"].append(

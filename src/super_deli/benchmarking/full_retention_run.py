@@ -13,14 +13,16 @@ from super_deli.io.config import read_json, write_json
 from super_deli.workflows.integrative import run_integrative
 
 
-def run_native(dataset, model, base, directory, *, law, truth):
+def run_native(
+    dataset, model, base, directory, *, law, truth, auditor=audit_run, observer=observe_candidates
+):
     directory = Path(directory)
     capture = directory.parent / (directory.name + "-captures")
     capture.mkdir()
     error = None
     shapes = []
     try:
-        with observe_candidates(capture / "observed-candidates") as candidates:
+        with observer(capture / "observed-candidates") as candidates:
             with observe_shape_refits() as shapes:
                 with observe_pipeline(capture / "observed-pipeline", candidates):
                     native = run_integrative(
@@ -53,7 +55,7 @@ def run_native(dataset, model, base, directory, *, law, truth):
             row.update(recovery(y, a["labels"], law))
             row.update(selected_k=native["selected_k"], labels=a["labels"].tolist())
         row["stability"] = native["bootstrap"]
-    audit = audit_run(directory)
+    audit = auditor(directory)
     write_json(audit, directory / "independent-audit.json")
     row["audit"] = audit
     write_json(row, directory / "validation.json")

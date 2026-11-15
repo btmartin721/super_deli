@@ -16,7 +16,7 @@ from super_deli.models.mixture import FIT_LOCK, select_gaussian_mixture
 
 
 @contextmanager
-def observe_candidates(directory):
+def observe_candidates(directory, *, initialization=False):
     directory = Path(directory)
     directory.mkdir()
     records = []
@@ -39,6 +39,11 @@ def observe_candidates(directory):
             error=error,
             arrays=None,
         )
+        if initialization:
+            bound = float(getattr(model, "lower_bound_", float("nan")))
+            record.update(
+                init_params=model.init_params, lower_bound=bound if np.isfinite(bound) else None
+            )
         try:
             probabilities = model.predict_proba(x)
             record.update(bic=float(model.bic(x)), log_likelihood=float(model.score(x) * n))
@@ -77,12 +82,17 @@ def observe_candidates(directory):
         write_json(records, directory / "index.json")
 
 
-def audit_candidates(directory):
+def audit_candidates(directory, *, required_label_arrays=None, label_ambiguities=None):
     from scipy.special import logsumexp
 
     from super_deli.io.config import read_json
 
     records = read_json(Path(directory) / "index.json")
+    if required_label_arrays is not None:
+        if label_ambiguities is None:
+            raise ValueError("A scoped label audit requires an ambiguity receipt")
+        if not set(required_label_arrays) <= {r["arrays"] for r in records}:
+            raise ValueError("Required label array is absent from captured candidates")
     for r in records:
         if r["fit_status"] == "failed":
             continue
@@ -114,7 +124,27 @@ def audit_candidates(directory):
             np.testing.assert_allclose(
                 np.exp(terms - total[:, None]), a["membership"], rtol=1e-7, atol=1e-9
             )
-            np.testing.assert_array_equal(a["labels"], np.argmax(terms, axis=1))
+            np.testing.assert_array_equal(a["labels"], a["membership"].argmax(axis=1))
+            independent_labels = np.argmax(terms, axis=1)
+            if required_label_arrays is None or r["arrays"] in required_label_arrays:
+                np.testing.assert_array_equal(a["labels"], independent_labels)
+            elif not np.array_equal(a["labels"], independent_labels):
+                disputed = a["labels"] != independent_labels
+                ordered = np.sort(a["membership"], axis=1)
+                label_ambiguities.append(
+                    dict(
+                        arrays=r["arrays"],
+                        k=r["k"],
+                        rows=int(disputed.sum()),
+                        largest_native_gap=float(
+                            np.max((ordered[:, -1] - ordered[:, -2])[disputed])
+                        ),
+                        maximum_probability_error=float(
+                            np.max(np.abs(np.exp(terms - total[:, None]) - a["membership"]))
+                        ),
+                        scope="Unused initialization batch; no unique hard-label validity claim",
+                    )
+                )
             np.testing.assert_allclose(total.sum(), r["log_likelihood"], rtol=1e-8, atol=1e-7)
             bic = -2 * total.sum() + parameters(
                 r["k"], r["dimension"], r["covariance_type"]

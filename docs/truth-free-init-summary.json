@@ -1,0 +1,1966 @@
+{
+  "schema_version": 1,
+  "phase": "main",
+  "fresh_datasets": 200,
+  "cells": [
+    {
+      "n": 64,
+      "law": "shape_only",
+      "arm": "legacy10",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 11,
+      "event_interval": [
+        0.31527813304054847,
+        0.7694221032240758
+      ],
+      "event_failure_bounds": [
+        0.55,
+        0.55
+      ],
+      "correct_k_count": 11,
+      "selected_k_counts": {
+        "4": 11,
+        "2": 8,
+        "3": 1
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "2": 62,
+        "1": 2,
+        "4": 6,
+        "3": 5
+      },
+      "median_own_point_recovery_lower": 0.04,
+      "median_common_point_recovery_lower": 0.04,
+      "median_oob_pair_coverage": 0.9697420634920635,
+      "bootstrap_unique_original_range": [
+        34,
+        46
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 66,
+        "insufficient_samples": 3,
+        "eligible": 6
+      },
+      "point_k4_status": {
+        "eligible": 17,
+        "small_component": 3
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.12508400005754083
+    },
+    {
+      "n": 64,
+      "law": "shape_only",
+      "arm": "legacy100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "2": 49,
+        "3": 9,
+        "4": 16,
+        "1": 1
+      },
+      "median_own_point_recovery_lower": 0.24,
+      "median_common_point_recovery_lower": 0.24,
+      "median_oob_pair_coverage": 0.9697420634920635,
+      "bootstrap_unique_original_range": [
+        34,
+        46
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 56,
+        "eligible": 16,
+        "insufficient_samples": 3
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.5207062920089811
+    },
+    {
+      "n": 64,
+      "law": "shape_only",
+      "arm": "diverse100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 19,
+      "event_interval": [
+        0.7512672372279722,
+        0.9987349105020502
+      ],
+      "event_failure_bounds": [
+        0.95,
+        0.95
+      ],
+      "correct_k_count": 19,
+      "selected_k_counts": {
+        "4": 19,
+        "2": 1
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "2": 57,
+        "4": 11,
+        "3": 7
+      },
+      "median_own_point_recovery_lower": 0.12,
+      "median_common_point_recovery_lower": 0.12,
+      "median_oob_pair_coverage": 0.9697420634920635,
+      "bootstrap_unique_original_range": [
+        34,
+        46
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 61,
+        "eligible": 11,
+        "insufficient_samples": 3
+      },
+      "point_k4_status": {
+        "eligible": 19,
+        "small_component": 1
+      },
+      "chosen_batch_counts": {
+        "0": 300,
+        "1": 8,
+        "2": 1
+      },
+      "median_point_workflow_seconds": 0.33697883295826614
+    },
+    {
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "legacy10",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "selected_k_counts": {
+        "2": 20
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "2": 65,
+        "1": 3,
+        "3": 7
+      },
+      "median_own_point_recovery_lower": 0.8,
+      "median_common_point_recovery_lower": 0.8,
+      "median_oob_pair_coverage": 0.9697420634920635,
+      "bootstrap_unique_original_range": [
+        34,
+        46
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 72,
+        "insufficient_samples": 3
+      },
+      "point_k4_status": {
+        "small_component": 13,
+        "eligible": 7
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.11632858298253268
+    },
+    {
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "legacy100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "selected_k_counts": {
+        "2": 20
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "2": 66,
+        "3": 7,
+        "1": 2
+      },
+      "median_own_point_recovery_lower": 0.84,
+      "median_common_point_recovery_lower": 0.84,
+      "median_oob_pair_coverage": 0.9697420634920635,
+      "bootstrap_unique_original_range": [
+        34,
+        46
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 71,
+        "insufficient_samples": 3,
+        "eligible": 1
+      },
+      "point_k4_status": {
+        "small_component": 16,
+        "eligible": 4
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.423835999914445
+    },
+    {
+      "n": 64,
+      "law": "genomic_only",
+      "arm": "diverse100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "selected_k_counts": {
+        "2": 20
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "2": 67,
+        "3": 7,
+        "1": 1
+      },
+      "median_own_point_recovery_lower": 0.84,
+      "median_common_point_recovery_lower": 0.84,
+      "median_oob_pair_coverage": 0.9697420634920635,
+      "bootstrap_unique_original_range": [
+        34,
+        46
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 71,
+        "insufficient_samples": 3,
+        "eligible": 1
+      },
+      "point_k4_status": {
+        "small_component": 12,
+        "eligible": 8
+      },
+      "chosen_batch_counts": {
+        "0": 300,
+        "1": 5,
+        "2": 4
+      },
+      "median_point_workflow_seconds": 0.3020043750293553
+    },
+    {
+      "n": 64,
+      "law": "complementary",
+      "arm": "legacy10",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 19,
+      "event_interval": [
+        0.7512672372279722,
+        0.9987349105020502
+      ],
+      "event_failure_bounds": [
+        0.95,
+        0.95
+      ],
+      "correct_k_count": 19,
+      "selected_k_counts": {
+        "4": 19,
+        "2": 1
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "4": 23,
+        "2": 42,
+        "3": 10
+      },
+      "median_own_point_recovery_lower": 0.30000000000000004,
+      "median_common_point_recovery_lower": 0.3,
+      "median_oob_pair_coverage": 0.9697420634920635,
+      "bootstrap_unique_original_range": [
+        34,
+        46
+      ],
+      "bootstrap_k4_status": {
+        "eligible": 24,
+        "small_component": 48,
+        "insufficient_samples": 3
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.11191279196646065
+    },
+    {
+      "n": 64,
+      "law": "complementary",
+      "arm": "legacy100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 19,
+      "event_interval": [
+        0.7512672372279722,
+        0.9987349105020502
+      ],
+      "event_failure_bounds": [
+        0.95,
+        0.95
+      ],
+      "correct_k_count": 19,
+      "selected_k_counts": {
+        "4": 19,
+        "2": 1
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "4": 29,
+        "2": 36,
+        "3": 10
+      },
+      "median_own_point_recovery_lower": 0.36,
+      "median_common_point_recovery_lower": 0.36,
+      "median_oob_pair_coverage": 0.9697420634920635,
+      "bootstrap_unique_original_range": [
+        34,
+        46
+      ],
+      "bootstrap_k4_status": {
+        "eligible": 29,
+        "small_component": 43,
+        "insufficient_samples": 3
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.3482302089687437
+    },
+    {
+      "n": 64,
+      "law": "complementary",
+      "arm": "diverse100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 19,
+      "event_interval": [
+        0.7512672372279722,
+        0.9987349105020502
+      ],
+      "event_failure_bounds": [
+        0.95,
+        0.95
+      ],
+      "correct_k_count": 19,
+      "selected_k_counts": {
+        "4": 19,
+        "2": 1
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "4": 27,
+        "2": 38,
+        "3": 10
+      },
+      "median_own_point_recovery_lower": 0.38,
+      "median_common_point_recovery_lower": 0.38,
+      "median_oob_pair_coverage": 0.9697420634920635,
+      "bootstrap_unique_original_range": [
+        34,
+        46
+      ],
+      "bootstrap_k4_status": {
+        "eligible": 27,
+        "small_component": 45,
+        "insufficient_samples": 3
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {
+        "0": 306,
+        "1": 3
+      },
+      "median_point_workflow_seconds": 0.27866066701244563
+    },
+    {
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "legacy10",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "control_split",
+      "event_count": 0,
+      "event_interval": [
+        0.0,
+        0.16843347098308528
+      ],
+      "event_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "correct_k_count": null,
+      "selected_k_counts": {
+        "1": 20
+      },
+      "median_ari": null,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "1": 38,
+        "2": 27,
+        "3": 10
+      },
+      "median_own_point_recovery_lower": 0.52,
+      "median_common_point_recovery_lower": 0.52,
+      "median_oob_pair_coverage": 0.9697420634920635,
+      "bootstrap_unique_original_range": [
+        34,
+        46
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 72,
+        "insufficient_samples": 3
+      },
+      "point_k4_status": {
+        "eligible": 13,
+        "small_component": 7
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.12955250008963048
+    },
+    {
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "legacy100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "control_split",
+      "event_count": 1,
+      "event_interval": [
+        0.0012650894979498038,
+        0.24873276277202777
+      ],
+      "event_failure_bounds": [
+        0.05,
+        0.05
+      ],
+      "correct_k_count": null,
+      "selected_k_counts": {
+        "2": 1,
+        "1": 19
+      },
+      "median_ari": null,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "1": 34,
+        "2": 28,
+        "3": 13
+      },
+      "median_own_point_recovery_lower": 0.44,
+      "median_common_point_recovery_lower": 0.44,
+      "median_oob_pair_coverage": 0.9697420634920635,
+      "bootstrap_unique_original_range": [
+        34,
+        46
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 72,
+        "insufficient_samples": 3
+      },
+      "point_k4_status": {
+        "eligible": 10,
+        "small_component": 10
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.5608217909466475
+    },
+    {
+      "n": 64,
+      "law": "continuous_control",
+      "arm": "diverse100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "control_split",
+      "event_count": 1,
+      "event_interval": [
+        0.0012650894979498038,
+        0.24873276277202777
+      ],
+      "event_failure_bounds": [
+        0.05,
+        0.05
+      ],
+      "correct_k_count": null,
+      "selected_k_counts": {
+        "2": 1,
+        "1": 19
+      },
+      "median_ari": null,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "1": 41,
+        "2": 23,
+        "3": 11
+      },
+      "median_own_point_recovery_lower": 0.52,
+      "median_common_point_recovery_lower": 0.56,
+      "median_oob_pair_coverage": 0.9697420634920635,
+      "bootstrap_unique_original_range": [
+        34,
+        46
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 72,
+        "insufficient_samples": 3
+      },
+      "point_k4_status": {
+        "eligible": 12,
+        "small_component": 8
+      },
+      "chosen_batch_counts": {
+        "0": 273,
+        "1": 25,
+        "2": 11
+      },
+      "median_point_workflow_seconds": 0.3493946249363944
+    },
+    {
+      "n": 64,
+      "law": "conflicting",
+      "arm": "legacy10",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "descriptive_partition_only",
+      "event_count": null,
+      "event_interval": null,
+      "event_failure_bounds": null,
+      "correct_k_count": null,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "median_ari": null,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "3": 19,
+        "4": 29,
+        "2": 27
+      },
+      "median_own_point_recovery_lower": 0.48,
+      "median_common_point_recovery_lower": 0.48,
+      "median_oob_pair_coverage": 0.9697420634920635,
+      "bootstrap_unique_original_range": [
+        34,
+        46
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 43,
+        "eligible": 29,
+        "insufficient_samples": 3
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.09933270805049688
+    },
+    {
+      "n": 64,
+      "law": "conflicting",
+      "arm": "legacy100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "descriptive_partition_only",
+      "event_count": null,
+      "event_interval": null,
+      "event_failure_bounds": null,
+      "correct_k_count": null,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "median_ari": null,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "3": 18,
+        "4": 29,
+        "2": 28
+      },
+      "median_own_point_recovery_lower": 0.48,
+      "median_common_point_recovery_lower": 0.48,
+      "median_oob_pair_coverage": 0.9697420634920635,
+      "bootstrap_unique_original_range": [
+        34,
+        46
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 43,
+        "eligible": 29,
+        "insufficient_samples": 3
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.25099783297628164
+    },
+    {
+      "n": 64,
+      "law": "conflicting",
+      "arm": "diverse100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "descriptive_partition_only",
+      "event_count": null,
+      "event_interval": null,
+      "event_failure_bounds": null,
+      "correct_k_count": null,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "median_ari": null,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "3": 16,
+        "4": 29,
+        "2": 30
+      },
+      "median_own_point_recovery_lower": 0.48,
+      "median_common_point_recovery_lower": 0.48,
+      "median_oob_pair_coverage": 0.9697420634920635,
+      "bootstrap_unique_original_range": [
+        34,
+        46
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 43,
+        "eligible": 29,
+        "insufficient_samples": 3
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {
+        "0": 306,
+        "2": 2,
+        "1": 1
+      },
+      "median_point_workflow_seconds": 0.24347641598433256
+    },
+    {
+      "n": 256,
+      "law": "shape_only",
+      "arm": "legacy10",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "4": 71,
+        "2": 4
+      },
+      "median_own_point_recovery_lower": 0.96,
+      "median_common_point_recovery_lower": 0.96,
+      "median_oob_pair_coverage": 0.9711090686274509,
+      "bootstrap_unique_original_range": [
+        152,
+        173
+      ],
+      "bootstrap_k4_status": {
+        "eligible": 73,
+        "small_component": 2
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.27329095802269876
+    },
+    {
+      "n": 256,
+      "law": "shape_only",
+      "arm": "legacy100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "4": 75
+      },
+      "median_own_point_recovery_lower": 1.0,
+      "median_common_point_recovery_lower": 1.0,
+      "median_oob_pair_coverage": 0.9711090686274509,
+      "bootstrap_unique_original_range": [
+        152,
+        173
+      ],
+      "bootstrap_k4_status": {
+        "eligible": 75
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.7387075419537723
+    },
+    {
+      "n": 256,
+      "law": "shape_only",
+      "arm": "diverse100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "4": 75
+      },
+      "median_own_point_recovery_lower": 1.0,
+      "median_common_point_recovery_lower": 1.0,
+      "median_oob_pair_coverage": 0.9711090686274509,
+      "bootstrap_unique_original_range": [
+        152,
+        173
+      ],
+      "bootstrap_k4_status": {
+        "eligible": 75
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {
+        "0": 312
+      },
+      "median_point_workflow_seconds": 0.5258702080463991
+    },
+    {
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "legacy10",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "selected_k_counts": {
+        "2": 20
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "2": 61,
+        "4": 5,
+        "3": 9
+      },
+      "median_own_point_recovery_lower": 0.8400000000000001,
+      "median_common_point_recovery_lower": 0.84,
+      "median_oob_pair_coverage": 0.9711090686274509,
+      "bootstrap_unique_original_range": [
+        152,
+        173
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 37,
+        "eligible": 38
+      },
+      "point_k4_status": {
+        "small_component": 2,
+        "eligible": 18
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.25909295806195587
+    },
+    {
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "legacy100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "selected_k_counts": {
+        "2": 20
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "2": 60,
+        "4": 6,
+        "3": 9
+      },
+      "median_own_point_recovery_lower": 0.8200000000000001,
+      "median_common_point_recovery_lower": 0.82,
+      "median_oob_pair_coverage": 0.9711090686274509,
+      "bootstrap_unique_original_range": [
+        152,
+        173
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 48,
+        "eligible": 27
+      },
+      "point_k4_status": {
+        "small_component": 2,
+        "eligible": 18
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.6289642920019105
+    },
+    {
+      "n": 256,
+      "law": "genomic_only",
+      "arm": "diverse100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "selected_k_counts": {
+        "2": 20
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "2": 59,
+        "4": 6,
+        "3": 10
+      },
+      "median_own_point_recovery_lower": 0.8200000000000001,
+      "median_common_point_recovery_lower": 0.82,
+      "median_oob_pair_coverage": 0.9711090686274509,
+      "bootstrap_unique_original_range": [
+        152,
+        173
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 46,
+        "eligible": 29
+      },
+      "point_k4_status": {
+        "small_component": 2,
+        "eligible": 18
+      },
+      "chosen_batch_counts": {
+        "0": 312
+      },
+      "median_point_workflow_seconds": 0.484630958060734
+    },
+    {
+      "n": 256,
+      "law": "complementary",
+      "arm": "legacy10",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "4": 75
+      },
+      "median_own_point_recovery_lower": 1.0,
+      "median_common_point_recovery_lower": 1.0,
+      "median_oob_pair_coverage": 0.9711090686274509,
+      "bootstrap_unique_original_range": [
+        152,
+        173
+      ],
+      "bootstrap_k4_status": {
+        "eligible": 75
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.24545595794916153
+    },
+    {
+      "n": 256,
+      "law": "complementary",
+      "arm": "legacy100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "4": 75
+      },
+      "median_own_point_recovery_lower": 1.0,
+      "median_common_point_recovery_lower": 1.0,
+      "median_oob_pair_coverage": 0.9711090686274509,
+      "bootstrap_unique_original_range": [
+        152,
+        173
+      ],
+      "bootstrap_k4_status": {
+        "eligible": 75
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.4754480830160901
+    },
+    {
+      "n": 256,
+      "law": "complementary",
+      "arm": "diverse100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "correct_recovery",
+      "event_count": 20,
+      "event_interval": [
+        0.8315665290169146,
+        1.0
+      ],
+      "event_failure_bounds": [
+        1.0,
+        1.0
+      ],
+      "correct_k_count": 20,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "median_ari": 1.0,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "4": 75
+      },
+      "median_own_point_recovery_lower": 1.0,
+      "median_common_point_recovery_lower": 1.0,
+      "median_oob_pair_coverage": 0.9711090686274509,
+      "bootstrap_unique_original_range": [
+        152,
+        173
+      ],
+      "bootstrap_k4_status": {
+        "eligible": 75
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {
+        "0": 312
+      },
+      "median_point_workflow_seconds": 0.43005550000816584
+    },
+    {
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "legacy10",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "control_split",
+      "event_count": 0,
+      "event_interval": [
+        0.0,
+        0.16843347098308528
+      ],
+      "event_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "correct_k_count": null,
+      "selected_k_counts": {
+        "1": 20
+      },
+      "median_ari": null,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "1": 42,
+        "3": 10,
+        "2": 21,
+        "4": 2
+      },
+      "median_own_point_recovery_lower": 0.48,
+      "median_common_point_recovery_lower": 0.48,
+      "median_oob_pair_coverage": 0.9711090686274509,
+      "bootstrap_unique_original_range": [
+        152,
+        173
+      ],
+      "bootstrap_k4_status": {
+        "eligible": 29,
+        "small_component": 46
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.2808323330245912
+    },
+    {
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "legacy100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "control_split",
+      "event_count": 0,
+      "event_interval": [
+        0.0,
+        0.16843347098308528
+      ],
+      "event_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "correct_k_count": null,
+      "selected_k_counts": {
+        "1": 20
+      },
+      "median_ari": null,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "2": 25,
+        "3": 7,
+        "1": 32,
+        "4": 11
+      },
+      "median_own_point_recovery_lower": 0.44,
+      "median_common_point_recovery_lower": 0.44,
+      "median_oob_pair_coverage": 0.9711090686274509,
+      "bootstrap_unique_original_range": [
+        152,
+        173
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 51,
+        "eligible": 24
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.8352976670721546
+    },
+    {
+      "n": 256,
+      "law": "continuous_control",
+      "arm": "diverse100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "control_split",
+      "event_count": 0,
+      "event_interval": [
+        0.0,
+        0.16843347098308528
+      ],
+      "event_failure_bounds": [
+        0.0,
+        0.0
+      ],
+      "correct_k_count": null,
+      "selected_k_counts": {
+        "1": 20
+      },
+      "median_ari": null,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "1": 35,
+        "4": 6,
+        "3": 8,
+        "2": 26
+      },
+      "median_own_point_recovery_lower": 0.52,
+      "median_common_point_recovery_lower": 0.52,
+      "median_oob_pair_coverage": 0.9711090686274509,
+      "bootstrap_unique_original_range": [
+        152,
+        173
+      ],
+      "bootstrap_k4_status": {
+        "small_component": 51,
+        "eligible": 24
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {
+        "0": 312
+      },
+      "median_point_workflow_seconds": 0.5740323750069365
+    },
+    {
+      "n": 256,
+      "law": "conflicting",
+      "arm": "legacy10",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "descriptive_partition_only",
+      "event_count": null,
+      "event_interval": null,
+      "event_failure_bounds": null,
+      "correct_k_count": null,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "median_ari": null,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "4": 75
+      },
+      "median_own_point_recovery_lower": 1.0,
+      "median_common_point_recovery_lower": 1.0,
+      "median_oob_pair_coverage": 0.9711090686274509,
+      "bootstrap_unique_original_range": [
+        152,
+        173
+      ],
+      "bootstrap_k4_status": {
+        "eligible": 75
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.23936941695865244
+    },
+    {
+      "n": 256,
+      "law": "conflicting",
+      "arm": "legacy100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "descriptive_partition_only",
+      "event_count": null,
+      "event_interval": null,
+      "event_failure_bounds": null,
+      "correct_k_count": null,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "median_ari": null,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "4": 75
+      },
+      "median_own_point_recovery_lower": 1.0,
+      "median_common_point_recovery_lower": 1.0,
+      "median_oob_pair_coverage": 0.9711090686274509,
+      "bootstrap_unique_original_range": [
+        152,
+        173
+      ],
+      "bootstrap_k4_status": {
+        "eligible": 75
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {},
+      "median_point_workflow_seconds": 0.4279239169554785
+    },
+    {
+      "n": 256,
+      "law": "conflicting",
+      "arm": "diverse100",
+      "datasets": 20,
+      "completed": 20,
+      "withheld": 0,
+      "event": "descriptive_partition_only",
+      "event_count": null,
+      "event_interval": null,
+      "event_failure_bounds": null,
+      "correct_k_count": null,
+      "selected_k_counts": {
+        "4": 20
+      },
+      "median_ari": null,
+      "stability_parents": 3,
+      "requested_draws": 75,
+      "attempted_draws": 75,
+      "failed_draws": 0,
+      "bootstrap_selected_k_counts": {
+        "4": 75
+      },
+      "median_own_point_recovery_lower": 1.0,
+      "median_common_point_recovery_lower": 1.0,
+      "median_oob_pair_coverage": 0.9711090686274509,
+      "bootstrap_unique_original_range": [
+        152,
+        173
+      ],
+      "bootstrap_k4_status": {
+        "eligible": 75
+      },
+      "point_k4_status": {
+        "eligible": 20
+      },
+      "chosen_batch_counts": {
+        "0": 312
+      },
+      "median_point_workflow_seconds": 0.41368287499062717
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "n": 64,
+      "law": "shape_only",
+      "event": "correct_recovery",
+      "left": "legacy10",
+      "right": "legacy100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 11,
+        "left_False_right_True": 9
+      },
+      "difference": 0.45,
+      "difference_interval": [
+        0.010160921160121184,
+        0.7119259904399626
+      ]
+    },
+    {
+      "n": 64,
+      "law": "shape_only",
+      "event": "correct_recovery",
+      "left": "legacy10",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 11,
+        "left_False_right_True": 8,
+        "left_False_right_False": 1
+      },
+      "difference": 0.4,
+      "difference_interval": [
+        -0.027128659753781842,
+        0.6681098822157892
+      ]
+    },
+    {
+      "n": 64,
+      "law": "shape_only",
+      "event": "correct_recovery",
+      "left": "legacy100",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 19,
+        "left_True_right_False": 1
+      },
+      "difference": -0.05,
+      "difference_interval": [
+        -0.27932249020359623,
+        0.19613093833502696
+      ]
+    },
+    {
+      "n": 64,
+      "law": "genomic_only",
+      "event": "correct_recovery",
+      "left": "legacy10",
+      "right": "legacy100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 20
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 64,
+      "law": "genomic_only",
+      "event": "correct_recovery",
+      "left": "legacy10",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 20
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 64,
+      "law": "genomic_only",
+      "event": "correct_recovery",
+      "left": "legacy100",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 20
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 64,
+      "law": "complementary",
+      "event": "correct_recovery",
+      "left": "legacy10",
+      "right": "legacy100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 19,
+        "left_False_right_False": 1
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 64,
+      "law": "complementary",
+      "event": "correct_recovery",
+      "left": "legacy10",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 19,
+        "left_False_right_False": 1
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 64,
+      "law": "complementary",
+      "event": "correct_recovery",
+      "left": "legacy100",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 19,
+        "left_False_right_False": 1
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 64,
+      "law": "continuous_control",
+      "event": "control_split",
+      "left": "legacy10",
+      "right": "legacy100",
+      "datasets": 20,
+      "outcomes": {
+        "left_False_right_True": 1,
+        "left_False_right_False": 19
+      },
+      "difference": 0.05,
+      "difference_interval": [
+        -0.19613093833502696,
+        0.27932249020359623
+      ]
+    },
+    {
+      "n": 64,
+      "law": "continuous_control",
+      "event": "control_split",
+      "left": "legacy10",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_False_right_True": 1,
+        "left_False_right_False": 19
+      },
+      "difference": 0.05,
+      "difference_interval": [
+        -0.19613093833502696,
+        0.27932249020359623
+      ]
+    },
+    {
+      "n": 64,
+      "law": "continuous_control",
+      "event": "control_split",
+      "left": "legacy100",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 1,
+        "left_False_right_False": 19
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 64,
+      "law": "conflicting",
+      "event": "descriptive_partition_only",
+      "left": "legacy10",
+      "right": "legacy100",
+      "datasets": 20,
+      "outcomes": {
+        "descriptive_only": 20
+      },
+      "difference": null,
+      "difference_interval": null
+    },
+    {
+      "n": 64,
+      "law": "conflicting",
+      "event": "descriptive_partition_only",
+      "left": "legacy10",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "descriptive_only": 20
+      },
+      "difference": null,
+      "difference_interval": null
+    },
+    {
+      "n": 64,
+      "law": "conflicting",
+      "event": "descriptive_partition_only",
+      "left": "legacy100",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "descriptive_only": 20
+      },
+      "difference": null,
+      "difference_interval": null
+    },
+    {
+      "n": 256,
+      "law": "shape_only",
+      "event": "correct_recovery",
+      "left": "legacy10",
+      "right": "legacy100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 20
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 256,
+      "law": "shape_only",
+      "event": "correct_recovery",
+      "left": "legacy10",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 20
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 256,
+      "law": "shape_only",
+      "event": "correct_recovery",
+      "left": "legacy100",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 20
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 256,
+      "law": "genomic_only",
+      "event": "correct_recovery",
+      "left": "legacy10",
+      "right": "legacy100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 20
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 256,
+      "law": "genomic_only",
+      "event": "correct_recovery",
+      "left": "legacy10",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 20
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 256,
+      "law": "genomic_only",
+      "event": "correct_recovery",
+      "left": "legacy100",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 20
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 256,
+      "law": "complementary",
+      "event": "correct_recovery",
+      "left": "legacy10",
+      "right": "legacy100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 20
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 256,
+      "law": "complementary",
+      "event": "correct_recovery",
+      "left": "legacy10",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 20
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 256,
+      "law": "complementary",
+      "event": "correct_recovery",
+      "left": "legacy100",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_True_right_True": 20
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 256,
+      "law": "continuous_control",
+      "event": "control_split",
+      "left": "legacy10",
+      "right": "legacy100",
+      "datasets": 20,
+      "outcomes": {
+        "left_False_right_False": 20
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 256,
+      "law": "continuous_control",
+      "event": "control_split",
+      "left": "legacy10",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_False_right_False": 20
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 256,
+      "law": "continuous_control",
+      "event": "control_split",
+      "left": "legacy100",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "left_False_right_False": 20
+      },
+      "difference": 0.0,
+      "difference_interval": [
+        -0.19675967970462552,
+        0.19675967970462552
+      ]
+    },
+    {
+      "n": 256,
+      "law": "conflicting",
+      "event": "descriptive_partition_only",
+      "left": "legacy10",
+      "right": "legacy100",
+      "datasets": 20,
+      "outcomes": {
+        "descriptive_only": 20
+      },
+      "difference": null,
+      "difference_interval": null
+    },
+    {
+      "n": 256,
+      "law": "conflicting",
+      "event": "descriptive_partition_only",
+      "left": "legacy10",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "descriptive_only": 20
+      },
+      "difference": null,
+      "difference_interval": null
+    },
+    {
+      "n": 256,
+      "law": "conflicting",
+      "event": "descriptive_partition_only",
+      "left": "legacy100",
+      "right": "diverse100",
+      "datasets": 20,
+      "outcomes": {
+        "descriptive_only": 20
+      },
+      "difference": null,
+      "difference_interval": null
+    }
+  ],
+  "candidate_searches": 2880,
+  "independent": {
+    "attempted_refits": 2880,
+    "complete_refits": 2880,
+    "component_checks": 19141,
+    "failed_draws": 0,
+    "passed": true,
+    "retained_space_checks": 2880,
+    "runs": 630,
+    "seconds": 36.32000287505798,
+    "shape_refit_checks": 2880,
+    "withheld": 0
+  },
+  "exact_parity_arrays": 1152,
+  "individual_records_published": 0,
+  "new_p_values": 0,
+  "new_defaults": 0,
+  "uncertainty": "Unadjusted exact95% per-cell intervals; conservative paired difference intervals per contrast; not simultaneous across cells",
+  "bootstrap_interpretation": "Three independent parents/cell;25 draws/parent are repeated conditional measurements, not false-positive trials or species probabilities",
+  "limits": [
+    "No empirical fitting or significance calibration.",
+    "Continuous-control raw simulation is not an exact Gaussian score null.",
+    "Full retention preserves selected view PCs,not every raw feature.",
+    "No optimizer/default promotion from recovery alone.",
+    "Conflicting views have no joint target or recovery rate."
+  ],
+  "version": "0.84.0.dev0",
+  "preflight_searches": 785,
+  "total_pipeline_refits": 3665,
+  "total_bootstrap_refits": 3000,
+  "main_bootstrap_refits": 2250,
+  "total_batch_density_checks": 24352,
+  "strict_used_batch_label_checks": 14600,
+  "unused_ambiguous_batches": 4,
+  "unused_ambiguous_rows": 39,
+  "largest_unused_native_gap": 7.771561172376096e-16,
+  "retained_main_searches": 78,
+  "resumed_main_searches": 2802,
+  "original_scientific_arrays_changed": 0,
+  "main_serial_seconds": 927.7840885134647,
+  "runtime_interpretation": "Point workflow medians include ingestion, export and independent audit; not isolated fitter timings",
+  "decision": "Experimental opt-in only; no superiority over ordinary100 starts or reliable bootstrap species count established"
+}

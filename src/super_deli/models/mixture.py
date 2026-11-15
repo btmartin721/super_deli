@@ -77,10 +77,16 @@ def select_gaussian_mixture(
             reg_covar=config.reg_covar,
             random_state=int(np.random.SeedSequence([seed, k]).generate_state(1)[0]),
         )
+        initialization = None
         try:
             with warnings.catch_warnings():
                 warnings.simplefilter("error", ConvergenceWarning)
-                estimator.fit(scores)
+                if getattr(config, "initialization_policy", "legacy") == "diverse_v1":
+                    from super_deli.models.initialization import fit_diverse_batches
+
+                    estimator, initialization = fit_diverse_batches(estimator, scores)
+                else:
+                    estimator.fit(scores)
             if not estimator.converged_:
                 raise ValueError(f"GMM K={k} did not converge")
             probabilities = estimator.predict_proba(scores)
@@ -105,6 +111,8 @@ def select_gaussian_mixture(
             "iterations": int(estimator.n_iter_),
             "hard_cluster_sizes": sizes.tolist(),
         }
+        if initialization is not None:
+            candidate["initialization"] = initialization
         if pool is not None:
             candidate.update(
                 log_likelihood=float(estimator.score(scores) * len(scores)),

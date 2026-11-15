@@ -843,3 +843,23 @@ are stored separately and never enter native selection. Runtime source hashes
 bind preflight/main; measured resource gates and retained failures close the
 execution boundary. See [the interface](full-retention.md) and
 [completed validation](full-retention-results.md).
+
+
+### Explicit initialization policy
+
+The optional diverse_v1 integrative declaration requires retain_all_v1 and one
+hundred total starts. models.initialization delegates three fixed public
+GaussianMixture batches to the existing estimator, chooses the largest lower
+bound and returns the winner to unchanged distinct-unit eligibility/BIC logic.
+The default legacy value is omitted from old serialized configurations. The
+fit-free CLI replaces one selected arm; projection and raw-array bootstrap reuse
+native integration. Conditional report hooks identify the new policy.
+
+Initialization benchmarking reuses sealed archives, read-only raw/pipeline
+captures and independent density/transform/identity/OOB audits. Optional audit
+hooks preserve strict defaults. Every winning batch at every candidate K has
+strict independent hard-label checks; unused batches retain probability/density
+checks and explicit ambiguity receipts. No truth-informed selection, inferred
+species probabilities or new p-values are introduced. Source freezes, resource
+gates, retained failures and approved amendments bind the validation boundary.
+See [interface](truth-free-init.md) and [results](truth-free-init-results.md).

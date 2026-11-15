@@ -107,7 +107,7 @@ def _search(event, candidates, directory, draw):
     return observed[event["selected_k"]]
 
 
-def audit_run(directory):
+def audit_run(directory, *, search_auditor=None, candidate_auditor=None):
     directory = Path(directory)
     root = directory / "observed-pipeline"
     if not (root / "raw-layout.json").exists():
@@ -123,7 +123,7 @@ def audit_run(directory):
     layout = read_json(root / "raw-layout.json")
     events = read_json(root / "events.json")
     models = read_json(directory / "observed-candidates/index.json")
-    checked = audit_candidates(directory / "observed-candidates")
+    checked = (candidate_auditor or audit_candidates)(directory / "observed-candidates")
     density_checks = sum(r["fit_status"] == "complete" for r in models)
     failed_components = len(models) - density_checks
     unit_ids = layout["unit_ids"]
@@ -174,7 +174,9 @@ def audit_run(directory):
         if event["configuration"]["n_pcs"] == fused.shape[1]:
             close(pdist(fused), pdist(a["scores"]))
             retained_checks += 1
-        selected = _search(event, models, directory / "observed-candidates", draw)
+        selected = (search_auditor or _search)(
+            event, models, directory / "observed-candidates", draw
+        )
         with np.load(
             directory / "observed-candidates" / selected["arrays"], allow_pickle=False
         ) as b:

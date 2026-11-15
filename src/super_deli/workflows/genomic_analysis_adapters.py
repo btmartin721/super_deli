@@ -133,6 +133,10 @@ def read_genomic_arm(arm, directory, cohort, frozen):
         preprocessing=preprocessing,
         covariance_type=covariance,
     )
+    if arm.family == "integrative" and arm.model.initialization_policy != "legacy":
+        if s.get("initialization_policy") != arm.model.initialization_policy:
+            raise ValueError("Native initialization policy mismatch")
+        result["initialization_policy"] = s["initialization_policy"]
     if arm.family == "integrative" and arm.model.fusion_policy != "joint_pca":
         if s.get("fusion_policy") != arm.model.fusion_policy:
             raise ValueError("Native fusion policy differs from the declared arm")
