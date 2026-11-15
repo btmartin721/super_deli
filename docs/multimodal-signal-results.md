@@ -65,11 +65,14 @@ and centroid separation numerically; the two remaining N=64 shape failures
 show that retaining information does not guarantee mixture recovery.
 
 Across the two fresh sample sizes, shape recovery rose from 0/8 to 6/8.
-The unadjusted exact 95% binomial interval for 6/8 is approximately 35–97%;
-for 0/8 it is 0–37%. These tiny cells support a descriptive development decision,
-not general false-positive or power guarantees. Detailed per-cell intervals and
-explicit failure bounds are in the [aggregate summary](multimodal-signal-summary.json).
-Repeated arms on one dataset are paired observations, not independent replicates.
+Uncertainty is assessed separately for each fixed sample size: the unadjusted
+exact 95% interval is approximately 7–93% for 2/4 at N=64, and 40–100% for
+4/4 at N=256. The corresponding 0/4 two-PC interval is 0–60% in each cell.
+No common recovery probability is assumed across the two sample sizes. These
+tiny cells support a descriptive development decision, not general false-positive
+or power guarantees. Detailed per-cell intervals and explicit failure bounds
+are in the [aggregate summary](multimodal-signal-summary.json). Repeated arms on
+one dataset are paired observations, not independent replicates.
 
 ## Frozen decision and limits
 
