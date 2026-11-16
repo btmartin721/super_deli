@@ -525,3 +525,9 @@ jobs:
         run: |
           unset PYTHONPATH
           python "$GITHUB_WORKSPACE/examples/shared-predictive/smoke.py" --output-dir "$RUNNER_TEMP/shared-predictive-smoke"
+
+      - name: Check installed bootstrap-splitting diagnosis
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/bootstrap-splitting/smoke.py" --output-dir "$RUNNER_TEMP/bootstrap-splitting-smoke"

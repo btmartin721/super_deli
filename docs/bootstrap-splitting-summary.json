@@ -1,0 +1,1629 @@
+{
+  "archived_audit": {
+    "draws": 2250,
+    "new_fits": 0,
+    "passed": true,
+    "unused_diverse_batches": "Retained under original approved scope; no new label claim",
+    "used_candidate_density_checks": 8955
+  },
+  "generating_group_support": {
+    "cells": [
+      {
+        "both": 85,
+        "draws": 150,
+        "independent_parents": 6,
+        "n": 64,
+        "native_k4_eligible_with_true_group_below_nine": 1,
+        "native_k4_ineligible": 118,
+        "true_group_below_nine": 86
+      },
+      {
+        "both": 0,
+        "draws": 150,
+        "independent_parents": 6,
+        "n": 256,
+        "native_k4_eligible_with_true_group_below_nine": 0,
+        "native_k4_ineligible": 0,
+        "true_group_below_nine": 0
+      }
+    ],
+    "interpretation": "Counts of generating groups are diagnostic only. Fitted groups can differ from generating groups; ARI>=0.8 is not exact recovery, and unique support changes multiple mechanisms.",
+    "new_fits": 0,
+    "passed": true,
+    "postfit_truth_only": true
+  },
+  "interpretation": "Descriptive parent-level intervals; no new p-values or resampling recommendation. Unique support changes weights, N, BIC and preprocessing. Head-only controls bypass ingestion/preprocessing. Descriptive t intervals can degenerate at boundaries; exact parent-event intervals below retain finite-sample uncertainty. All intervals are marginal and unadjusted for multiple comparisons. No general false-positive or species guarantee.",
+  "parent_cells": [
+    {
+      "arms": {
+        "ordinary": {
+          "attempted": 150,
+          "correct_four_group_count": null,
+          "correct_four_group_lower": null,
+          "k4_status": {
+            "eligible": 2,
+            "insufficient_samples": 6,
+            "small_component": 142
+          },
+          "mean_common_point_ari": 0.44264648072325374,
+          "mean_external_gain": -0.5156208194114414,
+          "median_original_ari": null,
+          "oob_units": 3480,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 6,
+            "mean": 0.0
+          },
+          "reference_oob": "same original-draw absence mask",
+          "requested": 150,
+          "selected_k": {
+            "1": 70,
+            "2": 56,
+            "3": 22,
+            "4": 2
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              0.3887293780581397,
+              0.677937288608527
+            ],
+            "independent_parents": 6,
+            "mean": 0.5333333333333333
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              0.3887293780581397,
+              0.677937288608527
+            ],
+            "independent_parents": 6,
+            "mean": 0.5333333333333333
+          },
+          "split_with_nonpositive_external_gain": 80,
+          "split_with_positive_external_gain": 0,
+          "unattempted": 0,
+          "withheld": 0
+        },
+        "reference": {
+          "attempted": 150,
+          "correct_four_group_count": null,
+          "correct_four_group_lower": null,
+          "k4_status": {
+            "eligible": 64,
+            "small_component": 86
+          },
+          "mean_common_point_ari": 0.7735375241559619,
+          "mean_external_gain": -0.04144829670979327,
+          "median_original_ari": null,
+          "oob_units": 0,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 6,
+            "mean": 0.0
+          },
+          "reference_oob": "undefined",
+          "requested": 150,
+          "selected_k": {
+            "1": 137,
+            "2": 13
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              0.019415389604845318,
+              0.15391794372848802
+            ],
+            "independent_parents": 6,
+            "mean": 0.08666666666666667
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              0.019415389604845318,
+              0.15391794372848802
+            ],
+            "independent_parents": 6,
+            "mean": 0.08666666666666667
+          },
+          "split_with_nonpositive_external_gain": 13,
+          "split_with_positive_external_gain": 0,
+          "unattempted": 0,
+          "withheld": 0
+        },
+        "unique": {
+          "attempted": 150,
+          "correct_four_group_count": null,
+          "correct_four_group_lower": null,
+          "k4_status": {
+            "eligible": 4,
+            "insufficient_samples": 6,
+            "small_component": 140
+          },
+          "mean_common_point_ari": 0.7128531411929023,
+          "mean_external_gain": -0.19285797398073878,
+          "median_original_ari": null,
+          "oob_units": 3480,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 6,
+            "mean": 0.0
+          },
+          "reference_oob": "same original-draw absence mask",
+          "requested": 150,
+          "selected_k": {
+            "1": 119,
+            "2": 27,
+            "3": 4
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              0.09586958633995192,
+              0.31746374699338137
+            ],
+            "independent_parents": 6,
+            "mean": 0.20666666666666664
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              0.09586958633995192,
+              0.31746374699338137
+            ],
+            "independent_parents": 6,
+            "mean": 0.20666666666666664
+          },
+          "split_with_nonpositive_external_gain": 31,
+          "split_with_positive_external_gain": 0,
+          "unattempted": 0,
+          "withheld": 0
+        }
+      },
+      "head_only": false,
+      "independent_parents": 6,
+      "law": "continuous_control",
+      "n": 64,
+      "paired_split_differences": [
+        {
+          "descriptive_95_interval": [
+            0.24964447717448696,
+            0.40368885615884637
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 6,
+          "left": "ordinary",
+          "mean": 0.32666666666666666,
+          "right": "unique"
+        },
+        {
+          "descriptive_95_interval": [
+            0.29785881451165386,
+            0.5954745188216796
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 6,
+          "left": "ordinary",
+          "mean": 0.4466666666666667,
+          "right": "reference"
+        },
+        {
+          "descriptive_95_interval": [
+            0.004276223819942027,
+            0.235723776180058
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 6,
+          "left": "unique",
+          "mean": 0.12000000000000001,
+          "right": "reference"
+        }
+      ],
+      "parent_events": {
+        "ordinary": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.5407418735600995,
+              1.0
+            ],
+            "parents": 6,
+            "rate": 1.0,
+            "successes": 6
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.4592581264399005
+            ],
+            "parents": 6,
+            "rate": 0.0,
+            "successes": 0
+          }
+        },
+        "reference": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.35876542100232517,
+              0.9957892554855106
+            ],
+            "parents": 6,
+            "rate": 0.8333333333333334,
+            "successes": 5
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.4592581264399005
+            ],
+            "parents": 6,
+            "rate": 0.0,
+            "successes": 0
+          }
+        },
+        "unique": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.5407418735600995,
+              1.0
+            ],
+            "parents": 6,
+            "rate": 1.0,
+            "successes": 6
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.4592581264399005
+            ],
+            "parents": 6,
+            "rate": 0.0,
+            "successes": 0
+          }
+        }
+      },
+      "point_correct_four_groups": null,
+      "point_selection": {
+        "1": 5,
+        "2": 1
+      }
+    },
+    {
+      "arms": {
+        "ordinary": {
+          "attempted": 150,
+          "correct_four_group_count": 31,
+          "correct_four_group_lower": {
+            "descriptive_95_interval": [
+              0.11696191324883312,
+              0.29637142008450024
+            ],
+            "independent_parents": 6,
+            "mean": 0.20666666666666667
+          },
+          "k4_status": {
+            "eligible": 32,
+            "insufficient_samples": 6,
+            "small_component": 112
+          },
+          "mean_common_point_ari": 0.5894455883619103,
+          "mean_external_gain": 1.0586914263817127,
+          "median_original_ari": 0.4878048780487805,
+          "oob_units": 3480,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              0.9761961210957578,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 0.9933333333333333
+          },
+          "reference_oob": "same original-draw absence mask",
+          "requested": 150,
+          "selected_k": {
+            "2": 114,
+            "3": 4,
+            "4": 32
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "split_with_nonpositive_external_gain": 1,
+          "split_with_positive_external_gain": 149,
+          "unattempted": 0,
+          "withheld": 0
+        },
+        "reference": {
+          "attempted": 150,
+          "correct_four_group_count": 148,
+          "correct_four_group_lower": {
+            "descriptive_95_interval": [
+              0.9649896173000871,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 0.9866666666666667
+          },
+          "k4_status": {
+            "eligible": 150
+          },
+          "mean_common_point_ari": 0.9931707317073171,
+          "mean_external_gain": 2.2943912611165946,
+          "median_original_ari": 1.0,
+          "oob_units": 0,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "reference_oob": "undefined",
+          "requested": 150,
+          "selected_k": {
+            "2": 2,
+            "4": 148
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "split_with_nonpositive_external_gain": 0,
+          "split_with_positive_external_gain": 150,
+          "unattempted": 0,
+          "withheld": 0
+        },
+        "unique": {
+          "attempted": 150,
+          "correct_four_group_count": 53,
+          "correct_four_group_lower": {
+            "descriptive_95_interval": [
+              0.23939986716651226,
+              0.4672667995001544
+            ],
+            "independent_parents": 6,
+            "mean": 0.35333333333333333
+          },
+          "k4_status": {
+            "eligible": 56,
+            "insufficient_samples": 6,
+            "small_component": 88
+          },
+          "mean_common_point_ari": 0.6679791931415711,
+          "mean_external_gain": 1.298580259825686,
+          "median_original_ari": 0.4878048780487805,
+          "oob_units": 3480,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "reference_oob": "same original-draw absence mask",
+          "requested": 150,
+          "selected_k": {
+            "2": 96,
+            "3": 1,
+            "4": 53
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "split_with_nonpositive_external_gain": 0,
+          "split_with_positive_external_gain": 150,
+          "unattempted": 0,
+          "withheld": 0
+        }
+      },
+      "head_only": false,
+      "independent_parents": 6,
+      "law": "shape_only",
+      "n": 64,
+      "paired_split_differences": [
+        {
+          "descriptive_95_interval": [
+            0.0,
+            0.0
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 6,
+          "left": "ordinary",
+          "mean": 0.0,
+          "right": "unique"
+        },
+        {
+          "descriptive_95_interval": [
+            0.0,
+            0.0
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 6,
+          "left": "ordinary",
+          "mean": 0.0,
+          "right": "reference"
+        },
+        {
+          "descriptive_95_interval": [
+            0.0,
+            0.0
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 6,
+          "left": "unique",
+          "mean": 0.0,
+          "right": "reference"
+        }
+      ],
+      "parent_events": {
+        "ordinary": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.5407418735600995,
+              1.0
+            ],
+            "parents": 6,
+            "rate": 1.0,
+            "successes": 6
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.4592581264399005
+            ],
+            "parents": 6,
+            "rate": 0.0,
+            "successes": 0
+          }
+        },
+        "reference": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.5407418735600995,
+              1.0
+            ],
+            "parents": 6,
+            "rate": 1.0,
+            "successes": 6
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.4592581264399005
+            ],
+            "parents": 6,
+            "rate": 0.0,
+            "successes": 0
+          }
+        },
+        "unique": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.5407418735600995,
+              1.0
+            ],
+            "parents": 6,
+            "rate": 1.0,
+            "successes": 6
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.4592581264399005
+            ],
+            "parents": 6,
+            "rate": 0.0,
+            "successes": 0
+          }
+        }
+      },
+      "point_correct_four_groups": {
+        "exact_95_interval": [
+          0.5407418735600995,
+          1.0
+        ],
+        "parents": 6,
+        "rate": 1.0,
+        "successes": 6
+      },
+      "point_selection": {
+        "4": 6
+      }
+    },
+    {
+      "arms": {
+        "ordinary": {
+          "attempted": 150,
+          "correct_four_group_count": null,
+          "correct_four_group_lower": null,
+          "k4_status": {
+            "eligible": 59,
+            "small_component": 91
+          },
+          "mean_common_point_ari": 0.38,
+          "mean_external_gain": -0.11936560702155016,
+          "median_original_ari": null,
+          "oob_units": 14232,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 6,
+            "mean": 0.0
+          },
+          "reference_oob": "same original-draw absence mask",
+          "requested": 150,
+          "selected_k": {
+            "1": 57,
+            "2": 44,
+            "3": 34,
+            "4": 15
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              0.541467427720787,
+              0.698532572279213
+            ],
+            "independent_parents": 6,
+            "mean": 0.62
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              0.541467427720787,
+              0.698532572279213
+            ],
+            "independent_parents": 6,
+            "mean": 0.62
+          },
+          "split_with_nonpositive_external_gain": 93,
+          "split_with_positive_external_gain": 0,
+          "unattempted": 0,
+          "withheld": 0
+        },
+        "reference": {
+          "attempted": 150,
+          "correct_four_group_count": null,
+          "correct_four_group_lower": null,
+          "k4_status": {
+            "eligible": 146,
+            "small_component": 4
+          },
+          "mean_common_point_ari": 1.0,
+          "mean_external_gain": 0.0,
+          "median_original_ari": null,
+          "oob_units": 0,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 6,
+            "mean": 0.0
+          },
+          "reference_oob": "undefined",
+          "requested": 150,
+          "selected_k": {
+            "1": 150
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 6,
+            "mean": 0.0
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 6,
+            "mean": 0.0
+          },
+          "split_with_nonpositive_external_gain": 0,
+          "split_with_positive_external_gain": 0,
+          "unattempted": 0,
+          "withheld": 0
+        },
+        "unique": {
+          "attempted": 150,
+          "correct_four_group_count": null,
+          "correct_four_group_lower": null,
+          "k4_status": {
+            "eligible": 135,
+            "small_component": 15
+          },
+          "mean_common_point_ari": 1.0,
+          "mean_external_gain": 0.0,
+          "median_original_ari": null,
+          "oob_units": 14232,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 6,
+            "mean": 0.0
+          },
+          "reference_oob": "same original-draw absence mask",
+          "requested": 150,
+          "selected_k": {
+            "1": 150
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 6,
+            "mean": 0.0
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 6,
+            "mean": 0.0
+          },
+          "split_with_nonpositive_external_gain": 0,
+          "split_with_positive_external_gain": 0,
+          "unattempted": 0,
+          "withheld": 0
+        }
+      },
+      "head_only": false,
+      "independent_parents": 6,
+      "law": "continuous_control",
+      "n": 256,
+      "paired_split_differences": [
+        {
+          "descriptive_95_interval": [
+            0.541467427720787,
+            0.698532572279213
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 6,
+          "left": "ordinary",
+          "mean": 0.62,
+          "right": "unique"
+        },
+        {
+          "descriptive_95_interval": [
+            0.541467427720787,
+            0.698532572279213
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 6,
+          "left": "ordinary",
+          "mean": 0.62,
+          "right": "reference"
+        },
+        {
+          "descriptive_95_interval": [
+            0.0,
+            0.0
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 6,
+          "left": "unique",
+          "mean": 0.0,
+          "right": "reference"
+        }
+      ],
+      "parent_events": {
+        "ordinary": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.5407418735600995,
+              1.0
+            ],
+            "parents": 6,
+            "rate": 1.0,
+            "successes": 6
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.4592581264399005
+            ],
+            "parents": 6,
+            "rate": 0.0,
+            "successes": 0
+          }
+        },
+        "reference": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.0,
+              0.4592581264399005
+            ],
+            "parents": 6,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.4592581264399005
+            ],
+            "parents": 6,
+            "rate": 0.0,
+            "successes": 0
+          }
+        },
+        "unique": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.0,
+              0.4592581264399005
+            ],
+            "parents": 6,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.4592581264399005
+            ],
+            "parents": 6,
+            "rate": 0.0,
+            "successes": 0
+          }
+        }
+      },
+      "point_correct_four_groups": null,
+      "point_selection": {
+        "1": 6
+      }
+    },
+    {
+      "arms": {
+        "ordinary": {
+          "attempted": 150,
+          "correct_four_group_count": 150,
+          "correct_four_group_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "k4_status": {
+            "eligible": 150
+          },
+          "mean_common_point_ari": 1.0,
+          "mean_external_gain": 2.4622882094635585,
+          "median_original_ari": 1.0,
+          "oob_units": 14232,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "reference_oob": "same original-draw absence mask",
+          "requested": 150,
+          "selected_k": {
+            "4": 150
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "split_with_nonpositive_external_gain": 0,
+          "split_with_positive_external_gain": 150,
+          "unattempted": 0,
+          "withheld": 0
+        },
+        "reference": {
+          "attempted": 150,
+          "correct_four_group_count": 150,
+          "correct_four_group_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "k4_status": {
+            "eligible": 150
+          },
+          "mean_common_point_ari": 1.0,
+          "mean_external_gain": 2.532342074167367,
+          "median_original_ari": 1.0,
+          "oob_units": 0,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "reference_oob": "undefined",
+          "requested": 150,
+          "selected_k": {
+            "4": 150
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "split_with_nonpositive_external_gain": 0,
+          "split_with_positive_external_gain": 150,
+          "unattempted": 0,
+          "withheld": 0
+        },
+        "unique": {
+          "attempted": 150,
+          "correct_four_group_count": 150,
+          "correct_four_group_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "k4_status": {
+            "eligible": 150
+          },
+          "mean_common_point_ari": 1.0,
+          "mean_external_gain": 2.490787042480885,
+          "median_original_ari": 1.0,
+          "oob_units": 14232,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "reference_oob": "same original-draw absence mask",
+          "requested": 150,
+          "selected_k": {
+            "4": 150
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 6,
+            "mean": 1.0
+          },
+          "split_with_nonpositive_external_gain": 0,
+          "split_with_positive_external_gain": 150,
+          "unattempted": 0,
+          "withheld": 0
+        }
+      },
+      "head_only": false,
+      "independent_parents": 6,
+      "law": "shape_only",
+      "n": 256,
+      "paired_split_differences": [
+        {
+          "descriptive_95_interval": [
+            0.0,
+            0.0
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 6,
+          "left": "ordinary",
+          "mean": 0.0,
+          "right": "unique"
+        },
+        {
+          "descriptive_95_interval": [
+            0.0,
+            0.0
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 6,
+          "left": "ordinary",
+          "mean": 0.0,
+          "right": "reference"
+        },
+        {
+          "descriptive_95_interval": [
+            0.0,
+            0.0
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 6,
+          "left": "unique",
+          "mean": 0.0,
+          "right": "reference"
+        }
+      ],
+      "parent_events": {
+        "ordinary": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.5407418735600995,
+              1.0
+            ],
+            "parents": 6,
+            "rate": 1.0,
+            "successes": 6
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.4592581264399005
+            ],
+            "parents": 6,
+            "rate": 0.0,
+            "successes": 0
+          }
+        },
+        "reference": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.5407418735600995,
+              1.0
+            ],
+            "parents": 6,
+            "rate": 1.0,
+            "successes": 6
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.4592581264399005
+            ],
+            "parents": 6,
+            "rate": 0.0,
+            "successes": 0
+          }
+        },
+        "unique": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.5407418735600995,
+              1.0
+            ],
+            "parents": 6,
+            "rate": 1.0,
+            "successes": 6
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.4592581264399005
+            ],
+            "parents": 6,
+            "rate": 0.0,
+            "successes": 0
+          }
+        }
+      },
+      "point_correct_four_groups": {
+        "exact_95_interval": [
+          0.5407418735600995,
+          1.0
+        ],
+        "parents": 6,
+        "rate": 1.0,
+        "successes": 6
+      },
+      "point_selection": {
+        "4": 6
+      }
+    },
+    {
+      "arms": {
+        "ordinary": {
+          "attempted": 300,
+          "correct_four_group_count": null,
+          "correct_four_group_lower": null,
+          "k4_status": {
+            "eligible": 9,
+            "insufficient_samples": 12,
+            "small_component": 279
+          },
+          "mean_common_point_ari": 0.13835538448117685,
+          "mean_external_gain": -1.1096543341173577,
+          "median_original_ari": null,
+          "oob_units": 6960,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 12,
+            "mean": 0.0
+          },
+          "reference_oob": "same original-draw absence mask",
+          "requested": 300,
+          "selected_k": {
+            "1": 33,
+            "2": 167,
+            "3": 94,
+            "4": 6
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              0.8148220447600745,
+              0.9651779552399258
+            ],
+            "independent_parents": 12,
+            "mean": 0.8900000000000001
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              0.8148220447600745,
+              0.9651779552399258
+            ],
+            "independent_parents": 12,
+            "mean": 0.8900000000000001
+          },
+          "split_with_nonpositive_external_gain": 267,
+          "split_with_positive_external_gain": 0,
+          "unattempted": 0,
+          "withheld": 0
+        },
+        "reference": {
+          "attempted": 300,
+          "correct_four_group_count": null,
+          "correct_four_group_lower": null,
+          "k4_status": {
+            "eligible": 126,
+            "small_component": 174
+          },
+          "mean_common_point_ari": 0.8965310274669379,
+          "mean_external_gain": -0.015352873810530519,
+          "median_original_ari": null,
+          "oob_units": 0,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 12,
+            "mean": 0.0
+          },
+          "reference_oob": "undefined",
+          "requested": 300,
+          "selected_k": {
+            "1": 293,
+            "2": 6,
+            "3": 1
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              0.003180386309270273,
+              0.04348628035739639
+            ],
+            "independent_parents": 12,
+            "mean": 0.023333333333333334
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              0.003180386309270273,
+              0.04348628035739639
+            ],
+            "independent_parents": 12,
+            "mean": 0.023333333333333334
+          },
+          "split_with_nonpositive_external_gain": 7,
+          "split_with_positive_external_gain": 0,
+          "unattempted": 0,
+          "withheld": 0
+        },
+        "unique": {
+          "attempted": 300,
+          "correct_four_group_count": null,
+          "correct_four_group_lower": null,
+          "k4_status": {
+            "eligible": 22,
+            "insufficient_samples": 12,
+            "small_component": 266
+          },
+          "mean_common_point_ari": 0.8267069012454148,
+          "mean_external_gain": -0.14431010851726103,
+          "median_original_ari": null,
+          "oob_units": 6960,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 12,
+            "mean": 0.0
+          },
+          "reference_oob": "same original-draw absence mask",
+          "requested": 300,
+          "selected_k": {
+            "1": 262,
+            "2": 36,
+            "3": 2
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              0.08636077261854055,
+              0.1669725607147928
+            ],
+            "independent_parents": 12,
+            "mean": 0.12666666666666668
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              0.08636077261854055,
+              0.1669725607147928
+            ],
+            "independent_parents": 12,
+            "mean": 0.12666666666666668
+          },
+          "split_with_nonpositive_external_gain": 38,
+          "split_with_positive_external_gain": 0,
+          "unattempted": 0,
+          "withheld": 0
+        }
+      },
+      "head_only": true,
+      "independent_parents": 12,
+      "law": "Gaussian_score",
+      "n": 64,
+      "paired_split_differences": [
+        {
+          "descriptive_95_interval": [
+            0.6927200169029206,
+            0.833946649763746
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 12,
+          "left": "ordinary",
+          "mean": 0.7633333333333333,
+          "right": "unique"
+        },
+        {
+          "descriptive_95_interval": [
+            0.7905507699272046,
+            0.942782563406129
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 12,
+          "left": "ordinary",
+          "mean": 0.8666666666666668,
+          "right": "reference"
+        },
+        {
+          "descriptive_95_interval": [
+            0.058053321824860615,
+            0.14861334484180605
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 12,
+          "left": "unique",
+          "mean": 0.10333333333333333,
+          "right": "reference"
+        }
+      ],
+      "parent_events": {
+        "ordinary": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.7353515306029488,
+              1.0
+            ],
+            "parents": 12,
+            "rate": 1.0,
+            "successes": 12
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.2646484693970512
+            ],
+            "parents": 12,
+            "rate": 0.0,
+            "successes": 0
+          }
+        },
+        "reference": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.15165222980843013,
+              0.7233303143178942
+            ],
+            "parents": 12,
+            "rate": 0.4166666666666667,
+            "successes": 5
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.2646484693970512
+            ],
+            "parents": 12,
+            "rate": 0.0,
+            "successes": 0
+          }
+        },
+        "unique": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.7353515306029488,
+              1.0
+            ],
+            "parents": 12,
+            "rate": 1.0,
+            "successes": 12
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.2646484693970512
+            ],
+            "parents": 12,
+            "rate": 0.0,
+            "successes": 0
+          }
+        }
+      },
+      "point_correct_four_groups": null,
+      "point_selection": {
+        "1": 11,
+        "2": 1
+      }
+    },
+    {
+      "arms": {
+        "ordinary": {
+          "attempted": 300,
+          "correct_four_group_count": null,
+          "correct_four_group_lower": null,
+          "k4_status": {
+            "eligible": 231,
+            "small_component": 69
+          },
+          "mean_common_point_ari": 0.41,
+          "mean_external_gain": -0.12456357754663368,
+          "median_original_ari": null,
+          "oob_units": 28464,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 12,
+            "mean": 0.0
+          },
+          "reference_oob": "same original-draw absence mask",
+          "requested": 300,
+          "selected_k": {
+            "1": 123,
+            "2": 129,
+            "3": 37,
+            "4": 11
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              0.46449529552251767,
+              0.7155047044774823
+            ],
+            "independent_parents": 12,
+            "mean": 0.59
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              0.46449529552251767,
+              0.7155047044774823
+            ],
+            "independent_parents": 12,
+            "mean": 0.59
+          },
+          "split_with_nonpositive_external_gain": 177,
+          "split_with_positive_external_gain": 0,
+          "unattempted": 0,
+          "withheld": 0
+        },
+        "reference": {
+          "attempted": 300,
+          "correct_four_group_count": null,
+          "correct_four_group_lower": null,
+          "k4_status": {
+            "eligible": 290,
+            "small_component": 10
+          },
+          "mean_common_point_ari": 1.0,
+          "mean_external_gain": 0.0,
+          "median_original_ari": null,
+          "oob_units": 0,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 12,
+            "mean": 0.0
+          },
+          "reference_oob": "undefined",
+          "requested": 300,
+          "selected_k": {
+            "1": 300
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 12,
+            "mean": 0.0
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 12,
+            "mean": 0.0
+          },
+          "split_with_nonpositive_external_gain": 0,
+          "split_with_positive_external_gain": 0,
+          "unattempted": 0,
+          "withheld": 0
+        },
+        "unique": {
+          "attempted": 300,
+          "correct_four_group_count": null,
+          "correct_four_group_lower": null,
+          "k4_status": {
+            "eligible": 261,
+            "small_component": 39
+          },
+          "mean_common_point_ari": 1.0,
+          "mean_external_gain": 0.0,
+          "median_original_ari": null,
+          "oob_units": 28464,
+          "positive_external_gain_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 12,
+            "mean": 0.0
+          },
+          "reference_oob": "same original-draw absence mask",
+          "requested": 300,
+          "selected_k": {
+            "1": 300
+          },
+          "split_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 12,
+            "mean": 0.0
+          },
+          "split_upper": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 12,
+            "mean": 0.0
+          },
+          "split_with_nonpositive_external_gain": 0,
+          "split_with_positive_external_gain": 0,
+          "unattempted": 0,
+          "withheld": 0
+        }
+      },
+      "head_only": true,
+      "independent_parents": 12,
+      "law": "Gaussian_score",
+      "n": 256,
+      "paired_split_differences": [
+        {
+          "descriptive_95_interval": [
+            0.46449529552251767,
+            0.7155047044774823
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 12,
+          "left": "ordinary",
+          "mean": 0.59,
+          "right": "unique"
+        },
+        {
+          "descriptive_95_interval": [
+            0.46449529552251767,
+            0.7155047044774823
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 12,
+          "left": "ordinary",
+          "mean": 0.59,
+          "right": "reference"
+        },
+        {
+          "descriptive_95_interval": [
+            0.0,
+            0.0
+          ],
+          "failure_treatment": "Withheld lower bounds; inspect arm failure bounds",
+          "independent_parents": 12,
+          "left": "unique",
+          "mean": 0.0,
+          "right": "reference"
+        }
+      ],
+      "parent_events": {
+        "ordinary": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.7353515306029488,
+              1.0
+            ],
+            "parents": 12,
+            "rate": 1.0,
+            "successes": 12
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.2646484693970512
+            ],
+            "parents": 12,
+            "rate": 0.0,
+            "successes": 0
+          }
+        },
+        "reference": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.0,
+              0.2646484693970512
+            ],
+            "parents": 12,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.2646484693970512
+            ],
+            "parents": 12,
+            "rate": 0.0,
+            "successes": 0
+          }
+        },
+        "unique": {
+          "any_split_among_25": {
+            "exact_95_interval": [
+              0.0,
+              0.2646484693970512
+            ],
+            "parents": 12,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "any_withheld": {
+            "exact_95_interval": [
+              0.0,
+              0.2646484693970512
+            ],
+            "parents": 12,
+            "rate": 0.0,
+            "successes": 0
+          }
+        }
+      },
+      "point_correct_four_groups": null,
+      "point_selection": {
+        "1": 12
+      }
+    }
+  ],
+  "passed": true,
+  "replay_arrays": 16200,
+  "searches": 3856,
+  "supported_four_group_diagnostic": {
+    "draws": 33,
+    "interpretation": "Existing ineligible K4 candidates are evaluated diagnostically, never substituted into native selection.",
+    "k4_positive_external_gain_over_selected": 0,
+    "median_original_ari": 0.4355353075170843,
+    "minimum_native_sizes": {
+      "1": 17,
+      "2": 3,
+      "3": 3,
+      "4": 4,
+      "5": 3,
+      "6": 2,
+      "8": 1
+    },
+    "new_fits": 0,
+    "original_ari_at_least_08": 0,
+    "passed": true,
+    "postfit_only": true
+  },
+  "version": "0.85.0.dev0"
+}

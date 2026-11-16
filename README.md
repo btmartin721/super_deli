@@ -4,7 +4,16 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: truth-free GMM initialization and paired validation.**
+**Current checkpoint: bootstrap splitting and distinct-cluster-size diagnosis.**
+The [benchmark-only workflow](docs/bootstrap-splitting.md) compares ordinary
+100-start bootstrap fits with their unique original individuals and independent
+known-parameter reference cohorts. The [bounded results](docs/bootstrap-splitting-results.md)
+separate control splitting, cluster-size eligibility, four-group recovery and
+independent prediction; draw counts remain conditional repeated measurements.
+No new model, resampling default, p-value or species claim is introduced.
+Detailed scientific evidence remains local.
+
+**Previous checkpoint: truth-free GMM initialization and paired validation.**
 The [opt-in fixed initialization bank](docs/truth-free-init.md) supports complete
 matched full-retention/shared-GMM analyses. The [200-dataset comparison](docs/truth-free-init-results.md)
 improves N=64 shape point recovery over ten starts, but does not outperform
