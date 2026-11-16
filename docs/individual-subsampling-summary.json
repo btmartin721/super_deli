@@ -1,0 +1,702 @@
+{
+  "attempted_searches": 2552,
+  "exact_replay_arrays": 8100,
+  "interpretation": "Conditional perturbation measures, not interchangeable probabilities. Marginal descriptive intervals condition on fixed sampling/optimizer streams; draws repeat within independent parents. No species significance, general guarantee or automatic promotion.",
+  "parent_cells": [
+    {
+      "arms": {
+        "ordinary": {
+          "any_failure_parent_event": {
+            "exact_95_interval": [
+              0.0,
+              0.3694166475528192
+            ],
+            "parents": 8,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "attempted": 200,
+          "control_split_count": 96,
+          "correct_four_group_count": null,
+          "k4_status": {
+            "eligible": 2,
+            "insufficient_samples": 8,
+            "small_component": 190
+          },
+          "mean_external_gain": -0.47311685011604304,
+          "median_original_ari": null,
+          "requested": 200,
+          "selected_k": {
+            "1": 104,
+            "2": 70,
+            "3": 26
+          },
+          "split_or_recovery_lower": {
+            "descriptive_95_interval": [
+              0.42071573257917017,
+              0.5392842674208298
+            ],
+            "independent_parents": 8,
+            "mean": 0.48
+          },
+          "split_or_recovery_upper": {
+            "descriptive_95_interval": [
+              0.42071573257917017,
+              0.5392842674208298
+            ],
+            "independent_parents": 8,
+            "mean": 0.48
+          },
+          "split_without_positive_external_gain": 96,
+          "withheld": 0
+        },
+        "subsample": {
+          "any_failure_parent_event": {
+            "exact_95_interval": [
+              0.0,
+              0.3694166475528192
+            ],
+            "parents": 8,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "attempted": 200,
+          "control_split_count": 17,
+          "correct_four_group_count": null,
+          "k4_status": {
+            "eligible": 50,
+            "small_component": 150
+          },
+          "mean_external_gain": -0.05461766867031817,
+          "median_original_ari": null,
+          "requested": 200,
+          "selected_k": {
+            "1": 183,
+            "2": 16,
+            "3": 1
+          },
+          "split_or_recovery_lower": {
+            "descriptive_95_interval": [
+              0.039647447359770674,
+              0.13035255264022932
+            ],
+            "independent_parents": 8,
+            "mean": 0.08499999999999999
+          },
+          "split_or_recovery_upper": {
+            "descriptive_95_interval": [
+              0.039647447359770674,
+              0.13035255264022932
+            ],
+            "independent_parents": 8,
+            "mean": 0.08499999999999999
+          },
+          "split_without_positive_external_gain": 17,
+          "withheld": 0
+        }
+      },
+      "independent_parents": 8,
+      "law": "continuous_control",
+      "mean_subsample_included_pair_coverage": 1.0,
+      "mean_subsample_omitted_pair_coverage": 0.6374007936507936,
+      "n": 64,
+      "paired_subsample_minus_bootstrap": {
+        "descriptive_95_interval": [
+          -0.4983617883318294,
+          -0.2916382116681706
+        ],
+        "independent_parents": 8,
+        "mean": -0.395
+      },
+      "point_correct_or_split": {
+        "exact_95_interval": [
+          0.0031597235312519063,
+          0.5265096708752065
+        ],
+        "parents": 8,
+        "rate": 0.125,
+        "successes": 1
+      },
+      "point_selected_k": {
+        "1": 7,
+        "2": 1
+      }
+    },
+    {
+      "arms": {
+        "ordinary": {
+          "any_failure_parent_event": {
+            "exact_95_interval": [
+              0.0,
+              0.3694166475528192
+            ],
+            "parents": 8,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "attempted": 200,
+          "control_split_count": null,
+          "correct_four_group_count": 30,
+          "k4_status": {
+            "eligible": 32,
+            "insufficient_samples": 8,
+            "small_component": 160
+          },
+          "mean_external_gain": 0.9469552409777259,
+          "median_original_ari": 0.4878048780487805,
+          "requested": 200,
+          "selected_k": {
+            "2": 154,
+            "3": 14,
+            "4": 32
+          },
+          "split_or_recovery_lower": {
+            "descriptive_95_interval": [
+              0.06288861433560483,
+              0.2371113856643952
+            ],
+            "independent_parents": 8,
+            "mean": 0.15000000000000002
+          },
+          "split_or_recovery_upper": {
+            "descriptive_95_interval": [
+              0.06288861433560483,
+              0.2371113856643952
+            ],
+            "independent_parents": 8,
+            "mean": 0.15000000000000002
+          },
+          "split_without_positive_external_gain": 6,
+          "withheld": 0
+        },
+        "subsample": {
+          "any_failure_parent_event": {
+            "exact_95_interval": [
+              0.0,
+              0.3694166475528192
+            ],
+            "parents": 8,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "attempted": 200,
+          "control_split_count": null,
+          "correct_four_group_count": 182,
+          "k4_status": {
+            "eligible": 189,
+            "small_component": 11
+          },
+          "mean_external_gain": 1.9671852973706436,
+          "median_original_ari": 1.0,
+          "requested": 200,
+          "selected_k": {
+            "2": 18,
+            "4": 182
+          },
+          "split_or_recovery_lower": {
+            "descriptive_95_interval": [
+              0.8602384423492759,
+              0.9597615576507239
+            ],
+            "independent_parents": 8,
+            "mean": 0.9099999999999999
+          },
+          "split_or_recovery_upper": {
+            "descriptive_95_interval": [
+              0.8602384423492759,
+              0.9597615576507239
+            ],
+            "independent_parents": 8,
+            "mean": 0.9099999999999999
+          },
+          "split_without_positive_external_gain": 0,
+          "withheld": 0
+        }
+      },
+      "independent_parents": 8,
+      "law": "shape_balanced",
+      "mean_subsample_included_pair_coverage": 1.0,
+      "mean_subsample_omitted_pair_coverage": 0.6374007936507936,
+      "n": 64,
+      "paired_subsample_minus_bootstrap": {
+        "descriptive_95_interval": [
+          0.6761593849781091,
+          0.8438406150218909
+        ],
+        "independent_parents": 8,
+        "mean": 0.76
+      },
+      "point_correct_or_split": {
+        "exact_95_interval": [
+          0.6305833524471807,
+          1.0
+        ],
+        "parents": 8,
+        "rate": 1.0,
+        "successes": 8
+      },
+      "point_selected_k": {
+        "4": 8
+      }
+    },
+    {
+      "arms": {
+        "ordinary": {
+          "any_failure_parent_event": {
+            "exact_95_interval": [
+              0.0,
+              0.3694166475528192
+            ],
+            "parents": 8,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "attempted": 200,
+          "control_split_count": null,
+          "correct_four_group_count": 1,
+          "k4_status": {
+            "eligible": 1,
+            "insufficient_samples": 8,
+            "small_component": 191
+          },
+          "mean_external_gain": 0.8616073621514269,
+          "median_original_ari": 0.4893953773766139,
+          "requested": 200,
+          "selected_k": {
+            "2": 166,
+            "3": 33,
+            "4": 1
+          },
+          "split_or_recovery_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.01682312125796392
+            ],
+            "independent_parents": 8,
+            "mean": 0.005
+          },
+          "split_or_recovery_upper": {
+            "descriptive_95_interval": [
+              0.0,
+              0.01682312125796392
+            ],
+            "independent_parents": 8,
+            "mean": 0.005
+          },
+          "split_without_positive_external_gain": 11,
+          "withheld": 0
+        },
+        "subsample": {
+          "any_failure_parent_event": {
+            "exact_95_interval": [
+              0.0,
+              0.3694166475528192
+            ],
+            "parents": 8,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "attempted": 200,
+          "control_split_count": null,
+          "correct_four_group_count": 64,
+          "k4_status": {
+            "eligible": 68,
+            "small_component": 132
+          },
+          "mean_external_gain": 1.4630626854506141,
+          "median_original_ari": 0.5232132198906925,
+          "requested": 200,
+          "selected_k": {
+            "2": 134,
+            "3": 2,
+            "4": 64
+          },
+          "split_or_recovery_lower": {
+            "descriptive_95_interval": [
+              0.2288556422460222,
+              0.41114435775397784
+            ],
+            "independent_parents": 8,
+            "mean": 0.32
+          },
+          "split_or_recovery_upper": {
+            "descriptive_95_interval": [
+              0.2288556422460222,
+              0.41114435775397784
+            ],
+            "independent_parents": 8,
+            "mean": 0.32
+          },
+          "split_without_positive_external_gain": 0,
+          "withheld": 0
+        }
+      },
+      "independent_parents": 8,
+      "law": "shape_unequal",
+      "mean_subsample_included_pair_coverage": 1.0,
+      "mean_subsample_omitted_pair_coverage": 0.6374007936507936,
+      "n": 64,
+      "paired_subsample_minus_bootstrap": {
+        "descriptive_95_interval": [
+          0.21477706512187034,
+          0.41522293487812967
+        ],
+        "independent_parents": 8,
+        "mean": 0.315
+      },
+      "point_correct_or_split": {
+        "exact_95_interval": [
+          0.6305833524471807,
+          1.0
+        ],
+        "parents": 8,
+        "rate": 1.0,
+        "successes": 8
+      },
+      "point_selected_k": {
+        "4": 8
+      }
+    },
+    {
+      "arms": {
+        "ordinary": {
+          "any_failure_parent_event": {
+            "exact_95_interval": [
+              0.0,
+              0.3694166475528192
+            ],
+            "parents": 8,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "attempted": 200,
+          "control_split_count": 107,
+          "correct_four_group_count": null,
+          "k4_status": {
+            "eligible": 60,
+            "small_component": 140
+          },
+          "mean_external_gain": -0.08588806063275704,
+          "median_original_ari": null,
+          "requested": 200,
+          "selected_k": {
+            "1": 93,
+            "2": 58,
+            "3": 31,
+            "4": 18
+          },
+          "split_or_recovery_lower": {
+            "descriptive_95_interval": [
+              0.4074260718705635,
+              0.6625739281294365
+            ],
+            "independent_parents": 8,
+            "mean": 0.535
+          },
+          "split_or_recovery_upper": {
+            "descriptive_95_interval": [
+              0.4074260718705635,
+              0.6625739281294365
+            ],
+            "independent_parents": 8,
+            "mean": 0.535
+          },
+          "split_without_positive_external_gain": 103,
+          "withheld": 0
+        },
+        "subsample": {
+          "any_failure_parent_event": {
+            "exact_95_interval": [
+              0.0,
+              0.3694166475528192
+            ],
+            "parents": 8,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "attempted": 200,
+          "control_split_count": 0,
+          "correct_four_group_count": null,
+          "k4_status": {
+            "eligible": 188,
+            "small_component": 12
+          },
+          "mean_external_gain": 0.0,
+          "median_original_ari": null,
+          "requested": 200,
+          "selected_k": {
+            "1": 200
+          },
+          "split_or_recovery_lower": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 8,
+            "mean": 0.0
+          },
+          "split_or_recovery_upper": {
+            "descriptive_95_interval": [
+              0.0,
+              0.0
+            ],
+            "independent_parents": 8,
+            "mean": 0.0
+          },
+          "split_without_positive_external_gain": 0,
+          "withheld": 0
+        }
+      },
+      "independent_parents": 8,
+      "law": "continuous_control",
+      "mean_subsample_included_pair_coverage": 1.0,
+      "mean_subsample_omitted_pair_coverage": 0.6497549019607843,
+      "n": 256,
+      "paired_subsample_minus_bootstrap": {
+        "descriptive_95_interval": [
+          -0.6625739281294365,
+          -0.4074260718705635
+        ],
+        "independent_parents": 8,
+        "mean": -0.535
+      },
+      "point_correct_or_split": {
+        "exact_95_interval": [
+          0.0,
+          0.3694166475528192
+        ],
+        "parents": 8,
+        "rate": 0.0,
+        "successes": 0
+      },
+      "point_selected_k": {
+        "1": 8
+      }
+    },
+    {
+      "arms": {
+        "ordinary": {
+          "any_failure_parent_event": {
+            "exact_95_interval": [
+              0.0,
+              0.3694166475528192
+            ],
+            "parents": 8,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "attempted": 200,
+          "control_split_count": null,
+          "correct_four_group_count": 200,
+          "k4_status": {
+            "eligible": 200
+          },
+          "mean_external_gain": 2.4866695834199195,
+          "median_original_ari": 1.0,
+          "requested": 200,
+          "selected_k": {
+            "4": 200
+          },
+          "split_or_recovery_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 8,
+            "mean": 1.0
+          },
+          "split_or_recovery_upper": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 8,
+            "mean": 1.0
+          },
+          "split_without_positive_external_gain": 0,
+          "withheld": 0
+        },
+        "subsample": {
+          "any_failure_parent_event": {
+            "exact_95_interval": [
+              0.0,
+              0.3694166475528192
+            ],
+            "parents": 8,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "attempted": 200,
+          "control_split_count": null,
+          "correct_four_group_count": 200,
+          "k4_status": {
+            "eligible": 200
+          },
+          "mean_external_gain": 2.5330262778658335,
+          "median_original_ari": 1.0,
+          "requested": 200,
+          "selected_k": {
+            "4": 200
+          },
+          "split_or_recovery_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 8,
+            "mean": 1.0
+          },
+          "split_or_recovery_upper": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 8,
+            "mean": 1.0
+          },
+          "split_without_positive_external_gain": 0,
+          "withheld": 0
+        }
+      },
+      "independent_parents": 8,
+      "law": "shape_balanced",
+      "mean_subsample_included_pair_coverage": 1.0,
+      "mean_subsample_omitted_pair_coverage": 0.6497549019607843,
+      "n": 256,
+      "paired_subsample_minus_bootstrap": {
+        "descriptive_95_interval": [
+          0.0,
+          0.0
+        ],
+        "independent_parents": 8,
+        "mean": 0.0
+      },
+      "point_correct_or_split": {
+        "exact_95_interval": [
+          0.6305833524471807,
+          1.0
+        ],
+        "parents": 8,
+        "rate": 1.0,
+        "successes": 8
+      },
+      "point_selected_k": {
+        "4": 8
+      }
+    },
+    {
+      "arms": {
+        "ordinary": {
+          "any_failure_parent_event": {
+            "exact_95_interval": [
+              0.0,
+              0.3694166475528192
+            ],
+            "parents": 8,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "attempted": 200,
+          "control_split_count": null,
+          "correct_four_group_count": 200,
+          "k4_status": {
+            "eligible": 200
+          },
+          "mean_external_gain": 2.4951382386486194,
+          "median_original_ari": 1.0,
+          "requested": 200,
+          "selected_k": {
+            "4": 200
+          },
+          "split_or_recovery_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 8,
+            "mean": 1.0
+          },
+          "split_or_recovery_upper": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 8,
+            "mean": 1.0
+          },
+          "split_without_positive_external_gain": 0,
+          "withheld": 0
+        },
+        "subsample": {
+          "any_failure_parent_event": {
+            "exact_95_interval": [
+              0.0,
+              0.3694166475528192
+            ],
+            "parents": 8,
+            "rate": 0.0,
+            "successes": 0
+          },
+          "attempted": 200,
+          "control_split_count": null,
+          "correct_four_group_count": 200,
+          "k4_status": {
+            "eligible": 200
+          },
+          "mean_external_gain": 2.5403904852473125,
+          "median_original_ari": 1.0,
+          "requested": 200,
+          "selected_k": {
+            "4": 200
+          },
+          "split_or_recovery_lower": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 8,
+            "mean": 1.0
+          },
+          "split_or_recovery_upper": {
+            "descriptive_95_interval": [
+              1.0,
+              1.0
+            ],
+            "independent_parents": 8,
+            "mean": 1.0
+          },
+          "split_without_positive_external_gain": 0,
+          "withheld": 0
+        }
+      },
+      "independent_parents": 8,
+      "law": "shape_unequal",
+      "mean_subsample_included_pair_coverage": 1.0,
+      "mean_subsample_omitted_pair_coverage": 0.6497549019607843,
+      "n": 256,
+      "paired_subsample_minus_bootstrap": {
+        "descriptive_95_interval": [
+          0.0,
+          0.0
+        ],
+        "independent_parents": 8,
+        "mean": 0.0
+      },
+      "point_correct_or_split": {
+        "exact_95_interval": [
+          0.6305833524471807,
+          1.0
+        ],
+        "parents": 8,
+        "rate": 1.0,
+        "successes": 8
+      },
+      "point_selected_k": {
+        "4": 8
+      }
+    }
+  ],
+  "passed": true,
+  "searches": 2552,
+  "withheld": 0
+}

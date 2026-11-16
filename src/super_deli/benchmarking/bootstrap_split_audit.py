@@ -58,19 +58,30 @@ def external_scores(inputs, units, event, a):
     return (np.concatenate(blocks, axis=1) - a["pca_mean"]) @ a["components"].T
 
 
-def audit(directory, original, evaluation, *, head=False):
+def audit(
+    directory,
+    original,
+    evaluation,
+    *,
+    head=False,
+    candidate_directory="candidates",
+    pipeline_directory="pipeline",
+    write=True,
+):
     directory = Path(directory)
-    records = read_json(directory / "candidates/index.json")
-    events = read_json(directory / ("events.json" if head else "pipeline/events.json"))
+    records = read_json(directory / candidate_directory / "index.json")
+    events = read_json(
+        directory / "events.json" if head else directory / pipeline_directory / "events.json"
+    )
     predictions = iter(read_json(directory / "predictions.json"))
     rows = []
     checked = 0
-    layout = None if head else read_json(directory / "pipeline/raw-layout.json")
+    layout = None if head else read_json(directory / pipeline_directory / "raw-layout.json")
     raw = (
         []
         if head
         else [
-            np.load(directory / f"pipeline/raw_{i}.npy", allow_pickle=False)
+            np.load(directory / pipeline_directory / f"raw_{i}.npy", allow_pickle=False)
             for i in range(len(layout["views"]))
         ]
     )
@@ -92,7 +103,7 @@ def audit(directory, original, evaluation, *, head=False):
             np.testing.assert_array_equal(a["original_scores"], original)
             np.testing.assert_array_equal(a["evaluation_scores"], evaluation)
         else:
-            with np.load(directory / "pipeline" / event["arrays"], allow_pickle=False) as f:
+            with np.load(directory / pipeline_directory / event["arrays"], allow_pickle=False) as f:
                 b = {k: f[k].copy() for k in f.files}
             blocks = [
                 _view(
@@ -117,7 +128,9 @@ def audit(directory, original, evaluation, *, head=False):
         try:
             for r in fits:
                 assert r["fit_status"] == "complete"
-                with np.load(directory / "candidates" / r["arrays"], allow_pickle=False) as loaded:
+                with np.load(
+                    directory / candidate_directory / r["arrays"], allow_pickle=False
+                ) as loaded:
                     c = {k: loaded[k].copy() for k in loaded.files}
                 np.testing.assert_array_equal(c["scores"], x)
                 ll, prob, labels = logdensity(x, c)
@@ -152,7 +165,7 @@ def audit(directory, original, evaluation, *, head=False):
                 dict(status="withheld_numerical_audit", error=failure, index=event["index"])
             )
             continue
-        _search(event, records, directory / "candidates", event["draw"])
+        _search(event, records, directory / candidate_directory, event["draw"])
         rows.append(
             dict(
                 status="complete",
@@ -184,5 +197,6 @@ def audit(directory, original, evaluation, *, head=False):
         attempted_searches=len(events),
         withheld=sum(r["status"] != "complete" for r in rows),
     )
-    write_json(result, directory / "diagnostic-audit.json")
+    if write:
+        write_json(result, directory / "diagnostic-audit.json")
     return result

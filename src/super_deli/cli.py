@@ -62,6 +62,16 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.benchmarking.bootstrap_split_cli import register as register_bootstrap_split
 
     register_bootstrap_split(commands)
+    from super_deli.workflows.individual_subsample_cli import (
+        register as register_individual_subsample,
+    )
+
+    register_individual_subsample(commands)
+    from super_deli.benchmarking.individual_subsample_cli import (
+        register as register_individual_study,
+    )
+
+    register_individual_study(commands)
     from super_deli.benchmarking.full_retention_cli import register as register_retention_study
 
     register_retention_study(commands)
@@ -614,6 +624,16 @@ def main(argv: list[str] | None = None) -> int:
             with redirect_stdout(sys.stderr):
                 summary = dispatch(args)
             print(json.dumps(summary, indent=2, sort_keys=True, allow_nan=False))
+            return 0
+        if args.command == "benchmark-individual-subsampling":
+            from super_deli.benchmarking.individual_subsample_cli import dispatch
+
+            print(json.dumps(dispatch(args), indent=2, allow_nan=False))
+            return 0
+        if args.command == "subsample-integrative":
+            from super_deli.workflows.individual_subsample_cli import dispatch
+
+            print(json.dumps(dispatch(args), indent=2, allow_nan=False))
             return 0
         if args.command == "diagnose-bootstrap-splitting":
             from super_deli.benchmarking.bootstrap_split_cli import dispatch

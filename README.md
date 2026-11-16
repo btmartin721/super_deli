@@ -4,7 +4,16 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: bootstrap splitting and distinct-cluster-size diagnosis.**
+**Current checkpoint: opt-in 80% whole-individual subsampling stability.**
+The [separate CLI/API](docs/individual-subsampling.md) attaches sensitivity evidence
+to an unchanged full-retention/shared-GMM point run. It reports candidate eligibility,
+original-cluster representation, failed-outcome bounds and separate included/omitted
+pair coverage. The [48-dataset paired validation](docs/individual-subsampling-results.md)
+compares ordinary bootstrap and without-replacement refits, including small-group
+limitations and independent prediction. Defaults, assignments and p-values stay fixed;
+detailed evidence stays local. No automatic species interpretation or policy promotion.
+
+**Previous checkpoint: bootstrap splitting and distinct-cluster-size diagnosis.**
 The [benchmark-only workflow](docs/bootstrap-splitting.md) compares ordinary
 100-start bootstrap fits with their unique original individuals and independent
 known-parameter reference cohorts. The [bounded results](docs/bootstrap-splitting-results.md)

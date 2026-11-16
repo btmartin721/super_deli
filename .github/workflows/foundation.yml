@@ -531,3 +531,9 @@ jobs:
         run: |
           unset PYTHONPATH
           python "$GITHUB_WORKSPACE/examples/bootstrap-splitting/smoke.py" --output-dir "$RUNNER_TEMP/bootstrap-splitting-smoke"
+
+      - name: Check installed whole-individual subsampling
+        working-directory: ${{ runner.temp }}
+        run: |
+          unset PYTHONPATH
+          python "$GITHUB_WORKSPACE/examples/individual-subsampling/smoke.py" --output-dir "$RUNNER_TEMP/individual-subsampling-smoke"
