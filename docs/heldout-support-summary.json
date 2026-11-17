@@ -1,0 +1,908 @@
+{
+  "attempted_searches": 10400,
+  "baseline_searches": 5100,
+  "cells": [
+    {
+      "cell": 0,
+      "counts": [
+        64
+      ],
+      "descriptive_targets": {
+        "agreement_passed": true,
+        "coverage_passed": true,
+        "positive_flag_passed": true
+      },
+      "design": "control",
+      "median_internal_gain": -0.06174219774908028,
+      "median_point_ari": 1.0,
+      "median_rare_jaccard": 1.0,
+      "n": 64,
+      "parents": 20,
+      "point_available": 20,
+      "point_correct": 17,
+      "point_selected_k": {
+        "1": 17,
+        "2": 3,
+        "3": 0,
+        "4": 0
+      },
+      "rates": {
+        "agreement": {
+          "identification_lower": 0.95,
+          "identification_upper": 0.95,
+          "known_successes": 19,
+          "marginal_exact_95_interval": [
+            0.7512672372279722,
+            0.9987349105020502
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.606015590947323,
+            0.9999687407188856
+          ],
+          "unavailable": 0
+        },
+        "joint": {
+          "identification_lower": 0.8,
+          "identification_upper": 0.8,
+          "known_successes": 16,
+          "marginal_exact_95_interval": [
+            0.5633859970033317,
+            0.9426660029499672
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.42060610352471517,
+            0.9797776795740827
+          ],
+          "unavailable": 0
+        },
+        "positive": {
+          "identification_lower": 0.05,
+          "identification_upper": 0.05,
+          "known_successes": 1,
+          "marginal_exact_95_interval": [
+            0.0012650894979498038,
+            0.24873276277202777
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            3.1259281114409e-05,
+            0.39398440905267773
+          ],
+          "unavailable": 0
+        },
+        "qualified": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        }
+      }
+    },
+    {
+      "cell": 1,
+      "counts": [
+        128
+      ],
+      "descriptive_targets": {
+        "agreement_passed": true,
+        "coverage_passed": true,
+        "positive_flag_passed": true
+      },
+      "design": "control",
+      "median_internal_gain": 0.0,
+      "median_point_ari": 1.0,
+      "median_rare_jaccard": 1.0,
+      "n": 128,
+      "parents": 20,
+      "point_available": 20,
+      "point_correct": 20,
+      "point_selected_k": {
+        "1": 20,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "rates": {
+        "agreement": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "joint": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "positive": {
+          "identification_lower": 0.0,
+          "identification_upper": 0.0,
+          "known_successes": 0,
+          "marginal_exact_95_interval": [
+            0.0,
+            0.16843347098308528
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.0,
+            0.30849710781876155
+          ],
+          "unavailable": 0
+        },
+        "qualified": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        }
+      }
+    },
+    {
+      "cell": 2,
+      "counts": [
+        256
+      ],
+      "descriptive_targets": {
+        "agreement_passed": true,
+        "coverage_passed": true,
+        "positive_flag_passed": true
+      },
+      "design": "control",
+      "median_internal_gain": 0.0,
+      "median_point_ari": 1.0,
+      "median_rare_jaccard": 1.0,
+      "n": 256,
+      "parents": 20,
+      "point_available": 20,
+      "point_correct": 20,
+      "point_selected_k": {
+        "1": 20,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "rates": {
+        "agreement": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "joint": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "positive": {
+          "identification_lower": 0.0,
+          "identification_upper": 0.0,
+          "known_successes": 0,
+          "marginal_exact_95_interval": [
+            0.0,
+            0.16843347098308528
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.0,
+            0.30849710781876155
+          ],
+          "unavailable": 0
+        },
+        "qualified": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        }
+      }
+    },
+    {
+      "cell": 3,
+      "counts": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "descriptive_targets": {
+        "agreement_passed": true,
+        "coverage_passed": true,
+        "positive_flag_passed": true
+      },
+      "design": "balanced",
+      "median_internal_gain": 1.9926013404648595,
+      "median_point_ari": 1.0,
+      "median_rare_jaccard": 1.0,
+      "n": 64,
+      "parents": 20,
+      "point_available": 20,
+      "point_correct": 18,
+      "point_selected_k": {
+        "1": 0,
+        "2": 2,
+        "3": 0,
+        "4": 18
+      },
+      "rates": {
+        "agreement": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "joint": {
+          "identification_lower": 0.9,
+          "identification_upper": 0.9,
+          "known_successes": 18,
+          "marginal_exact_95_interval": [
+            0.6830172859809177,
+            0.9876514728297052
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.5365092144375466,
+            0.9981662581131965
+          ],
+          "unavailable": 0
+        },
+        "positive": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "qualified": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        }
+      }
+    },
+    {
+      "cell": 4,
+      "counts": [
+        25,
+        16,
+        13,
+        10
+      ],
+      "descriptive_targets": {
+        "agreement_passed": true,
+        "coverage_passed": true,
+        "positive_flag_passed": true
+      },
+      "design": "proportional",
+      "median_internal_gain": 1.4677455321280988,
+      "median_point_ari": 1.0,
+      "median_rare_jaccard": 1.0,
+      "n": 64,
+      "parents": 20,
+      "point_available": 20,
+      "point_correct": 19,
+      "point_selected_k": {
+        "1": 0,
+        "2": 1,
+        "3": 0,
+        "4": 19
+      },
+      "rates": {
+        "agreement": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "joint": {
+          "identification_lower": 0.95,
+          "identification_upper": 0.95,
+          "known_successes": 19,
+          "marginal_exact_95_interval": [
+            0.7512672372279722,
+            0.9987349105020502
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.606015590947323,
+            0.9999687407188856
+          ],
+          "unavailable": 0
+        },
+        "positive": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "qualified": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        }
+      }
+    },
+    {
+      "cell": 5,
+      "counts": [
+        29,
+        16,
+        13,
+        6
+      ],
+      "descriptive_targets": {
+        "agreement_passed": true,
+        "coverage_passed": true,
+        "positive_flag_passed": null
+      },
+      "design": "rare_six",
+      "median_internal_gain": 1.0522302494323044,
+      "median_point_ari": 0.5453744493392071,
+      "median_rare_jaccard": 0.2942583732057416,
+      "n": 64,
+      "parents": 20,
+      "point_available": 20,
+      "point_correct": 0,
+      "point_selected_k": {
+        "1": 0,
+        "2": 19,
+        "3": 1,
+        "4": 0
+      },
+      "rates": {
+        "agreement": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "joint": {
+          "identification_lower": 0.0,
+          "identification_upper": 0.0,
+          "known_successes": 0,
+          "marginal_exact_95_interval": [
+            0.0,
+            0.16843347098308528
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.0,
+            0.30849710781876155
+          ],
+          "unavailable": 0
+        },
+        "positive": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "qualified": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        }
+      }
+    },
+    {
+      "cell": 6,
+      "counts": [
+        50,
+        32,
+        26,
+        20
+      ],
+      "descriptive_targets": {
+        "agreement_passed": true,
+        "coverage_passed": true,
+        "positive_flag_passed": true
+      },
+      "design": "proportional",
+      "median_internal_gain": 2.443619633542389,
+      "median_point_ari": 1.0,
+      "median_rare_jaccard": 1.0,
+      "n": 128,
+      "parents": 20,
+      "point_available": 20,
+      "point_correct": 20,
+      "point_selected_k": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 20
+      },
+      "rates": {
+        "agreement": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "joint": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "positive": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "qualified": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        }
+      }
+    },
+    {
+      "cell": 7,
+      "counts": [
+        100,
+        64,
+        52,
+        40
+      ],
+      "descriptive_targets": {
+        "agreement_passed": true,
+        "coverage_passed": true,
+        "positive_flag_passed": true
+      },
+      "design": "proportional",
+      "median_internal_gain": 2.5149155523885725,
+      "median_point_ari": 1.0,
+      "median_rare_jaccard": 1.0,
+      "n": 256,
+      "parents": 20,
+      "point_available": 20,
+      "point_correct": 20,
+      "point_selected_k": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 20
+      },
+      "rates": {
+        "agreement": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "joint": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "positive": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "qualified": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        }
+      }
+    },
+    {
+      "cell": 8,
+      "counts": [
+        55,
+        35,
+        28,
+        10
+      ],
+      "descriptive_targets": {
+        "agreement_passed": true,
+        "coverage_passed": true,
+        "positive_flag_passed": null
+      },
+      "design": "fixed_ten",
+      "median_internal_gain": 1.6193091568639808,
+      "median_point_ari": 1.0,
+      "median_rare_jaccard": 1.0,
+      "n": 128,
+      "parents": 20,
+      "point_available": 20,
+      "point_correct": 20,
+      "point_selected_k": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 20
+      },
+      "rates": {
+        "agreement": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "joint": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "positive": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "qualified": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        }
+      }
+    },
+    {
+      "cell": 9,
+      "counts": [
+        114,
+        73,
+        59,
+        10
+      ],
+      "descriptive_targets": {
+        "agreement_passed": true,
+        "coverage_passed": true,
+        "positive_flag_passed": null
+      },
+      "design": "fixed_ten",
+      "median_internal_gain": 1.8526440050340562,
+      "median_point_ari": 1.0,
+      "median_rare_jaccard": 1.0,
+      "n": 256,
+      "parents": 20,
+      "point_available": 20,
+      "point_correct": 20,
+      "point_selected_k": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 20
+      },
+      "rates": {
+        "agreement": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "joint": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "positive": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        },
+        "qualified": {
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "known_successes": 20,
+          "marginal_exact_95_interval": [
+            0.8315665290169146,
+            1.0
+          ],
+          "parents": 20,
+          "simultaneous_40_rate_95_interval": [
+            0.6915028921812392,
+            1.0
+          ],
+          "unavailable": 0
+        }
+      }
+    }
+  ],
+  "confidence_method": "Exact intervals with unknown-event envelopes; Bonferroni family of40",
+  "decision": "Experimental diagnostic only; no filter or default promotion",
+  "descriptive_go": true,
+  "interpretation": "Independent parents supply uncertainty; repeated omitted individuals/draws are not replicates",
+  "native_searches": 5300,
+  "new_selection_rule": false,
+  "p_value": null,
+  "parents": 200,
+  "passed": true,
+  "planned_searches": 10400,
+  "primary_rate_family": 40
+}

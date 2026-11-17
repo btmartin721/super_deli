@@ -67,6 +67,12 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     register_individual_subsample(commands)
+    from super_deli.workflows.heldout_support_cli import register as register_heldout_support
+
+    register_heldout_support(commands)
+    from super_deli.benchmarking.heldout_cli import register as register_heldout_study
+
+    register_heldout_study(commands)
     from super_deli.benchmarking.individual_subsample_cli import (
         register as register_individual_study,
     )
@@ -627,6 +633,16 @@ def main(argv: list[str] | None = None) -> int:
             return 0
         if args.command == "benchmark-individual-subsampling":
             from super_deli.benchmarking.individual_subsample_cli import dispatch
+
+            print(json.dumps(dispatch(args), indent=2, allow_nan=False))
+            return 0
+        if args.command == "benchmark-heldout-support":
+            from super_deli.benchmarking.heldout_cli import dispatch
+
+            print(json.dumps(dispatch(args), indent=2, allow_nan=False))
+            return 0
+        if args.command == "assess-integrative-support":
+            from super_deli.workflows.heldout_support_cli import dispatch
 
             print(json.dumps(dispatch(args), indent=2, allow_nan=False))
             return 0

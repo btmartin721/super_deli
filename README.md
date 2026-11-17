@@ -4,7 +4,16 @@ Super Deli is being redesigned as a modular Python package for integrative
 species-delimitation research using genomic, morphological, ecological, and
 geometric morphometric data.
 
-**Current checkpoint: opt-in 80% whole-individual subsampling stability.**
+**Current checkpoint: held-out predictive support and rare-group feasibility.**
+The [separate CLI/API](docs/heldout-support.md) reports selected-versus-K=1
+predictive gains from existing native 80% subsamples, with individual-first omitted
+coverage, failures, original-cluster representation and actual candidate eligibility.
+The [200-dataset validation](docs/heldout-support-results.md) separates global
+prediction from correct K and rare-group recovery. The frozen descriptive decision
+is go for retaining the experimental diagnostic. Defaults, assignments and historical p-values
+remain fixed; detailed evidence stays local.
+
+**Previous checkpoint: opt-in 80% whole-individual subsampling stability.**
 The [separate CLI/API](docs/individual-subsampling.md) attaches sensitivity evidence
 to an unchanged full-retention/shared-GMM point run. It reports candidate eligibility,
 original-cluster representation, failed-outcome bounds and separate included/omitted
