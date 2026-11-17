@@ -135,6 +135,35 @@ Perfectly isolating a six-member group is incompatible with the unchanged
 nine-distinct-individual minimum for an eligible fitted component. That stress
 case exposes an explicit feasibility limit rather than motivating a changed rule.
 
+### Archive-only audit of ten-member groups
+
+We verified 183 saved files against the sealed study manifest and traced
+1,500 complete draws from 60 independent datasets (20 per cell). For each draw,
+we counted true smallest-group members in training and checked candidate
+eligibility, BIC selection, and recovery from saved projections of all original
+individuals. Each miss is counted at the first stage that failed.
+
+| Cell | Recovered with <9 in training | Recovered with >=9 in training | Misses: K=4 below size minimum | Misses: eligible K=4 lost on BIC |
+|---|---:|---:|---:|---:|
+| N=64, proportional | 0/326 | 140/174 | 346 | 14 |
+| N=128, fixed ten | 0/327 | 172/173 | 325 | 3 |
+| N=256, fixed ten | 0/320 | 180/180 | 312 | 8 |
+
+In the two fixed-ten cells, 647 of 648 misses occurred when fewer than nine
+true group members were in training. With nine or ten present, 352 of 353
+draws recovered the group. The exact probabilities of including at least nine
+under uniform sampling without replacement were 34.5%, 35.6%, and 36.2%
+for N=64, 128, and 256, compared with 34.8%, 34.6%, and 36.0% observed.
+
+The N=64 proportional cell was the exception: even with nine or ten true
+group members in training, 27 draws produced a K=4 candidate with a fitted
+component below the size minimum, and seven had an eligible K=4 candidate
+that lost on BIC. In all three cells, every draw that selected K=4 met both
+the frozen ARI and smallest-group Jaccard cutoffs. Eligibility depends on
+fitted membership, so having nine true group members in training does not
+guarantee eligibility. These draw counts describe sensitivity within datasets.
+The audit added no fits and changed no defaults or historical p-values.
+
 ## Verification and retained evidence
 
 All 10,400 attempted main searches were independently
