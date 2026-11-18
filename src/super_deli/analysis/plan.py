@@ -128,18 +128,6 @@ def _feature_types(view: Modality) -> set[str]:
     return {f.dtype for f in view.features if f.role == "feature"}
 
 
-def _standalone(view: Modality) -> str | None:
-    if _shape_prerequisite(view):
-        return None
-    if view.kind in {"ecological", "morphological"} and not (
-        _feature_types(view) & {"continuous", "count"}
-    ):
-        return None
-    if len({o.unit_id for o in view.observations}) != len(view.observations):
-        return None
-    return SINGLETONS.get(view.kind)
-
-
 def plan_analysis(
     dataset: str | Path,
     *,
@@ -250,6 +238,7 @@ def plan_analysis(
     if any(count > 1 for count in counts.values()):
         unsupported.append("Native analysis accepts at most one selected view per kind.")
 
+    standalone_methods = {}
     for modality, view in zip(selected, views, strict=True):
         name = modality.name
         if view["required_aggregation"] is None:
@@ -261,18 +250,34 @@ def plan_analysis(
             conditional.append(f"{name}: declare mean aggregation to {target_level}.")
         if view["required_aggregation"] and view["unlinked_observation_ids"]:
             conditional.append(f"{name}: provide missing explicit {target_level} links.")
-        if len({record.unit_id for record in modality.observations}) < len(modality.observations):
+        measured_count = len({record.unit_id for record in modality.observations})
+        repeated = measured_count < len(modality.observations)
+        if repeated:
             conditional.append(
                 f"{name}: resolve repeated observations to one record per measured unit."
             )
-        if prerequisite := _shape_prerequisite(modality):
-            conditional.append(f"{name}: {prerequisite}")
+        shape_prerequisite = _shape_prerequisite(modality)
+        if shape_prerequisite:
+            conditional.append(f"{name}: {shape_prerequisite}")
+        types = tabular_types.get(name, set())
+        numeric_types = types & {"continuous", "count"}
         if modality.features:
-            types = tabular_types[name]
             if not types:
                 unsupported.append(f"{name}: covariate-only input requires an adjustment method.")
-            elif not types & {"continuous", "count"}:
+            elif not numeric_types:
                 conditional.append(f"{name}: declare eligible continuous or count features.")
+        if measured_count < 2:
+            if not integrated:
+                conditional.append(
+                    f"{name}: standalone clustering requires at least two distinct measured units."
+                )
+        elif (
+            not repeated
+            and not shape_prerequisite
+            and (not modality.features or numeric_types)
+            and (standalone_method := SINGLETONS.get(modality.kind))
+        ):
+            standalone_methods[name] = standalone_method
     if not integrated and missing_views == "complete_cases":
         unsupported.append("Native complete-case integration requires at least two views.")
     if not integrated and views[0]["required_aggregation"] == "mean":
@@ -321,7 +326,7 @@ def plan_analysis(
     elif integrated:
         method = "cluster-integrative"
     else:
-        method = SINGLETONS.get(selected[0].kind)
+        method = standalone_methods.get(selected[0].name)
     if method == "cluster-integrative" and (not unsupported or legacy_environment):
         checks.append("The lower-level integrator does not produce same-cohort singleton fits.")
     if (
@@ -362,7 +367,7 @@ def plan_analysis(
         standalone_routes=tuple(
             {"view": m.name, "target_level": m.level, "method": method_name}
             for m in selected
-            if not schema_conversion and (method_name := _standalone(m))
+            if not schema_conversion and (method_name := standalone_methods.get(m.name))
         ),
         reasons=tuple(unsupported + conditional),
         outstanding_checks=tuple(checks),
