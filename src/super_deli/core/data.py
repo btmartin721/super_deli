@@ -11,8 +11,9 @@ from dataclasses import asdict, dataclass
 from typing import Literal
 
 SCHEMA_VERSION = 1
+ENVIRONMENTAL_SCHEMA_VERSION = 2
 Level = Literal["specimen", "population", "locality"]
-Kind = Literal["genomic", "morphological", "ecological", "morphometric"]
+Kind = Literal["genomic", "morphological", "ecological", "morphometric", "environmental"]
 FeatureType = Literal["continuous", "count", "binary", "ordinal", "categorical"]
 
 
@@ -83,6 +84,24 @@ class ImageReaderOptions:
 
 
 @dataclass(frozen=True)
+class EnvironmentalRecord:
+    observation_id: str
+    coordinates: tuple[float, ...] = ()
+    date: str | None = None
+    time_window: tuple[str, ...] = ()
+    source_cell_id: str | None = None
+    sampling_event_id: str | None = None
+
+
+@dataclass(frozen=True)
+class EnvironmentalOptions:
+    source: str
+    spatial_support: Literal["point", "site", "grid_cell"]
+    coordinate_reference_system: str | None = None
+    records: tuple[EnvironmentalRecord, ...] = ()
+
+
+@dataclass(frozen=True)
 class Modality:
     name: str
     kind: Kind
@@ -96,6 +115,7 @@ class Modality:
     tabular_options: TabularReaderOptions | None = None
     morphometric_options: MorphometricReaderOptions | None = None
     image_options: ImageReaderOptions | None = None
+    environmental_options: EnvironmentalOptions | None = None
 
 
 @dataclass(frozen=True)
@@ -114,6 +134,8 @@ class DatasetConfig:
 
         result = json.loads(json.dumps(asdict(self), allow_nan=False))
         for modality in result["modalities"]:
+            if modality["environmental_options"] is None:
+                del modality["environmental_options"]
             if modality["image_options"] is None:
                 del modality["image_options"]
             if modality["morphometric_options"] is None:

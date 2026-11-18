@@ -23,17 +23,22 @@ def _invalid_constant(value: str):
     raise ConfigError(f"nonfinite JSON constant: {value}")
 
 
-def read_json(path: str | Path) -> Any:
-    """Read strict JSON, rejecting duplicate keys and nonfinite constants."""
+def decode_json(source: str | bytes) -> Any:
+    """Decode strict UTF-8 JSON, rejecting duplicate keys and nonfinite constants."""
     try:
         value = json.loads(
-            Path(path).read_text(encoding="utf-8"),
+            source.decode("utf-8") if isinstance(source, bytes) else source,
             object_pairs_hook=_unique_object,
             parse_constant=_invalid_constant,
         )
     except (json.JSONDecodeError, UnicodeError, RecursionError) as exc:
         raise ConfigError(f"invalid JSON configuration: {exc}") from exc
     return value
+
+
+def read_json(path: str | Path) -> Any:
+    """Read strict JSON, rejecting duplicate keys and nonfinite constants."""
+    return decode_json(Path(path).read_bytes())
 
 
 def load_config(path: str | Path) -> DatasetConfig:
