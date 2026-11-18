@@ -22,9 +22,17 @@ def register(commands):
     report.add_argument("--boundary-groups", nargs=2, metavar=("LEFT", "RIGHT"))
     report.add_argument("--specimen-pair", nargs=2, metavar=("FIRST", "SECOND"))
 
+    compare = operations.add_parser(
+        "compare-hypotheses", help="Compare declared specimen partitions"
+    )
+    compare.add_argument("run_dir", type=Path)
+    compare.add_argument("--study-manifest", type=Path, required=True)
+    compare.add_argument("--hypotheses", type=Path, required=True)
+    compare.add_argument("--output-dir", type=Path, required=True)
+
 
 def dispatch(args):
-    from . import plan_analysis, report_from_archive
+    from . import compare_hypotheses_from_archive, plan_analysis, report_from_archive
 
     if args.operation == "plan":
         aggregation = {}
@@ -40,12 +48,20 @@ def dispatch(args):
             missing_views=args.missing_views,
             aggregation=aggregation,
         ).to_dict()
-    result = report_from_archive(
-        args.run_dir,
-        study_manifest=args.study_manifest,
-        output_dir=args.output_dir,
-        boundary_arm=args.boundary_arm,
-        boundary_groups=tuple(args.boundary_groups) if args.boundary_groups else None,
-        specimen_pair=tuple(args.specimen_pair) if args.specimen_pair else None,
-    )
+    if args.operation == "compare-hypotheses":
+        result = compare_hypotheses_from_archive(
+            args.run_dir,
+            study_manifest=args.study_manifest,
+            hypotheses=args.hypotheses,
+            output_dir=args.output_dir,
+        )
+    else:
+        result = report_from_archive(
+            args.run_dir,
+            study_manifest=args.study_manifest,
+            output_dir=args.output_dir,
+            boundary_arm=args.boundary_arm,
+            boundary_groups=tuple(args.boundary_groups) if args.boundary_groups else None,
+            specimen_pair=tuple(args.specimen_pair) if args.specimen_pair else None,
+        )
     return {"json_path": str(result.json_path), "html_path": str(result.html_path)}

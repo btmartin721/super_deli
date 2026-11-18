@@ -143,7 +143,7 @@ def archive(tmp_path):
                     **options,
                 }
                 for name, kind, fmt, options in (
-                    ("markers", "genomic", "phylip", {}),
+                    ("markers", "genomic", "phylip", {"popmapfile": "markers.popmap"}),
                     (
                         "outline",
                         "morphometric",
@@ -174,8 +174,36 @@ def archive(tmp_path):
         ],
     }
     digest = configuration_hash(config)
+    sources = []
+    frozen_views = []
+    for index, view in enumerate(dataset["modalities"]):
+        frozen_view = view.copy()
+        for role in ("path", "popmapfile"):
+            original = view.get(role)
+            if original is None:
+                continue
+            snapshot = f"view_{index:03d}_{role}/{original}"
+            staged = run / "inputs" / snapshot
+            staged.parent.mkdir()
+            payload = f"Saved {view['name']} {role} fixture\n".encode()
+            staged.write_bytes(payload)
+            frozen_view[role] = snapshot
+            sources.append(
+                {
+                    "modality": view["name"],
+                    "role": role,
+                    "snapshot": snapshot,
+                    "source": {
+                        "path": str(tmp_path / "originals" / original),
+                        "sha256": hashlib.sha256(payload).hexdigest(),
+                        "size_bytes": len(payload),
+                    },
+                }
+            )
+        frozen_views.append(frozen_view)
+    frozen = {**dataset, "modalities": frozen_views}
     _json(run / "inputs/cohort.json", cohort)
-    _json(run / "inputs/dataset.json", dataset)
+    _json(run / "inputs/dataset.json", frozen)
     _json(
         run / "manifest.json",
         {
@@ -183,9 +211,9 @@ def archive(tmp_path):
             "analysis": config,
             "cohort": cohort,
             "dataset": dataset,
-            "frozen_dataset": dataset,
+            "frozen_dataset": frozen,
             "configuration_sha256": digest,
-            "sources": [],
+            "sources": sources,
         },
     )
 
@@ -200,12 +228,17 @@ def archive(tmp_path):
         }
         for unit in reversed(ids)
     }
+    resampling_units = {
+        "genomic": "locus block",
+        "integrative": "Paired independent target units across all views",
+        "shape": "independent biological unit; all landmarks retained together",
+    }
     models = []
     for arm in config["arms"]:
         name = arm["name"]
         path = run / "arms" / name
         path.mkdir(parents=True)
-        configuration = {"dataset": dataset, "model": arm["model"]}
+        configuration = {"dataset": frozen, "model": arm["model"]}
         is_genomic, is_combined = name == "genomic", name == "combined"
         k = 1 if is_genomic else 2
         stability = {
@@ -213,7 +246,7 @@ def archive(tmp_path):
             "requested": 3 if is_combined else 0,
             "successful": 3 if is_combined else 0,
             "failed": 0,
-            "resampling_unit": "paired specimens",
+            "resampling_unit": resampling_units[arm["family"]],
         }
         native = {
             "schema_version": 1,
