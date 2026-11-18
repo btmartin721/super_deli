@@ -2,6 +2,7 @@
 
 import itertools
 import json
+from contextlib import nullcontext
 from pathlib import Path
 
 import pytest
@@ -91,6 +92,112 @@ def declaration(tmp_path):
         return source
 
     return payload, dict(zip(kinds, views, strict=True)), save
+
+
+@pytest.fixture
+def one_specimen_ecology(declaration, tmp_path):
+    payload, views, save = declaration
+    payload.update(schema_version=1, modalities=[views["E"], views["M"]])
+    views["E"].update(path="ecology.csv", observations=views["E"]["observations"][:1])
+    (tmp_path / "ecology.csv").write_text("observation_id,value\nE_u1,2.5\n", encoding="utf-8")
+    return payload, views, save
+
+
+@pytest.mark.parametrize("catalogue_size", [1, 3])
+def test_single_ecology_requires_two_measured_specimens(
+    one_specimen_ecology, capsys, catalogue_size
+):
+    payload, views, save = one_specimen_ecology
+    payload.update(specimens=payload["specimens"][:catalogue_size], modalities=[views["E"]])
+    path = save()
+
+    plan = plan_analysis(path, modalities=["E"], target_level="specimen")
+    assert plan.status == "conditional"
+    assert plan.selection_capability == "implemented"
+    assert plan.coverage["declared_count"] == catalogue_size
+    assert plan.coverage["linked_count"] == 1
+    assert plan.coverage["linked_unit_ids"] == ["u1"]
+    assert plan.coverage["measurement_completeness"] == "unchecked"
+    assert plan.reasons == (
+        "E: standalone clustering requires at least two distinct measured units.",
+    )
+    assert plan.eligible_native_methods == plan.standalone_routes == ()
+    assert plan.native_method_outputs == {}
+    assert (
+        main(["analyze", "plan", str(path), "--modality", "E", "--target-level", "specimen"]) == 0
+    )
+    assert json.loads(capsys.readouterr().out) == plan.to_dict()
+
+
+def test_joint_fallback_uses_each_views_measured_units(one_specimen_ecology, tmp_path):
+    _, views, save = one_specimen_ecology
+    views["M"]["path"] = "morphology.csv"
+    (tmp_path / "morphology.csv").write_text(
+        "observation_id,value\nM_u1,1.5\nM_u2,2.5\nM_u3,3.5\n", encoding="utf-8"
+    )
+    plan = plan_analysis(
+        save(), modalities=["E", "M"], target_level="specimen", missing_views="complete_cases"
+    )
+    assert plan.status == "conditional"
+    assert plan.coverage["linked_unit_ids"] == ["u1"]
+    assert plan.reasons == ("Integration requires at least two shared target units.",)
+    assert plan.eligible_native_methods == ()
+    assert plan.standalone_routes == (
+        {"view": "M", "target_level": "specimen", "method": "cluster-tabular"},
+    )
+
+
+@pytest.mark.parametrize("repeated", [False, True])
+@pytest.mark.parametrize(
+    "name,method",
+    [
+        ("G", "baseline-genomic"),
+        ("S", "cluster-shape"),
+        ("E", "cluster-tabular"),
+        ("M", "cluster-tabular"),
+    ],
+)
+def test_native_standalone_counts_distinct_measured_units(
+    declaration, monkeypatch, name, method, repeated
+):
+    payload, views, save = declaration
+    view = views[name]
+    payload.update(schema_version=1, modalities=[view])
+    view["observations"] = view["observations"][:2]
+    if repeated:
+        view["observations"][1]["unit_id"] = view["observations"][0]["unit_id"]
+    path = save()
+    open_path = Path.open
+
+    def open_for_planning(candidate, *args, **kwargs):
+        if candidate == path:
+            return open_path(candidate, *args, **kwargs)
+        assert candidate == path.parent / view["path"]
+        # Allow the readability probe without supplying measurement contents.
+        return nullcontext()
+
+    monkeypatch.setattr(Path, "open", open_for_planning)
+    plan = plan_analysis(path, modalities=[name], target_level="specimen")
+    assert plan.views[0]["observation_count"] == 2
+    if repeated:
+        assert plan.status == "conditional"
+        assert plan.coverage["linked_count"] == 1
+        assert (
+            f"{name}: resolve repeated observations to one record per measured unit."
+            in plan.reasons
+        )
+        assert f"{name}: standalone clustering requires at least two distinct measured units." in (
+            plan.reasons
+        )
+        assert plan.eligible_native_methods == plan.standalone_routes == ()
+    else:
+        assert plan.status == "ready"
+        assert plan.coverage["linked_count"] == 2
+        assert plan.reasons == ()
+        assert plan.eligible_native_methods == (method,)
+        assert plan.standalone_routes == (
+            {"view": name, "target_level": "specimen", "method": method},
+        )
 
 
 @pytest.mark.parametrize(
