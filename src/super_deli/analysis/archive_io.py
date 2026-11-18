@@ -100,23 +100,27 @@ class SealedRun:
         return value
 
     def csv(self, name: str, columns: set[str]) -> dict:
-        data = self.read(name)
-        try:
-            with io.StringIO(data.decode("utf-8-sig"), newline="") as handle:
-                reader = csv.DictReader(handle, strict=True)
-                header = reader.fieldnames or []
-                require(
-                    len(header) == len(columns) and set(header) == columns,
-                    f"{name}: unexpected CSV columns",
-                )
-                rows = list(reader)
-        except (csv.Error, UnicodeError) as exc:
-            raise ArchiveError(f"{name}: invalid UTF-8 CSV: {exc}") from exc
-        require(
-            all(None not in row and None not in row.values() for row in rows),
-            f"{name}: malformed CSV row",
-        )
-        return id_index(rows, "unit_id", name)
+        return assignment_rows(self.read(name), columns, name)
+
+
+def assignment_rows(data: bytes, columns: set[str], name: str) -> dict:
+    """Read ID-indexed CSV rows from the bytes used for provenance."""
+    try:
+        with io.StringIO(data.decode("utf-8-sig"), newline="") as handle:
+            reader = csv.DictReader(handle, strict=True)
+            header = reader.fieldnames or []
+            require(
+                len(header) == len(columns) and set(header) == columns,
+                f"{name}: unexpected CSV columns",
+            )
+            rows = list(reader)
+    except (csv.Error, UnicodeError) as exc:
+        raise ArchiveError(f"{name}: invalid UTF-8 CSV: {exc}") from exc
+    require(
+        all(None not in row and None not in row.values() for row in rows),
+        f"{name}: malformed CSV row",
+    )
+    return id_index(rows, "unit_id", name)
 
 
 def _npy_payload(data: bytes, shape: tuple[int, ...], formats: dict[str, str], name: str):

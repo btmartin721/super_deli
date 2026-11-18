@@ -497,7 +497,7 @@ def _partition_comparisons(records, partitions, assignments, ids):
     return comparisons
 
 
-def _report(archive, boundary_arm, boundary_groups, specimen_pair):
+def _read_run(archive):
     summary = archive.json("summary.json")
     require(
         summary["schema_version"] == 1 and summary["status"] in {"complete", "partial"},
@@ -586,10 +586,7 @@ def _report(archive, boundary_arm, boundary_groups, specimen_pair):
             }
         )
     comparisons = _partition_comparisons(summary["comparisons"], partitions, assignments, ids)
-    boundary = _focal_boundary(
-        archive, partitions, assignments, orders, boundary_groups, boundary_arm, specimen_pair
-    )
-    return {
+    document = {
         "schema_version": 1,
         "run": {
             "workflow": "analyze-matched-multimodal",
@@ -611,7 +608,6 @@ def _report(archive, boundary_arm, boundary_groups, specimen_pair):
         "partitions": list(partitions.values()),
         "partition_comparisons": comparisons,
         "specimens": specimens,
-        "focal_boundary": boundary,
         "inference": {
             "native_run_inference": summary["inference"],
             "species_boundary_inference": evidence(
@@ -632,6 +628,45 @@ def _report(archive, boundary_arm, boundary_groups, specimen_pair):
         },
     }
 
+    return document, assignments, orders, manifest
+
+
+def _report(archive, boundary_arm, boundary_groups, specimen_pair):
+    document, assignments, orders, _ = _read_run(archive)
+    partitions = {arm["name"]: arm for arm in document["partitions"]}
+    document["focal_boundary"] = _focal_boundary(
+        archive,
+        partitions,
+        assignments,
+        orders,
+        boundary_groups,
+        boundary_arm,
+        specimen_pair,
+    )
+    return document
+
+
+def _fresh_output(output_dir):
+    output = Path(output_dir).absolute()
+    if output.exists() or output.is_symlink():
+        raise FileExistsError(f"Report destination already exists: {output}")
+    return output
+
+
+def _write_report(document, html, output, filename):
+    result = ArchiveReport(output / f"{filename}.json", output / f"{filename}.html")
+    output.mkdir(mode=0o700, exist_ok=False)
+    try:
+        write_json(document, result.json_path)
+        with result.html_path.open("x", encoding="utf-8") as handle:
+            handle.write(html)
+    except BaseException:
+        result.json_path.unlink(missing_ok=True)
+        result.html_path.unlink(missing_ok=True)
+        output.rmdir()
+        raise
+    return result
+
 
 def report_from_archive(
     run_dir: str | Path,
@@ -649,9 +684,7 @@ def report_from_archive(
     specimen assigned to a different group. Callers may choose the arm, the
     two native group labels, and a specimen pair spanning those groups.
     """
-    output = Path(output_dir).absolute()
-    if output.exists() or output.is_symlink():
-        raise FileExistsError(f"Report destination already exists: {output}")
+    output = _fresh_output(output_dir)
     archive = SealedRun(Path(run_dir), Path(study_manifest))
     require(
         not output.resolve().is_relative_to(archive.run),
@@ -662,15 +695,4 @@ def report_from_archive(
         html = render_html(document)
     except (KeyError, TypeError, IndexError, AttributeError) as exc:
         raise ArchiveError(f"Malformed matched-multimodal archive: {exc}") from exc
-    result = ArchiveReport(output / "report.json", output / "report.html")
-    output.mkdir(mode=0o700, exist_ok=False)
-    try:
-        write_json(document, result.json_path)
-        with result.html_path.open("x", encoding="utf-8") as handle:
-            handle.write(html)
-    except BaseException:
-        result.json_path.unlink(missing_ok=True)
-        result.html_path.unlink(missing_ok=True)
-        output.rmdir()
-        raise
-    return result
+    return _write_report(document, html, output, "report")

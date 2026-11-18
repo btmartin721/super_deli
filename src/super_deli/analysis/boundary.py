@@ -61,10 +61,11 @@ def boundary_agreement(partition, left, right):
     )
 
 
-def _draws(records, original_order, requested):
+def _draws(records, original_order, requested, *, allow_incomplete=False):
     prefix = "Combined bootstrap"
     require(
-        isinstance(records, list) and len(records) == requested,
+        isinstance(records, list)
+        and (len(records) <= requested if allow_incomplete else len(records) == requested),
         f"{prefix}: requested draw count mismatch",
     )
     n = len(original_order)
@@ -99,10 +100,21 @@ def _draws(records, original_order, requested):
             type(k) is int
             and k >= 1
             and len(labels) == n
-            and all(type(v) is int and 0 <= v < k for v in labels),
+            and all(
+                (type(v) is int and 0 <= v < k)
+                or (allow_incomplete and (v is None or (type(v) is int and v == -1)))
+                for v in labels
+            ),
             f"{prefix}: malformed saved projection",
         )
-        yield dict(zip(original_order, labels, strict=True)), omitted_ids
+        yield (
+            {
+                unit: label
+                for unit, label in zip(original_order, labels, strict=True)
+                if label is not None and label != -1
+            },
+            omitted_ids,
+        )
 
 
 def recurrence(
@@ -113,6 +125,8 @@ def recurrence(
     candidate_groups: dict,
     focal_groups: dict,
     pair: tuple[str, str],
+    *,
+    allow_incomplete: bool = False,
 ) -> dict:
     prefix = f"arms/{arm_name}"
     records = archive.json(f"{prefix}/bootstrap_replicates.json", optional=True)
@@ -139,51 +153,86 @@ def recurrence(
         failed=failed,
         resampling_unit=stability["resampling_unit"],
     )
+    if allow_incomplete:
+        metadata.update(covered=0, missing=requested, saved_successful=0, saved_failed=0)
     if not requested:
         require(records is None or records == [], f"{prefix}: unexpected saved draws")
         return evidence(
             "not_computed", "The native run requested zero bootstrap draws.", **metadata
         )
-    if records is None:
+    if records is None and not allow_incomplete:
         return evidence("unavailable", "Saved bootstrap projections are absent.", **metadata)
 
+    saved_records = [] if records is None else records
     exact, native_exact = Counter(), Counter()
     covered = omitted_requested = omitted_covered = separated = omitted_separated = both = 0
-    for projection, omitted in _draws(records, original_order, requested):
-        pair_omitted = set(pair) <= omitted
+    saved_successful = saved_failed = pair_covered = 0
+    pair_ids = set(pair)
+    for projection, omitted in _draws(
+        saved_records, original_order, requested, allow_incomplete=allow_incomplete
+    ):
+        pair_omitted = pair_ids <= omitted
         omitted_requested += pair_omitted
         if projection is None:
+            saved_failed += 1
+            continue
+        saved_successful += 1
+        if pair_ids <= projection.keys():
+            pair_covered += 1
+            omitted_covered += pair_omitted
+            apart = projection[pair[0]] != projection[pair[1]]
+            separated += apart
+            omitted_separated += apart and pair_omitted
+        if len(projection) != len(original_order):
             continue
         covered += 1
-        omitted_covered += pair_omitted
-        apart = projection[pair[0]] != projection[pair[1]]
-        separated += apart
-        omitted_separated += apart and pair_omitted
         members = list(groups_by_label(projection.items()).values())
         recurrent = [g for g, group in focal_groups.items() if group in members]
         exact.update(recurrent)
         both += len(recurrent) == len(focal_groups)
         if native_clusters is not None:
             native_exact.update(g for g, group in candidate_groups.items() if group in members)
-    require(covered == successful, f"{prefix}: successful projection count mismatch")
+    require(
+        (saved_successful <= successful and saved_failed <= failed)
+        if allow_incomplete
+        else covered == successful,
+        f"{prefix}: saved projection counts disagree with native denominators",
+    )
     if native_clusters is not None:
-        require(
-            all(
-                row["exact_recovery_count"] == native_exact[label]
-                for label, row in native_groups.items()
-                if row["unit_ids"]
-            ),
-            f"{prefix}: exact group recurrence differs from the native ledger",
+        for label, row in native_groups.items():
+            if not row["unit_ids"]:
+                continue
+            observed = native_exact[label]
+            count = row["exact_recovery_count"]
+            consistent = count == observed
+            if allow_incomplete:
+                consistent = (
+                    type(count) is int and observed <= count <= observed + successful - covered
+                )
+            require(
+                consistent,
+                f"{prefix}: exact group recurrence differs from the native ledger",
+            )
+    reason = None if covered else "Every requested projection failed."
+    if allow_incomplete:
+        metadata.update(
+            missing=requested - len(saved_records),
+            saved_successful=saved_successful,
+            saved_failed=saved_failed,
         )
+        if records is None:
+            reason = "Saved bootstrap projections are absent."
+        elif not covered and successful:
+            reason = "No successful saved projection resolves the entire roster."
+    metadata["covered"] = covered
     return evidence(
         "available" if covered else "unavailable",
-        None if covered else "Every requested projection failed.",
+        reason,
         **metadata,
-        covered=covered,
         exact_group_recurrence={g: pair_counts(exact[g], covered, requested) for g in focal_groups},
         joint_exact_group_recurrence=pair_counts(both, covered, requested),
         specimen_pair_separation={
-            "all_projected_draws": pair_counts(separated, covered, requested),
+            "all_projected_draws": pair_counts(separated, pair_covered, requested),
             "both_specimens_omitted": pair_counts(
                 omitted_separated, omitted_covered, omitted_requested
             ),
