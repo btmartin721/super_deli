@@ -4,10 +4,16 @@ from __future__ import annotations
 
 from collections import Counter
 from dataclasses import asdict, dataclass
+from datetime import datetime
 from pathlib import Path
 from typing import Literal
 
-from super_deli.core.data import DatasetConfig, TabularReaderOptions
+from super_deli.core.data import (
+    ENVIRONMENTAL_SCHEMA_VERSION,
+    DatasetConfig,
+    Modality,
+    TabularReaderOptions,
+)
 from super_deli.core.schema import config_from_dict
 
 FORMATS = {
@@ -70,15 +76,60 @@ def input_paths(config: DatasetConfig, base_dir: str | Path) -> tuple[Path, ...]
     return tuple(sorted(paths))
 
 
+def _environmental_issues(modality: Modality, location: str) -> list[Issue]:
+    options = modality.environmental_options
+    field = f"{location}.environmental_options"
+    if modality.kind != "environmental":
+        return (
+            [Issue("invalid_environmental_options", field, "Requires an environmental view")]
+            if (options is not None)
+            else []
+        )
+    if options is None:
+        return [Issue("missing_environmental_options", field, "Declare source and spatial support")]
+    issues = []
+    if options.spatial_support not in {"point", "site", "grid_cell"}:
+        issues.append(Issue("invalid_spatial_support", field, "Use point, site, or grid_cell"))
+    known = {o.observation_id for o in modality.observations}
+    seen = set()
+    for index, record in enumerate(options.records):
+        record_field = f"{field}.records[{index}]"
+        if record.observation_id not in known or record.observation_id in seen:
+            issues.append(Issue("invalid_record_id", record_field, "Use a unique observation ID"))
+        seen.add(record.observation_id)
+        if record.coordinates and (
+            len(record.coordinates) != 2 or options.coordinate_reference_system is None
+        ):
+            issues.append(Issue("invalid_coordinates", record_field, "Two coordinates require CRS"))
+        try:
+            if record.date:
+                datetime.fromisoformat(record.date)
+            if record.time_window:
+                if record.date or len(record.time_window) != 2:
+                    raise ValueError
+                start, end = map(datetime.fromisoformat, record.time_window)
+                if end < start:
+                    raise ValueError
+        except (ValueError, TypeError):
+            issues.append(Issue("invalid_time", record_field, "Declare an ISO date or time window"))
+    return issues
+
+
 def validate_dataset(
-    config: DatasetConfig, *, base_dir: str | Path, check_files: bool = True
+    config: DatasetConfig,
+    *,
+    base_dir: str | Path,
+    check_files: bool = True,
+    allow_environmental: bool = False,
 ) -> ValidationReport:
     """Check declarations, not file contents or statistical readiness.
 
     No imputation, alignment, aggregation, or cross-modality matching is performed.
     Replicates remain linked to their original unit. Missing modalities are allowed.
     """
-    config = config_from_dict(config.to_dict())
+    config = config_from_dict(config.to_dict(), allow_environmental=allow_environmental)
+    environmental = allow_environmental and config.schema_version == ENVIRONMENTAL_SCHEMA_VERSION
+    formats = {**FORMATS, "environmental": FORMATS["ecological"]} if environmental else FORMATS
     issues: list[Issue] = []
     coverage: list[Coverage] = []
 
@@ -111,9 +162,9 @@ def validate_dataset(
 
     for i, modality in enumerate(config.modalities):
         location = f"modalities[{i}]"
-        if modality.kind not in FORMATS:
+        if modality.kind not in formats:
             error("unsupported_kind", f"{location}.kind", f"Unknown data type: {modality.kind!r}")
-        elif modality.format not in FORMATS[modality.kind]:
+        elif modality.format not in formats[modality.kind]:
             error("unsupported_format", f"{location}.format", f"Invalid format for {modality.kind}")
         if modality.level not in units:
             error("unsupported_level", f"{location}.level", "Use specimen, population, or locality")
@@ -144,10 +195,12 @@ def validate_dataset(
                     location,
                     "Observation ID cannot be an image path/page/frame column",
                 )
-        if modality.tabular_options is not None and modality.kind not in {
-            "morphological",
-            "ecological",
-        }:
+        tabular_kind = modality.kind in {"morphological", "ecological"} or (
+            environmental and modality.kind == "environmental"
+        )
+        if environmental:
+            issues.extend(_environmental_issues(modality, location))
+        if modality.tabular_options is not None and not tabular_kind:
             error(
                 "invalid_tabular_options", location, "Tabular options require morphology or ecology"
             )
@@ -180,7 +233,7 @@ def validate_dataset(
                     location,
                     "Missing-landmark sentinel must match coordinate dimensions",
                 )
-        if modality.kind in {"morphological", "ecological"}:
+        if tabular_kind:
             tabular = modality.tabular_options or TabularReaderOptions()
             columns = [
                 tabular.observation_id_column,
@@ -241,8 +294,13 @@ def validate_dataset(
                 )
             )
         unique((f.name for f in modality.features), f"{location}.features")
-        if modality.kind in {"morphological", "ecological"}:
-            if not any(f.role == "feature" for f in modality.features):
+        if tabular_kind:
+            if modality.kind == "environmental":
+                if not modality.features or any(f.unit is None for f in modality.features):
+                    error(
+                        "missing_units", location, "Declare environmental columns and their units"
+                    )
+            elif not any(f.role == "feature" for f in modality.features):
                 error("no_features", location, "Declare at least one analytical feature")
         elif modality.features:
             error(

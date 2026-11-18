@@ -7,8 +7,11 @@ from collections.abc import Callable
 from typing import Any
 
 from super_deli.core.data import (
+    ENVIRONMENTAL_SCHEMA_VERSION,
     SCHEMA_VERSION,
     DatasetConfig,
+    EnvironmentalOptions,
+    EnvironmentalRecord,
     Feature,
     GenomicReaderOptions,
     ImageReaderOptions,
@@ -198,7 +201,33 @@ def _feature(value: Any, location: str) -> Feature:
     return result
 
 
-def _modality(value: Any, location: str) -> Modality:
+def _environmental_record(value: Any, location: str) -> EnvironmentalRecord:
+    obj = _Object(value, location)
+    result = EnvironmentalRecord(
+        observation_id=obj.get("observation_id", _string),
+        coordinates=obj.array("coordinates", _finite_number),
+        date=obj.optional_string("date"),
+        time_window=obj.array("time_window", _string),
+        source_cell_id=obj.optional_string("source_cell_id"),
+        sampling_event_id=obj.optional_string("sampling_event_id"),
+    )
+    obj.finish()
+    return result
+
+
+def _environmental_options(value: Any, location: str) -> EnvironmentalOptions:
+    obj = _Object(value, location)
+    result = EnvironmentalOptions(
+        source=obj.get("source", _string),
+        spatial_support=obj.get("spatial_support", _string),
+        coordinate_reference_system=obj.optional_string("coordinate_reference_system"),
+        records=obj.array("records", _environmental_record),
+    )
+    obj.finish()
+    return result
+
+
+def _modality(value: Any, location: str, *, environmental: bool = False) -> Modality:
     obj = _Object(value, location)
     result = Modality(
         name=obj.get("name", _string),
@@ -213,20 +242,28 @@ def _modality(value: Any, location: str) -> Modality:
         tabular_options=obj.get("tabular_options", _tabular_options, default=None),
         morphometric_options=obj.get("morphometric_options", _morphometric_options, default=None),
         image_options=obj.get("image_options", _image_options, default=None),
+        environmental_options=(
+            obj.get("environmental_options", _environmental_options, default=None)
+            if environmental
+            else None
+        ),
     )
     obj.finish()
     return result
 
 
-def config_from_dict(value: Any) -> DatasetConfig:
+def config_from_dict(value: Any, *, allow_environmental: bool = False) -> DatasetConfig:
     """Parse field types; biological consistency is checked by validate_dataset."""
     obj = _Object(value, "dataset")
     version = obj.get("schema_version", _integer)
-    if version != SCHEMA_VERSION:
+    environmental = allow_environmental and version == ENVIRONMENTAL_SCHEMA_VERSION
+    if version != SCHEMA_VERSION and not environmental:
         raise ConfigError(f"dataset.schema_version: unsupported version {version}")
     result = DatasetConfig(
         dataset_id=obj.get("dataset_id", _string),
-        modalities=obj.array("modalities", _modality, required=True),
+        modalities=obj.array(
+            "modalities", lambda v, p: _modality(v, p, environmental=environmental), required=True
+        ),
         specimens=obj.array("specimens", _specimen),
         populations=obj.array("populations", _string),
         localities=obj.array("localities", _string),

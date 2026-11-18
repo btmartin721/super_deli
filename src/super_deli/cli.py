@@ -171,6 +171,10 @@ def main(argv: list[str] | None = None) -> int:
     from super_deli.workflows.spectral_cli import register as register_unknown_spectral
 
     register_unknown_spectral(commands)
+    from super_deli.analysis.cli import register as register_analysis
+
+    register_analysis(commands)
+
     validate = commands.add_parser("validate", help="Check declarations and local file references")
     validate.add_argument("config", type=Path, help="Versioned dataset JSON configuration")
     validate.add_argument("--report", type=Path, help="Also save JSON to a new file")
@@ -612,6 +616,11 @@ def main(argv: list[str] | None = None) -> int:
     power_budget.add_argument("--output-file", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
+        if args.command == "analyze":
+            from super_deli.analysis.cli import dispatch
+
+            print(json.dumps(dispatch(args), indent=2, sort_keys=True, allow_nan=False))
+            return 0
         if args.command == "diagnose-genomic-neural":
             from super_deli.benchmarking.genomic_diagnosis_cli import dispatch
 
